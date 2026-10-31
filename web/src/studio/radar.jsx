@@ -81,7 +81,7 @@ function AxisCard({ axis, x, y }) {
  * One Decisions radar in mockup-v2's drawing: the two heaviest questions of every scoring group on a single
  * chart. Unanswered axes sit hatched at the centre, never at 0; a streaming run reveals them one by one.
  */
-export function Radar({ questions, revealed, selectedId, onSelect, threshold, onOpenAll, answered, total, otherCount = 0 }) {
+export function Radar({ questions, revealed, selectedId, onSelect, threshold, onOpenAll, answered, total, otherCount = 0, scanning = false }) {
   const [hover, setHover] = useState(null)
   const axes = keyAxes(questions, revealed)
   const n = axes.length
@@ -90,7 +90,7 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
   if (n < 3) return null
 
   return (
-    <section className="radar-wrap studio-radar" aria-label="Radar câu hỏi Decisions">
+    <section className={`radar-wrap studio-radar${scanning ? ' is-scanning' : ''}`} aria-label="Radar câu hỏi Decisions">
       <div className="studio-radar-head">
         {/* the count only matters while answers are missing */}
         <p className="tiny">{answered < total ? `${answered}/${total} câu chấm điểm đã trả lời` : 'Câu hỏi chấm điểm'}</p>
@@ -103,6 +103,22 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
           ))}
           {RINGS.map((r) => <polygon key={r} className="rd-ring" points={pointsOf(n, Array(n).fill(r))} />)}
           {threshold != null && <polygon className="rd-threshold" points={pointsOf(n, Array(n).fill(threshold / 100))} />}
+          {/* while a run streams: a sweep turns around the centre, like a radar reading the axes it has not filled */}
+          {scanning && (
+            <g className="rd-sweep" style={{ transformOrigin: `${CENTER.cx}px ${CENTER.cy}px` }}>
+              <defs>
+                <linearGradient id="rdSweep" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stopColor="#ee4d2d" stopOpacity="0" />
+                  <stop offset="1" stopColor="#ee4d2d" stopOpacity=".28" />
+                </linearGradient>
+              </defs>
+              <path
+                d={`M${CENTER.cx},${CENTER.cy} L${CENTER.cx + CENTER.r * Math.cos(-Math.PI / 2 - 0.7)},${CENTER.cy + CENTER.r * Math.sin(-Math.PI / 2 - 0.7)} A${CENTER.r},${CENTER.r} 0 0 1 ${CENTER.cx},${CENTER.cy - CENTER.r} Z`}
+                fill="url(#rdSweep)"
+              />
+              <line x1={CENTER.cx} y1={CENTER.cy} x2={CENTER.cx} y2={CENTER.cy - CENTER.r} className="rd-sweep-edge" />
+            </g>
+          )}
           {axes.map((a, i) => {
             const [x, y] = radarPoint(i, n, 1, CENTER)
             return <line key={a.id} className={`rd-axis${a.id === selectedId ? ' is-sel' : ''}`} x1={CENTER.cx} y1={CENTER.cy} x2={x} y2={y} />
@@ -122,7 +138,7 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
             <button
               key={a.id}
               type="button"
-              className={`studio-rd-label is-${g} band-${bandOf(a.value, threshold ?? 75)}${a.id === selectedId ? ' is-sel' : ''}`}
+              className={`studio-rd-label is-${g} band-${bandOf(a.value, threshold ?? 75)}${a.id === selectedId ? ' is-sel' : ''}${missing && scanning ? ' is-pending' : ''}`}
               style={labelStyle(i, n, x, y)}
               aria-pressed={a.id === selectedId}
               aria-label={`${a.label} (${GROUP_SHORT[g]}): ${missing ? (a.status === 'pending' ? 'đang chờ' : 'chưa chấm') : Math.round(a.value)}`}
@@ -132,7 +148,7 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
               onFocus={() => setHover(a.id)}
               onBlur={() => setHover(null)}
             >
-              <span className={`studio-rd-num${missing ? ' is-miss' : ''}`}>{missing ? (a.status === 'pending' ? '…' : '–') : Math.round(a.value)}</span>
+              <span className={`studio-rd-num${missing ? ' is-miss' : ''}`}>{missing ? (scanning || a.status === 'pending' ? '··' : '–') : Math.round(a.value)}</span>
               <span className="studio-rd-name">{a.label}</span>
             </button>
           )

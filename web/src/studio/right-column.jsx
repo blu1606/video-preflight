@@ -27,16 +27,18 @@ const GROUP_PARTS = [
 const band = (v, ready, fix) => (v == null ? 'missing' : v >= ready ? 'ready' : v >= fix ? 'fix' : 'rework')
 
 /** Score ring: the arc fills to the score, coloured by band, with a tick where "ready" starts. */
-function ScoreRing({ value, ready, fix, estimate }) {
+function ScoreRing({ value, ready, fix, estimate, scanning = false }) {
   const r = 46
   const c = 2 * Math.PI * r
   const shown = value == null ? 0 : Math.max(0, Math.min(100, value))
   const tick = (ready / 100) * 2 * Math.PI - Math.PI / 2
   return (
-    <span className={`studio-ring is-${band(value, ready, fix)}${estimate ? ' is-estimate' : ''}`}>
+    <span className={`studio-ring is-${band(value, ready, fix)}${estimate ? ' is-estimate' : ''}${scanning ? ' is-scanning' : ''}`}>
       <svg viewBox="0 0 120 120" aria-hidden="true">
         <circle className="ring-track" cx="60" cy="60" r={r} />
         <circle className="ring-fill" cx="60" cy="60" r={r} strokeDasharray={`${(shown / 100) * c} ${c}`} transform="rotate(-90 60 60)" />
+        {/* while scoring: a short arc runs round the track until the first estimate lands */}
+        {scanning && <circle className="ring-spin" cx="60" cy="60" r={r} strokeDasharray={`${c * 0.18} ${c}`} />}
         <line className="ring-tick" x1={60 + Math.cos(tick) * (r - 6)} y1={60 + Math.sin(tick) * (r - 6)} x2={60 + Math.cos(tick) * (r + 7)} y2={60 + Math.sin(tick) * (r + 7)} />
       </svg>
       <span className="ring-num">{value == null ? '—' : Math.round(value)}<small>/100</small></span>
@@ -48,7 +50,7 @@ function ScoreRing({ value, ready, fix, estimate }) {
  * The answer first: score ring, the decision in words, the AI's one-line reading, then the policy gate as its own
  * row (it blocks posting whatever the score says). Provisional while Decisions answers are still arriving.
  */
-function ScoreHero({ overall, provisional, gate, headline, onPolicy }) {
+function ScoreHero({ overall, provisional, gate, headline, onPolicy, running = false }) {
   const estimate = overall?.score == null && provisional != null
   const counted = useCountUp(overall?.score ?? provisional)
   const ready = overall?.thresholds?.ready ?? 75
@@ -58,10 +60,10 @@ function ScoreHero({ overall, provisional, gate, headline, onPolicy }) {
   return (
     <div className="studio-hero">
       <div className="studio-hero-top" aria-label={overall?.score != null ? `Điểm tổng ${Math.round(overall.score)} trên 100` : 'Chưa có điểm tổng'}>
-        <ScoreRing value={counted} ready={ready} fix={fix} estimate={estimate} />
+        <ScoreRing value={counted} ready={ready} fix={fix} estimate={estimate} scanning={running && counted == null} />
         <div className="studio-hero-text">
-          {estimate ? (
-            <p className="studio-hero-verdict is-estimate">Đang chấm…</p>
+          {estimate || (running && overall?.score == null) ? (
+            <p className="studio-hero-verdict is-estimate">Đang chấm<span className="studio-dots" aria-hidden="true"><i /><i /><i /></span></p>
           ) : (
             overall?.label_vi && <p className={`studio-hero-verdict is-${overall.label}`}>{overall.label_vi}</p>
           )}
@@ -322,6 +324,7 @@ export function RightColumn({
             gate={running ? null : overall?.policy_gate}
             headline={verdict}
             onPolicy={() => onSideTab('evidence')}
+            running={running}
           />
           {!running && (overall?.warnings ?? []).map((w) => <p key={w} className="tiny studio-warn">{w}</p>)}
         </section>
@@ -330,7 +333,7 @@ export function RightColumn({
           after it; the weighted groups below it say how the axes add up to the score */}
       {questions.length > 0 && (running || result) && (
         <Radar questions={questions} revealed={revealed} selectedId={selectedId} onSelect={onOpenQuestion} onOpenAll={onOpenAll}
-          threshold={threshold} answered={answered} total={scoreQs.length} otherCount={otherCount} />
+          threshold={threshold} answered={answered} total={scoreQs.length} otherCount={otherCount} scanning={running} />
       )}
       {result && !running && <ScoreParts result={result} />}
       {result && !running && scoreQs.every((q) => q.value == null) && (

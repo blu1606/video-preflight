@@ -36,18 +36,176 @@ const DEMO = {
   ],
 }
 
-// each step shows the real screen it happens on (captures of the demo shop)
-const STEPS = [
-  { title: 'Chọn shop, SKU, video', text: 'Video gắn với sản phẩm sẽ bán.', shot: '/landing/step-shop.webp', ratio: '4 / 3' },
-  { title: 'Agent xem và đối chiếu', text: 'Lời nói, khung hình, listing, thị trường, policy.', shot: '/landing/step-agents.webp', ratio: '4 / 3' },
-  { title: 'Điểm và việc cần sửa', text: 'Radar từng câu hỏi, mỗi việc có mốc thời gian.', shot: '/landing/step-score.webp', ratio: '4 / 3' },
-]
+// ---------- how it works: one pipeline drawn in its own units (viewBox), so it scales as a whole ----------
 
-const PROVENANCE = [
-  { tag: 'REAL', tone: 'real', text: 'có nguồn, có ngày' },
-  { tag: 'MOCK', tone: 'mock', text: 'luôn gắn nhãn' },
-  { tag: 'INFERRED', tone: 'inferred', text: 'ghi căn cứ' },
-  { tag: 'MISSING', tone: 'missing', text: 'chưa chấm, không phải 0' },
+const FLOW_COLS = [
+  { x: 0, label: 'Bạn chọn' },
+  { x: 300, label: 'Agent chạy' },
+  { x: 620, label: 'Decisions chấm' },
+  { x: 900, label: 'Bạn nhận' },
+]
+const INPUTS = [
+  { id: 'video', title: 'Video', sub: 'lời nói + khung hình' },
+  { id: 'sku', title: 'Listing SKU', sub: 'giá, mô tả, đánh giá' },
+  { id: 'shop', title: 'Số liệu shop', sub: '30 ngày gần nhất' },
+  { id: 'market', title: 'Thị trường', sub: 'FastMoss, Google Shopping' },
+  { id: 'policy', title: 'Quy tắc sàn', sub: 'TikTok Shop, Shopee, Ads' },
+].map((n, i) => ({ ...n, x: 0, y: 46 + i * 76, w: 200, h: 56 }))
+const AGENTS = [
+  { id: 'read', title: 'Đọc video', sub: 'transcript, cảnh, chữ trên hình' },
+  { id: 'match', title: 'Đối chiếu', sub: 'SKU, shop, thị trường' },
+  { id: 'rules', title: 'Kiểm policy', sub: 'trích nguyên văn câu vi phạm' },
+].map((n, i) => ({ ...n, x: 300, y: 88 + i * 108, w: 220, h: 64 }))
+const DECIDE = { id: 'decide', x: 620, y: 150, w: 180, h: 156 }
+const OUT = {
+  score: { x: 900, y: 46, w: 236, h: 84 },
+  radar: { x: 900, y: 156, w: 236, h: 144 },
+  fixes: { x: 900, y: 326, w: 236, h: 86 },
+}
+const node = (list, id) => list.find((n) => n.id === id)
+const right = (n) => [n.x + n.w, n.y + n.h / 2]
+const left = (n, dy = 0) => [n.x, n.y + n.h / 2 + dy]
+const curve = ([x1, y1], [x2, y2]) => {
+  const mx = (x1 + x2) / 2
+  return `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`
+}
+const FLOW_EDGES = [
+  curve(right(node(INPUTS, 'video')), left(node(AGENTS, 'read'))),
+  curve(right(node(INPUTS, 'sku')), left(node(AGENTS, 'match'), -14)),
+  curve(right(node(INPUTS, 'shop')), left(node(AGENTS, 'match'))),
+  curve(right(node(INPUTS, 'market')), left(node(AGENTS, 'match'), 14)),
+  curve(right(node(INPUTS, 'policy')), left(node(AGENTS, 'rules'))),
+  curve(right(node(AGENTS, 'read')), left(DECIDE, -40)),
+  curve(right(node(AGENTS, 'match')), left(DECIDE)),
+  curve(right(node(AGENTS, 'rules')), left(DECIDE, 40)),
+  curve(right(DECIDE), left(OUT.score)),
+  curve(right(DECIDE), left(OUT.radar)),
+  curve(right(DECIDE), left(OUT.fixes, -12)),
+  // policy findings go straight to the fix list: a rule hit is reported, never scored away
+  `M${right(node(AGENTS, 'rules')).join(',')} C 600,${348 + 40} 820,${OUT.fixes.y + 58} ${OUT.fixes.x},${OUT.fixes.y + 58}`,
+]
+// the demo run's six radar answers, in the radar's axis order
+const RADAR = [92, 47, 76, 10, 44, 50]
+
+function FlowNode({ n }) {
+  return (
+    <g className="lp-flow-node">
+      <rect x={n.x} y={n.y} width={n.w} height={n.h} rx="14" />
+      <text x={n.x + 16} y={n.y + n.h / 2 - 3} className="lp-flow-title">{n.title}</text>
+      <text x={n.x + 16} y={n.y + n.h / 2 + 15} className="lp-flow-sub">{n.sub}</text>
+    </g>
+  )
+}
+
+function MiniRadar({ cx, cy, r }) {
+  const pt = (i, v) => {
+    const a = -Math.PI / 2 + (2 * Math.PI * i) / RADAR.length
+    return [cx + Math.cos(a) * r * v, cy + Math.sin(a) * r * v]
+  }
+  const ring = (v) => RADAR.map((_, i) => pt(i, v).join(',')).join(' ')
+  return (
+    <g className="lp-flow-radar">
+      <polygon points={ring(1)} className="ring" />
+      <polygon points={ring(0.5)} className="ring" />
+      <polygon points={ring(0.75)} className="thr" />
+      <polygon points={RADAR.map((v, i) => pt(i, v / 100).join(',')).join(' ')} className="shape" />
+      {RADAR.map((v, i) => {
+        const [x, y] = pt(i, v / 100)
+        return <circle key={i} cx={x} cy={y} r="3" className={v >= 75 ? 'good' : v >= 50 ? 'warn' : 'bad'} />
+      })}
+    </g>
+  )
+}
+
+/**
+ * The pipeline from what the seller picks to what they get back. Light pulses travel the edges (SMIL motion along
+ * each path), staggered so the picture reads left to right; under reduced motion only the static graph shows.
+ */
+function Flow() {
+  const s = OUT.score
+  const rd = OUT.radar
+  const fx = OUT.fixes
+  return (
+    <div className="lp-flow-scroll">
+      <svg className="lp-flow" viewBox="0 0 1136 420" role="img" aria-label="Video, listing SKU, số liệu shop, thị trường và quy tắc sàn đi qua ba agent, được Decisions chấm 36 câu, ra điểm, radar và danh sách việc cần sửa theo mốc thời gian.">
+        <defs>
+          <filter id="lpLift" x="-20%" y="-30%" width="140%" height="180%">
+            <feDropShadow dx="0" dy="10" stdDeviation="12" floodColor="#111214" floodOpacity=".12" />
+          </filter>
+          <linearGradient id="lpEdge" x1="0" x2="1">
+            <stop offset="0" stopColor="#ee4d2d" stopOpacity=".15" />
+            <stop offset="1" stopColor="#ee4d2d" stopOpacity=".45" />
+          </linearGradient>
+        </defs>
+        {FLOW_COLS.map((c) => (
+          <text key={c.label} x={c.x} y="18" className="lp-flow-col">{c.label}</text>
+        ))}
+        {FLOW_EDGES.map((d, i) => (
+          <g key={i}>
+            <path d={d} className="lp-flow-edge" />
+            <circle r="3.5" className="lp-flow-pulse">
+              <animateMotion dur="2.6s" begin={`${(i % 5) * 0.45 + (i >= 5 ? 0.9 : 0) + (i >= 8 ? 0.9 : 0)}s`} repeatCount="indefinite" path={d} />
+            </circle>
+          </g>
+        ))}
+        <g filter="url(#lpLift)">
+          {INPUTS.map((n) => <FlowNode key={n.id} n={n} />)}
+          {AGENTS.map((n) => <FlowNode key={n.id} n={n} />)}
+          <g className="lp-flow-node is-decide">
+            <rect x={DECIDE.x} y={DECIDE.y} width={DECIDE.w} height={DECIDE.h} rx="18" />
+            <text x={DECIDE.x + 18} y={DECIDE.y + 34} className="lp-flow-title">Decisions</text>
+            <text x={DECIDE.x + 18} y={DECIDE.y + 84} className="lp-flow-big">36</text>
+            <text x={DECIDE.x + 18} y={DECIDE.y + 108} className="lp-flow-sub">câu hỏi, rubric 5 mức</text>
+            <text x={DECIDE.x + 18} y={DECIDE.y + 130} className="lp-flow-sub">một lần gọi</text>
+          </g>
+          <g className="lp-flow-node">
+            <rect x={s.x} y={s.y} width={s.w} height={s.h} rx="14" />
+            <circle cx={s.x + 42} cy={s.y + s.h / 2} r="24" className="lp-flow-ring-bg" />
+            <circle
+              cx={s.x + 42}
+              cy={s.y + s.h / 2}
+              r="24"
+              className="lp-flow-ring"
+              strokeDasharray={`${(55 / 100) * 2 * Math.PI * 24} ${2 * Math.PI * 24}`}
+              transform={`rotate(-90 ${s.x + 42} ${s.y + s.h / 2})`}
+            />
+            <text x={s.x + 42} y={s.y + s.h / 2 + 6} textAnchor="middle" className="lp-flow-ringnum">55</text>
+            <text x={s.x + 80} y={s.y + s.h / 2 - 3} className="lp-flow-title">Sửa rồi đăng</text>
+            <text x={s.x + 80} y={s.y + s.h / 2 + 15} className="lp-flow-sub">điểm / ngưỡng 75</text>
+          </g>
+          <g className="lp-flow-node">
+            <rect x={rd.x} y={rd.y} width={rd.w} height={rd.h} rx="14" />
+            <MiniRadar cx={rd.x + 66} cy={rd.y + rd.h / 2} r={50} />
+            <text x={rd.x + 134} y={rd.y + rd.h / 2 - 3} className="lp-flow-title">Radar</text>
+            <text x={rd.x + 134} y={rd.y + rd.h / 2 + 15} className="lp-flow-sub">từng câu hỏi</text>
+          </g>
+          <g className="lp-flow-node">
+            <rect x={fx.x} y={fx.y} width={fx.w} height={fx.h} rx="14" />
+            <rect x={fx.x + 14} y={fx.y + 16} width="48" height="22" rx="6" className="lp-flow-tc is-bad" />
+            <text x={fx.x + 38} y={fx.y + 31} textAnchor="middle" className="lp-flow-tctext">00:09</text>
+            <text x={fx.x + 72} y={fx.y + 32} className="lp-flow-fix">Cảnh trước / sau</text>
+            <rect x={fx.x + 14} y={fx.y + 48} width="48" height="22" rx="6" className="lp-flow-tc is-warn" />
+            <text x={fx.x + 38} y={fx.y + 63} textAnchor="middle" className="lp-flow-tctext">00:35</text>
+            <text x={fx.x + 72} y={fx.y + 64} className="lp-flow-fix">Thêm lời kêu gọi mua</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+  )
+}
+
+// ---------- provenance: real figures from the demo, each with the label it carries in Studio ----------
+
+const LEDGER = [
+  { value: '32.333₫', what: 'Giá trung vị đối thủ', tag: 'REAL', tone: 'real', source: 'Google Shopping · cào 27/10' },
+  { value: '3.100', what: 'Đơn 30 ngày của shop', tag: 'MOCK', tone: 'mock', source: 'Shop mô phỏng để thử' },
+  { value: '≈ 3 đơn', what: 'Đơn ước tính của video', tag: 'INFERRED', tone: 'inferred', source: 'Suy từ video mẫu cùng sản phẩm' },
+  { value: null, what: 'Policy Meta Ads', tag: 'MISSING', tone: 'missing', source: 'Chưa đủ dữ liệu, không tính 0' },
+]
+const POLICY_STATES = [
+  { label: 'Cần xem lại', tone: 'bad' },
+  { label: 'Không phát hiện vi phạm', tone: 'neutral' },
+  { label: 'Chưa đủ dữ liệu', tone: 'missing' },
 ]
 
 const timecode = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(Math.floor(s % 60)).padStart(2, '0')}`
@@ -210,33 +368,40 @@ export default function LandingPage() {
           <p className="lp-caption">Lượt chấm thật của video mẫu. Bấm một mốc để tua tới đó.</p>
         </section>
 
-        <section className="lp-steps" aria-labelledby="steps-title">
+        <section className="lp-how" aria-labelledby="steps-title">
           <h2 id="steps-title">Cách hoạt động</h2>
-          <ol>
-            {STEPS.map((s, i) => (
-              <li key={s.title}>
-                <figure className="lp-shot" style={{ aspectRatio: s.ratio }}>
-                  <img src={s.shot} alt="" loading="lazy" />
-                </figure>
-                <span className="lp-tc">0{i + 1}</span>
-                <strong>{s.title}</strong>
-                <span>{s.text}</span>
-              </li>
-            ))}
-          </ol>
+          <Flow />
         </section>
 
         <section className="lp-trust" aria-labelledby="trust-title">
-          <h2 id="trust-title">Không bịa số.</h2>
-          <ul>
-            {PROVENANCE.map((p) => (
-              <li key={p.tag}>
-                <span className={`lp-tag is-${p.tone}`}>{p.tag}</span>
-                {p.text}
-              </li>
-            ))}
-          </ul>
-          <p>Policy không bao giờ báo “đạt”: chỉ cần xem lại, không phát hiện vi phạm, hoặc chưa đủ dữ liệu.</p>
+          <div className="lp-trust-head">
+            <h2 id="trust-title">Không bịa số.</h2>
+            <p>Mỗi con số mang nhãn nguồn. Thiếu dữ liệu thì để trống, không ghi 0.</p>
+          </div>
+          <div className="lp-ledger">
+            <table>
+              <caption className="lp-ledger-cap">Ví dụ trong lượt chấm mẫu</caption>
+              <tbody>
+                {LEDGER.map((r) => (
+                  <tr key={r.tag}>
+                    <td className={`lp-ledger-value${r.value == null ? ' is-empty' : ''}`}>{r.value ?? '—'}</td>
+                    <td>
+                      <strong>{r.what}</strong>
+                      <small>{r.source}</small>
+                    </td>
+                    <td><span className={`lp-tag is-${r.tone}`}>{r.tag}</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <div className="lp-policy">
+              <span className="lp-policy-label">Policy chỉ có</span>
+              {POLICY_STATES.map((st) => (
+                <span key={st.label} className={`lp-state is-${st.tone}`}>{st.label}</span>
+              ))}
+              <span className="lp-state is-never" title="Preflight không bao giờ báo một video là đạt policy">Đạt</span>
+            </div>
+          </div>
         </section>
 
         <section className="lp-final" aria-labelledby="final-title">

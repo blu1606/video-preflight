@@ -44,6 +44,37 @@ function StepRow({ step }) {
   )
 }
 
+/**
+ * While a run streams, keep the newest step in view: the scrolling column glides so the running step (or, between
+ * steps, the last finished one) sits a third of the way down. A wheel or touch by the seller pauses the follow for
+ * a few seconds so it never fights their own scrolling.
+ */
+function useFollowRunningStep(colRef, steps, running) {
+  const pausedUntil = useRef(0)
+  useEffect(() => {
+    const col = colRef.current
+    if (!col || !running) return undefined
+    const pause = () => { pausedUntil.current = Date.now() + 4000 }
+    col.addEventListener('wheel', pause, { passive: true })
+    col.addEventListener('touchmove', pause, { passive: true })
+    return () => {
+      col.removeEventListener('wheel', pause)
+      col.removeEventListener('touchmove', pause)
+    }
+  }, [colRef, running])
+  useEffect(() => {
+    const col = colRef.current
+    if (!col || !running || Date.now() < pausedUntil.current) return
+    // the live view is the flow diagram (.fd-node); the plain list (.studio-step) is the fallback
+    const all = col.querySelectorAll('.fd-node, .studio-step')
+    const target = col.querySelector('.fd-node.is-running, .studio-step.is-running') ?? all[all.length - 1]
+    if (!target) return
+    const top = target.getBoundingClientRect().top - col.getBoundingClientRect().top + col.scrollTop
+    const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    col.scrollTo({ top: Math.max(0, top - col.clientHeight / 3), behavior: reduced ? 'auto' : 'smooth' })
+  }, [colRef, steps, running])
+}
+
 /** The agent pipeline: 7 stages, each with its real trace steps (live while streaming). */
 export function AgentFlow({ steps, running }) {
   const stages = groupSteps(steps, running ? 'running' : 'done')
@@ -118,6 +149,7 @@ export function LeftColumn({ running, steps, result, savedRun = null, duration, 
   useEffect(() => {
     if (colRef.current) colRef.current.scrollTop = 0
   }, [showFlow, filter, result])
+  useFollowRunningStep(colRef, steps, running)
 
   return (
     <aside ref={colRef} className="col col-left studio-left" aria-label="Câu hỏi chấm và agent">
