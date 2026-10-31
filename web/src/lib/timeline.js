@@ -135,3 +135,17 @@ export function highlightClaims(text, claims) {
   if (at < text.length) parts.push({ text: text.slice(at), claim: false })
   return parts
 }
+
+/**
+ * Point issues that sit at the same moment (within `window` seconds) as one marker each: several findings at 00:08
+ * would otherwise draw on top of each other and only the top one could be clicked. Ranges and ghosts stay apart.
+ */
+export function clusterPointIssues(markers, window = 0.5) {
+  const groups = []
+  for (const m of [...markers].sort((a, b) => a.t_start - b.t_start)) {
+    const last = groups.at(-1)
+    if (last && m.t_start - last.t <= window) last.items.push(m)
+    else groups.push({ t: m.t_start, items: [m] })
+  }
+  return groups
+}

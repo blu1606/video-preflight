@@ -205,7 +205,9 @@ export function RightColumn({
       </div>
       {!result && !running ? (
         <section className="score-block studio-start">
-          <p>Dựng bài đăng xong thì chạy phân tích. Các bước agent hiện ở cột trái, radar lấp dần theo từng câu Decisions.</p>
+          <img className="studio-start-art" src="/illustrations/no-analysis.webp" alt="" width="800" height="600" />
+          <h3>Video này chưa được phân tích</h3>
+          <p className="tiny muted">Chạy một lần để có điểm, việc cần sửa và kết quả policy cho từng nền tảng.</p>
           <button type="button" className="btn btn-primary studio-analyze" onClick={onAnalyze} disabled={!canAnalyze}>
             <Icon name="magicpen" /> Phân tích video
           </button>
@@ -225,7 +227,8 @@ export function RightColumn({
           {!running && (overall?.warnings ?? []).map((w) => <p key={w} className="tiny studio-warn">{w}</p>)}
         </section>
       )}
-      {(questions.length > 0 || running) && (
+      {/* before the first run the empty state is the one focus; an all-dash radar would only repeat "chưa chấm" */}
+      {((questions.length > 0 && result) || running) && (
         <Radar
           questions={questions}
           revealed={revealed}
