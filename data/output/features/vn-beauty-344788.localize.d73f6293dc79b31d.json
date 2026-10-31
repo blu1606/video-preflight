@@ -1,0 +1,92 @@
+{
+  "model": "gpt-6-luna",
+  "regions": [
+    {
+      "marker_id": "policy:tiktok_ads:TTA-001:0",
+      "box": [
+        0.28,
+        0.377,
+        0.53,
+        0.08
+      ],
+      "label": "Tuyên bố kết quả phóng đại",
+      "confidence": 0.94
+    },
+    {
+      "marker_id": "policy:meta_ads:META-001:0",
+      "box": [
+        0.28,
+        0.377,
+        0.53,
+        0.08
+      ],
+      "label": "Tuyên bố sản phẩm chưa chứng minh",
+      "confidence": 0.93
+    },
+    {
+      "marker_id": "criterion:V02",
+      "box": [
+        0.28,
+        0.377,
+        0.53,
+        0.08
+      ],
+      "label": "Lời hứa kết quả chung chung",
+      "confidence": 0.9
+    },
+    {
+      "marker_id": "criterion:C08",
+      "box": null,
+      "label": "Không thấy lời kêu gọi mua",
+      "confidence": 0.99
+    },
+    {
+      "marker_id": "policy:tiktok_shop_video:TTS-002:8",
+      "box": [
+        0.137,
+        0.201,
+        0.7,
+        0.107
+      ],
+      "label": "Tuyên bố lợi ích chưa chứng minh",
+      "confidence": 0.95
+    },
+    {
+      "marker_id": "policy:tiktok_ads:TTA-001:8",
+      "box": [
+        0.137,
+        0.201,
+        0.7,
+        0.107
+      ],
+      "label": "Tuyên bố kết quả phóng đại",
+      "confidence": 0.94
+    },
+    {
+      "marker_id": "policy:meta_ads:META-001:8",
+      "box": [
+        0.137,
+        0.201,
+        0.7,
+        0.107
+      ],
+      "label": "Tuyên bố sản phẩm chưa chứng minh",
+      "confidence": 0.93
+    },
+    {
+      "marker_id": "criterion:V01",
+      "box": [
+        0.28,
+        0.377,
+        0.53,
+        0.08
+      ],
+      "label": "Móc câu thiếu tính cấp thiết",
+      "confidence": 0.87
+    }
+  ],
+  "token_usage": {
+    "prompt_tokens": 1917,
+    "completion_tokens": 615
+  }
+}

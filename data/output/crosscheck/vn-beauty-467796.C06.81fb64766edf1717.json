@@ -1,0 +1,89 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 0,
+  "label": "0 Absent",
+  "score": 0.0,
+  "rationale": "Video trình bày kết quả làm trắng rất nhanh như sự thật chắc chắn, dù bằng chứng chỉ là lời kể/bình luận và thông tin thành phần, không có kiểm chứng độc lập về hiệu quả. Các khẳng định như “thử có 1 lần mà trắng thật” và “mới dùng 3 lần” tạo ấn tượng kết quả chắc chắn, chưa được bằng chứng cung cấp xác thực.",
+  "key_evidence": [
+    "“Tao xài rồi, tao thử có 1 lần mà trắng thật nha mấy ní” (REAL)",
+    "“Mới dùng 3 lần mà trắng cỡ này” (REAL)",
+    "Bình luận kể da trông trắng hơn; hộp hiển thị Niacinamide, Alpha-Arbutin và Tranexamic Acid (REAL)"
+  ],
+  "evidence_sent": {
+    "video.key_claims": {
+      "value": [
+        "Lời kể và bình luận cho rằng da trông trắng hơn sau khi tắm bằng sản phẩm.",
+        "Có lời nhận xét rằng đã dùng ba lần và thấy da trắng hơn.",
+        "Sản phẩm có Niacinamide, Alpha-Arbutin và Tranexamic Acid.",
+        "Sản phẩm được giới thiệu là hỗ trợ cải thiện sắc tố, giúp da trông sáng và đều màu hơn, đồng thời làm da sạch và mềm mịn."
+      ],
+      "status": "REAL"
+    },
+    "video.policy_absolute_claims": {
+      "value": [
+        {
+          "text": "Tao mua về tắm xong trắng, mẹ tao với mấy bà hàng xóm không nhận ra luôn",
+          "timestamp_sec": 0.0,
+          "channel": "spoken"
+        },
+        {
+          "text": "Mày ơi, tao xài trắng quá, giờ mẹ tao tưởng tao mới đi tắm trắng",
+          "timestamp_sec": 3.0,
+          "channel": "spoken"
+        },
+        {
+          "text": "Mới dùng 3 lần mà trắng cỡ này thì mua quài luôn quá",
+          "timestamp_sec": 9.0,
+          "channel": "spoken"
+        },
+        {
+          "text": "Ê, tao xài rồi, tao thử có 1 lần mà trắng thật nha mấy ní",
+          "timestamp_sec": 13.0,
+          "channel": "spoken"
+        },
+        {
+          "text": "Tắm nguyên cục xà bông Niacinamide này mà da không nhìn sáng hơn mới là lạ đó",
+          "timestamp_sec": 17.0,
+          "channel": "spoken"
+        },
+        {
+          "text": "Kết hợp che trắng cẩn thận nữa thì da nhìn sáng mịn như bạch tuyết lúc nào không hay",
+          "timestamp_sec": 35.0,
+          "channel": "spoken"
+        }
+      ],
+      "status": "REAL"
+    },
+    "video.trust_signals": {
+      "value": [
+        {
+          "timestamp_sec": 1.0,
+          "type": "comments",
+          "description": "Thẻ bình luận hiển thị lời kể về da trông trắng hơn sau khi tắm."
+        },
+        {
+          "timestamp_sec": 9.0,
+          "type": "comments",
+          "description": "Có bình luận đề cập dùng ba lần và thấy da trắng hơn."
+        },
+        {
+          "timestamp_sec": 13.0,
+          "type": "comments",
+          "description": "Thẻ bình luận nêu trải nghiệm dùng thử một lần."
+        },
+        {
+          "timestamp_sec": 16.0,
+          "type": "ingredients",
+          "description": "Mặt hộp nêu Niacinamide, Alpha-Arbutin và Tranexamic Acid."
+        },
+        {
+          "timestamp_sec": 16.0,
+          "type": "brand",
+          "description": "Hộp sản phẩm hiển thị tên thương hiệu TeaShell."
+        }
+      ],
+      "status": "REAL"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 0,
+  "label": "0 Absent",
+  "score": 0.0,
+  "rationale": "Bằng chứng REAL cho biết không có ưu đãi nào được thể hiện trong video. Vì vậy, không thể xác định một ưu đãi mua hàng từ thông tin được cung cấp.",
+  "key_evidence": [
+    "video.offer: present=false (REAL)"
+  ],
+  "evidence_sent": {
+    "video.offer": {
+      "value": {
+        "present": false,
+        "description": "",
+        "timestamp_sec": 0.0
+      },
+      "status": "REAL"
+    }
+  },
+  "usage": {
+    "completion_tokens": 111,
+    "prompt_tokens": 299,
+    "total_tokens": 410,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 39,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "khăn lau đa năng",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3273,
+     "linked_video_count": 13765
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600409,
+       "name": "Cleaning Cloths"
+      }
+     },
+     "ceiling_price": 75.47,
+     "commission_rate_percent": 15,
+     "cover_url": "https://s.500fd.com/tt_product/598fd4849e9a478f89f40b3c86d07448~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736126356035962011",
+     "floor_price": 17.18,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-24",
+     "launch_time": 1782269788,
+     "price_display": "17.183 ₫  -  75.466 ₫",
+     "product_id": "1736126356035962011",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 8,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736126356035962011?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 10 Khăn Rửa Chén Dây Kim Loại 20x20cm, Khăn Lau Bếp Lưới Kim Loại Đa Năng, Cọ Rửa Xoong Nồi Chén Bát, Lau Bồn Rửa, Miếng Rửa Chén Không Mài Mòn"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1443224801,
+     "last_28d_units_sold": 84931,
+     "last_7d_gmv": 357343518,
+     "last_7d_units_sold": 21355,
+     "last_90d_gmv": 4494827817,
+     "last_90d_units_sold": 276432,
+     "total_gmv": 4844334221,
+     "total_units_sold": 296631,
+     "yesterday_gmv": 41600043,
+     "yesterday_units_sold": 2421
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/31c15feca9aa4a5eb9ef275432d19119~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494633962408412315",
+     "shop_name": "Gió Mát Liệu Lượng",
+     "total_units_sold": 588921
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4346,
+     "linked_video_count": 18267
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 23,
+       "name": "Automotive & Motorcycle"
+      },
+      "l2": {
+       "id": 940808,
+       "name": "Car Washing & Maintenance"
+      },
+      "l3": {
+       "id": 945032,
+       "name": "Car Wash Accessories"
+      }
+     },
+     "ceiling_price": 811.48,
+     "commission_rate_percent": 12,
+     "cover_url": "https://s.500fd.com/tt_product/d5c69d36ef504f43b9df901675022be5~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729579169223379182",
+     "floor_price": 33.62,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-01-09",
+     "launch_time": 1673240046,
+     "price_display": "33.623 ₫  -  811.475 ₫",
+     "product_id": "1729579169223379182",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 17,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729579169223379182?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Khăn Superfine Fiber 650gsm - Siêu Thấm Hút - Khăn Lau Đa Năng Cao Cấp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1833777206,
+     "last_28d_units_sold": 56776,
+     "last_7d_gmv": 394160921,
+     "last_7d_units_sold": 12562,
+     "last_90d_gmv": 5514796824,
+     "last_90d_units_sold": 193453,
+     "total_gmv": 19376251198,
+     "total_units_sold": 669340,
+     "yesterday_gmv": 57999675,
+     "yesterday_units_sold": 1725
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca3b146c792e412eaf0c5da7b7195e1b~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494609366310488302",
+     "shop_name": "Ponika.Store",
+     "total_units_sold": 1989659
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 534,
+     "linked_video_count": 2300
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 825352,
+       "name": "Desktop & Laptop Components"
+      },
+      "l3": {
+       "id": 601783,
+       "name": "Monitors"
+      }
+     },
+     "ceiling_price": 76.47,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/ec90892c318b4d028b68e36c9627cdb9~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735473160712390590",
+     "floor_price": 76.47,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-13",
+     "launch_time": 1778666761,
+     "price_display": "76.467 ₫",
+     "product_id": "1735473160712390590",
+     "product_rating": 4.3,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735473160712390590?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "M1- thùng 10 gói khăn ướt lau bếp đa năng hương chanh thơm mát an toàn tự nhiên"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2160417677,
+     "last_28d_units_sold": 27767,
+     "last_7d_gmv": 656085640,
+     "last_7d_units_sold": 8387,
+     "last_90d_gmv": 3976425849,
+     "last_90d_units_sold": 51391,
+     "total_gmv": 3976425849,
+     "total_units_sold": 51391,
+     "yesterday_gmv": 103918653,
+     "yesterday_units_sold": 1359
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5d83eaf54a5d44c62b19100737bbda0d~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494329605554014142",
+     "shop_name": "HUNGDO.STORE",
+     "total_units_sold": 190165
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 18,
+     "linked_video_count": 24
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 22,
+       "name": "Home Improvement"
+      },
+      "l2": {
+       "id": 872712,
+       "name": "Kitchen Fixtures"
+      },
+      "l3": {
+       "id": 895624,
+       "name": "Kitchen Taps"
+      }
+     },
+     "ceiling_price": 91.93,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/e6eee5432dc448479d7d5b49c59b06fc~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737138014618223681",
+     "floor_price": 91.93,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-23",
+     "launch_time": 1787415229,
+     "price_display": "91.927 ₫",
+     "product_id": "1737138014618223681",
+     "product_rating": 5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737138014618223681?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COMBO 60 Khăn Lau Sợi Tre Microfiber , 1 Cuộn 20 Khăn Lau Kích Thước 20cm x 20cm Khăn Lau Đa Năng Tái Sử Dụng An Toàn Thân Thiện Môi Trường Tiết Kiệm MTK"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2024212953,
+     "last_28d_units_sold": 18202,
+     "last_7d_gmv": 112198,
+     "last_7d_units_sold": 1,
+     "last_90d_gmv": 27205183048,
+     "last_90d_units_sold": 233837,
+     "total_gmv": 27409508148,
+     "total_units_sold": 235650,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/6a72ae60f76343b5a13a0dd33b38a7c2~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494744051538561089",
+     "shop_name": "Minh Tổng Kho 89",
+     "total_units_sold": 1295404
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 288,
+     "linked_video_count": 987
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600409,
+       "name": "Cleaning Cloths"
+      }
+     },
+     "ceiling_price": 72.05,
+     "commission_rate_percent": 13.5,
+     "cover_url": "https://s.500fd.com/tt_product/83dd4c0ca23d4afe9131c8d35e8f1da5~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736476076841862527",
+     "floor_price": 16.63,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-11",
+     "launch_time": 1783770866,
+     "price_display": "16.625 ₫  -  72.048 ₫",
+     "product_id": "1736476076841862527",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736476076841862527?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 10 Khăn Rửa Chén Lưới Kim Loại 20x20cm, Khăn Lau Bếp Đa Năng Không Mài Mòn, Cọ Rửa Xoong Nồi Chén Bát, Lau Bồn Rửa, Làm Sạch Dầu Mỡ, Dễ Giặt Nhanh Khô, Dùng Cho Nhà Bếp Gia Đình"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 207010107,
+     "last_28d_units_sold": 12494,
+     "last_7d_gmv": 42692581,
+     "last_7d_units_sold": 2556,
+     "last_90d_gmv": 249971756,
+     "last_90d_units_sold": 15213,
+     "total_gmv": 269395689,
+     "total_units_sold": 16348,
+     "yesterday_gmv": 5153750,
+     "yesterday_units_sold": 310
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4d79b92817d74d8da9d5686e73bdcc47~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494486966167111039",
+     "shop_name": "Thế Giới Dụng Cụ Pin",
+     "total_units_sold": 119864
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 151,
+     "linked_video_count": 554
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600409,
+       "name": "Cleaning Cloths"
+      }
+     },
+     "ceiling_price": 187.55,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/94e3fe6d1fdf4a0d86df24bcf219232e~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735493160367457507",
+     "floor_price": 28.42,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-24",
+     "launch_time": 1779586757,
+     "price_display": "28.415 ₫  -  187.545 ₫",
+     "product_id": "1735493160367457507",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735493160367457507?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Khăn Superfine Fiber 650gsm - Siêu  Thấm Hút - Khăn Lau Đa Năng Cao Cấp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 221601155,
+     "last_28d_units_sold": 7898,
+     "last_7d_gmv": 37200032,
+     "last_7d_units_sold": 1315,
+     "last_90d_gmv": 368536771,
+     "last_90d_units_sold": 13692,
+     "total_gmv": 552024213,
+     "total_units_sold": 20148,
+     "yesterday_gmv": 3409800,
+     "yesterday_units_sold": 120
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1efa5adcf57142c4b73717633e711041~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495660485788862691",
+     "shop_name": "BinBon Decor",
+     "total_units_sold": 1330682
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 5,
+     "linked_video_count": 6
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600409,
+       "name": "Cleaning Cloths"
+      }
+     },
+     "ceiling_price": 104.63,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/af30df93817e469799082bff76b4e725~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737377264064366230",
+     "floor_price": 104.63,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-07",
+     "launch_time": 1788710926,
+     "price_display": "104.630 ₫",
+     "product_id": "1737377264064366230",
+     "product_rating": 1,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737377264064366230?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Khăn Lau Đa Năng Microfiber Cao Cấp Thấm Hút Tốt"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 840558221,
+     "last_28d_units_sold": 7579,
+     "last_7d_gmv": 167402736,
+     "last_7d_units_sold": 1545,
+     "last_90d_gmv": 1420967843,
+     "last_90d_units_sold": 12841,
+     "total_gmv": 1420967843,
+     "total_units_sold": 12841,
+     "yesterday_gmv": 24483420,
+     "yesterday_units_sold": 234
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/de591f22751b40b9b3d45b2e5b66b552~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494255444404045462",
+     "shop_name": "Tiện ích gia đình 03",
+     "total_units_sold": 31950
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1861,
+     "linked_video_count": 6162
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600409,
+       "name": "Cleaning Cloths"
+      }
+     },
+     "ceiling_price": 102.28,
+     "commission_rate_percent": 11,
+     "cover_url": "https://s.500fd.com/tt_product/755b3d29ca8a4c39b844572bc01a82b9~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733622738375181551",
+     "floor_price": 44.82,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-12-23",
+     "launch_time": 1766460023,
+     "price_display": "44.820 ₫  -  102.282 ₫",
+     "product_id": "1733622738375181551",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733622738375181551?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Thùng 3-5-10 Gói Khăn Ướt Lau Bếp HAMI Việt Nam– Hương Chanh Thơm Mát, Đa Năng Tiện Lợi, Làm Sạch Dầu Mỡ Nhanh Chóng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 308623882,
+     "last_28d_units_sold": 7014,
+     "last_7d_gmv": 79511237,
+     "last_7d_units_sold": 1802,
+     "last_90d_gmv": 1195549123,
+     "last_90d_units_sold": 29052,
+     "total_gmv": 4593823210,
+     "total_units_sold": 115091,
+     "yesterday_gmv": 13625280,
+     "yesterday_units_sold": 304
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/9314428d6adb40cf907823d689a1d537~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494251639646881007",
+     "shop_name": "Shop Mẹ Tôm 1997",
+     "total_units_sold": 191906
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 0,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 993544,
+       "name": "Tissues & Napkins"
+      }
+     },
+     "ceiling_price": 217.35,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/e95697d3c9a443b8b03a47d0374de367~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736786192446817366",
+     "floor_price": 217.35,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-01",
+     "launch_time": 1785595929,
+     "price_display": "217.346 ₫",
+     "product_id": "1736786192446817366",
+     "product_rating": 0,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736786192446817366?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[QUÀ TẶNG ĐỘC QUYỀN] 1 Bịch khăn Mặt Khô Mini Dùng 1 Lần 7 Tờ La u Khô, Lau Ướt, Vệ Sinh Tiện Dụng, An Toàn Mềm Mịn, Khăn Mặt Khô Mini Bỏ Túi Đa Năng Dễ Dàng Mang Đi KMK VTG84 RDS17"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1524364681,
+     "last_28d_units_sold": 6765,
+     "last_7d_gmv": 582446317,
+     "last_7d_units_sold": 2627,
+     "last_90d_gmv": 3186137926,
+     "last_90d_units_sold": 13997,
+     "total_gmv": 3186137926,
+     "total_units_sold": 13997,
+     "yesterday_gmv": 869384,
+     "yesterday_units_sold": 4
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c03ef8a8ed52468392aacbf17a7da905~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494634498017298518",
+     "shop_name": "TOPGIAHN",
+     "total_units_sold": 59992769
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 233,
+     "linked_video_count": 1975
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600409,
+       "name": "Cleaning Cloths"
+      }
+     },
+     "ceiling_price": 86.5,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/2a38b1c44f804324bf0305c3da02b63c~tplv-aphluv4xwc-crop-webp:1011:1011.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736165804568577652",
+     "floor_price": 48.66,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-21",
+     "launch_time": 1782043200,
+     "price_display": "48.655 ₫  -  86.497 ₫",
+     "product_id": "1736165804568577652",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736165804568577652?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Combo 10-20]Khăn Lau Đa Năng Thổ Cẩm 25x35cm Chất Cotton Thấm Hút Tốt - Vệ Sinh Bàn Ghế, Bếp, Lau Xe"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 330301569,
+     "last_28d_units_sold": 6621,
+     "last_7d_gmv": 80793855,
+     "last_7d_units_sold": 1553,
+     "last_90d_gmv": 1281402935,
+     "last_90d_units_sold": 26957,
+     "total_gmv": 1292407190,
+     "total_units_sold": 27176,
+     "yesterday_gmv": 12163750,
+     "yesterday_units_sold": 250
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a336ae7d8f094354825d48cf15876d47~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494928581265230452",
+     "shop_name": "TIỆM BÀ SƯƠNG",
+     "total_units_sold": 622619
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

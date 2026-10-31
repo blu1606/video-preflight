@@ -1,0 +1,10 @@
+{
+  "name": "Ecommerce policy baseline",
+  "version": "0.1",
+  "created_on": "2026-10-31",
+  "jurisdiction_focus": "Vietnam",
+  "rules": 16,
+  "sources": 9,
+  "tests": 6,
+  "disclaimer": "Paraphrased selected policy rules, not complete legal text. Provisional Meta rules need source verification. Do not treat output as platform approval."
+}

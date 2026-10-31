@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "men vi sinh",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 348,
+     "linked_video_count": 2441
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 17,
+       "name": "Pet Supplies"
+      },
+      "l2": {
+       "id": 815624,
+       "name": "Dog & Cat Litter"
+      },
+      "l3": {
+       "id": 816136,
+       "name": "Odor & Stain Removers"
+      }
+     },
+     "ceiling_price": 364.31,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/61cf6f010cef419a885e08531a1b5919~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735562104312006470",
+     "floor_price": 43.15,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-25",
+     "launch_time": 1779719704,
+     "price_display": "43.145 ₫  -  364.308 ₫",
+     "product_id": "1735562104312006470",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735562104312006470?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "GP-GUARD – Bột Rắc Chuồng Men Vi Sinh Khử Mùi, Hút Ẩm Cho Heo Sơ Sinh, Heo Nái, Gà, Gia Súc Gia Cầm - GOLDEN PHARMA"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 771269776,
+     "last_28d_units_sold": 17746,
+     "last_7d_gmv": 153753562,
+     "last_7d_units_sold": 3519,
+     "last_90d_gmv": 2129823147,
+     "last_90d_units_sold": 48585,
+     "total_gmv": 2275702293,
+     "total_units_sold": 52001,
+     "yesterday_gmv": 21960805,
+     "yesterday_units_sold": 509
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5bec02774c524ce79043d023333f2733~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495007768978688838",
+     "shop_name": "Dược phẩm vàng",
+     "total_units_sold": 86538
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 656,
+     "linked_video_count": 5340
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 22,
+       "name": "Home Improvement"
+      },
+      "l2": {
+       "id": 873352,
+       "name": "Garden Supplies"
+      },
+      "l3": {
+       "id": 980232,
+       "name": "Garden Soil"
+      }
+     },
+     "ceiling_price": 460.12,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/2176984b51e44d2daa74497e7c921cd7~tplv-aphluv4xwc-crop-webp:4167:4167.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732318033583178878",
+     "floor_price": 59.13,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-04",
+     "launch_time": 1756959355,
+     "price_display": "59.128 ₫  -  460.123 ₫",
+     "product_id": "1732318033583178878",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732318033583178878?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Trichoderma AAA Dế Mèn – Phòng ngừa thối rễ, vàng lá, cải tạo đất, ủ phân 250g, 500g, 1kg"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 636256550,
+     "last_28d_units_sold": 10842,
+     "last_7d_gmv": 181791127,
+     "last_7d_units_sold": 3164,
+     "last_90d_gmv": 2910942820,
+     "last_90d_units_sold": 55614,
+     "total_gmv": 10171127533,
+     "total_units_sold": 145669,
+     "yesterday_gmv": 38492328,
+     "yesterday_units_sold": 651
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/060e5e34449b42c5bd78944bb44b29b7~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494101516484707454",
+     "shop_name": "DẾ MÈN VI SINH",
+     "total_units_sold": 187455
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1230,
+     "linked_video_count": 4713
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 611.46,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/8bfff686b0c841e58a1faef2246bbba2~tplv-aphluv4xwc-crop-webp:2500:2500.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734372293632755423",
+     "floor_price": 213.84,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-02-11",
+     "launch_time": 1770783123,
+     "price_display": "213.838 ₫  -  611.461 ₫",
+     "product_id": "1734372293632755423",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734372293632755423?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men Vi Sinh LAGUMI Probiotic For Women TPBVSK Dành Cho Phụ Khoa - 7 Tỷ CFU Lợi Khuẩn, Tăng Cường Sức Đề Kháng, Hỗ Trợ Giảm Tình Trạng Viêm Nhiễm Và Hôi Ngứa"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1629588089,
+     "last_28d_units_sold": 8122,
+     "last_7d_gmv": 466526728,
+     "last_7d_units_sold": 2264,
+     "last_90d_gmv": 4501444644,
+     "last_90d_units_sold": 27524,
+     "total_gmv": 12196304963,
+     "total_units_sold": 69102,
+     "yesterday_gmv": 61157668,
+     "yesterday_units_sold": 286
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/fde842c0c379492f89dfe702c96f34b5~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494415720577795807",
+     "shop_name": "Lagumi - Việt Nam",
+     "total_units_sold": 130496
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 32,
+     "linked_video_count": 250
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 29.67,
+     "commission_rate_percent": 3,
+     "cover_url": "https://s.500fd.com/tt_product/77d45831c8da438ca92fbaba3240f0c4~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732301384469349509",
+     "floor_price": 29.67,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-08-29",
+     "launch_time": 1756471475,
+     "price_display": "29.672 ₫",
+     "product_id": "1732301384469349509",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732301384469349509?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men Vi Sinh Bidisubtilis New Bidiphar  – Hỗ Trợ Tiêu Hóa, Cân Bằng Hệ Vi Sinh Đường Ruột – Hộp 20 Gói"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 252890032,
+     "last_28d_units_sold": 7898,
+     "last_7d_gmv": 65999258,
+     "last_7d_units_sold": 2083,
+     "last_90d_gmv": 485114162,
+     "last_90d_units_sold": 16154,
+     "total_gmv": 553107678,
+     "total_units_sold": 18536,
+     "yesterday_gmv": 8308160,
+     "yesterday_units_sold": 280
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/995e3eb4c1554b7f86b475234a5d6be0~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496153406389258373",
+     "shop_name": "Dược liệu Organic Biormed",
+     "total_units_sold": 20441
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 680,
+     "linked_video_count": 3847
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 17,
+       "name": "Pet Supplies"
+      },
+      "l2": {
+       "id": 818184,
+       "name": "Dog & Cat Healthcare"
+      },
+      "l3": {
+       "id": 818568,
+       "name": "Vitamins & Supplements"
+      }
+     },
+     "ceiling_price": 211.45,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/51b0b30849aa460993f7030f39cf8de6~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732958483331122598",
+     "floor_price": 73.32,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-12",
+     "launch_time": 1762917955,
+     "price_display": "73.317 ₫  -  211.450 ₫",
+     "product_id": "1732958483331122598",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 9,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732958483331122598?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men vi sinh & men tiêu hoá cho mèo và chó PetHealer – Hỗ trợ tiêu chảy, điều chỉnh đường ruột, tăng cảm giác ngon miệng – 5g/túi, 10 túi/hộp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 464921713,
+     "last_28d_units_sold": 5683,
+     "last_7d_gmv": 118759079,
+     "last_7d_units_sold": 1532,
+     "last_90d_gmv": 1424715570,
+     "last_90d_units_sold": 17173,
+     "total_gmv": 7896551150,
+     "total_units_sold": 85992,
+     "yesterday_gmv": 19209054,
+     "yesterday_units_sold": 262
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/472afc0e4d194df684cc5b658625f5fc~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8648915980763497894",
+     "shop_name": "Pethealer Pet Supplies",
+     "total_units_sold": 445541
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1600,
+     "linked_video_count": 7253
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879112,
+       "name": "Baby Care & Health"
+      },
+      "l3": {
+       "id": 947592,
+       "name": "Baby Vitamins & Supplements"
+      }
+     },
+     "ceiling_price": 148,
+     "commission_rate_percent": 25,
+     "cover_url": "https://s.500fd.com/tt_product/a341f9b3aa5345c4ac041ef922cbbf11~tplv-aphluv4xwc-crop-webp:1800:1800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729686183220119726",
+     "floor_price": 250.03,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-08-24",
+     "launch_time": 1692827313,
+     "price_display": "250.025 ₫  -  1.500.148 ₫",
+     "product_id": "1729686183220119726",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729686183220119726?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men vi sinh cho bé FitKid Royal - Bào tử lợi khuẩn Anh Quốc dành cho trẻ biếng ăn, kém hấp thu 20 ống x 5ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1249655128,
+     "last_28d_units_sold": 5254,
+     "last_7d_gmv": 287472654,
+     "last_7d_units_sold": 1189,
+     "last_90d_gmv": 1878250730,
+     "last_90d_units_sold": 8305,
+     "total_gmv": 31313615049,
+     "total_units_sold": 129179,
+     "yesterday_gmv": 37253725,
+     "yesterday_units_sold": 149
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/dcee12ecc4a448c3a12aee07e574a964~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494701143042001070",
+     "shop_name": "H&H Global - Shop Chính Hãng",
+     "total_units_sold": 260620
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 216,
+     "linked_video_count": 974
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849672,
+       "name": "Nasal & Oral Care"
+      },
+      "l3": {
+       "id": 601690,
+       "name": "Teeth Whitening\t"
+      }
+     },
+     "ceiling_price": 188.7,
+     "commission_rate_percent": 12,
+     "cover_url": "https://s.500fd.com/tt_product/17c32b9094f7477eb804b33ff70a9998~tplv-aphluv4xwc-crop-webp:2560:2560.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734184413233711099",
+     "floor_price": 119.66,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-02-01",
+     "launch_time": 1769951160,
+     "price_display": "119.662 ₫  -  188.698 ₫",
+     "product_id": "1734184413233711099",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734184413233711099?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COD Viên/hạt làm sạch răng chứa men vi sinh giúp loại bỏ vết ố và mảng bám, làm trắng răng và khử mùi hôi miệng – kem đánh răng không cần chải."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 539410269,
+     "last_28d_units_sold": 4641,
+     "last_7d_gmv": 101871573,
+     "last_7d_units_sold": 869,
+     "last_90d_gmv": 1277535763,
+     "last_90d_units_sold": 11573,
+     "total_gmv": 2181401730,
+     "total_units_sold": 19523,
+     "yesterday_gmv": 15197074,
+     "yesterday_units_sold": 127
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/8aac6d670c0e47aaab3f16089544d477~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494384949304723451",
+     "shop_name": "Trung tâm chăm sóc nha khoa",
+     "total_units_sold": 19727
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1142,
+     "linked_video_count": 10448
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 490,
+     "commission_rate_percent": 20,
+     "cover_url": "https://s.500fd.com/tt_product/53c5abc6b5cd4724a16d2c567aabbc6d~tplv-aphluv4xwc-crop-webp:1500:1500.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729607290543704546",
+     "floor_price": 206,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-04-13",
+     "launch_time": 1681394748,
+     "price_display": "205.999 ₫  -  1.699.490 ₫",
+     "product_id": "1729607290543704546",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 30,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729607290543704546?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men vi sinh dùng cho Viêm Đại Tràng, Táo bón, Tiêu chảy - LiveSpo COLON 3 tỷ bào tử lợi khuẩn (Hộp 10 ống x 5ml)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 856552920,
+     "last_28d_units_sold": 3920,
+     "last_7d_gmv": 181914792,
+     "last_7d_units_sold": 848,
+     "last_90d_gmv": 2371590202,
+     "last_90d_units_sold": 12061,
+     "total_gmv": 19907218830,
+     "total_units_sold": 66050,
+     "yesterday_gmv": 10093951,
+     "yesterday_units_sold": 49
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/6c06f753cd9947b580ba213aae784fc8~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494808342562769378",
+     "shop_name": "LiveSpo - Chính Hãng",
+     "total_units_sold": 1081122
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 111,
+     "linked_video_count": 1662
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600812,
+       "name": "Household Cleaners"
+      }
+     },
+     "ceiling_price": 81.86,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/710045742dec4974b048ae0bd66d815c~tplv-aphluv4xwc-crop-webp:1926:1926.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729728497476799447",
+     "floor_price": 76.4,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-10-04",
+     "launch_time": 1696352304,
+     "price_display": "76.399 ₫  -  81.856 ₫",
+     "product_id": "1729728497476799447",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729728497476799447?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 2 Gói Men Vi Sinh, Men Xử Lý Bể Phốt Bio Giúp Loại Bỏ Mùi Hôi Hầm Cầu Phân Hủy Nhanh Gói 250g Làm Sạch"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 305942957,
+     "last_28d_units_sold": 3905,
+     "last_7d_gmv": 75240795,
+     "last_7d_units_sold": 969,
+     "last_90d_gmv": 933388881,
+     "last_90d_units_sold": 12278,
+     "total_gmv": 3150933803,
+     "total_units_sold": 42236,
+     "yesterday_gmv": 12376638,
+     "yesterday_units_sold": 162
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/8b71973858dd48dba9a8844706a1998f~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494703454716333015",
+     "shop_name": "Tiện Ích Thông Minh 6.0",
+     "total_units_sold": 110427
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 98,
+     "linked_video_count": 422
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 17,
+       "name": "Pet Supplies"
+      },
+      "l2": {
+       "id": 815624,
+       "name": "Dog & Cat Litter"
+      },
+      "l3": {
+       "id": 816136,
+       "name": "Odor & Stain Removers"
+      }
+     },
+     "ceiling_price": 56.99,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/c75a8692a15c463888a3407cb1abc65d~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736468750192904185",
+     "floor_price": 13.68,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-12",
+     "launch_time": 1783837042,
+     "price_display": "13.676 ₫  -  56.991 ₫",
+     "product_id": "1736468750192904185",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736468750192904185?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "HẠT KHỬ MÙI CÁT MÈO BAKING SODA 100G – KHỬ MÙI HÔI, MEN VI SINH KHÁNG KHUẨN, GIỮ KHAY CÁT LUÔN THƠM"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 51773127,
+     "last_28d_units_sold": 3877,
+     "last_7d_gmv": 14849129,
+     "last_7d_units_sold": 1101,
+     "last_90d_gmv": 161453965,
+     "last_90d_units_sold": 13990,
+     "total_gmv": 163827888,
+     "total_units_sold": 14209,
+     "yesterday_gmv": 2311244,
+     "yesterday_units_sold": 169
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/be2e2d9fe003468c9b663b319a5c15fb~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494660962245249017",
+     "shop_name": "AmitaVet",
+     "total_units_sold": 95774
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

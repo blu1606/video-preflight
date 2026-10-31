@@ -1,0 +1,85 @@
+{
+  "model": "gpt-6-luna",
+  "answer": {
+    "headline": "Video giữ được người xem nhưng chưa chỉ rõ lý do mua và cách mua.",
+    "summary": "Điểm nghẽn chính là video chưa nêu rõ vấn đề sản phẩm giải quyết, offer và CTA, nên người xem chưa được dẫn tới bước mua. Bản phân tích dùng số liệu mô phỏng, hãy xem đây là gợi ý để ưu tiên chỉnh sửa.",
+    "insights": [
+      {
+        "text": "Hook còn chung chung, và video chưa cho người xem nhiều lý do để lưu hoặc chia sẻ.",
+        "tone": "bad",
+        "refs": [
+          "V02",
+          "V07"
+        ]
+      },
+      {
+        "text": "Video chưa gắn sản phẩm với một vấn đề cụ thể; offer và CTA mua hàng cũng chưa rõ. Phần thể hiện cách dùng sản phẩm còn yếu.",
+        "tone": "bad",
+        "refs": [
+          "C02",
+          "C07",
+          "C08",
+          "C03"
+        ]
+      },
+      {
+        "text": "Đường mua còn thiếu thông tin hoặc có trở ngại. Listing cũng thiếu một số chi tiết cần thiết, còn mức giá chưa có điểm khác biệt rõ.",
+        "tone": "bad",
+        "refs": [
+          "C10",
+          "S01",
+          "S03"
+        ]
+      },
+      {
+        "text": "Theo chẩn đoán, video có lượt xem nhưng chưa dẫn người xem tới sản phẩm.",
+        "tone": "info",
+        "refs": [
+          "diagnosis"
+        ]
+      }
+    ],
+    "fixes": [
+      {
+        "text": "Thêm CTA thật rõ, hướng người xem tới giỏ hàng hoặc sản phẩm cần mua.",
+        "why": "Video hiện chưa có hành động mua cụ thể để người xem làm theo.",
+        "t": 7.039999999999999,
+        "refs": [
+          "C08",
+          "diagnosis"
+        ]
+      },
+      {
+        "text": "Nêu rõ offer trong video, chẳng hạn điều kiện hoặc lợi ích mua hàng nếu có.",
+        "why": "Người xem hiện khó nhận ra video đang đưa ra ưu đãi nào.",
+        "t": 4.039999999999999,
+        "refs": [
+          "C07"
+        ]
+      },
+      {
+        "text": "Mở đầu bằng một vấn đề cụ thể của khách hàng, rồi quay rõ sản phẩm giải quyết vấn đề đó như thế nào.",
+        "why": "Hook đang chung chung và phần trình diễn sản phẩm chưa đủ rõ để người xem hiểu cách dùng.",
+        "t": 0,
+        "refs": [
+          "V02",
+          "C02",
+          "C03"
+        ]
+      }
+    ],
+    "groups": {
+      "viral_potential": "Khả năng Viral còn hạn chế: lời mở đầu chưa cụ thể, nội dung chưa tạo nhiều giá trị để lưu hoặc chia sẻ.",
+      "conversion_potential": "Khả năng Conversion là điểm cần ưu tiên cải thiện. Video thiếu vấn đề cụ thể, offer và CTA rõ ràng; đường mua cũng còn thiếu thông tin.",
+      "sku_market": "Thông tin listing còn thiếu chi tiết cần thiết; giá gần mặt bằng nhưng chưa thể hiện rõ điểm khác biệt.",
+      "shop_health": "Tình hình shop cần được xem xét riêng, không phải điểm của video. Các dấu hiệu về hiệu quả quảng cáo và xử lý trải nghiệm sau mua cần được chú ý.",
+      "policy_compliance": "Có nội dung trong tiêu đề listing cần xem lại theo Policy; đây là tín hiệu từ bước rà soát tự động, không phải kết luận vi phạm."
+    },
+    "policy": "Tiêu đề Shopee có cụm “hot trend” được đánh dấu cần xem lại. Đây là phát hiện của rule engine bản baseline, không phải kết luận vi phạm chắc chắn.",
+    "shop": "Shop health là tình hình của shop, không phải điểm video. Dữ liệu gợi ý cần xem lại hiệu quả quảng cáo và tình hình đánh giá, xử lý sau bán."
+  },
+  "token_usage": {
+    "prompt_tokens": 2230,
+    "completion_tokens": 1636
+  }
+}

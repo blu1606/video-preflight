@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "Men Stay sữa rửa mặt",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2043,
+     "linked_video_count": 7074
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849288,
+       "name": "Men's Care"
+      },
+      "l3": {
+       "id": 601627,
+       "name": "Skincare\t"
+      }
+     },
+     "ceiling_price": 439.93,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/87c0c2ab742f4adbbf082bb30e18107a~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729438480898231207",
+     "floor_price": 189.35,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2022-10-13",
+     "launch_time": 1665596017,
+     "price_display": "189.349 ₫  -  439.925 ₫",
+     "product_id": "1729438480898231207",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 7,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729438480898231207?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Sữa rửa mặt nam Men Stay Simplicity Facial Cleanser 3 tác động giúp làm sạch sâu bụi bẩn và dầu nhờn, hạn chế các tác nhân gây mụn, giảm bã nhờn hiệu quả 100g"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2469759696,
+     "last_28d_units_sold": 14067,
+     "last_7d_gmv": 543682274,
+     "last_7d_units_sold": 3063,
+     "last_90d_gmv": 6631373361,
+     "last_90d_units_sold": 41871,
+     "total_gmv": 31662836325,
+     "total_units_sold": 201861,
+     "yesterday_gmv": 68165640,
+     "yesterday_units_sold": 360
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca655de0eb9d4ed29d45fcb0bf92ba09~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494671501531384743",
+     "shop_name": "Men Stay Simplicity",
+     "total_units_sold": 689286
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 194,
+     "linked_video_count": 888
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849288,
+       "name": "Men's Care"
+      },
+      "l3": {
+       "id": 601627,
+       "name": "Skincare\t"
+      }
+     },
+     "ceiling_price": 336.67,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/85e988d526f7419ca420e97ae54d059c~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733423131386742695",
+     "floor_price": 336.67,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-12-05",
+     "launch_time": 1764900364,
+     "price_display": "336.672 ₫",
+     "product_id": "1733423131386742695",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733423131386742695?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 2 Sữa rửa mặt nam Men Stay Simplicity Facial Cleanser 3 tác động giúp sạch dầu nhờn, hạn chế tác nhân gây mụn, giúp sáng da 100gx2"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 551527604,
+     "last_28d_units_sold": 1744,
+     "last_7d_gmv": 130846300,
+     "last_7d_units_sold": 402,
+     "last_90d_gmv": 1567528848,
+     "last_90d_units_sold": 5105,
+     "total_gmv": 3029695083,
+     "total_units_sold": 12391,
+     "yesterday_gmv": 27270432,
+     "yesterday_units_sold": 81
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca655de0eb9d4ed29d45fcb0bf92ba09~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494671501531384743",
+     "shop_name": "Men Stay Simplicity",
+     "total_units_sold": 689286
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 498,
+     "linked_video_count": 1440
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849288,
+       "name": "Men's Care"
+      },
+      "l3": {
+       "id": 601627,
+       "name": "Skincare\t"
+      }
+     },
+     "ceiling_price": 425.19,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/a584557a861d404e9c34d434ec174d1d~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729622935655844775",
+     "floor_price": 425.19,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-05-23",
+     "launch_time": 1684822663,
+     "price_display": "425.185 ₫",
+     "product_id": "1729622935655844775",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729622935655844775?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo Acne Duo giúp giảm mụn sưng viêm cho nam Men Stay Simplicity: Sữa rửa mặt 100g và Serum Calm 30ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 590465684,
+     "last_28d_units_sold": 1540,
+     "last_7d_gmv": 117026168,
+     "last_7d_units_sold": 296,
+     "last_90d_gmv": 1767556784,
+     "last_90d_units_sold": 4847,
+     "total_gmv": 12863502896,
+     "total_units_sold": 22083,
+     "yesterday_gmv": 17432585,
+     "yesterday_units_sold": 41
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca655de0eb9d4ed29d45fcb0bf92ba09~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494671501531384743",
+     "shop_name": "Men Stay Simplicity",
+     "total_units_sold": 689286
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 228,
+     "linked_video_count": 1040
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849288,
+       "name": "Men's Care"
+      },
+      "l3": {
+       "id": 601627,
+       "name": "Skincare\t"
+      }
+     },
+     "ceiling_price": 336.17,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/57d9b37fdc99437ca88f1775fe7bde63~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732200767872404391",
+     "floor_price": 177.1,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-04-05",
+     "launch_time": 1743814737,
+     "price_display": "177.097 ₫  -  336.166 ₫",
+     "product_id": "1732200767872404391",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732200767872404391?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[MSS] Sữa rửa mặt cho nam Men Stay Simplicity Facial Cleanser 100g"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 157601543,
+     "last_28d_units_sold": 876,
+     "last_7d_gmv": 32071399,
+     "last_7d_units_sold": 180,
+     "last_90d_gmv": 501119395,
+     "last_90d_units_sold": 2932,
+     "total_gmv": 1421815712,
+     "total_units_sold": 11112,
+     "yesterday_gmv": 4781619,
+     "yesterday_units_sold": 27
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca655de0eb9d4ed29d45fcb0bf92ba09~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494671501531384743",
+     "shop_name": "Men Stay Simplicity",
+     "total_units_sold": 689286
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 195,
+     "linked_video_count": 496
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849288,
+       "name": "Men's Care"
+      },
+      "l3": {
+       "id": 601627,
+       "name": "Skincare\t"
+      }
+     },
+     "ceiling_price": 394.22,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/8625fb25b97e4ed1a8683179dcacb5ab~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732082065637804967",
+     "floor_price": 325.75,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-03-14",
+     "launch_time": 1741942034,
+     "price_display": "325.747 ₫  -  394.222 ₫",
+     "product_id": "1732082065637804967",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732082065637804967?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo Brightening Duo Pro giúp dưỡng trắng sáng mờ thâm Men Stay Simplicity: Sữa rửa mặt 100g & Serum Vital Intensive 30ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 257937939,
+     "last_28d_units_sold": 743,
+     "last_7d_gmv": 90159978,
+     "last_7d_units_sold": 264,
+     "last_90d_gmv": 597296383,
+     "last_90d_units_sold": 1619,
+     "total_gmv": 7569278057,
+     "total_units_sold": 7964,
+     "yesterday_gmv": 11401145,
+     "yesterday_units_sold": 35
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca655de0eb9d4ed29d45fcb0bf92ba09~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494671501531384743",
+     "shop_name": "Men Stay Simplicity",
+     "total_units_sold": 689286
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 338,
+     "linked_video_count": 801
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849288,
+       "name": "Men's Care"
+      },
+      "l3": {
+       "id": 601627,
+       "name": "Skincare\t"
+      }
+     },
+     "ceiling_price": 527.81,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/326179ae83c94ec0b6db300317b400ac~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729622937416076199",
+     "floor_price": 527.81,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-05-23",
+     "launch_time": 1684822663,
+     "price_display": "527.809 ₫",
+     "product_id": "1729622937416076199",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729622937416076199?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo Acne Trio giúp chăm da dầu mụn cho nam Men Stay Simplicity: Sữa rửa mặt 100g, Serum Calm 30ml, Kem dưỡng ẩm 80g"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 277776000,
+     "last_28d_units_sold": 504,
+     "last_7d_gmv": 44185603,
+     "last_7d_units_sold": 79,
+     "last_90d_gmv": 673787657,
+     "last_90d_units_sold": 1241,
+     "total_gmv": 6984805942,
+     "total_units_sold": 11682,
+     "yesterday_gmv": 4222472,
+     "yesterday_units_sold": 8
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca655de0eb9d4ed29d45fcb0bf92ba09~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494671501531384743",
+     "shop_name": "Men Stay Simplicity",
+     "total_units_sold": 689286
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 389,
+     "linked_video_count": 1117
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849288,
+       "name": "Men's Care"
+      },
+      "l3": {
+       "id": 601627,
+       "name": "Skincare\t"
+      }
+     },
+     "ceiling_price": 728.27,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/2e6960db9e7e41898c16c2818d81a06c~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729438489290967975",
+     "floor_price": 543.95,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2022-10-11",
+     "launch_time": 1665426930,
+     "price_display": "543.946 ₫  -  728.267 ₫",
+     "product_id": "1729438489290967975",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729438489290967975?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo Brightening Trio Pro dưỡng trắng sáng da mờ thâm sạm cho nam phiên bản cải tiến Men Stay Simplicity: Sữa rửa mặt 100g, Serum Vital Intensive 30ml & Kem dưỡng ẩm 80g"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 194508146,
+     "last_28d_units_sold": 363,
+     "last_7d_gmv": 49319600,
+     "last_7d_units_sold": 92,
+     "last_90d_gmv": 507726475,
+     "last_90d_units_sold": 903,
+     "total_gmv": 10281732937,
+     "total_units_sold": 17173,
+     "yesterday_gmv": 7071298,
+     "yesterday_units_sold": 13
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca655de0eb9d4ed29d45fcb0bf92ba09~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494671501531384743",
+     "shop_name": "Men Stay Simplicity",
+     "total_units_sold": 689286
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 278,
+     "linked_video_count": 703
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849288,
+       "name": "Men's Care"
+      },
+      "l3": {
+       "id": 601627,
+       "name": "Skincare\t"
+      }
+     },
+     "ceiling_price": 396.15,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/7dc3811e82b6485787247f95f0fb2660~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729610011810433959",
+     "floor_price": 374.91,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-04-22",
+     "launch_time": 1682136433,
+     "price_display": "374.907 ₫  -  396.148 ₫",
+     "product_id": "1729610011810433959",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729610011810433959?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo Starter Duo giúp sạch dầu, dưỡng ẩm vượt trội cho nam Men Stay Simplicity: Sữa rửa mặt 100g và Kem dưỡng ẩm 80g"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 67387401,
+     "last_28d_units_sold": 184,
+     "last_7d_gmv": 14230845,
+     "last_7d_units_sold": 39,
+     "last_90d_gmv": 226924271,
+     "last_90d_units_sold": 647,
+     "total_gmv": 20062523910,
+     "total_units_sold": 36471,
+     "yesterday_gmv": 2624349,
+     "yesterday_units_sold": 7
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca655de0eb9d4ed29d45fcb0bf92ba09~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494671501531384743",
+     "shop_name": "Men Stay Simplicity",
+     "total_units_sold": 689286
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 11,
+     "linked_video_count": 13
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849288,
+       "name": "Men's Care"
+      },
+      "l3": {
+       "id": 601627,
+       "name": "Skincare\t"
+      }
+     },
+     "ceiling_price": 341.29,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/f0813a2e32874682ad08cda110c865c8~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733930788744693671",
+     "floor_price": 341.29,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-01-10",
+     "launch_time": 1768008387,
+     "price_display": "341.291 ₫",
+     "product_id": "1733930788744693671",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733930788744693671?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 2 bước giúp làm sạch da từ nền Men Stay Simplicity Deep Clean Duo gồm Sữa rửa mặt, Tẩy tế bào chết kết hợp mặt nạ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 15653892,
+     "last_28d_units_sold": 48,
+     "last_7d_gmv": 1918499,
+     "last_7d_units_sold": 6,
+     "last_90d_gmv": 61574280,
+     "last_90d_units_sold": 195,
+     "total_gmv": 624550044,
+     "total_units_sold": 560,
+     "yesterday_gmv": 341291,
+     "yesterday_units_sold": 1
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca655de0eb9d4ed29d45fcb0bf92ba09~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494671501531384743",
+     "shop_name": "Men Stay Simplicity",
+     "total_units_sold": 689286
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 42,
+     "linked_video_count": 53
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849288,
+       "name": "Men's Care"
+      },
+      "l3": {
+       "id": 601627,
+       "name": "Skincare\t"
+      }
+     },
+     "ceiling_price": 374.27,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/8e335630333140b6880e18bec7f121d2~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729810666532473373",
+     "floor_price": 196.05,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-12-16",
+     "launch_time": 1702678760,
+     "price_display": "196.046 ₫  -  374.270 ₫",
+     "product_id": "1729810666532473373",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729810666532473373?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Sữa rửa mặt nam Men Stay Simplicity Facial Cleanser 3 tác động giúp làm sạch sâu bụi bẩn và dầu nhờn, hạn chế các tác nhân gây mụn, giảm bã nhờn hiệu quả 100g"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 8630154,
+     "last_28d_units_sold": 47,
+     "last_7d_gmv": 2414108,
+     "last_7d_units_sold": 13,
+     "last_90d_gmv": 23834850,
+     "last_90d_units_sold": 136,
+     "total_gmv": 477162801,
+     "total_units_sold": 2459,
+     "yesterday_gmv": 588138,
+     "yesterday_units_sold": 3
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d4b995092e5e419da155d6046ecab3df~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495297830781880861",
+     "shop_name": "Mosaz.Store",
+     "total_units_sold": 65253
+    }
+   }
+  ],
+  "total": 142
+ }
+}

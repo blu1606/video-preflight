@@ -1,0 +1,22 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 0,
+  "label": "0 Absent",
+  "score": 0.0,
+  "rationale": "Không có bằng chứng về phần trình diễn sử dụng sản phẩm trong video. Vì vậy, bằng chứng phù hợp với mức 0: không có trình diễn hữu dụng.",
+  "key_evidence": [
+    "video.demo_present: false (REAL)",
+    "video.sensory_details: [] (REAL)"
+  ],
+  "evidence_sent": {
+    "video.demo_present": {
+      "value": false,
+      "status": "REAL"
+    },
+    "video.sensory_details": {
+      "value": [],
+      "status": "REAL"
+    }
+  }
+}

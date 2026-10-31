@@ -1,0 +1,25 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 0,
+  "label": "0 Absent",
+  "score": 0.0,
+  "rationale": "Dữ liệu REAL cho biết video không có CTA, nên không thấy hành động mua hàng trong nội dung được kiểm tra. Liên kết sản phẩm được đánh dấu MOCK nên không thể dùng để nâng mức đánh giá.",
+  "key_evidence": [
+    "video.has_cta=false (REAL)"
+  ],
+  "evidence_sent": {
+    "sku.has_product_link": {
+      "value": true,
+      "status": "MOCK"
+    },
+    "video.cta_urgency": {
+      "value": false,
+      "status": "REAL"
+    },
+    "video.has_cta": {
+      "value": false,
+      "status": "REAL"
+    }
+  }
+}

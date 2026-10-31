@@ -1,0 +1,97 @@
+{
+  "model": "gpt-6-luna",
+  "regions": [
+    {
+      "marker_id": "policy:tiktok_ads:TTA-001:0",
+      "box": [
+        0.28,
+        0.95,
+        0.44,
+        0.02
+      ],
+      "label": "Phụ đề về hiệu quả",
+      "confidence": 0.68
+    },
+    {
+      "marker_id": "policy:meta_ads:META-001:0",
+      "box": [
+        0.28,
+        0.95,
+        0.44,
+        0.02
+      ],
+      "label": "Phụ đề về hiệu quả",
+      "confidence": 0.68
+    },
+    {
+      "marker_id": "criterion:C06",
+      "box": [
+        0.0,
+        0.36,
+        1.0,
+        0.55
+      ],
+      "label": "Minh họa hiệu quả trên tay",
+      "confidence": 0.57
+    },
+    {
+      "marker_id": "policy:tiktok_ads:TTA-001:3",
+      "box": [
+        0.28,
+        0.95,
+        0.44,
+        0.02
+      ],
+      "label": "Phụ đề về hiệu quả",
+      "confidence": 0.67
+    },
+    {
+      "marker_id": "policy:meta_ads:META-001:3",
+      "box": [
+        0.28,
+        0.95,
+        0.44,
+        0.02
+      ],
+      "label": "Phụ đề về hiệu quả",
+      "confidence": 0.67
+    },
+    {
+      "marker_id": "policy:tiktok_shop_video:TTS-002:9",
+      "box": [
+        0.11,
+        0.13,
+        0.78,
+        0.15
+      ],
+      "label": "Bình luận khẳng định hiệu quả",
+      "confidence": 0.84
+    },
+    {
+      "marker_id": "policy:tiktok_ads:TTA-001:9",
+      "box": [
+        0.28,
+        0.95,
+        0.44,
+        0.02
+      ],
+      "label": "Phụ đề về hiệu quả",
+      "confidence": 0.64
+    },
+    {
+      "marker_id": "policy:tiktok_ads:TTA-002:9",
+      "box": [
+        0.03,
+        0.35,
+        0.96,
+        0.53
+      ],
+      "label": "So sánh hiệu quả trên tay",
+      "confidence": 0.54
+    }
+  ],
+  "token_usage": {
+    "prompt_tokens": 1914,
+    "completion_tokens": 1284
+  }
+}

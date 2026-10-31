@@ -1,0 +1,48 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Toàn bộ bằng chứng được cung cấp đều là dữ liệu MOCK, không phải quan sát thực tế nên không thể dùng để xác định uy tín người bán hoặc mức độ xử lý vấn đề. Không có bằng chứng REAL để hỗ trợ bất kỳ cấp nào.",
+  "key_evidence": [
+    "shop.rating: 4.5 (MOCK)",
+    "shop.rating_count: 2636 (MOCK)",
+    "shop.negative_topics: looks_different_from_video (MOCK)"
+  ],
+  "evidence_sent": {
+    "shop.negative_topics": {
+      "value": [
+        "looks_different_from_video"
+      ],
+      "status": "MOCK"
+    },
+    "shop.rating": {
+      "value": 4.5,
+      "status": "MOCK"
+    },
+    "shop.rating_count": {
+      "value": 2636,
+      "status": "MOCK"
+    }
+  },
+  "usage": {
+    "completion_tokens": 184,
+    "prompt_tokens": 321,
+    "total_tokens": 505,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 68,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

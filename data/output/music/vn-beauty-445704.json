@@ -1,0 +1,13 @@
+{
+  "tool": "ShazamIO (unofficial Shazam API)",
+  "checked_at": "2026-10-30T15:34:39+07:00",
+  "video_file": "D:\\CODE\\Study\\AIO\\Labs\\Linear_regression\\video_understanding\\data\\vn-beauty-445704.mp4",
+  "status": "matched",
+  "title": "Dramatic Tension",
+  "artist": "Litne",
+  "shazam_url": "https://www.shazam.com/track/714925267/dramatic-tension",
+  "matched_window": {
+    "start_sec": 0.0,
+    "end_sec": 12.0
+  }
+}

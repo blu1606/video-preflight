@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "móc dán tường",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2162,
+     "linked_video_count": 10205
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853128,
+       "name": "Hooks & Rails"
+      }
+     },
+     "ceiling_price": 23.37,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/318b011ead894478b2c2b35574f74fe6~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731933502087596670",
+     "floor_price": 23.37,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-04-03",
+     "launch_time": 1743617595,
+     "price_display": "23.373 ₫",
+     "product_id": "1731933502087596670",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731933502087596670?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 20 móc inox dán tường chịu lực siêu dính, chắc chắn treo đồ, vật dụng đa năng.Móc treo inox"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 866215520,
+     "last_28d_units_sold": 34929,
+     "last_7d_gmv": 197241392,
+     "last_7d_units_sold": 8069,
+     "last_90d_gmv": 2799855327,
+     "last_90d_units_sold": 122971,
+     "total_gmv": 10526762135,
+     "total_units_sold": 433945,
+     "yesterday_gmv": 13229118,
+     "yesterday_units_sold": 566
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/044f5f1e180645e7894fd26def547598~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494696250630900350",
+     "shop_name": "NTT Store HN",
+     "total_units_sold": 7344021
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 7722,
+     "linked_video_count": 29829
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859528,
+       "name": "Kitchen Utensils & Gadgets"
+      },
+      "l3": {
+       "id": 600029,
+       "name": "Preserving Containers"
+      }
+     },
+     "ceiling_price": 210.65,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/876065c5c2df4c63bb6c42d4fadf70ef~tplv-aphluv4xwc-crop-webp:1500:1500.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731685189869798486",
+     "floor_price": 39.01,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-06-25",
+     "launch_time": 1750823471,
+     "price_display": "39.010 ₫  -  210.652 ₫",
+     "product_id": "1731685189869798486",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731685189869798486?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[SIÊU RẺ - BẢN CAO CẤP] Màng Bọc Thực Phẩm TOP GIA Treo Tường Dạng Rút (Tặng Móc Treo) An Toàn Tiện Lợi, Có Chun Co Dãn Đa Chiều Siêu Dai Chất Liệu PE Dày Bền Chống Bay Mùi Giữ Mới Thực Phẩm MangBocThucPhamCoGian (MBTP)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 975865273,
+     "last_28d_units_sold": 25110,
+     "last_7d_gmv": 254780287,
+     "last_7d_units_sold": 6613,
+     "last_90d_gmv": 3387298433,
+     "last_90d_units_sold": 96351,
+     "total_gmv": 29954041228,
+     "total_units_sold": 506010,
+     "yesterday_gmv": 23796100,
+     "yesterday_units_sold": 610
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c03ef8a8ed52468392aacbf17a7da905~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494634498017298518",
+     "shop_name": "TOPGIAHN",
+     "total_units_sold": 59992769
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 839,
+     "linked_video_count": 3171
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853128,
+       "name": "Hooks & Rails"
+      }
+     },
+     "ceiling_price": 42.31,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/18933169b5404c92a2473708c8f6614a~tplv-o3syd03w52-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731561874171071102",
+     "floor_price": 42.31,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-12-21",
+     "launch_time": 1734710776,
+     "price_display": "42.309 ₫",
+     "product_id": "1731561874171071102",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731561874171071102?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 50 móc inox dán tường chịu lực siêu dính, chắc chắn treo đồ, vật dụng đa năng.Móc treo inox"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 892121467,
+     "last_28d_units_sold": 19970,
+     "last_7d_gmv": 165521908,
+     "last_7d_units_sold": 3574,
+     "last_90d_gmv": 1990979128,
+     "last_90d_units_sold": 47561,
+     "total_gmv": 3545684091,
+     "total_units_sold": 77944,
+     "yesterday_gmv": 24327675,
+     "yesterday_units_sold": 575
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/044f5f1e180645e7894fd26def547598~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494696250630900350",
+     "shop_name": "NTT Store HN",
+     "total_units_sold": 7344021
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 447,
+     "linked_video_count": 1835
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853128,
+       "name": "Hooks & Rails"
+      }
+     },
+     "ceiling_price": 75.37,
+     "commission_rate_percent": 9.5,
+     "cover_url": "https://s.500fd.com/tt_product/b88378e8ca2a41dd8180f47822bbff1a~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736485088569034111",
+     "floor_price": 13.19,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-14",
+     "launch_time": 1783999381,
+     "price_display": "13.189 ₫  -  75.373 ₫",
+     "product_id": "1736485088569034111",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736485088569034111?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 10/20/50 Móc Dán Tường Inox Chịu Lực Siêu Dính Chắc Chắn Treo Đồ Vật Dụng Đa Năng Trong Nhà Tắm Nhà Bếp Giá Rẻ Không Khoan Tường Siêu Tiện Lợi"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 204239001,
+     "last_28d_units_sold": 15442,
+     "last_7d_gmv": 64436437,
+     "last_7d_units_sold": 4882,
+     "last_90d_gmv": 443489237,
+     "last_90d_units_sold": 32361,
+     "total_gmv": 468528393,
+     "total_units_sold": 33565,
+     "yesterday_gmv": 9720293,
+     "yesterday_units_sold": 737
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4d79b92817d74d8da9d5686e73bdcc47~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494486966167111039",
+     "shop_name": "Thế Giới Dụng Cụ Pin",
+     "total_units_sold": 119864
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 331,
+     "linked_video_count": 234
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853128,
+       "name": "Hooks & Rails"
+      }
+     },
+     "ceiling_price": 42.72,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/c05c77bdc65242bf961b30b6d72ecb1e~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731294657798637896",
+     "floor_price": 854,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-11-18",
+     "launch_time": 1731910008,
+     "price_display": "854 ₫  -  42.722 ₫",
+     "product_id": "1731294657798637896",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731294657798637896?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "QUÀ TẶNG Móc Dán Tường Trong Suốt Chịu Lực Tốt Siêu Dính Chắc Chắn mocdantuong inox"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 10604011,
+     "last_28d_units_sold": 12375,
+     "last_7d_gmv": 2543212,
+     "last_7d_units_sold": 2978,
+     "last_90d_gmv": 36059344,
+     "last_90d_units_sold": 41138,
+     "total_gmv": 743318020,
+     "total_units_sold": 375945,
+     "yesterday_gmv": 440664,
+     "yesterday_units_sold": 516
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/bed465a2af0d4cfda787283c4fa98442~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494639846178785608",
+     "shop_name": "Gia Dụng Chunee",
+     "total_units_sold": 1924605
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 259,
+     "linked_video_count": 283
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853128,
+       "name": "Hooks & Rails"
+      }
+     },
+     "ceiling_price": 50.24,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/26278201f2a84b34b17ad4129a105998~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734284240214000697",
+     "floor_price": 22.83,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-02-03",
+     "launch_time": 1770053305,
+     "price_display": "22.833 ₫  -  50.235 ₫",
+     "product_id": "1734284240214000697",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734284240214000697?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 50 Móc Dán Tường Chịu Lực Tiện Lợi Cho Treo Đồ Hàng Ngày"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 101105132,
+     "last_28d_units_sold": 7535,
+     "last_7d_gmv": 10409394,
+     "last_7d_units_sold": 555,
+     "last_90d_gmv": 285657320,
+     "last_90d_units_sold": 22340,
+     "total_gmv": 431435997,
+     "total_units_sold": 33887,
+     "yesterday_gmv": 1666809,
+     "yesterday_units_sold": 73
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e9fa5ac100d047979bdabf0bcb72689b~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496296880643868729",
+     "shop_name": "Shopsieure2303",
+     "total_units_sold": 121732
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 423,
+     "linked_video_count": 475
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 852872,
+       "name": "Storage Holders & Racks"
+      }
+     },
+     "ceiling_price": 9.5,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/0d7cf75e4dbe4351b09e1e93b8dec214~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731415385137907756",
+     "floor_price": 9.5,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-12-23",
+     "launch_time": 1734926445,
+     "price_display": "9.504 ₫",
+     "product_id": "1731415385137907756",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 9,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731415385137907756?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Giá Đỡ Dán Tường Để Sạc Điện Thoại, Remote, Ổ Cắm/ Kệ Đựng Đồ Dán Tường Kèm 2 Móc Treo Đồ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 66455267,
+     "last_28d_units_sold": 6857,
+     "last_7d_gmv": 14499025,
+     "last_7d_units_sold": 1493,
+     "last_90d_gmv": 191024100,
+     "last_90d_units_sold": 20664,
+     "total_gmv": 708826484,
+     "total_units_sold": 100420,
+     "yesterday_gmv": 1568160,
+     "yesterday_units_sold": 165
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3b788b87bce8424796590a3fb8da0acc~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7496001944881236012",
+     "shop_name": "Tổng Kho An Vũ SG1",
+     "total_units_sold": 693699
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 257,
+     "linked_video_count": 973
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853128,
+       "name": "Hooks & Rails"
+      }
+     },
+     "ceiling_price": 43.46,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/7b5502c3f8fe4d3a9d50d4215421b4c2~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731659017965897722",
+     "floor_price": 17.53,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-07-26",
+     "launch_time": 1753488846,
+     "price_display": "17.531 ₫  -  43.456 ₫",
+     "product_id": "1731659017965897722",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731659017965897722?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Móc treo ổ cắm hình gấu hoạt hình 4 màu dễ thương tiện dụng - Lau sạch tường trước khi dán"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 94499984,
+     "last_28d_units_sold": 5074,
+     "last_7d_gmv": 18852353,
+     "last_7d_units_sold": 1035,
+     "last_90d_gmv": 321436378,
+     "last_90d_units_sold": 18022,
+     "total_gmv": 814523962,
+     "total_units_sold": 63621,
+     "yesterday_gmv": 2769898,
+     "yesterday_units_sold": 158
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/6a8a94bd56e2af63b8cc8a11ab927415~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494651968023071738",
+     "shop_name": "Tongkhosi1511",
+     "total_units_sold": 147949
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1342,
+     "linked_video_count": 4505
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853128,
+       "name": "Hooks & Rails"
+      }
+     },
+     "ceiling_price": 45.69,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/1bc339cdda154fb8b05a0481d860f761~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731933478601656958",
+     "floor_price": 13.81,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-03-05",
+     "launch_time": 1741162021,
+     "price_display": "13.810 ₫  -  45.686 ₫",
+     "product_id": "1731933478601656958",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731933478601656958?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 10-30-50 móc dán tường inox mẫu mới dính siêu chắc chịu lực tốt - Móc treo vật dụng trong nhà"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 66450062,
+     "last_28d_units_sold": 4436,
+     "last_7d_gmv": 12834786,
+     "last_7d_units_sold": 857,
+     "last_90d_gmv": 323901043,
+     "last_90d_units_sold": 23217,
+     "total_gmv": 3841244868,
+     "total_units_sold": 121247,
+     "yesterday_gmv": 1256710,
+     "yesterday_units_sold": 91
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/044f5f1e180645e7894fd26def547598~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494696250630900350",
+     "shop_name": "NTT Store HN",
+     "total_units_sold": 7344021
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 262,
+     "linked_video_count": 888
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852104,
+       "name": "Home Decor"
+      },
+      "l3": {
+       "id": 600347,
+       "name": "Hooks & Shelves"
+      }
+     },
+     "ceiling_price": 212.28,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/91f648e1c019436dbb6b2d0d41838ac5~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731439935246928461",
+     "floor_price": 43.84,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-02-14",
+     "launch_time": 1739507381,
+     "price_display": "43.841 ₫  -  212.280 ₫",
+     "product_id": "1731439935246928461",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 32,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731439935246928461?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kệ Treo Tường FIVO FB40 Trang Trí Không Cần Khoan, Tặng Móc Treo Inox, Gửi Kèm Phụ Kiện Đinh Hoặc Móc Dán Theo Khách Chọn, Decor Linh Hoạt Đựng Sách Trưng Bày"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 167841749,
+     "last_28d_units_sold": 4150,
+     "last_7d_gmv": 27341825,
+     "last_7d_units_sold": 647,
+     "last_90d_gmv": 475673709,
+     "last_90d_units_sold": 12436,
+     "total_gmv": 1631857448,
+     "total_units_sold": 43553,
+     "yesterday_gmv": 3551121,
+     "yesterday_units_sold": 81
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/9ab7980d30844daa86a8c7caec838120~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496012320353913421",
+     "shop_name": "FIVO STORE",
+     "total_units_sold": 122906
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

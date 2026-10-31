@@ -1,0 +1,78 @@
+{
+  "model": "gpt-6-luna",
+  "answer": {
+    "headline": "Video có điểm mở đầu dễ hiểu, nhưng cần xử lý claim về hiệu quả và bổ sung lời kêu gọi mua hàng.",
+    "summary": "Video có một số nội dung hữu ích, nhưng thông tin hỗ trợ cho lời quảng bá và bước mua hàng còn thiếu. Các số liệu trong báo cáo là dữ liệu giả lập (simulation), nên hãy xem như gợi ý để rà soát, không phải kết luận chắc chắn.",
+    "insights": [
+      {
+        "text": "Mở đầu dễ hiểu nhưng chưa khác biệt rõ; video cũng có một phần hữu ích để người xem lưu hoặc chia sẻ.",
+        "tone": "good",
+        "refs": [
+          "V02",
+          "V07"
+        ]
+      },
+      {
+        "text": "Người xem chưa được chỉ rõ ưu đãi hoặc cách mua. Lời quảng bá cũng thiếu bằng chứng hỗ trợ, nên có thể làm giảm niềm tin.",
+        "tone": "bad",
+        "refs": [
+          "C07",
+          "C08",
+          "C06"
+        ]
+      },
+      {
+        "text": "Thông tin giá, nội dung trang sản phẩm và đánh giá hiện ở mức còn cần cải thiện; người mua có thể chưa thấy rõ khác biệt hoặc đủ thông tin để chọn.",
+        "tone": "info",
+        "refs": [
+          "S03",
+          "S01",
+          "S02"
+        ]
+      }
+    ],
+    "fixes": [
+      {
+        "text": "Rà soát các lời khẳng định về da trắng hơn và cảnh so sánh trước–sau. Chỉ giữ nội dung có bằng chứng phù hợp; nếu chưa có, nên bỏ hoặc diễn đạt thận trọng hơn.",
+        "why": "Các nội dung này đang bị hệ thống rule engine baseline đánh dấu cần xem lại, chưa phải kết luận duyệt chính thức.",
+        "t": 0,
+        "refs": [
+          "TTA-001",
+          "TTA-002",
+          "C06"
+        ]
+      },
+      {
+        "text": "Kiểm tra và bổ sung hồ sơ công bố mỹ phẩm cùng thông tin cần có trên trang bán hàng trước khi tiếp tục quảng bá.",
+        "why": "Dữ liệu cho biết hồ sơ này chưa có trong thông tin được cung cấp và đang bị đánh dấu cần xem lại.",
+        "t": null,
+        "refs": [
+          "TTS-003",
+          "SHP-004"
+        ]
+      },
+      {
+        "text": "Nêu rõ ưu đãi và điều kiện mua, sau đó thêm CTA cụ thể để người xem biết cần bấm hoặc làm gì để đặt hàng.",
+        "why": "Video hiện chưa cho biết rõ ưu đãi và hành động mua hàng.",
+        "t": 32.7,
+        "refs": [
+          "C07",
+          "C08"
+        ]
+      }
+    ],
+    "groups": {
+      "viral_potential": "Phần mở đầu dễ hiểu nhưng chưa có nét riêng nổi bật; video có một số giá trị hữu ích để lưu hoặc chia sẻ.",
+      "conversion_potential": "Đây là điểm cần ưu tiên: ưu đãi và CTA chưa rõ, bằng chứng cho lời thuyết phục còn yếu và đường mua chưa thuận tiện.",
+      "sku_market": "Thông tin sản phẩm và giá chưa tạo khác biệt rõ; phần mô tả và đánh giá còn có chỗ cần làm đầy đủ, dễ hiểu hơn.",
+      "shop_health": "Đây là tình hình của shop, không phải điểm video. Dữ liệu gợi ý cần xem lại hiệu quả quảng cáo, xử lý đánh giá và khâu giao hàng.",
+      "policy_compliance": "Một số nội dung quảng bá và hồ sơ sản phẩm đang được đánh dấu cần rà soát."
+    },
+    "policy": "Rule engine baseline đánh dấu cần xem lại claim về hiệu quả làm trắng, cảnh trước–sau và hồ sơ công bố mỹ phẩm (TTA-001, TTA-002, TTS-003, SHP-004). Đây không phải kết luận duyệt chính thức; nên rà soát nội dung và giấy tờ trước khi đăng hoặc chạy quảng cáo.",
+    "shop": "Shop health là tình hình vận hành shop, không phải điểm của video. Dữ liệu gợi ý cần kiểm tra hiệu quả quảng cáo, phản hồi sau bán và giao hàng (H04, H05, H02)."
+  },
+  "token_usage": {
+    "prompt_tokens": 2578,
+    "completion_tokens": 2399
+  }
+}

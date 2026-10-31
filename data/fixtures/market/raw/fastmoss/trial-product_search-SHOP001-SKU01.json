@@ -1,0 +1,598 @@
+{
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3693,
+     "linked_video_count": 14157
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849160,
+       "name": "Bath & Body Care"
+      },
+      "l3": {
+       "id": 601493,
+       "name": "Body Wash & Soap"
+      }
+     },
+     "ceiling_price": 186.93,
+     "commission_rate_percent": 3,
+     "cover_url": "https://s.500fd.com/tt_product/2376cf21ee124675bc9ea74169f17ab8~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735502560219661421",
+     "floor_price": 59.08,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-16",
+     "launch_time": 1778937156,
+     "price_display": "59.082 ₫  -  186.928 ₫",
+     "product_id": "1735502560219661421",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735502560219661421?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【CRUSH BRAND DAY】Teashell - DAV Xà Phòng Trắng Da (Kèm Túi Tạo Bọt)｜Da Mịn Sáng｜Làm Sáng Da｜Dịu Nhẹ Không Kích Ứng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 5200721142,
+     "last_28d_units_sold": 92574,
+     "last_7d_gmv": 1415949987,
+     "last_7d_units_sold": 23717,
+     "last_90d_gmv": 15065991994,
+     "last_90d_units_sold": 328865,
+     "total_gmv": 18918951687,
+     "total_units_sold": 383168,
+     "yesterday_gmv": 352069638,
+     "yesterday_units_sold": 5959
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e41358d2fabd420d932b52d986b43916~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8656784861501817965",
+     "shop_name": "Teashell VN",
+     "total_units_sold": 788689
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 145,
+     "linked_video_count": 495
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848776,
+       "name": "Skincare"
+      },
+      "l3": {
+       "id": 601619,
+       "name": "Serums & Essences\t"
+      }
+     },
+     "ceiling_price": 191.69,
+     "commission_rate_percent": 3,
+     "cover_url": "https://s.500fd.com/tt_product/094e0214394d400b8f9cdfefc718a811~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735382210276066413",
+     "floor_price": 60.59,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-08",
+     "launch_time": 1780856069,
+     "price_display": "60.589 ₫  -  191.694 ₫",
+     "product_id": "1735382210276066413",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735382210276066413?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【CRUSH BRAND DAY】Teashell - DAV Xà Phòng Trắng Da (Kèm Túi Tạo Bọt)｜Da Mịn Sáng｜Làm Sáng Da｜Dịu Nhẹ Không Kích Ứng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 483169439,
+     "last_28d_units_sold": 8322,
+     "last_7d_gmv": 106528088,
+     "last_7d_units_sold": 1744,
+     "last_90d_gmv": 873839620,
+     "last_90d_units_sold": 15235,
+     "total_gmv": 878058151,
+     "total_units_sold": 15322,
+     "yesterday_gmv": 25992681,
+     "yesterday_units_sold": 429
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e41358d2fabd420d932b52d986b43916~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8656784861501817965",
+     "shop_name": "Teashell VN",
+     "total_units_sold": 788689
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848776,
+       "name": "Skincare"
+      },
+      "l3": {
+       "id": 601609,
+       "name": "Facial Cleansers\t"
+      }
+     },
+     "ceiling_price": 184.04,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/76556cd53d0949d4997889dc6056a56c~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737279977529836653",
+     "floor_price": 58.17,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-01",
+     "launch_time": 1788250216,
+     "price_display": "58.169 ₫  -  184.037 ₫",
+     "product_id": "1737279977529836653",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737279977529836653?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【CRUSH BRAND DAY】Teashell -DAV Xà Phòng Trắng Da (Kèm Túi Tạo Bọt)｜Da Mịn Sáng｜Làm Sáng Da｜Dịu Nhẹ Không Kích Ứng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 287152853,
+     "last_28d_units_sold": 4902,
+     "last_7d_gmv": 95159733,
+     "last_7d_units_sold": 1592,
+     "last_90d_gmv": 667345525,
+     "last_90d_units_sold": 11869,
+     "total_gmv": 682090390,
+     "total_units_sold": 12134,
+     "yesterday_gmv": 12913518,
+     "yesterday_units_sold": 222
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e41358d2fabd420d932b52d986b43916~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8656784861501817965",
+     "shop_name": "Teashell VN",
+     "total_units_sold": 788689
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849160,
+       "name": "Bath & Body Care"
+      },
+      "l3": {
+       "id": 601493,
+       "name": "Body Wash & Soap"
+      }
+     },
+     "ceiling_price": 92.18,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/86f82081fbd4447d85f32d30dd1c18f0~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736941854582342765",
+     "floor_price": 92.18,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-13",
+     "launch_time": 1786601462,
+     "price_display": "92.183 ₫",
+     "product_id": "1736941854582342765",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736941854582342765?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【CRUSH BRAND DAY】Teashell -DAV BỘ DƯỠNG SÁNG DA NIACINAMIDE (XÀ PHÒNG + TINH CHẤT) | GLUTATHIONE + TRANEXAMIC ACID + ALPHA ARBUTIN + 5% NIACINAMIDE | HỖ TRỢ LÀM MỜ ĐỐM THÂM, LÀM ĐỀU MÀU DA, DƯỠNG ẨM CHUYÊN SÂU | BỘ DƯỠNG SÁNG DA MẶT & CƠ THỂ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 82548259,
+     "last_28d_units_sold": 808,
+     "last_7d_gmv": 14872627,
+     "last_7d_units_sold": 140,
+     "last_90d_gmv": 245289480,
+     "last_90d_units_sold": 2471,
+     "total_gmv": 245289480,
+     "total_units_sold": 2471,
+     "yesterday_gmv": 1382745,
+     "yesterday_units_sold": 15
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e41358d2fabd420d932b52d986b43916~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8656784861501817965",
+     "shop_name": "Teashell VN",
+     "total_units_sold": 788689
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 11,
+     "linked_video_count": 20
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849032,
+       "name": "Hand, Foot & Nail Care"
+      },
+      "l3": {
+       "id": 601508,
+       "name": "Hand Wash\t"
+      }
+     },
+     "ceiling_price": 126.73,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/243ef2f6e4df4655b91d833ea6573293~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737591940926375888",
+     "floor_price": 50.92,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-21",
+     "launch_time": 1789963377,
+     "price_display": "50.920 ₫  -  126.734 ₫",
+     "product_id": "1737591940926375888",
+     "product_rating": 4.2,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737591940926375888?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[HÀNG MỚI]Teashell Xà Phòng Trắng Da (Kèm Túi Tạo Bọt)|Da Mịn Sáng|Làm Sáng Da|Dịu Nhẹ Không kícḣ Ứng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 26300518,
+     "last_28d_units_sold": 523,
+     "last_7d_gmv": 7664662,
+     "last_7d_units_sold": 153,
+     "last_90d_gmv": 27828123,
+     "last_90d_units_sold": 553,
+     "total_gmv": 27828123,
+     "total_units_sold": 553,
+     "yesterday_gmv": 1069320,
+     "yesterday_units_sold": 21
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a3138dc9acb4455a9b2870ff6f609de8~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495357645776849872",
+     "shop_name": "Minh Phát Shop LS",
+     "total_units_sold": 1749
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849160,
+       "name": "Bath & Body Care"
+      },
+      "l3": {
+       "id": 601490,
+       "name": "Body Care Kits"
+      }
+     },
+     "ceiling_price": 91.28,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/01daef26c9ff4bdb84938251e0e7d112~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736941850202244205",
+     "floor_price": 91.28,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-13",
+     "launch_time": 1786594248,
+     "price_display": "91.276 ₫",
+     "product_id": "1736941850202244205",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736941850202244205?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【CRUSH BRAND DAY】Teashell -DAV BỘ DƯỠNG SÁNG DA NIACINAMIDE (XÀ PHÒNG + TINH CHẤT) | GLUTATHIONE + TRANEXAMIC ACID + ALPHA ARBUTIN + 5% NIACINAMIDE | HỖ TRỢ LÀM MỜ ĐỐM THÂM, LÀM ĐỀU MÀU DA, DƯỠNG ẨM CHUYÊN SÂU | BỘ DƯỠNG SÁNG DA MẶT & CƠ THỂ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 22726607,
+     "last_28d_units_sold": 223,
+     "last_7d_gmv": 3902463,
+     "last_7d_units_sold": 38,
+     "last_90d_gmv": 84597819,
+     "last_90d_units_sold": 849,
+     "total_gmv": 84597819,
+     "total_units_sold": 849,
+     "yesterday_gmv": 547656,
+     "yesterday_units_sold": 6
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e41358d2fabd420d932b52d986b43916~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8656784861501817965",
+     "shop_name": "Teashell VN",
+     "total_units_sold": 788689
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 59,
+     "linked_video_count": 197
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849160,
+       "name": "Bath & Body Care"
+      },
+      "l3": {
+       "id": 601493,
+       "name": "Body Wash & Soap"
+      }
+     },
+     "ceiling_price": 161.17,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/5845ac8b4dca405ba094f58507540536~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736777063311116195",
+     "floor_price": 56.06,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-02",
+     "launch_time": 1785665307,
+     "price_display": "56.058 ₫  -  161.166 ₫",
+     "product_id": "1736777063311116195",
+     "product_rating": 4.1,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736777063311116195?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[HÀNG MỚI]Teashell Xà Phòng Trắng Da (Kèm Túi Tạo Bọt)|Da Mịn Sáng|Làm Sáng Da|Dịu Nhẹ Không Kích Ứng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 5584326,
+     "last_28d_units_sold": 105,
+     "last_7d_gmv": 831100,
+     "last_7d_units_sold": 16,
+     "last_90d_gmv": 48932643,
+     "last_90d_units_sold": 830,
+     "total_gmv": 48932643,
+     "total_units_sold": 830,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/7220334d431949e0972ce009d8d8d09b~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494774532481255331",
+     "shop_name": "yanchuangBeauty and cosmetics",
+     "total_units_sold": 22299
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 0,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849160,
+       "name": "Bath & Body Care"
+      },
+      "l3": {
+       "id": 601493,
+       "name": "Body Wash & Soap"
+      }
+     },
+     "ceiling_price": 92.76,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/a01e7f1c1a994392a9af5331f06f06b0~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737735339718182270",
+     "floor_price": 43.99,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-01",
+     "launch_time": 1790864831,
+     "price_display": "43.991 ₫  -  92.755 ₫",
+     "product_id": "1737735339718182270",
+     "product_rating": 3.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737735339718182270?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[PAYDAY SALE]Teashell Xà Phòng Trắng Da (Kèm Túi Tạo Bọt) | Da Mịn Sáng | Làm Sáng Da | Dịu Nhẹ Không Kích Ứng KINGBABY"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1586417,
+     "last_28d_units_sold": 37,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 1586417,
+     "last_90d_units_sold": 37,
+     "total_gmv": 1586417,
+     "total_units_sold": 37,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c55a14c40b394b83a981299d45e8d969~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8684322923420943742",
+     "shop_name": "AuraHerb Skin VN",
+     "total_units_sold": 38
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848776,
+       "name": "Skincare"
+      },
+      "l3": {
+       "id": 601611,
+       "name": "Skin Care Kits"
+      }
+     },
+     "ceiling_price": 93.92,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/f4de1a3cc3984e8392e9f06dc857220f~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737627498646832237",
+     "floor_price": 93.92,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-23",
+     "launch_time": 1790173433,
+     "price_display": "93.920 ₫",
+     "product_id": "1737627498646832237",
+     "product_rating": 5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737627498646832237?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【DÀNH RIÊNG TRÊN LIVE】Teashell Xà Phòng Niacinamide & Kem Dưỡng Niacinamide (Kèm Túi Tạo Bọt)｜Làm Sạch Dịu Nhẹ｜Hỗ Trợ Làm Sáng Da｜Dưỡng Ẩm"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 3400134,
+     "last_28d_units_sold": 36,
+     "last_7d_gmv": 281760,
+     "last_7d_units_sold": 3,
+     "last_90d_gmv": 3400134,
+     "last_90d_units_sold": 36,
+     "total_gmv": 3400134,
+     "total_units_sold": 36,
+     "yesterday_gmv": 281760,
+     "yesterday_units_sold": 3
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e41358d2fabd420d932b52d986b43916~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8656784861501817965",
+     "shop_name": "Teashell VN",
+     "total_units_sold": 788689
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 6,
+     "linked_video_count": 8
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849160,
+       "name": "Bath & Body Care"
+      },
+      "l3": {
+       "id": 601493,
+       "name": "Body Wash & Soap"
+      }
+     },
+     "ceiling_price": 177.35,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/176eadfa6e464130acfd231e4251f718~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737780684641568063",
+     "floor_price": 55.14,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-06",
+     "launch_time": 1791280477,
+     "price_display": "55.142 ₫  -  177.345 ₫",
+     "product_id": "1737780684641568063",
+     "product_rating": 0,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737780684641568063?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[MẪU MỚI] Teashell Xà phòng trắng da kèm túi tạo bọt làm sáng da, mịn màng,dịu nhẹ không kích ứng sư dụng cho mặt va body"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 941760,
+     "last_28d_units_sold": 18,
+     "last_7d_gmv": 941760,
+     "last_7d_units_sold": 18,
+     "last_90d_gmv": 941760,
+     "last_90d_units_sold": 18,
+     "total_gmv": 941760,
+     "total_units_sold": 18,
+     "yesterday_gmv": 55142,
+     "yesterday_units_sold": 1
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a698ac85c95a40799514018ea9a7e4bb~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494388101772248383",
+     "shop_name": "AD HEALTHS & BEAUTY VN",
+     "total_units_sold": 1043
+    }
+   }
+  ],
+  "total": 46
+ }
+}

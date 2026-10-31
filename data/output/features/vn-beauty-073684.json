@@ -1,0 +1,282 @@
+{
+  "schema_version": 3,
+  "video_file": "D:\\CODE\\Study\\AIO\\Labs\\Linear_regression\\video_understanding\\data\\vn-beauty-073684.mp4",
+  "video_duration_sec": 22.6,
+  "vision_model": "gpt-6-luna",
+  "benchmark_latency": {
+    "frame_extraction_sec": 0.99,
+    "audio_transcription_sec": 2.35,
+    "vision_inference_sec": 53.78,
+    "total_pipeline_sec": 57.13
+  },
+  "token_usage": {
+    "prompt_tokens": 5759,
+    "completion_tokens": 3658,
+    "total_tokens": 9417
+  },
+  "transcript": "Hãy subscribe cho kênh Ghiền Mì Gõ Để không bỏ lỡ những video hấp dẫn",
+  "features": {
+    "product": {
+      "name": "Tutubaby Silk Facial Mask Pants",
+      "category": "Skincare sheet mask",
+      "brand": "Tutubaby"
+    },
+    "hook_analysis": {
+      "hook_detected": true,
+      "hook_duration_sec": 3.0,
+      "hook_type": "curiosity",
+      "visual_evidence": "A woman holds up a ruffled, underwear-shaped skincare item while wearing a matching one; a comment-style overlay is visible.",
+      "verbal_hook": "“Hãy subscribe cho kênh Ghiền Mì Gõ Để không bỏ lỡ những video hấp dẫn” (generic channel-subscribe narration, not a product hook).",
+      "hook_strength_1_to_10": 6.5
+    },
+    "demo_and_product_experience": {
+      "demo_present": true,
+      "demo_start_sec": 3.0,
+      "demo_end_sec": 21.0,
+      "before_after_shown": false,
+      "sensory_details": [
+        "White, soft-looking sheet material with gathered elastic edges",
+        "Blue liquid is dispensed onto the product and spread across its surface",
+        "The material is lifted and handled to show its shape and flexibility"
+      ],
+      "clarity_score_1_to_10": 7.0
+    },
+    "social_proof_and_claims": {
+      "key_claims": [],
+      "authenticity_level": "medium",
+      "format": "brand_ad"
+    },
+    "call_to_action": {
+      "has_cta": true,
+      "cta_type": "follow",
+      "cta_timestamp_sec": 0.0,
+      "urgency_expressed": false
+    },
+    "scoring": {
+      "viral_potential_score": 56,
+      "conversion_potential_score": 49,
+      "rubric_reasons": {
+        "strengths": [
+          "Unusual garment-like product shape creates initial curiosity.",
+          "Product is prominently shown throughout, with close-ups and a liquid application demonstration.",
+          "A comment-style overlay provides a small social-proof cue."
+        ],
+        "weaknesses": [
+          "The spoken narration promotes a channel rather than explaining or endorsing the product.",
+          "No clear product benefits, usage instructions, price, offer, or product-specific purchase CTA are provided.",
+          "No visible result or before-and-after evidence is shown."
+        ]
+      }
+    },
+    "key_moments": [
+      {
+        "timestamp_sec": 0.0,
+        "event": "Hook",
+        "description": "A woman holds up the ruffled product while a comment-style overlay appears."
+      },
+      {
+        "timestamp_sec": 3.0,
+        "event": "Product reveal",
+        "description": "The Tutubaby package is shown; its front identifies the item as “Silk Facial Mask Pants.”"
+      },
+      {
+        "timestamp_sec": 4.0,
+        "event": "Product handling",
+        "description": "The package is opened and an individual white item is taken out."
+      },
+      {
+        "timestamp_sec": 9.0,
+        "event": "Demo",
+        "description": "Blue liquid is applied to the product with a dropper."
+      },
+      {
+        "timestamp_sec": 11.0,
+        "event": "Material close-up",
+        "description": "A thin translucent layer is lifted from the product."
+      },
+      {
+        "timestamp_sec": 16.0,
+        "event": "Product presentation",
+        "description": "The item is placed on a bed and then shown again held up against the light."
+      },
+      {
+        "timestamp_sec": 22.0,
+        "event": "Closing shot",
+        "description": "A woman holds the product in front of her; no product-specific purchase instruction is visible."
+      }
+    ],
+    "policy_signals": {
+      "absolute_claims": [],
+      "before_after": {
+        "present": false,
+        "product_effect_comparison": false,
+        "timestamp_sec": 0.0
+      },
+      "ui_overlays": [],
+      "realistic_ai_media": {
+        "present": false,
+        "confidence": "low"
+      }
+    },
+    "narrative_and_emotion": {
+      "storytelling": {
+        "score_1_to_10": 5.0,
+        "arc_type": "demo_walkthrough",
+        "reason": "The video moves from an attention-grabbing product reveal to packaging, handling, and a simple application demonstration, but does not explain a customer problem or show a result.",
+        "beats": [
+          {
+            "timestamp_sec": 0.0,
+            "beat": "hook",
+            "description": "The unusual ruffled item is held up alongside a comment-style overlay."
+          },
+          {
+            "timestamp_sec": 3.0,
+            "beat": "solution",
+            "description": "The package identifies the product as Tutubaby Silk Facial Mask Pants."
+          },
+          {
+            "timestamp_sec": 9.0,
+            "beat": "proof",
+            "description": "Blue liquid is applied and the material is handled in close-up; this demonstrates the item but does not prove a skin result."
+          }
+        ]
+      },
+      "emotion": {
+        "score_1_to_10": 4.0,
+        "dominant_emotion": "curiosity",
+        "reason": "The product's unusual shape and careful close-ups invite curiosity, while the video provides little emotional storytelling or explicit reassurance.",
+        "triggers": [
+          {
+            "timestamp_sec": 0.0,
+            "trigger": "surprise",
+            "description": "The product is presented in a garment-like shape."
+          },
+          {
+            "timestamp_sec": 9.0,
+            "trigger": "other",
+            "description": "The bright blue liquid application adds a visually distinctive moment."
+          },
+          {
+            "timestamp_sec": 22.0,
+            "trigger": "aspiration",
+            "description": "A composed closing shot presents the product in a calm, polished setting."
+          }
+        ]
+      },
+      "shareability": {
+        "score_1_to_10": 4.0,
+        "reason": "The unusual product design and colored-liquid demonstration could prompt a brief reaction, but there is no strong joke, tip, transformation, or discussion prompt.",
+        "share_drivers": [
+          {
+            "timestamp_sec": 0.0,
+            "driver": "surprising",
+            "description": "The underwear-like appearance of the product may prompt viewers to ask what it is."
+          },
+          {
+            "timestamp_sec": 9.0,
+            "driver": "other",
+            "description": "The blue liquid being applied to the white material is visually noticeable."
+          }
+        ]
+      }
+    },
+    "decision_evidence": {
+      "problem": "",
+      "value_propositions": [
+        "The product is presented as a pants-shaped facial sheet mask.",
+        "The close-ups show gathered elastic edges and a soft-looking white material.",
+        "The video demonstrates applying liquid to the product surface."
+      ],
+      "on_screen_text": [
+        {
+          "timestamp_sec": 0.0,
+          "text": "Loại này xài em lắm luôn shop"
+        }
+      ],
+      "offer": {
+        "present": false,
+        "description": "",
+        "timestamp_sec": 0.0
+      },
+      "product_visibility": {
+        "first_clear_sec": 0.0,
+        "share_of_frames": 1.0,
+        "close_ups": true
+      },
+      "trust_signals": [
+        {
+          "timestamp_sec": 0.0,
+          "type": "comments",
+          "description": "A comment-style overlay reads “Loại này xài em lắm luôn shop”; it appears to be a positive comment, though the wording is as displayed."
+        },
+        {
+          "timestamp_sec": 3.0,
+          "type": "brand",
+          "description": "The packaging visibly identifies the brand as Tutubaby and the product as Silk Facial Mask Pants."
+        }
+      ],
+      "product_mentions": [
+        {
+          "timestamp_sec": 0.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        },
+        {
+          "timestamp_sec": 3.0,
+          "channel": "packaging",
+          "text": "Tutubaby Silk Facial Mask Pants"
+        },
+        {
+          "timestamp_sec": 5.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        },
+        {
+          "timestamp_sec": 6.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        },
+        {
+          "timestamp_sec": 7.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        },
+        {
+          "timestamp_sec": 9.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        },
+        {
+          "timestamp_sec": 12.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        },
+        {
+          "timestamp_sec": 16.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        },
+        {
+          "timestamp_sec": 18.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        },
+        {
+          "timestamp_sec": 20.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        },
+        {
+          "timestamp_sec": 21.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        },
+        {
+          "timestamp_sec": 22.0,
+          "channel": "packaging",
+          "text": "Tutubaby"
+        }
+      ]
+    }
+  }
+}

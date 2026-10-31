@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 1,
+  "label": "1 Weak",
+  "score": 25.0,
+  "rationale": "Phần mở đầu ở 0 giây dùng câu đùa khó hiểu, chưa cho biết sản phẩm hay chủ đề cụ thể. Đến 8 giây mới xuất hiện nội dung về da và mụn, nên không làm phần mở đầu trở nên rõ ràng; các lợi ích được nêu không được xem là sự thật đã xác minh.",
+  "key_evidence": [
+    "0,0 giây: “-1 lốc bò húc +1 zai đẹp ra đời...” (REAL)",
+    "8,0 giây: “Da sạch, bye dầu nhờn”, “Hỗ trợ ngăn ngừa mụn”, “Làm da trắng sáng, đầy sức sống” (REAL)"
+  ],
+  "evidence_sent": {
+    "video.on_screen_text": {
+      "value": [
+        {
+          "timestamp_sec": 0.0,
+          "text": "-1 lốc bò húc\n+1 zai đẹp ra đời..."
+        },
+        {
+          "timestamp_sec": 8.0,
+          "text": "👉Da sạch, bye dầu nhờn.\n👉Hỗ trợ ngăn ngừa mụn\n👉Làm da trắng sáng, đầy sức sống"
+        }
+      ],
+      "status": "REAL"
+    }
+  },
+  "usage": {
+    "completion_tokens": 421,
+    "prompt_tokens": 355,
+    "total_tokens": 776,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 255,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

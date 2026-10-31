@@ -1,0 +1,21 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 0,
+  "label": "0 Absent",
+  "score": 0.0,
+  "rationale": "Bằng chứng quan sát thực tế cho biết không có ưu đãi được thể hiện trong video. Vì vậy, không thể xác định một đề nghị mua hàng từ nội dung được cung cấp.",
+  "key_evidence": [
+    "video.offer.present=false (REAL)"
+  ],
+  "evidence_sent": {
+    "video.offer": {
+      "value": {
+        "present": false,
+        "description": "",
+        "timestamp_sec": 0.0
+      },
+      "status": "REAL"
+    }
+  }
+}

@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "nồi điện đa năng",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1944,
+     "linked_video_count": 6041
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 831112,
+       "name": "Office Stationery & Supplies"
+      },
+      "l3": {
+       "id": 855560,
+       "name": "Cards"
+      }
+     },
+     "ceiling_price": 159.18,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/bc1399e0508746e3ade958c5fd154027~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736405360362751176",
+     "floor_price": 159.18,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-07",
+     "launch_time": 1783365468,
+     "price_display": "159.181 ₫",
+     "product_id": "1736405360362751176",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736405360362751176?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "DKHOUSE Nồi Điện 1.8L Đa Năng, Nồi Cơm, Nồi Áp Suất Nấu Các Món, Tặng Vỉ Hấp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2458645328,
+     "last_28d_units_sold": 14975,
+     "last_7d_gmv": 396652511,
+     "last_7d_units_sold": 2463,
+     "last_90d_gmv": 7023581237,
+     "last_90d_units_sold": 54801,
+     "total_gmv": 9275432068,
+     "total_units_sold": 70873,
+     "yesterday_gmv": 62876495,
+     "yesterday_units_sold": 395
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0801fe0466b843daa5eaeeb6ca64327e~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495888361391491272",
+     "shop_name": "DKHOUSE VN",
+     "total_units_sold": 907164
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 799,
+     "linked_video_count": 1744
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844168,
+       "name": "Kitchen Appliances"
+      },
+      "l3": {
+       "id": 983304,
+       "name": "Specialty Kitchen Appliances"
+      }
+     },
+     "ceiling_price": 143.54,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/f1cdd733447a44b0be50981fedcee078~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734439802095305968",
+     "floor_price": 143.54,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-02-28",
+     "launch_time": 1772275190,
+     "price_display": "143.542 ₫",
+     "product_id": "1734439802095305968",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734439802095305968?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Nồi Điện Nấu Lẩu Dung Tích 2.0L Đa Năng Tiện  Lợi, Nấu Các Món, Tặng Vỉ Hấp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1620368258,
+     "last_28d_units_sold": 11197,
+     "last_7d_gmv": 37464462,
+     "last_7d_units_sold": 261,
+     "last_90d_gmv": 3107325067,
+     "last_90d_units_sold": 23274,
+     "total_gmv": 5238230762,
+     "total_units_sold": 59974,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c6b63a864929450f8d26d3528fc2029f~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617611196860656",
+     "shop_name": "Kho Tưởng Hằng",
+     "total_units_sold": 5043983
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909704,
+       "name": "Education Devices"
+      },
+      "l3": {
+       "id": 984840,
+       "name": "Writing Tablets"
+      }
+     },
+     "ceiling_price": 369.61,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/cf21a0beaa7e4a1e931fed9a19ee1a25~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1738092426770678853",
+     "floor_price": 369.61,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-20",
+     "launch_time": 1792482615,
+     "price_display": "369.608 ₫",
+     "product_id": "1738092426770678853",
+     "product_rating": 0,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1738092426770678853?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[DEAL ĐỘC QUYỀN] [Bếp Hồng Ngoại Cao Cấp TATAMI Cảm Ứng Đa Năng Công Suất Cao 3500W, Mặt Kính Cường Lực - không kén nồi - không bức xạ - tiết kiện điện"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1263637445,
+     "last_28d_units_sold": 5663,
+     "last_7d_gmv": 1263637445,
+     "last_7d_units_sold": 5663,
+     "last_90d_gmv": 1263637445,
+     "last_90d_units_sold": 5663,
+     "total_gmv": 1263637445,
+     "total_units_sold": 5663,
+     "yesterday_gmv": 437246264,
+     "yesterday_units_sold": 1183
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/dedb2d9ec54846969e5695dbd42ba5be~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494543043362129989",
+     "shop_name": "SHOP NHÀ MỘC 868",
+     "total_units_sold": 35884
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 130,
+     "linked_video_count": 67
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 995976,
+       "name": "Phones & Tablets"
+      },
+      "l3": {
+       "id": 825224,
+       "name": "Tablets"
+      }
+     },
+     "ceiling_price": 363.39,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/c83ab80c6ddf42fca35178a511b7d8f3~tplv-aphluv4xwc-crop-webp:870:870.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737715587731130192",
+     "floor_price": 363.39,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-28",
+     "launch_time": 1790526435,
+     "price_display": "363.387 ₫",
+     "product_id": "1737715587731130192",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737715587731130192?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[ HỎA TỐC ] Bếp hồng ngoại Đa năng công suất cao 3500W không kén nồi không bức xạ tiết kiện điện"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 3048631634,
+     "last_28d_units_sold": 4849,
+     "last_7d_gmv": 5202293,
+     "last_7d_units_sold": 15,
+     "last_90d_gmv": 3122973704,
+     "last_90d_units_sold": 4939,
+     "total_gmv": 3122973704,
+     "total_units_sold": 4939,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4163838a80654c52b5c8cb937ec37371~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494889393336452944",
+     "shop_name": "Gia Dụng Thế Anh",
+     "total_units_sold": 16477
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4847,
+     "linked_video_count": 13649
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844168,
+       "name": "Kitchen Appliances"
+      },
+      "l3": {
+       "id": 847752,
+       "name": "Rice & Pressure Cookers"
+      }
+     },
+     "ceiling_price": 113.28,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/bc5074fdc72649d0b2774dac8ce02a66~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731318335445240451",
+     "floor_price": 113.28,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-11-26",
+     "launch_time": 1732550433,
+     "price_display": "113.280 ₫",
+     "product_id": "1731318335445240451",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731318335445240451?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Nồi Lẩu Điện Mini 18cm, dung tích 1.8L Đa Năng 2 Nấc Nhiệt Tặng Gía Hấp Có Tay Cầm Tiện Dụng Dung Tích 1.8L Nồi Lẩu Nồi Điện Nấu Ăn  Inox Nồi Lẩu Điện simmer  pot"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 492816485,
+     "last_28d_units_sold": 4463,
+     "last_7d_gmv": 147407955,
+     "last_7d_units_sold": 1317,
+     "last_90d_gmv": 1502336092,
+     "last_90d_units_sold": 16505,
+     "total_gmv": 31098631365,
+     "total_units_sold": 267247,
+     "yesterday_gmv": 28659840,
+     "yesterday_units_sold": 253
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/81bcd46e55dc4b60a1e8742922ad000c~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495996882965334659",
+     "shop_name": "Tổng Kho Duy Dứa",
+     "total_units_sold": 1473257
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2176,
+     "linked_video_count": 5861
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844168,
+       "name": "Kitchen Appliances"
+      },
+      "l3": {
+       "id": 847752,
+       "name": "Rice & Pressure Cookers"
+      }
+     },
+     "ceiling_price": 113.3,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/e468dcd0ebcc45b7ab2cafd6ffc43134~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731313989024451203",
+     "floor_price": 113.3,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-11-26",
+     "launch_time": 1732550433,
+     "price_display": "113.298 ₫",
+     "product_id": "1731313989024451203",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731313989024451203?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Nồi Đa Năng Mini 2 tầng, Ca mì 2 tầng, Tặng Gía Hấp INÕ Nướng, Luộc, Chiên Chống Dính Vân Đá Tiện Lợi Nồi Điện Nấu Ăn Nồi Hấp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 449525577,
+     "last_28d_units_sold": 4231,
+     "last_7d_gmv": 84503867,
+     "last_7d_units_sold": 814,
+     "last_90d_gmv": 1256797635,
+     "last_90d_units_sold": 16645,
+     "total_gmv": 7227486236,
+     "total_units_sold": 73724,
+     "yesterday_gmv": 9970224,
+     "yesterday_units_sold": 88
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/81bcd46e55dc4b60a1e8742922ad000c~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495996882965334659",
+     "shop_name": "Tổng Kho Duy Dứa",
+     "total_units_sold": 1473257
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2,
+     "linked_video_count": 1
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 831112,
+       "name": "Office Stationery & Supplies"
+      },
+      "l3": {
+       "id": 832008,
+       "name": "Envelopes & Postal Supplies"
+      }
+     },
+     "ceiling_price": 21.88,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/1cd16dbf92094cce8189857632a61249~tplv-aphluv4xwc-crop-webp:870:870.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737831074568439245",
+     "floor_price": 21.88,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-07",
+     "launch_time": 1791344121,
+     "price_display": "21.881 ₫",
+     "product_id": "1737831074568439245",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737831074568439245?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "XẢ KHO- KHÔNG LẮP SIM Đồng hồ LYNWatch Serrri 11 pro đa chức năng, kết nối điện thoại, nghe gọi thay hình nền"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 86219746,
+     "last_28d_units_sold": 3812,
+     "last_7d_gmv": 1509789,
+     "last_7d_units_sold": 69,
+     "last_90d_gmv": 86219746,
+     "last_90d_units_sold": 3812,
+     "total_gmv": 86727132,
+     "total_units_sold": 3834,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0fd8385f7b89465bb96e8bf900372e22~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495041422380403149",
+     "shop_name": "PHỤ KIỆN TM 2026",
+     "total_units_sold": 22124
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2618,
+     "linked_video_count": 5241
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844168,
+       "name": "Kitchen Appliances"
+      },
+      "l3": {
+       "id": 847880,
+       "name": "Electric Steamers"
+      }
+     },
+     "ceiling_price": 195.36,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/33d1ab4ca63242449d0d36cb82a108d9~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729658116136733160",
+     "floor_price": 195.36,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-07-17",
+     "launch_time": 1689580921,
+     "price_display": "195.358 ₫",
+     "product_id": "1729658116136733160",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729658116136733160?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Nồi lẩu 28cm đa năng tặng vỉ hấp inox, chién, xào, hấp, rán,…. Nồi Điện Nồi Lẩu Điện Nấu Ăn"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 767793590,
+     "last_28d_units_sold": 3731,
+     "last_7d_gmv": 113734454,
+     "last_7d_units_sold": 550,
+     "last_90d_gmv": 1756408014,
+     "last_90d_units_sold": 8808,
+     "total_gmv": 25493336104,
+     "total_units_sold": 138774,
+     "yesterday_gmv": 14065776,
+     "yesterday_units_sold": 72
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/b9f371a384d24bbea32297e6375f3653~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494620242746247656",
+     "shop_name": "Chungoanh Siêu Thị Đồ Gia Dung",
+     "total_units_sold": 3726776
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 532,
+     "linked_video_count": 607
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844168,
+       "name": "Kitchen Appliances"
+      },
+      "l3": {
+       "id": 847752,
+       "name": "Rice & Pressure Cookers"
+      }
+     },
+     "ceiling_price": 153.85,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/a02e3223b4d540d1b5f656ab3332ba64~tplv-aphluv4xwc-crop-webp:1317:1317.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734862035265750504",
+     "floor_price": 153.85,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-27",
+     "launch_time": 1774620935,
+     "price_display": "153.848 ₫",
+     "product_id": "1734862035265750504",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734862035265750504?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Nồi Điện Đa Năng Thông Minh 2L Lòng Nồi Chống Dính Tặng Kèm Vỉ Hấp- Nấu Chiên, Xào, Hấp, Rán,… Nồi Cute"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 508880808,
+     "last_28d_units_sold": 3573,
+     "last_7d_gmv": 24678279,
+     "last_7d_units_sold": 168,
+     "last_90d_gmv": 1900675316,
+     "last_90d_units_sold": 16265,
+     "total_gmv": 2083974110,
+     "total_units_sold": 17716,
+     "yesterday_gmv": 2769264,
+     "yesterday_units_sold": 18
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/b9f371a384d24bbea32297e6375f3653~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494620242746247656",
+     "shop_name": "Chungoanh Siêu Thị Đồ Gia Dung",
+     "total_units_sold": 3726776
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1183,
+     "linked_video_count": 2681
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844168,
+       "name": "Kitchen Appliances"
+      },
+      "l3": {
+       "id": 847880,
+       "name": "Electric Steamers"
+      }
+     },
+     "ceiling_price": 477.95,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/2c1c1249e18246d5933847f8223df97c~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731893856825935062",
+     "floor_price": 477.95,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-08-23",
+     "launch_time": 1755902717,
+     "price_display": "477.949 ₫",
+     "product_id": "1731893856825935062",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731893856825935062?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Nồi lẩu điện đa năng COPCOP dung tích 1.8L tặng kèm khay hấp với 2 mức nhiệt tiện lợi cho sinh viên, nhân viên văn phòng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1518133790,
+     "last_28d_units_sold": 3482,
+     "last_7d_gmv": 356860122,
+     "last_7d_units_sold": 746,
+     "last_90d_gmv": 3803705286,
+     "last_90d_units_sold": 9462,
+     "total_gmv": 11811452494,
+     "total_units_sold": 30380,
+     "yesterday_gmv": 54486186,
+     "yesterday_units_sold": 114
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/633ca2d813c048429e4ab39c62097ad6~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494821503621302486",
+     "shop_name": "COPCOP Việt Nam",
+     "total_units_sold": 116828
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

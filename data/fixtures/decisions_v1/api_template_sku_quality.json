@@ -1,0 +1,216 @@
+{
+  "model": "gpt-6-luna",
+  "input": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "text": "Replace this text and the input_json data with actual validated evidence for this question batch."
+        },
+        {
+          "type": "input_json",
+          "data": {
+            "video": {},
+            "sku": {},
+            "shop": {},
+            "market": {},
+            "policy": {},
+            "post": {}
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "score",
+      "name": "S01",
+      "instructions": "How complete and internally consistent is the listing title, attributes, images and variants? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Cannot identify product."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Numerous missing/misleading critical fields."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Basic fields but essential variant or usage details missing."
+        },
+        {
+          "label": "3 Good",
+          "description": "Main attributes, images and variants consistent."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Comprehensive, specific, accurate listing with clear variant selection."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "S02",
+      "instructions": "How persuasive and reliable are reviews considering rating, count and substantive complaint themes? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Strong credible negative pattern or unresolved severe defect."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Many credible repeated negative complaints."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Mixed reviews or limited sample."
+        },
+        {
+          "label": "3 Good",
+          "description": "Predominantly positive, sufficiently numerous relevant reviews."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Consistently strong substantive reviews with issues addressed; representative volume."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "S03",
+      "instructions": "How competitive is SKU price against like-for-like comparable listings, after normalized unit/size? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Highly overpriced without defensible value."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Meaningfully overpriced relative to verified comparable SKUs."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Near-market pricing with unclear differentiation."
+        },
+        {
+          "label": "3 Good",
+          "description": "Competitive price for equivalent variant/size."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Compelling value relative to verified close substitutes with comparable terms."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "S04",
+      "instructions": "How well can currently observed stock cover expected near-term demand? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Unavailable or confirmed impossible fulfillment."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Chronic stockouts / severe variant gaps."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Some variants unavailable or uncertain stock."
+        },
+        {
+          "label": "3 Good",
+          "description": "Most key variants available and stable replenishment."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Key variants reliably available with adequate replenishment plan."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "S05",
+      "instructions": "How well does the SKU address verified market demand (not just video views)? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Evidence of little demand in target market."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Weak demand relative to alternatives."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Moderate/noisy demand evidence."
+        },
+        {
+          "label": "3 Good",
+          "description": "Clear recurring demand across credible signals."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Strong sustained and relevant demand supported by multiple sources."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "C05",
+      "instructions": "How clearly does the video differentiate the SKU from realistic alternatives? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No differentiation."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Vague superiority claim."
+        },
+        {
+          "label": "2 Fair",
+          "description": "One distinguishing characteristic but no context."
+        },
+        {
+          "label": "3 Good",
+          "description": "Relevant differentiator supported by demonstrated feature."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Meaningful differentiator supported by relevant product comparison/evidence."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "C09",
+      "instructions": "How consistent are product claims, variant and visuals with the matched SKU listing? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Material contradiction or clearly different SKU."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Multiple important mismatches."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Partial match with unresolved variant/claim differences."
+        },
+        {
+          "label": "3 Good",
+          "description": "Strong match; minor ambiguous details only."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Exact product/variant and major claims match listing evidence."
+        }
+      ]
+    }
+  ]
+}

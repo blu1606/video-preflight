@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "hộp chia sữa",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 545,
+     "linked_video_count": 1855
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 962952,
+       "name": "Formula & Milk Storage & Organization"
+      }
+     },
+     "ceiling_price": 123.56,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/6483d0733bcb43e8884acece6e656285~tplv-aphluv4xwc-crop-webp:2498:2496.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731893937200006737",
+     "floor_price": 63.39,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-07-12",
+     "launch_time": 1752264945,
+     "price_display": "63.393 ₫  -  123.563 ₫",
+     "product_id": "1731893937200006737",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731893937200006737?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Hộp trữ sữa mini, hộp đựng sữa bột 3 ngăn chia bữa ăn cho bé, tiện lợi khi ra ngoài"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 68456837,
+     "last_28d_units_sold": 1022,
+     "last_7d_gmv": 18264311,
+     "last_7d_units_sold": 279,
+     "last_90d_gmv": 201973576,
+     "last_90d_units_sold": 3193,
+     "total_gmv": 3608559760,
+     "total_units_sold": 36765,
+     "yesterday_gmv": 2535720,
+     "yesterday_units_sold": 40
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/f76a7887d9e44e6a9dd4d05d7581ae63~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495201776365963857",
+     "shop_name": "OMMA",
+     "total_units_sold": 1210455
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 198,
+     "linked_video_count": 455
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 962952,
+       "name": "Formula & Milk Storage & Organization"
+      }
+     },
+     "ceiling_price": 136.65,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/24dea6a093a84888b8c80c88389aac64~tplv-aphluv4xwc-crop-webp:2498:2496.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731929737661613649",
+     "floor_price": 53.47,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-07-21",
+     "launch_time": 1753060622,
+     "price_display": "53.471 ₫  -  136.648 ₫",
+     "product_id": "1731929737661613649",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731929737661613649?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Hộp Đựng, Hộp Trữ Sữa Bột 3 Ngăn TOPGIAKIDS Chia Bữa Ăn Cho Bé Tiện Lợi Cho Mẹ Đựng Sữa Bột, Nhựa PP An Toàn Cho Bé, Tay Cầm Silicon Chắc Chắn ntn"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 14375967,
+     "last_28d_units_sold": 280,
+     "last_7d_gmv": 2111307,
+     "last_7d_units_sold": 41,
+     "last_90d_gmv": 65856324,
+     "last_90d_units_sold": 1361,
+     "total_gmv": 928522205,
+     "total_units_sold": 12110,
+     "yesterday_gmv": 106942,
+     "yesterday_units_sold": 2
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/f76a7887d9e44e6a9dd4d05d7581ae63~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495201776365963857",
+     "shop_name": "OMMA",
+     "total_units_sold": 1210455
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 29,
+     "linked_video_count": 192
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 12,
+       "name": "Textiles & Soft Furnishings"
+      },
+      "l2": {
+       "id": 811016,
+       "name": "Fabrics & Sewing Supplies"
+      },
+      "l3": {
+       "id": 811144,
+       "name": "Textiles & Fabrics"
+      }
+     },
+     "ceiling_price": 245.4,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/b2a80e22cb2a4aec8c4ad1102a8726e1~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730983651460090592",
+     "floor_price": 215.23,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-05-29",
+     "launch_time": 1748500558,
+     "price_display": "215.230 ₫  -  245.402 ₫",
+     "product_id": "1730983651460090592",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 15,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730983651460090592?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Vách Xe Bằng Da, Tự Dính, Da Chamois Da Lộn Sửa Đổi, Chất Liệu vải nỉ Thích Hợp Để Sửa Đổi Nội Thất Xe Hơi Alcantara, Phụ Kiện Chìa Khóa Cột AB Voi Lịch Women Bàn Tay"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 51020290,
+     "last_28d_units_sold": 236,
+     "last_7d_gmv": 12058343,
+     "last_7d_units_sold": 56,
+     "last_90d_gmv": 178662859,
+     "last_90d_units_sold": 875,
+     "total_gmv": 938797294,
+     "total_units_sold": 4469,
+     "yesterday_gmv": 1506610,
+     "yesterday_units_sold": 7
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/22c0c1af4d104914b5b538f7eb203146~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8648009930715924192",
+     "shop_name": "ICar Family shop",
+     "total_units_sold": 5882
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 0,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 962952,
+       "name": "Formula & Milk Storage & Organization"
+      }
+     },
+     "ceiling_price": 118.11,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/2720b6566f4b48faa5deaf40690af35e~tplv-aphluv4xwc-crop-webp:754:754.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737773542322570580",
+     "floor_price": 118.11,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-06",
+     "launch_time": 1791239193,
+     "price_display": "118.109 ₫",
+     "product_id": "1737773542322570580",
+     "product_rating": 0,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737773542322570580?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Hộp chia sữa bột tiện lợi, di động, mang đi ra ngoài, kèm túi đựng, hộp chiết kín, chất liệu an toàn thực phẩm cho bé, chia mỗi bữa một ngăn."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 21932163,
+     "last_28d_units_sold": 185,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 21932163,
+     "last_90d_units_sold": 185,
+     "total_gmv": 21932163,
+     "total_units_sold": 185,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ddcd7a993930421a9cd7d175029cb360~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8684263901275391316",
+     "shop_name": "Corvyn Mart",
+     "total_units_sold": 3032
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 49,
+     "linked_video_count": 52
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 962952,
+       "name": "Formula & Milk Storage & Organization"
+      }
+     },
+     "ceiling_price": 34.76,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/e114e94e597e4b39a4f96f3354b36d8b~tplv-o3syd03w52-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729588770256358180",
+     "floor_price": 34.76,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-03-31",
+     "launch_time": 1680193317,
+     "price_display": "34.759 ₫",
+     "product_id": "1729588770256358180",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729588770256358180?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[ DADOO ] BỘ SƯU TẬP - Hộp Chia / ĐỰNG Sữa 3 Tầng Nhỏ Gọn An Toàn Dễ Sử Dụng Mang Theo Du Lịch Nhiều Ngăn Đựng Chất Liệu Cao Cấp Màu Sắc Hàn Quốc Đựng Sữa Bột Trữ Sữa"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 5541294,
+     "last_28d_units_sold": 171,
+     "last_7d_gmv": 1748876,
+     "last_7d_units_sold": 54,
+     "last_90d_gmv": 9584935,
+     "last_90d_units_sold": 280,
+     "total_gmv": 95331320,
+     "total_units_sold": 1884,
+     "yesterday_gmv": 243313,
+     "yesterday_units_sold": 7
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5bbbf74a3342499587b1124ca2b090ab~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494913107531762468",
+     "shop_name": "DadooStore",
+     "total_units_sold": 273362
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 282,
+     "linked_video_count": 470
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 700707,
+       "name": "Baby Utensils\t"
+      }
+     },
+     "ceiling_price": 582.78,
+     "commission_rate_percent": 9,
+     "cover_url": "https://s.500fd.com/tt_product/9bf55ed34f484cd0bccad80e8c94445c~tplv-aphluv4xwc-crop-webp:900:900.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731432116870810359",
+     "floor_price": 294.19,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-01-11",
+     "launch_time": 1736569672,
+     "price_display": "294.190 ₫  -  582.777 ₫",
+     "product_id": "1731432116870810359",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 20,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731432116870810359?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Khay Trữ Đông Đồ Ăn Dặm Cho Bé Có Nắp Đậy Firgi Silicone Platinum Hàn Quốc, Hộp Chia Ô Trữ Sữa Mẹ Và Thức Ăn Dặm"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 50771565,
+     "last_28d_units_sold": 169,
+     "last_7d_gmv": 12551766,
+     "last_7d_units_sold": 43,
+     "last_90d_gmv": 138559311,
+     "last_90d_units_sold": 468,
+     "total_gmv": 399577581,
+     "total_units_sold": 1294,
+     "yesterday_gmv": 1176760,
+     "yesterday_units_sold": 4
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1515caa84c444adbb5f40ee0a2c99f8e~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7495943876898753271",
+     "shop_name": "Firgi Việt Nam",
+     "total_units_sold": 18605
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 165,
+     "linked_video_count": 321
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 962952,
+       "name": "Formula & Milk Storage & Organization"
+      }
+     },
+     "ceiling_price": 80.8,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/5f0e649984404623ad078a4863384eb2~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729468035263465970",
+     "floor_price": 72.48,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2022-10-03",
+     "launch_time": 1664771010,
+     "price_display": "72.483 ₫  -  80.800 ₫",
+     "product_id": "1729468035263465970",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 8,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729468035263465970?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Hộp đựng sữa bột,hộp chia sữa, đồ ăn khô cho bé hình Khủng Long cao cấp Có Thể Tiệt Trùng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 9188386,
+     "last_28d_units_sold": 135,
+     "last_7d_gmv": 2012971,
+     "last_7d_units_sold": 29,
+     "last_90d_gmv": 28954848,
+     "last_90d_units_sold": 437,
+     "total_gmv": 611349336,
+     "total_units_sold": 11981,
+     "yesterday_gmv": 144966,
+     "yesterday_units_sold": 2
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5d5577208a1046fa80b3f265434fd751~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494603179352099314",
+     "shop_name": "BABICO - Kho Sỉ Mẹ Bé",
+     "total_units_sold": 3756896
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 38,
+     "linked_video_count": 92
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 962952,
+       "name": "Formula & Milk Storage & Organization"
+      }
+     },
+     "ceiling_price": 167.43,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/25290c6f72764ebb938fbcedf8f12820~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735423953567254113",
+     "floor_price": 102.77,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-11",
+     "launch_time": 1778472043,
+     "price_display": "102.768 ₫  -  167.430 ₫",
+     "product_id": "1735423953567254113",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735423953567254113?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Combo Du Lịch] Bình Sữa Thủy Tinh 180ml TopGia Kids Chống Sặc (Núm Siêu Mềm Chuẩn Nhịp) + Hộp Chia Sữa Bột 3 Tầng Mang Đi Tiện Lợi ntn"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 13154014,
+     "last_28d_units_sold": 132,
+     "last_7d_gmv": 3245562,
+     "last_7d_units_sold": 33,
+     "last_90d_gmv": 88176458,
+     "last_90d_units_sold": 967,
+     "total_gmv": 276315339,
+     "total_units_sold": 2825,
+     "yesterday_gmv": 822144,
+     "yesterday_units_sold": 8
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1321d00917044577b46787f95d5570c7~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495329004246633057",
+     "shop_name": "Omma Mom&Baby",
+     "total_units_sold": 1448544
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4,
+     "linked_video_count": 3
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 962952,
+       "name": "Formula & Milk Storage & Organization"
+      }
+     },
+     "ceiling_price": 112.96,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/e921733266b64677a6e94430e5c54a91~tplv-o3syd03w52-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734710461513500013",
+     "floor_price": 91.21,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-04-22",
+     "launch_time": 1776826397,
+     "price_display": "91.205 ₫  -  112.958 ₫",
+     "product_id": "1734710461513500013",
+     "product_rating": 5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734710461513500013?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Hộp chia sữa bột tiện lợi ngoài đường, túi lưu trữ kín ẩm, tiêu chuẩn thực phẩm 1 lần 1 ống"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 8791250,
+     "last_28d_units_sold": 105,
+     "last_7d_gmv": 2395428,
+     "last_7d_units_sold": 27,
+     "last_90d_gmv": 11386415,
+     "last_90d_units_sold": 138,
+     "total_gmv": 13830468,
+     "total_units_sold": 161,
+     "yesterday_gmv": 364820,
+     "yesterday_units_sold": 4
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/24ce0d3d0eee47bcb892ae41ceb6216d~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8663456612957783405",
+     "shop_name": "BabeBloom",
+     "total_units_sold": 5423
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 63,
+     "linked_video_count": 133
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 23,
+       "name": "Automotive & Motorcycle"
+      },
+      "l2": {
+       "id": 930184,
+       "name": "Car Interior Accessories"
+      },
+      "l3": {
+       "id": 933000,
+       "name": "Car Key Cases"
+      }
+     },
+     "ceiling_price": 113.55,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/494717d0d09749f6a887875dcdb51d72~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730266554881378574",
+     "floor_price": 108.61,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-05-16",
+     "launch_time": 1715840032,
+     "price_display": "108.606 ₫  -  113.554 ₫",
+     "product_id": "1730266554881378574",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 27,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730266554881378574?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Vỏ Bọc Chìa Khóa Thích Hợp Cho Xe Máy Honda WINNER V3,  Pcx150 ,vision2024,AB125 2024,AB125 2025,Vario125,SH160i,XE SH160, 125 Đông Nam, Móc Chìa Khóa Hàng Xẻ, Phụ Kiện Chìa Khóa Điều Khiển Từ Xa Sửa Đổi, Móc Chìa Khóa, Bảo Vệ Chìa Khóa Móc Khoá"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 11306026,
+     "last_28d_units_sold": 105,
+     "last_7d_gmv": 3265824,
+     "last_7d_units_sold": 30,
+     "last_90d_gmv": 16925546,
+     "last_90d_units_sold": 157,
+     "total_gmv": 352125585,
+     "total_units_sold": 2133,
+     "yesterday_gmv": 1086060,
+     "yesterday_units_sold": 10
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/b363d2a337724d4f9a4176576a9e748d~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "8647387196235351310",
+     "shop_name": "LUCKYCARS AUTO PARTS STORE",
+     "total_units_sold": 422805
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

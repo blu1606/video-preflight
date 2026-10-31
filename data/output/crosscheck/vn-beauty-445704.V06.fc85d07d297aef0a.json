@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 2,
+  "label": "2 Fair",
+  "score": 50.0,
+  "rationale": "Tình huống trang điểm đi dự tiệc có liên hệ cơ bản với sản phẩm mascara lông mày và nhóm người xem được suy ra là quan tâm đến mỹ phẩm. Tuy nhiên, phần cảm xúc chủ yếu là phim ngắn tình cảm kịch tính, nên chưa có bằng chứng cho thấy khoảnh khắc cảm xúc đặc thù, chân thực gắn chặt với giá trị sản phẩm.",
+  "key_evidence": [
+    "video.inferred_target_audience (REAL): 18–34, nữ; quan tâm trang điểm và mỹ phẩm",
+    "video.inferred_target_audience (REAL): tình huống trang điểm đi dự tiệc, kể theo kiểu phim ngắn lãng mạn có xung đột gia đình và tình cảm",
+    "video.emotion: 7.0 (REAL)"
+  ],
+  "evidence_sent": {
+    "context.target_audience": {
+      "value": {
+        "age_bands": {
+          "18-24": 0.36,
+          "25-34": 0.45,
+          "35-44": 0.14,
+          "45+": 0.05
+        },
+        "gender_split": {
+          "female": 0.78,
+          "male": 0.22
+        },
+        "regions": {
+          "TP.HCM": 0.33,
+          "Hà Nội": 0.26,
+          "tỉnh khác": 0.41
+        },
+        "interests": [
+          "skincare",
+          "làm đẹp",
+          "review mỹ phẩm"
+        ]
+      },
+      "status": "MOCK"
+    },
+    "video.emotion": {
+      "value": 7.0,
+      "status": "REAL"
+    },
+    "video.inferred_target_audience": {
+      "value": {
+        "age_band": "18-34",
+        "gender": "female",
+        "life_stage": "",
+        "interests": [
+          "Trang điểm",
+          "Mỹ phẩm",
+          "Phim ngắn tình cảm kịch tính"
+        ],
+        "cues": [
+          "Sản phẩm được xác định là mascara lông mày.",
+          "Tình huống xoay quanh việc trang điểm và một người phụ nữ dự tiệc.",
+          "Cách kể theo kiểu phim ngắn lãng mạn, có xung đột gia đình và tình cảm."
+        ]
+      },
+      "status": "REAL"
+    }
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "dataset_version": "0.1",
+  "rules": [
+    {
+      "rule_id": "TTS-001",
+      "source_id": "TTS_CONTENT",
+      "platforms": [
+        "tiktok_shop"
+      ],
+      "market": "VN",
+      "applies_to": [
+        "organic",
+        "shop_video",
+        "live"
+      ],
+      "category": "product_prohibited",
+      "severity": "critical",
+      "summary_en": "video promotes a product that is prohibited or unsupported",
+      "required_features": [
+        "sku.category",
+        "video.promoted_product"
+      ],
+      "check_type": "flag_restricted_product",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=6837773789480706&lang=en"
+    },
+    {
+      "rule_id": "TTS-002",
+      "source_id": "TTS_CONTENT",
+      "platforms": [
+        "tiktok_shop"
+      ],
+      "market": "VN",
+      "applies_to": [
+        "shop_video",
+        "live"
+      ],
+      "category": "claim_accuracy",
+      "severity": "high",
+      "summary_en": "product benefits or claims not supported by product information or evidence",
+      "required_features": [
+        "video.claims",
+        "sku.claims",
+        "sku.supporting_documents"
+      ],
+      "check_type": "claim_mismatch",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=6837773789480706&lang=en"
+    },
+    {
+      "rule_id": "TTS-003",
+      "source_id": "TTS_RESTRICT",
+      "platforms": [
+        "tiktok_shop"
+      ],
+      "market": "VN",
+      "applies_to": [
+        "listing",
+        "shop_video"
+      ],
+      "category": "cosmetic_approval",
+      "severity": "high",
+      "summary_en": "beauty/cosmetic product lacks documented approval or required labelling",
+      "required_features": [
+        "sku.category",
+        "sku.cosmetic_notification_available",
+        "sku.label_images_available"
+      ],
+      "check_type": "cosmetics_document_check",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://seller-vn.tiktok.com/university/essay?identity=1&knowledge_id=7179954358388497&lang=vi-VN&role=1"
+    },
+    {
+      "rule_id": "TTA-001",
+      "source_id": "TT_AD_MISLEAD",
+      "platforms": [
+        "tiktok"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "ads"
+      ],
+      "category": "exaggerated_claim",
+      "severity": "high",
+      "summary_en": "ad promises exaggerated or absolute results",
+      "required_features": [
+        "video.claims",
+        "ad.copy"
+      ],
+      "check_type": "absolute_claim_detector",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-misleading-and-false-content?lang=en"
+    },
+    {
+      "rule_id": "TTA-002",
+      "source_id": "TT_AD_MISLEAD",
+      "platforms": [
+        "tiktok"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "ads"
+      ],
+      "category": "before_after",
+      "severity": "high",
+      "summary_en": "before-and-after comparison risks misleading impression of product effect",
+      "required_features": [
+        "video.before_after",
+        "video.claims"
+      ],
+      "check_type": "before_after_review",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-misleading-and-false-content?lang=en"
+    },
+    {
+      "rule_id": "TTA-003",
+      "source_id": "TT_AD_MISLEAD",
+      "platforms": [
+        "tiktok"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "ads"
+      ],
+      "category": "fake_clickbait",
+      "severity": "high",
+      "summary_en": "fake non-functional buttons or misleading interaction elements",
+      "required_features": [
+        "video.ui_overlays"
+      ],
+      "check_type": "fake_button_check",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-misleading-and-false-content?lang=en"
+    },
+    {
+      "rule_id": "TTC-001",
+      "source_id": "TT_COMMUNITY",
+      "platforms": [
+        "tiktok"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "organic",
+        "ads"
+      ],
+      "category": "aigc_label",
+      "severity": "medium",
+      "summary_en": "realistic AI-created or edited persons/scenes without applicable disclosure",
+      "required_features": [
+        "video.realistic_ai_media",
+        "post.ai_label_enabled"
+      ],
+      "check_type": "ai_disclosure_check",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://www.tiktok.com/community-guidelines"
+    },
+    {
+      "rule_id": "TTC-002",
+      "source_id": "TT_DISCLOSE",
+      "platforms": [
+        "tiktok"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "organic",
+        "shop_video"
+      ],
+      "category": "commercial_disclosure",
+      "severity": "high",
+      "summary_en": "commercial promotion without platform disclosure setting",
+      "required_features": [
+        "post.is_commercial",
+        "post.disclosure_enabled"
+      ],
+      "check_type": "commercial_disclosure_check",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://ads-useast2a.tiktok.com/resources/help/article/how-to-turn-on-the-commercial-content-disclosure-setting-in-tiktok?lang=en"
+    },
+    {
+      "rule_id": "SHP-001",
+      "source_id": "SHOPEE_LIST",
+      "platforms": [
+        "shopee"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "listing"
+      ],
+      "category": "listing_consistency",
+      "severity": "high",
+      "summary_en": "product title, images, price and description inconsistent",
+      "required_features": [
+        "sku.title",
+        "sku.images",
+        "sku.description",
+        "sku.price_vnd"
+      ],
+      "check_type": "listing_consistency_check",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://help.shopee.vn/portal/4/article/77246"
+    },
+    {
+      "rule_id": "SHP-002",
+      "source_id": "SHOPEE_LIST",
+      "platforms": [
+        "shopee"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "listing"
+      ],
+      "category": "image_requirements",
+      "severity": "medium",
+      "summary_en": "listing lacks at least one actual product photograph meeting stated criteria",
+      "required_features": [
+        "sku.images",
+        "sku.has_real_photo",
+        "sku.product_photo_area_ratio"
+      ],
+      "check_type": "product_image_check",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://help.shopee.vn/portal/4/article/77246"
+    },
+    {
+      "rule_id": "SHP-003",
+      "source_id": "SHOPEE_LIST",
+      "platforms": [
+        "shopee"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "listing"
+      ],
+      "category": "misleading_title",
+      "severity": "medium",
+      "summary_en": "title contains promotional claims or restricted marketing expressions",
+      "required_features": [
+        "sku.title"
+      ],
+      "check_type": "title_keyword_check",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://help.shopee.vn/portal/4/article/77246"
+    },
+    {
+      "rule_id": "SHP-004",
+      "source_id": "SHOPEE_LIST",
+      "platforms": [
+        "shopee"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "listing"
+      ],
+      "category": "cosmetic_documents",
+      "severity": "high",
+      "summary_en": "cosmetic listing missing specified sourcing, notification or expiry details",
+      "required_features": [
+        "sku.category",
+        "sku.origin",
+        "sku.expiry",
+        "sku.cosmetic_notification_available"
+      ],
+      "check_type": "cosmetic_listing_check",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://help.shopee.vn/portal/4/article/77246"
+    },
+    {
+      "rule_id": "SHP-005",
+      "source_id": "SHOPEE_LIST",
+      "platforms": [
+        "shopee"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "listing"
+      ],
+      "category": "contact_diversion",
+      "severity": "medium",
+      "summary_en": "listing description contains external contact or off-platform redirection",
+      "required_features": [
+        "sku.description"
+      ],
+      "check_type": "offplatform_contact_check",
+      "verification_status": "official_source_reviewed",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://help.shopee.vn/portal/4/article/77246"
+    },
+    {
+      "rule_id": "META-001",
+      "source_id": "META_ADS",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "ads"
+      ],
+      "category": "misleading_claim",
+      "severity": "high",
+      "summary_en": "ad content potentially uses deceptive or unsupported commercial claims",
+      "required_features": [
+        "ad.copy",
+        "video.claims",
+        "sku.claims"
+      ],
+      "check_type": "meta_claim_review",
+      "verification_status": "provisional_official_index_only",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://transparency.meta.com/policies/ad-standards/"
+    },
+    {
+      "rule_id": "META-002",
+      "source_id": "META_ADS",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "ads"
+      ],
+      "category": "personal_attributes",
+      "severity": "medium",
+      "summary_en": "ad directly asserts sensitive personal condition of viewer",
+      "required_features": [
+        "ad.copy",
+        "video.transcript"
+      ],
+      "check_type": "meta_personal_attribute_check",
+      "verification_status": "provisional_official_index_only",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://transparency.meta.com/policies/ad-standards/"
+    },
+    {
+      "rule_id": "META-003",
+      "source_id": "META_COMMERCE",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "market": "market_dependent",
+      "applies_to": [
+        "ads",
+        "commerce"
+      ],
+      "category": "commerce_eligibility",
+      "severity": "high",
+      "summary_en": "product category may be restricted by commerce eligibility rules",
+      "required_features": [
+        "sku.category",
+        "shop.country"
+      ],
+      "check_type": "meta_commerce_review",
+      "verification_status": "provisional_official_index_only",
+      "decision_policy": "flag_for_review_not_automatic_rejection",
+      "source_url": "https://www.facebook.com/policies_center/commerce/"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Tiêu đề REAL cho biết đây là sữa rửa mặt nam và nêu dung tích 100g, nên có thể nhận diện sản phẩm. Tuy nhiên, thuộc tính, số ảnh và tên SKU đều là dữ liệu MOCK, không đủ căn cứ để đánh giá tính đầy đủ hoặc nhất quán của thuộc tính, hình ảnh và biến thể thực tế.",
+  "key_evidence": [
+    "listing.title: “Sữa rửa mặt nam Men Stay Simplicity Facial Cleanser … 100g” (REAL)",
+    "listing.attributes (MOCK)",
+    "listing.image_count: 8 (MOCK)",
+    "sku.title (MOCK)"
+  ],
+  "evidence_sent": {
+    "listing.attributes": {
+      "value": {
+        "dung_tich": "100g",
+        "xuat_xu": "Hàn Quốc",
+        "han_su_dung": "36 tháng"
+      },
+      "status": "MOCK"
+    },
+    "listing.image_count": {
+      "value": 8,
+      "status": "MOCK"
+    },
+    "listing.title": {
+      "value": "Sữa rửa mặt nam Men Stay Simplicity Facial Cleanser 3 tác động giúp làm sạch sâu bụi bẩn và dầu nhờn, hạn chế các tác nhân gây mụn, giảm bã nhờn hiệu quả 100g",
+      "status": "REAL"
+    },
+    "sku.title": {
+      "value": "Sữa rửa mặt nam Men Stay",
+      "status": "MOCK"
+    }
+  },
+  "usage": {
+    "completion_tokens": 418,
+    "prompt_tokens": 428,
+    "total_tokens": 846,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 263,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

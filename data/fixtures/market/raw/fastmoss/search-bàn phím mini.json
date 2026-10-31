@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "bàn phím mini",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 812,
+     "linked_video_count": 3535
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 19,
+       "name": "Toys & Hobbies"
+      },
+      "l2": {
+       "id": 860296,
+       "name": "Classic & Novelty Toys"
+      },
+      "l3": {
+       "id": 963080,
+       "name": "Slime & Squishy Toys"
+      }
+     },
+     "ceiling_price": 83.94,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/34e8b8d5ee5945eda0bfdc4e2222d4a5~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736123792156951734",
+     "floor_price": 26.51,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-03",
+     "launch_time": 1783066833,
+     "price_display": "26.506 ₫  -  83.936 ₫",
+     "product_id": "1736123792156951734",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 26,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736123792156951734?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【Giao hàng nhanh từ Việt Nam】Khóa móc chìa khóa bàn phím cơ mini - đồ chơi giảm căng thẳng, giải trí thư giãn cho bàn làm việc"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 675180555,
+     "last_28d_units_sold": 26803,
+     "last_7d_gmv": 116729525,
+     "last_7d_units_sold": 4550,
+     "last_90d_gmv": 1135793683,
+     "last_90d_units_sold": 44712,
+     "total_gmv": 1136880824,
+     "total_units_sold": 44752,
+     "yesterday_gmv": 7474692,
+     "yesterday_units_sold": 282
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/796834204c1c4acf9979c853f4513fe1~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8648027134256579766",
+     "shop_name": "gss0ya6",
+     "total_units_sold": 79318
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 159,
+     "linked_video_count": 415
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852488,
+       "name": "Festive & Party Supplies"
+      },
+      "l3": {
+       "id": 855944,
+       "name": "Party Bags & Gifts"
+      }
+     },
+     "ceiling_price": 104.76,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/153f9d9615904d7b892524d8f8ae2b0e~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737829364721091949",
+     "floor_price": 26.31,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-09",
+     "launch_time": 1791551761,
+     "price_display": "26.312 ₫  -  104.764 ₫",
+     "product_id": "1737829364721091949",
+     "product_rating": 2.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 8,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737829364721091949?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Đồ chơi fidget dạng bàn phím mini, móc khóa bàn phím hoạt hình, đồ chơi nhấn nút bàn phím 26 trong 1 giúp giảm căng thẳng, phụ kiện treo balo"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 648457023,
+     "last_28d_units_sold": 24198,
+     "last_7d_gmv": 246525413,
+     "last_7d_units_sold": 9043,
+     "last_90d_gmv": 648457023,
+     "last_90d_units_sold": 24198,
+     "total_gmv": 657103419,
+     "total_units_sold": 24539,
+     "yesterday_gmv": 6551688,
+     "yesterday_units_sold": 249
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d6eb6e67a00f4550bd71540fc94f3f50~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8654914658497037677",
+     "shop_name": "JINGRUI.",
+     "total_units_sold": 47350
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 184,
+     "linked_video_count": 651
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827528,
+       "name": "Laptop Stands & Trays"
+      }
+     },
+     "ceiling_price": 49.25,
+     "commission_rate_percent": 13.5,
+     "cover_url": "https://s.500fd.com/tt_product/e4a261dad45e4af59c4b47ffd65556b2~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736384311671555227",
+     "floor_price": 27.82,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-09",
+     "launch_time": 1783531332,
+     "price_display": "27.823 ₫  -  49.252 ₫",
+     "product_id": "1736384311671555227",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 7,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736384311671555227?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[1 Đôi] Giá Đỡ Laptop Mini Vô Hình Có Thể Gập Lại, Chân Đế Tản Nhiệt Máy Tính Xách Tay Macbook, Đệm Nâng Bàn Phím Di Động"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 555639356,
+     "last_28d_units_sold": 19981,
+     "last_7d_gmv": 190663354,
+     "last_7d_units_sold": 6986,
+     "last_90d_gmv": 994346180,
+     "last_90d_units_sold": 36897,
+     "total_gmv": 1011010960,
+     "total_units_sold": 37519,
+     "yesterday_gmv": 33192839,
+     "yesterday_units_sold": 1193
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/31c15feca9aa4a5eb9ef275432d19119~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494633962408412315",
+     "shop_name": "Gió Mát Liệu Lượng",
+     "total_units_sold": 588921
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 164,
+     "linked_video_count": 587
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 8,
+       "name": "Fashion Accessories"
+      },
+      "l2": {
+       "id": 905608,
+       "name": "Costume Jewelry & Accessories"
+      },
+      "l3": {
+       "id": 907656,
+       "name": "Keychains"
+      }
+     },
+     "ceiling_price": 29.7,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/83509f7db6e841a89eca39a190c5e0c3~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737666422630745276",
+     "floor_price": 29.7,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-26",
+     "launch_time": 1790399664,
+     "price_display": "29.697 ₫",
+     "product_id": "1737666422630745276",
+     "product_rating": 3.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737666422630745276?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Đồ chơi fidget dạng bàn phím mini, móc khóa bàn phím hoạt hình, đồ chơi bấm nút bàn phím 26 trong 1 giúp giảm căng thẳng, phụ kiện treo balo"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 452905203,
+     "last_28d_units_sold": 15809,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 452905203,
+     "last_90d_units_sold": 15809,
+     "total_gmv": 465899633,
+     "total_units_sold": 16287,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/04065c16a08f4337870bc42744bdec33~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "8648029168793519292",
+     "shop_name": "POPFANS",
+     "total_units_sold": 96597
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 245,
+     "linked_video_count": 745
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852488,
+       "name": "Festive & Party Supplies"
+      },
+      "l3": {
+       "id": 855944,
+       "name": "Party Bags & Gifts"
+      }
+     },
+     "ceiling_price": 42.9,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/3576ae8ecd0b468da4c5023b09f70f26~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737829432435378143",
+     "floor_price": 25.74,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-08",
+     "launch_time": 1791391803,
+     "price_display": "25.737 ₫  -  42.896 ₫",
+     "product_id": "1737829432435378143",
+     "product_rating": 3.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 8,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737829432435378143?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Đồ chơi fidget dạng bàn phím mini, móc khóa bàn phím hoạt hình, đồ chơi nhấn nút bàn phím 26 trong 1 giúp giảm căng thẳng, phụ kiện treo balo"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 293525952,
+     "last_28d_units_sold": 11067,
+     "last_7d_gmv": 200447367,
+     "last_7d_units_sold": 7618,
+     "last_90d_gmv": 293525952,
+     "last_90d_units_sold": 11067,
+     "total_gmv": 293525952,
+     "total_units_sold": 11067,
+     "yesterday_gmv": 30987348,
+     "yesterday_units_sold": 1204
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/17d6e0e963b5492c891bd22b60d19ec5~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8657315594100049887",
+     "shop_name": "LiangRao",
+     "total_units_sold": 26566
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 162,
+     "linked_video_count": 446
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 19,
+       "name": "Toys & Hobbies"
+      },
+      "l2": {
+       "id": 860296,
+       "name": "Classic & Novelty Toys"
+      },
+      "l3": {
+       "id": 700700,
+       "name": "Model & Toy Vehicles\t"
+      }
+     },
+     "ceiling_price": 90.8,
+     "commission_rate_percent": 2,
+     "cover_url": "https://s.500fd.com/tt_product/5620b263dab8493c80c7547a899c05d3~tplv-aphluv4xwc-crop-webp:575:575.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737448224744572075",
+     "floor_price": 26.11,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-13",
+     "launch_time": 1789260176,
+     "price_display": "26.106 ₫  -  90.802 ₫",
+     "product_id": "1737448224744572075",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 29,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737448224744572075?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bàn phím cơ mini hoạ tiết đáng yêu xả stress cực thích có thể làm móc khoá"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 165158387,
+     "last_28d_units_sold": 5968,
+     "last_7d_gmv": 24036741,
+     "last_7d_units_sold": 946,
+     "last_90d_gmv": 214035199,
+     "last_90d_units_sold": 7702,
+     "total_gmv": 276270199,
+     "total_units_sold": 10007,
+     "yesterday_gmv": 1853526,
+     "yesterday_units_sold": 71
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ad0212337485455c82ab50e1ba5b102a~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494199138354496683",
+     "shop_name": "Phụ kiện hot97",
+     "total_units_sold": 11256
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 155,
+     "linked_video_count": 385
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852488,
+       "name": "Festive & Party Supplies"
+      },
+      "l3": {
+       "id": 856072,
+       "name": "Cake Decorations"
+      }
+     },
+     "ceiling_price": 125.31,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/10b8a75d641d4b3982338d396f38d534~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737168375842703234",
+     "floor_price": 27.85,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-25",
+     "launch_time": 1787607111,
+     "price_display": "27.846 ₫  -  125.309 ₫",
+     "product_id": "1737168375842703234",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 13,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737168375842703234?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[ĐẬP LÀ SÁNG] Bàn phím đồ chơi MINI 8CM 26 phím, Móc Khóa bàn phím hoạt hình sinh động phiên bản có LED siêu dễ thương với thiết kế màu sắc tươi sáng và hình ảnh hoạt hình đáng yêu. Phù hợp mọi lứa tuổi với công dụng giảm căng thẳng stress và tạo tiếng."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 132550519,
+     "last_28d_units_sold": 4371,
+     "last_7d_gmv": 35879957,
+     "last_7d_units_sold": 1294,
+     "last_90d_gmv": 623433727,
+     "last_90d_units_sold": 11710,
+     "total_gmv": 658716377,
+     "total_units_sold": 12237,
+     "yesterday_gmv": 3675672,
+     "yesterday_units_sold": 132
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a1942ce47b574f299947762dc25a08e8~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494987859628559234",
+     "shop_name": "Store Em Hấu",
+     "total_units_sold": 37208
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 272,
+     "linked_video_count": 1248
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827528,
+       "name": "Laptop Stands & Trays"
+      }
+     },
+     "ceiling_price": 53.83,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/58e9b10297a7467093093b0b342ddfb5~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731194100182975675",
+     "floor_price": 25.69,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-05-07",
+     "launch_time": 1746562678,
+     "price_display": "25.685 ₫  -  53.832 ₫",
+     "product_id": "1731194100182975675",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 10,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731194100182975675?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "2 Chân Đế Laptop Mini Có Thể Gập Lại, Bàn Phím Máy Tính Di Động Nâng Với 2 Góc Có Thể Điều Chỉnh, Chân Đế Notebook Vô Hì"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 92252458,
+     "last_28d_units_sold": 3676,
+     "last_7d_gmv": 16305939,
+     "last_7d_units_sold": 653,
+     "last_90d_gmv": 369566833,
+     "last_90d_units_sold": 16107,
+     "total_gmv": 1996081967,
+     "total_units_sold": 89944,
+     "yesterday_gmv": 1900690,
+     "yesterday_units_sold": 74
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/786ec08de8864475ac9225bd9a51d7d3~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496142401095698619",
+     "shop_name": "MOGEE.Hardware",
+     "total_units_sold": 1487322
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 91,
+     "linked_video_count": 220
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 8,
+       "name": "Fashion Accessories"
+      },
+      "l2": {
+       "id": 905608,
+       "name": "Costume Jewelry & Accessories"
+      },
+      "l3": {
+       "id": 907656,
+       "name": "Keychains"
+      }
+     },
+     "ceiling_price": 46.71,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/6356c518ad7d48c58abd2e7632bfbe8e~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737559921671177681",
+     "floor_price": 23.37,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-23",
+     "launch_time": 1790118999,
+     "price_display": "23.369 ₫  -  46.713 ₫",
+     "product_id": "1737559921671177681",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 12,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737559921671177681?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【Giao hàng nhanh từ Việt Nam】Khóa móc chìa khóa bàn phím cơ mini - đồ chơi giảm căng thẳng, giải trí thư giãn cho bàn làm việc"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 79142064,
+     "last_28d_units_sold": 3504,
+     "last_7d_gmv": 7914552,
+     "last_7d_units_sold": 343,
+     "last_90d_gmv": 79142064,
+     "last_90d_units_sold": 3504,
+     "total_gmv": 81082937,
+     "total_units_sold": 3601,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/acbf9f7d01b34f599b8dce7eec4b84b7~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494535230037722577",
+     "shop_name": "GoldeSPhoPantryS",
+     "total_units_sold": 103529
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 151,
+     "linked_video_count": 384
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 9,
+       "name": "Sports & Outdoor"
+      },
+      "l2": {
+       "id": 834824,
+       "name": "Sports & Outdoor Accessories"
+      },
+      "l3": {
+       "id": 810512,
+       "name": "Sports Sleeves & Support"
+      }
+     },
+     "ceiling_price": 90.14,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/c7b9259a70ac4ac4ad6695df24989a8d~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737160816107161350",
+     "floor_price": 28.47,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-29",
+     "launch_time": 1788005640,
+     "price_display": "28.466 ₫  -  90.142 ₫",
+     "product_id": "1737160816107161350",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 12,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737160816107161350?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Khóa móc chìa khóa bàn phím cơ mini‑đồ chơi giảm căng thẳng, giải trí thư giãn cho bàn làm việc"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 91096939,
+     "last_28d_units_sold": 3331,
+     "last_7d_gmv": 22864881,
+     "last_7d_units_sold": 823,
+     "last_90d_gmv": 106520743,
+     "last_90d_units_sold": 3923,
+     "total_gmv": 106619627,
+     "total_units_sold": 3927,
+     "yesterday_gmv": 1736426,
+     "yesterday_units_sold": 61
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c4016c5400aa4e3e8684a534a3ccf8d4~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8648282500660037382",
+     "shop_name": "SEA CHENIC 220",
+     "total_units_sold": 103727
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

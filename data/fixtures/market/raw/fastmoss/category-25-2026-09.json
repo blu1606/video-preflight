@@ -1,0 +1,53 @@
+{
+ "tool": "market_category_analysis",
+ "args": {
+  "analysis_type": "basic_metrics",
+  "filter": {
+   "category_id": 25,
+   "region": "VN",
+   "date_type": "month",
+   "date_value": "2026-09"
+  }
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "analysis_type": "basic_metrics",
+  "category": {
+   "category_id": 25,
+   "category_level": 1,
+   "category_name": "Health",
+   "region": "VN",
+   "stat_date": "2026-09"
+  },
+  "concentration_metrics": {
+   "top_products_gmv_share": 0,
+   "top_shops_gmv_share": 0
+  },
+  "growth_metrics": {
+   "active_product_count_change": 117,
+   "category_gmv_mom_percent": 13.2,
+   "category_gmv_yoy_percent": 15.17,
+   "category_units_sold_mom_percent": -3.75,
+   "category_units_sold_yoy_percent": 23.65,
+   "product_count_change": 8569,
+   "selling_creator_count_change": 1690,
+   "selling_live_count_change": 14053,
+   "selling_video_count_change": -24015
+  },
+  "scale_metrics": {
+   "active_product_count": 29165,
+   "category_gmv": 551361225432,
+   "category_units_sold": 2835427,
+   "product_count": 8569,
+   "selling_creator_count": 57624,
+   "selling_live_count": 141504,
+   "selling_video_count": 242124
+  },
+  "top_products_summary": {
+   "average_affiliate_count": 4325,
+   "average_live_count": 2262,
+   "average_video_count": 5285
+  }
+ }
+}

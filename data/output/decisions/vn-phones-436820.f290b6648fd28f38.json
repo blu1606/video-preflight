@@ -1,0 +1,1137 @@
+{
+  "model": "gpt-6-luna",
+  "usage": {
+    "input_tokens": 11232,
+    "input_tokens_details": {
+      "cache_write_tokens": 4488,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_30m_tokens": 4488,
+        "ttl_12h_tokens": 0
+      }
+    },
+    "output_tokens": 0,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11232
+  },
+  "questions": [
+    "V01",
+    "V02",
+    "V03",
+    "V04",
+    "V05",
+    "V06",
+    "V07",
+    "V08",
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "H01",
+    "H02",
+    "H03",
+    "H04",
+    "H05",
+    "M01",
+    "M02",
+    "M03",
+    "P01",
+    "P02",
+    "P03",
+    "P05"
+  ],
+  "answers": [
+    {
+      "confidence": 0.57,
+      "name": "V01",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.01,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.16,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.5,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.32,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.01,
+          "value": 4
+        }
+      ],
+      "score": 2.16,
+      "type": "score"
+    },
+    {
+      "confidence": 0.6,
+      "name": "V02",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.31,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.52,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.17,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 0.86,
+      "type": "score"
+    },
+    {
+      "confidence": 1.0,
+      "name": "V03",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.0,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 1.0,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 2.0,
+      "type": "score"
+    },
+    {
+      "confidence": 0.98,
+      "name": "V04",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.01,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.97,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.02,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 2.01,
+      "type": "score"
+    },
+    {
+      "confidence": 0.8,
+      "name": "V05",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.03,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.76,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.21,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 1.18,
+      "type": "score"
+    },
+    {
+      "confidence": 0.6,
+      "name": "V06",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.0,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.52,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.48,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 2.48,
+      "type": "score"
+    },
+    {
+      "confidence": 0.99,
+      "name": "V07",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.99,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.01,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 1.01,
+      "type": "score"
+    },
+    {
+      "confidence": 0.59,
+      "name": "V08",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.0,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.0,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.49,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.51,
+          "value": 4
+        }
+      ],
+      "score": 3.51,
+      "type": "score"
+    },
+    {
+      "confidence": 0.54,
+      "name": "C01",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.0,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.11,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.45,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.44,
+          "value": 4
+        }
+      ],
+      "score": 3.33,
+      "type": "score"
+    },
+    {
+      "confidence": 1.0,
+      "name": "C02",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 1.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.0,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.0,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 0.0,
+      "type": "score"
+    },
+    {
+      "confidence": 0.71,
+      "name": "C03",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.01,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.65,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.34,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 1.33,
+      "type": "score"
+    },
+    {
+      "confidence": 0.68,
+      "name": "C04",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.02,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.35,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.63,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 2.61,
+      "type": "score"
+    },
+    {
+      "confidence": 0.99,
+      "name": "C05",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.0,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.99,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.01,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 2.01,
+      "type": "score"
+    },
+    {
+      "confidence": 0.49,
+      "name": "C06",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.01,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.23,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.42,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.32,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.02,
+          "value": 4
+        }
+      ],
+      "score": 2.11,
+      "type": "score"
+    },
+    {
+      "confidence": 1.0,
+      "name": "C07",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 1.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.0,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.0,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 0.0,
+      "type": "score"
+    },
+    {
+      "confidence": 1.0,
+      "name": "C08",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 1.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.0,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.0,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 0.0,
+      "type": "score"
+    },
+    {
+      "confidence": 0.97,
+      "name": "C09",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.02,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.96,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.02,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 2.0,
+      "type": "score"
+    },
+    {
+      "confidence": 0.93,
+      "name": "C10",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.01,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.91,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.08,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 1.07,
+      "type": "score"
+    },
+    {
+      "confidence": 0.62,
+      "name": "S01",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.01,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.44,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.55,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 1.54,
+      "type": "score"
+    },
+    {
+      "confidence": 0.98,
+      "name": "S02",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.01,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.0,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.99,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 1.98,
+      "type": "score"
+    },
+    {
+      "confidence": 0.96,
+      "name": "S03",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.01,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.03,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.96,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 1.95,
+      "type": "score"
+    },
+    {
+      "confidence": 0.93,
+      "name": "S04",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.01,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.01,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.94,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.03,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.01,
+          "value": 4
+        }
+      ],
+      "score": 2.02,
+      "type": "score"
+    },
+    {
+      "confidence": 0.98,
+      "name": "S05",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.0,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.02,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.97,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.01,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 1.99,
+      "type": "score"
+    },
+    {
+      "confidence": 0.9,
+      "name": "H01",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.01,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.07,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.9,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.01,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.01,
+          "value": 4
+        }
+      ],
+      "score": 1.94,
+      "type": "score"
+    },
+    {
+      "confidence": 0.28,
+      "name": "H02",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.13,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.15,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.37,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.25,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.1,
+          "value": 4
+        }
+      ],
+      "score": 2.04,
+      "type": "score"
+    },
+    {
+      "confidence": 0.66,
+      "name": "H03",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.16,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.07,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.76,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.01,
+          "value": 4
+        }
+      ],
+      "score": 1.63,
+      "type": "score"
+    },
+    {
+      "confidence": 0.96,
+      "name": "H04",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.96,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.03,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.01,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 0.05,
+      "type": "score"
+    },
+    {
+      "confidence": 0.7,
+      "name": "H05",
+      "probabilities": [
+        {
+          "label": "0 Absent",
+          "probability": 0.74,
+          "value": 0
+        },
+        {
+          "label": "1 Weak",
+          "probability": 0.16,
+          "value": 1
+        },
+        {
+          "label": "2 Fair",
+          "probability": 0.1,
+          "value": 2
+        },
+        {
+          "label": "3 Good",
+          "probability": 0.0,
+          "value": 3
+        },
+        {
+          "label": "4 Excellent",
+          "probability": 0.0,
+          "value": 4
+        }
+      ],
+      "score": 0.36,
+      "type": "score"
+    },
+    {
+      "choice": "unknown",
+      "confidence": 0.51,
+      "name": "M01",
+      "probabilities": [
+        {
+          "probability": 0.04,
+          "value": "exact"
+        },
+        {
+          "probability": 0.32,
+          "value": "variant"
+        },
+        {
+          "probability": 0.03,
+          "value": "similar"
+        },
+        {
+          "probability": 0.0,
+          "value": "mismatch"
+        },
+        {
+          "probability": 0.61,
+          "value": "unknown"
+        }
+      ],
+      "type": "choice"
+    },
+    {
+      "choice": "demonstration",
+      "confidence": 0.88,
+      "name": "M02",
+      "probabilities": [
+        {
+          "probability": 0.0,
+          "value": "ugc_review"
+        },
+        {
+          "probability": 0.9,
+          "value": "demonstration"
+        },
+        {
+          "probability": 0.0,
+          "value": "comparison"
+        },
+        {
+          "probability": 0.0,
+          "value": "deal"
+        },
+        {
+          "probability": 0.01,
+          "value": "story"
+        },
+        {
+          "probability": 0.09,
+          "value": "other"
+        },
+        {
+          "probability": 0.0,
+          "value": "unknown"
+        }
+      ],
+      "type": "choice"
+    },
+    {
+      "choice": "unknown",
+      "confidence": 0.97,
+      "name": "M03",
+      "probabilities": [
+        {
+          "probability": 0.01,
+          "value": "traffic"
+        },
+        {
+          "probability": 0.01,
+          "value": "conversion"
+        },
+        {
+          "probability": 0.0,
+          "value": "stock"
+        },
+        {
+          "probability": 0.0,
+          "value": "trust"
+        },
+        {
+          "probability": 0.0,
+          "value": "operations"
+        },
+        {
+          "probability": 0.0,
+          "value": "economics"
+        },
+        {
+          "probability": 0.01,
+          "value": "mixed"
+        },
+        {
+          "probability": 0.97,
+          "value": "unknown"
+        }
+      ],
+      "type": "choice"
+    },
+    {
+      "choice": "disclosure",
+      "confidence": 0.43,
+      "name": "P01",
+      "probabilities": [
+        {
+          "probability": 0.01,
+          "value": "misleading_claim"
+        },
+        {
+          "probability": 0.05,
+          "value": "restricted_product"
+        },
+        {
+          "probability": 0.51,
+          "value": "disclosure"
+        },
+        {
+          "probability": 0.05,
+          "value": "intellectual_property"
+        },
+        {
+          "probability": 0.04,
+          "value": "listing_mismatch"
+        },
+        {
+          "probability": 0.3,
+          "value": "none_identified"
+        },
+        {
+          "probability": 0.04,
+          "value": "unknown"
+        }
+      ],
+      "type": "choice"
+    },
+    {
+      "name": "P02",
+      "probability": 0.05,
+      "type": "predicate"
+    },
+    {
+      "name": "P03",
+      "probability": 0.0,
+      "type": "predicate"
+    },
+    {
+      "name": "P05",
+      "probability": 0.18,
+      "type": "predicate"
+    }
+  ]
+}

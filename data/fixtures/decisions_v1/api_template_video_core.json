@@ -1,0 +1,405 @@
+{
+  "model": "gpt-6-luna",
+  "input": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "text": "Replace this text and the input_json data with actual validated evidence for this question batch."
+        },
+        {
+          "type": "input_json",
+          "data": {
+            "video": {},
+            "sku": {},
+            "shop": {},
+            "market": {},
+            "policy": {},
+            "post": {}
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "score",
+      "name": "V01",
+      "instructions": "How effectively does the first 3 seconds create an immediate relevant reason to keep watching? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No discernible hook in opening."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Opening begins without clear reason to watch."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Topic or problem becomes recognizable, but weak urgency or relevance."
+        },
+        {
+          "label": "3 Good",
+          "description": "Product problem/result/curiosity is clear quickly."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Immediate, specific, compelling hook directly tied to a viewer need."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "V02",
+      "instructions": "How specific and credible is the hook promise to the target audience? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No identifiable promise."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Generic or vague promise."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Understandable but weakly differentiated."
+        },
+        {
+          "label": "3 Good",
+          "description": "Specific audience problem or benefit supported by content."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Specific, credible, distinct promise with direct supporting evidence."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "V03",
+      "instructions": "How clearly does the video progress from setup to payoff? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No intelligible structure."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Disjointed narrative, difficult to follow."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Basic sequence but incomplete payoff."
+        },
+        {
+          "label": "3 Good",
+          "description": "Coherent setup-demo-result progression."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Coherent and engaging progression with convincing payoff."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "V04",
+      "instructions": "Does observable visual pacing support comprehension and attention? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Visual sequence unreadable or essentially unusable."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Extended irrelevant shots or abrupt cuts obscure content."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Mostly understandable but obvious dead space or dense edits."
+        },
+        {
+          "label": "3 Good",
+          "description": "Shot changes appropriately support main message."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Purposeful pace, visual variation, readable overlays, smooth progression."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "V05",
+      "instructions": "Does video establish and resolve a meaningful curiosity gap? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No curiosity or payoff."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Tease unrelated to product or never resolved."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Some anticipation with partial resolution."
+        },
+        {
+          "label": "3 Good",
+          "description": "Clear tension/question followed by relevant reveal."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Strong curiosity mechanism and satisfying, verifiable payoff."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "V06",
+      "instructions": "How well does the emotional framing fit the target buyer and product context? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No emotional framing."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Emotion feels irrelevant or manipulative."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Some relatable scenario but generic."
+        },
+        {
+          "label": "3 Good",
+          "description": "Relatable emotion strengthens core use case."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Distinctive authentic emotional moment closely supports product value."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "V07",
+      "instructions": "How much explicit save/share value is present in the content itself? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No identifiable utility or sharing value."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Little informational, entertainment or social value."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Some useful tip or relatable moment."
+        },
+        {
+          "label": "3 Good",
+          "description": "Specific advice, demonstration, humor or comparison worth sharing."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "High standalone utility or memorable, grounded insight worth revisiting."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "V08",
+      "instructions": "How understandable is the product/topic from the opening visuals or text? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No relevant opening visual/text."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Opening confusing or unrelated."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Recognizable topic but requires substantial context."
+        },
+        {
+          "label": "3 Good",
+          "description": "Clear opening composition/text with identifiable context."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Instantly legible topic and value proposition on mobile."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "C01",
+      "instructions": "Can a buyer identify the exact product and intended use from the video? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Product and use impossible to identify."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Product mentioned but type/use unclear."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Recognizable product type, incomplete use/variant."
+        },
+        {
+          "label": "3 Good",
+          "description": "Specific product and use are clear."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Product, use, key variant and buyer suitability are unambiguous."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "C02",
+      "instructions": "How explicitly is the product tied to a concrete buyer problem? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No buyer problem/use presented."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Unrelated or generic claims."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Some relevance but unclear causal link."
+        },
+        {
+          "label": "3 Good",
+          "description": "Specific problem and plausible usage benefit shown."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Specific pain point, mechanism and realistic outcome linked by evidence."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "C03",
+      "instructions": "How clearly does the video demonstrate actual product usage? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No usable demonstration."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Product flashed or demonstration illegible."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Use shown briefly without clear outcome."
+        },
+        {
+          "label": "3 Good",
+          "description": "Usage steps and observed outcome understandable."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Detailed, easy-to-follow real use with verifiable visible outcome."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "C04",
+      "instructions": "How specific and substantiated are the product benefits presented? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No relevant benefit."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Generic claim with no specifics."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Benefit expressed but weak evidence or detail."
+        },
+        {
+          "label": "3 Good",
+          "description": "Concrete benefit linked to visible usage/attributes."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Specific, buyer-relevant benefit supported by clear evidence and limitations."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "C06",
+      "instructions": "How credible is the evidence supporting persuasion, avoiding unsupported claims? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Materially misleading or unsupported proof presented as certain."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Main claims unsupported, manipulated or unverifiable."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Mixed claims and observable proof with important gaps."
+        },
+        {
+          "label": "3 Good",
+          "description": "Mostly verifiable demonstrations and appropriately qualified claims."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Transparent, specific and consistently checkable evidence, no material contradiction."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "C07",
+      "instructions": "How clearly and accurately does the video communicate any purchase offer? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Offer absent or impossible to identify."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Vague incentive with critical conditions missing."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Offer identifiable but key price/terms missing."
+        },
+        {
+          "label": "3 Good",
+          "description": "Price, promotion and basic conditions understandable."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Clear, accurate offer with meaningful terms and eligibility communicated."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+﻿sku_id,shop_id,item_name,category,price_vnd,original_price_vnd,cost_vnd,stock,stockout_date,listing_status,rating,rating_count,image_count,has_video,description_length_chars,return_policy_days,shipping_days,source_status
+SHOP001-SKU01,SHOP001,Xà phòng trắng da TeaShell,beauty,46550,58000.0,22344,106,,active,4.6,253,6,True,800,7,2,MOCK
+SHOP001-SKU02,SHOP001,Sữa rửa mặt nam Men Stay,beauty,150450,188000.0,72216,54,,active,4.1,353,3,True,240,7,2,MOCK
+SHOP001-SKU03,SHOP001,Mascara lông mày ROCKSWEET 2.0,beauty,149000,186000.0,71520,159,,active,4.9,492,8,True,1086,7,2,MOCK
+SHOP001-SKU04,SHOP001,Tẩy trang,beauty,151000,189000.0,72480,142,,active,4.9,312,8,False,1121,7,2,MOCK
+SHOP001-SKU05,SHOP001,Kem dưỡng ẩm,beauty,173000,216000.0,83040,203,,active,4.9,532,8,False,1153,7,2,MOCK
+SHOP002-SKU01,SHOP002,Ốp lưng iPhone sọc hồng,electronics_accessories,26000,32000.0,14300,51,,active,4.0,604,3,True,240,15,2,MOCK
+SHOP002-SKU02,SHOP002,Ốp lưng iPhone hình mèo,electronics_accessories,104000,130000.0,57200,224,,active,4.6,487,7,True,1052,15,2,MOCK
+SHOP002-SKU03,SHOP002,Quạt tản nhiệt điện thoại KY V60,electronics_accessories,104000,130000.0,57200,137,,active,3.9,458,3,True,240,15,2,MOCK
+SHOP002-SKU04,SHOP002,Kính cường lực,electronics_accessories,100000,125000.0,55000,263,,active,4.5,392,6,False,880,7,2,MOCK
+SHOP002-SKU05,SHOP002,Quạt mini,electronics_accessories,115000,144000.0,63250,41,,active,4.7,221,7,False,1059,15,2,MOCK
+SHOP003-SKU01,SHOP003,Đĩa đựng trái cây phong cách Bắc Âu,home,208000,260000.0,104000,273,,active,4.8,466,8,True,1092,15,2,MOCK
+SHOP003-SKU02,SHOP003,Giấy treo Caipiao 10 bịch,home,78000,98000.0,39000,91,,active,4.5,746,6,True,797,15,2,MOCK
+SHOP003-SKU03,SHOP003,Combo 2 nước xả vải Downy 3.2L,home,830000,1038000.0,415000,208,,active,4.7,513,7,True,921,7,2,MOCK
+SHOP003-SKU04,SHOP003,Khăn lau đa năng,home,240000,300000.0,120000,265,,active,4.7,502,7,False,1049,15,2,MOCK
+SHOP003-SKU05,SHOP003,Giỏ sắp xếp,home,275000,344000.0,137500,218,,active,4.6,317,6,False,835,7,2,MOCK
+SHOP004-SKU01,SHOP004,Bình nước chống tràn có ống hút,general,59000,74000.0,34220,221,,active,4.2,1067,6,True,824,7,5,MOCK
+SHOP004-SKU02,SHOP004,Bột ngũ cốc nghệ gạo lứt 420g,general,89000,111000.0,51620,74,,active,4.5,1037,8,True,1150,15,5,MOCK
+SHOP004-SKU03,SHOP004,Mắm sả ớt chay Thiện Duyên,general,44000,55000.0,25520,111,,active,4.5,1180,8,True,1184,15,5,MOCK
+SHOP004-SKU04,SHOP004,Kẹp đa năng,general,125000,156000.0,72500,130,,active,4.4,1217,8,False,1072,7,5,MOCK
+SHOP004-SKU05,SHOP004,Hộp nhựa,general,144000,180000.0,83520,89,,active,4.5,603,8,False,1168,15,5,MOCK
+SHOP005-SKU01,SHOP005,Bộ đùi vải đũi nữ,fashion,155000,194000.0,77500,189,,active,4.7,783,7,True,1026,15,2,MOCK
+SHOP005-SKU02,SHOP005,Bộ dài ôm HI thun tăm,fashion,149000,186000.0,74500,151,,active,4.7,1086,7,True,1032,7,2,MOCK
+SHOP005-SKU03,SHOP005,Quần jean suông thêu vương miện,fashion,165000,206000.0,82500,231,,active,4.6,903,7,True,996,7,2,MOCK
+SHOP005-SKU04,SHOP005,Áo khoác mỏng,fashion,201000,251000.0,100500,131,,active,4.7,1071,7,False,1050,15,2,MOCK
+SHOP005-SKU05,SHOP005,Mũ lưỡi trai,fashion,232000,290000.0,116000,188,,active,4.7,458,7,False,1035,15,2,MOCK
+SHOP006-SKU01,SHOP006,Băng vệ sinh Tutubaby,mother_baby,100999,126000.0,50499,112,,active,4.9,4,8,True,1174,15,2,MOCK
+SHOP006-SKU02,SHOP006,Sữa uống ColosBaby Pedia 110ml,mother_baby,678000,848000.0,339000,297,,active,4.6,7,6,True,845,7,2,MOCK
+SHOP006-SKU03,SHOP006,Gạc răng miệng Sachi cho bé,mother_baby,133000,166000.0,66500,103,,active,4.6,4,7,True,963,7,2,MOCK
+SHOP006-SKU04,SHOP006,Bộ đồ em bé,mother_baby,176000,220000.0,88000,87,,active,4.6,5,7,False,935,15,2,MOCK
+SHOP006-SKU05,SHOP006,Hộp chia sữa,mother_baby,202000,252000.0,101000,208,,active,4.7,8,7,False,1058,15,2,MOCK
+SHOP007-SKU01,SHOP007,Tai nghe bluetooth COUDASH W895,electronics,77000,96000.0,38500,0,2026-10-11,active,4.7,393,8,True,1144,15,2,MOCK
+SHOP007-SKU02,SHOP007,Sạc dự phòng kèm 4 cáp,electronics,108000,135000.0,54000,0,2026-10-15,active,4.8,525,8,True,1184,15,2,MOCK
+SHOP007-SKU03,SHOP007,Cáp sạc nhanh 240W 4 trong 1,electronics,45000,56000.0,22500,101,,active,4.6,974,7,True,1051,15,2,MOCK
+SHOP007-SKU04,SHOP007,Bàn phím mini,electronics,379000,474000.0,189500,212,,active,4.7,662,8,False,1152,7,2,MOCK
+SHOP007-SKU05,SHOP007,Hub USB-C,electronics,436000,545000.0,218000,235,,active,4.6,731,7,False,948,7,2,MOCK
+SHOP008-SKU01,SHOP008,Men vi sinh Progermila hộp 10 ống,health_fitness,298000,372000.0,149000,82,,active,3.8,242,3,True,240,7,2,MOCK
+SHOP008-SKU02,SHOP008,Tinh nghệ Nano 365 Curcumin 32 tép,health_fitness,260000,325000.0,130000,277,,active,4.4,262,8,True,1063,7,2,MOCK
+SHOP008-SKU03,SHOP008,Vitamin B Complex Pentavite,health_fitness,195000,244000.0,97500,234,,active,3.8,114,3,True,240,15,2,MOCK
+SHOP008-SKU04,SHOP008,Viên uống Omega-3,health_fitness,214000,268000.0,107000,292,,active,4.4,206,7,False,934,15,2,MOCK
+SHOP008-SKU05,SHOP008,Collagen dạng nước,health_fitness,246000,308000.0,123000,208,,active,4.5,114,8,False,1173,7,2,MOCK
+SHOP009-SKU01,SHOP009,Nồi điện đa năng DKHOUSE 1.8L - phân loại A,household,166000,266000.0,129480,80,,active,4.6,414,7,True,986,7,2,MOCK
+SHOP009-SKU02,SHOP009,Nồi điện đa năng DKHOUSE 1.8L - phân loại B,household,166000,266000.0,129480,248,,active,4.7,372,8,True,1152,15,2,MOCK
+SHOP009-SKU03,SHOP009,Nồi điện đa năng DKHOUSE 1.8L - phân loại C,household,166000,266000.0,129480,44,,active,4.8,293,8,True,1177,15,2,MOCK
+SHOP009-SKU04,SHOP009,Móc dán tường,household,163000,261000.0,127140,160,,active,4.8,157,8,False,1164,15,2,MOCK
+SHOP009-SKU05,SHOP009,Cây lau nhà,household,188000,301000.0,146640,220,,active,4.7,316,8,False,1154,7,2,MOCK

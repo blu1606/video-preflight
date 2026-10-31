@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "tinh nghệ nano",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 23,
+     "linked_video_count": 32
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 359,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/c9ae95df9a57429ea5cff875b9ed4867~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736123358528373907",
+     "floor_price": 1.07,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-18",
+     "launch_time": 1781795784,
+     "price_display": "1.066.359 ₫",
+     "product_id": "1736123358528373907",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736123358528373907?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "TPBS( Nghệ 60 Gói) Tinh Nghệ Nano Curcumin Power Arinous 365"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2270683175,
+     "last_28d_units_sold": 2008,
+     "last_7d_gmv": 353628741,
+     "last_7d_units_sold": 316,
+     "last_90d_gmv": 6658688602,
+     "last_90d_units_sold": 6387,
+     "total_gmv": 8007893778,
+     "total_units_sold": 7515,
+     "yesterday_gmv": 15995385,
+     "yesterday_units_sold": 15
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/b7ca90b46ea440ecacfe7fb5e11548c5~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495774198358968467",
+     "shop_name": "Huyền Mi Aurora",
+     "total_units_sold": 878215
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 809,
+     "linked_video_count": 2305
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 283,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/a20a2a813a7d44b89a22a1fecd86c792~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730595762251204938",
+     "floor_price": 1.28,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-07-29",
+     "launch_time": 1722208566,
+     "price_display": "1.280.283 ₫",
+     "product_id": "1730595762251204938",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730595762251204938?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Tinh chất Nghệ Nano Curcumin Hamin Bio 365 Premium hộp 32 tép Hàn Quốc"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1376990746,
+     "last_28d_units_sold": 1066,
+     "last_7d_gmv": 234801603,
+     "last_7d_units_sold": 175,
+     "last_90d_gmv": 3066601371,
+     "last_90d_units_sold": 2503,
+     "total_gmv": 22789424783,
+     "total_units_sold": 19130,
+     "yesterday_gmv": 24325377,
+     "yesterday_units_sold": 19
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a12ce2a4b880486ab823a533b17cf0a7~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495111390947281226",
+     "shop_name": "Công Ty Hân Korea",
+     "total_units_sold": 122724
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 23,
+     "linked_video_count": 31
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 22,
+       "name": "Home Improvement"
+      },
+      "l2": {
+       "id": 873352,
+       "name": "Garden Supplies"
+      },
+      "l3": {
+       "id": 980232,
+       "name": "Garden Soil"
+      }
+     },
+     "ceiling_price": 232.3,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/fd6b0cd4201441f5b2c5e85e02b6ad3c~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729903982923974925",
+     "floor_price": 232.3,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-12-27",
+     "launch_time": 1703688810,
+     "price_display": "232.299 ₫",
+     "product_id": "1729903982923974925",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729903982923974925?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Hàng mới tinh] Chai phân bón Cuchito nhập khẩu Châu Âu \"Nano đồng và chitosan\" 250ml pha 1000 lít nước – Sức mạnh từ công nghệ Nano, bảo vệ cây trồng từ gốc rễ - (Alexmax/PES-COF FUSARIUM))"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 120070198,
+     "last_28d_units_sold": 518,
+     "last_7d_gmv": 58419135,
+     "last_7d_units_sold": 248,
+     "last_90d_gmv": 137949598,
+     "last_90d_units_sold": 604,
+     "total_gmv": 3083836586,
+     "total_units_sold": 11863,
+     "yesterday_gmv": 8827362,
+     "yesterday_units_sold": 38
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/050968469e6744edbc8491551b268b85~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494889591417309453",
+     "shop_name": "Anh nông dân áo xanh",
+     "total_units_sold": 1508838
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 105,
+     "linked_video_count": 325
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879112,
+       "name": "Baby Care & Health"
+      },
+      "l3": {
+       "id": 602296,
+       "name": "Baby Skincare\t"
+      }
+     },
+     "ceiling_price": 170.72,
+     "commission_rate_percent": 12,
+     "cover_url": "https://s.500fd.com/tt_product/3f2feae309b84c88b21a019a6c679f64~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736898805306918637",
+     "floor_price": 48.06,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-06",
+     "launch_time": 1785976504,
+     "price_display": "48.064 ₫  -  170.724 ₫",
+     "product_id": "1736898805306918637",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736898805306918637?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Miếng Dán Chống Muỗi Công Nghệ Nano – Tinh Dầu Sả Lưu Hương Lâu, Bảo Vệ Bé Khi Đi Học & Dã Ngoại (36 Miếng)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 21462198,
+     "last_28d_units_sold": 460,
+     "last_7d_gmv": 7183829,
+     "last_7d_units_sold": 145,
+     "last_90d_gmv": 30643830,
+     "last_90d_units_sold": 663,
+     "total_gmv": 30643830,
+     "total_units_sold": 663,
+     "yesterday_gmv": 1153536,
+     "yesterday_units_sold": 24
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4ab764a96a4b4f6bb23849d72f2567d8~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496008487380945645",
+     "shop_name": "Thiên đường Đồ chơi Monsi",
+     "total_units_sold": 246454
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 335,
+     "linked_video_count": 816
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 445,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/bfbe6362e58d4e2ca6f3441439c317b4~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731785564693891402",
+     "floor_price": 1.48,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-02-03",
+     "launch_time": 1738589184,
+     "price_display": "1.477.445 ₫",
+     "product_id": "1731785564693891402",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731785564693891402?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "A25 - [LIVESTREAM] - Tinh chất nghệ Nano curcumin Hamin Bio 365 Premium hộp 32 tép Hàn Quốc"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 656943703,
+     "last_28d_units_sold": 431,
+     "last_7d_gmv": 126774568,
+     "last_7d_units_sold": 85,
+     "last_90d_gmv": 2354386103,
+     "last_90d_units_sold": 1778,
+     "total_gmv": 22882428334,
+     "total_units_sold": 15544,
+     "yesterday_gmv": 25116565,
+     "yesterday_units_sold": 17
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a12ce2a4b880486ab823a533b17cf0a7~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495111390947281226",
+     "shop_name": "Công Ty Hân Korea",
+     "total_units_sold": 122724
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 17,
+     "linked_video_count": 99
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849160,
+       "name": "Bath & Body Care"
+      },
+      "l3": {
+       "id": 601686,
+       "name": "Body Shaping Cream"
+      }
+     },
+     "ceiling_price": 274.47,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/c862ada85b3c46cda1dba79b0a3dbf46~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737678770975704493",
+     "floor_price": 267.75,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-29",
+     "launch_time": 1790661810,
+     "price_display": "267.750 ₫  -  274.472 ₫",
+     "product_id": "1737678770975704493",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737678770975704493?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[ SIÊU TIẾT TIỆM] Combo Đầy Đủ Kem Tinh Chất Massage Gừng Ơi 150Gram - Tặng 1 Cuộn & 1 Quần Ủ Nano kèm thước - Chiết Xuất Gừng Nghệ Cam Thảo - Hồng Nhiên Shop"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 53077550,
+     "last_28d_units_sold": 205,
+     "last_7d_gmv": 28805474,
+     "last_7d_units_sold": 110,
+     "last_90d_gmv": 53077550,
+     "last_90d_units_sold": 205,
+     "total_gmv": 53077550,
+     "total_units_sold": 205,
+     "yesterday_gmv": 5355000,
+     "yesterday_units_sold": 20
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/76e61367ff664c64a0ae08f99d06b55d~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494621703786695085",
+     "shop_name": "Hồng Nhiên Shop - Chính Chủ",
+     "total_units_sold": 331054
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 419,
+     "linked_video_count": 1139
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600812,
+       "name": "Household Cleaners"
+      }
+     },
+     "ceiling_price": 55,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/79b1c592b56b4d459f57170ca4848a9a~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732321890865088472",
+     "floor_price": 55,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-03",
+     "launch_time": 1756903428,
+     "price_display": "55.000₫",
+     "product_id": "1732321890865088472",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732321890865088472?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "LIQA Dung dịch giặt tự nhiên hoạt tính 2KGx2 túi  Hương hoa nhẹ nhàng Công nghệ nano bảo vệ màu 72 giờ giữ hương Chăm sóc quần áo an toàn Nhẹ nhàng với da Không gây kích ứng tay Phù hợp cho cả gia đình Sản xuất tại Việt Nam"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 11627758,
+     "last_28d_units_sold": 200,
+     "last_7d_gmv": 3838609,
+     "last_7d_units_sold": 67,
+     "last_90d_gmv": 58651071,
+     "last_90d_units_sold": 1127,
+     "total_gmv": 2937649152,
+     "total_units_sold": 29900,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/11cc7afe1334497f9acfe696f11901d7~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496262976130747352",
+     "shop_name": "LIQA Điều dưỡng",
+     "total_units_sold": 170704
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 40,
+     "linked_video_count": 115
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 316,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/bc03103342e0453aae570e551a52aed0~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733183090997364042",
+     "floor_price": 1.5,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-11",
+     "launch_time": 1762848098,
+     "price_display": "1.497.439 ₫  -  4.492.316 ₫",
+     "product_id": "1733183090997364042",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733183090997364042?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[LC] - Tinh chất nghệ Nano curcumin Hamin Bio 365 Premium hộp 32 tép Hàn Quốc"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 273097891,
+     "last_28d_units_sold": 198,
+     "last_7d_gmv": 6274731,
+     "last_7d_units_sold": 4,
+     "last_90d_gmv": 1537688877,
+     "last_90d_units_sold": 1322,
+     "total_gmv": 3998489159,
+     "total_units_sold": 2870,
+     "yesterday_gmv": 1497439,
+     "yesterday_units_sold": 1
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a12ce2a4b880486ab823a533b17cf0a7~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495111390947281226",
+     "shop_name": "Công Ty Hân Korea",
+     "total_units_sold": 122724
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 63,
+     "linked_video_count": 178
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601476,
+       "name": "Feminine Hygiene\t"
+      }
+     },
+     "ceiling_price": 513.29,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/3403ea07717c43c989f69a0fc086aa5f~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730698074421627322",
+     "floor_price": 218.52,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-08-23",
+     "launch_time": 1724380207,
+     "price_display": "218.518 ₫  -  513.291 ₫",
+     "product_id": "1730698074421627322",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 9,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730698074421627322?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[GIÁ ƯU ĐÃI] Muối Vệ Sinh Phụ Nữ LILYFRESH Chiết Xuất Nano Nghệ, Trầu Không Lành Tính, Dịu Nhẹ 100ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 28196331,
+     "last_28d_units_sold": 132,
+     "last_7d_gmv": 7274224,
+     "last_7d_units_sold": 34,
+     "last_90d_gmv": 109404392,
+     "last_90d_units_sold": 682,
+     "total_gmv": 7084651422,
+     "total_units_sold": 7479,
+     "yesterday_gmv": 655554,
+     "yesterday_units_sold": 3
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4e4fed707708443882f88cd6a30f73aa~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495856105514240442",
+     "shop_name": "LilyFresh - Vì sức khỏe Phụ nữ",
+     "total_units_sold": 681161
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 692,
+     "linked_video_count": 1288
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600477,
+       "name": "Home Fragrances"
+      }
+     },
+     "ceiling_price": 344.12,
+     "commission_rate_percent": 15,
+     "cover_url": "https://s.500fd.com/tt_product/ead80bef6cf044fda9bb14544f72e946~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734650369918142065",
+     "floor_price": 97.04,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-16",
+     "launch_time": 1773647053,
+     "price_display": "97.040 ₫  -  344.123 ₫",
+     "product_id": "1734650369918142065",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 9,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734650369918142065?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Xịt thơm phòng Kaiteki 200ml công nghệ nano bạc, tinh dầu thơm phòng ngủ/ bếp, nhà vệ sinh, ô tô Mua 2T1 xịt vải 100ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 13288987,
+     "last_28d_units_sold": 123,
+     "last_7d_gmv": 2396766,
+     "last_7d_units_sold": 26,
+     "last_90d_gmv": 98879105,
+     "last_90d_units_sold": 1063,
+     "total_gmv": 283988096,
+     "total_units_sold": 2473,
+     "yesterday_gmv": 388160,
+     "yesterday_units_sold": 4
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d17efd001be34220a5158d894d8ca534~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494354553412945521",
+     "shop_name": "KAITEKI",
+     "total_units_sold": 2796
+    }
+   }
+  ],
+  "total": 1420
+ }
+}
