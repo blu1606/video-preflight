@@ -5,6 +5,7 @@ from pathlib import Path
 from uuid import UUID, uuid4
 
 from core.pipeline import execute, fingerprint, now
+from core.media import sha256
 
 
 def valid_id(value):
@@ -48,6 +49,18 @@ class Runs:
             rows = [json.loads(path.read_text()) for path in self.directory.glob("*.json")]
         return sorted([r for r in rows if r["video_id"] == video_id], key=lambda r: r["created_at"], reverse=True)
 
+    def usable(self, run, video):
+        if run["status"] != "complete" or not run.get("result"):
+            return False
+        try:
+            if sha256(self.root / "data" / video["file"]) != video["metadata"]["sha256"]:
+                return False
+            extraction = run["result"]["extraction"]
+            directory = self.root / ".runtime" / "artifacts" / f'{extraction["media_sha256"]}-{extraction["version"]}'
+            return all(sha256(directory / frame["file"]) == frame["sha256"] for frame in extraction["frames"])
+        except (OSError, KeyError):
+            return False
+
     def start(self, video, context, *, force=False):
         key = fingerprint(video, context)
         with self.lock:
@@ -55,7 +68,7 @@ class Runs:
                 return self.get(self.active[key]), False
             if not force:
                 for run in self.list(video["id"]):
-                    if run["fingerprint"] == key and run["status"] == "complete":
+                    if run["fingerprint"] == key and self.usable(run, video):
                         return run, True
             run = {"id": str(uuid4()), "video_id": video["id"], "fingerprint": key, "status": "queued",
                    "created_at": now(), "events": [], "result": None, "error": None}
