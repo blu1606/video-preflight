@@ -26,7 +26,7 @@ import cv2
 
 OUT = Path(__file__).resolve().parent
 BENCHMARK_CSV = OUT.parent / "clipcat_benchmark" / "clipcat_video_benchmark_24.csv"
-VIDEO_DIR = OUT.parent.parent.parent / "data"  # the benchmark's downloaded videos (vn-<category>-<id>.mp4)
+VIDEO_DIR = OUT.parent.parent / "data"  # the benchmark's downloaded videos (vn-<category>-<id>.mp4)
 
 
 def load_slot_products() -> dict[str, list[tuple[str, int, str]]]:
