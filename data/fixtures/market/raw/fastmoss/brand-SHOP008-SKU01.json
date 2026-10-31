@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "men vi sinh Progermila",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 2
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 190.29,
+     "commission_rate_percent": 8.5,
+     "cover_url": "https://s.500fd.com/tt_product/e60e34ae952447ab9110d0cf2fd3a1d5~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732282259883918703",
+     "floor_price": 190.29,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-08-25",
+     "launch_time": 1756098785,
+     "price_display": "190.290 ₫",
+     "product_id": "1732282259883918703",
+     "product_rating": 5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732282259883918703?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men vi sinh PROGERMILA ( HỘP 20 ống) bổ sung lợi khuẩn cho đường ruột, cải thiện tình trạng rối loạn tiêu hóa ( đau bụng , tiêu chảy, táo bón, đầy hơi)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 166910,
+     "last_28d_units_sold": 1,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 1351555,
+     "last_90d_units_sold": 8,
+     "total_gmv": 2044417,
+     "total_units_sold": 12,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c9c2d64b030c4b81a69d22be0c83afc3~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495538166457862511",
+     "shop_name": "Thành Phát Pharmacy",
+     "total_units_sold": 1085
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 6,
+     "linked_video_count": 7
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 356.64,
+     "commission_rate_percent": 8.5,
+     "cover_url": "https://s.500fd.com/tt_product/27d9a38bd41a4711949184de84ce38e5~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732101007757509644",
+     "floor_price": 356.64,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-08-26",
+     "launch_time": 1756173160,
+     "price_display": "356.642 ₫",
+     "product_id": "1732101007757509644",
+     "product_rating": 0,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732101007757509644?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 3 hộp Men vi sinh sống Progermila bổ sung bào tử lợi kh.uẩn đường ruột, gi.ảm tiêu chảy, rối loạn tiêu hóa (Hộp 10 ống)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 0,
+     "last_28d_units_sold": 0,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 0,
+     "last_90d_units_sold": 0,
+     "total_gmv": 169239192,
+     "total_units_sold": 533,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0ccdad25a6e74759b06e042d11cc3a04~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7496113969348446220",
+     "shop_name": "Dược Tiên Phong",
+     "total_units_sold": 181506
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 416.09,
+     "commission_rate_percent": 8.5,
+     "cover_url": "https://s.500fd.com/tt_product/f4ab740b65284468bcafbd0174ea79e1~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732102568002683916",
+     "floor_price": 416.09,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-08-25",
+     "launch_time": 1756109675,
+     "price_display": "416.094 ₫",
+     "product_id": "1732102568002683916",
+     "product_rating": 0,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732102568002683916?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 2 hộp Men vi sinh Progermila + 2 hộp Giải độc gan Actiso Viet – Hỗ trợ tiêu hóa khỏe, mát gan, bổ gan, thanh nhiệt cơ thể"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 0,
+     "last_28d_units_sold": 0,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 0,
+     "last_90d_units_sold": 0,
+     "total_gmv": 438000,
+     "total_units_sold": 1,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0ccdad25a6e74759b06e042d11cc3a04~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7496113969348446220",
+     "shop_name": "Dược Tiên Phong",
+     "total_units_sold": 181506
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 0,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 189.12,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/e96a8569571047698219e3842ff1a52a~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732315404820711136",
+     "floor_price": 189.12,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-04-12",
+     "launch_time": 1775935046,
+     "price_display": "189.116 ₫",
+     "product_id": "1732315404820711136",
+     "product_rating": 5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732315404820711136?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men vi sinh Progermila( không mùi, không vị)- Hộp 20 ống- bổ sung lợi khuẩn giảm rối loạn tiêu hóa, ăn kém hấp thu"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 0,
+     "last_28d_units_sold": 0,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 0,
+     "last_90d_units_sold": 0,
+     "total_gmv": 1138896,
+     "total_units_sold": 6,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a1bc99901ea0444996c5124277b7154a~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494855926654274272",
+     "shop_name": "Nhà thuốc Hà Tuyên",
+     "total_units_sold": 1550
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2,
+     "linked_video_count": 1
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 199.58,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/b66ba502aa874a3d9e7a0e8d3a110cd5~tplv-aphluv4xwc-crop-webp:1000:1000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734648648442873275",
+     "floor_price": 199.58,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-25",
+     "launch_time": 1774382868,
+     "price_display": "199.579 ₫",
+     "product_id": "1734648648442873275",
+     "product_rating": 0,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734648648442873275?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[ HÀNG CHÍNH HÃNG] MEN vi sinh Progermila điều trị và phòng ngừa loạn khuẩn đường ruột (Hộp 4 vỉ x 5 ống)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 0,
+     "last_28d_units_sold": 0,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 0,
+     "last_90d_units_sold": 0,
+     "total_gmv": 199579,
+     "total_units_sold": 1,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/19822f4f6e8145078640feaa82cd534d~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494196371243369915",
+     "shop_name": "Thành Phát 4",
+     "total_units_sold": 1
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2,
+     "linked_video_count": 3
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 176.36,
+     "commission_rate_percent": 8.5,
+     "cover_url": "https://s.500fd.com/tt_product/c4c7df79e34048978720cdea2535e302~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731917422036223317",
+     "floor_price": 176.36,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-29",
+     "launch_time": 1759096141,
+     "price_display": "₫176.363",
+     "product_id": "1731917422036223317",
+     "product_rating": 0,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731917422036223317?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men Vi Sinh Tiêu Hóa Progermila Bổ Sung Lợi Khuẩn Giảm Rối Loạn Tiêu Hóa, Tiêu Chảy, Táo Bón, Chán Ăn"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 0,
+     "last_28d_units_sold": 0,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 0,
+     "last_90d_units_sold": 0,
+     "total_gmv": 1279089,
+     "total_units_sold": 7,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4915a536401741f18d959785d1910e19~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495344639843469653",
+     "shop_name": "Bán được 5k đơn sẽ đổi tên",
+     "total_units_sold": 2286
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2,
+     "linked_video_count": 1
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 184,
+     "commission_rate_percent": 8.5,
+     "cover_url": "https://s.500fd.com/tt_product/1a221543d4264f7b9aaf6b805478fe53~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732101078347908108",
+     "floor_price": 184,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-08-25",
+     "launch_time": 1756109675,
+     "price_display": "184.000 ₫",
+     "product_id": "1732101078347908108",
+     "product_rating": 5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732101078347908108?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 2 hộp Men vi sinh sống Progermila bổ sung bào tử lợi kh.uẩn đường ruột, gi.ảm tiêu chảy, rối loạn tiêu hóa (Hộp 10 ống)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 0,
+     "last_28d_units_sold": 0,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 410325,
+     "last_90d_units_sold": 2,
+     "total_gmv": 4587464,
+     "total_units_sold": 32,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0ccdad25a6e74759b06e042d11cc3a04~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7496113969348446220",
+     "shop_name": "Dược Tiên Phong",
+     "total_units_sold": 181506
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 169.46,
+     "commission_rate_percent": 9.5,
+     "cover_url": "https://s.500fd.com/tt_product/2cfd06727d534c23b4ab7d4527b4e611~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732776124119090311",
+     "floor_price": 169.46,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-14",
+     "launch_time": 1763067366,
+     "price_display": "169.460 ₫",
+     "product_id": "1732776124119090311",
+     "product_rating": 0,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732776124119090311?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men vi sinh PROGERMILA bổ sung lợi khuẩn cho đường ruột, cải thiện các tình trạng rối loạn tiêu hoá, tăng cường hấp thụ vitamin."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 0,
+     "last_28d_units_sold": 0,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 0,
+     "last_90d_units_sold": 0,
+     "total_gmv": 403826,
+     "total_units_sold": 2,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cc0972520a864b70bd0c9dedb295822a~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494188312869045383",
+     "shop_name": "Thành Phát2",
+     "total_units_sold": 188
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 0,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 190.75,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/046445e50e0b4b8784c13ee946f620ec~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732066657391053512",
+     "floor_price": 190.75,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-05-13",
+     "launch_time": 1747120600,
+     "price_display": "190.752 ₫",
+     "product_id": "1732066657391053512",
+     "product_rating": 4.9,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732066657391053512?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men Vi Sinh PROGERMILA [HSD 2028, 20 ống] - Giúp Bảo Vệ Đường Tiêu Hóa, Tăng Lợi Khuẩn Và Giúp Bé Tiêu Hóa Tốt"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 0,
+     "last_28d_units_sold": 0,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 0,
+     "last_90d_units_sold": 0,
+     "total_gmv": 8442625,
+     "total_units_sold": 56,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/281fc1854d5b4440b206b61bd9e83cdc~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495366098872208072",
+     "shop_name": "Nhà Thuốc OMEGA One",
+     "total_units_sold": 23335
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2,
+     "linked_video_count": 3
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 137,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/e6f384531f9643978c7c5c6544fb1798~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729663912785578262",
+     "floor_price": 137,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-08-11",
+     "launch_time": 1691728118,
+     "price_display": "137.000₫",
+     "product_id": "1729663912785578262",
+     "product_rating": 4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729663912785578262?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Men vi sinh Progermila bổ sung 2 tỷ lợi khuẩn bảo vệ đường ruột hệ tiêu hóa hộp 20 ống"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 0,
+     "last_28d_units_sold": 0,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 0,
+     "last_90d_units_sold": 0,
+     "total_gmv": 354000,
+     "total_units_sold": 3,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1cb9e590126c43468f87d985bb019407~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494801602021132566",
+     "shop_name": "Mosukids-Vita",
+     "total_units_sold": 93
+    }
+   }
+  ],
+  "total": 16
+ }
+}

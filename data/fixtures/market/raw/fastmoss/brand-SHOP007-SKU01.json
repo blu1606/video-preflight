@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "tai nghe COUDASH",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 851,
+     "linked_video_count": 3719
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909320,
+       "name": "Audio & Video"
+      },
+      "l3": {
+       "id": 601990,
+       "name": " Earphones & Headphones"
+      }
+     },
+     "ceiling_price": 366,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/376fcad8c7494ca5b2e3506e5aa26da4~tplv-aphluv4xwc-crop-webp:720:720.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736572281253496323",
+     "floor_price": 1.19,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-18",
+     "launch_time": 1784304031,
+     "price_display": "1.194.366 ₫",
+     "product_id": "1736572281253496323",
+     "product_rating": 4.2,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736572281253496323?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COUDASH W895 Tai nghe Bluetooth không dây, âm thanh vòm chất lượng phim, âm thanh HiFi, giảm tiếng ồn thông minh ENC, thời lượng pin dài, đeo trong tai thoải mái, tương thích hoàn toàn với android và apple"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 34272332370,
+     "last_28d_units_sold": 28695,
+     "last_7d_gmv": 11447998110,
+     "last_7d_units_sold": 9585,
+     "last_90d_gmv": 51730380192,
+     "last_90d_units_sold": 43312,
+     "total_gmv": 51792487224,
+     "total_units_sold": 43364,
+     "yesterday_gmv": 1629115224,
+     "yesterday_units_sold": 1364
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cdd403bba337433b9af153ec21f91c18~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617145504794115",
+     "shop_name": "COUDASH",
+     "total_units_sold": 131274
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 260,
+     "linked_video_count": 707
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909320,
+       "name": "Audio & Video"
+      },
+      "l3": {
+       "id": 601990,
+       "name": " Earphones & Headphones"
+      }
+     },
+     "ceiling_price": 112.04,
+     "commission_rate_percent": 9,
+     "cover_url": "https://s.500fd.com/tt_product/97b0f4c323254c12a79522caa633884d~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737142156153685507",
+     "floor_price": 112.04,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-22",
+     "launch_time": 1787328191,
+     "price_display": "112.044 ₫",
+     "product_id": "1737142156153685507",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737142156153685507?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COUDASH X3 Tai nghe Bluetooth không dây, cuộc gọi siêu rõ ràng, âm thanh bao trọn mê cung, âm thanh cân bằng ba dải tần số, pin dung lượng lớn, vừa vặn thoải mái trong tai. Rất tốt cho việc ngủ, xem video và tập thể thao. Tương thích hoàn toàn với tất cả"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1124318296,
+     "last_28d_units_sold": 9380,
+     "last_7d_gmv": 505824365,
+     "last_7d_units_sold": 3768,
+     "last_90d_gmv": 1640785847,
+     "last_90d_units_sold": 11608,
+     "total_gmv": 1640785847,
+     "total_units_sold": 11608,
+     "yesterday_gmv": 70027500,
+     "yesterday_units_sold": 625
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cdd403bba337433b9af153ec21f91c18~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617145504794115",
+     "shop_name": "COUDASH",
+     "total_units_sold": 131274
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 279,
+     "linked_video_count": 1124
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909320,
+       "name": "Audio & Video"
+      },
+      "l3": {
+       "id": 601990,
+       "name": " Earphones & Headphones"
+      }
+     },
+     "ceiling_price": 0,
+     "commission_rate_percent": 9,
+     "cover_url": "https://s.500fd.com/tt_product/2dc8efe89d6e40e39541cd39dbb5d68f~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736706622670931459",
+     "floor_price": 1,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-26",
+     "launch_time": 1784995253,
+     "price_display": "1.000.000₫",
+     "product_id": "1736706622670931459",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736706622670931459?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COUDASH B37 TWS Tai nghe Bluetooth, âm thanh bao quanh 360 độ, cuộc gọi rõ ràng, thời lượng pin dài, phù hợp khi tập luyện, nghe nhạc, xem video, với độ trễ thấp trong trò chơi, thiết kế công thái học để đeo thoải mái, tương thích với nhiều hệ thống"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 6232000000,
+     "last_28d_units_sold": 6232,
+     "last_7d_gmv": 882000000,
+     "last_7d_units_sold": 882,
+     "last_90d_gmv": 15105965860,
+     "last_90d_units_sold": 15105,
+     "total_gmv": 15117897580,
+     "total_units_sold": 15115,
+     "yesterday_gmv": 227000000,
+     "yesterday_units_sold": 227
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cdd403bba337433b9af153ec21f91c18~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617145504794115",
+     "shop_name": "COUDASH",
+     "total_units_sold": 131274
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 326,
+     "linked_video_count": 1134
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909320,
+       "name": "Audio & Video"
+      },
+      "l3": {
+       "id": 601990,
+       "name": " Earphones & Headphones"
+      }
+     },
+     "ceiling_price": 154.18,
+     "commission_rate_percent": 8.5,
+     "cover_url": "https://s.500fd.com/tt_product/9fb1c9b661384d1fab6f4c5384f2bdf8~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737374507626235395",
+     "floor_price": 154.18,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-07",
+     "launch_time": 1788710686,
+     "price_display": "154.176 ₫",
+     "product_id": "1737374507626235395",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737374507626235395?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COUDASH Y80, Tai nghe Bluetooth hoàn toàn không dây âm thanh vòm chất lượng rạp phim, khử tiếng ồn thông minh bằng AI, vật liệu thân thiện với da, vừa vặn thoải mái suốt cả ngày, thời lượng pin siêu dài, phù hợp cho nhiều tình huống hàng ngày, tương thích"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 841491134,
+     "last_28d_units_sold": 4670,
+     "last_7d_gmv": 305572424,
+     "last_7d_units_sold": 2088,
+     "last_90d_gmv": 1425313102,
+     "last_90d_units_sold": 5221,
+     "total_gmv": 1425313102,
+     "total_units_sold": 5221,
+     "yesterday_gmv": 34227072,
+     "yesterday_units_sold": 222
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cdd403bba337433b9af153ec21f91c18~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617145504794115",
+     "shop_name": "COUDASH",
+     "total_units_sold": 131274
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 134,
+     "linked_video_count": 461
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909320,
+       "name": "Audio & Video"
+      },
+      "l3": {
+       "id": 601990,
+       "name": " Earphones & Headphones"
+      }
+     },
+     "ceiling_price": 670,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/d678a3b1a5bd4086ae9e7fb5a05d44eb~tplv-aphluv4xwc-crop-webp:2048:2048.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736737719919150595",
+     "floor_price": 1.07,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-28",
+     "launch_time": 1785169377,
+     "price_display": "1.071.670 ₫",
+     "product_id": "1736737719919150595",
+     "product_rating": 4.1,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736737719919150595?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COUDASH W895Pro Tai nghe Bluetooth không dây , âm thanh HiFi toàn cảnh, cuộc gọi rõ ràng như pha lê, hiển thị mức pin bằng AI, thời lượng pin dài. Phù hợp cho thể thao, xem phim theo lượt, chơi game. Thiết kế nhét tai để đeo thoải mái. Sạc Type-C."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 3309316960,
+     "last_28d_units_sold": 3088,
+     "last_7d_gmv": 410449610,
+     "last_7d_units_sold": 383,
+     "last_90d_gmv": 4728208040,
+     "last_90d_units_sold": 4412,
+     "total_gmv": 4728208040,
+     "total_units_sold": 4412,
+     "yesterday_gmv": 55726840,
+     "yesterday_units_sold": 52
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cdd403bba337433b9af153ec21f91c18~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617145504794115",
+     "shop_name": "COUDASH",
+     "total_units_sold": 131274
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 7,
+     "linked_video_count": 15
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909320,
+       "name": "Audio & Video"
+      },
+      "l3": {
+       "id": 601990,
+       "name": " Earphones & Headphones"
+      }
+     },
+     "ceiling_price": 70.38,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/376fcad8c7494ca5b2e3506e5aa26da4~tplv-aphluv4xwc-crop-webp:720:720.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737815076783621796",
+     "floor_price": 70.38,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-09",
+     "launch_time": 1791505865,
+     "price_display": "70.384 ₫",
+     "product_id": "1737815076783621796",
+     "product_rating": 4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737815076783621796?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COUDASH W895 Tai nghe Bluetooth không dây, âm thanh vòm chất lượng phim, âm thanh HiFi, giảm tiếng ồn thông minh ENC, thời lượng pin dài, đeo trong tai thoải mái, tương thích hoàn toàn với android và apple"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 49421916,
+     "last_28d_units_sold": 737,
+     "last_7d_gmv": 27310330,
+     "last_7d_units_sold": 387,
+     "last_90d_gmv": 49421916,
+     "last_90d_units_sold": 737,
+     "total_gmv": 49421916,
+     "total_units_sold": 737,
+     "yesterday_gmv": 4715728,
+     "yesterday_units_sold": 67
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/78630c7332874809b1ba37e5861efd96~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494857887221057188",
+     "shop_name": "Lucky Select Goods",
+     "total_units_sold": 1684
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 90,
+     "linked_video_count": 249
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909320,
+       "name": "Audio & Video"
+      },
+      "l3": {
+       "id": 601990,
+       "name": " Earphones & Headphones"
+      }
+     },
+     "ceiling_price": 150.52,
+     "commission_rate_percent": 8.5,
+     "cover_url": "https://s.500fd.com/tt_product/ed55fc0163e44d0097fbd05de7f97cdf~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737460130525382147",
+     "floor_price": 150.52,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-12",
+     "launch_time": 1789142682,
+     "price_display": "150.515 ₫",
+     "product_id": "1737460130525382147",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737460130525382147?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COUDASH B43 Tai nghe Bluetooth không dây hoàn toàn, với chất lượng âm thanh surround cấp phim điện ảnh, có khả năng tái tạo các trường âm chi tiết, giảm tiếng ồn thông minh, vật liệu mềm mại và thoải mái, dễ đeo, thời lượng pin lâu dài"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 128526268,
+     "last_28d_units_sold": 653,
+     "last_7d_gmv": 28191289,
+     "last_7d_units_sold": 189,
+     "last_90d_gmv": 128526268,
+     "last_90d_units_sold": 653,
+     "total_gmv": 128526268,
+     "total_units_sold": 653,
+     "yesterday_gmv": 4515450,
+     "yesterday_units_sold": 30
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cdd403bba337433b9af153ec21f91c18~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617145504794115",
+     "shop_name": "COUDASH",
+     "total_units_sold": 131274
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 65,
+     "linked_video_count": 179
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909320,
+       "name": "Audio & Video"
+      },
+      "l3": {
+       "id": 601990,
+       "name": " Earphones & Headphones"
+      }
+     },
+     "ceiling_price": 106.21,
+     "commission_rate_percent": 8.5,
+     "cover_url": "https://s.500fd.com/tt_product/112ebcdfefa844e78fece4cbefececaa~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737478481175086595",
+     "floor_price": 106.21,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-13",
+     "launch_time": 1789229069,
+     "price_display": "106.214 ₫",
+     "product_id": "1737478481175086595",
+     "product_rating": 3.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737478481175086595?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COUDASH Q86 Tai nghe kiểu máy ảnh cổ điển, màn hình kỹ thuật số tiện dụng cực kỳ, nhẹ nhàng đeo lâu mà không mỏi tai, chất lượng âm thanh Hi‑Fi tinh tế, phù hợp khi đi làm, xem phim và tập thể thao, đa năng, vừa giá trị vừa mạnh mẽ – trực tuyến đang hot!"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 48655378,
+     "last_28d_units_sold": 443,
+     "last_7d_gmv": 9647578,
+     "last_7d_units_sold": 84,
+     "last_90d_gmv": 48655378,
+     "last_90d_units_sold": 443,
+     "total_gmv": 48655378,
+     "total_units_sold": 443,
+     "yesterday_gmv": 1380782,
+     "yesterday_units_sold": 13
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cdd403bba337433b9af153ec21f91c18~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617145504794115",
+     "shop_name": "COUDASH",
+     "total_units_sold": 131274
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 16,
+     "linked_video_count": 46
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909320,
+       "name": "Audio & Video"
+      },
+      "l3": {
+       "id": 601990,
+       "name": " Earphones & Headphones"
+      }
+     },
+     "ceiling_price": 69,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/0943bfaacdfe4d96a7e664b483955955~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737464394822354435",
+     "floor_price": 1.13,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-12",
+     "launch_time": 1789142682,
+     "price_display": "1.134.069 ₫",
+     "product_id": "1737464394822354435",
+     "product_rating": 0,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737464394822354435?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COUDASH D18 Tai nghe Bluetooth không dây hoàn toàn, trường âm không gian xuất sắc, âm thanh nguyên bản đắm chìm, giảm tiếng ồn thông minh khi gọi, thiết kế công thái học cho sự thoải mái khi đeo, thời lượng pin siêu dài, sạc TYPE-C"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 41960553,
+     "last_28d_units_sold": 37,
+     "last_7d_gmv": 41960553,
+     "last_7d_units_sold": 37,
+     "last_90d_gmv": 41960553,
+     "last_90d_units_sold": 37,
+     "total_gmv": 41960553,
+     "total_units_sold": 37,
+     "yesterday_gmv": 41960553,
+     "yesterday_units_sold": 37
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cdd403bba337433b9af153ec21f91c18~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617145504794115",
+     "shop_name": "COUDASH",
+     "total_units_sold": 131274
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 68,
+     "linked_video_count": 236
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909320,
+       "name": "Audio & Video"
+      },
+      "l3": {
+       "id": 601990,
+       "name": " Earphones & Headphones"
+      }
+     },
+     "ceiling_price": 568,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/2a51bdb44ff74fe7960b09d4ecb25517~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737379460404119043",
+     "floor_price": 1.06,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-07",
+     "launch_time": 1788710686,
+     "price_display": "1.059.568 ₫",
+     "product_id": "1737379460404119043",
+     "product_rating": 4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737379460404119043?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COUDASH B50 Tai nghe kẹp tai không dây với lớp hoàn thiện mạ điện kim loại, màn hình kỹ thuật số thông minh, thoải mái khi đeo trong thời gian dài, truyền âm thanh định hướng dạng xoáy, hiệu ứng âm thanh toàn cảnh Hi‑Fi, phù hợp cho các cuộc gọi video, tậ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 21191360,
+     "last_28d_units_sold": 20,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 90063280,
+     "last_90d_units_sold": 85,
+     "total_gmv": 90063280,
+     "total_units_sold": 85,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cdd403bba337433b9af153ec21f91c18~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617145504794115",
+     "shop_name": "COUDASH",
+     "total_units_sold": 131274
+    }
+   }
+  ],
+  "total": 10
+ }
+}

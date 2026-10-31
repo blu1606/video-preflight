@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Các dữ liệu về điểm đánh giá, số lượt đánh giá và chủ đề tiêu cực đều được đánh dấu MOCK, tức dữ liệu thử nghiệm tổng hợp chứ không phải bằng chứng quan sát thực tế. Vì vậy, chúng không đủ căn cứ để chấm mức độ uy tín hoặc xử lý hậu mãi.",
+  "key_evidence": [
+    "shop.rating: 4.9 (MOCK)",
+    "shop.rating_count: 2153 (MOCK)",
+    "shop.negative_topics: [] (MOCK)"
+  ],
+  "evidence_sent": {
+    "shop.negative_topics": {
+      "value": [],
+      "status": "MOCK"
+    },
+    "shop.rating": {
+      "value": 4.9,
+      "status": "MOCK"
+    },
+    "shop.rating_count": {
+      "value": 2153,
+      "status": "MOCK"
+    }
+  }
+}

@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "hộp nhựa đựng thực phẩm",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 385,
+     "linked_video_count": 1403
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859528,
+       "name": "Kitchen Utensils & Gadgets"
+      },
+      "l3": {
+       "id": 600029,
+       "name": "Preserving Containers"
+      }
+     },
+     "ceiling_price": 42.13,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/08ddf9e849064258ab826c9b36cbcd28~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731158713935431292",
+     "floor_price": 26.32,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-07-29",
+     "launch_time": 1753759566,
+     "price_display": "26.324 ₫  -  42.125 ₫",
+     "product_id": "1731158713935431292",
+     "product_rating": 4.2,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731158713935431292?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "( Combo 10 Hộp ) Hộp Đựng Thực Phẩm 400ml, Hộp Đựng Thức Ăn, Đồ Đông Lạnh,Hộp Nhựa Đựng Thực Phẩm, Hộp Lạnh Trong"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 271267784,
+     "last_28d_units_sold": 9702,
+     "last_7d_gmv": 85424361,
+     "last_7d_units_sold": 3083,
+     "last_90d_gmv": 657111566,
+     "last_90d_units_sold": 24135,
+     "total_gmv": 2119011730,
+     "total_units_sold": 92266,
+     "yesterday_gmv": 5317448,
+     "yesterday_units_sold": 202
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/67d8458195524acb803f220cec2d9407~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7496109061652712060",
+     "shop_name": "HanPuShop",
+     "total_units_sold": 163132
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2364,
+     "linked_video_count": 5983
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853000,
+       "name": "Storage Bottles & Jars"
+      }
+     },
+     "ceiling_price": 404.54,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/44b06696e32c4833a372890edc0319e5~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731957689214797750",
+     "floor_price": 214.24,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-07-22",
+     "launch_time": 1753175965,
+     "price_display": "214.240 ₫  -  404.542 ₫",
+     "product_id": "1731957689214797750",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731957689214797750?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[TẶNG KHĂN LỤA CAO CẤP 20/10] COMBO 15 Hộp đựng thực phẩm Deli Hũ nhựa, lọ nhựa siêu kín chống ẩm mốc, Đựng Đồ Ăn Đựng Gia Vị, Rau Củ Chống Tràn, Có Thể Dùng Trong Lò Vi Sóng, Máy Rửa Bát Tiện Lợi #hopdungthucpham #hopnhua(hdtp)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1386663658,
+     "last_28d_units_sold": 7436,
+     "last_7d_gmv": 283010973,
+     "last_7d_units_sold": 1475,
+     "last_90d_gmv": 2765103869,
+     "last_90d_units_sold": 15133,
+     "total_gmv": 23572644846,
+     "total_units_sold": 126098,
+     "yesterday_gmv": 37920480,
+     "yesterday_units_sold": 177
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3dce3136baf74f38a571b2b0d5e8418e~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7495013975380364214",
+     "shop_name": "Deli Lifestyle",
+     "total_units_sold": 4452736
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 141,
+     "linked_video_count": 476
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859528,
+       "name": "Kitchen Utensils & Gadgets"
+      },
+      "l3": {
+       "id": 600029,
+       "name": "Preserving Containers"
+      }
+     },
+     "ceiling_price": 440.28,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/556657bf1b574bc981c5a3a97b764628~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737299100973630592",
+     "floor_price": 65.1,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-03",
+     "launch_time": 1788409028,
+     "price_display": "65.103 ₫  -  440.275 ₫",
+     "product_id": "1737299100973630592",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737299100973630592?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ 17 hộp bảo quản thực phẩm nhựa pp cao cấp – kháng khuẩn, chống ẩm mốc, chống tràn, an toàn sức khỏe, dùng được lò vi sóng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 603712182,
+     "last_28d_units_sold": 4154,
+     "last_7d_gmv": 75127214,
+     "last_7d_units_sold": 575,
+     "last_90d_gmv": 1002269934,
+     "last_90d_units_sold": 7093,
+     "total_gmv": 1002269934,
+     "total_units_sold": 7093,
+     "yesterday_gmv": 3515562,
+     "yesterday_units_sold": 54
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/df638ec62ac34dc3893dfc473c3594ca~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495206580614563968",
+     "shop_name": "Jelly Jello",
+     "total_units_sold": 88499
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 182,
+     "linked_video_count": 502
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859272,
+       "name": "Cutlery & Tableware"
+      },
+      "l3": {
+       "id": 600059,
+       "name": "Lunch Boxes"
+      }
+     },
+     "ceiling_price": 46.65,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/51eb7ba7474f4f8291ab0b96cb6e7055~tplv-aphluv4xwc-crop-webp:1000:1000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731657500762408572",
+     "floor_price": 29.15,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-10-13",
+     "launch_time": 1760289623,
+     "price_display": "29.151 ₫  -  46.648 ₫",
+     "product_id": "1731657500762408572",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731657500762408572?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "( Combo 10 Hộp ) Hộp Nhựa Đựng Thực Phẩm 400ml,Hộp Lạnh Đựng Thực Phẩm,Hộp Nhựa Trong Suốt,Hộp Thực Phẩm"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 102141480,
+     "last_28d_units_sold": 3651,
+     "last_7d_gmv": 27113525,
+     "last_7d_units_sold": 958,
+     "last_90d_gmv": 246818723,
+     "last_90d_units_sold": 9060,
+     "total_gmv": 433305011,
+     "total_units_sold": 15553,
+     "yesterday_gmv": 3439818,
+     "yesterday_units_sold": 118
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/67d8458195524acb803f220cec2d9407~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7496109061652712060",
+     "shop_name": "HanPuShop",
+     "total_units_sold": 163132
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 114,
+     "linked_video_count": 182
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853000,
+       "name": "Storage Bottles & Jars"
+      }
+     },
+     "ceiling_price": 206.45,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/9a885cd257e449ff84a95a5de60c3fd6~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731957717664303030",
+     "floor_price": 206.45,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-07-23",
+     "launch_time": 1753208049,
+     "price_display": "206.451 ₫",
+     "product_id": "1731957717664303030",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731957717664303030?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[20/10 LIVE GIẢM SÂU] Combo 15 Hộp Đựng Thực Phẩm Nhựa Deli Siêu Kín Chống Ẩm Mốc Bảo Quản Đồ Ăn Đựng Gia Vị Kích Thước Đa Dạng Từ  Nhỏ Đến Lớn An Toàn Khi Tiếp Xúc Thực Phẩm"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 534393366,
+     "last_28d_units_sold": 2574,
+     "last_7d_gmv": 253457922,
+     "last_7d_units_sold": 1193,
+     "last_90d_gmv": 1037639323,
+     "last_90d_units_sold": 5034,
+     "total_gmv": 2329567427,
+     "total_units_sold": 9206,
+     "yesterday_gmv": 25599924,
+     "yesterday_units_sold": 124
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3dce3136baf74f38a571b2b0d5e8418e~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7495013975380364214",
+     "shop_name": "Deli Lifestyle",
+     "total_units_sold": 4452736
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859528,
+       "name": "Kitchen Utensils & Gadgets"
+      },
+      "l3": {
+       "id": 600029,
+       "name": "Preserving Containers"
+      }
+     },
+     "ceiling_price": 475.3,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/556657bf1b574bc981c5a3a97b764628~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737331812966892672",
+     "floor_price": 475.3,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-09",
+     "launch_time": 1791512529,
+     "price_display": "475.300 ₫",
+     "product_id": "1737331812966892672",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737331812966892672?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ 17 hộp bảo quản thực phẩm nhựa pp cao cấp – kháng khuẩn, chống ẩm mốc, chống tràn, an toàn sức khỏe, dùng được lò vi sóng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 217619600,
+     "last_28d_units_sold": 2552,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 217619600,
+     "last_90d_units_sold": 2552,
+     "total_gmv": 220691600,
+     "total_units_sold": 2600,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/df638ec62ac34dc3893dfc473c3594ca~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495206580614563968",
+     "shop_name": "Jelly Jello",
+     "total_units_sold": 88499
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 251,
+     "linked_video_count": 614
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853000,
+       "name": "Storage Bottles & Jars"
+      }
+     },
+     "ceiling_price": 192.64,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/bc6b9889fb5b41f0a5a6640761738fc8~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735864941533366198",
+     "floor_price": 192.64,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-12",
+     "launch_time": 1781269608,
+     "price_display": "192.636 ₫",
+     "product_id": "1735864941533366198",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735864941533366198?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[DEAL 20/10 - TẶNG KHĂN LỤA 0Đ] COMBO 15 Hộp đựng thực phẩm Deli Hũ nhựa, lọ nhựa siêu kín chống ẩm mốc, bảo quản đồ ăn Đựng Đồ Ăn Đựng Gia Vị"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 422655361,
+     "last_28d_units_sold": 2138,
+     "last_7d_gmv": 173108328,
+     "last_7d_units_sold": 861,
+     "last_90d_gmv": 493848794,
+     "last_90d_units_sold": 2478,
+     "total_gmv": 644316754,
+     "total_units_sold": 3156,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3dce3136baf74f38a571b2b0d5e8418e~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7495013975380364214",
+     "shop_name": "Deli Lifestyle",
+     "total_units_sold": 4452736
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 152,
+     "linked_video_count": 262
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 851848,
+       "name": "Home Organizers"
+      },
+      "l3": {
+       "id": 853000,
+       "name": "Storage Bottles & Jars"
+      }
+     },
+     "ceiling_price": 86.54,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/0e2b3c2bf9414756a35f40d430a192d8~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729666669508463349",
+     "floor_price": 25.66,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-09-24",
+     "launch_time": 1695513274,
+     "price_display": "25.664 ₫  -  86.541 ₫",
+     "product_id": "1729666669508463349",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729666669508463349?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Hộp nhựa có nắp đựng thực phẩm các loại hạt, gia vị ngũ cốc có nhiều dung tích tiện lợi My Home DN143"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 50843777,
+     "last_28d_units_sold": 2126,
+     "last_7d_gmv": 28679733,
+     "last_7d_units_sold": 1199,
+     "last_90d_gmv": 64513295,
+     "last_90d_units_sold": 2734,
+     "total_gmv": 314411644,
+     "total_units_sold": 21835,
+     "yesterday_gmv": 692928,
+     "yesterday_units_sold": 27
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/90221b93886940588875db3922dcc296~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494567070302309109",
+     "shop_name": "My Home - Tiệm Decor",
+     "total_units_sold": 1244345
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 756,
+     "linked_video_count": 2564
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859528,
+       "name": "Kitchen Utensils & Gadgets"
+      },
+      "l3": {
+       "id": 600029,
+       "name": "Preserving Containers"
+      }
+     },
+     "ceiling_price": 130.01,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/f5b1bfc3cc2a4cf29a92610561c7eae4~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731199719517620104",
+     "floor_price": 112.28,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-06-03",
+     "launch_time": 1748961120,
+     "price_display": "112.278 ₫  -  130.006 ₫",
+     "product_id": "1731199719517620104",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731199719517620104?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Combo 6 Hộp] Đựng Thực Phẩm Hoa Quả,Thức Ăn, Rau Củ Có Khay Để Tủ Lạnh Bằng Nhựa PP An Toàn Cho Sức Khỏe 9012, 6586"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 141307861,
+     "last_28d_units_sold": 1343,
+     "last_7d_gmv": 41080677,
+     "last_7d_units_sold": 372,
+     "last_90d_gmv": 684619450,
+     "last_90d_units_sold": 6951,
+     "total_gmv": 4139105281,
+     "total_units_sold": 50843,
+     "yesterday_gmv": 2806950,
+     "yesterday_units_sold": 25
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ddc9e927651b4ce2b5c4b29bcc1532f2~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494597014679817096",
+     "shop_name": "Huy Hà Store",
+     "total_units_sold": 670372
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 45,
+     "linked_video_count": 361
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859272,
+       "name": "Cutlery & Tableware"
+      },
+      "l3": {
+       "id": 600059,
+       "name": "Lunch Boxes"
+      }
+     },
+     "ceiling_price": 195.86,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/7bb8a9cb0e3a407e92f1fe0ce0c41229~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731725638408832783",
+     "floor_price": 31.19,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-08-01",
+     "launch_time": 1754013314,
+     "price_display": "31.185 ₫  -  195.864 ₫",
+     "product_id": "1731725638408832783",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731725638408832783?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Hộp nhựa Việt Nhật đựng thực phẩm, hộp đựng đồ ăn có 2 ngăn to nhỏ chất liệu nhựa cao cấp an toàn DN423"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 40595499,
+     "last_28d_units_sold": 1261,
+     "last_7d_gmv": 12918572,
+     "last_7d_units_sold": 390,
+     "last_90d_gmv": 107128435,
+     "last_90d_units_sold": 3948,
+     "total_gmv": 248499232,
+     "total_units_sold": 9437,
+     "yesterday_gmv": 1964655,
+     "yesterday_units_sold": 63
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/f9c85d3c42604733b31c0089479b39a7~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494587090929093391",
+     "shop_name": "HT Shop - Tiện ích thông minh",
+     "total_units_sold": 188408
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

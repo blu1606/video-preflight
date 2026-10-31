@@ -1,0 +1,1625 @@
+{
+  "version": "1.0.0",
+  "created_at": "2026-10-31",
+  "project": "ecommerce-video-shop-intelligence",
+  "api_reference": "https://developers.openai.com/api/docs/guides/decisions",
+  "model": "gpt-6-luna",
+  "purpose": "Question bank for Decisions API; metadata is application-only, not accepted as API questions.",
+  "source_of_truth": "Human-defined heuristic rubrics; scores are not sales predictions.",
+  "mock_policy": "Mock evidence allowed in simulation only; label every derived score simulated and exclude from real business claims.",
+  "preflight": "Only send questions whose required_features exist with suitable provenance; do not impute missing evidence as 0. Must distinguish observed absence from unknown.",
+  "aggregation": "Normalize score indices 0..4 to 0..100 with score/4*100; weights are heuristic. Report weighted coverage. Do not interpret confidence as calibrated correctness probability.",
+  "policy_caution": "Predicate probability indicates model judgment on supplied evidence, not legal/platform enforcement verdict. Verify applicable policy text and market.",
+  "groups": {
+    "video_core": [
+      "V01",
+      "V02",
+      "V03",
+      "V04",
+      "V05",
+      "V06",
+      "V07",
+      "V08",
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C06",
+      "C07"
+    ],
+    "video_cta": [
+      "C08"
+    ],
+    "sku_quality": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "C05",
+      "C09"
+    ],
+    "shop_health": [
+      "H01",
+      "H02",
+      "H03",
+      "H04",
+      "H05",
+      "C10"
+    ],
+    "classification": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06"
+    ],
+    "policy_triage": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05"
+    ]
+  },
+  "questions": [
+    {
+      "id": "V01",
+      "domain": "viral",
+      "dimension": "hook_immediacy",
+      "phase": "P0",
+      "required_features": [
+        "video.hook",
+        "video.opening_evidence"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.5,
+      "question": {
+        "type": "score",
+        "name": "V01",
+        "instructions": "How effectively does the first 3 seconds create an immediate relevant reason to keep watching? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No discernible hook in opening."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Opening begins without clear reason to watch."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Topic or problem becomes recognizable, but weak urgency or relevance."
+          },
+          {
+            "label": "3 Good",
+            "description": "Product problem/result/curiosity is clear quickly."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Immediate, specific, compelling hook directly tied to a viewer need."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "V02",
+      "domain": "viral",
+      "dimension": "hook_specificity",
+      "phase": "P0",
+      "required_features": [
+        "video.hook",
+        "video.claims"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.0,
+      "question": {
+        "type": "score",
+        "name": "V02",
+        "instructions": "How specific and credible is the hook promise to the target audience? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No identifiable promise."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Generic or vague promise."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Understandable but weakly differentiated."
+          },
+          {
+            "label": "3 Good",
+            "description": "Specific audience problem or benefit supported by content."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Specific, credible, distinct promise with direct supporting evidence."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "V03",
+      "domain": "viral",
+      "dimension": "story_coherence",
+      "phase": "P0",
+      "required_features": [
+        "video.story_beats"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.0,
+      "question": {
+        "type": "score",
+        "name": "V03",
+        "instructions": "How clearly does the video progress from setup to payoff? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No intelligible structure."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Disjointed narrative, difficult to follow."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Basic sequence but incomplete payoff."
+          },
+          {
+            "label": "3 Good",
+            "description": "Coherent setup-demo-result progression."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Coherent and engaging progression with convincing payoff."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "V04",
+      "domain": "viral",
+      "dimension": "visual_pacing",
+      "phase": "P0",
+      "required_features": [
+        "video.shots",
+        "video.on_screen_text"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.0,
+      "question": {
+        "type": "score",
+        "name": "V04",
+        "instructions": "Does observable visual pacing support comprehension and attention? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Visual sequence unreadable or essentially unusable."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Extended irrelevant shots or abrupt cuts obscure content."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Mostly understandable but obvious dead space or dense edits."
+          },
+          {
+            "label": "3 Good",
+            "description": "Shot changes appropriately support main message."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Purposeful pace, visual variation, readable overlays, smooth progression."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "V05",
+      "domain": "viral",
+      "dimension": "curiosity_payoff",
+      "phase": "P0",
+      "required_features": [
+        "video.story_beats"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 0.8,
+      "question": {
+        "type": "score",
+        "name": "V05",
+        "instructions": "Does video establish and resolve a meaningful curiosity gap? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No curiosity or payoff."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Tease unrelated to product or never resolved."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Some anticipation with partial resolution."
+          },
+          {
+            "label": "3 Good",
+            "description": "Clear tension/question followed by relevant reveal."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Strong curiosity mechanism and satisfying, verifiable payoff."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "V06",
+      "domain": "viral",
+      "dimension": "emotional_relevance",
+      "phase": "P0",
+      "required_features": [
+        "video.emotional_triggers",
+        "context.target_audience"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 0.8,
+      "question": {
+        "type": "score",
+        "name": "V06",
+        "instructions": "How well does the emotional framing fit the target buyer and product context? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No emotional framing."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Emotion feels irrelevant or manipulative."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Some relatable scenario but generic."
+          },
+          {
+            "label": "3 Good",
+            "description": "Relatable emotion strengthens core use case."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Distinctive authentic emotional moment closely supports product value."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "V07",
+      "domain": "viral",
+      "dimension": "share_save_utility",
+      "phase": "P0",
+      "required_features": [
+        "video.value_propositions",
+        "video.story_beats"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 0.7,
+      "question": {
+        "type": "score",
+        "name": "V07",
+        "instructions": "How much explicit save/share value is present in the content itself? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No identifiable utility or sharing value."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Little informational, entertainment or social value."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Some useful tip or relatable moment."
+          },
+          {
+            "label": "3 Good",
+            "description": "Specific advice, demonstration, humor or comparison worth sharing."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "High standalone utility or memorable, grounded insight worth revisiting."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "V08",
+      "domain": "viral",
+      "dimension": "first_frame_clarity",
+      "phase": "P0",
+      "required_features": [
+        "video.opening_evidence",
+        "video.on_screen_text"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 0.7,
+      "question": {
+        "type": "score",
+        "name": "V08",
+        "instructions": "How understandable is the product/topic from the opening visuals or text? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No relevant opening visual/text."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Opening confusing or unrelated."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Recognizable topic but requires substantial context."
+          },
+          {
+            "label": "3 Good",
+            "description": "Clear opening composition/text with identifiable context."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Instantly legible topic and value proposition on mobile."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "C01",
+      "domain": "conversion",
+      "dimension": "product_identification",
+      "phase": "P0",
+      "required_features": [
+        "video.product_mentions",
+        "video.product_visibility"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.2,
+      "question": {
+        "type": "score",
+        "name": "C01",
+        "instructions": "Can a buyer identify the exact product and intended use from the video? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Product and use impossible to identify."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Product mentioned but type/use unclear."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Recognizable product type, incomplete use/variant."
+          },
+          {
+            "label": "3 Good",
+            "description": "Specific product and use are clear."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Product, use, key variant and buyer suitability are unambiguous."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "C02",
+      "domain": "conversion",
+      "dimension": "problem_solution_fit",
+      "phase": "P0",
+      "required_features": [
+        "video.problem",
+        "video.value_propositions"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.1,
+      "question": {
+        "type": "score",
+        "name": "C02",
+        "instructions": "How explicitly is the product tied to a concrete buyer problem? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No buyer problem/use presented."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Unrelated or generic claims."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Some relevance but unclear causal link."
+          },
+          {
+            "label": "3 Good",
+            "description": "Specific problem and plausible usage benefit shown."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Specific pain point, mechanism and realistic outcome linked by evidence."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "C03",
+      "domain": "conversion",
+      "dimension": "demonstration_clarity",
+      "phase": "P0",
+      "required_features": [
+        "video.product_demo"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.2,
+      "question": {
+        "type": "score",
+        "name": "C03",
+        "instructions": "How clearly does the video demonstrate actual product usage? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No usable demonstration."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Product flashed or demonstration illegible."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Use shown briefly without clear outcome."
+          },
+          {
+            "label": "3 Good",
+            "description": "Usage steps and observed outcome understandable."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Detailed, easy-to-follow real use with verifiable visible outcome."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "C04",
+      "domain": "conversion",
+      "dimension": "benefit_specificity",
+      "phase": "P0",
+      "required_features": [
+        "video.value_propositions",
+        "video.claims"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.1,
+      "question": {
+        "type": "score",
+        "name": "C04",
+        "instructions": "How specific and substantiated are the product benefits presented? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No relevant benefit."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Generic claim with no specifics."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Benefit expressed but weak evidence or detail."
+          },
+          {
+            "label": "3 Good",
+            "description": "Concrete benefit linked to visible usage/attributes."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Specific, buyer-relevant benefit supported by clear evidence and limitations."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "C05",
+      "domain": "conversion",
+      "dimension": "differentiation",
+      "phase": "P2",
+      "required_features": [
+        "video.value_propositions",
+        "sku.attributes"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 0.7,
+      "question": {
+        "type": "score",
+        "name": "C05",
+        "instructions": "How clearly does the video differentiate the SKU from realistic alternatives? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No differentiation."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Vague superiority claim."
+          },
+          {
+            "label": "2 Fair",
+            "description": "One distinguishing characteristic but no context."
+          },
+          {
+            "label": "3 Good",
+            "description": "Relevant differentiator supported by demonstrated feature."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Meaningful differentiator supported by relevant product comparison/evidence."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "C06",
+      "domain": "conversion",
+      "dimension": "trust_evidence",
+      "phase": "P0",
+      "required_features": [
+        "video.claims",
+        "video.trust_signals"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.3,
+      "question": {
+        "type": "score",
+        "name": "C06",
+        "instructions": "How credible is the evidence supporting persuasion, avoiding unsupported claims? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Materially misleading or unsupported proof presented as certain."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Main claims unsupported, manipulated or unverifiable."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Mixed claims and observable proof with important gaps."
+          },
+          {
+            "label": "3 Good",
+            "description": "Mostly verifiable demonstrations and appropriately qualified claims."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Transparent, specific and consistently checkable evidence, no material contradiction."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "C07",
+      "domain": "conversion",
+      "dimension": "offer_communication",
+      "phase": "P0",
+      "required_features": [
+        "video.offer"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 0.6,
+      "question": {
+        "type": "score",
+        "name": "C07",
+        "instructions": "How clearly and accurately does the video communicate any purchase offer? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Offer absent or impossible to identify."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Vague incentive with critical conditions missing."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Offer identifiable but key price/terms missing."
+          },
+          {
+            "label": "3 Good",
+            "description": "Price, promotion and basic conditions understandable."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Clear, accurate offer with meaningful terms and eligibility communicated."
+          }
+        ]
+      },
+      "notes": "Absence is genuine 0 only when the entire video was assessed; unknown is skipped. Not every video must have a promotion."
+    },
+    {
+      "id": "C08",
+      "domain": "conversion",
+      "dimension": "cta_clarity",
+      "phase": "P0",
+      "required_features": [
+        "video.cta",
+        "post.shopping_link"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.0,
+      "question": {
+        "type": "score",
+        "name": "C08",
+        "instructions": "How actionable is the purchase call-to-action within the available posting context? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "No purchase action in inspected video/post metadata."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Vague exhortation, no actionable step."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Clear intent but unclear purchase path."
+          },
+          {
+            "label": "3 Good",
+            "description": "Specific action linked to visible shopping flow."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Timely clear purchase instruction with consistent accessible purchase path."
+          }
+        ]
+      },
+      "notes": "If post metadata unavailable, score video CTA only and mark purchase-path dimension unknown."
+    },
+    {
+      "id": "C09",
+      "domain": "conversion",
+      "dimension": "claim_listing_consistency",
+      "phase": "P2",
+      "required_features": [
+        "video.product_mentions",
+        "video.claims",
+        "sku.title",
+        "sku.attributes"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.1,
+      "question": {
+        "type": "score",
+        "name": "C09",
+        "instructions": "How consistent are product claims, variant and visuals with the matched SKU listing? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Material contradiction or clearly different SKU."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Multiple important mismatches."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Partial match with unresolved variant/claim differences."
+          },
+          {
+            "label": "3 Good",
+            "description": "Strong match; minor ambiguous details only."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Exact product/variant and major claims match listing evidence."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "C10",
+      "domain": "conversion",
+      "dimension": "purchase_friction",
+      "phase": "P4",
+      "required_features": [
+        "sku.stock",
+        "sku.price",
+        "post.shopping_link",
+        "shop.fulfillment"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.0,
+      "question": {
+        "type": "score",
+        "name": "C10",
+        "instructions": "How easy is purchase given real stock, price, shipping and path information? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Cannot purchase or materially blocked."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Major blockers or missing path."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Some friction: stock/fees/variants unclear."
+          },
+          {
+            "label": "3 Good",
+            "description": "Working path, available stock, understandable price and shipping."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Seamless purchase path, clear variant/terms and reliable fulfillment."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "S01",
+      "domain": "sku",
+      "dimension": "listing_completeness",
+      "phase": "P2",
+      "required_features": [
+        "sku.title",
+        "sku.attributes",
+        "sku.images"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1,
+      "question": {
+        "type": "score",
+        "name": "S01",
+        "instructions": "How complete and internally consistent is the listing title, attributes, images and variants? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Cannot identify product."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Numerous missing/misleading critical fields."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Basic fields but essential variant or usage details missing."
+          },
+          {
+            "label": "3 Good",
+            "description": "Main attributes, images and variants consistent."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Comprehensive, specific, accurate listing with clear variant selection."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "S02",
+      "domain": "sku",
+      "dimension": "review_quality",
+      "phase": "P3",
+      "required_features": [
+        "sku.rating",
+        "sku.review_count",
+        "sku.review_summary"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1,
+      "question": {
+        "type": "score",
+        "name": "S02",
+        "instructions": "How persuasive and reliable are reviews considering rating, count and substantive complaint themes? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Strong credible negative pattern or unresolved severe defect."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Many credible repeated negative complaints."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Mixed reviews or limited sample."
+          },
+          {
+            "label": "3 Good",
+            "description": "Predominantly positive, sufficiently numerous relevant reviews."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Consistently strong substantive reviews with issues addressed; representative volume."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "S03",
+      "domain": "sku",
+      "dimension": "price_positioning",
+      "phase": "P3",
+      "required_features": [
+        "sku.price",
+        "market.comparable_skus"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.0,
+      "question": {
+        "type": "score",
+        "name": "S03",
+        "instructions": "How competitive is SKU price against like-for-like comparable listings, after normalized unit/size? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Highly overpriced without defensible value."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Meaningfully overpriced relative to verified comparable SKUs."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Near-market pricing with unclear differentiation."
+          },
+          {
+            "label": "3 Good",
+            "description": "Competitive price for equivalent variant/size."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Compelling value relative to verified close substitutes with comparable terms."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "S04",
+      "domain": "sku",
+      "dimension": "availability_reliability",
+      "phase": "P4",
+      "required_features": [
+        "sku.stock",
+        "sku.stock_history"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.0,
+      "question": {
+        "type": "score",
+        "name": "S04",
+        "instructions": "How well can currently observed stock cover expected near-term demand? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Unavailable or confirmed impossible fulfillment."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Chronic stockouts / severe variant gaps."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Some variants unavailable or uncertain stock."
+          },
+          {
+            "label": "3 Good",
+            "description": "Most key variants available and stable replenishment."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Key variants reliably available with adequate replenishment plan."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "S05",
+      "domain": "sku",
+      "dimension": "demand_relevance",
+      "phase": "P3",
+      "required_features": [
+        "market.demand_signals",
+        "sku.category"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 0.8,
+      "question": {
+        "type": "score",
+        "name": "S05",
+        "instructions": "How well does the SKU address verified market demand (not just video views)? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Evidence of little demand in target market."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Weak demand relative to alternatives."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Moderate/noisy demand evidence."
+          },
+          {
+            "label": "3 Good",
+            "description": "Clear recurring demand across credible signals."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Strong sustained and relevant demand supported by multiple sources."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "H01",
+      "domain": "shop",
+      "dimension": "catalog_health",
+      "phase": "P4",
+      "required_features": [
+        "shop.catalog_metrics"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1,
+      "question": {
+        "type": "score",
+        "name": "H01",
+        "instructions": "How healthy is shop catalog based on active SKUs, missing details and availability? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Catalog largely broken/unavailable."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Severe widespread missing details or stockouts."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Mixed coverage and recurring gaps."
+          },
+          {
+            "label": "3 Good",
+            "description": "Mostly complete in-stock catalog."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Consistent high-quality catalog with good availability and variant hygiene."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "H02",
+      "domain": "shop",
+      "dimension": "fulfillment_health",
+      "phase": "P4",
+      "required_features": [
+        "shop.fulfillment_metrics"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.2,
+      "question": {
+        "type": "score",
+        "name": "H02",
+        "instructions": "How strong are fulfillment outcomes using cancellation, late-shipment and dispute metrics? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Severe persistent fulfillment failures."
+          },
+          {
+            "label": "1 Weak",
+            "description": "High cancellations/late shipment or unresolved disputes."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Noticeable issues but not dominant."
+          },
+          {
+            "label": "3 Good",
+            "description": "Generally reliable fulfillment with modest exceptions."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Consistently reliable fulfillment, low preventable issues."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "H03",
+      "domain": "shop",
+      "dimension": "traffic_monetization",
+      "phase": "P5",
+      "required_features": [
+        "shop.visits",
+        "shop.orders",
+        "market.category_benchmark"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 1.1,
+      "question": {
+        "type": "score",
+        "name": "H03",
+        "instructions": "How effectively does the shop convert relevant visits to orders relative to comparable shops? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Conversion critically below category comparable."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Substantially below comparable."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Near expected baseline with gaps."
+          },
+          {
+            "label": "3 Good",
+            "description": "Above comparable benchmark with stable evidence."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Strong sustained conversion above peer baseline without misleading attribution."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "H04",
+      "domain": "shop",
+      "dimension": "ad_efficiency",
+      "phase": "P5",
+      "required_features": [
+        "shop.ads_spend",
+        "shop.attributed_revenue",
+        "shop.margin"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 0.9,
+      "question": {
+        "type": "score",
+        "name": "H04",
+        "instructions": "How efficient is paid acquisition considering spend, attributable revenue and margin? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Spend generates material losses with reliable attribution."
+          },
+          {
+            "label": "1 Weak",
+            "description": "Poor unit economics despite sufficient data."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Near break-even / mixed attribution."
+          },
+          {
+            "label": "3 Good",
+            "description": "Healthy contribution after spend."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Sustainable strong incremental profitability with reliable attribution."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "H05",
+      "domain": "shop",
+      "dimension": "review_service_health",
+      "phase": "P4",
+      "required_features": [
+        "shop.rating",
+        "shop.review_count",
+        "shop.service_metrics"
+      ],
+      "eligibility": "all_required_fields_available_and_not_mock_for_live_scoring",
+      "missing_behavior": "skip_not_scored",
+      "weight": 0.9,
+      "question": {
+        "type": "score",
+        "name": "H05",
+        "instructions": "How strong are seller reputation and after-sales issue handling? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+        "levels": [
+          {
+            "label": "0 Absent",
+            "description": "Repeated unresolved serious issues."
+          },
+          {
+            "label": "1 Weak",
+            "description": "High repeat complaints/low rating."
+          },
+          {
+            "label": "2 Fair",
+            "description": "Mixed sentiment and inconsistent resolution."
+          },
+          {
+            "label": "3 Good",
+            "description": "Predominantly positive feedback, issues generally resolved."
+          },
+          {
+            "label": "4 Excellent",
+            "description": "Strong representative ratings and fast transparent remediation."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "M01",
+      "domain": "sku",
+      "dimension": "candidate_match",
+      "phase": "P1",
+      "required_features": [
+        "video.product_mentions",
+        "sku.title",
+        "sku.attributes"
+      ],
+      "eligibility": "relevant_evidence_available",
+      "missing_behavior": "choose_unknown_or_skip",
+      "question": {
+        "type": "choice",
+        "name": "M01",
+        "instructions": "Which match class best describes the candidate Shopee listing relative to the product in the video? Use unknown when evidence does not establish the answer.",
+        "choices": [
+          {
+            "value": "exact",
+            "description": "Same item, matching brand/model/variant and size."
+          },
+          {
+            "value": "variant",
+            "description": "Same product family but different size/color/bundle."
+          },
+          {
+            "value": "similar",
+            "description": "Functional alternative or same category but not the same SKU."
+          },
+          {
+            "value": "mismatch",
+            "description": "Clear unrelated or contradictory identity."
+          },
+          {
+            "value": "unknown",
+            "description": "Not enough identifiers for a reliable match."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "M02",
+      "domain": "video",
+      "dimension": "creative_format",
+      "phase": "P1",
+      "required_features": [
+        "video.story_beats",
+        "video.product_demo"
+      ],
+      "eligibility": "relevant_evidence_available",
+      "missing_behavior": "choose_unknown_or_skip",
+      "question": {
+        "type": "choice",
+        "name": "M02",
+        "instructions": "Which creative structure best describes this video? Use unknown when evidence does not establish the answer.",
+        "choices": [
+          {
+            "value": "ugc_review",
+            "description": "Creator first-person experience/review."
+          },
+          {
+            "value": "demonstration",
+            "description": "Product usage demonstration is primary."
+          },
+          {
+            "value": "comparison",
+            "description": "Before/after or product alternative comparison primary."
+          },
+          {
+            "value": "deal",
+            "description": "Price/promotion/urgency is primary."
+          },
+          {
+            "value": "story",
+            "description": "Narrative entertainment with product integration."
+          },
+          {
+            "value": "other",
+            "description": "Another format."
+          },
+          {
+            "value": "unknown",
+            "description": "Insufficient evidence."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "M03",
+      "domain": "shop",
+      "dimension": "root_cause",
+      "phase": "P4",
+      "required_features": [
+        "shop.metrics",
+        "shop.catalog_metrics"
+      ],
+      "eligibility": "relevant_evidence_available",
+      "missing_behavior": "choose_unknown_or_skip",
+      "question": {
+        "type": "choice",
+        "name": "M03",
+        "instructions": "Which bottleneck is best supported by observed shop metrics? Use unknown when evidence does not establish the answer.",
+        "choices": [
+          {
+            "value": "traffic",
+            "description": "Insufficient qualified visits."
+          },
+          {
+            "value": "conversion",
+            "description": "Traffic adequate but purchase rate weak."
+          },
+          {
+            "value": "stock",
+            "description": "Availability constrains sales."
+          },
+          {
+            "value": "trust",
+            "description": "Ratings/complaints limit purchasing."
+          },
+          {
+            "value": "operations",
+            "description": "Fulfillment/cancellation issues dominate."
+          },
+          {
+            "value": "economics",
+            "description": "Advertising/margin makes sales unprofitable."
+          },
+          {
+            "value": "mixed",
+            "description": "Multiple bottlenecks supported."
+          },
+          {
+            "value": "unknown",
+            "description": "Not enough comparable KPI evidence."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "M04",
+      "domain": "orchestration",
+      "dimension": "next_best_action",
+      "phase": "P2",
+      "required_features": [
+        "scores.findings",
+        "context.business_constraints"
+      ],
+      "eligibility": "relevant_evidence_available",
+      "missing_behavior": "choose_unknown_or_skip",
+      "question": {
+        "type": "choice",
+        "name": "M04",
+        "instructions": "Which first action is most strongly justified by the supplied verified evidence and constraints? Use unknown when evidence does not establish the answer.",
+        "choices": [
+          {
+            "value": "improve_hook",
+            "description": "Revise first 3 seconds for relevance/clarity."
+          },
+          {
+            "value": "improve_demo",
+            "description": "Show clearer usage/outcome."
+          },
+          {
+            "value": "verify_claims",
+            "description": "Verify or qualify product claims."
+          },
+          {
+            "value": "improve_listing",
+            "description": "Fix SKU title, visuals or variants."
+          },
+          {
+            "value": "improve_offer",
+            "description": "Adjust price/value presentation."
+          },
+          {
+            "value": "fix_stock",
+            "description": "Resolve stock availability."
+          },
+          {
+            "value": "fix_fulfillment",
+            "description": "Resolve fulfillment/service issue."
+          },
+          {
+            "value": "collect_more_data",
+            "description": "Collect missing evidence before recommending action."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "M05",
+      "domain": "orchestration",
+      "dimension": "verification_route",
+      "phase": "P1",
+      "required_features": [
+        "quality.missing_critical_features",
+        "quality.conflicts"
+      ],
+      "eligibility": "relevant_evidence_available",
+      "missing_behavior": "choose_unknown_or_skip",
+      "question": {
+        "type": "choice",
+        "name": "M05",
+        "instructions": "What is the cheapest next verification step for unresolved critical evidence? Use unknown when evidence does not establish the answer.",
+        "choices": [
+          {
+            "value": "none",
+            "description": "Evidence sufficient; no reinspection needed."
+          },
+          {
+            "value": "video_segment",
+            "description": "Reinspect short portion of visual frames."
+          },
+          {
+            "value": "transcript",
+            "description": "Re-run/check transcript around claim."
+          },
+          {
+            "value": "sku_lookup",
+            "description": "Verify SKU listing/variant."
+          },
+          {
+            "value": "market_search",
+            "description": "Verify external market context."
+          },
+          {
+            "value": "human_review",
+            "description": "Needs human validation."
+          },
+          {
+            "value": "unknown",
+            "description": "Cannot determine from metadata."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "M06",
+      "domain": "orchestration",
+      "dimension": "request_intent",
+      "phase": "P2",
+      "required_features": [
+        "request.user_query"
+      ],
+      "eligibility": "relevant_evidence_available",
+      "missing_behavior": "choose_unknown_or_skip",
+      "question": {
+        "type": "choice",
+        "name": "M06",
+        "instructions": "Which workflow best serves the user request? Use unknown when evidence does not establish the answer.",
+        "choices": [
+          {
+            "value": "video_analysis",
+            "description": "Analyze creative/video."
+          },
+          {
+            "value": "sku_enrichment",
+            "description": "Identify and compare products."
+          },
+          {
+            "value": "shop_diagnosis",
+            "description": "Investigate shop performance."
+          },
+          {
+            "value": "policy_check",
+            "description": "Review policies and risk."
+          },
+          {
+            "value": "combined",
+            "description": "Multiple independent workstreams."
+          },
+          {
+            "value": "unknown",
+            "description": "Request cannot be routed confidently."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "P01",
+      "domain": "policy",
+      "dimension": "policy_risk_category",
+      "phase": "P1",
+      "required_features": [
+        "policy.applicable_rules",
+        "video.claims",
+        "sku.category"
+      ],
+      "eligibility": "relevant_evidence_available",
+      "missing_behavior": "choose_unknown_or_skip",
+      "question": {
+        "type": "choice",
+        "name": "P01",
+        "instructions": "What is the primary policy concern based on provided actual rule text and content? Use unknown when evidence does not establish the answer.",
+        "choices": [
+          {
+            "value": "misleading_claim",
+            "description": "Unsupported or misleading product efficacy claim."
+          },
+          {
+            "value": "restricted_product",
+            "description": "Product/category needs restrictions or approvals."
+          },
+          {
+            "value": "disclosure",
+            "description": "Potential commercial/AI disclosure gap."
+          },
+          {
+            "value": "intellectual_property",
+            "description": "Potential music, image or trademark rights issue."
+          },
+          {
+            "value": "listing_mismatch",
+            "description": "Advertised product differs from listing."
+          },
+          {
+            "value": "none_identified",
+            "description": "No clear risk under supplied applicable rules."
+          },
+          {
+            "value": "unknown",
+            "description": "Applicable policy or evidence insufficient."
+          }
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "id": "P02",
+      "domain": "policy",
+      "dimension": "potentially_misleading_claim",
+      "phase": "P1",
+      "required_features": [
+        "video.claims",
+        "video.trust_signals"
+      ],
+      "eligibility": "sufficient_relevant_evidence_available",
+      "missing_behavior": "skip_not_scored",
+      "question": {
+        "type": "predicate",
+        "name": "P02",
+        "instructions": "Is there a concrete product efficacy or outcome claim whose representation materially exceeds the evidence supplied? Flag potential risk only, not a definitive policy violation."
+      },
+      "notes": ""
+    },
+    {
+      "id": "P03",
+      "domain": "policy",
+      "dimension": "unverified_before_after",
+      "phase": "P1",
+      "required_features": [
+        "video.before_after",
+        "video.claims"
+      ],
+      "eligibility": "sufficient_relevant_evidence_available",
+      "missing_behavior": "skip_not_scored",
+      "question": {
+        "type": "predicate",
+        "name": "P03",
+        "instructions": "Is a product-effect before/after shown as proof without adequate comparability or substantiation in the supplied evidence?"
+      },
+      "notes": ""
+    },
+    {
+      "id": "P04",
+      "domain": "policy",
+      "dimension": "commercial_disclosure_missing",
+      "phase": "P2",
+      "required_features": [
+        "post.sponsorship",
+        "post.disclosure",
+        "policy.applicable_rules"
+      ],
+      "eligibility": "sufficient_relevant_evidence_available",
+      "missing_behavior": "skip_not_scored",
+      "question": {
+        "type": "predicate",
+        "name": "P04",
+        "instructions": "Given the declared sponsorship relationship and platform-specific disclosure requirements, is a required disclosure absent from supplied post metadata?"
+      },
+      "notes": ""
+    },
+    {
+      "id": "P05",
+      "domain": "policy",
+      "dimension": "video_listing_contradiction",
+      "phase": "P2",
+      "required_features": [
+        "video.product_mentions",
+        "sku.attributes"
+      ],
+      "eligibility": "sufficient_relevant_evidence_available",
+      "missing_behavior": "skip_not_scored",
+      "question": {
+        "type": "predicate",
+        "name": "P05",
+        "instructions": "Does a material advertised product identity, variant or core property contradict the matched listing?"
+      },
+      "notes": ""
+    }
+  ]
+}

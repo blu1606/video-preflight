@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 2,
+  "label": "2 Fair",
+  "score": 50.0,
+  "rationale": "Có một ít giá trị thông tin qua việc nêu các thành phần và cho thấy sản phẩm tạo bọt khi chà trên da. Các lợi ích về cải thiện sắc tố và độ mềm mịn chỉ là nội dung được giới thiệu, không đủ căn cứ để xem là thông tin đã xác minh; bằng chứng cũng chưa cho thấy mẹo hay insight nổi bật đáng lưu lại.",
+  "key_evidence": [
+    "Có Niacinamide, Alpha-Arbutin và Tranexamic Acid.",
+    "Tạo bọt khi chà trên da."
+  ],
+  "evidence_sent": {
+    "video.storytelling": {
+      "value": 7.0,
+      "status": "REAL"
+    },
+    "video.value_propositions": {
+      "value": [
+        "Có Niacinamide, Alpha-Arbutin và Tranexamic Acid.",
+        "Được giới thiệu là hỗ trợ cải thiện sắc tố và giúp da nhìn sáng, đều màu hơn.",
+        "Tạo bọt khi chà trên da.",
+        "Được mô tả là giúp da sạch và mềm mịn sau khi tắm."
+      ],
+      "status": "REAL"
+    }
+  }
+}

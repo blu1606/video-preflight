@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 1,
+  "label": "1 Weak",
+  "score": 25.0,
+  "rationale": "Các nhận định chính không được minh họa hoặc hỗ trợ bằng bằng chứng kiểm chứng được, và video không nêu rõ công dụng hay kết quả sử dụng sản phẩm. Có thêm một phát ngôn tuyệt đối, trong khi không có tín hiệu tin cậy nào được ghi nhận; bằng chứng phù hợp mức yếu hơn là mức 0 vì chưa cho thấy khẳng định sản phẩm sai lệch trọng yếu được trình bày như sự thật.",
+  "key_evidence": [
+    "Lời chê đồ rẻ tiền khiến trang điểm không đẹp nhưng không có minh họa hoặc bằng chứng về hiệu quả sản phẩm.",
+    "Sản phẩm được gọi là mascara lông mày nhưng không nêu công dụng cụ thể hoặc kết quả sử dụng.",
+    "video.trust_signals: []"
+  ],
+  "evidence_sent": {
+    "video.key_claims": {
+      "value": [
+        "Lời thoại chê dùng đồ rẻ tiền sẽ khiến việc trang điểm không đẹp, nhưng không có minh họa hoặc bằng chứng về hiệu quả của sản phẩm.",
+        "Sản phẩm được gọi là mascara lông mày; video không nêu công dụng cụ thể hoặc kết quả sử dụng."
+      ],
+      "status": "REAL"
+    },
+    "video.policy_absolute_claims": {
+      "value": [
+        {
+          "text": "tuyệt đối sẽ không cưới một người phụ nữ như thế này",
+          "timestamp_sec": 4.0,
+          "channel": "spoken"
+        }
+      ],
+      "status": "REAL"
+    },
+    "video.trust_signals": {
+      "value": [],
+      "status": "REAL"
+    }
+  }
+}

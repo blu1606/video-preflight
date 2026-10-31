@@ -1,0 +1,53 @@
+{
+ "tool": "market_category_analysis",
+ "args": {
+  "analysis_type": "basic_metrics",
+  "filter": {
+   "category_id": 10,
+   "region": "VN",
+   "date_type": "month",
+   "date_value": "2026-09"
+  }
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "analysis_type": "basic_metrics",
+  "category": {
+   "category_id": 10,
+   "category_level": 1,
+   "category_name": "Home Supplies",
+   "region": "VN",
+   "stat_date": "2026-09"
+  },
+  "concentration_metrics": {
+   "top_products_gmv_share": 0,
+   "top_shops_gmv_share": 0
+  },
+  "growth_metrics": {
+   "active_product_count_change": 6330,
+   "category_gmv_mom_percent": 17.86,
+   "category_gmv_yoy_percent": 70.9,
+   "category_units_sold_mom_percent": 6.06,
+   "category_units_sold_yoy_percent": 40.75,
+   "product_count_change": 109078,
+   "selling_creator_count_change": 10220,
+   "selling_live_count_change": 45959,
+   "selling_video_count_change": 3528
+  },
+  "scale_metrics": {
+   "active_product_count": 186312,
+   "category_gmv": 2306500459356.8,
+   "category_units_sold": 22516520,
+   "product_count": 109078,
+   "selling_creator_count": 172643,
+   "selling_live_count": 345850,
+   "selling_video_count": 1058770
+  },
+  "top_products_summary": {
+   "average_affiliate_count": 10050,
+   "average_live_count": 5232,
+   "average_video_count": 11315
+  }
+ }
+}

@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "băng vệ sinh Tutubaby",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1180,
+     "linked_video_count": 5009
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601477,
+       "name": "Sanitary Towels\t"
+      }
+     },
+     "ceiling_price": 77.8,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/00df2ffb245e4b69b90c6295234d8345~tplv-aphluv4xwc-crop-webp:1440:1440.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734467682069677060",
+     "floor_price": 77.8,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-02",
+     "launch_time": 1772389411,
+     "price_display": "77.795 ₫",
+     "product_id": "1734467682069677060",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734467682069677060?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【Thêm lợi khuẩn probiotic】Băng vệ sinh Tutubaby có khả năng chống rò rỉ 360°, phù hợp cho cả ngày lẫn đêm【nâng cấp】Băng vệ sinh dạng quần Tutubaby (18 miếng), thoáng khí, phù hợp sử dụng ngày và đêm dành cho phụ nữ mang thai và sau sinh"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 3002875568,
+     "last_28d_units_sold": 38155,
+     "last_7d_gmv": 723630137,
+     "last_7d_units_sold": 9109,
+     "last_90d_gmv": 9759299463,
+     "last_90d_units_sold": 130879,
+     "total_gmv": 12917837484,
+     "total_units_sold": 164525,
+     "yesterday_gmv": 73127300,
+     "yesterday_units_sold": 940
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/01a448364430440eb5c4cc291b2bba89~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494089150409573380",
+     "shop_name": "Tutubaby VN",
+     "total_units_sold": 193563
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1489,
+     "linked_video_count": 5358
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601477,
+       "name": "Sanitary Towels\t"
+      }
+     },
+     "ceiling_price": 142.05,
+     "commission_rate_percent": 12,
+     "cover_url": "https://s.500fd.com/tt_product/1b252cc2ffec4d11b94260a9d01f9216~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732540186839516195",
+     "floor_price": 142.05,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-22",
+     "launch_time": 1758478409,
+     "price_display": "142.051 ₫",
+     "product_id": "1732540186839516195",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732540186839516195?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【nâng cấp】Băng vệ sinh nữ Tutubaby (32 miếng) – Chống tràn 360°, thoáng khí, phù hợp phụ nữ mang thai và phụ nữ sau sinh sử dụng buổi sáng và buổi tối."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1071242408,
+     "last_28d_units_sold": 7397,
+     "last_7d_gmv": 283964009,
+     "last_7d_units_sold": 1970,
+     "last_90d_gmv": 3390573547,
+     "last_90d_units_sold": 23446,
+     "total_gmv": 21914379557,
+     "total_units_sold": 128532,
+     "yesterday_gmv": 41336841,
+     "yesterday_units_sold": 291
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/153178ad023f476daf14c5fded032c83~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494131960283956259",
+     "shop_name": "Tutubaby08",
+     "total_units_sold": 161507
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 347,
+     "linked_video_count": 1006
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601477,
+       "name": "Sanitary Towels\t"
+      }
+     },
+     "ceiling_price": 152.88,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/6bde5d83f9094c4e91b5660b1352a83a~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732879702915843107",
+     "floor_price": 84.67,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-09",
+     "launch_time": 1762619104,
+     "price_display": "84.670 ₫  -  152.877 ₫",
+     "product_id": "1732879702915843107",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732879702915843107?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Tutubaby Băng vệ sinh dạng quần nữ【Mới bổ sung lợi khuẩn Probiotics, thoáng khí không hầm bí】, bảo vệ chống tràn 360°, phù hợp cho phụ nữ mang thai và sau sinh sử dụng cả ngày lẫn đêm. Có các size từ M đến 4XL để lựa chọn."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 155383007,
+     "last_28d_units_sold": 1977,
+     "last_7d_gmv": 34983544,
+     "last_7d_units_sold": 438,
+     "last_90d_gmv": 438620369,
+     "last_90d_units_sold": 5730,
+     "total_gmv": 1206255869,
+     "total_units_sold": 11916,
+     "yesterday_gmv": 4910860,
+     "yesterday_units_sold": 58
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/153178ad023f476daf14c5fded032c83~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494131960283956259",
+     "shop_name": "Tutubaby08",
+     "total_units_sold": 161507
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 690,
+     "linked_video_count": 1641
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601477,
+       "name": "Sanitary Towels\t"
+      }
+     },
+     "ceiling_price": 139.24,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/e5383e59be5947b1baa18e1409e08956~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732410376635188228",
+     "floor_price": 85.68,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-18",
+     "launch_time": 1758128895,
+     "price_display": "85.683 ₫  -  139.235 ₫",
+     "product_id": "1732410376635188228",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732410376635188228?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Tutubaby〖Bộ 18-32 miếng -COD 〗Băng vệ sinh nữ kiểu 360° thoáng khí quần ngày dùng siêu mềm chống tràn dành cho phụ nữ mang thai và sau sinh Mỗi chiếc được đóng gói riêng lẻ Không có chất huỳnh quang"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 47243592,
+     "last_28d_units_sold": 522,
+     "last_7d_gmv": 6948769,
+     "last_7d_units_sold": 77,
+     "last_90d_gmv": 192331848,
+     "last_90d_units_sold": 2267,
+     "total_gmv": 1845267961,
+     "total_units_sold": 13748,
+     "yesterday_gmv": 856830,
+     "yesterday_units_sold": 10
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/01a448364430440eb5c4cc291b2bba89~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494089150409573380",
+     "shop_name": "Tutubaby VN",
+     "total_units_sold": 193563
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 181,
+     "linked_video_count": 494
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601477,
+       "name": "Sanitary Towels\t"
+      }
+     },
+     "ceiling_price": 81.51,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/ee0a19e35b244f228d99de4ff7711c6a~tplv-aphluv4xwc-crop-webp:1440:1440.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735435019392156769",
+     "floor_price": 81.51,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-08",
+     "launch_time": 1778182958,
+     "price_display": "81.505 ₫",
+     "product_id": "1735435019392156769",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735435019392156769?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【Công Nghệ Probiotic】 Băng Vệ Sinh Tutubaby Mềm Mại, Kháng Khuẩn & Thấm Hút Vượt Trội (M-XXXXL) – Bảo Vệ Tối Ưu Ngày & Đêm Cho Mọi Phái Đẹp."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 42722858,
+     "last_28d_units_sold": 520,
+     "last_7d_gmv": 21801837,
+     "last_7d_units_sold": 279,
+     "last_90d_gmv": 157634846,
+     "last_90d_units_sold": 2089,
+     "total_gmv": 177907098,
+     "total_units_sold": 2308,
+     "yesterday_gmv": 4401270,
+     "yesterday_units_sold": 54
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d61ef793410c40b1bec7b361d41cb2b5~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494601367501046881",
+     "shop_name": "Tutubaby28",
+     "total_units_sold": 2765
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 235,
+     "linked_video_count": 597
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601477,
+       "name": "Sanitary Towels\t"
+      }
+     },
+     "ceiling_price": 145.84,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/4bd7434942ec4a608328f1ae82f6f97a~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732553569972093956",
+     "floor_price": 145.84,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-18",
+     "launch_time": 1758128897,
+     "price_display": "145.835 ₫",
+     "product_id": "1732553569972093956",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732553569972093956?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【Băng vệ sinh Tutubaby】, bảo vệ chống tràn 360°, khóa nước lâu dài, ngủ ngon yên tâm, đóng gói riêng lẻ, không gây chặt eo, phù hợp cho phụ nữ sau sinh, nhân viên văn phòng và học sinh, sinh viên."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 71817736,
+     "last_28d_units_sold": 490,
+     "last_7d_gmv": 16682548,
+     "last_7d_units_sold": 115,
+     "last_90d_gmv": 312725039,
+     "last_90d_units_sold": 2215,
+     "total_gmv": 1836466799,
+     "total_units_sold": 12028,
+     "yesterday_gmv": 4083380,
+     "yesterday_units_sold": 28
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/01a448364430440eb5c4cc291b2bba89~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494089150409573380",
+     "shop_name": "Tutubaby VN",
+     "total_units_sold": 193563
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 79,
+     "linked_video_count": 124
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601477,
+       "name": "Sanitary Towels\t"
+      }
+     },
+     "ceiling_price": 82.42,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/ea56f6c3789747b5809a391e4457cabe~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734469841779262499",
+     "floor_price": 82.42,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-01",
+     "launch_time": 1772302409,
+     "price_display": "82.421 ₫",
+     "product_id": "1734469841779262499",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734469841779262499?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Tutubaby Băng vệ sinh nữ probiotic, dùng ngày & đêm, thoáng khí, hấp thụ tốt, phù hợp sau sinh & hàng ngày viem thu vesinh bang nhiem"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 21155792,
+     "last_28d_units_sold": 267,
+     "last_7d_gmv": 6294519,
+     "last_7d_units_sold": 78,
+     "last_90d_gmv": 42896019,
+     "last_90d_units_sold": 555,
+     "total_gmv": 77323576,
+     "total_units_sold": 883,
+     "yesterday_gmv": 989052,
+     "yesterday_units_sold": 12
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/153178ad023f476daf14c5fded032c83~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494131960283956259",
+     "shop_name": "Tutubaby08",
+     "total_units_sold": 161507
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 16,
+     "linked_video_count": 26
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601477,
+       "name": "Sanitary Towels\t"
+      }
+     },
+     "ceiling_price": 161.73,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/ab3b278b7ea744fbb1db67fef9e65d53~tplv-aphluv4xwc-crop-webp:1440:1440.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734569228540216324",
+     "floor_price": 161.73,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-10",
+     "launch_time": 1773080468,
+     "price_display": "161.727 ₫",
+     "product_id": "1734569228540216324",
+     "product_rating": 5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734569228540216324?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【Nhiều ưu đãi hơn】Băng Vệ Sinh Dạng Quần Tutubaby thoải mái thông thoáng mềm Dùng được cả ban ngày và ban đêm  Chip vi khuẩn probiotic hoạt động sát trùng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 25856479,
+     "last_28d_units_sold": 164,
+     "last_7d_gmv": 6015358,
+     "last_7d_units_sold": 37,
+     "last_90d_gmv": 36902786,
+     "last_90d_units_sold": 229,
+     "total_gmv": 43618158,
+     "total_units_sold": 254,
+     "yesterday_gmv": 646908,
+     "yesterday_units_sold": 4
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/01a448364430440eb5c4cc291b2bba89~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494089150409573380",
+     "shop_name": "Tutubaby VN",
+     "total_units_sold": 193563
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 8,
+     "linked_video_count": 25
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601477,
+       "name": "Sanitary Towels\t"
+      }
+     },
+     "ceiling_price": 79.02,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/10920ee39eae4cf9973866a796bf39e0~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737516088611668996",
+     "floor_price": 79.02,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-25",
+     "launch_time": 1790311198,
+     "price_display": "79.018 ₫",
+     "product_id": "1737516088611668996",
+     "product_rating": 5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737516088611668996?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Băng vệ sinh dạng quần Tutubaby mỏng, thoáng khí, chứa men vi sinh và có thiết kế chống rò rỉ 360 độ, phù hợp cho phụ nữ mang thai, phụ nữ sau sinh hoặc sử dụng hàng ngày"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 9390567,
+     "last_28d_units_sold": 121,
+     "last_7d_gmv": 3955921,
+     "last_7d_units_sold": 50,
+     "last_90d_gmv": 9471768,
+     "last_90d_units_sold": 122,
+     "total_gmv": 9471768,
+     "total_units_sold": 122,
+     "yesterday_gmv": 869198,
+     "yesterday_units_sold": 11
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/01a448364430440eb5c4cc291b2bba89~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494089150409573380",
+     "shop_name": "Tutubaby VN",
+     "total_units_sold": 193563
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 93,
+     "linked_video_count": 172
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849800,
+       "name": "Feminine Care"
+      },
+      "l3": {
+       "id": 601477,
+       "name": "Sanitary Towels\t"
+      }
+     },
+     "ceiling_price": 152.79,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/6a8a2119ecaf41129b544ff2e1395998~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736501035491558497",
+     "floor_price": 152.79,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-15",
+     "launch_time": 1784130744,
+     "price_display": "152.790 ₫",
+     "product_id": "1736501035491558497",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736501035491558497?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Tutubaby〖Bộ 32 miếng -COD 〗Băng vệ sinh nữ kiểu 360° thoáng khí quần ngày dùng siêu mềm chống tràn dành"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 13736852,
+     "last_28d_units_sold": 92,
+     "last_7d_gmv": 3826681,
+     "last_7d_units_sold": 26,
+     "last_90d_gmv": 36517323,
+     "last_90d_units_sold": 297,
+     "total_gmv": 39930527,
+     "total_units_sold": 340,
+     "yesterday_gmv": 1375110,
+     "yesterday_units_sold": 9
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d61ef793410c40b1bec7b361d41cb2b5~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494601367501046881",
+     "shop_name": "Tutubaby28",
+     "total_units_sold": 2765
+    }
+   }
+  ],
+  "total": 43
+ }
+}

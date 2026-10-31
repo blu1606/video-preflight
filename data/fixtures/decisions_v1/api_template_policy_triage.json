@@ -1,0 +1,82 @@
+{
+  "model": "gpt-6-luna",
+  "input": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "text": "Replace this text and the input_json data with actual validated evidence for this question batch."
+        },
+        {
+          "type": "input_json",
+          "data": {
+            "video": {},
+            "sku": {},
+            "shop": {},
+            "market": {},
+            "policy": {},
+            "post": {}
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "name": "P01",
+      "instructions": "What is the primary policy concern based on provided actual rule text and content? Use unknown when evidence does not establish the answer.",
+      "choices": [
+        {
+          "value": "misleading_claim",
+          "description": "Unsupported or misleading product efficacy claim."
+        },
+        {
+          "value": "restricted_product",
+          "description": "Product/category needs restrictions or approvals."
+        },
+        {
+          "value": "disclosure",
+          "description": "Potential commercial/AI disclosure gap."
+        },
+        {
+          "value": "intellectual_property",
+          "description": "Potential music, image or trademark rights issue."
+        },
+        {
+          "value": "listing_mismatch",
+          "description": "Advertised product differs from listing."
+        },
+        {
+          "value": "none_identified",
+          "description": "No clear risk under supplied applicable rules."
+        },
+        {
+          "value": "unknown",
+          "description": "Applicable policy or evidence insufficient."
+        }
+      ]
+    },
+    {
+      "type": "predicate",
+      "name": "P02",
+      "instructions": "Is there a concrete product efficacy or outcome claim whose representation materially exceeds the evidence supplied? Flag potential risk only, not a definitive policy violation."
+    },
+    {
+      "type": "predicate",
+      "name": "P03",
+      "instructions": "Is a product-effect before/after shown as proof without adequate comparability or substantiation in the supplied evidence?"
+    },
+    {
+      "type": "predicate",
+      "name": "P04",
+      "instructions": "Given the declared sponsorship relationship and platform-specific disclosure requirements, is a required disclosure absent from supplied post metadata?"
+    },
+    {
+      "type": "predicate",
+      "name": "P05",
+      "instructions": "Does a material advertised product identity, variant or core property contradict the matched listing?"
+    }
+  ]
+}

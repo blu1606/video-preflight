@@ -1,0 +1,50 @@
+{
+  "video_stem": "vn-beauty-344788",
+  "sku_id": "SHOP001-SKU02",
+  "model": "gpt-6-luna",
+  "inputs": {
+    "claims": [
+      "Da sạch, bye dầu nhờn.",
+      "Hỗ trợ ngăn ngừa mụn",
+      "Làm da trắng sáng, đầy sức sống"
+    ],
+    "listing": "Sữa rửa mặt nam Men Stay"
+  },
+  "verdicts": [
+    {
+      "claim": "Da sạch, bye dầu nhờn.",
+      "verdict": "not_in_listing",
+      "listing_evidence": ""
+    },
+    {
+      "claim": "Hỗ trợ ngăn ngừa mụn",
+      "verdict": "not_in_listing",
+      "listing_evidence": ""
+    },
+    {
+      "claim": "Làm da trắng sáng, đầy sức sống",
+      "verdict": "not_in_listing",
+      "listing_evidence": ""
+    }
+  ],
+  "match_score": 50.0,
+  "usage": {
+    "completion_tokens": 134,
+    "prompt_tokens": 174,
+    "total_tokens": 308,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 42,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

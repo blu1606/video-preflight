@@ -1,0 +1,53 @@
+{
+ "tool": "market_category_analysis",
+ "args": {
+  "analysis_type": "basic_metrics",
+  "filter": {
+   "category_id": 24,
+   "region": "VN",
+   "date_type": "month",
+   "date_value": "2026-09"
+  }
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "analysis_type": "basic_metrics",
+  "category": {
+   "category_id": 24,
+   "category_level": 1,
+   "category_name": "Food & Beverages",
+   "region": "VN",
+   "stat_date": "2026-09"
+  },
+  "concentration_metrics": {
+   "top_products_gmv_share": 0,
+   "top_shops_gmv_share": 0
+  },
+  "growth_metrics": {
+   "active_product_count_change": -822,
+   "category_gmv_mom_percent": 16.77,
+   "category_gmv_yoy_percent": 64.43,
+   "category_units_sold_mom_percent": -6.62,
+   "category_units_sold_yoy_percent": 39.5,
+   "product_count_change": 31667,
+   "selling_creator_count_change": 3385,
+   "selling_live_count_change": 26835,
+   "selling_video_count_change": -183078
+  },
+  "scale_metrics": {
+   "active_product_count": 142820,
+   "category_gmv": 2319729137110.6,
+   "category_units_sold": 21681842,
+   "product_count": 31667,
+   "selling_creator_count": 149059,
+   "selling_live_count": 294766,
+   "selling_video_count": 1101555
+  },
+  "top_products_summary": {
+   "average_affiliate_count": 7155,
+   "average_live_count": 3678,
+   "average_video_count": 7700
+  }
+ }
+}

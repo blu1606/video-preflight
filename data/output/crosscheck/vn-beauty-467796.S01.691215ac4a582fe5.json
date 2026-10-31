@@ -1,0 +1,55 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Tiêu đề REAL nhận diện được sản phẩm là xà phòng TeaShell, nhưng các tuyên bố quảng bá không được xem là sự thật đã xác minh. Thuộc tính, số lượng ảnh và tiêu đề SKU đều là MOCK, nên không đủ bằng chứng để đánh giá độ đầy đủ hoặc nhất quán của toàn bộ listing.",
+  "key_evidence": [
+    "listing.title: “【HÀNG MỚI】Teashell Xà Phòng Trắng Da (Kèm Túi Tạo Bọt)｜Da Mịn Sáng｜Làm Sáng Da｜Dịu Nhẹ Không Kích Ứng” (REAL)",
+    "listing.attributes (MOCK)",
+    "listing.image_count: 7 (MOCK)",
+    "sku.title: “Xà phòng trắng da TeaShell” (MOCK)"
+  ],
+  "evidence_sent": {
+    "listing.attributes": {
+      "value": {
+        "dung_tich": "100g",
+        "xuat_xu": "Việt Nam",
+        "han_su_dung": "36 tháng"
+      },
+      "status": "MOCK"
+    },
+    "listing.image_count": {
+      "value": 7,
+      "status": "MOCK"
+    },
+    "listing.title": {
+      "value": "【HÀNG MỚI】Teashell Xà Phòng Trắng Da (Kèm Túi Tạo Bọt)｜Da Mịn Sáng｜Làm Sáng Da｜Dịu Nhẹ Không Kích Ứng",
+      "status": "REAL"
+    },
+    "sku.title": {
+      "value": "Xà phòng trắng da TeaShell",
+      "status": "MOCK"
+    }
+  },
+  "usage": {
+    "completion_tokens": 390,
+    "prompt_tokens": 426,
+    "total_tokens": 816,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 201,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "_note": "MOCK fixture v1. Funnel rates are assumptions; actual_gmv stays null until verified analytics exist.",
+  "views": 120000,
+  "avg_watch_time_sec": 14.2,
+  "completion_rate": 0.28,
+  "product_ctr": 0.018,
+  "click_to_order_cvr": 0.045,
+  "actual_gmv_vnd": null
+}

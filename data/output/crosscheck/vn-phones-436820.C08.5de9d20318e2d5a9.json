@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 0,
+  "label": "0 Absent",
+  "score": 0.0,
+  "rationale": "Trong bằng chứng quan sát thực tế, video không có CTA và không có tính khẩn cấp, phù hợp mức 0: không có hành động mua hàng được quan sát. Giá trị liên kết sản phẩm là dữ liệu MOCK nên không được dùng để nâng mức.",
+  "key_evidence": [
+    "video.has_cta=false (REAL)",
+    "video.cta_urgency=false (REAL)"
+  ],
+  "evidence_sent": {
+    "sku.has_product_link": {
+      "value": true,
+      "status": "MOCK"
+    },
+    "video.cta_urgency": {
+      "value": false,
+      "status": "REAL"
+    },
+    "video.has_cta": {
+      "value": false,
+      "status": "REAL"
+    }
+  },
+  "usage": {
+    "completion_tokens": 206,
+    "prompt_tokens": 325,
+    "total_tokens": 531,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 107,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "model": "gpt-6-luna",
+  "usage": {
+    "completion_tokens": 2615,
+    "prompt_tokens": 2415,
+    "total_tokens": 5030,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1411,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2412,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "rules": {
+    "TTS-001": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.92,
+      "rationale": "Nội dung giới thiệu xà phòng tắm thuộc nhóm mỹ phẩm/chăm sóc da thông thường. Không có dấu hiệu cụ thể cho thấy sản phẩm thuộc nhóm bị cấm hoặc không được hỗ trợ."
+    },
+    "TTS-002": {
+      "outcome": "needs_review",
+      "model_outcome": "needs_review",
+      "quotes": [
+        {
+          "text": "Mới dùng 3 lần mà trắng cỡ này thì mua quài luôn quá",
+          "t": 9.4,
+          "where": "transcript"
+        },
+        {
+          "text": "tao thử có 1 lần mà trắng thật nha mấy ní",
+          "t": 12.08,
+          "where": "transcript"
+        }
+      ],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.96,
+      "rationale": "Các lời kể này gắn kết quả làm trắng rõ rệt với chỉ một hoặc ba lần sử dụng, nhưng nội dung không đưa ra bằng chứng xác thực cho hiệu quả đó. Cần người kiểm tra tính có căn cứ của tuyên bố."
+    },
+    "TTS-003": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.98,
+      "rationale": "Nội dung được cung cấp không có hồ sơ phê duyệt, thông báo mỹ phẩm hay hình ảnh nhãn đầy đủ để xác định các yêu cầu này có được đáp ứng hay không."
+    },
+    "TTA-001": {
+      "outcome": "needs_review",
+      "model_outcome": "needs_review",
+      "quotes": [
+        {
+          "text": "tao thử có 1 lần mà trắng thật nha mấy ní",
+          "t": 12.08,
+          "where": "transcript"
+        },
+        {
+          "text": "Tắm nguyên cục xà bông Niacinamide này mà da không nhìn sáng hơn mới là lạ đó",
+          "t": 16.96,
+          "where": "transcript"
+        }
+      ],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.97,
+      "rationale": "Các câu này khẳng định hoặc ngụ ý kết quả làm sáng da gần như chắc chắn chỉ sau một lần dùng. Đây là tuyên bố hiệu quả có thể bị xem là phóng đại hoặc tuyệt đối."
+    },
+    "TTA-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.91,
+      "rationale": "Lời thoại có kể về da trắng hơn sau khi dùng, nhưng dữ liệu không cung cấp hình ảnh video để xác định có trình bày so sánh trước và sau hay không."
+    },
+    "TTA-003": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.98,
+      "rationale": "Không có hình ảnh video đầy đủ để kiểm tra có nút giả hoặc yếu tố tương tác gây hiểu lầm hay không."
+    },
+    "TTC-001": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.98,
+      "rationale": "Không có dữ liệu hình ảnh hoặc thông tin về việc sử dụng người/cảnh do AI tạo hay chỉnh sửa, cũng như việc công bố tương ứng."
+    },
+    "TTC-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Nội dung có tính quảng bá sản phẩm, nhưng không có thông tin về cài đặt công bố nội dung thương mại của bài đăng."
+    },
+    "SHP-001": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Chỉ có tiêu đề sản phẩm; không có hình ảnh, giá hoặc mô tả listing để đối chiếu tính nhất quán."
+    },
+    "SHP-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Không có ảnh listing để xác định liệu có ảnh chụp sản phẩm thực tế đáp ứng tiêu chí hay không."
+    },
+    "SHP-003": {
+      "outcome": "needs_review",
+      "model_outcome": "needs_review",
+      "quotes": [
+        {
+          "text": "Dịu Nhẹ Không Kích Ứng",
+          "t": null,
+          "where": "listing.title"
+        },
+        {
+          "text": "Trắng Da",
+          "t": null,
+          "where": "listing.title"
+        }
+      ],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.94,
+      "rationale": "Tiêu đề listing có các cụm quảng bá về làm trắng da và không gây kích ứng. Cần người kiểm tra các tuyên bố này theo quy định về nội dung tiêu đề."
+    },
+    "SHP-004": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.98,
+      "rationale": "Không có mô tả listing hoặc thông tin nhãn để kiểm tra nguồn gốc, số tiếp nhận công bố mỹ phẩm và hạn sử dụng."
+    },
+    "SHP-005": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Không có phần mô tả listing được cung cấp để xác định có thông tin liên hệ bên ngoài hoặc hướng người mua ra khỏi nền tảng hay không."
+    },
+    "META-001": {
+      "outcome": "needs_review",
+      "model_outcome": "needs_review",
+      "quotes": [
+        {
+          "text": "Mới dùng 3 lần mà trắng cỡ này thì mua quài luôn quá",
+          "t": 9.4,
+          "where": "transcript"
+        },
+        {
+          "text": "tao thử có 1 lần mà trắng thật nha mấy ní",
+          "t": 12.08,
+          "where": "transcript"
+        }
+      ],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.96,
+      "rationale": "Nội dung đưa ra tuyên bố kết quả làm trắng nhanh và mạnh sau rất ít lần dùng mà không kèm bằng chứng trong dữ liệu được cung cấp. Điều này có thể tạo ấn tượng thương mại gây hiểu lầm hoặc thiếu căn cứ."
+    },
+    "META-002": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.94,
+      "rationale": "Nội dung không trực tiếp khẳng định người xem có tình trạng sức khỏe hoặc đặc điểm cá nhân nhạy cảm nào."
+    },
+    "META-003": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.9,
+      "rationale": "Sản phẩm được nêu là xà phòng chăm sóc da thông thường; nội dung không cho thấy đây là loại hàng hóa bị hạn chế theo nhóm sản phẩm."
+    }
+  }
+}

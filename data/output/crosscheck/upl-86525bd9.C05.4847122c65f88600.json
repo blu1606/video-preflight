@@ -1,0 +1,50 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 0,
+  "label": "0 Absent",
+  "score": 0.0,
+  "rationale": "Video chỉ mô tả quy trình tạo liên kết hoàn tiền và minh họa thông báo hoàn tiền, không nêu hoặc đối chiếu điểm khác biệt của SKU với lựa chọn thay thế. Vì vậy, bằng chứng không thể hiện sự khác biệt của SKU.",
+  "key_evidence": [
+    "REAL: quy trình được giới thiệu gồm sao chép liên kết, dán để tạo liên kết rồi đặt món",
+    "REAL: video minh họa thông báo khi có tiền hoàn"
+  ],
+  "evidence_sent": {
+    "listing.attributes": {
+      "value": {
+        "tuong_thich": "iPhone 11-17",
+        "chat_lieu": "silicone",
+        "bao_hanh": "6 tháng"
+      },
+      "status": "MOCK"
+    },
+    "video.value_propositions": {
+      "value": [
+        "Có thể tạo liên kết hoàn tiền từ liên kết quán hoặc món trên ShopeeFood.",
+        "Quy trình được giới thiệu gồm sao chép liên kết, dán để tạo liên kết rồi đặt món.",
+        "Người dùng đặt hàng như bình thường; đơn đủ điều kiện được hoàn tiền vào ví.",
+        "Video minh họa thông báo khi có tiền hoàn."
+      ],
+      "status": "REAL"
+    }
+  },
+  "usage": {
+    "completion_tokens": 907,
+    "prompt_tokens": 398,
+    "total_tokens": 1305,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 780,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

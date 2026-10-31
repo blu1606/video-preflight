@@ -1,0 +1,233 @@
+{
+  "model": "gpt-6-luna",
+  "input": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "text": "Replace this text and the input_json data with actual validated evidence for this question batch."
+        },
+        {
+          "type": "input_json",
+          "data": {
+            "video": {},
+            "sku": {},
+            "shop": {},
+            "market": {},
+            "policy": {},
+            "post": {}
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "name": "M01",
+      "instructions": "Which match class best describes the candidate Shopee listing relative to the product in the video? Use unknown when evidence does not establish the answer.",
+      "choices": [
+        {
+          "value": "exact",
+          "description": "Same item, matching brand/model/variant and size."
+        },
+        {
+          "value": "variant",
+          "description": "Same product family but different size/color/bundle."
+        },
+        {
+          "value": "similar",
+          "description": "Functional alternative or same category but not the same SKU."
+        },
+        {
+          "value": "mismatch",
+          "description": "Clear unrelated or contradictory identity."
+        },
+        {
+          "value": "unknown",
+          "description": "Not enough identifiers for a reliable match."
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "name": "M02",
+      "instructions": "Which creative structure best describes this video? Use unknown when evidence does not establish the answer.",
+      "choices": [
+        {
+          "value": "ugc_review",
+          "description": "Creator first-person experience/review."
+        },
+        {
+          "value": "demonstration",
+          "description": "Product usage demonstration is primary."
+        },
+        {
+          "value": "comparison",
+          "description": "Before/after or product alternative comparison primary."
+        },
+        {
+          "value": "deal",
+          "description": "Price/promotion/urgency is primary."
+        },
+        {
+          "value": "story",
+          "description": "Narrative entertainment with product integration."
+        },
+        {
+          "value": "other",
+          "description": "Another format."
+        },
+        {
+          "value": "unknown",
+          "description": "Insufficient evidence."
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "name": "M03",
+      "instructions": "Which bottleneck is best supported by observed shop metrics? Use unknown when evidence does not establish the answer.",
+      "choices": [
+        {
+          "value": "traffic",
+          "description": "Insufficient qualified visits."
+        },
+        {
+          "value": "conversion",
+          "description": "Traffic adequate but purchase rate weak."
+        },
+        {
+          "value": "stock",
+          "description": "Availability constrains sales."
+        },
+        {
+          "value": "trust",
+          "description": "Ratings/complaints limit purchasing."
+        },
+        {
+          "value": "operations",
+          "description": "Fulfillment/cancellation issues dominate."
+        },
+        {
+          "value": "economics",
+          "description": "Advertising/margin makes sales unprofitable."
+        },
+        {
+          "value": "mixed",
+          "description": "Multiple bottlenecks supported."
+        },
+        {
+          "value": "unknown",
+          "description": "Not enough comparable KPI evidence."
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "name": "M04",
+      "instructions": "Which first action is most strongly justified by the supplied verified evidence and constraints? Use unknown when evidence does not establish the answer.",
+      "choices": [
+        {
+          "value": "improve_hook",
+          "description": "Revise first 3 seconds for relevance/clarity."
+        },
+        {
+          "value": "improve_demo",
+          "description": "Show clearer usage/outcome."
+        },
+        {
+          "value": "verify_claims",
+          "description": "Verify or qualify product claims."
+        },
+        {
+          "value": "improve_listing",
+          "description": "Fix SKU title, visuals or variants."
+        },
+        {
+          "value": "improve_offer",
+          "description": "Adjust price/value presentation."
+        },
+        {
+          "value": "fix_stock",
+          "description": "Resolve stock availability."
+        },
+        {
+          "value": "fix_fulfillment",
+          "description": "Resolve fulfillment/service issue."
+        },
+        {
+          "value": "collect_more_data",
+          "description": "Collect missing evidence before recommending action."
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "name": "M05",
+      "instructions": "What is the cheapest next verification step for unresolved critical evidence? Use unknown when evidence does not establish the answer.",
+      "choices": [
+        {
+          "value": "none",
+          "description": "Evidence sufficient; no reinspection needed."
+        },
+        {
+          "value": "video_segment",
+          "description": "Reinspect short portion of visual frames."
+        },
+        {
+          "value": "transcript",
+          "description": "Re-run/check transcript around claim."
+        },
+        {
+          "value": "sku_lookup",
+          "description": "Verify SKU listing/variant."
+        },
+        {
+          "value": "market_search",
+          "description": "Verify external market context."
+        },
+        {
+          "value": "human_review",
+          "description": "Needs human validation."
+        },
+        {
+          "value": "unknown",
+          "description": "Cannot determine from metadata."
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "name": "M06",
+      "instructions": "Which workflow best serves the user request? Use unknown when evidence does not establish the answer.",
+      "choices": [
+        {
+          "value": "video_analysis",
+          "description": "Analyze creative/video."
+        },
+        {
+          "value": "sku_enrichment",
+          "description": "Identify and compare products."
+        },
+        {
+          "value": "shop_diagnosis",
+          "description": "Investigate shop performance."
+        },
+        {
+          "value": "policy_check",
+          "description": "Review policies and risk."
+        },
+        {
+          "value": "combined",
+          "description": "Multiple independent workstreams."
+        },
+        {
+          "value": "unknown",
+          "description": "Request cannot be routed confidently."
+        }
+      ]
+    }
+  ]
+}

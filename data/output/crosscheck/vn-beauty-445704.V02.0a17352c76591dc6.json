@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 2,
+  "label": "2 Fair",
+  "score": 50.0,
+  "rationale": "Hook nêu được vấn đề dễ hiểu cho người trang điểm: dùng đồ rẻ có thể khiến trang điểm không đẹp, nhưng thông điệp còn chung chung và chưa tạo khác biệt rõ. Video không nêu công dụng cụ thể hay đưa bằng chứng về kết quả của mascara lông mày, nên chưa đủ cơ sở chấm mức cao hơn.",
+  "key_evidence": [
+    "video.hook_verbal (REAL): “Ngày nào cũng dùng đồ rẻ tiền như thế này, thì làm sao trang điểm đẹp được?”",
+    "video.key_claims (REAL): sản phẩm được gọi là mascara lông mày nhưng video không nêu công dụng cụ thể hoặc kết quả sử dụng; không có minh họa hoặc bằng chứng về hiệu quả."
+  ],
+  "evidence_sent": {
+    "video.hook_type": {
+      "value": "pain_point",
+      "status": "REAL"
+    },
+    "video.hook_verbal": {
+      "value": "Ngày nào cũng dùng đồ rẻ tiền như thế này, thì làm sao trang điểm đẹp được?",
+      "status": "REAL"
+    },
+    "video.key_claims": {
+      "value": [
+        "Lời thoại chê dùng đồ rẻ tiền sẽ khiến việc trang điểm không đẹp, nhưng không có minh họa hoặc bằng chứng về hiệu quả của sản phẩm.",
+        "Sản phẩm được gọi là mascara lông mày; video không nêu công dụng cụ thể hoặc kết quả sử dụng."
+      ],
+      "status": "REAL"
+    },
+    "video.policy_absolute_claims": {
+      "value": [
+        {
+          "text": "tuyệt đối sẽ không cưới một người phụ nữ như thế này",
+          "timestamp_sec": 4.0,
+          "channel": "spoken"
+        }
+      ],
+      "status": "REAL"
+    }
+  }
+}

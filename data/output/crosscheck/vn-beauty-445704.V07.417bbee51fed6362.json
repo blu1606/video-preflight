@@ -1,0 +1,25 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Bằng chứng chỉ cho biết sản phẩm là mascara lông mày và không có lợi ích hiệu năng cụ thể nào được trình bày hoặc chứng minh; điều này chưa đủ để kết luận nội dung hoàn toàn không có giá trị tiện ích, giải trí hay chia sẻ. Điểm storytelling 7.0 không kèm thang đo hoặc mô tả nên không thể dùng để xác định mức độ giá trị.",
+  "key_evidence": [
+    "video.storytelling: 7.0 (REAL; không nêu đơn vị hoặc thang đo)",
+    "video.value_propositions: không có lợi ích hiệu năng cụ thể nào được trình bày hoặc chứng minh (REAL)"
+  ],
+  "evidence_sent": {
+    "video.storytelling": {
+      "value": 7.0,
+      "status": "REAL"
+    },
+    "video.value_propositions": {
+      "value": [
+        "Sản phẩm được nhận diện trong lời thoại là mascara lông mày.",
+        "Không có lợi ích hiệu năng cụ thể nào được trình bày hoặc chứng minh."
+      ],
+      "status": "REAL"
+    }
+  }
+}

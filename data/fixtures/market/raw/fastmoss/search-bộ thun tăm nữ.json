@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "bộ thun tăm nữ",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 102,
+     "linked_video_count": 152
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842248,
+       "name": "Women's Tops"
+      },
+      "l3": {
+       "id": 601302,
+       "name": "T-shirts"
+      }
+     },
+     "ceiling_price": 94.09,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/f621e58dd70b4c41909ae63d5b48d368~tplv-aphluv4xwc-crop-webp:1320:1329.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736017177779930720",
+     "floor_price": 26.52,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-09",
+     "launch_time": 1783548852,
+     "price_display": "26.520 ₫  -  94.085 ₫",
+     "product_id": "1736017177779930720",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 124,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736017177779930720?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "COM BO 3 ÁO NỮ - CỔ TRÒN: áo thun tăm lạnh cổ tròn, chất liệu co dãn 4 chiều, mềm nhẹ thoáng mát."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 71325430,
+     "last_28d_units_sold": 2553,
+     "last_7d_gmv": 30364224,
+     "last_7d_units_sold": 1090,
+     "last_90d_gmv": 138710170,
+     "last_90d_units_sold": 4622,
+     "total_gmv": 140243538,
+     "total_units_sold": 4658,
+     "yesterday_gmv": 2015520,
+     "yesterday_units_sold": 76
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/50612973fe254cf7b3acd0521ca09a9f~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494516209575167584",
+     "shop_name": "KIEU CHIC CLOTHING",
+     "total_units_sold": 174161
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 415,
+     "linked_video_count": 1346
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 843016,
+       "name": "Women's Sleepwear & Loungewear"
+      },
+      "l3": {
+       "id": 845832,
+       "name": "Pajamas"
+      }
+     },
+     "ceiling_price": 176.66,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/73c11f0c6b4d449f83a194a8bda94d70~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736687467667686810",
+     "floor_price": 176.66,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-25",
+     "launch_time": 1784939626,
+     "price_display": "176.660 ₫",
+     "product_id": "1736687467667686810",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 12,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736687467667686810?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ Đồ Nữ Mặc Nhà Form Rộng – Áo Thun Tăm Lạnh Co Giãn 4 Chiều, Quần Kate For Caro Mềm Mịn, Size 45–75kg LUMY04"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 317462502,
+     "last_28d_units_sold": 1873,
+     "last_7d_gmv": 69411778,
+     "last_7d_units_sold": 386,
+     "last_90d_gmv": 1105951740,
+     "last_90d_units_sold": 9387,
+     "total_gmv": 1105951740,
+     "total_units_sold": 9387,
+     "yesterday_gmv": 6359760,
+     "yesterday_units_sold": 36
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e7605d0f541342f9899111e2da28fb7e~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494455480309089690",
+     "shop_name": "Kim Phượng Xưởng May",
+     "total_units_sold": 19770
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2085,
+     "linked_video_count": 2940
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842760,
+       "name": "Women's Suits & Overalls"
+      },
+      "l3": {
+       "id": 601291,
+       "name": "Sets"
+      }
+     },
+     "ceiling_price": 180.11,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/0c6c803a2cec46b694418fa4a4c35378~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730970562703165451",
+     "floor_price": 168.78,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-09-28",
+     "launch_time": 1727470187,
+     "price_display": "168.780 ₫  -  180.108 ₫",
+     "product_id": "1730970562703165451",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 15,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730970562703165451?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Sét Bộ Dài Tay Nữ Chất Thun Tăm Mềm Mại Co Giãn Size 40-62kg Quần Ống Xuông Cạp Chun Áo Hai Lớp Cúc Cài Women Ong Set Thường Top Màu Đen Xám Nâu Đậm Nâu Tây Size M L XL Thiết Kế Thoải Mái Cực Hot Trend"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 278373769,
+     "last_28d_units_sold": 1724,
+     "last_7d_gmv": 31042269,
+     "last_7d_units_sold": 189,
+     "last_90d_gmv": 766634805,
+     "last_90d_units_sold": 4867,
+     "total_gmv": 5552510251,
+     "total_units_sold": 35094,
+     "yesterday_gmv": 4050720,
+     "yesterday_units_sold": 24
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e55259f1303a4c5c91c70c0e72a9a151~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7495365373373089803",
+     "shop_name": "xinh store 01",
+     "total_units_sold": 999782
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 563,
+     "linked_video_count": 530
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842632,
+       "name": "Women's Special Clothing"
+      },
+      "l3": {
+       "id": 843656,
+       "name": "Costumes & Accessories"
+      }
+     },
+     "ceiling_price": 188.85,
+     "commission_rate_percent": 11,
+     "cover_url": "https://s.500fd.com/tt_product/d3dfc016cfe744288fc79e253ddab909~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735339720915387813",
+     "floor_price": 188.85,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-04-28",
+     "launch_time": 1777365407,
+     "price_display": "188.853 ₫",
+     "product_id": "1735339720915387813",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 16,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735339720915387813?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "( XẢ KHO ) SET Đồ Bộ Nữ Cổ Trụ Cá Tính + Quần Ống Rộng Mặc Nhà Dạo Phố Chất Thun Tăm Lạnh ( Áo không bo gấu )"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 277332591,
+     "last_28d_units_sold": 1427,
+     "last_7d_gmv": 70449033,
+     "last_7d_units_sold": 369,
+     "last_90d_gmv": 967642319,
+     "last_90d_units_sold": 7123,
+     "total_gmv": 2519437368,
+     "total_units_sold": 15835,
+     "yesterday_gmv": 10009209,
+     "yesterday_units_sold": 53
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/871649ec2db3212233cf604ba4c01529~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496132254742186405",
+     "shop_name": "NGUYỆT HOÀNG FASHION",
+     "total_units_sold": 96001
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 205,
+     "linked_video_count": 705
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 843016,
+       "name": "Women's Sleepwear & Loungewear"
+      },
+      "l3": {
+       "id": 845832,
+       "name": "Pajamas"
+      }
+     },
+     "ceiling_price": 387.15,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/ddc159157db74c6ebc969e7b49a623f4~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737158557221225563",
+     "floor_price": 134.01,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-22",
+     "launch_time": 1787407232,
+     "price_display": "134.013 ₫  -  387.148 ₫",
+     "product_id": "1737158557221225563",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 28,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737158557221225563?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ Đồ Nữ NGỐ NƠ Bigsize 55-85kg –Chất Thun Tăm mát mềm.  Áo vạt bầu, tay may cánh dơi mặc trẻ trung tôn dáng."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 161456638,
+     "last_28d_units_sold": 1287,
+     "last_7d_gmv": 7163283,
+     "last_7d_units_sold": 54,
+     "last_90d_gmv": 516141489,
+     "last_90d_units_sold": 4147,
+     "total_gmv": 516141489,
+     "total_units_sold": 4147,
+     "yesterday_gmv": 804078,
+     "yesterday_units_sold": 6
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ebc507875a5a4dfabc13dc396cac8e17~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494846739820677211",
+     "shop_name": "Bống1102",
+     "total_units_sold": 17224
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 195,
+     "linked_video_count": 80
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 843016,
+       "name": "Women's Sleepwear & Loungewear"
+      },
+      "l3": {
+       "id": 845832,
+       "name": "Pajamas"
+      }
+     },
+     "ceiling_price": 152.72,
+     "commission_rate_percent": 12,
+     "cover_url": "https://s.500fd.com/tt_product/1e97cc220d8c45f69c68ff6d2eb196a6~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737229108578977384",
+     "floor_price": 76.36,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-29",
+     "launch_time": 1788018918,
+     "price_display": "76.359 ₫  -  152.719 ₫",
+     "product_id": "1737229108578977384",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 42,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737229108578977384?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "bộ nữ thể thao chất liệu thun tăm lạnh co giãn 4 chiều mềm mát bên e có size từ 40/75kg ạ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 96855221,
+     "last_28d_units_sold": 1272,
+     "last_7d_gmv": 6865465,
+     "last_7d_units_sold": 92,
+     "last_90d_gmv": 201159153,
+     "last_90d_units_sold": 2570,
+     "total_gmv": 201159153,
+     "total_units_sold": 2570,
+     "yesterday_gmv": 839949,
+     "yesterday_units_sold": 11
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/09cd595a3726494a83b11c176fe2fb9c~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494649017705989736",
+     "shop_name": "thời trang nữ. minh anh",
+     "total_units_sold": 85584
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 219,
+     "linked_video_count": 615
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842760,
+       "name": "Women's Suits & Overalls"
+      },
+      "l3": {
+       "id": 601291,
+       "name": "Sets"
+      }
+     },
+     "ceiling_price": 211.17,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/6cd7dea062fb4238bf656eed425b9dfc~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733246903634003349",
+     "floor_price": 11.17,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-17",
+     "launch_time": 1763340821,
+     "price_display": "11.171 ₫  -  211.174 ₫",
+     "product_id": "1733246903634003349",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 112,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733246903634003349?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Thời Trang Bigsize - Set Bộ Dài Kẻ Sọc Thun Tăm Bigsize Cổ Tròn Cài Nút Form Rộng Thêu Gấu Phối Ren Che Giấu Bụng Hot Treng Nữ Chuppy Cao Cấp Xinh Đẹp Sang Trọng Dễ Thương Giá Rẻ 40-120kg. Đi Chơi Đi Dạo Diện Phố. Én Nhỏ Có Bigsize Màu Hồng, Đen, Nâu 2543"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 14054820,
+     "last_28d_units_sold": 1271,
+     "last_7d_gmv": 3304327,
+     "last_7d_units_sold": 303,
+     "last_90d_gmv": 39465254,
+     "last_90d_units_sold": 3726,
+     "total_gmv": 946830174,
+     "total_units_sold": 11318,
+     "yesterday_gmv": 558550,
+     "yesterday_units_sold": 50
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5ca1cda7dc38480781974f64b28f73e4~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494531402512894357",
+     "shop_name": "Én Nhỏ Pijama Bigsize",
+     "total_units_sold": 1475250
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2753,
+     "linked_video_count": 6300
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 843016,
+       "name": "Women's Sleepwear & Loungewear"
+      },
+      "l3": {
+       "id": 845832,
+       "name": "Pajamas"
+      }
+     },
+     "ceiling_price": 121.02,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/e7bba4793ae54b66a778483c2cfa12a0~tplv-aphluv4xwc-crop-webp:1201:1201.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729611332014279049",
+     "floor_price": 110.94,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-04-23",
+     "launch_time": 1682231242,
+     "price_display": "110.940 ₫  -  121.024 ₫",
+     "product_id": "1729611332014279049",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 42,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729611332014279049?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[MỎNG]Bộ đồ Ngủ 2 dây Thun Tăm Dùi Phối Ren Ôm, Mỏng, Ngắn [B01] Nữ Nhung Voi"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 136374860,
+     "last_28d_units_sold": 1212,
+     "last_7d_gmv": 38209234,
+     "last_7d_units_sold": 340,
+     "last_90d_gmv": 574498526,
+     "last_90d_units_sold": 5800,
+     "total_gmv": 27844968257,
+     "total_units_sold": 308697,
+     "yesterday_gmv": 4881360,
+     "yesterday_units_sold": 44
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/86389de1a41540faa0134c442d9422af~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494552525095471497",
+     "shop_name": "THỊ LỠ ĐỒ BỘ",
+     "total_units_sold": 393097
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 415,
+     "linked_video_count": 944
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842760,
+       "name": "Women's Suits & Overalls"
+      },
+      "l3": {
+       "id": 601291,
+       "name": "Sets"
+      }
+     },
+     "ceiling_price": 198.71,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/0ca45817ee0443c5baaac4d1b720f4de~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734757200782722399",
+     "floor_price": 198.71,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-21",
+     "launch_time": 1774070161,
+     "price_display": "198.709 ₫",
+     "product_id": "1734757200782722399",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 8,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734757200782722399?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Mã 06] Set Bộ Ống Loe Tôn Dáng - Áo Form Rộng Quần Có Túi, In Chữ JIL - Chất Thun Tăm Co Giãn - Bigsize 40-85kg | Thời Trang Nữ Women"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 245997878,
+     "last_28d_units_sold": 1181,
+     "last_7d_gmv": 39140065,
+     "last_7d_units_sold": 195,
+     "last_90d_gmv": 926758364,
+     "last_90d_units_sold": 5588,
+     "total_gmv": 1706344866,
+     "total_units_sold": 9815,
+     "yesterday_gmv": 4769016,
+     "yesterday_units_sold": 24
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d1cdac51c0164729b1471ff0d8873595~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494772041705949535",
+     "shop_name": "Tổng kho đồ bộ miền nam",
+     "total_units_sold": 374988
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1666,
+     "linked_video_count": 3165
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842760,
+       "name": "Women's Suits & Overalls"
+      },
+      "l3": {
+       "id": 601291,
+       "name": "Sets"
+      }
+     },
+     "ceiling_price": 126.48,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/4392cbbd23004213b8771f3e5fb52f70~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729763853590759435",
+     "floor_price": 110.24,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-11-16",
+     "launch_time": 1700065330,
+     "price_display": "110.238 ₫  -  126.482 ₫",
+     "product_id": "1729763853590759435",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 16,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729763853590759435?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Set Bộ Quần Áo Dài Tay Nữ Chất Vải Thun Tăm Mềm Mại Co Dãn Thoải Mái Áo Croptop Quần Ống Đứng Màu Đỏ Ong Size 38-62kg"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 121725706,
+     "last_28d_units_sold": 1136,
+     "last_7d_gmv": 25361893,
+     "last_7d_units_sold": 241,
+     "last_90d_gmv": 417665703,
+     "last_90d_units_sold": 3991,
+     "total_gmv": 7424106313,
+     "total_units_sold": 72835,
+     "yesterday_gmv": 3968568,
+     "yesterday_units_sold": 36
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e55259f1303a4c5c91c70c0e72a9a151~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7495365373373089803",
+     "shop_name": "xinh store 01",
+     "total_units_sold": 999782
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

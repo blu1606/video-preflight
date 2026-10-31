@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "quạt mini cầm tay",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-31",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 394,
+     "linked_video_count": 1813
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 978952,
+       "name": "Universal Accessories"
+      },
+      "l3": {
+       "id": 990728,
+       "name": "USB & Mobile Fans"
+      }
+     },
+     "ceiling_price": 68.12,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/9f8ce86757ec48248f11d1fad00cc14e~tplv-aphluv4xwc-crop-webp:2048:2048.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736825455046789110",
+     "floor_price": 46.97,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-17",
+     "launch_time": 1786896937,
+     "price_display": "46.966 ₫  -  68.118 ₫",
+     "product_id": "1736825455046789110",
+     "product_rating": 4.1,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 7,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736825455046789110?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quạt Cầm Tay Mini Mới M11: Thiết kế nhỏ gọn, 120 tốc độ gió, sạc USB tiện lợi. Hoàn hảo cho học sinh và hoạt động ngoài trời."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 789153833,
+     "last_28d_units_sold": 17634,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 2608740325,
+     "last_90d_units_sold": 57160,
+     "total_gmv": 2781244629,
+     "total_units_sold": 60858,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3c5979ba6e5c4bcda24537af89e60193~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494301153712834550",
+     "shop_name": "M4H MADE4HOME",
+     "total_units_sold": 142855
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 0,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844808,
+       "name": "Home Appliances"
+      },
+      "l3": {
+       "id": 601104,
+       "name": "Fans"
+      }
+     },
+     "ceiling_price": 58.98,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/2c49fd1f46e24d8cba8e234717aa0b61~tplv-aphluv4xwc-crop-webp:1320:1298.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737232050427758547",
+     "floor_price": 58.98,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-30",
+     "launch_time": 1788077136,
+     "price_display": "58.979 ₫",
+     "product_id": "1737232050427758547",
+     "product_rating": 0,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 8,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737232050427758547?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Thư cảm ơn quý khách hàng - Quạt Mini Cầm Tay - HảiAnhShop86"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 618176993,
+     "last_28d_units_sold": 10976,
+     "last_7d_gmv": 239194907,
+     "last_7d_units_sold": 4284,
+     "last_90d_gmv": 1307297320,
+     "last_90d_units_sold": 23160,
+     "total_gmv": 1344050158,
+     "total_units_sold": 23814,
+     "yesterday_gmv": 11972737,
+     "yesterday_units_sold": 203
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/8d72657b843b447aad827a7997366068~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494865882132155347",
+     "shop_name": "Hải Anh Shop 86",
+     "total_units_sold": 88835
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 841,
+     "linked_video_count": 3410
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 978952,
+       "name": "Universal Accessories"
+      },
+      "l3": {
+       "id": 990728,
+       "name": "USB & Mobile Fans"
+      }
+     },
+     "ceiling_price": 63.26,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/a5f7590acc534da682bbdedd9b78e686~tplv-aphluv4xwc-crop-webp:750:742.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735797133661209608",
+     "floor_price": 4.36,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-28",
+     "launch_time": 1779897785,
+     "price_display": "4.363 ₫  -  63.264 ₫",
+     "product_id": "1735797133661209608",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735797133661209608?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quạt Cầm Tay Mini Mới M11: Thiết kế nhỏ gọn, 120 tốc độ gió, sạc USB tiện lợi. Hoàn hảo cho học sinh và hoạt động ngoài trời."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 47645149,
+     "last_28d_units_sold": 10534,
+     "last_7d_gmv": 8961919,
+     "last_7d_units_sold": 2004,
+     "last_90d_gmv": 173345036,
+     "last_90d_units_sold": 38588,
+     "total_gmv": 241342367,
+     "total_units_sold": 48454,
+     "yesterday_gmv": 1121291,
+     "yesterday_units_sold": 257
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/42002f112b7843eba3b38fd7ccfdc104~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494345936978084872",
+     "shop_name": "khatra.vn",
+     "total_units_sold": 136997
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 10732,
+     "linked_video_count": 33867
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 978952,
+       "name": "Universal Accessories"
+      },
+      "l3": {
+       "id": 990728,
+       "name": "USB & Mobile Fans"
+      }
+     },
+     "ceiling_price": 296.94,
+     "commission_rate_percent": 9,
+     "cover_url": "https://s.500fd.com/tt_product/3a12c9b0d5814909a939cdcb1d12766d~tplv-aphluv4xwc-crop-webp:2560:2560.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734847350697067774",
+     "floor_price": 253.68,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-27",
+     "launch_time": 1774570376,
+     "price_display": "253.681 ₫  -  296.941 ₫",
+     "product_id": "1734847350697067774",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734847350697067774?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "S1 MINI Quạt Tay Tốc Độ Cao, Quạt cầm tay mini, Chỉ 8,9cm, Điều chỉnh 6 tốc độ, 100 Mức gió, Màn hình kỹ thuật số, Pin 1800mAh"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2321688512,
+     "last_28d_units_sold": 9152,
+     "last_7d_gmv": 442419664,
+     "last_7d_units_sold": 1744,
+     "last_90d_gmv": 17877914794,
+     "last_90d_units_sold": 70474,
+     "total_gmv": 134230035327,
+     "total_units_sold": 515444,
+     "yesterday_gmv": 28919634,
+     "yesterday_units_sold": 114
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/7c63f27f6c4446caaa4308df089474c9~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8647121890967454974",
+     "shop_name": "KY Tech",
+     "total_units_sold": 11380619
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 0,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844808,
+       "name": "Home Appliances"
+      },
+      "l3": {
+       "id": 601104,
+       "name": "Fans"
+      }
+     },
+     "ceiling_price": 55.65,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/8aea96b03ccb45a3b7a9ff9bca95acb1~tplv-aphluv4xwc-crop-webp:1320:1298.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737798944475546628",
+     "floor_price": 55.65,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-14",
+     "launch_time": 1791946141,
+     "price_display": "55.652 ₫",
+     "product_id": "1737798944475546628",
+     "product_rating": 0,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 8,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737798944475546628?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Thư cảm ơn quý khách hàng - Quạt Mini Cầm Tay - AnhHeraShop"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 332297413,
+     "last_28d_units_sold": 5942,
+     "last_7d_gmv": 224406931,
+     "last_7d_units_sold": 3976,
+     "last_90d_gmv": 332297413,
+     "last_90d_units_sold": 5942,
+     "total_gmv": 401350538,
+     "total_units_sold": 7105,
+     "yesterday_gmv": 21426020,
+     "yesterday_units_sold": 385
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5e972d5687984cc8820aa11cbcf50f34~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494865885167650820",
+     "shop_name": "AnhHeraShop",
+     "total_units_sold": 256183
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1273,
+     "linked_video_count": 4526
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 21,
+       "name": "Tools & Hardware"
+      },
+      "l2": {
+       "id": 871688,
+       "name": "Hand Tools"
+      },
+      "l3": {
+       "id": 980744,
+       "name": "Hand Tool Accessories"
+      }
+     },
+     "ceiling_price": 225.11,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/ecced0b8e8de424bb5d4377a1e57b34a~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734390542836467061",
+     "floor_price": 20.12,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-07",
+     "launch_time": 1772881466,
+     "price_display": "20.115 ₫  -  225.110 ₫",
+     "product_id": "1734390542836467061",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 61,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734390542836467061?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quạt Mini Gấp Gọn Có Phản Quang Hoạt Hình Nhiều Mẫu | Quạt Xếp Cầm Tay Có Hắt Sáng- Tự Bung Bỏ Túi Tiện Lợi"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 112290246,
+     "last_28d_units_sold": 5192,
+     "last_7d_gmv": 8726206,
+     "last_7d_units_sold": 392,
+     "last_90d_gmv": 1030576332,
+     "last_90d_units_sold": 53634,
+     "total_gmv": 2315852468,
+     "total_units_sold": 119388,
+     "yesterday_gmv": 1408050,
+     "yesterday_units_sold": 70
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/71fc16957dff4257bc5cf86854ddf1f3~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494363382598370677",
+     "shop_name": "Chuang Xin Shop",
+     "total_units_sold": 165414
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 0,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844808,
+       "name": "Home Appliances"
+      },
+      "l3": {
+       "id": 601104,
+       "name": "Fans"
+      }
+     },
+     "ceiling_price": 59.93,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/d0462a7878154306bad1e068d310b8c0~tplv-aphluv4xwc-crop-webp:1320:1298.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737799033494734800",
+     "floor_price": 59.93,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-14",
+     "launch_time": 1791914643,
+     "price_display": "59.933 ₫",
+     "product_id": "1737799033494734800",
+     "product_rating": 0,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 8,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737799033494734800?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Thư cảm ơn quý khách hàng - Quạt Mini Cầm Tay - MiGaShop86"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 268210186,
+     "last_28d_units_sold": 4775,
+     "last_7d_gmv": 156833403,
+     "last_7d_units_sold": 2789,
+     "last_90d_gmv": 268210186,
+     "last_90d_units_sold": 4775,
+     "total_gmv": 377520024,
+     "total_units_sold": 6601,
+     "yesterday_gmv": 12166399,
+     "yesterday_units_sold": 203
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/10075228dca7463382d3b6ddf31cb43f~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495877986311834576",
+     "shop_name": "MiGaShop86",
+     "total_units_sold": 185583
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 319,
+     "linked_video_count": 789
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 978952,
+       "name": "Universal Accessories"
+      },
+      "l3": {
+       "id": 990728,
+       "name": "USB & Mobile Fans"
+      }
+     },
+     "ceiling_price": 47.5,
+     "commission_rate_percent": 12,
+     "cover_url": "https://s.500fd.com/tt_product/00d477e1e64842f5be9379e27c488e64~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735088893326690189",
+     "floor_price": 47.5,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-04-12",
+     "launch_time": 1775941691,
+     "price_display": "47.503 ₫",
+     "product_id": "1735088893326690189",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735088893326690189?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quạt cầm tay tốc độ cao, làm mát nhanh, quạt cầm tay mini, chỉ dài 8,9 cm, quạt điều chỉnh 6 tốc độ, 199 mức lưu lượng gió, màn hình hiển thị kỹ thuật số, pin 1800mAh."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 188810600,
+     "last_28d_units_sold": 3387,
+     "last_7d_gmv": 14636217,
+     "last_7d_units_sold": 305,
+     "last_90d_gmv": 221572740,
+     "last_90d_units_sold": 4425,
+     "total_gmv": 609743375,
+     "total_units_sold": 6811,
+     "yesterday_gmv": 2232641,
+     "yesterday_units_sold": 47
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e5accb6e0a8244fa9bbb8afb8c6f20c8~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "7495989447607356301",
+     "shop_name": "Smart Tech X",
+     "total_units_sold": 512199
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 1
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844808,
+       "name": "Home Appliances"
+      },
+      "l3": {
+       "id": 601104,
+       "name": "Fans"
+      }
+     },
+     "ceiling_price": 83.91,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/473d626481ad404eafc1fc778e16a2b7~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737395731255232464",
+     "floor_price": 71.92,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-14",
+     "launch_time": 1789322870,
+     "price_display": "71.918 ₫  -  83.905 ₫",
+     "product_id": "1737395731255232464",
+     "product_rating": 4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737395731255232464?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Xả Kho] Quạt M2 mini cầm tay di động có thể sạc gió mạnh 100 tốc độ turbo phản lực màn hình có hiển thị pin"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 187683351,
+     "last_28d_units_sold": 3110,
+     "last_7d_gmv": 1623854,
+     "last_7d_units_sold": 24,
+     "last_90d_gmv": 674543663,
+     "last_90d_units_sold": 11753,
+     "total_gmv": 792688207,
+     "total_units_sold": 13785,
+     "yesterday_gmv": 215754,
+     "yesterday_units_sold": 3
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/10075228dca7463382d3b6ddf31cb43f~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495877986311834576",
+     "shop_name": "MiGaShop86",
+     "total_units_sold": 185583
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844808,
+       "name": "Home Appliances"
+      },
+      "l3": {
+       "id": 601104,
+       "name": "Fans"
+      }
+     },
+     "ceiling_price": 662.59,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/1db023b2b97f4c24ab87354e9caeeba0~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735879555956311836",
+     "floor_price": 662.59,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-03",
+     "launch_time": 1780448633,
+     "price_display": "662.590 ₫",
+     "product_id": "1735879555956311836",
+     "product_rating": 0,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735879555956311836?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Live Stream Gift]  Quạt cầm tay mini ngẫu nhiên"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2044083139,
+     "last_28d_units_sold": 3096,
+     "last_7d_gmv": 1109658651,
+     "last_7d_units_sold": 1699,
+     "last_90d_gmv": 4522050976,
+     "last_90d_units_sold": 6855,
+     "total_gmv": 6140014471,
+     "total_units_sold": 9357,
+     "yesterday_gmv": 253771970,
+     "yesterday_units_sold": 383
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/68fbd324669a43018196a0b14179dc2e~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494165628054177564",
+     "shop_name": "Sea Makeup Việt Nam",
+     "total_units_sold": 365576
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

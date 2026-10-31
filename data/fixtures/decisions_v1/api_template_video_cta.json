@@ -1,0 +1,54 @@
+{
+  "model": "gpt-6-luna",
+  "input": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "text": "Replace this text and the input_json data with actual validated evidence for this question batch."
+        },
+        {
+          "type": "input_json",
+          "data": {
+            "video": {},
+            "sku": {},
+            "shop": {},
+            "market": {},
+            "policy": {},
+            "post": {}
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "score",
+      "name": "C08",
+      "instructions": "How actionable is the purchase call-to-action within the available posting context? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "No purchase action in inspected video/post metadata."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Vague exhortation, no actionable step."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Clear intent but unclear purchase path."
+        },
+        {
+          "label": "3 Good",
+          "description": "Specific action linked to visible shopping flow."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Timely clear purchase instruction with consistent accessible purchase path."
+        }
+      ]
+    }
+  ]
+}
