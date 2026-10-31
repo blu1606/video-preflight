@@ -30,6 +30,17 @@ class DatasetTests(unittest.TestCase):
             self.assertIsNone(question_bank(folder))
             self.assertEqual(read_dataset(folder, "decisions")["status"], "missing")
 
+    def test_invalid_optional_dataset_is_reported_without_breaking_inventory(self):
+        with tempfile.TemporaryDirectory() as folder:
+            fixture_dir = Path(folder) / "data/fixtures"
+            fixture_dir.mkdir(parents=True)
+            path = fixture_dir / "calibration_v0.json"
+            for content in ("not json", '{}', '{"constants": null}'):
+                path.write_text(content)
+                data = read_dataset(folder, "calibration")
+                self.assertEqual(data["status"], "invalid")
+                self.assertEqual(len(inventory(folder)), 9)
+
     def test_no_evidence_means_no_submission(self):
         result = plan(question_bank(ROOT), {})
         self.assertEqual(len(result["questions"]), 39)

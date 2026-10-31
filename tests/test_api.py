@@ -6,6 +6,7 @@ import tempfile
 import time
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from fastapi.testclient import TestClient
 
@@ -150,6 +151,17 @@ class LocalFlowTests(unittest.TestCase):
         self.assertFalse(second["cache_hit"])
         self.wait(second["run_id"])
 
+    def test_pipeline_version_change_invalidates_analysis_but_reuses_frames(self):
+        video = self.upload()
+        endpoint = f'/videos/{video["id"]}/runs'
+        first = self.client.post(endpoint, json={}).json()
+        self.wait(first["run_id"])
+        with patch("core.pipeline.VERSION", "unit-test-next-version"):
+            self.assertEqual(self.client.get(f'/videos/{video["id"]}/cache-status').json()["analysis"], "miss")
+            second = self.client.post(endpoint, json={}).json()
+            self.assertNotEqual(first["run_id"], second["run_id"])
+            self.assertEqual(self.wait(second["run_id"])["result"]["extraction"]["cache"], "hit")
+
     def test_context_ownership_and_published_constraints(self):
         shop1 = self.client.post("/shops", json={"name": "Unit test shop A"}).json()
         shop2 = self.client.post("/shops", json={"name": "Unit test shop B"}).json()
@@ -177,6 +189,30 @@ class LocalFlowTests(unittest.TestCase):
         self.assertEqual(self.client.post(endpoint, json={"paid_calls": True}).status_code, 409)
         (self.root / "data" / video["file"]).write_bytes(b"changed")
         self.assertEqual(self.client.post(endpoint, json={}).status_code, 409)
+
+    def test_optional_dataset_error_does_not_block_local_video_processing(self):
+        fixtures = self.root / "data/fixtures"
+        fixtures.mkdir(parents=True)
+        (fixtures / "calibration_v0.json").write_text("invalid json")
+        inventory = self.client.get("/datasets")
+        self.assertEqual(inventory.status_code, 200)
+        self.assertEqual(next(d for d in inventory.json() if d["id"] == "calibration")["status"], "invalid")
+        video = self.upload()
+        run = self.client.post(f'/videos/{video["id"]}/runs', json={})
+        self.assertEqual(run.status_code, 202)
+        self.wait(run.json()["run_id"])
+
+    def test_hashtag_policy_is_checked_with_source_and_no_timestamp(self):
+        fixtures = self.root / "data/fixtures/policy_baseline_v01"
+        fixtures.mkdir(parents=True)
+        shutil.copyfile(Path(__file__).resolve().parents[1] / "data/fixtures/policy_baseline_v01/rules.json", fixtures / "rules.json")
+        video = self.upload(platforms=["shopee_listing"], caption="Caption bình thường", hashtags=["zalo.me/shop-test"])
+        run = self.client.post(f'/videos/{video["id"]}/runs', json={}).json()
+        policy = self.wait(run["run_id"])["result"]["policy"]["targets"]["shopee_listing"]
+        self.assertEqual(policy["verdict"], "needs_review")
+        evidence = policy["findings"][0]["evidence"][0]
+        self.assertEqual(evidence["source_id"], "post.hashtags")
+        self.assertIsNone(evidence["start_s"])
 
 
 if __name__ == "__main__":
