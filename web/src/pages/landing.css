@@ -20,6 +20,9 @@
   --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
   --ease: cubic-bezier(.2, .8, .2, 1);
   min-height: 100vh;
+  /* own block formatting context: the floating header's top margin stays inside the page instead of pushing the
+     whole page down and showing the body colour above it */
+  display: flow-root;
   background: var(--page);
   color: var(--ink);
   font: 16px/1.55 var(--text);
@@ -407,3 +410,13 @@
 @media (prefers-reduced-motion: reduce) {
   .lp-flow-pulse { display: none; }
 }
+
+/* story beats: neither a problem nor a win, just where the video is in its arc */
+.lp { --info: #93c5fd; }
+.lp-bay-now.is-info { color: var(--info); }
+.lp-bay-list button.is-info::before,
+.lp-bay-mark.is-info { background: var(--info); }
+.lp-bay-mark.is-info { width: 14px; height: 14px; margin-left: -7px; top: 61px; }
+.lp-bay-list { gap: 5px; }
+.lp-bay-list button { height: 28px; font-size: 12.5px; }
+@media (max-width: 560px) { .lp-bay-mark.is-info { top: 49px; } }

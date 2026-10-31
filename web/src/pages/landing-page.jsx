@@ -27,11 +27,18 @@ const DEMO = {
     { label: 'Chuyển đổi', value: 43 },
     { label: 'SKU & thị trường', value: 63 },
   ],
+  // every note is a marker of that run (beats of the story in blue, policy hits in red, suggestions in amber)
   notes: [
     { t: 0, tone: 'good', title: 'Hook mở đầu giữ người xem', meta: '92 / 100' },
     { t: 3, tone: 'bad', title: 'Lời hứa tuyệt đối', quote: 'Tao xài trắng quá, giờ mẹ tao tưởng tao mới đi tắm trắng', meta: 'Policy' },
-    { t: 9.4, tone: 'bad', title: 'So sánh trước / sau', quote: 'Mới dùng 3 lần mà trắng cỡ này', meta: 'Policy' },
+    { t: 5, tone: 'info', title: 'Nêu vấn đề của người xem', meta: 'Mạch kể: mong muốn da sáng hơn' },
+    { t: 9.4, tone: 'bad', title: 'So sánh trước / sau', quote: 'Mới dùng 3 lần mà trắng cỡ này', meta: 'Policy · Tay sau khi rửa' },
+    { t: 12, tone: 'bad', title: 'Hai bàn tay đối chiếu', quote: 'Tao thử có 1 lần mà trắng thật nha', meta: 'Policy · cảnh trước / sau' },
+    { t: 16, tone: 'info', title: 'Sản phẩm vào khung hình', meta: 'Mạch kể: giới thiệu hộp TeaShell' },
     { t: 17, tone: 'bad', title: 'Lời hứa phóng đại', quote: 'Da không nhìn sáng hơn mới là lạ đó', meta: 'Policy' },
+    { t: 25, tone: 'info', title: 'Minh hoạ cách dùng', meta: 'Mạch kể: tạo bọt, rửa trên da' },
+    { t: 28.5, tone: 'bad', title: 'Lợi ích chưa có căn cứ', quote: 'Hỗ trợ cải thiện sắc tố, giúp da nhìn sáng và đều màu hơn', meta: 'Policy' },
+    { t: 32.7, tone: 'warn', title: 'Chưa nêu ưu đãi', meta: 'Gợi ý: nói giá hoặc ưu đãi trước lời kêu gọi' },
     { t: 35.7, tone: 'warn', title: 'Chưa có lời kêu gọi mua', meta: '+3,2 điểm nếu thêm' },
   ],
 }
