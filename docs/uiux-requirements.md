@@ -1,3 +1,5 @@
+> **Tài liệu tham chiếu nhập trước khi triển khai.** Các mô tả backend, API và file dưới đây là đặc tả/bối cảnh cũ, không phải bằng chứng các chức năng đó đã chạy ở repo mới. Xem [runtime contract hiện tại](runtime-contract.md), [README](../README.md) và [development log](development-log.md). UI mới dùng tiếng Việt; trọng số đã chốt 35/45/20, shop health tách riêng.
+
 # UI/UX requirements: Video Intelligence Lab
 
 Mục tiêu: dựng lại giao diện của Lab thành một sản phẩm demo được trong **24 giờ**, code thẳng bằng React trong `web/`. Backend đã chạy đủ. Tài liệu này mô tả **cần hiển thị gì và lấy dữ liệu ở đâu**. Phong cách, bố cục và chọn desktop/mobile là do bạn quyết.

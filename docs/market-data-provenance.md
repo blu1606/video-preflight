@@ -1,3 +1,5 @@
+> **Ghi nhận nguồn từ gói dữ liệu được nhập ngày 31/10/2026.** Mô tả crawler, chi phí và các số liệu bên dưới được giữ từ tài liệu gốc, chưa được chạy/xác minh lại trong phiên dựng repo mới. Đường dẫn legacy được ánh xạ theo [data layout](data-layout.md); dữ liệu hiện ở `data/fixtures/`. Ứng dụng mới chỉ đọc snapshot, chưa gọi crawler/provider.
+
 # Nguồn dữ liệu thị trường (evidence)
 
 Dữ liệu thị trường của 45 SKU seed được **cào thật** ngày **2026-10-27**. Đây không phải dữ liệu mock: mỗi con số có nhãn `REAL` (quan sát được) hoặc `INFERRED` (tính từ số quan sát được, công thức nằm trong evidence). Mỗi số đều truy được về công cụ, câu truy vấn, ngày cào và response gốc.

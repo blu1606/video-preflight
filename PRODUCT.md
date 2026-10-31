@@ -1,49 +1,28 @@
-# Product
+# Video Preflight
 
-<!-- impeccable:product-schema 1 -->
+## Người dùng và mục tiêu
 
-## Platform
+Seller đưa video bán hàng lên trước khi đăng, chọn shop/SKU và nền tảng, rồi xem nội dung cần sửa cùng bằng chứng. Luồng cho ban giám khảo đi từ kết quả tới câu hỏi, feature và nguồn, trong cùng ứng dụng.
 
-web
+## Quyết định đã chốt
 
-## Users
-- **Primary: seller** on TikTok Shop / Shopee (shop owner or content person) who checks a sales video **before posting**, attached to one of their shop's SKUs. Job: know whether the video is ready, why, and exactly what to fix (with the moment in the video).
-- **Secondary: competition judges** watching the prototype demo. They need to see that the result comes from researched business logic and a transparent agent pipeline, not a generic prompt. The technical depth (agent flow, Decisions questions, schema features, policy rules) must be reachable from the seller's flow, not a separate app.
+- UI tiếng Việt, giữ thuật ngữ Hook, CTA, Viral, Conversion, Policy, Decisions, trace, coverage, SKU và GMV.
+- Bằng chứng có trạng thái REAL / MOCK / MISSING / INFERRED. Thiếu dữ liệu không thành điểm 0; dữ liệu MOCK chỉ xem trong Kho dữ liệu, không đưa vào readiness.
+- Backend tính overall theo Viral 0,35 / Conversion 0,45 / SKU 0,20. Shop health là bối cảnh; hiệu suất sau đăng tách riêng; Policy là gate riêng.
+- Một chế độ vận hành. Nguồn và mức xác minh xem trong Kho dữ liệu, không giả số liệu hoặc kết quả để lấp UI.
+- Mọi lượt có phí cần xác nhận trước; có cache theo nội dung và version. Bản hiện tại chưa nối provider.
+- Stack: Python/uv + FastAPI 8100; json-server 3101; React/Vite/TypeScript + Tailwind/shadcn/Recharts 5180. `pnpm lab` chạy ba dịch vụ local.
 
-## Product Purpose
-Seller uploads a video, picks the shop and SKU, and the system scores the video against video content, SKU/shop data, crawled market data and platform policies. Output: scores with coverage, a policy gate, reasons, and prioritized fixes tied to timestamps. Success in the demo: a judge follows one run end to end and can trace any number back to its source.
+## Trạng thái đã kiểm chứng
 
-## Positioning
-Every number is traceable (REAL / MOCK / MISSING / INFERRED with evidence); missing data is "not scored", never 0. Judgement criteria come from the OpenAI Decisions API with explicit 5-level rubrics and probabilities per level; measurable signals and calibration come from real crawled market data; policy is checked against paraphrased official platform rules with verbatim quotes and is never declared "approved".
+Upload thật, đo metadata và trích frame local; trace/SSE/lịch sử/cache; tạo shop/SKU; đọc bộ 39 câu và 9 nhóm dataset. Policy hiện chỉ triage text có quote, chưa đọc nội dung video hoặc xác minh lại baseline.
 
-## Operating Context
-- Demo: presenter drives a laptop projected on a large screen (desktop ~1440–1920 px); judges watch from a distance, so text and charts must read from afar.
-- Flow: choose shop (navbar) → shop profile and shop health with data-source disclaimer → choose video and SKUs (SKUs mapped to the video first, other SKUs below, Shopee link input) → description + hashtags (AI quick-fill) → Analyze → streamed agent flow → results.
-- Run time: ~3 s with caches, up to ~95 s with a fresh VLM extraction. Paid OpenAI steps are confirmed before running.
-- Stack: React 19 + Vite + Tailwind v4 + shadcn/ui + Recharts in `web/`; FastAPI (`/py`) and json-server (`/api`) behind the Vite proxy.
+Chưa có vision, ASR, Decisions inference, reviewer LLM, dự báo hiệu suất, nhạc hoặc localization. Tổng điểm sẽ chưa chấm khi chưa có kết quả nội dung đủ bằng chứng. Ngưỡng coverage chỉ là mốc tạm tự đặt.
 
-## Capabilities and Constraints
-- Backend business logic is the source of truth (scores per group: Viral, Conversion, SKU & market, Shop health; policy as a separate gate; Decisions question bank; policy rules; quality gate; fixes). UI must not invent scores, questions or mappings.
-- Analysis trace: every step has agent, tool, input, output, status, timing; a streaming endpoint exists (SSE).
-- Decisions API is one batched call; per-question reveal in the UI is a presentation of that batch, and must say so.
-- Terminology: keep English for Hook, CTA, Viral, Conversion, Policy, Decisions API, agent, trace, coverage, SKU, GMV.
-- Undecided: final overall-score weights (Viral 0.30 / Conversion 0.40 / SKU 0.20 / Shop health 0.10 pending confirmation).
+## Thiết kế và tài sản
 
-## Brand Commitments
-- UI language Vietnamese, technical keywords in English; content data (product names, transcript, claims) stays Vietnamese.
-- Shop/SKU seed data is synthetic: always labelled as such, with its source, and stated as test-only, not a true picture of the shop.
-- Policy is only "cần xem lại", "không phát hiện vi phạm" or "chưa đủ dữ liệu"; never "đạt"/approved.
-- `web/public/mockup-v2/` is the binding visual reference, including its video edit / add-video section.
+Studio ba cột: luồng xử lý, video/5 panel đầu vào, kết quả có radar và ba tab. Mockup-v2 vẫn là mục tiêu thiết kế khi được cung cấp; chưa có trong checkout này.
 
-## Evidence on Hand
-- Real videos: 24 TikTok Shop videos with reported outcomes (Clipcat, unverified), files in `video_understanding/data/`.
-- Crawled market snapshots (FastMoss, Google Shopping via SerpAPI) with source and crawl date: `demo/fixtures/market/`, provenance in `demo/docs/market-data-provenance.md`.
-- Synthetic Shopee seed: 9 shops with SKUs, videos and performance (`demo/fixtures/shopee_seed/`).
-- Policy baseline with official source URLs: `demo/fixtures/policy_baseline_v01/`.
-- No real seller accounts, testimonials or verified shop data exist; never fabricate them.
+Dataset nhập có sẵn được giữ provenance ở `docs/data-layout.md`. Không trình bày dữ liệu nhập hoặc cache lịch sử là kết quả mới chạy hôm nay. Source code ứng dụng được viết mới trong repo này; các helper script được nhập cùng archive giữ làm tài sản tham chiếu, không được thực thi bởi ứng dụng mới.
 
-## Product Principles
-1. Traceable over impressive: a number without a source does not ship.
-2. The seller's question first ("đăng được chưa, sửa gì"), the judge's proof one click away.
-3. Honest about uncertainty: show coverage, simulated data and placeholders instead of hiding them.
-4. Show the machinery: the agent pipeline and Decisions reasoning are part of the product, not debug output.
+Xem `README.md` và `docs/development-log.md` cho bằng chứng cụ thể. Kịch bản đầy đủ tiếp tục ở `rebuild-plan.md`.
