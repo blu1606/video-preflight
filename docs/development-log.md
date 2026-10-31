@@ -29,3 +29,13 @@ Nhật ký và manifest SHA-256 giúp kiểm tra thay đổi nội dung trong ph
 - Không có bản ghi MOCK trong DB khởi tạo. Bộ 9 shop/24 video và crawler được để sau theo chỉ đạo người dùng.
 - Kiểm `node --test tests/db.test.mjs`: chạy json-server thật ở cổng ngẫu nhiên trong thư mục tạm; kiểm snapshot trước POST và PATCH, nội dung trước thay đổi được giữ nguyên.
 - Đã pin dependency và tạo lockfile cho lab; chưa có provider SDK, không đọc khóa từ repo tham chiếu.
+
+## T0.4–T0.6 / backend — Upload, cache, SSE
+
+- API mới: shop/SKU tự nhập, upload file local, sửa context, media Range, cache-status, start run, lịch sử, SSE, tool registry.
+- FFprobe đo thời lượng/kích thước/format/dung lượng/audio từ file thật; FFmpeg trích tối đa 6 frame theo thời gian đo được. Không suy ra nội dung ảnh từ timestamp/hash.
+- 8 chặng pipeline cố định, 4 vai trò agent, registry 13 tool có cờ implemented. Chưa có agent LLM đang chạy. Các chặng Decisions/Policy/cross-check giữ skipped với lý do.
+- Cache media theo SHA-256 + version; kiểm hash frame trước khi dùng. Cache analysis theo video + context + dữ liệu shop/SKU/market + version pipeline. Context đổi thì không dùng lại kết quả cũ.
+- Lượt chạy lưu local, có trace input/output/thời gian/token null; client ngắt stream không hủy worker. Trùng request cùng input dùng chung run; restart không tự gọi inference.
+- Video trước đăng không nhận outcome; video đã đăng có outcome nhập tay, ghi rõ chưa xác minh. SKU phải thuộc shop chọn. Provider trả phí chưa tích hợp và bị chặn tại API.
+- Kiểm `pnpm test:python`: 15/15 qua, gồm upload thật bằng fixture video 2 giây được sinh trong thư mục tạm, trích frame/cache/tamper/SSE/HTTP Range, ownership, lỗi file và invalidation. Không lưu fixture vào DB demo.
