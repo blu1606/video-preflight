@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import { agentLabel, stepLabel } from '../lib/labels'
 import { fmtTime } from '../lib/timeline'
 import { groupSteps, runSeconds, summarizeStep } from '../lib/run-stages'
 import { FlowDiagram } from './flow-diagram'
@@ -18,15 +19,14 @@ function StepRow({ step }) {
   const [open, setOpen] = useState(false)
   return (
     <li className={`studio-step is-${step.status}`}>
-      <button type="button" className="studio-step-head" aria-expanded={open} onClick={() => setOpen(!open)}>
+      <button type="button" className="studio-step-head" aria-expanded={open} onClick={() => setOpen(!open)} title={`${step.agent} · ${step.name}${step.tool ? ` · ${step.tool}` : ''}`}>
         <span className="stage-ic">
           {step.status === 'running' ? <span className="spin" /> : <Icon name={step.status === 'error' ? 'danger' : step.status === 'skipped' ? 'arrow-right-2' : 'tick-circle'} />}
         </span>
         <span className="od-fill">
-          <span className="studio-step-name">{step.name}</span>
+          <span className="studio-step-name">{stepLabel(step.name)}</span>
           <span className="tiny muted studio-step-meta">
-            {step.agent} · {KIND_LABEL[step.kind] ?? step.kind}
-            {step.tool ? ` · ${step.tool}` : ''}
+            {agentLabel(step.agent)} · {KIND_LABEL[step.kind] ?? step.kind}
           </span>
           {step.status !== 'running' && <span className="tiny studio-step-sum">{summarizeStep(step)}</span>}
         </span>
@@ -104,7 +104,7 @@ function QuestionRow({ row, onSeek, onOpen, selected }) {
  * Left column. While a run streams: the agent flow. After it: the Decisions questions grouped by where they
  * sit in the video (Cần sửa / Tất cả), with the agent flow one tab away.
  */
-export function LeftColumn({ running, steps, result, duration, onSeek, onOpenQuestion, selectedId, onCollapse, onOpenMap }) {
+export function LeftColumn({ running, steps, result, savedRun = null, duration, onSeek, onOpenQuestion, selectedId, onCollapse, onOpenMap }) {
   const [view, setView] = useState('questions')
   const [filter, setFilter] = useState('issues')
   const [closed, setClosed] = useState({})
@@ -186,7 +186,11 @@ export function LeftColumn({ running, steps, result, duration, onSeek, onOpenQue
         </>
       )}
       <div className="col-foot">
-        <span>{running ? 'Đang chạy' : result ? 'Hoàn tất' : 'Chưa chạy'}{steps.length ? ` · ${steps.length} bước · ${runSeconds(steps).toFixed(1)}s` : ''}</span>
+        {/* a saved run says which one it is: its result may predate the video's current extraction cache */}
+        <span>
+          {running ? 'Đang chạy' : savedRun ? `Lượt #${savedRun.id} đã lưu · ${new Date(savedRun.createdAt).toLocaleString('vi-VN', { dateStyle: 'short', timeStyle: 'short' })}` : result ? 'Hoàn tất' : 'Chưa chạy'}
+          {steps.length ? ` · ${steps.length} bước · ${runSeconds(steps).toFixed(1)}s` : ''}
+        </span>
       </div>
     </aside>
   )

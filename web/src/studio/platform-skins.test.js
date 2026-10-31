@@ -20,7 +20,7 @@ test('defaultSkin: first posting platform with a skin, else Shopee', () => {
 })
 
 test('skinById: known ids only', () => {
-  assert.equal(skinById('ig').name, 'Instagram Reels')
+  assert.equal(skinById('ig').name, 'Instagram Reels (Meta Ads)')
   assert.equal(skinById('x'), null)
 })
 

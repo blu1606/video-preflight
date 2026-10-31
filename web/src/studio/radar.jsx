@@ -76,7 +76,7 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
   return (
     <section className="radar-wrap studio-radar" aria-label="Radar câu hỏi Decisions">
       <div className="studio-radar-head">
-        <p className="tiny">{answered}/{total} câu đã trả lời</p>
+        <p className="tiny">{answered}/{total} câu chấm điểm đã trả lời</p>
         <button type="button" className="link-btn tiny" onClick={onOpenAll}>Xem đủ {total + otherCount} câu</button>
       </div>
       <div className="studio-radar-box">

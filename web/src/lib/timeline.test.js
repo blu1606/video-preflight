@@ -88,3 +88,9 @@ test('transcript: active segment and absolute-claim highlight', () => {
   assert.deepEqual(highlightClaims('Hehehe', [{ text: 'trắng' }]), [{ text: 'Hehehe', claim: false }])
   assert.deepEqual(highlightClaims('tắm xong trắng', ['Tao mua về tắm xong trắng, mẹ tao']), [{ text: 'tắm xong trắng', claim: true }])
 })
+
+test('criterion marker titles show the Vietnamese dimension label', () => {
+  const hint = issueHint({ title: 'Cần cải thiện: Cta clarity (C08) · 4/100', time_label: null })
+  assert.equal(hint, 'Cần cải thiện: CTA rõ ràng (C08) · 4/100')
+  assert.equal(issueHint({ title: 'Policy TTA-001 · cần xem lại' }), 'Policy TTA-001 · cần xem lại')
+})

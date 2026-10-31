@@ -15,7 +15,11 @@ export function SkinOptions({ skin, rows, onPick }) {
               <span className="od-stack od-fill" style={{ '--od-gap': 0 }}>
                 <span><strong>{s.name}</strong></span>
                 <span className="tiny muted">{s.note}</span>
-                {score != null && <span className="tiny">Điểm trên nền tảng này: <strong>{score}</strong></span>}
+                {score != null && (
+                  <span className="tiny">
+                    {s.target === 'shopee_listing' ? 'Điểm trang sản phẩm (SKU & thị trường)' : 'Điểm nội dung video'}: <strong>{score}</strong>
+                  </span>
+                )}
               </span>
             </button>
           </li>

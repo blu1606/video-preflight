@@ -5,11 +5,12 @@ import { dimensionLabel, groupLabel } from '../lib/labels.js'
 import { parseTimestamp } from '../lib/timeline.js'
 
 // Radar tabs: the four rubric v2 groups the Decisions score questions feed (core/rubric.py V2_GROUPS).
+// Shop health is shop context, not part of the video's overall score (core/overall.py), so it stays off the chart.
 export const RADAR_GROUPS = [
   { group: 'viral_potential', prefix: 'V', label: 'Viral' },
   { group: 'conversion_potential', prefix: 'C', label: 'Conversion' },
   { group: 'sku_market', prefix: 'S', label: 'SKU' },
-  { group: 'shop_health', prefix: 'H', label: 'Shop' },
+  { group: 'shop_health', prefix: 'H', label: 'Shop', overall: false },
 ]
 
 export const groupOfQuestion = (id) => RADAR_GROUPS.find((g) => String(id ?? '').startsWith(g.prefix))?.group ?? null
@@ -52,7 +53,7 @@ export const AXES_PER_GROUP = 2
  * id), so every group the overall score uses is on one chart. Pure selection, no score is invented.
  */
 export function keyQuestionIds(questions) {
-  return RADAR_GROUPS.flatMap(({ group }) =>
+  return RADAR_GROUPS.filter((g) => g.overall !== false).flatMap(({ group }) =>
     (questions ?? [])
       .filter((q) => q.type === 'score' && groupOfQuestion(q.id) === group)
       .sort((a, b) => (b.weight ?? 0) - (a.weight ?? 0) || a.id.localeCompare(b.id))
@@ -101,22 +102,28 @@ export function radarPoint(i, n, ratio, { cx = 160, cy = 160, r = 102 } = {}) {
 
 const featureOf = (result, name) => result?.features?.[name] ?? null
 
-/** Seconds of the first "MM:SS" evidence among the given features. */
-function firstEvidenceTime(result, names) {
-  for (const n of names) {
-    for (const e of featureOf(result, n)?.evidence ?? []) {
-      const t = parseTimestamp(e)
-      if (t) return t.start
-    }
-  }
-  return null
-}
+/** Seconds of every "MM:SS" evidence line, in order. */
+const evidenceTimes = (lines) => (lines ?? []).map(parseTimestamp).filter(Boolean).map((t) => t.start)
 
-/** When in the video a question's judgement sits: its timeline marker, else the evidence of its inputs. */
+// Features read off the opening seconds: 00:00 from them is a real moment. Elsewhere the VLM writes 0 when it
+// has no time (a CTA it judged absent still comes back at 00:00), so 0 alone does not place a question.
+const OPENING_INPUTS = new Set([
+  'video.hook', 'video.hook_type', 'video.hook_verbal', 'video.opening_evidence', 'video.opening_signals',
+  'video.product_first_clear_sec',
+])
+
+/**
+ * When in the video a question's judgement sits: its timeline marker, else the evidence of its inputs.
+ * null (whole video) when nothing places it, including a bare 00:00 on a question that is not about the opening.
+ */
 export function questionTime(q, result) {
+  const inputs = [...(q.inputs ?? []), ...(q.required_features ?? [])]
   const marker = (result?.markers ?? []).find((m) => m.kind !== 'cut' && m.kind !== 'beat' && String(m.source?.ref ?? '') === q.id)
-  if (marker) return marker.t_start
-  return firstEvidenceTime(result, [...(q.inputs ?? []), ...(q.required_features ?? [])])
+  const times = marker
+    ? [marker.t_start, ...evidenceTimes(marker.evidence)]
+    : inputs.flatMap((n) => evidenceTimes(featureOf(result, n)?.evidence))
+  const opening = inputs.some((n) => OPENING_INPUTS.has(n))
+  return times.find((t) => t != null && (t > 0 || opening)) ?? null
 }
 
 export const SEGMENTS = [
@@ -346,11 +353,11 @@ export function platformView(result) {
       fit: result?.platform_fit?.targets?.[p.id] ?? null,
     }
   })
-  // where the video should go first: video targets only (a listing is a product page, not a place to post),
-  // no policy failure, highest policy score, organic before ads on a tie
-  const rank = (r) => (r.verdict === 'fail' ? -1 : (r.policyScore ?? 0) * 10 + (r.kind === 'organic' ? 1 : 0))
-  const best = rows.filter((r) => r.kind !== 'listing').sort((a, b) => rank(b) - rank(a))[0] ?? null
-  return { rows, bestId: best && best.verdict !== 'fail' ? best.id : null, ready, fix, hasCta }
+  // where the video should go first: video targets only (a listing is a product page, not a place to post) whose own
+  // decision is not red ("Chưa nên chạy ads", "Chưa đăng được"), highest policy score, organic before ads on a tie
+  const rank = (r) => (r.policyScore ?? 0) * 10 + (r.kind === 'organic' ? 1 : 0)
+  const best = rows.filter((r) => r.kind !== 'listing' && r.decision.tone !== 'red').sort((a, b) => rank(b) - rank(a))[0] ?? null
+  return { rows, bestId: best?.id ?? null, ready, fix, hasCta }
 }
 
 // ---------- post info of an uploaded video ----------

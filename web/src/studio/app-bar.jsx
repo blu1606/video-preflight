@@ -37,7 +37,7 @@ function Menu({ label, className, buttonContent, children, align = 'start' }) {
  * mockup-v2's single app bar: brand, shop picker (with its profile), the video and SKU under test, the two
  * views, run status, saved runs and the analysis options.
  */
-export function AppBar({ shops, shop, onShop, onShopProfile, videos, video, sku, onSelectVideo, onUpload, uploading, onOpenAtlas, tab, onTab, canFix, running, runLabel, history, selectedRunId, onRun, options, onOptions, extractionState }) {
+export function AppBar({ shops, shop, onShop, onShopProfile, videos, video, sku, skus = [], onSelectVideo, onUpload, uploading, onOpenAtlas, tab, onTab, canFix, running, runLabel, history, selectedRunId, onRun, options, onOptions, extractionState }) {
   const fileRef = useRef(null)
   return (
     <header className="hdr" aria-label="Thanh điều hướng">
@@ -98,7 +98,7 @@ export function AppBar({ shops, shop, onShop, onShopProfile, videos, video, sku,
               {videos.map((v) => (
                 <li key={v.id}>
                   <button type="button" role="menuitemradio" aria-checked={v.id === video?.id} onClick={() => { onSelectVideo(v.id); close() }}>
-                    <strong>{v.product_label ?? v.id}</strong>
+                    <strong>{skus.find((s) => s.sku_id === v.sku_id)?.item_name ?? v.product_label ?? v.id}</strong>
                     <span className="tiny muted">
                       {v.id} · {v.stage === 'prepublish' ? 'chưa đăng' : 'đã đăng'}{v.local_file ? '' : ' · không có file'}
                     </span>

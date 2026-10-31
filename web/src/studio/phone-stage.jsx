@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 
+import { markerTitle } from '../lib/labels'
 import { activeRegions, fmtTime, isRangeMarker, issueHint, safeZoneWarning } from '../lib/timeline'
 import { Icon } from './icon'
 import { PHONE_STATUS } from './icons-data'
@@ -165,26 +166,27 @@ export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoR
                         <p>{video ? 'Video này chưa có file để phát. Chọn video khác hoặc tải video mới.' : 'Chọn video ở nút Video bên trái.'}</p>
                       </div>
                     )}
+                    {/* boxes are fractions of the video frame, so they sit in the video's own box, not the whole screen */}
+                    {regions.length > 0 && (
+                      <div className="studio-regions" aria-live="polite">
+                        {regions.map((m) => {
+                          const [x, y, w, h] = m.region.box
+                          const open = openRegion === m.id
+                          const warning = safeZoneWarning(m.region)
+                          return (
+                            <button key={m.id} type="button" aria-expanded={open} onClick={() => setOpenRegion(open ? null : m.id)} className={`studio-region is-${m.severity}${open ? ' is-open' : ''}${y > 0.55 ? ' is-up' : ''}`} style={{ left: `${x * 100}%`, top: `${y * 100}%`, width: `${w * 100}%`, height: `${h * 100}%` }}>
+                              <span className="studio-region-tag">{m.region.label || markerTitle(m)} · AI ước lượng</span>
+                              <span className="studio-region-card">
+                                {m.region.observation && <b>{m.region.observation}</b>}
+                                {m.region.fix_here && <span>{m.region.fix_here}</span>}
+                                {warning && <span className="studio-region-warn">{warning} · ước lượng theo khung app</span>}
+                              </span>
+                            </button>
+                          )
+                        })}
+                      </div>
+                    )}
                   </div>
-                  {regions.length > 0 && (
-                    <div className="studio-regions" aria-live="polite">
-                      {regions.map((m) => {
-                        const [x, y, w, h] = m.region.box
-                        const open = openRegion === m.id
-                        const warning = safeZoneWarning(m.region)
-                        return (
-                          <button key={m.id} type="button" aria-expanded={open} onClick={() => setOpenRegion(open ? null : m.id)} className={`studio-region is-${m.severity}${open ? ' is-open' : ''}${y > 0.55 ? ' is-up' : ''}`} style={{ left: `${x * 100}%`, top: `${y * 100}%`, width: `${w * 100}%`, height: `${h * 100}%` }}>
-                            <span className="studio-region-tag">{m.region.label || m.title} · AI ước lượng</span>
-                            <span className="studio-region-card">
-                              {m.region.observation && <b>{m.region.observation}</b>}
-                              {m.region.fix_here && <span>{m.region.fix_here}</span>}
-                              {warning && <span className="studio-region-warn">{warning} · ước lượng theo khung app</span>}
-                            </span>
-                          </button>
-                        )
-                      })}
-                    </div>
-                  )}
                   <button type="button" className="ip-tap" onClick={toggle} aria-label="Phát hoặc tạm dừng video" />
                   <PhoneFeed
                     key={skin}
