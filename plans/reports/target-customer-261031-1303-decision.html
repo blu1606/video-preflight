@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chọn khách hàng mục tiêu</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one reading column; scoring table and chart are the focal block, evidence follows as a reference table. */
+:root {
+  --bg: #f6f7f9; --surface: #ffffff; --fg: #1b2230; --muted: #5b6577; --line: #dde2ea;
+  --accent: #2f4fd8; --accent-soft: #e6ebfd;
+  --good: #1f8a5b; --warn: #b7791f; --bad: #c2413b;
+  --good-soft: #e3f4ec; --warn-soft: #fbf0dc; --bad-soft: #fbe6e5;
+  --font-body: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  --font-data: "JetBrains Mono", ui-monospace, "Cascadia Mono", monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11151c; --surface: #181e28; --fg: #e6e9ef; --muted: #9aa4b5; --line: #2a3242;
+  --accent: #8ea2ff; --accent-soft: #232c4a;
+  --good: #5cc795; --warn: #e2b04f; --bad: #ef7f79;
+  --good-soft: #17352a; --warn-soft: #3a2f17; --bad-soft: #3d1d1c; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #11151c; --surface: #181e28; --fg: #e6e9ef; --muted: #9aa4b5; --line: #2a3242;
+  --accent: #8ea2ff; --accent-soft: #232c4a;
+  --good: #5cc795; --warn: #e2b04f; --bad: #ef7f79;
+  --good-soft: #17352a; --warn-soft: #3a2f17; --bad-soft: #3d1d1c; color-scheme: dark }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-block: 40px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 40px; }
+h1, h2, h3 { text-wrap: balance; line-height: 1.25; margin: 0; }
+h1 { font-size: 30px; font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 20px; font-weight: 700; }
+h3 { font-size: 15px; font-weight: 600; }
+p { margin: 0; max-width: 72ch; }
+.eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
+section { display: grid; gap: 16px; min-width: 0; }
+.head { display: grid; gap: 10px; }
+.verdict { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 20px 22px; display: grid; gap: 10px; }
+.verdict strong { color: var(--accent); }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; background: var(--bg); position: sticky; top: 0; }
+tr:last-child td { border-bottom: 0; }
+.num { font-family: var(--font-data); font-variant-numeric: tabular-nums; text-align: center; }
+.total { font-family: var(--font-data); font-weight: 600; }
+.seg-name { font-weight: 600; }
+.seg-note { color: var(--muted); font-size: 13px; }
+.dot { display: inline-block; width: 22px; height: 22px; border-radius: 6px; line-height: 22px; font-size: 12px; font-family: var(--font-data); }
+.s1, .s2 { background: var(--bad-soft); color: var(--bad); }
+.s3 { background: var(--warn-soft); color: var(--warn); }
+.s4, .s5 { background: var(--good-soft); color: var(--good); }
+tr.pick td { background: var(--accent-soft); }
+.weights { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.weights label { display: grid; gap: 4px; font-size: 13px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.weights output { font-family: var(--font-data); color: var(--accent); font-weight: 600; }
+input[type=range] { width: 100%; accent-color: var(--accent); }
+.reset { justify-self: start; font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; }
+.reset:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.bars { display: grid; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.bar { display: grid; grid-template-columns: minmax(0, 220px) 1fr 48px; gap: 10px; align-items: center; font-size: 13px; }
+.bar .track { height: 14px; background: var(--bg); border-radius: 4px; position: relative; overflow: hidden; }
+.bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--muted); border-radius: 4px; transition: width .3s; }
+.bar.top .fill { background: var(--accent); }
+.bar .v { font-family: var(--font-data); text-align: right; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.card ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.pill { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 999px; font-weight: 600; white-space: nowrap; }
+.p-hi { background: var(--good-soft); color: var(--good); }
+.p-mid { background: var(--warn-soft); color: var(--warn); }
+.p-lo { background: var(--bad-soft); color: var(--bad); }
+a { color: var(--accent); }
+.small { font-size: 13px; color: var(--muted); }
+@media (max-width: 560px) { h1 { font-size: 24px; } .bar { grid-template-columns: minmax(0, 1fr) 40px; } .bar .track { grid-column: 1 / -1; grid-row: 2; } }
+@media (prefers-reduced-motion: reduce) { .bar .fill { transition: none; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <div class="eyebrow">Video Preflight · quyết định 31/10/2026</div>
+    <h1>Chọn khách hàng mục tiêu</h1>
+    <p>8 nhóm khách hàng có thể dùng sản phẩm, chấm theo 6 tiêu chí: đau thế nào khi đăng video sai, chi phí đăng sai so với giá sản phẩm, khả năng trả tiền, khối lượng video, độ khớp với repo hiện tại, và khả năng tiếp cận sớm. Điểm 1–5 là nhận định của tôi dựa trên bằng chứng ở cuối trang; chỉnh trọng số để xem thứ hạng thay đổi.</p>
+  </header>
+
+  <div class="verdict">
+    <div class="eyebrow">Đề xuất</div>
+    <p><strong>Làm trước: brand / shop ngành nhạy cảm (mỹ phẩm, thực phẩm chức năng, mẹ &amp; bé) duyệt video của KOC và creator affiliate trước khi đăng.</strong> Đây là nhóm đau nhất khi một video sai lọt ra: phạt hành chính cho tổ chức quảng cáo sai sự thật từ 120–160 triệu đồng (Nghị định 38/2021, có nguồn cho rằng tăng lên 160–200 triệu từ 15/05/2026), brand liên đới bồi thường cùng KOL, mất tiền booking và tiền ads. Một video sai đắt hơn nhiều tháng thuê công cụ.</p>
+    <p>Creator cá nhân là kênh vào miễn phí: brand gửi link để creator tự kiểm trước khi nộp bài. Điều này khác với bản mô tả vấn đề hiện tại (B2C creator trước, B2B sau), nên cần bạn quyết.</p>
+  </div>
+
+  <section>
+    <h2>Trọng số tiêu chí</h2>
+    <div class="weights" id="weights"></div>
+    <button class="reset" id="reset" type="button">Đặt lại trọng số mặc định</button>
+  </section>
+
+  <section>
+    <h2>Xếp hạng</h2>
+    <div class="bars" id="bars" aria-live="polite"></div>
+  </section>
+
+  <section>
+    <h2>Bảng chấm điểm</h2>
+    <div class="scroll"><table id="score"></table></div>
+    <p class="small">1–2 đỏ: yếu · 3 vàng: trung bình · 4–5 xanh: mạnh. Mã bằng chứng [E1]… dẫn tới bảng cuối trang.</p>
+  </section>
+
+  <section>
+    <h2>Vì sao họ không cứ đăng rồi chờ thị trường kiểm chứng?</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Nhóm</th><th>Chi phí khi đăng sai</th><th>Chờ thị trường thì sao</th><th>Kết luận</th></tr></thead>
+      <tbody>
+        <tr><td class="seg-name">Brand ngành nhạy cảm duyệt KOC</td><td>Phạt tổ chức 120–160 triệu (có thể 160–200 triệu) [E2]; liên đới bồi thường cùng KOL [E3]; tiền booking KOC mất trắng [E4]; điểm phạt, xóa video trên sàn [E8].</td><td>Khi thị trường "kiểm chứng" bằng một vụ phạt hoặc khủng hoảng thì đã muộn, và video đã chạy dưới tên brand.</td><td><span class="pill p-hi">Phải kiểm trước</span></td></tr>
+        <tr><td class="seg-name">Agency / MCN</td><td>Mất hợp đồng với brand khi creator dưới quyền vi phạm; chi phí người duyệt thủ công tăng theo số video.</td><td>Agency bán chính sự an toàn cho brand; chờ là mất khách.</td><td><span class="pill p-hi">Phải kiểm trước</span></td></tr>
+        <tr><td class="seg-name">Performance marketer chạy ads trên video UGC</td><td>Tiền ads đổ vào video yếu; tài khoản quảng cáo bị từ chối nội dung.</td><td>Họ đã test bằng ngân sách nhỏ; công cụ chỉ đáng tiền nếu loại được video tệ trước khi test.</td><td><span class="pill p-mid">Có lý do</span></td></tr>
+        <tr><td class="seg-name">KOC / affiliate chuyên nghiệp</td><td>Tài khoản là tài sản: brand ưu tiên kênh "sạch" 50 nghìn follower hơn kênh 300 nghìn đang vi phạm [E5]; giới hạn số video gắn giỏ hàng làm mỗi lượt đăng quý hơn [E5].</td><td>Đăng thử vẫn rẻ, nhưng một vi phạm làm mất deal.</td><td><span class="pill p-mid">Có lý do</span></td></tr>
+        <tr><td class="seg-name">Seller SME tự làm video</td><td>Điểm phạt, xóa video, hạn chế bán [E8]; công sức quay lại.</td><td>Ngân sách thấp, thường chấp nhận thử sai.</td><td><span class="pill p-mid">Yếu</span></td></tr>
+        <tr><td class="seg-name">Creator affiliate bán thời gian</td><td>Gần như bằng 0: đăng miễn phí, hoa hồng mỗi đơn nhỏ (Shopee VN tới khoảng 7% [E9]).</td><td>Đăng nhiều video rồi xem cái nào chạy là cách rẻ nhất.</td><td><span class="pill p-lo">Không cần</span></td></tr>
+        <tr><td class="seg-name">Người dùng agent/AI làm video hàng loạt</td><td>Mỗi video gần như không tốn tiền; rủi ro là bị cấm hoặc không nhận hoa hồng [E6].</td><td>Họ tối ưu số lượng, không tối ưu từng video.</td><td><span class="pill p-lo">Không cần</span></td></tr>
+        <tr><td class="seg-name">Sàn (đội Trust &amp; Safety / creator program)</td><td>Nội dung sai trên sàn làm mất lòng tin người mua và rủi ro pháp lý cho sàn.</td><td>Sàn đã có kiểm duyệt sau đăng; công cụ trước đăng là đối tác, không phải khách đầu tiên.</td><td><span class="pill p-mid">Đối tác về sau</span></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <h3>"Shop health" đổi thành gì cho từng nhóm</h3>
+      <ul>
+        <li><b>Brand duyệt KOC:</b> sức khỏe của <i>creator đang nộp bài</i>: lịch sử vi phạm, tỷ lệ chuyển đổi các video trước, độ khớp tệp người xem với sản phẩm.</li>
+        <li><b>Creator / KOC:</b> sức khỏe kênh của chính họ: hiệu quả video gần đây, trạng thái tài khoản affiliate, số lượt video gắn giỏ còn lại.</li>
+        <li><b>Seller SME:</b> giữ shop health như hiện tại.</li>
+      </ul>
+      <p class="small">Trong mọi trường hợp, phần này là thông tin tham khảo, không cộng vào điểm của video.</p>
+    </div>
+    <div class="card">
+      <h3>Tính năng ưu tiên nếu chọn brand duyệt KOC</h3>
+      <ul>
+        <li>Phiếu trả về cho creator: lỗi cần sửa kèm mốc thời gian (đã có <code>fixes.py</code>, <code>markers.py</code>).</li>
+        <li>So bản 1 với bản 2 sau khi creator sửa.</li>
+        <li>Danh mục claim được phép cho từng SKU, kèm giấy tờ.</li>
+        <li>Khai báo quan hệ hợp tác để chấm được <code>P04</code>.</li>
+        <li>Luật quảng cáo mỹ phẩm, thực phẩm chức năng Việt Nam vào policy baseline, có URL nguồn.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Bằng chứng</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Mã</th><th>Nội dung</th><th>Độ tin cậy</th><th>Nguồn</th></tr></thead>
+      <tbody>
+        <tr><td class="num">E1</td><td>Livestream và video ngắn chiếm hơn 25% đơn hàng hàng hóa vật lý của Shopee ở Đông Nam Á (Q2 2026); đơn affiliate từ creator Facebook tăng hơn 85% so với quý trước.</td><td><span class="pill p-hi">Cao</span></td><td><a href="https://cdn.sea.com/investor/2Q2026/wFBC39MbqnfLb3MGY6LP/2026.08.11%20Sea%20Second%20Quarter%202026%20Results%20Deck.pdf">Sea Q2 2026 results deck</a>, <a href="https://www.webull.com/news/15387032384840704">transcript</a></td></tr>
+        <tr><td class="num">E2</td><td>Quảng cáo sai sự thật: cá nhân 60–80 triệu, tổ chức 120–160 triệu (Nghị định 38/2021). Một số trang cho rằng từ 15/05/2026 (Nghị định 87/2026) là 80–100 triệu và 160–200 triệu. Mỹ phẩm quảng cáo như thuốc: tổ chức 30–40 triệu; thực phẩm chức năng gây hiểu nhầm là thuốc: 20–30 triệu.</td><td><span class="pill p-mid">Trung bình</span> (mức 2026 <span class="pill p-lo">Thấp</span>, chưa đối chiếu văn bản gốc)</td><td><a href="https://ketoanthuanthien.vn/hoi-dap/quang-cao-sai-su-that-bi-phat-bao-nhieu-tien/">Kế toán Thuận Thiên</a>, <a href="https://luatvietnam.vn/hanh-chinh/quang-cao-sai-su-that-bi-phat-the-nao-570-92828-article.html">LuatVietnam</a>, <a href="https://thuvienphapluat.vn/phap-luat-nha-dat/quang-cao-thuc-pham-chuc-nang-gay-hieu-nham-bi-phat-hanh-chinh-bao-nhieu-1835.html">Thư viện Pháp luật</a>, <a href="https://lsvn.vn/phat-den-20-trieu-dong-doi-voi-quang-cao-my-pham-co-noi-dung-khong-phu-hop1641434080.html">LSVN</a></td></tr>
+        <tr><td class="num">E3</td><td>KOL và brand có thể cùng bị xử phạt và liên đới bồi thường khi người tiêu dùng bị thiệt hại.</td><td><span class="pill p-mid">Trung bình</span></td><td><a href="https://apolatlegal.com/kols-streamers-and-legal-liability-for-false-advertising/">Apolat Legal</a>, <a href="https://hethongphapluat.com/phap-luat/huong-dan-tin-tuc/kols-quang-cao-sai-su-cai-gia-dat-tu-phat-hanh-chinh-den-nguy-co-ngoi-tu.html">Hệ thống Pháp luật</a></td></tr>
+        <tr><td class="num">E4</td><td>Giá một video TikTok: nano khoảng 25–200 USD, micro khoảng 200–1.500 USD (số liệu toàn cầu, chưa có bảng giá Việt Nam).</td><td><span class="pill p-lo">Thấp cho VN</span></td><td><a href="https://influee.co/blog/tiktok-influencer-rates">Influee</a></td></tr>
+        <tr><td class="num">E5</td><td>2026: creator xác minh bằng CCCD gắn chip, giới hạn video gắn giỏ hàng; brand ưu tiên kênh sạch vi phạm hơn kênh lớn đang vi phạm.</td><td><span class="pill p-mid">Trung bình</span></td><td><a href="https://www.brandsvietnam.com/congdong/topic/tiktok-shop-affiliate-mua-cuoi-nam-2026-koc-can-chuan-bi-gi-khi-luat-choi-da-doi">Brands Vietnam</a></td></tr>
+        <tr><td class="num">E6</td><td>TikTok Shop (Mỹ, 05/2026) cấm giọng AI và nội dung ảnh tĩnh trong livestream và video bán hàng; SharkNinja, Rare Beauty phản đối video affiliate làm bằng AI.</td><td><span class="pill p-mid">Trung bình</span></td><td><a href="https://ppc.land/tiktok-shops-quality-rules-ban-ai-voices-and-still-images-from-lives/">PPC Land</a>, <a href="https://www.emarketer.com/content/ai-reshapes-tiktok-shop-affiliate-playbook">eMarketer</a>, <a href="https://gofishdigital.com/press-release/ai-videos-are-flooding-tiktok-shop/">Go Fish Digital</a></td></tr>
+        <tr><td class="num">E7</td><td>Brand đã trả tiền cho công cụ phân tích creative: Motion 750 USD/tháng (Starter), 1.200 USD/tháng (Pro); FastMoss khoảng 47–139 USD/tháng.</td><td><span class="pill p-mid">Trung bình</span></td><td><a href="https://creatify.ai/blog/motion-pricing-(2026)-plans-credits-and-what-you-ll-actually-pay">Creatify</a>, <a href="https://delzonic.com/blogs/fastmoss-pricing-2026/">Delzonic</a></td></tr>
+        <tr><td class="num">E8</td><td>Shopee có điểm phạt theo quý, có thể xóa sản phẩm/video vi phạm và hạn chế quyền bán.</td><td><span class="pill p-mid">Trung bình</span> (chính sách 2024)</td><td><a href="https://www.lmc.vn/blog/knowledge-22/off-shopee-transactions-what-you-need-to-know-and-how-to-avoid-violations-1401">LMC</a>, <a href="https://www.flashfulfillment.co.th/en/knowledge-center/seller-penalty-points-rules-shopee-lazada-20260711">Flash Fulfillment</a></td></tr>
+        <tr><td class="num">E9</td><td>Hoa hồng Shopee VN app tới khoảng 7% CPS (trang không ghi ngày); Shopee SG từ 01/2026: đơn từ mạng xã hội 2% tới 7%.</td><td><span class="pill p-lo">Thấp</span></td><td><a href="https://blog.involve.asia/new-advertisers/shopee-vn-mobile-app-affiliate-program-live-involve-asia">Involve Asia</a>, <a href="https://help.shopee.sg/10/article/191914-Commissions-Structure-(W.e.f.-2-January-2026)">Shopee SG</a></td></tr>
+        <tr><td class="num">E10</td><td>Từ 05/2026 phí hoa hồng nền tảng TikTok Shop khoảng 9–17,8% tùy ngành; Shopee, Lazada cũng tăng phí. Seller bị ép biên lợi nhuận nên mỗi đơn từ video càng quý.</td><td><span class="pill p-mid">Trung bình</span></td><td><a href="https://www.brandsvietnam.com/congdong/topic/tiktok-shop-affiliate-mua-cuoi-nam-2026-koc-can-chuan-bi-gi-khi-luat-choi-da-doi">Brands Vietnam</a></td></tr>
+      </tbody>
+    </table></div>
+    <p class="small">Chưa tìm được: số lượng creator affiliate ở Việt Nam, bảng giá KOC bằng VND, chính sách khóa tài khoản Shopee Affiliate VN. Điểm của nhóm "Sàn" và "Performance marketer" dựa nhiều vào suy luận hơn các nhóm khác.</p>
+  </section>
+</div>
+
+<script>
+const CRITERIA = [
+  { k: "pain", label: "Đau khi đăng sai", w: 25 },
+  { k: "cost", label: "Chi phí sai / giá SP", w: 20 },
+  { k: "pay", label: "Khả năng trả tiền", w: 25 },
+  { k: "vol", label: "Khối lượng video", w: 10 },
+  { k: "fit", label: "Khớp repo hiện tại", w: 10 },
+  { k: "reach", label: "Tiếp cận trong 6 tháng", w: 10 },
+];
+const SEGMENTS = [
+  { name: "Brand / shop ngành nhạy cảm duyệt video KOC", note: "mỹ phẩm, TPCN, mẹ & bé · E2 E3 E4 E7", s: { pain: 5, cost: 5, pay: 4, vol: 4, fit: 5, reach: 3 } },
+  { name: "Agency / MCN quản lý nhiều creator", note: "bán sự an toàn cho brand · E3 E5 E7", s: { pain: 4, cost: 4, pay: 4, vol: 5, fit: 4, reach: 3 } },
+  { name: "Sàn (Trust & Safety / creator program)", note: "đối tác dài hạn · E1", s: { pain: 4, cost: 3, pay: 5, vol: 5, fit: 3, reach: 1 } },
+  { name: "Performance marketer chạy ads trên UGC", note: "tiền ads là chi phí sai · E7 E10", s: { pain: 3, cost: 4, pay: 5, vol: 3, fit: 3, reach: 3 } },
+  { name: "KOC / affiliate chuyên nghiệp", note: "tài khoản là tài sản · E5 E9", s: { pain: 3, cost: 3, pay: 2, vol: 4, fit: 4, reach: 4 } },
+  { name: "Seller SME tự làm video", note: "ngân sách thấp · E8 E10", s: { pain: 3, cost: 3, pay: 2, vol: 2, fit: 5, reach: 4 } },
+  { name: "Người dùng agent/AI làm video hàng loạt", note: "tối ưu số lượng · E6", s: { pain: 3, cost: 1, pay: 2, vol: 5, fit: 2, reach: 4 } },
+  { name: "Creator affiliate bán thời gian", note: "đăng thử gần như miễn phí · E9", s: { pain: 2, cost: 1, pay: 1, vol: 3, fit: 3, reach: 5 } },
+];
+const weights = Object.fromEntries(CRITERIA.map(c => [c.k, c.w]));
+const KEY = "target-weights-v1";
+try { const saved = JSON.parse(localStorage.getItem(KEY) || "null"); if (saved) Object.assign(weights, saved); } catch (e) {}
+
+function score(seg) {
+  const sum = CRITERIA.reduce((a, c) => a + weights[c.k], 0) || 1;
+  return CRITERIA.reduce((a, c) => a + seg.s[c.k] * weights[c.k], 0) / sum;
+}
+function render() {
+  const ranked = SEGMENTS.map(s => ({ ...s, total: score(s) })).sort((a, b) => b.total - a.total);
+  document.getElementById("bars").innerHTML = ranked.map((s, i) =>
+    `<div class="bar${i === 0 ? " top" : ""}"><span>${s.name}</span><span class="track"><span class="fill" style="width:${(s.total / 5 * 100).toFixed(1)}%"></span></span><span class="v">${s.total.toFixed(2)}</span></div>`).join("");
+  const head = `<thead><tr><th>Nhóm khách hàng</th>${CRITERIA.map(c => `<th class="num">${c.label}<br>${weights[c.k]}%</th>`).join("")}<th class="num">Tổng /5</th></tr></thead>`;
+  const body = ranked.map((s, i) => `<tr${i === 0 ? ' class="pick"' : ""}><td><div class="seg-name">${s.name}</div><div class="seg-note">${s.note}</div></td>${CRITERIA.map(c => `<td class="num"><span class="dot s${s.s[c.k]}">${s.s[c.k]}</span></td>`).join("")}<td class="num total">${s.total.toFixed(2)}</td></tr>`).join("");
+  document.getElementById("score").innerHTML = head + "<tbody>" + body + "</tbody>";
+  CRITERIA.forEach(c => { const o = document.getElementById("o-" + c.k); if (o) o.value = weights[c.k] + "%"; });
+}
+document.getElementById("weights").innerHTML = CRITERIA.map(c =>
+  `<label for="w-${c.k}">${c.label} <output id="o-${c.k}">${weights[c.k]}%</output><input type="range" id="w-${c.k}" min="0" max="50" step="5" value="${weights[c.k]}"></label>`).join("");
+CRITERIA.forEach(c => document.getElementById("w-" + c.k).addEventListener("input", e => {
+  weights[c.k] = Number(e.target.value);
+  try { localStorage.setItem(KEY, JSON.stringify(weights)); } catch (err) {}
+  render();
+}));
+document.getElementById("reset").addEventListener("click", () => {
+  CRITERIA.forEach(c => { weights[c.k] = c.w; document.getElementById("w-" + c.k).value = c.w; });
+  try { localStorage.removeItem(KEY); } catch (err) {}
+  render();
+});
+render();
+</script>
+
+</body>
+</html>

@@ -4,13 +4,15 @@ Mục tiêu: dựng lại giao diện của Lab thành một sản phẩm demo �
 
 ## 1. Sản phẩm làm gì
 
-Seller upload một video bán hàng **trước khi đăng**, gắn với một SKU trong shop của họ. AI xem video (frames, lời thoại), đối chiếu với dữ liệu shop/SKU, dữ liệu thị trường đã cào (TikTok Shop qua FastMoss, Google Shopping qua SerpAPI) và chính sách các nền tảng. Kết quả là **điểm, lý do và việc cần sửa**. Mọi con số đều truy được về nguồn.
+Khách hàng mục tiêu (chốt 31/10/2026, xem [target_customer.md](target_customer.md)): brand/shop ngành nhạy cảm (mỹ phẩm, thực phẩm bảo vệ sức khỏe, mẹ & bé) duyệt video của KOC/creator affiliate trước khi đăng.
+
+Người duyệt của brand nhận một video bán hàng **trước khi creator đăng**, gắn với một SKU trong shop của brand. AI xem video (frames, lời thoại), đối chiếu với dữ liệu shop/SKU, dữ liệu thị trường đã cào (TikTok Shop qua FastMoss, Google Shopping qua SerpAPI) và chính sách các nền tảng. Kết quả là **điểm, lý do và việc cần sửa**. Mọi con số đều truy được về nguồn.
 
 ## 2. Người dùng: 2 lớp giao diện
 
 | Lớp | Ai | Cần gì |
 |---|---|---|
-| **Seller view** (mặc định) | Chủ shop, người làm content | Một điểm tổng dễ hiểu, điểm từng phần, vài việc cần sửa có mốc thời gian trong video, cảnh báo chính sách. Không có thuật ngữ kỹ thuật. |
+| **Seller view** (mặc định) | Người duyệt của brand (chuyên viên booking/content), creator nộp bài | Kết luận duyệt hay trả về, điểm tổng dễ hiểu, điểm từng phần, vài việc cần sửa có mốc thời gian để gửi lại cho creator, cảnh báo chính sách. Không có thuật ngữ kỹ thuật. |
 | **Audit view** ("How was this scored?") | Ban giám khảo, người muốn kiểm chứng | Luồng agent chạy thế nào, AI đã xem gì, Decisions API hỏi gì và trả lời gì, đối chiếu chéo, code tính điểm, nguồn dữ liệu. |
 
 Seller view là màn chính. Audit view mở ra từ seller view (nút, tab hoặc drawer), không phải một ứng dụng riêng.
