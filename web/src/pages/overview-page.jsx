@@ -1,16 +1,7 @@
 import {
-  ArrowRight,
   BarChart3,
-  CheckCircle2,
-  ExternalLink,
-  Flame,
   Play,
   Plus,
-  ShoppingBag,
-  Sparkles,
-  Store,
-  Tag,
-  TrendingUp,
   Upload,
   Video,
 } from 'lucide-react'
@@ -23,8 +14,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart'
 import { useFetch } from '@/hooks/use-fetch'
-import { compactVnd, db, vnd } from '@/lib/api'
-import { cn } from '@/lib/utils'
+import { compactVnd, db } from '@/lib/api'
 
 const chartConfig = {
   gmv: { label: 'GMV 30 ngày', color: '#ee4d2d' },
