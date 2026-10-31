@@ -43,160 +43,274 @@ const DEMO = {
   ],
 }
 
-// ---------- how it works: one pipeline drawn in its own units (viewBox), so it scales as a whole ----------
+// ---------- how it works: the demo run (#46) replayed as a run console ----------
 
-const FLOW_COLS = [
-  { x: 0, label: 'Bạn chọn' },
-  { x: 300, label: 'Agent chạy' },
-  { x: 620, label: 'Decisions chấm' },
-  { x: 900, label: 'Bạn nhận' },
+// one colour per kind of work; every box, log line and bar uses the same key
+const LANES = {
+  video: { label: 'đọc video' },
+  data: { label: 'số liệu & thị trường' },
+  decide: { label: 'Decisions chấm' },
+  policy: { label: 'policy' },
+  write: { label: 'tổng hợp' },
+}
+// real trace lines of run #46, with the cumulative time they finished at
+const RUN_LOG = [
+  { t: 0.37, lane: 'write', agent: 'orchestrator', text: 'lấy thông tin video và shop' },
+  { t: 0.72, lane: 'video', agent: 'video_analyst', text: 'trích xuất lời nói, cảnh, chữ trên hình' },
+  { t: 3.53, lane: 'data', agent: 'metrics_analyst', text: 'nạp số liệu shop 30 ngày' },
+  { t: 3.55, lane: 'data', agent: 'product_scout', text: 'nạp listing và snapshot thị trường' },
+  { t: 3.55, lane: 'video', agent: 'video_analyst', text: 'nhận diện nhạc nền' },
+  { t: 4.01, lane: 'data', agent: 'product_scout', text: 'đối chiếu claim với listing' },
+  { t: 8.07, lane: 'decide', agent: 'decision_scorer', text: '36 câu, một lần gọi · 12.844 token' },
+  { t: 8.08, lane: 'policy', agent: 'policy_guard', text: 'rule + reviewer, trích nguyên văn' },
+  { t: 8.09, lane: 'decide', agent: 'auditor', text: 'kiểm chéo các câu điểm thấp' },
+  { t: 8.09, lane: 'write', agent: 'orchestrator', text: 'ghép điểm 55 và 5 việc cần sửa' },
+  { t: 30.14, lane: 'video', agent: 'video_analyst', text: 'khoanh vùng lỗi trên khung hình · 22,0s' },
+  { t: 44.52, lane: 'write', agent: 'insight_writer', text: 'viết tóm tắt dễ hiểu · xong' },
 ]
-const INPUTS = [
-  { id: 'video', title: 'Video', sub: 'lời nói + khung hình' },
-  { id: 'sku', title: 'Listing SKU', sub: 'giá, mô tả, đánh giá' },
-  { id: 'shop', title: 'Số liệu shop', sub: '30 ngày gần nhất' },
-  { id: 'market', title: 'Thị trường', sub: 'FastMoss, Google Shopping' },
-  { id: 'policy', title: 'Quy tắc sàn', sub: 'TikTok Shop, Shopee, Ads' },
-].map((n, i) => ({ ...n, x: 0, y: 46 + i * 76, w: 200, h: 56 }))
-const AGENTS = [
-  { id: 'read', title: 'Đọc video', sub: 'transcript, cảnh, chữ trên hình' },
-  { id: 'match', title: 'Đối chiếu', sub: 'SKU, shop, thị trường' },
-  { id: 'rules', title: 'Kiểm policy', sub: 'trích nguyên văn câu vi phạm' },
-].map((n, i) => ({ ...n, x: 300, y: 88 + i * 108, w: 220, h: 64 }))
-const DECIDE = { id: 'decide', x: 620, y: 150, w: 180, h: 156 }
-const OUT = {
-  score: { x: 900, y: 46, w: 236, h: 84 },
-  radar: { x: 900, y: 156, w: 236, h: 144 },
-  fixes: { x: 900, y: 326, w: 236, h: 86 },
-}
-const node = (list, id) => list.find((n) => n.id === id)
-const right = (n) => [n.x + n.w, n.y + n.h / 2]
-const left = (n, dy = 0) => [n.x, n.y + n.h / 2 + dy]
-const curve = ([x1, y1], [x2, y2]) => {
-  const mx = (x1 + x2) / 2
-  return `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`
-}
-const FLOW_EDGES = [
-  curve(right(node(INPUTS, 'video')), left(node(AGENTS, 'read'))),
-  curve(right(node(INPUTS, 'sku')), left(node(AGENTS, 'match'), -14)),
-  curve(right(node(INPUTS, 'shop')), left(node(AGENTS, 'match'))),
-  curve(right(node(INPUTS, 'market')), left(node(AGENTS, 'match'), 14)),
-  curve(right(node(INPUTS, 'policy')), left(node(AGENTS, 'rules'))),
-  curve(right(node(AGENTS, 'read')), left(DECIDE, -40)),
-  curve(right(node(AGENTS, 'match')), left(DECIDE)),
-  curve(right(node(AGENTS, 'rules')), left(DECIDE, 40)),
-  curve(right(DECIDE), left(OUT.score)),
-  curve(right(DECIDE), left(OUT.radar)),
-  curve(right(DECIDE), left(OUT.fixes, -12)),
-  // policy findings go straight to the fix list: a rule hit is reported, never scored away
-  `M${right(node(AGENTS, 'rules')).join(',')} C 600,${348 + 40} 820,${OUT.fixes.y + 58} ${OUT.fixes.x},${OUT.fixes.y + 58}`,
+const LANE_TOTAL = RUN_LOG.reduce((m, l) => ({ ...m, [l.lane]: (m[l.lane] ?? 0) + 1 }), {})
+const fmtSec = (t) => `${t.toFixed(2).replace('.', ',')}s`
+
+// ---------- the pipeline map beside the console: same lanes, lit by the replay's state ----------
+
+const MAP_IN = [
+  { id: 'video', lane: 'video', title: 'Video' },
+  { id: 'listing', lane: 'data', title: 'Listing' },
+  { id: 'shop', lane: 'data', title: 'Shop' },
+  { id: 'market', lane: 'data', title: 'Thị trường' },
+  { id: 'rules', lane: 'policy', title: 'Quy tắc' },
+].map((n, i) => ({ ...n, x: 4 + i * 83, y: 30, w: 76, h: 40 }))
+const MAP_AGENTS = [
+  { id: 'read', lane: 'video', title: 'Đọc video', sub: 'lời nói, cảnh' },
+  { id: 'match', lane: 'data', title: 'Đối chiếu', sub: 'SKU, thị trường' },
+  { id: 'guard', lane: 'policy', title: 'Policy', sub: 'rule + reviewer' },
+].map((n, i) => ({ ...n, x: 4 + i * 142, y: 128, w: 128, h: 52 }))
+const MAP_DECIDE = { id: 'decide', lane: 'decide', x: 104, y: 236, w: 212, h: 74 }
+const MAP_OUT = [
+  { id: 'score', x: 4, y: 374, w: 128, h: 104 },
+  { id: 'radar', x: 146, y: 374, w: 128, h: 104 },
+  { id: 'fixes', x: 288, y: 374, w: 128, h: 104 },
 ]
-// the demo run's six radar answers, in the radar's axis order
-const RADAR = [92, 47, 76, 10, 44, 50]
-
-function FlowNode({ n }) {
-  return (
-    <g className="lp-flow-node">
-      <rect x={n.x} y={n.y} width={n.w} height={n.h} rx="14" />
-      <text x={n.x + 16} y={n.y + n.h / 2 - 3} className="lp-flow-title">{n.title}</text>
-      <text x={n.x + 16} y={n.y + n.h / 2 + 15} className="lp-flow-sub">{n.sub}</text>
-    </g>
-  )
+const mid = (n) => n.x + n.w / 2
+const vcurve = (a, b, bx = mid(b)) => {
+  const y1 = a.y + a.h
+  const y2 = b.y
+  const my = (y1 + y2) / 2
+  return `M${mid(a)},${y1} C${mid(a)},${my} ${bx},${my} ${bx},${y2}`
 }
+const byId = (list, id) => list.find((n) => n.id === id)
+const MAP_EDGES = [
+  { lane: 'video', d: vcurve(byId(MAP_IN, 'video'), byId(MAP_AGENTS, 'read')) },
+  { lane: 'data', d: vcurve(byId(MAP_IN, 'listing'), byId(MAP_AGENTS, 'match'), 196) },
+  { lane: 'data', d: vcurve(byId(MAP_IN, 'shop'), byId(MAP_AGENTS, 'match')) },
+  { lane: 'data', d: vcurve(byId(MAP_IN, 'market'), byId(MAP_AGENTS, 'match'), 240) },
+  { lane: 'policy', d: vcurve(byId(MAP_IN, 'rules'), byId(MAP_AGENTS, 'guard')) },
+  { lane: 'video', d: vcurve(byId(MAP_AGENTS, 'read'), MAP_DECIDE, 160) },
+  { lane: 'data', d: vcurve(byId(MAP_AGENTS, 'match'), MAP_DECIDE) },
+  { lane: 'policy', d: vcurve(byId(MAP_AGENTS, 'guard'), MAP_DECIDE, 260) },
+  { lane: 'decide', d: vcurve(MAP_DECIDE, MAP_OUT[0]) },
+  { lane: 'decide', d: vcurve(MAP_DECIDE, MAP_OUT[1]) },
+  { lane: 'decide', d: vcurve(MAP_DECIDE, MAP_OUT[2], 330) },
+  // a rule hit goes straight to the fix list: it is reported, never scored away
+  { lane: 'policy', bypass: true, d: `M${mid(MAP_AGENTS[2]) + 40},180 C 412,250 412,320 400,374` },
+]
+const RADAR = [92, 47, 76, 10, 44, 50] // the demo run's six radar answers
 
-function MiniRadar({ cx, cy, r }) {
+function MapRadar({ cx, cy, r, lit }) {
   const pt = (i, v) => {
     const a = -Math.PI / 2 + (2 * Math.PI * i) / RADAR.length
     return [cx + Math.cos(a) * r * v, cy + Math.sin(a) * r * v]
   }
   const ring = (v) => RADAR.map((_, i) => pt(i, v).join(',')).join(' ')
   return (
-    <g className="lp-flow-radar">
+    <g className="lp-map-radar">
       <polygon points={ring(1)} className="ring" />
       <polygon points={ring(0.5)} className="ring" />
-      <polygon points={ring(0.75)} className="thr" />
-      <polygon points={RADAR.map((v, i) => pt(i, v / 100).join(',')).join(' ')} className="shape" />
-      {RADAR.map((v, i) => {
-        const [x, y] = pt(i, v / 100)
-        return <circle key={i} cx={x} cy={y} r="3" className={v >= 75 ? 'good' : v >= 50 ? 'warn' : 'bad'} />
-      })}
+      {lit && <polygon points={RADAR.map((v, i) => pt(i, v / 100).join(',')).join(' ')} className="shape" />}
     </g>
   )
 }
 
 /**
- * The pipeline from what the seller picks to what they get back. Light pulses travel the edges (SMIL motion along
- * each path), staggered so the picture reads left to right; under reduced motion only the static graph shows.
+ * Vertical map of the run: inputs → three agent lanes → Decisions → what the seller gets. Each node and edge takes
+ * its lane's state from the replay (idle dim, live glowing with pulses on its edges, done solid).
  */
-function Flow() {
-  const s = OUT.score
-  const rd = OUT.radar
-  const fx = OUT.fixes
+function RunMap({ laneState, finished }) {
+  const st = (lane) => laneState[lane] ?? 'idle'
+  const out = finished ? 'done' : 'idle'
   return (
-    <div className="lp-flow-scroll">
-      <svg className="lp-flow" viewBox="0 0 1136 420" role="img" aria-label="Video, listing SKU, số liệu shop, thị trường và quy tắc sàn đi qua ba agent, được Decisions chấm 36 câu, ra điểm, radar và danh sách việc cần sửa theo mốc thời gian.">
-        <defs>
-          <filter id="lpLift" x="-20%" y="-30%" width="140%" height="180%">
-            <feDropShadow dx="0" dy="10" stdDeviation="12" floodColor="#111214" floodOpacity=".12" />
-          </filter>
-          <linearGradient id="lpEdge" x1="0" x2="1">
-            <stop offset="0" stopColor="#ee4d2d" stopOpacity=".15" />
-            <stop offset="1" stopColor="#ee4d2d" stopOpacity=".45" />
-          </linearGradient>
-        </defs>
-        {FLOW_COLS.map((c) => (
-          <text key={c.label} x={c.x} y="18" className="lp-flow-col">{c.label}</text>
-        ))}
-        {FLOW_EDGES.map((d, i) => (
-          <g key={i}>
-            <path d={d} className="lp-flow-edge" />
-            <circle r="3.5" className="lp-flow-pulse">
-              <animateMotion dur="2.6s" begin={`${(i % 5) * 0.45 + (i >= 5 ? 0.9 : 0) + (i >= 8 ? 0.9 : 0)}s`} repeatCount="indefinite" path={d} />
+    <svg className="lp-map" viewBox="0 0 420 484" aria-hidden="true">
+      <text x="4" y="18" className="lp-map-col">bạn chọn</text>
+      <text x="4" y="116" className="lp-map-col">agent chạy song song</text>
+      <text x="4" y="226" className="lp-map-col">Decisions chấm</text>
+      <text x="4" y="362" className="lp-map-col">bạn nhận</text>
+      {MAP_EDGES.map((e, i) => (
+        <g key={i} className={`lp-map-edge is-${e.lane} is-${e.lane === 'decide' ? out : st(e.lane)}${e.bypass ? ' is-bypass' : ''}`}>
+          <path d={e.d} />
+          {st(e.lane) === 'live' && (
+            <circle r="3">
+              <animateMotion dur="1.1s" repeatCount="indefinite" path={e.d} />
             </circle>
+          )}
+        </g>
+      ))}
+      {MAP_IN.map((n) => (
+        <g key={n.id} className={`lp-map-node is-${n.lane} is-${st(n.lane)}`}>
+          <rect x={n.x} y={n.y} width={n.w} height={n.h} />
+          <text x={mid(n)} y={n.y + 25} textAnchor="middle">{n.title}</text>
+        </g>
+      ))}
+      {MAP_AGENTS.map((n) => (
+        <g key={n.id} className={`lp-map-node is-${n.lane} is-${st(n.lane)}`}>
+          <rect x={n.x} y={n.y} width={n.w} height={n.h} />
+          <text x={n.x + 12} y={n.y + 22} className="t">{n.title}</text>
+          <text x={n.x + 12} y={n.y + 40} className="s">{n.sub}</text>
+        </g>
+      ))}
+      <g className={`lp-map-node is-decide is-${st('decide')}`}>
+        <rect x={MAP_DECIDE.x} y={MAP_DECIDE.y} width={MAP_DECIDE.w} height={MAP_DECIDE.h} />
+        <text x={MAP_DECIDE.x + 14} y={MAP_DECIDE.y + 24} className="t">Decisions</text>
+        <text x={MAP_DECIDE.x + 14} y={MAP_DECIDE.y + 56} className="big">36</text>
+        <text x={MAP_DECIDE.x + 56} y={MAP_DECIDE.y + 56} className="s">câu · rubric 5 mức</text>
+      </g>
+      <g className={`lp-map-node is-out is-${out}`}>
+        <rect x={MAP_OUT[0].x} y={MAP_OUT[0].y} width={MAP_OUT[0].w} height={MAP_OUT[0].h} />
+        <circle cx={mid(MAP_OUT[0])} cy={MAP_OUT[0].y + 44} r="24" className="ring-bg" />
+        {finished && <circle cx={mid(MAP_OUT[0])} cy={MAP_OUT[0].y + 44} r="24" className="ring" strokeDasharray={`${0.55 * 2 * Math.PI * 24} 999`} transform={`rotate(-90 ${mid(MAP_OUT[0])} ${MAP_OUT[0].y + 44})`} />}
+        <text x={mid(MAP_OUT[0])} y={MAP_OUT[0].y + 50} textAnchor="middle" className="num">{finished ? 55 : '—'}</text>
+        <text x={mid(MAP_OUT[0])} y={MAP_OUT[0].y + 92} textAnchor="middle" className="s">điểm</text>
+      </g>
+      <g className={`lp-map-node is-out is-${out}`}>
+        <rect x={MAP_OUT[1].x} y={MAP_OUT[1].y} width={MAP_OUT[1].w} height={MAP_OUT[1].h} />
+        <MapRadar cx={mid(MAP_OUT[1])} cy={MAP_OUT[1].y + 44} r={30} lit={finished} />
+        <text x={mid(MAP_OUT[1])} y={MAP_OUT[1].y + 92} textAnchor="middle" className="s">radar 36 câu</text>
+      </g>
+      <g className={`lp-map-node is-out is-${finished || st('policy') === 'done' ? 'done' : 'idle'}`}>
+        <rect x={MAP_OUT[2].x} y={MAP_OUT[2].y} width={MAP_OUT[2].w} height={MAP_OUT[2].h} />
+        {[['00:09', 'is-bad'], ['00:17', 'is-bad'], ['00:35', 'is-warn']].map(([t, c], i) => (
+          <g key={t}>
+            <rect x={MAP_OUT[2].x + 12} y={MAP_OUT[2].y + 12 + i * 22} width="44" height="16" className={`tc ${c}`} />
+            <text x={MAP_OUT[2].x + 34} y={MAP_OUT[2].y + 24 + i * 22} textAnchor="middle" className="tct">{t}</text>
           </g>
         ))}
-        <g filter="url(#lpLift)">
-          {INPUTS.map((n) => <FlowNode key={n.id} n={n} />)}
-          {AGENTS.map((n) => <FlowNode key={n.id} n={n} />)}
-          <g className="lp-flow-node is-decide">
-            <rect x={DECIDE.x} y={DECIDE.y} width={DECIDE.w} height={DECIDE.h} rx="18" />
-            <text x={DECIDE.x + 18} y={DECIDE.y + 34} className="lp-flow-title">Decisions</text>
-            <text x={DECIDE.x + 18} y={DECIDE.y + 84} className="lp-flow-big">36</text>
-            <text x={DECIDE.x + 18} y={DECIDE.y + 108} className="lp-flow-sub">câu hỏi, rubric 5 mức</text>
-            <text x={DECIDE.x + 18} y={DECIDE.y + 130} className="lp-flow-sub">một lần gọi</text>
-          </g>
-          <g className="lp-flow-node">
-            <rect x={s.x} y={s.y} width={s.w} height={s.h} rx="14" />
-            <circle cx={s.x + 42} cy={s.y + s.h / 2} r="24" className="lp-flow-ring-bg" />
-            <circle
-              cx={s.x + 42}
-              cy={s.y + s.h / 2}
-              r="24"
-              className="lp-flow-ring"
-              strokeDasharray={`${(55 / 100) * 2 * Math.PI * 24} ${2 * Math.PI * 24}`}
-              transform={`rotate(-90 ${s.x + 42} ${s.y + s.h / 2})`}
-            />
-            <text x={s.x + 42} y={s.y + s.h / 2 + 6} textAnchor="middle" className="lp-flow-ringnum">55</text>
-            <text x={s.x + 80} y={s.y + s.h / 2 - 3} className="lp-flow-title">Sửa rồi đăng</text>
-            <text x={s.x + 80} y={s.y + s.h / 2 + 15} className="lp-flow-sub">điểm / ngưỡng 75</text>
-          </g>
-          <g className="lp-flow-node">
-            <rect x={rd.x} y={rd.y} width={rd.w} height={rd.h} rx="14" />
-            <MiniRadar cx={rd.x + 66} cy={rd.y + rd.h / 2} r={50} />
-            <text x={rd.x + 134} y={rd.y + rd.h / 2 - 3} className="lp-flow-title">Radar</text>
-            <text x={rd.x + 134} y={rd.y + rd.h / 2 + 15} className="lp-flow-sub">từng câu hỏi</text>
-          </g>
-          <g className="lp-flow-node">
-            <rect x={fx.x} y={fx.y} width={fx.w} height={fx.h} rx="14" />
-            <rect x={fx.x + 14} y={fx.y + 16} width="48" height="22" rx="6" className="lp-flow-tc is-bad" />
-            <text x={fx.x + 38} y={fx.y + 31} textAnchor="middle" className="lp-flow-tctext">00:09</text>
-            <text x={fx.x + 72} y={fx.y + 32} className="lp-flow-fix">Cảnh trước / sau</text>
-            <rect x={fx.x + 14} y={fx.y + 48} width="48" height="22" rx="6" className="lp-flow-tc is-warn" />
-            <text x={fx.x + 38} y={fx.y + 63} textAnchor="middle" className="lp-flow-tctext">00:35</text>
-            <text x={fx.x + 72} y={fx.y + 64} className="lp-flow-fix">Thêm lời kêu gọi mua</text>
-          </g>
-        </g>
-      </svg>
+        <text x={mid(MAP_OUT[2])} y={MAP_OUT[2].y + 92} textAnchor="middle" className="s">việc cần sửa</text>
+      </g>
+      <text x="416" y="356" textAnchor="end" className="lp-map-note">policy đi thẳng ↓</text>
+    </svg>
+  )
+}
+
+/** Lane box: what the lane does, a progress bar of its own lines, and its state at this point of the replay. */
+function LaneBox({ lane, title, items, done, live }) {
+  const total = LANE_TOTAL[lane]
+  const state = done >= total ? 'xong' : live ? 'đang chạy' : done ? 'chờ' : 'chưa'
+  return (
+    <div className={`lp-con-box is-${lane}${live ? ' is-live' : ''}`}>
+      <p className="lp-con-box-head">
+        <strong>{title}</strong>
+        <span>[ {state} ]</span>
+      </p>
+      <p className="lp-con-bar"><i style={{ '--p': done / total }} /><em>{Math.round((done / total) * 100)}%</em></p>
+      <ul>
+        {items.map((it) => <li key={it}>{it}</li>)}
+      </ul>
+    </div>
+  )
+}
+
+/**
+ * The run console: the demo run replayed line by line while the section is on screen. The log streams at the
+ * bottom, each lane's box fills as its lines land, the status line counts. Under reduced motion it shows the
+ * finished run.
+ */
+function RunConsole() {
+  const ref = useRef(null)
+  const [tick, setTick] = useState(RUN_LOG.length)
+  useEffect(() => {
+    const el = ref.current
+    if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
+    let timer = 0
+    const step = (n) => {
+      setTick(n)
+      timer = window.setTimeout(() => step(n >= RUN_LOG.length ? 0 : n + 1), n >= RUN_LOG.length ? 3600 : 620)
+    }
+    const io = new IntersectionObserver(([e]) => {
+      window.clearTimeout(timer)
+      if (e.isIntersecting) step(0)
+    }, { threshold: 0.35 })
+    io.observe(el)
+    return () => {
+      io.disconnect()
+      window.clearTimeout(timer)
+    }
+  }, [])
+
+  const shown = RUN_LOG.slice(0, tick)
+  const doneIn = (lane) => shown.filter((l) => l.lane === lane).length
+  const live = tick < RUN_LOG.length ? RUN_LOG[tick]?.lane : null
+  const elapsed = shown.length ? shown[shown.length - 1].t : 0
+  const finished = tick >= RUN_LOG.length
+  const steps = finished ? 26 : Math.min(26, Math.round((tick / RUN_LOG.length) * 26))
+  const laneState = Object.fromEntries(
+    Object.keys(LANES).map((id) => [id, live === id ? 'live' : doneIn(id) >= LANE_TOTAL[id] ? 'done' : doneIn(id) ? 'live' : 'idle']),
+  )
+  return (
+    <div className="lp-con" ref={ref} role="img" aria-label="Lượt chấm #46 của video mẫu: 26 bước trong 44,5 giây, ba nhóm agent chạy song song, Decisions chấm 36 câu trong một lần gọi, policy đi riêng, kết quả là điểm 55 và 5 việc cần sửa.">
+      <div className="lp-con-title">
+        <span className="lp-con-dots" aria-hidden="true"><i /><i /><i /></span>
+        <span>preflight — SHOP001-VID01 — lượt #46</span>
+      </div>
+      <p className="lp-con-banner">
+        <b>Preflight run</b> · <span className="is-decide">Decisions 36 câu</span> · <span className="is-video">3 nhóm agent song song</span>
+      </p>
+      <p className="lp-con-legend">
+        {Object.entries(LANES).map(([id, l]) => <span key={id} className={`is-${id}`}><i />{l.label}</span>)}
+      </p>
+
+      <div className="lp-con-grid">
+        <div className="lp-con-mapwrap">
+          <RunMap laneState={laneState} finished={finished} />
+        </div>
+
+        <div className="lp-con-right">
+        <div className="lp-con-lanes">
+          <LaneBox lane="video" title="Đọc video" items={['lời nói, cảnh, chữ', 'nhạc nền', 'khoanh vùng lỗi']} done={doneIn('video')} live={live === 'video'} />
+          <LaneBox lane="data" title="Shop & thị trường" items={['shop 30 ngày', 'listing, giá đối thủ', 'claim ↔ listing']} done={doneIn('data')} live={live === 'data'} />
+          <LaneBox lane="policy" title="Policy" items={['4 nền tảng đăng', 'rule + reviewer', 'trích nguyên văn']} done={doneIn('policy')} live={live === 'policy'} />
+        </div>
+
+        <p className="lp-con-split" aria-hidden="true">gom về Decisions · chấm một lần</p>
+
+        <div className={`lp-con-box is-decide lp-con-decide${live === 'decide' ? ' is-live' : ''}`}>
+          <p className="lp-con-box-head"><strong>Decisions · chấm theo rubric</strong><span>[ {doneIn('decide') ? 'xong' : live === 'decide' ? 'đang chấm' : 'chờ'} ]</span></p>
+          <p className="lp-con-kv"><span>câu hỏi</span><b>36</b><span>mức</span><b>5</b><span>lần gọi</span><b>1</b></p>
+          <p className="lp-con-bar"><i style={{ '--p': doneIn('decide') ? 1 : 0 }} /><em>{doneIn('decide') ? '36/36' : '0/36'}</em></p>
+        </div>
+
+        <div className={`lp-con-box is-out lp-con-result${finished ? ' is-live' : ''}`}>
+          <p className="lp-con-box-head"><strong>Kết quả</strong><span>[ {finished ? 'sẵn sàng' : '…'} ]</span></p>
+          <p className="lp-con-kv"><span>điểm</span><b>{finished ? 55 : '—'}</b><span>mốc</span><b>{finished ? 11 : '—'}</b><span>việc cần sửa</span><b>{finished ? 5 : '—'}</b></p>
+        </div>
+        </div>
+      </div>
+
+      <div className="lp-con-log">
+        <p className="lp-con-log-head">nhật ký lượt chạy <span>[ {finished ? 'xong' : 'live'} ]</span></p>
+        <ol>
+          {shown.slice(-5).map((l) => (
+            <li key={`${l.t}-${l.text}`} className={`is-${l.lane}`}>
+              <span className="lp-con-t">+{fmtSec(l.t)}</span>
+              <span className="lp-con-agent">{l.agent}</span>
+              <span>{l.text}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <p className="lp-con-status">
+        <span><b>$</b> preflight analyze SHOP001-VID01 --decisions</span>
+        <span>bước <b>{steps}/26</b> · {fmtSec(elapsed)}<span className="lp-con-tokens"> · token mới <b>22.384</b> · cache 22.364</span></span>
+      </p>
     </div>
   )
 }
@@ -377,7 +491,7 @@ export default function LandingPage() {
 
         <section className="lp-how" aria-labelledby="steps-title">
           <h2 id="steps-title">Cách hoạt động</h2>
-          <Flow />
+          <RunConsole />
         </section>
 
         <section className="lp-trust" aria-labelledby="trust-title">
