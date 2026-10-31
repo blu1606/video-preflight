@@ -53,7 +53,7 @@ try {
   await ready('http://127.0.0.1:3101/meta');
   start('uv', ['run', 'uvicorn', 'api:app', '--host', '127.0.0.1', '--port', '8100']);
   await ready('http://127.0.0.1:8100/health');
-  start(process.execPath, ['node_modules/vite/bin/vite.js', '--config', 'web/vite.config.js']);
+  start(process.execPath, ['node_modules/vite/bin/vite.js', '--config', 'web/vite.config.ts']);
   await ready('http://127.0.0.1:5180');
   process.stdout.write('\nPreflight sẵn sàng: http://127.0.0.1:5180\nAPI: http://127.0.0.1:8100/docs · DB: http://127.0.0.1:3101\nBackend không auto-reload; Ctrl+C và chạy lại pnpm lab sau khi sửa Python.\n');
 } catch (error) {
