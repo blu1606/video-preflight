@@ -19,5 +19,5 @@ scratch/
 
 # Local exports, db backups and UI review captures
 data.zip
-demo/db/db.backup-*.json
-demo/web/.impeccable/review/
+db/db.backup-*.json
+web/.impeccable/
