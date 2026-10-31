@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "nồi điện DKHOUSE",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1944,
+     "linked_video_count": 6041
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 831112,
+       "name": "Office Stationery & Supplies"
+      },
+      "l3": {
+       "id": 855560,
+       "name": "Cards"
+      }
+     },
+     "ceiling_price": 159.18,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/bc1399e0508746e3ade958c5fd154027~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736405360362751176",
+     "floor_price": 159.18,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-07",
+     "launch_time": 1783365468,
+     "price_display": "159.181 ₫",
+     "product_id": "1736405360362751176",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736405360362751176?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "DKHOUSE Nồi Điện 1.8L Đa Năng, Nồi Cơm, Nồi Áp Suất Nấu Các Món, Tặng Vỉ Hấp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2458645328,
+     "last_28d_units_sold": 14975,
+     "last_7d_gmv": 396652511,
+     "last_7d_units_sold": 2463,
+     "last_90d_gmv": 7023581237,
+     "last_90d_units_sold": 54801,
+     "total_gmv": 9275432068,
+     "total_units_sold": 70873,
+     "yesterday_gmv": 62876495,
+     "yesterday_units_sold": 395
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0801fe0466b843daa5eaeeb6ca64327e~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495888361391491272",
+     "shop_name": "DKHOUSE VN",
+     "total_units_sold": 907164
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 177,
+     "linked_video_count": 290
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844168,
+       "name": "Kitchen Appliances"
+      },
+      "l3": {
+       "id": 983304,
+       "name": "Specialty Kitchen Appliances"
+      }
+     },
+     "ceiling_price": 149.92,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/7f3d48a181734ff88e77cb26ad880500~tplv-o3syd03w52-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736290464052249840",
+     "floor_price": 149.92,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-02",
+     "launch_time": 1782974847,
+     "price_display": "149.917 ₫",
+     "product_id": "1736290464052249840",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736290464052249840?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[TẶNG VỈ HẤP] Nồi Điện DKHOUSE 2.0L Đa Năng ăn lẩu, nấu , hấp , luộc - Nồi Lẩu Điện Đa Năng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 400031455,
+     "last_28d_units_sold": 2844,
+     "last_7d_gmv": 81469464,
+     "last_7d_units_sold": 583,
+     "last_90d_gmv": 881055434,
+     "last_90d_units_sold": 6870,
+     "total_gmv": 931459177,
+     "total_units_sold": 7195,
+     "yesterday_gmv": 9294854,
+     "yesterday_units_sold": 62
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c6b63a864929450f8d26d3528fc2029f~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494617611196860656",
+     "shop_name": "Kho Tưởng Hằng",
+     "total_units_sold": 5043983
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 79,
+     "linked_video_count": 50
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844168,
+       "name": "Kitchen Appliances"
+      },
+      "l3": {
+       "id": 847752,
+       "name": "Rice & Pressure Cookers"
+      }
+     },
+     "ceiling_price": 168.37,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/9e21078d963445cdb2c2fcc3c6bee792~tplv-aphluv4xwc-crop-webp:1280:1280.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737490145216660680",
+     "floor_price": 168.37,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-24",
+     "launch_time": 1790216017,
+     "price_display": "168.372 ₫",
+     "product_id": "1737490145216660680",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737490145216660680?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "DKHOUSE Nồi Điện Đa Năng 1.8L Nấu Mì, Nấu Canh, Hấp, Xào, Lẩu Các Món, Tặng Vỉ Hấp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 248858233,
+     "last_28d_units_sold": 1457,
+     "last_7d_gmv": 22913616,
+     "last_7d_units_sold": 119,
+     "last_90d_gmv": 283960524,
+     "last_90d_units_sold": 1667,
+     "total_gmv": 336835788,
+     "total_units_sold": 1979,
+     "yesterday_gmv": 5219532,
+     "yesterday_units_sold": 31
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0801fe0466b843daa5eaeeb6ca64327e~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495888361391491272",
+     "shop_name": "DKHOUSE VN",
+     "total_units_sold": 907164
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 15,
+     "linked_video_count": 9
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859144,
+       "name": "Cookware"
+      },
+      "l3": {
+       "id": 600146,
+       "name": "Pots"
+      }
+     },
+     "ceiling_price": 172.71,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/f3b524ecd18f4283963adb02dd42f608~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734041252349314074",
+     "floor_price": 172.71,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-17",
+     "launch_time": 1773699547,
+     "price_display": "172.709 ₫",
+     "product_id": "1734041252349314074",
+     "product_rating": 5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734041252349314074?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "DKHOUSE Nồi Điện 2.0L Đa Năng, Nấu Các Món, Tặng Vỉ Hấp Pro"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 154818855,
+     "last_28d_units_sold": 775,
+     "last_7d_gmv": 6044815,
+     "last_7d_units_sold": 35,
+     "last_90d_gmv": 224179725,
+     "last_90d_units_sold": 1120,
+     "total_gmv": 399169725,
+     "total_units_sold": 2041,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/73429826db4a4ad486c44e2613337d8d~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494982505758427162",
+     "shop_name": "Tổng Kho Thiện Minh",
+     "total_units_sold": 141975
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 83,
+     "linked_video_count": 70
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 831112,
+       "name": "Office Stationery & Supplies"
+      },
+      "l3": {
+       "id": 988296,
+       "name": "Labels, Index Dividers & Stamps"
+      }
+     },
+     "ceiling_price": 146.92,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/ed9c64e362694221b88d3404f9d0e4fa~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737408021292418248",
+     "floor_price": 146.92,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-09",
+     "launch_time": 1788890723,
+     "price_display": "146.923 ₫",
+     "product_id": "1737408021292418248",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737408021292418248?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "DKHOUSE Nồi Điện 1.8L Đa Năng, Nồi Cơm, Nồi Áp Suất Nấu Các Món, Tặng Vỉ Hấp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 31931525,
+     "last_28d_units_sold": 200,
+     "last_7d_gmv": 7615060,
+     "last_7d_units_sold": 47,
+     "last_90d_gmv": 5462869374,
+     "last_90d_units_sold": 48588,
+     "total_gmv": 5796014298,
+     "total_units_sold": 51430,
+     "yesterday_gmv": 1028461,
+     "yesterday_units_sold": 7
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0801fe0466b843daa5eaeeb6ca64327e~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495888361391491272",
+     "shop_name": "DKHOUSE VN",
+     "total_units_sold": 907164
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 7,
+     "linked_video_count": 1
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844168,
+       "name": "Kitchen Appliances"
+      },
+      "l3": {
+       "id": 847752,
+       "name": "Rice & Pressure Cookers"
+      }
+     },
+     "ceiling_price": 286.23,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/903c3f18c65f42c2bf247af784efdd80~tplv-aphluv4xwc-crop-webp:2560:2560.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1738151569820517576",
+     "floor_price": 286.23,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-24",
+     "launch_time": 1792805742,
+     "price_display": "286.232 ₫",
+     "product_id": "1738151569820517576",
+     "product_rating": 5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1738151569820517576?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "DKHOUSE Nồi Cơm Mini Đa Năng 0.8L, Công Suất 200W, Siêu Bền, Tiết Kiệm Điện, Phù Hợp 1-2 Người Ăn"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 10663011,
+     "last_28d_units_sold": 37,
+     "last_7d_gmv": 10663011,
+     "last_7d_units_sold": 37,
+     "last_90d_gmv": 10663011,
+     "last_90d_units_sold": 37,
+     "total_gmv": 116351367,
+     "total_units_sold": 403,
+     "yesterday_gmv": 572464,
+     "yesterday_units_sold": 2
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0801fe0466b843daa5eaeeb6ca64327e~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495888361391491272",
+     "shop_name": "DKHOUSE VN",
+     "total_units_sold": 907164
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 16,
+     "linked_video_count": 6
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 602284,
+       "name": ""
+      }
+     },
+     "ceiling_price": 929,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/05d4f4025a3944509d30be1d94856bb9~tplv-o3syd03w52-resize-jpeg:200:200.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731170442338798371",
+     "floor_price": 1.43,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-11-04",
+     "launch_time": 1730695841,
+     "price_display": "1.434.944 ₫  -  2.794.929 ₫",
+     "product_id": "1731170442338798371",
+     "product_rating": 5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 9,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731170442338798371?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[TẶNG NỒI ĐIỆN MINI DKHOUSE+ TÚI TOTE] COMBO 2 LON KENDAMIL Classic - Organic - Dê Đạm A2 Anh Quốc Cho Bé Hỗ Trợ Phát Triển Tiêu Hóa Khỏe và Trí Não Toàn Diện"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 31368823,
+     "last_28d_units_sold": 21,
+     "last_7d_gmv": 1468064,
+     "last_7d_units_sold": 1,
+     "last_90d_gmv": 85362162,
+     "last_90d_units_sold": 54,
+     "total_gmv": 281511947,
+     "total_units_sold": 168,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/570dc28f2ba6449d8658838e590fa4bb~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494785960672594723",
+     "shop_name": "Mẹ & Bé Mặt Trời Bé Con",
+     "total_units_sold": 12468
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4,
+     "linked_video_count": 1
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909704,
+       "name": "Education Devices"
+      },
+      "l3": {
+       "id": 984840,
+       "name": "Writing Tablets"
+      }
+     },
+     "ceiling_price": 285,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/48859a4eb1114a4abc78fec776a1d339~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737184805421417672",
+     "floor_price": 285,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-07",
+     "launch_time": 1791385890,
+     "price_display": "285.000₫",
+     "product_id": "1737184805421417672",
+     "product_rating": 0,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737184805421417672?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "DKHOUSE Nồi Điện 1.8L Đa Năng, Nồi Cơm, Nồi Áp Suất Nấu Các Món, Tặng Vỉ Hấp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 5415000,
+     "last_28d_units_sold": 19,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 5415000,
+     "last_90d_units_sold": 19,
+     "total_gmv": 5415000,
+     "total_units_sold": 19,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0801fe0466b843daa5eaeeb6ca64327e~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495888361391491272",
+     "shop_name": "DKHOUSE VN",
+     "total_units_sold": 907164
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 233,
+     "linked_video_count": 448
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 831112,
+       "name": "Office Stationery & Supplies"
+      },
+      "l3": {
+       "id": 988296,
+       "name": "Labels, Index Dividers & Stamps"
+      }
+     },
+     "ceiling_price": 39.07,
+     "commission_rate_percent": 12.5,
+     "cover_url": "https://s.500fd.com/tt_product/d41beb4208e14f99953a1e98e240a855~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736610011019052232",
+     "floor_price": 39.07,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-20",
+     "launch_time": 1784535133,
+     "price_display": "39.067 ₫",
+     "product_id": "1736610011019052232",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736610011019052232?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "DKHOUSE Nồi Cơm Mini Đa Năng 0.8L, Công Suất 200W, Siêu Bền, Tiết Kiệm Điện, Phù Hợp 1-2 Người Ăn"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 703206,
+     "last_28d_units_sold": 18,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 1076677252,
+     "last_90d_units_sold": 27007,
+     "total_gmv": 2048379585,
+     "total_units_sold": 50873,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0801fe0466b843daa5eaeeb6ca64327e~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495888361391491272",
+     "shop_name": "DKHOUSE VN",
+     "total_units_sold": 907164
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 933768,
+       "name": "Growth Milk Formula"
+      }
+     },
+     "ceiling_price": 0,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/159d8ba459914eeba4241ab445f2b30d~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737402446323287843",
+     "floor_price": 2.31,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-14",
+     "launch_time": 1789316429,
+     "price_display": "2.310.000₫",
+     "product_id": "1737402446323287843",
+     "product_rating": 0,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 0,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737402446323287843?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[TẶNG NỒI ĐIỆN DKHOUSE] COMBO 3 LON Kendamil Organic & Classic - Sữa Công Thức Tăng Trưởng Cho Bé Lon 800g - Tem Phụ Chính Hãng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 23100000,
+     "last_28d_units_sold": 10,
+     "last_7d_gmv": 23100000,
+     "last_7d_units_sold": 10,
+     "last_90d_gmv": 23100000,
+     "last_90d_units_sold": 10,
+     "total_gmv": 23100000,
+     "total_units_sold": 10,
+     "yesterday_gmv": 23100000,
+     "yesterday_units_sold": 10
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/570dc28f2ba6449d8658838e590fa4bb~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494785960672594723",
+     "shop_name": "Mẹ & Bé Mặt Trời Bé Con",
+     "total_units_sold": 12468
+    }
+   }
+  ],
+  "total": 84
+ }
+}

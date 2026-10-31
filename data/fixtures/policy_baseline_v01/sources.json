@@ -1,0 +1,95 @@
+{
+  "dataset_version": "0.1",
+  "sources": [
+    {
+      "id": "TTS_CONTENT",
+      "platform": "tiktok_shop",
+      "scope": "content",
+      "url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=6837773789480706&lang=en",
+      "access_status": "verified",
+      "published_or_effective_date": "2026-03-17",
+      "checked_at": "2026-10-27",
+      "market": "VN"
+    },
+    {
+      "id": "TTS_RESTRICT",
+      "platform": "tiktok_shop",
+      "scope": "seller",
+      "url": "https://seller-vn.tiktok.com/university/essay?identity=1&knowledge_id=7179954358388497&lang=vi-VN&role=1",
+      "access_status": "verified",
+      "published_or_effective_date": "2026-10-14",
+      "checked_at": "2026-10-27",
+      "market": "VN"
+    },
+    {
+      "id": "TT_AD_MISLEAD",
+      "platform": "tiktok",
+      "scope": "ads",
+      "url": "https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-misleading-and-false-content?lang=en",
+      "access_status": "verified",
+      "published_or_effective_date": "2026-04",
+      "checked_at": "2026-10-27",
+      "market": "global_or_market_specific"
+    },
+    {
+      "id": "TT_COMMUNITY",
+      "platform": "tiktok",
+      "scope": "community",
+      "url": "https://www.tiktok.com/community-guidelines",
+      "access_status": "verified_summary",
+      "published_or_effective_date": "2025-09-13",
+      "checked_at": "2026-10-27",
+      "market": "global_or_market_specific"
+    },
+    {
+      "id": "TT_DISCLOSE",
+      "platform": "tiktok",
+      "scope": "commercial_disclosure",
+      "url": "https://ads-useast2a.tiktok.com/resources/help/article/how-to-turn-on-the-commercial-content-disclosure-setting-in-tiktok?lang=en",
+      "access_status": "verified",
+      "published_or_effective_date": "2026-01",
+      "checked_at": "2026-10-27",
+      "market": "global_or_market_specific"
+    },
+    {
+      "id": "SHOPEE_LIST",
+      "platform": "shopee",
+      "scope": "listing",
+      "url": "https://help.shopee.vn/portal/4/article/77246",
+      "access_status": "verified",
+      "published_or_effective_date": null,
+      "checked_at": "2026-10-27",
+      "market": "VN"
+    },
+    {
+      "id": "META_ADS",
+      "platform": "meta",
+      "scope": "ads",
+      "url": "https://transparency.meta.com/policies/ad-standards/",
+      "access_status": "index_only_blocked",
+      "published_or_effective_date": null,
+      "checked_at": "2026-10-27",
+      "market": "global_or_market_specific"
+    },
+    {
+      "id": "META_COMMUNITY",
+      "platform": "meta",
+      "scope": "community",
+      "url": "https://transparency.meta.com/policies/community-standards/",
+      "access_status": "index_only_blocked",
+      "published_or_effective_date": null,
+      "checked_at": "2026-10-27",
+      "market": "global_or_market_specific"
+    },
+    {
+      "id": "META_COMMERCE",
+      "platform": "meta",
+      "scope": "commerce",
+      "url": "https://www.facebook.com/policies_center/commerce/",
+      "access_status": "blocked_login",
+      "published_or_effective_date": null,
+      "checked_at": "2026-10-27",
+      "market": "global_or_market_specific"
+    }
+  ]
+}

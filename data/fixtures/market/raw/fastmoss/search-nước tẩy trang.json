@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "nước tẩy trang",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 5356,
+     "linked_video_count": 17697
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601618,
+       "name": "Makeup Remover\t"
+      }
+     },
+     "ceiling_price": 302.83,
+     "commission_rate_percent": 2,
+     "cover_url": "https://s.500fd.com/tt_product/002591fbcf7e46cb8d146436602a4b78~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731355378320442454",
+     "floor_price": 81.85,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-05-28",
+     "launch_time": 1748370765,
+     "price_display": "81.846 ₫  -  302.832 ₫",
+     "product_id": "1731355378320442454",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731355378320442454?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[MUA FULLSIZE TẶNG BÔNG TẨY TRANG] - BIG SIZE Nước Tẩy Trang 2 Lớp Dầu Nước All-In-1 Colorkey Luminous Cho Da Dầu & Nhạy Cảm Làm Sạch Dịu Nhẹ 500ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2211322234,
+     "last_28d_units_sold": 28756,
+     "last_7d_gmv": 511817744,
+     "last_7d_units_sold": 6608,
+     "last_90d_gmv": 5378698739,
+     "last_90d_units_sold": 72499,
+     "total_gmv": 34874778821,
+     "total_units_sold": 417230,
+     "yesterday_gmv": 70142022,
+     "yesterday_units_sold": 857
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ad7f39f74988494289d78cfe12e53bb7~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495315801392253014",
+     "shop_name": "COLORKEY LUMINOUS VIỆT NAM",
+     "total_units_sold": 46003086
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 12218,
+     "linked_video_count": 44722
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848776,
+       "name": "Skincare"
+      },
+      "l3": {
+       "id": 601609,
+       "name": "Facial Cleansers\t"
+      }
+     },
+     "ceiling_price": 224,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/37a2b4eb6f524cdaa4f291b8d5579956~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729900320718883764",
+     "floor_price": 156.8,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-02-02",
+     "launch_time": 1706847365,
+     "price_display": "156.802 ₫  -  224.003 ₫",
+     "product_id": "1729900320718883764",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 7,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729900320718883764?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[MUA 1 TẶNG 1 QUÀ] Nước Tẩy Trang làm sạch sâu dịu nhẹ cho mọi loại da - Garnier Micellar Cleansing Water 400ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 4174259565,
+     "last_28d_units_sold": 23673,
+     "last_7d_gmv": 984433231,
+     "last_7d_units_sold": 5638,
+     "last_90d_gmv": 13026368212,
+     "last_90d_units_sold": 91199,
+     "total_gmv": 123249470540,
+     "total_units_sold": 729897,
+     "yesterday_gmv": 180479102,
+     "yesterday_units_sold": 1151
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/9d7c6152bcc748aea2dd154868a6eeec~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7495433192955546548",
+     "shop_name": "Garnier Vietnam",
+     "total_units_sold": 5422222
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2498,
+     "linked_video_count": 7256
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601618,
+       "name": "Makeup Remover\t"
+      }
+     },
+     "ceiling_price": 408.06,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/38a9f56debff4d15a20eef2fe70de44e~tplv-aphluv4xwc-crop-webp:1390:1390.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729991245881248165",
+     "floor_price": 408.06,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-02-01",
+     "launch_time": 1706764887,
+     "price_display": "408.063 ₫",
+     "product_id": "1729991245881248165",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729991245881248165?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 2 Bigsize - Nước tẩy trang bí đao Cocoon tẩy sạch makeup & giảm dầu 500ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 10118511550,
+     "last_28d_units_sold": 23521,
+     "last_7d_gmv": 1896643440,
+     "last_7d_units_sold": 4489,
+     "last_90d_gmv": 21107244975,
+     "last_90d_units_sold": 59130,
+     "total_gmv": 117675589545,
+     "total_units_sold": 272934,
+     "yesterday_gmv": 176691279,
+     "yesterday_units_sold": 433
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e0310ddfb11b4e21a6471842419dc4aa~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494531336994261413",
+     "shop_name": "Cocoon Vietnam",
+     "total_units_sold": 14318644
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3,
+     "linked_video_count": 1
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601618,
+       "name": "Makeup Remover\t"
+      }
+     },
+     "ceiling_price": 150.19,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/c4b1a1ce4c5b457a879eb8ea59aa2da5~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732441260367251273",
+     "floor_price": 150.19,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-08",
+     "launch_time": 1757321438,
+     "price_display": "150.190 ₫",
+     "product_id": "1732441260367251273",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732441260367251273?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Quà Tặng OFFICIAL] Minisize 100ml Nước Tẩy Trang COLORKEY Dịu Nhẹ Và Làm Sạch All-in-1 Micellar Cleansing Water In Oil"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2929680722,
+     "last_28d_units_sold": 21091,
+     "last_7d_gmv": 844803653,
+     "last_7d_units_sold": 5904,
+     "last_90d_gmv": 6931110115,
+     "last_90d_units_sold": 75393,
+     "total_gmv": 13270537966,
+     "total_units_sold": 159514,
+     "yesterday_gmv": 120302190,
+     "yesterday_units_sold": 801
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/2f422871c4fe4694ad8dce4260e35dce~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496248242069801801",
+     "shop_name": "COLORKEY COSMETICS VIỆT NAM",
+     "total_units_sold": 9787324
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4,
+     "linked_video_count": 4
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601529,
+       "name": "Makeup Sets\t"
+      }
+     },
+     "ceiling_price": 536.38,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/520d2c50ac494450b3f6d5947ce14fe3~tplv-aphluv4xwc-crop-webp:1400:1400.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737573014170666376",
+     "floor_price": 536.38,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-20",
+     "launch_time": 1789885383,
+     "price_display": "536.384 ₫",
+     "product_id": "1737573014170666376",
+     "product_rating": 5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737573014170666376?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ chăm sóc VEKO Hoa Sen trắng giúp làm sạch và dưỡng ẩm: cấp cứu cho da mặt + cấp cứu cho tay; xịt nước hyaluronic acid hoa sen trắng để cấp ẩm cho da mặt; kem dưỡng tay hoa sen trắng – hồng giúp cấp ẩm cho tay; xịt một lần lên mặt, bôi một lớp lên tay;"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 10820505918,
+     "last_28d_units_sold": 19929,
+     "last_7d_gmv": 2145536,
+     "last_7d_units_sold": 4,
+     "last_90d_gmv": 26855890640,
+     "last_90d_units_sold": 48021,
+     "total_gmv": 27066790925,
+     "total_units_sold": 48610,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c9e9d8b16e57473abde7ca31a4003bed~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494286765458752904",
+     "shop_name": "VEKO VIỆT NAM",
+     "total_units_sold": 1310467
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 61,
+     "linked_video_count": 33
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601618,
+       "name": "Makeup Remover\t"
+      }
+     },
+     "ceiling_price": 532,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/2f21ad7583d34e11bfa046754c7f606d~tplv-o3syd03w52-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729646887045400762",
+     "floor_price": 1.75,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-07-12",
+     "launch_time": 1689152554,
+     "price_display": "1.748.532 ₫",
+     "product_id": "1729646887045400762",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729646887045400762?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[GIFT] 40ml - Nước Tẩy Trang Mắt và Môi Chuyên Dụng 2 lớp Maybelline New York Eye & Lip Makeup Remover 40ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 25569169389,
+     "last_28d_units_sold": 15937,
+     "last_7d_gmv": 8892474835,
+     "last_7d_units_sold": 5662,
+     "last_90d_gmv": 67626061556,
+     "last_90d_units_sold": 42868,
+     "total_gmv": 353905932852,
+     "total_units_sold": 278272,
+     "yesterday_gmv": 1807982088,
+     "yesterday_units_sold": 1034
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/6dc042d3bbc244439d424c952508475a~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494605505907493050",
+     "shop_name": "Maybelline New York",
+     "total_units_sold": 5500838
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 10671,
+     "linked_video_count": 27971
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601618,
+       "name": "Makeup Remover\t"
+      }
+     },
+     "ceiling_price": 269.94,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/648382de7e974203a32e3eefc0213283~tplv-aphluv4xwc-crop-webp:1536:1536.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729484249183849035",
+     "floor_price": 215.73,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2022-11-09",
+     "launch_time": 1667940821,
+     "price_display": "215.734 ₫  -  269.938 ₫",
+     "product_id": "1729484249183849035",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729484249183849035?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[BÁN CHẠY] Nước tẩy trang làm sạch sâu, loại bỏ bụi bẩn& trang điểm 3-in-1 L'Oreal Paris Micellar Water 400ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2841656855,
+     "last_28d_units_sold": 14331,
+     "last_7d_gmv": 1485212923,
+     "last_7d_units_sold": 7515,
+     "last_90d_gmv": 7882560406,
+     "last_90d_units_sold": 44331,
+     "total_gmv": 79202038341,
+     "total_units_sold": 372009,
+     "yesterday_gmv": 87372270,
+     "yesterday_units_sold": 405
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/943dd9d03c94482aab8cce535c688c18~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494607529750399563",
+     "shop_name": "L'oreal Paris Việt Nam",
+     "total_units_sold": 8743816
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3377,
+     "linked_video_count": 16723
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601618,
+       "name": "Makeup Remover\t"
+      }
+     },
+     "ceiling_price": 116.97,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/d7870b6f97a14c95b7900e019b2f7153~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731629616259236938",
+     "floor_price": 65.2,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-06-13",
+     "launch_time": 1749824396,
+     "price_display": "65.197 ₫  -  116.970 ₫",
+     "product_id": "1731629616259236938",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731629616259236938?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Nước tẩy trang CHAMAGIC hoa cam, chiết xuất từ dầu làm dịu da, kiểm soát dầu thừa, loại bỏ lớp trang điểm toàn diện, phù hợp với mọi loại da, kể cả da nhạy cảm và da dễ bị mụn. Không uống rượu."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1069114958,
+     "last_28d_units_sold": 13900,
+     "last_7d_gmv": 242306810,
+     "last_7d_units_sold": 3213,
+     "last_90d_gmv": 3161239239,
+     "last_90d_units_sold": 41485,
+     "total_gmv": 10405163308,
+     "total_units_sold": 115266,
+     "yesterday_gmv": 35467168,
+     "yesterday_units_sold": 544
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/95e4ad59b56141049eb7ef8ab4f4c5b0~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496224972315985994",
+     "shop_name": "CHAWIN",
+     "total_units_sold": 117336
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1167,
+     "linked_video_count": 4233
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848776,
+       "name": "Skincare"
+      },
+      "l3": {
+       "id": 601609,
+       "name": "Facial Cleansers\t"
+      }
+     },
+     "ceiling_price": 273.69,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/75b7c418802441c3b6e55f72bc64c360~tplv-aphluv4xwc-crop-webp:1199:1199.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732294452872119883",
+     "floor_price": 238.6,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-10-31",
+     "launch_time": 1761887928,
+     "price_display": "238.603 ₫  -  273.692 ₫",
+     "product_id": "1732294452872119883",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732294452872119883?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[COMBO 2 TẨY TRANG] Bộ đôi nước tẩy trang làm sạch sâu, loại bỏ bụi bẩn L'Oreal Paris Micellar Water 400ML & 95ML"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2296385062,
+     "last_28d_units_sold": 10943,
+     "last_7d_gmv": 1263311735,
+     "last_7d_units_sold": 6000,
+     "last_90d_gmv": 4328069037,
+     "last_90d_units_sold": 22492,
+     "total_gmv": 12358773689,
+     "total_units_sold": 56343,
+     "yesterday_gmv": 16463607,
+     "yesterday_units_sold": 69
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/943dd9d03c94482aab8cce535c688c18~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494607529750399563",
+     "shop_name": "L'oreal Paris Việt Nam",
+     "total_units_sold": 8743816
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1291,
+     "linked_video_count": 5005
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601618,
+       "name": "Makeup Remover\t"
+      }
+     },
+     "ceiling_price": 165.53,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/881c5591936846fcaaa773aa59989b48~tplv-aphluv4xwc-crop-webp:3000:3000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732011832701257452",
+     "floor_price": 110.74,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-07-22",
+     "launch_time": 1753188951,
+     "price_display": "110.740 ₫  -  165.528 ₫",
+     "product_id": "1732011832701257452",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732011832701257452?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "DRCEUTICS REFILL NƯỚC TẨY TRANG OLIVE – DẠNG NƯỚC & SỮA | TIẾT KIỆM – DỊU NHẸ CHO MỌI LOẠI DA (480ml)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1177907096,
+     "last_28d_units_sold": 10931,
+     "last_7d_gmv": 416788132,
+     "last_7d_units_sold": 3876,
+     "last_90d_gmv": 1813959121,
+     "last_90d_units_sold": 17808,
+     "total_gmv": 12785871267,
+     "total_units_sold": 126632,
+     "yesterday_gmv": 49279300,
+     "yesterday_units_sold": 445
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4efadbcc1e7f4509901119c5e72027a2~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494569870177372908",
+     "shop_name": "DrCeutics Official Store",
+     "total_units_sold": 3882353
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Các tỷ lệ hủy đơn, giao hàng trễ và hoàn trả đều là dữ liệu MOCK, nên không thể xác nhận kết quả fulfillment thực tế. Không có số liệu tranh chấp thực tế được cung cấp để đánh giá.",
+  "key_evidence": [
+    "shop.cancellation_rate: 1.3% (MOCK)",
+    "shop.late_shipment_rate: 2.0% (MOCK)",
+    "shop.return_rate: 1.9% (MOCK)"
+  ],
+  "evidence_sent": {
+    "shop.cancellation_rate": {
+      "value": "1.3%",
+      "status": "MOCK"
+    },
+    "shop.late_shipment_rate": {
+      "value": "2.0%",
+      "status": "MOCK"
+    },
+    "shop.return_rate": {
+      "value": "1.9%",
+      "status": "MOCK"
+    }
+  }
+}

@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "hub usb c",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 65,
+     "linked_video_count": 339
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827016,
+       "name": "USB Hubs & Card Readers"
+      }
+     },
+     "ceiling_price": 109.66,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/4ebb7cf49a46416e9a921e81b110bed7~tplv-aphluv4xwc-crop-webp:569:569.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733711760466281949",
+     "floor_price": 109.66,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-12-26",
+     "launch_time": 1766745548,
+     "price_display": "109.657 ₫",
+     "product_id": "1733711760466281949",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733711760466281949?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "HUB USB TYPE C 8 TRONG 2 CỔNG USB 3.0 TỐC ĐỘ CAO 4 PORT MULTI BỘ CHIA ADAPTER OTG"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 214345305,
+     "last_28d_units_sold": 1893,
+     "last_7d_gmv": 49542149,
+     "last_7d_units_sold": 444,
+     "last_90d_gmv": 435767706,
+     "last_90d_units_sold": 3815,
+     "total_gmv": 635263426,
+     "total_units_sold": 5479,
+     "yesterday_gmv": 8333932,
+     "yesterday_units_sold": 76
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a15c048e95f7475ba60278e06d3f7570~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496319740275493341",
+     "shop_name": "Yilinfang",
+     "total_units_sold": 14108
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 51,
+     "linked_video_count": 272
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827016,
+       "name": "USB Hubs & Card Readers"
+      }
+     },
+     "ceiling_price": 120.22,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/a763db6f6ea6467ba8acc244204cfb65~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729602956008983468",
+     "floor_price": 38.96,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-06-05",
+     "launch_time": 1685953688,
+     "price_display": "38.961 ₫  -  120.222 ₫",
+     "product_id": "1729602956008983468",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729602956008983468?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ Chia USB 3.0/Type C Cho Laptop Máy tính, Macbook, iPad, điện thoại 8 trong 2, Hub USB, Hub Type C, đọc thẻ nhớ."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 53790534,
+     "last_28d_units_sold": 1376,
+     "last_7d_gmv": 17280039,
+     "last_7d_units_sold": 447,
+     "last_90d_gmv": 72655120,
+     "last_90d_units_sold": 1874,
+     "total_gmv": 599174669,
+     "total_units_sold": 10154,
+     "yesterday_gmv": 1987011,
+     "yesterday_units_sold": 51
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/80d55c4065534df5800dcec5fd967072~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494903805105114028",
+     "shop_name": "StaFor",
+     "total_units_sold": 129980
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 115,
+     "linked_video_count": 589
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827016,
+       "name": "USB Hubs & Card Readers"
+      }
+     },
+     "ceiling_price": 483.47,
+     "commission_rate_percent": 13,
+     "cover_url": "https://s.500fd.com/tt_product/69688d6c13c840898d6b2cdf75bbe458~tplv-aphluv4xwc-crop-webp:1600:1600.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735147200066914010",
+     "floor_price": 415.05,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-04-16",
+     "launch_time": 1776271068,
+     "price_display": "415.053 ₫  -  483.468 ₫",
+     "product_id": "1735147200066914010",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735147200066914010?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Acer Hub chia cổng usb 5 trong 1 sang 4K PD100W 3 cổng dữ liệu USB A Bộ chuyển đổi đa cổng USB C sang HDMI cho máy tính xách tay PC máy tính bảng Pad UC503"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 230947728,
+     "last_28d_units_sold": 581,
+     "last_7d_gmv": 54771366,
+     "last_7d_units_sold": 135,
+     "last_90d_gmv": 702875918,
+     "last_90d_units_sold": 1793,
+     "total_gmv": 946320706,
+     "total_units_sold": 2427,
+     "yesterday_gmv": 2490318,
+     "yesterday_units_sold": 6
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/73dcf8861b534178afd7a4c62c0abab8~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8659317390476543706",
+     "shop_name": "Acer Gadget Partner-Newease.VN",
+     "total_units_sold": 30147
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 25,
+     "linked_video_count": 191
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827016,
+       "name": "USB Hubs & Card Readers"
+      }
+     },
+     "ceiling_price": 219.21,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/a29a21850a2f479ba10e8d3aa709bc72~tplv-aphluv4xwc-crop-webp:679:679.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733715257467504093",
+     "floor_price": 219.21,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-12-26",
+     "launch_time": 1766745548,
+     "price_display": "219.211 ₫",
+     "product_id": "1733715257467504093",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733715257467504093?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "HUB USB C 8 trong 1 với HDMI 4K, Sạc nhanh PD 100W, Cổng USB C, USB 3.0, Mạng LAN RJ45, Khe đọc thẻ SD/TF, Tương thích MacBook Pro/Air, Chromebook và thiết bị Type-C khác"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 104600474,
+     "last_28d_units_sold": 552,
+     "last_7d_gmv": 23271910,
+     "last_7d_units_sold": 118,
+     "last_90d_gmv": 223204460,
+     "last_90d_units_sold": 1176,
+     "total_gmv": 440272850,
+     "total_units_sold": 2259,
+     "yesterday_gmv": 1534477,
+     "yesterday_units_sold": 7
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a15c048e95f7475ba60278e06d3f7570~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496319740275493341",
+     "shop_name": "Yilinfang",
+     "total_units_sold": 14108
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 71,
+     "linked_video_count": 290
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 55.46,
+     "commission_rate_percent": 15,
+     "cover_url": "https://s.500fd.com/tt_product/623abe7d3e494d4fb54d4f3d0de9799d~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730022841178950258",
+     "floor_price": 42.78,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-05-14",
+     "launch_time": 1715616550,
+     "price_display": "42.780 ₫  -  55.455 ₫",
+     "product_id": "1730022841178950258",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730022841178950258?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ mở rộng Type-C, đa cổng, bên ngoài máy tính xách tay, một kéo bốn giao diện USB, hub giao diện USB 3.0, với cáp, Thích hợp cho chuột và bàn phím, Giao diện máy tính là sự lựa chọn đầu tiên không đủ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 18088347,
+     "last_28d_units_sold": 534,
+     "last_7d_gmv": 6657958,
+     "last_7d_units_sold": 159,
+     "last_90d_gmv": 46301758,
+     "last_90d_units_sold": 1937,
+     "total_gmv": 249829181,
+     "total_units_sold": 6404,
+     "yesterday_gmv": 1283400,
+     "yesterday_units_sold": 30
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4c95b2e08aa64a9ebe40b457bb95fdf4~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "8647128735719327346",
+     "shop_name": "QING YU",
+     "total_units_sold": 1785965
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 5,
+     "linked_video_count": 9
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827016,
+       "name": "USB Hubs & Card Readers"
+      }
+     },
+     "ceiling_price": 133.71,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/48814c7ed2164e448a2b6432ac065698~tplv-o3syd03w52-crop-webp:2400:2400.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732336681001322121",
+     "floor_price": 48.83,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-29",
+     "launch_time": 1764351848,
+     "price_display": "48.833 ₫  -  133.709 ₫",
+     "product_id": "1732336681001322121",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732336681001322121?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Hub chia cổng Type C USB hỗ trợ thêm cổng cho Máy tính Điện thoại sử dụng chuột bàn phím OTG USB tai nghe USB chơi Game"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 14297438,
+     "last_28d_units_sold": 306,
+     "last_7d_gmv": 1922792,
+     "last_7d_units_sold": 42,
+     "last_90d_gmv": 25161873,
+     "last_90d_units_sold": 545,
+     "total_gmv": 25755696,
+     "total_units_sold": 559,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1213ab795f4c30fbf9e4f4acbfbd858b~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496315410055400073",
+     "shop_name": "LinhkienvnSmart",
+     "total_units_sold": 48623
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 26,
+     "linked_video_count": 58
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827016,
+       "name": "USB Hubs & Card Readers"
+      }
+     },
+     "ceiling_price": 321.3,
+     "commission_rate_percent": 3,
+     "cover_url": "https://s.500fd.com/tt_product/c756ad2aeb5f48beb82c80aba70d9c6b~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730222566525995093",
+     "floor_price": 109.18,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-06-24",
+     "launch_time": 1719180182,
+     "price_display": "109.178 ₫  -  321.299 ₫",
+     "product_id": "1730222566525995093",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730222566525995093?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "HUB Type C - Cổng chuyển đổi HUB USB Type C - USB 3.0 to HDMI 4K,USB 3.0,SD,TF,RJ45,PD Type C cho Laptop táo - KSS notebook  computer hub type usb  hub"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 34454351,
+     "last_28d_units_sold": 291,
+     "last_7d_gmv": 9772435,
+     "last_7d_units_sold": 81,
+     "last_90d_gmv": 96445230,
+     "last_90d_units_sold": 800,
+     "total_gmv": 338947294,
+     "total_units_sold": 2492,
+     "yesterday_gmv": 1091780,
+     "yesterday_units_sold": 10
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c8e8bab49e7c4b39a3f160d56f570802~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495675377563306069",
+     "shop_name": "KSS - Cáp & Bộ Chuyển Đổi",
+     "total_units_sold": 42868
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 225,
+     "linked_video_count": 555
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827016,
+       "name": "USB Hubs & Card Readers"
+      }
+     },
+     "ceiling_price": 480.92,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/4aebc95036e6416cadb8e4123dc3226f~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729582752622021548",
+     "floor_price": 109.86,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-06-05",
+     "launch_time": 1685913645,
+     "price_display": "109.860 ₫  -  480.916 ₫",
+     "product_id": "1729582752622021548",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729582752622021548?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Hub type c cho Macbook, Laptop, iPad, điện thoại sang HDMI 4K, USB, thẻ nhớ - Cổng chuyển đổi, hub chuyển đổi type C."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 28847606,
+     "last_28d_units_sold": 258,
+     "last_7d_gmv": 2704029,
+     "last_7d_units_sold": 25,
+     "last_90d_gmv": 58230651,
+     "last_90d_units_sold": 526,
+     "total_gmv": 1778605302,
+     "total_units_sold": 10455,
+     "yesterday_gmv": 659160,
+     "yesterday_units_sold": 6
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/80d55c4065534df5800dcec5fd967072~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494903805105114028",
+     "shop_name": "StaFor",
+     "total_units_sold": 129980
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 32,
+     "linked_video_count": 245
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827016,
+       "name": "USB Hubs & Card Readers"
+      }
+     },
+     "ceiling_price": 71.46,
+     "commission_rate_percent": 9,
+     "cover_url": "https://s.500fd.com/tt_product/9b237f929b8041028735a8e5703b4a13~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731357733572872424",
+     "floor_price": 38.48,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-04",
+     "launch_time": 1756998757,
+     "price_display": "38.476 ₫  -  71.455 ₫",
+     "product_id": "1731357733572872424",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 10,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731357733572872424?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ Chia 4 Cổng USB 3.0 Bộ chia cổng Hub USB và Hub Type C [3.0] Đa Năng Tiện Dụng Cho PC Laptop"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 9644466,
+     "last_28d_units_sold": 241,
+     "last_7d_gmv": 316809,
+     "last_7d_units_sold": 8,
+     "last_90d_gmv": 70017267,
+     "last_90d_units_sold": 1852,
+     "total_gmv": 239626400,
+     "total_units_sold": 5862,
+     "yesterday_gmv": 76952,
+     "yesterday_units_sold": 2
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cf5687e1aa83497bb1607dea82ec3817~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495981774348912872",
+     "shop_name": "Super Sac",
+     "total_units_sold": 86817
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 173,
+     "linked_video_count": 351
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 15,
+       "name": "Computers & Office Equipment"
+      },
+      "l2": {
+       "id": 826760,
+       "name": "Computer Accessories"
+      },
+      "l3": {
+       "id": 827016,
+       "name": "USB Hubs & Card Readers"
+      }
+     },
+     "ceiling_price": 171.29,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/070434f04a78479b86e1b8d2dd4c69a6~tplv-o3syd03w52-crop-webp:1000:1000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729588144808364665",
+     "floor_price": 123.48,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-03-31",
+     "launch_time": 1680196551,
+     "price_display": "123.478 ₫  -  171.285 ₫",
+     "product_id": "1729588144808364665",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729588144808364665?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Độc Quyền GOOJODOQ Hub Tích Hợp Type C Tốc Độ Cao 5 Cổng USB 3.0 2.0 Cho Macbook Laptop HDMI Pd TF SD PD 6 In1/4 In 1/8In 1 Card Reader Audio"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 23136145,
+     "last_28d_units_sold": 199,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 88420180,
+     "last_90d_units_sold": 774,
+     "total_gmv": 1417357547,
+     "total_units_sold": 7175,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/40dc9b0e92f64e348f2e77e70981c6b9~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494595036530707065",
+     "shop_name": "GOOJODOQ VN",
+     "total_units_sold": 9051243
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

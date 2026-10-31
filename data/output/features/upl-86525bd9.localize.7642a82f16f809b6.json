@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6-luna",
+  "regions": [
+    {
+      "marker_id": "criterion:C06",
+      "box": [
+        0.24,
+        0.51,
+        0.52,
+        0.28
+      ],
+      "label": "Khu vực bằng chứng còn trống",
+      "confidence": 0.84
+    }
+  ],
+  "token_usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 361
+  }
+}

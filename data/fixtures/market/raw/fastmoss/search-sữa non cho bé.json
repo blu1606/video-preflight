@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "sữa non cho bé",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1729,
+     "linked_video_count": 4918
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879112,
+       "name": "Baby Care & Health"
+      },
+      "l3": {
+       "id": 947592,
+       "name": "Baby Vitamins & Supplements"
+      }
+     },
+     "ceiling_price": 364.98,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/dc052086749f48a8801e14ce730c6cdf~tplv-aphluv4xwc-crop-webp:1800:1800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731787718019549803",
+     "floor_price": 130.76,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-02-06",
+     "launch_time": 1738831227,
+     "price_display": "130.760 ₫  -  364.981 ₫",
+     "product_id": "1731787718019549803",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731787718019549803?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Hộp 10 gói] Hộp Cheese Sữa Non NutriAZ Dạng Bột Hỗ Trợ Phát Triển Chiều Cao Cho Bé Ăn Dặm - Nguyên Liệu Nhập khẩu"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 761847358,
+     "last_28d_units_sold": 5867,
+     "last_7d_gmv": 215414840,
+     "last_7d_units_sold": 1660,
+     "last_90d_gmv": 2285691989,
+     "last_90d_units_sold": 20729,
+     "total_gmv": 12440681139,
+     "total_units_sold": 112764,
+     "yesterday_gmv": 42235480,
+     "yesterday_units_sold": 323
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/b695db2a544043b3a7884906fbd704de~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494706194951080555",
+     "shop_name": "NutriAZ Việt Nam - Mẹ Và Bé",
+     "total_units_sold": 2456571
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 69,
+     "linked_video_count": 83
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 24,
+       "name": "Food & Beverages"
+      },
+      "l2": {
+       "id": 915208,
+       "name": "Baking"
+      },
+      "l3": {
+       "id": 921608,
+       "name": "Cheese & Cheese Powder"
+      }
+     },
+     "ceiling_price": 343.13,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/e03ea14e415f4eb0bacab45be60c580e~tplv-aphluv4xwc-crop-webp:1800:1800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736418192341960299",
+     "floor_price": 124.33,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-11",
+     "launch_time": 1783749443,
+     "price_display": "124.328 ₫  -  343.126 ₫",
+     "product_id": "1736418192341960299",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736418192341960299?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[KOC] Hộp Cheese Sữa Non NutriAZ Dạng Bột Hỗ Trợ Phát Triển Chiều Cao Cho Bé Ăn Dặm - Nguyên Liệu Nhập khẩu"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 143969402,
+     "last_28d_units_sold": 1104,
+     "last_7d_gmv": 47648328,
+     "last_7d_units_sold": 376,
+     "last_90d_gmv": 207008332,
+     "last_90d_units_sold": 1690,
+     "total_gmv": 237606855,
+     "total_units_sold": 1932,
+     "yesterday_gmv": 7708336,
+     "yesterday_units_sold": 62
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/b695db2a544043b3a7884906fbd704de~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494706194951080555",
+     "shop_name": "NutriAZ Việt Nam - Mẹ Và Bé",
+     "total_units_sold": 2456571
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 138,
+     "linked_video_count": 370
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879112,
+       "name": "Baby Care & Health"
+      },
+      "l3": {
+       "id": 947592,
+       "name": "Baby Vitamins & Supplements"
+      }
+     },
+     "ceiling_price": 383.85,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/cb0e54fd299141dc842f181a49868c2a~tplv-aphluv4xwc-crop-webp:1800:1800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732073655986981483",
+     "floor_price": 383.85,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-03-23",
+     "launch_time": 1742704236,
+     "price_display": "383.854 ₫",
+     "product_id": "1732073655986981483",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732073655986981483?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[COMBO] Combo 3 Hộp Cheese Sữa Non NutriAZ Dạng Bột Hỗ Trợ Phát Triển Chiều Cao Cho Bé Ăn Dặm -  Nguyên Liệu Nhập Khẩu"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 277848224,
+     "last_28d_units_sold": 792,
+     "last_7d_gmv": 68253918,
+     "last_7d_units_sold": 185,
+     "last_90d_gmv": 807790740,
+     "last_90d_units_sold": 2403,
+     "total_gmv": 1576486133,
+     "total_units_sold": 4442,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/b695db2a544043b3a7884906fbd704de~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494706194951080555",
+     "shop_name": "NutriAZ Việt Nam - Mẹ Và Bé",
+     "total_units_sold": 2456571
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 116,
+     "linked_video_count": 461
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879112,
+       "name": "Baby Care & Health"
+      },
+      "l3": {
+       "id": 947592,
+       "name": "Baby Vitamins & Supplements"
+      }
+     },
+     "ceiling_price": 839,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/bd03d0088fdd4568b6aa76b6ab4dedd8~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730995222463875816",
+     "floor_price": 1.05,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-10-10",
+     "launch_time": 1728522411,
+     "price_display": "1.053.351 ₫  -  2.051.839 ₫",
+     "product_id": "1730995222463875816",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730995222463875816?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Lactoferrin Happi sữa non Úc tăng đề kháng cho bé - Mẹ Rofi"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 753662443,
+     "last_28d_units_sold": 777,
+     "last_7d_gmv": 120705414,
+     "last_7d_units_sold": 114,
+     "last_90d_gmv": 2679099473,
+     "last_90d_units_sold": 2920,
+     "total_gmv": 7491216105,
+     "total_units_sold": 7154,
+     "yesterday_gmv": 8426808,
+     "yesterday_units_sold": 8
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/301f631a98454c138091039e36ee3f89~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494531524095478504",
+     "shop_name": "Mẹ Rofi",
+     "total_units_sold": 319484
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 108,
+     "linked_video_count": 101
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 602284,
+       "name": ""
+      }
+     },
+     "ceiling_price": 523.08,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/673f782da57e416ca7ed67aa5f4f9531~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730020363185981675",
+     "floor_price": 523.08,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-03-05",
+     "launch_time": 1709582879,
+     "price_display": "523.077 ₫",
+     "product_id": "1730020363185981675",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730020363185981675?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Thùng 48 hộp Sữa Non Vinamilk Dielac Grow Plus 110ml cho bé|Có thể nhận Bao Bì Cũ/Mới"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 350479492,
+     "last_28d_units_sold": 666,
+     "last_7d_gmv": 103059009,
+     "last_7d_units_sold": 194,
+     "last_90d_gmv": 2120788269,
+     "last_90d_units_sold": 4841,
+     "total_gmv": 39059729518,
+     "total_units_sold": 27035,
+     "yesterday_gmv": 20400003,
+     "yesterday_units_sold": 39
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/14397220cef640a8806a22b764650b26~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495191459769714923",
+     "shop_name": "Vinamilk - Shop & More",
+     "total_units_sold": 2609110
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 93,
+     "linked_video_count": 123
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 602284,
+       "name": ""
+      }
+     },
+     "ceiling_price": 556.68,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/20c7d4ee3d7347ad9cac7eb9463ad54f~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734786408567637227",
+     "floor_price": 556.68,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-27",
+     "launch_time": 1774610737,
+     "price_display": "556.675 ₫",
+     "product_id": "1734786408567637227",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734786408567637227?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[AFF] Thùng 48 hộp Sữa Non Vinamilk Dielac Grow Plus 110ml cho bé"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 343566263,
+     "last_28d_units_sold": 627,
+     "last_7d_gmv": 54729347,
+     "last_7d_units_sold": 102,
+     "last_90d_gmv": 1800962326,
+     "last_90d_units_sold": 4348,
+     "total_gmv": 2801809671,
+     "total_units_sold": 6300,
+     "yesterday_gmv": 19483625,
+     "yesterday_units_sold": 35
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/14397220cef640a8806a22b764650b26~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495191459769714923",
+     "shop_name": "Vinamilk - Shop & More",
+     "total_units_sold": 2609110
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 231,
+     "linked_video_count": 654
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 4,
+       "name": "Kids' Fashion"
+      },
+      "l2": {
+       "id": 806792,
+       "name": "Kids' Fashion Accessories"
+      },
+      "l3": {
+       "id": 806920,
+       "name": "Bags & Luggage"
+      }
+     },
+     "ceiling_price": 164.88,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/6f54355e91f64f55864fc05d4e53a057~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734988317816555105",
+     "floor_price": 101.27,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-04-06",
+     "launch_time": 1775443913,
+     "price_display": "101.271 ₫  -  164.879 ₫",
+     "product_id": "1734988317816555105",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 25,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734988317816555105?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Balo đi học mầm non mẫu giáo đi chơi cho bé BLG249 đựng quần áo bỉm sửa"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 60124687,
+     "last_28d_units_sold": 597,
+     "last_7d_gmv": 13328623,
+     "last_7d_units_sold": 136,
+     "last_90d_gmv": 354734262,
+     "last_90d_units_sold": 6936,
+     "total_gmv": 721500962,
+     "total_units_sold": 9914,
+     "yesterday_gmv": 2227962,
+     "yesterday_units_sold": 22
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a804c2c4b7fa4115a885d5f8c8bea91b~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494699053130222177",
+     "shop_name": "Baloga86",
+     "total_units_sold": 22336
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 138,
+     "linked_video_count": 438
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 700704,
+       "name": "Baby Bottles & Accessories"
+      }
+     },
+     "ceiling_price": 109.68,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/8a846192449943e7b16094336aba279f~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730682404868491743",
+     "floor_price": 80.51,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-08-06",
+     "launch_time": 1722892384,
+     "price_display": "80.507 ₫  -  109.676 ₫",
+     "product_id": "1730682404868491743",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 19,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730682404868491743?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Shihi Bình Nước Trẻ Em Cao Cấp 550ml/700ml Nhựa An Toàn Ống Hút Silicon Dây Đeo Thể Thao Màu Hồng/Xanh Dương/Be Sữa Chống Rò Rỉ Không BPA Cho Bé Đi Học Chơi Hàng Ngày Bình Nước Cute Cho Bé Mẫu Giáo Mầm Non Tiểu Học"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 45044633,
+     "last_28d_units_sold": 573,
+     "last_7d_gmv": 8569180,
+     "last_7d_units_sold": 112,
+     "last_90d_gmv": 272455974,
+     "last_90d_units_sold": 3590,
+     "total_gmv": 628517004,
+     "total_units_sold": 8146,
+     "yesterday_gmv": 1046591,
+     "yesterday_units_sold": 13
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/6edb853c48bb470ba907d28b7a14f6f5~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495161387790535135",
+     "shop_name": "Shihi Store",
+     "total_units_sold": 15540
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3,
+     "linked_video_count": 4
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879112,
+       "name": "Baby Care & Health"
+      },
+      "l3": {
+       "id": 947592,
+       "name": "Baby Vitamins & Supplements"
+      }
+     },
+     "ceiling_price": 539,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/12c04f0b178e4993bc6c230ba5c3771c~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730550057439038254",
+     "floor_price": 1.37,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-07-12",
+     "launch_time": 1720739557,
+     "price_display": "1.371.453 ₫  -  1.470.539 ₫",
+     "product_id": "1730550057439038254",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730550057439038254?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Vitadairy-(COMBO2LON COLOSBABY GOLD) MẪU MỚI NHẤT_Sữa bột bổ sung sữa non Colosbaby Gold lon 800g - Vị thanh nhạt cho bé. sữa  colosbaby"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 676332292,
+     "last_28d_units_sold": 497,
+     "last_7d_gmv": 154566827,
+     "last_7d_units_sold": 113,
+     "last_90d_gmv": 1886892288,
+     "last_90d_units_sold": 1415,
+     "total_gmv": 6902201943,
+     "total_units_sold": 5525,
+     "yesterday_gmv": 20571795,
+     "yesterday_units_sold": 15
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c8c9cbf9f39f4836a6a7a5d234463e0a~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495391366673042222",
+     "shop_name": "Ankine Việt Nam",
+     "total_units_sold": 30730
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 10,
+     "linked_video_count": 26
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 602284,
+       "name": ""
+      }
+     },
+     "ceiling_price": 145.63,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/8a56c5b4a7cd441fbf0d5d1954fba5b7~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735231964231140443",
+     "floor_price": 145.63,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-10",
+     "launch_time": 1781091540,
+     "price_display": "145.626 ₫",
+     "product_id": "1735231964231140443",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735231964231140443?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Hộp Bột Phomai Sữa Non NutriAZ Hộp 10 Gói x 4g Cho Bé Trên 6 Tháng Tuổi - Bibo Mart"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 61563826,
+     "last_28d_units_sold": 430,
+     "last_7d_gmv": 12859915,
+     "last_7d_units_sold": 89,
+     "last_90d_gmv": 206033826,
+     "last_90d_units_sold": 1671,
+     "total_gmv": 210633786,
+     "total_units_sold": 1711,
+     "yesterday_gmv": 2766894,
+     "yesterday_units_sold": 19
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0d540bab3a66455b8d274b11bc1b5d20~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494981623622043739",
+     "shop_name": "Bibo Mart Chính Hãng",
+     "total_units_sold": 3199931
+    }
+   }
+  ],
+  "total": 1723
+ }
+}

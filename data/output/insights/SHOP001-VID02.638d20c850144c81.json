@@ -1,0 +1,35 @@
+{
+  "model": "gpt-6-luna",
+  "answer": {
+    "headline": "Video có người bấm vào sản phẩm nhưng cần cải thiện bước chốt đơn và cách giới thiệu.",
+    "summary": "Ưu tiên nêu rõ ưu đãi, tạo lời kêu gọi mua dễ hiểu và bổ sung bằng chứng đáng tin. Đồng thời, kiểm tra lại các thông tin quảng cáo và chi tiết của sản phẩm mỹ phẩm.",
+    "insights": [
+      {
+        "candidate": "c1",
+        "text": "Theo số liệu sau khi đăng, video có 10.360 lượt xem và 4,5% bấm vào sản phẩm, nhưng tỷ lệ đi từ bấm đến đặt hàng là 2,15%, dưới mốc tạm tự đặt 5,0%. Hãy nêu rõ ưu đãi để người xem biết lý do nên mua.",
+        "tone": "bad"
+      },
+      {
+        "candidate": "c2",
+        "text": "Theo công thức điểm, thêm lời kêu gọi mua rõ ràng và bằng chứng đáng tin có thể đưa điểm lên 48,9; đây không phải dự báo doanh số và vẫn chưa đạt ngưỡng 75.",
+        "tone": "info"
+      },
+      {
+        "candidate": "c4",
+        "text": "Ở cả 2 video đã kiểm tra, phần giới thiệu ưu đãi đều yếu. Hãy nói cụ thể người mua nhận được gì.",
+        "tone": "bad"
+      },
+      {
+        "candidate": "c5",
+        "text": "Cả 2 video đã kiểm tra đều có câu mở đầu chưa đủ cụ thể. Hãy gọi đúng nhu cầu hoặc vấn đề của khách ngay từ đầu.",
+        "tone": "bad"
+      }
+    ],
+    "policy": "Các cờ Policy cho thấy nội dung lợi ích, lời hứa kết quả và thông tin trên trang sản phẩm mỹ phẩm cần xem lại. Đây chưa phải kết luận chắc chắn có vi phạm.",
+    "shop": "Lỗi nêu ưu đãi và mở đầu chưa cụ thể lặp lại ở cả 2 video đã kiểm tra; nên ưu tiên sửa hai điểm này cho các video tiếp theo."
+  },
+  "token_usage": {
+    "prompt_tokens": 1914,
+    "completion_tokens": 1989
+  }
+}

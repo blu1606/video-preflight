@@ -1,0 +1,11 @@
+{
+  "received_on": "2026-10-27",
+  "produced_by": "ChatGPT, paraphrasing selected official TikTok, TikTok Shop, Shopee and Meta policy pages",
+  "files_changed_since_receipt": false,
+  "source_url_check": {
+    "checked_at": "2026-10-27",
+    "method": "HTTP GET, follow redirects",
+    "result": "all 9 source URLs returned 200; TikTok/Meta pages render with JavaScript, so rule text was NOT compared with page content"
+  },
+  "use": "Rules are a paraphrased subset, not legal text. Outcomes are needs_review / unknown, never approval."
+}

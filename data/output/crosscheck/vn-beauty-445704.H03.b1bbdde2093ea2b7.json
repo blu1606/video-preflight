@@ -1,0 +1,59 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Không thể đánh giá tỷ lệ chuyển đổi so với shop tương đương: số đơn và lượt truy cập đều là dữ liệu MOCK, còn benchmark được cung cấp không có tỷ lệ chuyển đổi của các shop so sánh. Vì vậy, bằng chứng không hỗ trợ chọn mức nào.",
+  "key_evidence": [
+    "shop.orders_30d: 3100 (MOCK)",
+    "shop.visits_30d: 56093 (MOCK)",
+    "market.category_benchmark: không có benchmark tỷ lệ chuyển đổi"
+  ],
+  "evidence_sent": {
+    "market.category_benchmark": {
+      "value": {
+        "n": 22,
+        "median_price_vnd": 144595,
+        "p25_price_vnd": 129000,
+        "p75_price_vnd": 157604,
+        "avg_rating": 4.33,
+        "median_sold_28d": 1467,
+        "tiktok_category": "Beauty & Personal Care",
+        "tiktok_category_scale": {
+          "active_product_count": 259689,
+          "category_gmv": 6455580765556.6,
+          "category_units_sold": 37500761,
+          "product_count": 112081,
+          "selling_creator_count": 242288,
+          "selling_live_count": 388815,
+          "selling_video_count": 2427458
+        },
+        "tiktok_category_growth": {
+          "active_product_count_change": -1518,
+          "category_gmv_mom_percent": 8.93,
+          "category_gmv_yoy_percent": 40.37,
+          "category_units_sold_mom_percent": -6.17,
+          "category_units_sold_yoy_percent": 28.13,
+          "product_count_change": 112081,
+          "selling_creator_count_change": 5495,
+          "selling_live_count_change": 29126,
+          "selling_video_count_change": -252919
+        },
+        "category_pool_n": 60,
+        "category_median_rating": 4.7,
+        "demand_percentile": 14.2,
+        "saturation_percentile": 25.8
+      },
+      "status": "INFERRED"
+    },
+    "shop.orders_30d": {
+      "value": 3100,
+      "status": "MOCK"
+    },
+    "shop.visits_30d": {
+      "value": 56093,
+      "status": "MOCK"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "model": "gpt-6-luna",
+  "usage": {
+    "completion_tokens": 1462,
+    "prompt_tokens": 1799,
+    "total_tokens": 3261,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 758,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1796,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "rules": {
+    "TTS-001": {
+      "outcome": "needs_review",
+      "model_outcome": "needs_review",
+      "quotes": [
+        {
+          "text": "CŨNG ĐƯỢC HOÀN TIỀN",
+          "t": 3.0,
+          "where": "on_screen_text"
+        }
+      ],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.77,
+      "rationale": "Video quảng bá dịch vụ hoàn tiền và đưa ra lời hứa về khoản hoàn, nhưng nội dung được cung cấp không có tài liệu xác nhận dịch vụ hoặc điều kiện chi trả. Cần rà soát tính hỗ trợ của sản phẩm và tuyên bố."
+    },
+    "TTS-002": {
+      "outcome": "needs_review",
+      "model_outcome": "needs_review",
+      "quotes": [
+        {
+          "text": "Đủ điều kiện là tiền hoàn tự về ví hoàn tiền",
+          "t": 28.0,
+          "where": "transcript"
+        }
+      ],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.82,
+      "rationale": "Đây là tuyên bố cụ thể rằng đơn đủ điều kiện sẽ tự được hoàn tiền vào ví. Nội dung cung cấp chưa có bằng chứng hoặc thông tin sản phẩm độc lập để xác minh tuyên bố này."
+    },
+    "TTS-003": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.98,
+      "rationale": "Nội dung giới thiệu dịch vụ tạo liên kết hoàn tiền khi đặt đồ ăn, không đề cập sản phẩm làm đẹp hoặc mỹ phẩm."
+    },
+    "TTC-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Bài đăng được xác định là nội dung thương mại, nhưng không có thông tin về cài đặt công khai nội dung thương mại trên nền tảng. Cần kiểm tra cài đặt bài đăng."
+    },
+    "SHP-001": {
+      "outcome": "needs_review",
+      "model_outcome": "needs_review",
+      "quotes": [
+        {
+          "text": "ĐẶT SHOPEEFOOD",
+          "t": 2.0,
+          "where": "on_screen_text"
+        },
+        {
+          "text": "Ốp lưng họa tiết sọc đứng mảnh hồng nhạt",
+          "t": null,
+          "where": "listing.title"
+        }
+      ],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Video giới thiệu việc đặt món và hoàn tiền trên ShopeeFood, trong khi tiêu đề listing mô tả ốp lưng điện thoại. Nội dung video và sản phẩm trong listing có vẻ không nhất quán."
+    },
+    "SHP-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Không có ảnh listing để xác định listing có ảnh chụp sản phẩm thực tế đáp ứng tiêu chí hay không."
+    },
+    "SHP-003": {
+      "outcome": "needs_review",
+      "model_outcome": "needs_review",
+      "quotes": [
+        {
+          "text": "hot trend",
+          "t": null,
+          "where": "listing.title"
+        }
+      ],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.92,
+      "rationale": "Tiêu đề listing có cụm quảng bá “hot trend”, nên cần rà soát theo quy định về tuyên bố quảng cáo hoặc cách diễn đạt tiếp thị bị hạn chế."
+    },
+    "SHP-004": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Listing được mô tả là ốp lưng điện thoại, không phải mỹ phẩm; yêu cầu về thông tin nguồn gốc, công bố hoặc hạn sử dụng mỹ phẩm không áp dụng theo nội dung này."
+    },
+    "SHP-005": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Không có nội dung mô tả listing để kiểm tra thông tin liên hệ bên ngoài hoặc điều hướng ra khỏi nền tảng."
+    }
+  }
+}

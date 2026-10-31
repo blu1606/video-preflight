@@ -14,3 +14,7 @@ data/
 .DS_Store
 .playwright-cli/
 output/playwright/
+
+# Local video assets and large database snapshot stay outside Git.
+/data/videos/
+/data/db/db.json

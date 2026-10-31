@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "vitamin b complex",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3963,
+     "linked_video_count": 15718
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 464.99,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/1b80311bc24a43f4aa0f0fd9080ad445~tplv-aphluv4xwc-crop-webp:2000:2000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731653018375916233",
+     "floor_price": 141.81,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-02-08",
+     "launch_time": 1738984102,
+     "price_display": "141.805 ₫  -  464.990 ₫",
+     "product_id": "1731653018375916233",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731653018375916233?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[PENTAVITE] Vitamin B Complex Viên Nhai - 9 dưỡng chất trong mỗi viên: 8 loại Vitamin B + Taurine - Hỗ trợ chuyển hóa năng lượng, hạn chế rụng tóc, giảm mệt mỏi - Hộp 30 viên - Chứng nhận VFA, NIFC"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2043184861,
+     "last_28d_units_sold": 14474,
+     "last_7d_gmv": 527862037,
+     "last_7d_units_sold": 3851,
+     "last_90d_gmv": 7142274060,
+     "last_90d_units_sold": 92653,
+     "total_gmv": 34101012007,
+     "total_units_sold": 334152,
+     "yesterday_gmv": 93307690,
+     "yesterday_units_sold": 658
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ea0983677884424e9f96464efba90883~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495893812751403721",
+     "shop_name": "Pentavite Vietnam",
+     "total_units_sold": 559748
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 696,
+     "linked_video_count": 2887
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 483.23,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/15eb443f1fdb477eb2facd9ffc6dbdb2~tplv-aphluv4xwc-crop-webp:2000:2000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732278831651785417",
+     "floor_price": 147.37,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-04-18",
+     "launch_time": 1744944603,
+     "price_display": "147.369 ₫  -  483.234 ₫",
+     "product_id": "1732278831651785417",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 7,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732278831651785417?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[LIVE PENTAVITE] Vitamin B Complex Viên Nhai - Bổ Sung 8 Loại Vitamin B + Taurine - Hỗ trợ chuyển hóa năng lượng, hạn chế rụng tóc - Hộp 30 viên - Hương vị Soda Chanh dễ dùng - Chứng nhận VFA, NIFC"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 999981784,
+     "last_28d_units_sold": 6902,
+     "last_7d_gmv": 237417225,
+     "last_7d_units_sold": 1650,
+     "last_90d_gmv": 1830637708,
+     "last_90d_units_sold": 15035,
+     "total_gmv": 2765070176,
+     "total_units_sold": 22759,
+     "yesterday_gmv": 26673789,
+     "yesterday_units_sold": 181
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ea0983677884424e9f96464efba90883~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495893812751403721",
+     "shop_name": "Pentavite Vietnam",
+     "total_units_sold": 559748
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 208,
+     "linked_video_count": 712
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 238.27,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/1cd74f0ab0cd4d70b6b4cda5799b20da~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737129821864887437",
+     "floor_price": 94.59,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-23",
+     "launch_time": 1787437663,
+     "price_display": "94.589 ₫  -  238.270 ₫",
+     "product_id": "1737129821864887437",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737129821864887437?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Future Queen] Vitamin B Complex Viên Nhai - 10 dưỡng chất trong mỗi khẩu phần: 8 loại Vitamin B + Selenium + Taurine - Hỗ trợ chuyển hóa năng lượng và bổ sung dinh dưỡng hằng ngày - 120 viên"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 577138949,
+     "last_28d_units_sold": 6507,
+     "last_7d_gmv": 151240568,
+     "last_7d_units_sold": 1705,
+     "last_90d_gmv": 762439575,
+     "last_90d_units_sold": 8627,
+     "total_gmv": 762439575,
+     "total_units_sold": 8627,
+     "yesterday_gmv": 24498551,
+     "yesterday_units_sold": 259
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/638194431517495e8676aaf833e6f346~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494815998346364045",
+     "shop_name": "Daily Vita Pocket",
+     "total_units_sold": 41392
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 165,
+     "linked_video_count": 929
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 17,
+       "name": "Pet Supplies"
+      },
+      "l2": {
+       "id": 1001992,
+       "name": "Farm Animal & Poultry Supplies"
+      },
+      "l3": {
+       "id": 1002760,
+       "name": "Food"
+      }
+     },
+     "ceiling_price": 533.4,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/9ba1f7ac8e0d456a80604e306408a857~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736154746253838150",
+     "floor_price": 53.34,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-22",
+     "launch_time": 1782080903,
+     "price_display": "53.340 ₫  -  533.403 ₫",
+     "product_id": "1736154746253838150",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736154746253838150?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "B-Complex - Bổ sung Vitamin, Kích thích tăng cường ăn uống, bổ sung năng lượng, tăng trưởng nhanh chóng cho vật nuôi"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 150526833,
+     "last_28d_units_sold": 3007,
+     "last_7d_gmv": 42468571,
+     "last_7d_units_sold": 811,
+     "last_90d_gmv": 417309459,
+     "last_90d_units_sold": 9570,
+     "total_gmv": 421653628,
+     "total_units_sold": 9651,
+     "yesterday_gmv": 10561320,
+     "yesterday_units_sold": 198
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5bec02774c524ce79043d023333f2733~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495007768978688838",
+     "shop_name": "Dược phẩm vàng",
+     "total_units_sold": 86538
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 5,
+     "linked_video_count": 52
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 17,
+       "name": "Pet Supplies"
+      },
+      "l2": {
+       "id": 818184,
+       "name": "Dog & Cat Healthcare"
+      },
+      "l3": {
+       "id": 818568,
+       "name": "Vitamins & Supplements"
+      }
+     },
+     "ceiling_price": 138,
+     "commission_rate_percent": 12,
+     "cover_url": "https://s.500fd.com/tt_product/8d80417722864d41a6dcae356e63acd1~tplv-aphluv4xwc-crop-webp:1073:1073.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732790801337714570",
+     "floor_price": 37.43,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-09",
+     "launch_time": 1762623899,
+     "price_display": "37.432 ₫  -  1.603.138 ₫",
+     "product_id": "1732790801337714570",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732790801337714570?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Chính hãng] B-Complex C - Tăng trong nhanh, Cung cấp vitamin nhóm B, C, Chống Stress khi thời tiết thay đổi, tiêm phòng, chuyển chuồng, hồng da, mượt lông, Đẹp mã (Bột hoà nước uống, trộn thức ăn)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 15270755,
+     "last_28d_units_sold": 437,
+     "last_7d_gmv": 214943,
+     "last_7d_units_sold": 6,
+     "last_90d_gmv": 25551624,
+     "last_90d_units_sold": 731,
+     "total_gmv": 26030984,
+     "total_units_sold": 745,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/50e783a3c1d7490784932a8b8c9a0370~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495778740207848330",
+     "shop_name": "NPP Thuốc Thú Y Thịnh Phát",
+     "total_units_sold": 20110
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 218,
+     "linked_video_count": 788
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 486.03,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/d41f3eb898b14ee4ac410ef29893cc80~tplv-aphluv4xwc-crop-webp:2000:2000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731170121579202249",
+     "floor_price": 266.57,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-25",
+     "launch_time": 1758802417,
+     "price_display": "266.569 ₫  -  486.029 ₫",
+     "product_id": "1731170121579202249",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731170121579202249?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[PENTAVITE] Combo Vitamin B Complex + Calcium D Plus - 8 loại Vitamin B + Taurine + Canxi + Vitamin D - Hỗ trợ chuyển hóa năng lượng, Hỗ trợ tóc và xương chắc khỏe - Hộp 30 viên - Chứng nhận VFA, NIFC"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 64766626,
+     "last_28d_units_sold": 261,
+     "last_7d_gmv": 13584534,
+     "last_7d_units_sold": 54,
+     "last_90d_gmv": 396819238,
+     "last_90d_units_sold": 1927,
+     "total_gmv": 1703626271,
+     "total_units_sold": 8134,
+     "yesterday_gmv": 1865983,
+     "yesterday_units_sold": 7
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ea0983677884424e9f96464efba90883~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495893812751403721",
+     "shop_name": "Pentavite Vietnam",
+     "total_units_sold": 559748
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 11,
+     "linked_video_count": 19
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 220.95,
+     "commission_rate_percent": 9,
+     "cover_url": "https://s.500fd.com/tt_product/9ab846f918754ccbbad445c009b38271~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732243940354722388",
+     "floor_price": 220.95,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-16",
+     "launch_time": 1778874355,
+     "price_display": "220.952 ₫",
+     "product_id": "1732243940354722388",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732243940354722388?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "MULITTEA Viên uống tổng hợp vitamin B complex có Vitamin C, Biotin, B1, B2, B3, B5, B6, B9, B12, 120 viên/lọ, hỗ trợ sức khỏe tim mạch và cung cấp năng lượng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 42699998,
+     "last_28d_units_sold": 208,
+     "last_7d_gmv": 12587275,
+     "last_7d_units_sold": 62,
+     "last_90d_gmv": 73506718,
+     "last_90d_units_sold": 393,
+     "total_gmv": 102640774,
+     "total_units_sold": 560,
+     "yesterday_gmv": 1767616,
+     "yesterday_units_sold": 8
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/345552e4ce284f43b49ca2813ca02f04~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7496133735229393492",
+     "shop_name": "health vietnam",
+     "total_units_sold": 17854
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 52,
+     "linked_video_count": 90
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 25,
+       "name": "Health"
+      },
+      "l2": {
+       "id": 700646,
+       "name": "Food Supplements"
+      },
+      "l3": {
+       "id": 700650,
+       "name": "Wellness Supplements"
+      }
+     },
+     "ceiling_price": 208.73,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/1fce23d2292d4897a73d88c526964f42~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737477431931733099",
+     "floor_price": 83.81,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-13",
+     "launch_time": 1789230168,
+     "price_display": "83.805 ₫  -  208.727 ₫",
+     "product_id": "1737477431931733099",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737477431931733099?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "FUTURE QUEEN Vitamin B Complex Với Selenium & Taurine|Bổ Sung Nhóm B Toàn Diện, Giảm Mệt Mỏi, Hỗ Trợ Chuyển Hóa Năng Lượng Mỗi Ngày"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 7629268,
+     "last_28d_units_sold": 90,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 8571571,
+     "last_90d_units_sold": 99,
+     "total_gmv": 8571571,
+     "total_units_sold": 99,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/95f7e946c91741418c3ee6125438a5bc~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494654869267317867",
+     "shop_name": "Vệ sĩ sức khỏe Mall",
+     "total_units_sold": 3077
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 0,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 17,
+       "name": "Pet Supplies"
+      },
+      "l2": {
+       "id": 1001992,
+       "name": "Farm Animal & Poultry Supplies"
+      },
+      "l3": {
+       "id": 805264,
+       "name": "Farm Animal Health Supplies"
+      }
+     },
+     "ceiling_price": 94.56,
+     "commission_rate_percent": 2,
+     "cover_url": "https://s.500fd.com/tt_product/823f12bd74be4af69ec6d3c6a701c767~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734854058238510223",
+     "floor_price": 94.56,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-04-09",
+     "launch_time": 1775719917,
+     "price_display": "94.556 ₫",
+     "product_id": "1734854058238510223",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734854058238510223?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "(1kg) B Complex K3 + C – Vitamin tổng hợp cho gia súc gia cầm"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1756475,
+     "last_28d_units_sold": 18,
+     "last_7d_gmv": 604884,
+     "last_7d_units_sold": 6,
+     "last_90d_gmv": 9475692,
+     "last_90d_units_sold": 106,
+     "total_gmv": 24273131,
+     "total_units_sold": 283,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/387446be7f734e4bbac7e655ec99a17e~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494754984045152399",
+     "shop_name": "Thuốc thú y Nam Thư .",
+     "total_units_sold": 11762
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 0,
+     "linked_video_count": 0
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 17,
+       "name": "Pet Supplies"
+      },
+      "l2": {
+       "id": 818184,
+       "name": "Dog & Cat Healthcare"
+      },
+      "l3": {
+       "id": 818568,
+       "name": "Vitamins & Supplements"
+      }
+     },
+     "ceiling_price": 95.37,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/273084242d63468eb44db495129fe49c~tplv-aphluv4xwc-crop-webp:784:1045.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736274477255132552",
+     "floor_price": 95.37,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-10",
+     "launch_time": 1783638093,
+     "price_display": "95.370 ₫",
+     "product_id": "1736274477255132552",
+     "product_rating": 5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736274477255132552?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "B complex K3 + C gói 1kg bổ sung vitamin B và C, K3 cho vật nuôi khoẻ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1518478,
+     "last_28d_units_sold": 16,
+     "last_7d_gmv": 187620,
+     "last_7d_units_sold": 2,
+     "last_90d_gmv": 3432962,
+     "last_90d_units_sold": 36,
+     "total_gmv": 4812563,
+     "total_units_sold": 50,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3351fef86eed41a98e7d25c1a17c8849~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495201700471146888",
+     "shop_name": "HKD Thú Y Xanh",
+     "total_units_sold": 1779
+    }
+   }
+  ],
+  "total": 430
+ }
+}

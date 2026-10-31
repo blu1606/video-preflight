@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "quạt tản nhiệt điện thoại",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 231,
+     "linked_video_count": 1048
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909192,
+       "name": "Cameras & Photography"
+      },
+      "l3": {
+       "id": 911240,
+       "name": "Video Camcorders"
+      }
+     },
+     "ceiling_price": 82.32,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/21b8168f4c144631bdc8a01d18e1c19a~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736350560077186845",
+     "floor_price": 82.32,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-05",
+     "launch_time": 1783222379,
+     "price_display": "82.316 ₫",
+     "product_id": "1736350560077186845",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736350560077186845?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "KY V60 Quạt Tản Nhiệt Điện Thoại Thế Hệ Mới 【Hạ Nhiệt Siêu Tốc, Đèn LED Chuyển Màu Rực Rỡ】Tản Nhiệt Nhanh Chóng Khi Chơi Game/Xem Phim, Giảm Giật Lag, Phản Hồi Tức Thì. Phù Hợp Với Mọi Dòng Điện Thoại (iPhone Và Android)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 407406569,
+     "last_28d_units_sold": 5138,
+     "last_7d_gmv": 49008991,
+     "last_7d_units_sold": 632,
+     "last_90d_gmv": 927572834,
+     "last_90d_units_sold": 11776,
+     "total_gmv": 1133489484,
+     "total_units_sold": 14474,
+     "yesterday_gmv": 8478548,
+     "yesterday_units_sold": 103
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/7c462646436f4d17a6cacfe2fb06ea27~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8647404618770515741",
+     "shop_name": "KUYOCO",
+     "total_units_sold": 1265588
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 54,
+     "linked_video_count": 290
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 222.25,
+     "commission_rate_percent": 4,
+     "cover_url": "https://s.500fd.com/tt_product/9bfe59adda504300addd8fa44ff67378~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737346155651237176",
+     "floor_price": 144.07,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-04",
+     "launch_time": 1788508889,
+     "price_display": "144.073 ₫  -  222.252 ₫",
+     "product_id": "1737346155651237176",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 36,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737346155651237176?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quạt Tản Nhiệt Điện Thoại Sò Lạnh Từ Tính K50 / K51 / K52 / K56 / K62 - Tặng kèm cáp Type C+ Kẹp lưng+ Nam châm từ tính - Led RGB Bản Nâng Cấp 2026 - Sò Lạnh Tản Nhiệt Chính Hãng Giá Rẻ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 337229403,
+     "last_28d_units_sold": 2344,
+     "last_7d_gmv": 81381270,
+     "last_7d_units_sold": 557,
+     "last_90d_gmv": 433749894,
+     "last_90d_units_sold": 3005,
+     "total_gmv": 433749894,
+     "total_units_sold": 3005,
+     "yesterday_gmv": 14263227,
+     "yesterday_units_sold": 99
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0bf85b9934e1462ab22a95c6098e6782~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496025676646156600",
+     "shop_name": "IMENSO&XOOXI",
+     "total_units_sold": 288529
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 504,
+     "linked_video_count": 1371
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909448,
+       "name": "Gaming & Consoles"
+      },
+      "l3": {
+       "id": 913928,
+       "name": "Console Accessories"
+      }
+     },
+     "ceiling_price": 331.08,
+     "commission_rate_percent": 9,
+     "cover_url": "https://s.500fd.com/tt_product/6caa2940696447f4a6360d1356494356~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735732844569920766",
+     "floor_price": 176.81,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-26",
+     "launch_time": 1779774429,
+     "price_display": "176.812 ₫  -  331.077 ₫",
+     "product_id": "1735732844569920766",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735732844569920766?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Z1 Quạt Tản Nhiệt Điện Thoại [Đóng băng thật] Công nghệ làm lạnh bán dẫn mới nhất, Làm mát cấp tốc khi chiến game & xem phim, Độ trễ cực thấp -phản hồi tức thì, Tương thích với mọi điện thoại và máy tính bảng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 354947873,
+     "last_28d_units_sold": 2231,
+     "last_7d_gmv": 51200114,
+     "last_7d_units_sold": 309,
+     "last_90d_gmv": 890029152,
+     "last_90d_units_sold": 6072,
+     "total_gmv": 3210155570,
+     "total_units_sold": 14183,
+     "yesterday_gmv": 6188420,
+     "yesterday_units_sold": 35
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/7c63f27f6c4446caaa4308df089474c9~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8647121890967454974",
+     "shop_name": "KY Tech",
+     "total_units_sold": 11380619
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 147,
+     "linked_video_count": 410
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909448,
+       "name": "Gaming & Consoles"
+      },
+      "l3": {
+       "id": 913928,
+       "name": "Console Accessories"
+      }
+     },
+     "ceiling_price": 167.9,
+     "commission_rate_percent": 8.5,
+     "cover_url": "https://s.500fd.com/tt_product/d0aa0b8e4bdc42beb725742ce66897ec~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736775589986403582",
+     "floor_price": 70.51,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-30",
+     "launch_time": 1785368662,
+     "price_display": "70.506 ₫  -  167.900 ₫",
+     "product_id": "1736775589986403582",
+     "product_rating": 4.2,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 8,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736775589986403582?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Z6/Z5/Z1 Quạt Tản Nhiệt Điện Thoại Bán Dẫn [Phiên Bản Dông Lạnh] Công nghệ làm lạnh bán dẫn mới nhất, Làm mát cấp tốc khi chiến game & xem phim, Độ trễ cực thấp -phản hồi tức thì, Tương thích với mọi điện thoại và máy tính bảng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 102936209,
+     "last_28d_units_sold": 1359,
+     "last_7d_gmv": 18180340,
+     "last_7d_units_sold": 236,
+     "last_90d_gmv": 454296567,
+     "last_90d_units_sold": 6300,
+     "total_gmv": 464316537,
+     "total_units_sold": 6435,
+     "yesterday_gmv": 1480626,
+     "yesterday_units_sold": 21
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/7c63f27f6c4446caaa4308df089474c9~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8647121890967454974",
+     "shop_name": "KY Tech",
+     "total_units_sold": 11380619
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 49,
+     "linked_video_count": 191
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 978952,
+       "name": "Universal Accessories"
+      },
+      "l3": {
+       "id": 990728,
+       "name": "USB & Mobile Fans"
+      }
+     },
+     "ceiling_price": 76.89,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/3a9c93f87c1d42b79161db1061e33360~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733559676838184610",
+     "floor_price": 76.89,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-12-13",
+     "launch_time": 1765623476,
+     "price_display": "76.893 ₫",
+     "product_id": "1733559676838184610",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733559676838184610?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "CLUBLU Quạt Tản Nhiệt AL-01 Điện Thoại RGB Đa Sắc Silent Siêu Nhẹ Hạ Nhiệt Tức Thì Cho Game PUBG - Làm Mát Nhanh Chóng Giảm Tiếng Ồn Đèn RGB Rực Rỡ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 58960684,
+     "last_28d_units_sold": 890,
+     "last_7d_gmv": 16055332,
+     "last_7d_units_sold": 215,
+     "last_90d_gmv": 186122094,
+     "last_90d_units_sold": 3032,
+     "total_gmv": 462948018,
+     "total_units_sold": 7611,
+     "yesterday_gmv": 2460576,
+     "yesterday_units_sold": 32
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ef58c8634bc849919f0acf81ea626e59~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494226363625932450",
+     "shop_name": "CLUBLU MALL",
+     "total_units_sold": 59973
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 263,
+     "linked_video_count": 683
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 978952,
+       "name": "Universal Accessories"
+      },
+      "l3": {
+       "id": 990728,
+       "name": "USB & Mobile Fans"
+      }
+     },
+     "ceiling_price": 65.38,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/6517d2def9fd4f8f887d4d86713a1332~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729594244704733581",
+     "floor_price": 60.52,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-03-10",
+     "launch_time": 1678392763,
+     "price_display": "60.515 ₫  -  65.378 ₫",
+     "product_id": "1729594244704733581",
+     "product_rating": 4.3,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729594244704733581?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quạt tản nhiệt điện thoại AL01 đèn Led đổi màu RGB | Phụ kiện chơi game mobile đời mới"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 55840013,
+     "last_28d_units_sold": 864,
+     "last_7d_gmv": 14108137,
+     "last_7d_units_sold": 221,
+     "last_90d_gmv": 158866708,
+     "last_90d_units_sold": 2548,
+     "total_gmv": 1297576093,
+     "total_units_sold": 35092,
+     "yesterday_gmv": 2783690,
+     "yesterday_units_sold": 46
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c7bf6ef3478e412ebeaca61b030f99d8~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494766839167093133",
+     "shop_name": "TinTin-Shop",
+     "total_units_sold": 48086
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 515,
+     "linked_video_count": 1598
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 978952,
+       "name": "Universal Accessories"
+      },
+      "l3": {
+       "id": 990728,
+       "name": "USB & Mobile Fans"
+      }
+     },
+     "ceiling_price": 817.21,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/31c202de081f4201b8eb2b374764ec7c~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729623360549324877",
+     "floor_price": 107.67,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-05-25",
+     "launch_time": 1685006186,
+     "price_display": "107.670 ₫  -  817.214 ₫",
+     "product_id": "1729623360549324877",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 26,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729623360549324877?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quạt tản nhiệt điện thoại sò lạnh X122 Pro / X9 / FS18 Pro / S2 / S9 / SL09 / J42 / K5 / X12 Plus / SL39 / SL54 / C90 / F49 Pro - Sò lạnh tản nhiệt giá rẻ 2026 Phụ Kiện"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 89039261,
+     "last_28d_units_sold": 793,
+     "last_7d_gmv": 16437524,
+     "last_7d_units_sold": 146,
+     "last_90d_gmv": 221171992,
+     "last_90d_units_sold": 1961,
+     "total_gmv": 5870492698,
+     "total_units_sold": 39212,
+     "yesterday_gmv": 1076700,
+     "yesterday_units_sold": 10
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/fbeca9ed4e7440ad8520a5d43a69ab26~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494568763528742989",
+     "shop_name": "Phụ Kiện Pico phukienpico",
+     "total_units_sold": 2155735
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 26,
+     "linked_video_count": 39
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 25.82,
+     "commission_rate_percent": 11,
+     "cover_url": "https://s.500fd.com/tt_product/d29407a5a02645e2b8069da3ef91f39f~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730411226480085449",
+     "floor_price": 16.84,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-06-19",
+     "launch_time": 1718776987,
+     "price_display": "16.840 ₫  -  25.821 ₫",
+     "product_id": "1730411226480085449",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730411226480085449?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Miếng dán Magsafe bông tuyết màu bạc đẹp mắt cho các dòng điện thoại, IPad không có Magsafe cho quạt tản nhiệt sò lạnh"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 10097293,
+     "last_28d_units_sold": 557,
+     "last_7d_gmv": 2517156,
+     "last_7d_units_sold": 146,
+     "last_90d_gmv": 25772091,
+     "last_90d_units_sold": 1543,
+     "total_gmv": 155121534,
+     "total_units_sold": 7355,
+     "yesterday_gmv": 421000,
+     "yesterday_units_sold": 25
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/923f4832cce3460799c7de608cf977cf~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494765958088395209",
+     "shop_name": "PT Store - Phụ kiện game",
+     "total_units_sold": 444737
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 80,
+     "linked_video_count": 249
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 978952,
+       "name": "Universal Accessories"
+      },
+      "l3": {
+       "id": 990728,
+       "name": "USB & Mobile Fans"
+      }
+     },
+     "ceiling_price": 75.22,
+     "commission_rate_percent": 11,
+     "cover_url": "https://s.500fd.com/tt_product/58728a3fda414e68b6caed50a5e25d91~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729791517324642761",
+     "floor_price": 34.88,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-11-15",
+     "launch_time": 1699983172,
+     "price_display": "34.883 ₫  -  75.217 ₫",
+     "product_id": "1729791517324642761",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729791517324642761?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "QUẠT TẢN NHIỆT X16 BẢN NÂNG CẤP GẮN ĐIỆN THOẠI, TRÁNH NÓNG TRÁNH LAG KHI CHƠI GAME Phụ Kiện Usb"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 14795348,
+     "last_28d_units_sold": 392,
+     "last_7d_gmv": 5064238,
+     "last_7d_units_sold": 139,
+     "last_90d_gmv": 38903446,
+     "last_90d_units_sold": 972,
+     "total_gmv": 143879713,
+     "total_units_sold": 4557,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/923f4832cce3460799c7de608cf977cf~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494765958088395209",
+     "shop_name": "PT Store - Phụ kiện game",
+     "total_units_sold": 444737
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 22,
+     "linked_video_count": 67
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 978952,
+       "name": "Universal Accessories"
+      },
+      "l3": {
+       "id": 990728,
+       "name": "USB & Mobile Fans"
+      }
+     },
+     "ceiling_price": 91.6,
+     "commission_rate_percent": 11,
+     "cover_url": "https://s.500fd.com/tt_product/e375240388ac401ea10ab21557ad9ec6~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731473140755039689",
+     "floor_price": 33.63,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-05-28",
+     "launch_time": 1748424222,
+     "price_display": "33.626 ₫  -  91.602 ₫",
+     "product_id": "1731473140755039689",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731473140755039689?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Miếng dán truyền nhiệt Grephene Đồng Nano-Carbon giúp tản nhiệt đều điện thoại - sử dụng chung với quạt sò lạnh"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 12752708,
+     "last_28d_units_sold": 373,
+     "last_7d_gmv": 2135190,
+     "last_7d_units_sold": 66,
+     "last_90d_gmv": 35619096,
+     "last_90d_units_sold": 1182,
+     "total_gmv": 144162263,
+     "total_units_sold": 5456,
+     "yesterday_gmv": 437138,
+     "yesterday_units_sold": 13
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/923f4832cce3460799c7de608cf977cf~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494765958088395209",
+     "shop_name": "PT Store - Phụ kiện game",
+     "total_units_sold": 444737
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

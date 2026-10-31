@@ -1,0 +1,189 @@
+{
+  "model": "gpt-6-luna",
+  "input": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "text": "Replace this text and the input_json data with actual validated evidence for this question batch."
+        },
+        {
+          "type": "input_json",
+          "data": {
+            "video": {},
+            "sku": {},
+            "shop": {},
+            "market": {},
+            "policy": {},
+            "post": {}
+          }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "type": "score",
+      "name": "H01",
+      "instructions": "How healthy is shop catalog based on active SKUs, missing details and availability? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Catalog largely broken/unavailable."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Severe widespread missing details or stockouts."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Mixed coverage and recurring gaps."
+        },
+        {
+          "label": "3 Good",
+          "description": "Mostly complete in-stock catalog."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Consistent high-quality catalog with good availability and variant hygiene."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "H02",
+      "instructions": "How strong are fulfillment outcomes using cancellation, late-shipment and dispute metrics? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Severe persistent fulfillment failures."
+        },
+        {
+          "label": "1 Weak",
+          "description": "High cancellations/late shipment or unresolved disputes."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Noticeable issues but not dominant."
+        },
+        {
+          "label": "3 Good",
+          "description": "Generally reliable fulfillment with modest exceptions."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Consistently reliable fulfillment, low preventable issues."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "H03",
+      "instructions": "How effectively does the shop convert relevant visits to orders relative to comparable shops? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Conversion critically below category comparable."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Substantially below comparable."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Near expected baseline with gaps."
+        },
+        {
+          "label": "3 Good",
+          "description": "Above comparable benchmark with stable evidence."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Strong sustained conversion above peer baseline without misleading attribution."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "H04",
+      "instructions": "How efficient is paid acquisition considering spend, attributable revenue and margin? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Spend generates material losses with reliable attribution."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Poor unit economics despite sufficient data."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Near break-even / mixed attribution."
+        },
+        {
+          "label": "3 Good",
+          "description": "Healthy contribution after spend."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Sustainable strong incremental profitability with reliable attribution."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "H05",
+      "instructions": "How strong are seller reputation and after-sales issue handling? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Repeated unresolved serious issues."
+        },
+        {
+          "label": "1 Weak",
+          "description": "High repeat complaints/low rating."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Mixed sentiment and inconsistent resolution."
+        },
+        {
+          "label": "3 Good",
+          "description": "Predominantly positive feedback, issues generally resolved."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Strong representative ratings and fast transparent remediation."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "C10",
+      "instructions": "How easy is purchase given real stock, price, shipping and path information? Score only from supplied evidence, not supposed sales or platform performance. Do not treat promotional claims as verified facts.",
+      "levels": [
+        {
+          "label": "0 Absent",
+          "description": "Cannot purchase or materially blocked."
+        },
+        {
+          "label": "1 Weak",
+          "description": "Major blockers or missing path."
+        },
+        {
+          "label": "2 Fair",
+          "description": "Some friction: stock/fees/variants unclear."
+        },
+        {
+          "label": "3 Good",
+          "description": "Working path, available stock, understandable price and shipping."
+        },
+        {
+          "label": "4 Excellent",
+          "description": "Seamless purchase path, clear variant/terms and reliable fulfillment."
+        }
+      ]
+    }
+  ]
+}

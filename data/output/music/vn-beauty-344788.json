@@ -1,0 +1,13 @@
+{
+  "tool": "ShazamIO (unofficial Shazam API)",
+  "checked_at": "2026-10-30T15:34:16+07:00",
+  "video_file": "D:\\CODE\\Study\\AIO\\Labs\\Linear_regression\\video_understanding\\data\\vn-beauty-344788.mp4",
+  "status": "matched",
+  "title": "Turn on the Light Tonight",
+  "artist": "David Reed",
+  "shazam_url": "https://www.shazam.com/track/870286729/turn-on-the-light-tonight",
+  "matched_window": {
+    "start_sec": 0.0,
+    "end_sec": 12.0
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 1,
+  "label": "1 Weak",
+  "score": 25.0,
+  "rationale": "Nội dung chỉ nêu một vài đặc điểm thiết kế của ốp lưng, nên có chút thông tin mô tả nhưng chưa cho thấy mẹo hữu ích, so sánh hay insight đáng lưu hoặc chia sẻ. Bằng chứng về storytelling không có nội dung cụ thể để xác nhận giá trị cao hơn.",
+  "key_evidence": [
+    "video.value_propositions: “Ốp có thiết kế sọc hồng, chữ trang trí và phần viền camera màu xanh nhạt.” (REAL)",
+    "video.storytelling: 2.0 (REAL)"
+  ],
+  "evidence_sent": {
+    "video.storytelling": {
+      "value": 2.0,
+      "status": "REAL"
+    },
+    "video.value_propositions": {
+      "value": [
+        "Ốp có thiết kế sọc hồng, chữ trang trí và phần viền camera màu xanh nhạt."
+      ],
+      "status": "REAL"
+    }
+  },
+  "usage": {
+    "completion_tokens": 469,
+    "prompt_tokens": 330,
+    "total_tokens": 799,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 328,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

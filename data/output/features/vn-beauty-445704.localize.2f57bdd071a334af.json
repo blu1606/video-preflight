@@ -1,0 +1,72 @@
+{
+  "model": "gpt-6-luna",
+  "regions": [
+    {
+      "marker_id": "criterion:C03",
+      "box": [
+        0.56,
+        0.38,
+        0.14,
+        0.14
+      ],
+      "label": "Vật thể chưa được trình diễn rõ",
+      "confidence": 0.82
+    },
+    {
+      "marker_id": "policy:tiktok_ads:TTA-001:4",
+      "box": null,
+      "label": "Tuyên bố chỉ thể hiện qua lời nói",
+      "confidence": 0.94
+    },
+    {
+      "marker_id": "policy:meta_ads:META-001:4",
+      "box": null,
+      "label": "Tuyên bố chỉ thể hiện qua lời nói",
+      "confidence": 0.94
+    },
+    {
+      "marker_id": "criterion:C04",
+      "box": null,
+      "label": "Lợi ích chỉ nêu bằng lời",
+      "confidence": 0.91
+    },
+    {
+      "marker_id": "criterion:C06",
+      "box": null,
+      "label": "Thiếu bằng chứng cho tuyên bố",
+      "confidence": 0.91
+    },
+    {
+      "marker_id": "criterion:V02",
+      "box": null,
+      "label": "Lời hứa chung chung bằng lời",
+      "confidence": 0.88
+    },
+    {
+      "marker_id": "criterion:V06",
+      "box": [
+        0.04,
+        0.11,
+        0.96,
+        0.89
+      ],
+      "label": "Cảm xúc căng thẳng thiếu liên quan",
+      "confidence": 0.79
+    },
+    {
+      "marker_id": "criterion:V10",
+      "box": [
+        0.05,
+        0.1,
+        0.94,
+        0.9
+      ],
+      "label": "Mở đầu chưa làm rõ sản phẩm",
+      "confidence": 0.76
+    }
+  ],
+  "token_usage": {
+    "prompt_tokens": 1899,
+    "completion_tokens": 848
+  }
+}

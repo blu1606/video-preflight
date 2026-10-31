@@ -1,0 +1,417 @@
+{
+  "version": "v0",
+  "created_at": "2026-10-29",
+  "purpose": "Every threshold / benchmark the rule scoring uses, with provenance. status: placeholder = chosen by the author, not measured; sourced = taken from cited data or a cited public source; calibrated = fitted against real outcomes. No entry is calibrated yet.",
+  "constants": {
+    "rubric.bench_completion_rate": {
+      "value": 0.5,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "V7 / VC3: completion rate scoring 100"
+    },
+    "rubric.bench_product_ctr": {
+      "value": 0.02,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "C8 / VC1: video -> product CTR scoring full marks"
+    },
+    "rubric.bench_click_to_order_cvr": {
+      "value": 0.05,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "C8 / VC2: click -> order CVR scoring full marks"
+    },
+    "rubric.bench_gross_margin_rate": {
+      "value": 0.5,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "S8: gross margin rate scoring 100"
+    },
+    "rubric.saturation_videos_for_zero": {
+      "value": 1000,
+      "unit": "videos",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "S6 fallback only (category percentile unavailable). Set for mock data; real FastMoss counts run in the thousands to tens of thousands, so most real SKUs score 0 on this fallback (docs/market-data-provenance.md)"
+    },
+    "rubric.authenticity_score": {
+      "value": {
+        "high": 85,
+        "medium": 60,
+        "low": 30
+      },
+      "unit": "points",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "C4: points per VLM authenticity level"
+    },
+    "rubric.pacing_ideal_shot_sec": {
+      "value": [
+        1.5,
+        3.0
+      ],
+      "unit": "seconds per shot",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "V3: average shot length scoring 100 (short-form ads typically ~1.5-3 s per shot)"
+    },
+    "rubric.pacing_frantic_sec": {
+      "value": 0.5,
+      "unit": "seconds per shot",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "V3: shot length at which pacing reaches 0 (too frantic)"
+    },
+    "rubric.pacing_slow_sec": {
+      "value": 8.0,
+      "unit": "seconds per shot",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "V3: shot length at which pacing reaches 0 (too slow)"
+    },
+    "rubric.rating_zero_stars": {
+      "value": 3.0,
+      "unit": "stars",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "Rating scale floor: this rating scores 0 (S3, C4, S7, H4, Q1)"
+    },
+    "rubric.rating_full_stars": {
+      "value": 5.0,
+      "unit": "stars",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "Rating scale top: this rating scores 100"
+    },
+    "rubric.review_count_full_confidence": {
+      "value": 1000,
+      "unit": "reviews",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "S3: review count at which the rating gets full confidence (log10 scale)"
+    },
+    "rubric.offer_full_marks_discount": {
+      "value": 0.5,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "C5: discount off list price scoring 100 before the voucher bonus"
+    },
+    "rubric.shipping_days_free": {
+      "value": 2,
+      "unit": "days",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "C7: shipping days before the per-day friction penalty starts"
+    },
+    "rubric.v9_full_marks_sec": {
+      "value": 3.0,
+      "unit": "seconds",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "V9: product clearly visible at or before this second scores 100 (in line with the common 'first 3 seconds' hook advice; not verified against performance)"
+    },
+    "rubric.v9_zero_sec": {
+      "value": 10.0,
+      "unit": "seconds",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "V9: product first clearly visible at or after this second scores 0; linear in between"
+    },
+    "rubric.v10_speech_within_sec": {
+      "value": 1.0,
+      "unit": "seconds",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "V10: speech must start within this second to count as an opening signal"
+    },
+    "rubric.v10_text_within_sec": {
+      "value": 2.0,
+      "unit": "seconds",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "V10: on-screen text must appear within this second"
+    },
+    "rubric.v10_cut_within_sec": {
+      "value": 3.0,
+      "unit": "seconds",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "V10: first hard cut must happen within this second"
+    },
+    "market.demand_full_scale_log10_units": {
+      "value": 6,
+      "unit": "log10 units / 28 days",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "S5 fallback: market.demand_index = log10(28-day units of like-for-like TikTok comparables + 1) / this x 100, so 1,000,000 units = 100",
+      "features": [
+        "market.demand_index"
+      ]
+    },
+    "market.trend_full_scale_momentum": {
+      "value": 2.0,
+      "unit": "7d x 4 / 28d units",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "V5: market.trend_score = 100 x momentum / this; momentum 1 (flat) = 50",
+      "features": [
+        "market.trend_score"
+      ]
+    },
+    "market.stale_days": {
+      "value": 30,
+      "unit": "days",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "A snapshot older than this is labelled stale in evidence (does not change scores)"
+    },
+    "market.category_percentile_min_n": {
+      "value": 20,
+      "unit": "products",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "Method parameter: minimum crawled TikTok Shop products in the SKU's FastMoss category before a category percentile is used; below it the criterion falls back to its constant"
+    },
+    "market.niche_percentile_min_n": {
+      "value": 3,
+      "unit": "products",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "Method parameter: minimum like-for-like TikTok comparables whose median is ranked in the category"
+    },
+    "market.price_rank_min_n": {
+      "value": 5,
+      "unit": "listings",
+      "status": "placeholder",
+      "source": "set by the rubric author, not measured",
+      "note": "Method parameter: minimum like-for-like listings before S2 ranks the price; fewer -> S2 not_scored"
+    },
+    "shop_rubric.worst_late_rate": {
+      "value": 0.15,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "H1: late shipment rate scoring 0"
+    },
+    "shop_rubric.worst_cancel_rate": {
+      "value": 0.1,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "H2: cancellation rate scoring 0"
+    },
+    "shop_rubric.worst_return_rate": {
+      "value": 0.2,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "H3: return rate scoring 0"
+    },
+    "shop_rubric.worst_lost_demand": {
+      "value": 0.3,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Q4: share of demand lost to stockouts scoring 0"
+    },
+    "shop_rubric.bench_visit_to_order_cvr": {
+      "value": 0.04,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "E1: visit -> order CVR scoring 100"
+    },
+    "shop_rubric.bench_visits_30d": {
+      "value": 45000,
+      "unit": "visits / 30 days",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "E2: traffic scoring 100"
+    },
+    "shop_rubric.bench_roas": {
+      "value": 5.0,
+      "unit": "x",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "E3: ROAS earning the full ROAS half"
+    },
+    "shop_rubric.bench_contribution_margin": {
+      "value": 0.25,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "E4: contribution margin scoring 100"
+    },
+    "shop_diagnosis.min_orders_30d": {
+      "value": 100,
+      "unit": "orders / 30 days",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Below this the shop diagnosis is low confidence"
+    },
+    "shop_diagnosis.min_rating_count": {
+      "value": 50,
+      "unit": "ratings",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Below this the shop diagnosis is low confidence"
+    },
+    "shop_diagnosis.min_shop_age_days": {
+      "value": 90,
+      "unit": "days",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Below this the shop diagnosis is low confidence"
+    },
+    "shop_diagnosis.late_limit": {
+      "value": 0.08,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Late shipment rate flagged as an operations issue"
+    },
+    "shop_diagnosis.cancel_limit": {
+      "value": 0.05,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Cancellation rate flagged as an operations issue"
+    },
+    "shop_diagnosis.return_limit": {
+      "value": 0.08,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Return rate flagged as a returns / trust issue"
+    },
+    "shop_diagnosis.lost_demand_limit": {
+      "value": 0.1,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Share of demand lost to stockouts flagged as an inventory issue"
+    },
+    "shop_diagnosis.min_contribution": {
+      "value": 0.05,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Contribution margin at which the profitability finding reaches severity 1"
+    },
+    "shop_diagnosis.thin_contribution": {
+      "value": 0.15,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Contribution margin below which profitability is flagged"
+    },
+    "shop_diagnosis.ads_share_limit": {
+      "value": 0.5,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Ads GMV share above which ads dependency is checked"
+    },
+    "shop_diagnosis.min_roas": {
+      "value": 4.0,
+      "unit": "x",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "ROAS below which ads efficiency is flagged"
+    },
+    "shop_diagnosis.low_visit_cvr": {
+      "value": 0.025,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Visit -> order CVR below which conversion is flagged"
+    },
+    "shop_diagnosis.good_visit_cvr": {
+      "value": 0.04,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Visit -> order CVR treated as good (traffic bottleneck check)"
+    },
+    "shop_diagnosis.low_traffic_30d": {
+      "value": 30000,
+      "unit": "visits / 30 days",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Traffic below which a well-converting shop is reach-limited"
+    },
+    "shop_diagnosis.viral_video_views": {
+      "value": 100000,
+      "unit": "views / 30 days",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Video views treated as viral in the conversion finding"
+    },
+    "shop_diagnosis.min_video_views": {
+      "value": 2000,
+      "unit": "views",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Below this a video verdict is insufficient_data"
+    },
+    "shop_diagnosis.min_completion": {
+      "value": 0.2,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Completion rate below which a video counts as weak"
+    },
+    "shop_diagnosis.min_video_ctr": {
+      "value": 0.012,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Video -> product CTR below which a video does not lead to the product"
+    },
+    "shop_diagnosis.min_video_cvr": {
+      "value": 0.03,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Video click -> order CVR below which the SKU / offer is checked"
+    },
+    "shop_diagnosis.weak_sku_rating": {
+      "value": 4.2,
+      "unit": "stars",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "SKU rating below which the SKU counts as weak"
+    },
+    "shop_diagnosis.weak_sku_positive": {
+      "value": 0.55,
+      "unit": "ratio",
+      "status": "placeholder",
+      "source": "tuned to the synthetic Shopee seed (fixtures/shopee_seed); synthetic data cannot calibrate it",
+      "note": "Positive review share below which the SKU counts as weak"
+    }
+  },
+  "data_benchmarks": {
+    "market.like_for_like_prices": {
+      "status": "sourced",
+      "source": "SerpAPI google_shopping gl=vn + FastMoss product_search region=VN, crawled 2026-10-27 (docs/market-data-provenance.md)",
+      "note": "S2 ranks the SKU price against its own like-for-like rival listings (needs market.price_rank_min_n)",
+      "features": [
+        "market.competitor_prices_vnd"
+      ]
+    },
+    "market.category_percentiles": {
+      "status": "sourced",
+      "source": "FastMoss product_search region=VN, crawled 2026-10-27; TikTok Shop products pooled by FastMoss category_l1 (fixtures/market/market_snapshots.json)",
+      "note": "Pool = top-10-by-28-day-sales products of each keyword search, so it describes category best-sellers, not the whole category. Used by S5 and S6 (niche median vs category best-sellers, both from the same crawl) when the pool has market.category_percentile_min_n products. Not used for ratings (S3): a SKU's rating ranked against best-sellers on another platform's scale would be biased low",
+      "features": [
+        "market.demand_percentile",
+        "market.saturation_percentile"
+      ]
+    }
+  }
+}

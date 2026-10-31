@@ -1,0 +1,25 @@
+{
+  "video_stem": "vn-beauty-445704",
+  "sku_id": "SHOP001-SKU03",
+  "model": "gpt-6-luna",
+  "inputs": {
+    "claims": [
+      "Lời thoại chê dùng đồ rẻ tiền sẽ khiến việc trang điểm không đẹp, nhưng không có minh họa hoặc bằng chứng về hiệu quả của sản phẩm.",
+      "Sản phẩm được gọi là mascara lông mày; video không nêu công dụng cụ thể hoặc kết quả sử dụng."
+    ],
+    "listing": "Mascara lông mày ROCKSWEET 2.0"
+  },
+  "verdicts": [
+    {
+      "claim": "Lời thoại chê dùng đồ rẻ tiền sẽ khiến việc trang điểm không đẹp, nhưng không có minh họa hoặc bằng chứng về hiệu quả của sản phẩm.",
+      "verdict": "not_in_listing",
+      "listing_evidence": ""
+    },
+    {
+      "claim": "Sản phẩm được gọi là mascara lông mày; video không nêu công dụng cụ thể hoặc kết quả sử dụng.",
+      "verdict": "supported",
+      "listing_evidence": "Mascara lông mày ROCKSWEET 2.0"
+    }
+  ],
+  "match_score": 75.0
+}

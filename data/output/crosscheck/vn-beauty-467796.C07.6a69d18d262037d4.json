@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 0,
+  "label": "0 Absent",
+  "score": 0.0,
+  "rationale": "Không thấy ưu đãi mua hàng nào được nêu trong video; chú thích chỉ mô tả thành phần và lợi ích sản phẩm. Vì vậy, ưu đãi không có hoặc không thể nhận diện.",
+  "key_evidence": [
+    "video.offer.present = false (REAL)",
+    "post.caption: mô tả thành phần và lợi ích, không nêu giá hay ưu đãi (REAL)"
+  ],
+  "evidence_sent": {
+    "post.caption": {
+      "value": "Xà phòng TeaShell có Niacinamide, Alpha Arbutin và Tranexamic Acid, hỗ trợ da trông sáng và đều màu hơn. Tắm xong da sạch, mềm mịn 🌿",
+      "status": "REAL"
+    },
+    "video.offer": {
+      "value": {
+        "present": false,
+        "description": "",
+        "timestamp_sec": 0.0
+      },
+      "status": "REAL"
+    }
+  },
+  "usage": {
+    "completion_tokens": 152,
+    "prompt_tokens": 357,
+    "total_tokens": 509,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 52,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

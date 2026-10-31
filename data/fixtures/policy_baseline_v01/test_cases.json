@@ -1,0 +1,69 @@
+{
+  "dataset_version": "0.1",
+  "cases": [
+    {
+      "case_id": "TC-001",
+      "rule_id": "TTS-002",
+      "input": {
+        "claims": [
+          {
+            "text": "Trắng bật 3 tông sau một lần dùng",
+            "verified": false
+          }
+        ]
+      },
+      "expected": "needs_review",
+      "note": "fixture synthetic; not a real violation verdict"
+    },
+    {
+      "case_id": "TC-002",
+      "rule_id": "TTA-002",
+      "input": {
+        "before_after": {
+          "present": true,
+          "product_effect_comparison": true
+        }
+      },
+      "expected": "needs_review",
+      "note": "fixture synthetic; not a real violation verdict"
+    },
+    {
+      "case_id": "TC-003",
+      "rule_id": "TTC-002",
+      "input": {
+        "is_commercial": true,
+        "disclosure_enabled": false
+      },
+      "expected": "needs_review",
+      "note": "fixture synthetic; not a real violation verdict"
+    },
+    {
+      "case_id": "TC-004",
+      "rule_id": "SHP-003",
+      "input": {
+        "title": "Kem dưỡng HOT SALE giảm giá sốc"
+      },
+      "expected": "needs_review",
+      "note": "fixture synthetic; not a real violation verdict"
+    },
+    {
+      "case_id": "TC-005",
+      "rule_id": "SHP-004",
+      "input": {
+        "category": "cosmetics",
+        "cosmetic_notification_available": null
+      },
+      "expected": "needs_review",
+      "note": "fixture synthetic; not a real violation verdict"
+    },
+    {
+      "case_id": "TC-006",
+      "rule_id": "META-002",
+      "input": {
+        "ad_copy": "Bạn đang mắc bệnh da liễu?"
+      },
+      "expected": "needs_review",
+      "note": "fixture synthetic; not a real violation verdict"
+    }
+  ]
+}

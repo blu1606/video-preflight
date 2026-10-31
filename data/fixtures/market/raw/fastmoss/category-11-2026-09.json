@@ -1,0 +1,53 @@
+{
+ "tool": "market_category_analysis",
+ "args": {
+  "analysis_type": "basic_metrics",
+  "filter": {
+   "category_id": 11,
+   "region": "VN",
+   "date_type": "month",
+   "date_value": "2026-09"
+  }
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "analysis_type": "basic_metrics",
+  "category": {
+   "category_id": 11,
+   "category_level": 1,
+   "category_name": "Kitchenware",
+   "region": "VN",
+   "stat_date": "2026-09"
+  },
+  "concentration_metrics": {
+   "top_products_gmv_share": 0,
+   "top_shops_gmv_share": 0
+  },
+  "growth_metrics": {
+   "active_product_count_change": -256,
+   "category_gmv_mom_percent": -6.99,
+   "category_gmv_yoy_percent": 52.11,
+   "category_units_sold_mom_percent": -6.52,
+   "category_units_sold_yoy_percent": 13.54,
+   "product_count_change": 85846,
+   "selling_creator_count_change": 3272,
+   "selling_live_count_change": 28301,
+   "selling_video_count_change": -29850
+  },
+  "scale_metrics": {
+   "active_product_count": 105821,
+   "category_gmv": 624988142672,
+   "category_units_sold": 5661667,
+   "product_count": 85846,
+   "selling_creator_count": 76262,
+   "selling_live_count": 183922,
+   "selling_video_count": 350245
+  },
+  "top_products_summary": {
+   "average_affiliate_count": 4110,
+   "average_live_count": 2306,
+   "average_video_count": 3395
+  }
+ }
+}

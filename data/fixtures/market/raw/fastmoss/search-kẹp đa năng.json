@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "kẹp đa năng",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 556,
+     "linked_video_count": 1921
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 8,
+       "name": "Fashion Accessories"
+      },
+      "l2": {
+       "id": 905864,
+       "name": "Hair Accessories"
+      },
+      "l3": {
+       "id": 908552,
+       "name": "Hair Clips & Hair Pins"
+      }
+     },
+     "ceiling_price": 32.97,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/4f8becc162834e1087b9823deec65446~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736957025358022185",
+     "floor_price": 18.64,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-17",
+     "launch_time": 1786897548,
+     "price_display": "18.635 ₫  -  32.970 ₫",
+     "product_id": "1736957025358022185",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736957025358022185?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kẹp tóc giọt nước đính đá siêu sáng – phong cách K-Pop sang trọng, kẹp mái, kẹp mai, kẹp hông cho nàng vừa ngọt vừa cool."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 391756266,
+     "last_28d_units_sold": 20739,
+     "last_7d_gmv": 87688888,
+     "last_7d_units_sold": 4756,
+     "last_90d_gmv": 583248566,
+     "last_90d_units_sold": 30782,
+     "total_gmv": 588783523,
+     "total_units_sold": 31093,
+     "yesterday_gmv": 26592145,
+     "yesterday_units_sold": 1427
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d391023e23b0476289a0da752f1154d1~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494742686503700009",
+     "shop_name": "YIS-VN",
+     "total_units_sold": 201649
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 996,
+     "linked_video_count": 4891
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 21,
+       "name": "Tools & Hardware"
+      },
+      "l2": {
+       "id": 871688,
+       "name": "Hand Tools"
+      },
+      "l3": {
+       "id": 883592,
+       "name": "Pliers"
+      }
+     },
+     "ceiling_price": 35,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/da10e47089254554829e91acddf1024e~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736209927525270911",
+     "floor_price": 35,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-24",
+     "launch_time": 1782238170,
+     "price_display": "35.002 ₫",
+     "product_id": "1736209927525270911",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736209927525270911?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kìm Đa Năng 8 Inch Tiện Dụng, Kẹp Chắc Chắn, Cắt Linh Hoạt, Tay Cầm Chống Trượt, Dụng Cụ Cầm Tay Cho Công Việc Sửa Chữa"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 206750478,
+     "last_28d_units_sold": 5630,
+     "last_7d_gmv": 42457125,
+     "last_7d_units_sold": 1189,
+     "last_90d_gmv": 1038992764,
+     "last_90d_units_sold": 28652,
+     "total_gmv": 1287750256,
+     "total_units_sold": 35535,
+     "yesterday_gmv": 5775330,
+     "yesterday_units_sold": 165
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4d79b92817d74d8da9d5686e73bdcc47~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494486966167111039",
+     "shop_name": "Thế Giới Dụng Cụ Pin",
+     "total_units_sold": 119864
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 158,
+     "linked_video_count": 456
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 8,
+       "name": "Fashion Accessories"
+      },
+      "l2": {
+       "id": 905864,
+       "name": "Hair Accessories"
+      },
+      "l3": {
+       "id": 908552,
+       "name": "Hair Clips & Hair Pins"
+      }
+     },
+     "ceiling_price": 38.16,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/e0b80351a903498c868141f7183ae502~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736576697409373737",
+     "floor_price": 21.76,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-23",
+     "launch_time": 1784783544,
+     "price_display": "21.756 ₫  -  38.155 ₫",
+     "product_id": "1736576697409373737",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736576697409373737?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kẹp tóc hình quả chuối kiểu Hàn Quốc với họa tiết hoa + phụ kiện tóc/kẹp tóc tinh tế và đa năng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 116846642,
+     "last_28d_units_sold": 5322,
+     "last_7d_gmv": 30829042,
+     "last_7d_units_sold": 1423,
+     "last_90d_gmv": 462126394,
+     "last_90d_units_sold": 20698,
+     "total_gmv": 462126394,
+     "total_units_sold": 20698,
+     "yesterday_gmv": 3111108,
+     "yesterday_units_sold": 143
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d391023e23b0476289a0da752f1154d1~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494742686503700009",
+     "shop_name": "YIS-VN",
+     "total_units_sold": 201649
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 333,
+     "linked_video_count": 1379
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 858760,
+       "name": "Barbecue"
+      },
+      "l3": {
+       "id": 862344,
+       "name": "Barbecue Utensils"
+      }
+     },
+     "ceiling_price": 77.15,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/1fc618c7bff84842949716e98b60151a~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732208608999343946",
+     "floor_price": 22.44,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-10-01",
+     "launch_time": 1759248305,
+     "price_display": "22.444 ₫  -  77.153 ₫",
+     "product_id": "1732208608999343946",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 12,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732208608999343946?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kaiyo Kẹp gắp thức ăn bằng thép không gỉ chống bỏng nhỏ gọn tiện lợi Gỉ 304 Kẹp chống trượt đa chức năng  2 Kích Cỡ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 96712686,
+     "last_28d_units_sold": 4529,
+     "last_7d_gmv": 14443593,
+     "last_7d_units_sold": 637,
+     "last_90d_gmv": 326904022,
+     "last_90d_units_sold": 16032,
+     "total_gmv": 846697106,
+     "total_units_sold": 42561,
+     "yesterday_gmv": 4601020,
+     "yesterday_units_sold": 205
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/df45b876c86f48d0b2106743563d240c~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496299139011218250",
+     "shop_name": "Kaiyo.vn1",
+     "total_units_sold": 921912
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 49,
+     "linked_video_count": 314
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 910344,
+       "name": "Phone Holders & Mounts"
+      }
+     },
+     "ceiling_price": 76.58,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/b19ad2dcba604b3eaca168c098d5c01e~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729444703151098157",
+     "floor_price": 21.4,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2022-08-27",
+     "launch_time": 1661530030,
+     "price_display": "21.396 ₫  -  76.577 ₫",
+     "product_id": "1729444703151098157",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729444703151098157?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Đầu Kẹp Điện Thoại Xe Máy, Giá Đỡ Điện Thoai Dán Lên Đồng Hồ Xe Máy Kèm 2 Miếng Keo Dán Đa Năng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 93815028,
+     "last_28d_units_sold": 4397,
+     "last_7d_gmv": 23932410,
+     "last_7d_units_sold": 1123,
+     "last_90d_gmv": 243280274,
+     "last_90d_units_sold": 11760,
+     "total_gmv": 344289411,
+     "total_units_sold": 16705,
+     "yesterday_gmv": 2674500,
+     "yesterday_units_sold": 125
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/fe78d9ff03524407a8a51039fac64ed3~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494690983775406381",
+     "shop_name": "Sài Gòn Center Helmets",
+     "total_units_sold": 39255
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 60,
+     "linked_video_count": 228
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 8,
+       "name": "Fashion Accessories"
+      },
+      "l2": {
+       "id": 905864,
+       "name": "Hair Accessories"
+      },
+      "l3": {
+       "id": 908552,
+       "name": "Hair Clips & Hair Pins"
+      }
+     },
+     "ceiling_price": 76.72,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/21595b0d40984705b4e859f856cb0162~tplv-o3syd03w52-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734439204118431725",
+     "floor_price": 42.68,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-18",
+     "launch_time": 1787052349,
+     "price_display": "42.675 ₫  -  76.722 ₫",
+     "product_id": "1734439204118431725",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 10,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734439204118431725?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kẹp tóc kiểu Hàn với họa tiết caro và nơ hình chuông, phong cách retro dành cho cô gái buộc đuôi ngựa cao; kẹp dọc đa năng dạng xoắn, có thể dùng làm kẹp cài tóc."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 172856166,
+     "last_28d_units_sold": 4146,
+     "last_7d_gmv": 61974508,
+     "last_7d_units_sold": 1447,
+     "last_90d_gmv": 242796380,
+     "last_90d_units_sold": 5982,
+     "total_gmv": 244703649,
+     "total_units_sold": 6032,
+     "yesterday_gmv": 3798075,
+     "yesterday_units_sold": 89
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/bd47567ceac44ef9b97c81c43a7792b4~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8651546869667760109",
+     "shop_name": "HairStyles.VN",
+     "total_units_sold": 237659
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 25,
+     "linked_video_count": 51
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 8,
+       "name": "Fashion Accessories"
+      },
+      "l2": {
+       "id": 905864,
+       "name": "Hair Accessories"
+      },
+      "l3": {
+       "id": 908552,
+       "name": "Hair Clips & Hair Pins"
+      }
+     },
+     "ceiling_price": 31.96,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/a406e3dab53e4127a698569b3cc30a9f~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737714148490708191",
+     "floor_price": 14.03,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-05",
+     "launch_time": 1791194345,
+     "price_display": "14.034 ₫  -  31.962 ₫",
+     "product_id": "1737714148490708191",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 7,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737714148490708191?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ 2 kẹp tóc sao rỗng đính pha lê phong cách Hàn Quốc dành cho nữ, kẹp tóc mái sao bạc hai lớp đính pha lê tinh xảo và đa năng, phụ kiện tóc thời trang"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 55524272,
+     "last_28d_units_sold": 4110,
+     "last_7d_gmv": 39779764,
+     "last_7d_units_sold": 2858,
+     "last_90d_gmv": 55524272,
+     "last_90d_units_sold": 4110,
+     "total_gmv": 55524272,
+     "total_units_sold": 4110,
+     "yesterday_gmv": 5501328,
+     "yesterday_units_sold": 392
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/8dda3125c7764d42a6352a56031987d3~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "7495857884876343519",
+     "shop_name": "Zhumi0113",
+     "total_units_sold": 7951
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 358,
+     "linked_video_count": 819
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 978952,
+       "name": "Universal Accessories"
+      },
+      "l3": {
+       "id": 990728,
+       "name": "USB & Mobile Fans"
+      }
+     },
+     "ceiling_price": 68.15,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/2093a7e32197452abe2d006e62041a2d~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734531404183405831",
+     "floor_price": 64.35,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-07",
+     "launch_time": 1772817038,
+     "price_display": "64.354 ₫  -  68.153 ₫",
+     "product_id": "1734531404183405831",
+     "product_rating": 4.2,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734531404183405831?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quạt Kẹp Bàn Tích Điện Mini Đa Năng - 5 Tốc Độ Gió, Xoay 360 Có Kèm Dây Sạc"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 261740530,
+     "last_28d_units_sold": 4008,
+     "last_7d_gmv": 48678993,
+     "last_7d_units_sold": 735,
+     "last_90d_gmv": 709758896,
+     "last_90d_units_sold": 11302,
+     "total_gmv": 4419981899,
+     "total_units_sold": 60824,
+     "yesterday_gmv": 4762196,
+     "yesterday_units_sold": 74
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/93455f00986b487482392fa6de6e1d0c~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494300958909629703",
+     "shop_name": "Hulii.Store",
+     "total_units_sold": 1286572
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 41,
+     "linked_video_count": 212
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 6,
+       "name": "Shoes"
+      },
+      "l2": {
+       "id": 900488,
+       "name": "Women's Shoes"
+      },
+      "l3": {
+       "id": 901128,
+       "name": "Sandals & Flip Flops"
+      }
+     },
+     "ceiling_price": 100.81,
+     "commission_rate_percent": 4,
+     "cover_url": "https://s.500fd.com/tt_product/b78b3a6354564332a13dfa273cc7a05c~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732427476506805383",
+     "floor_price": 11.2,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-20",
+     "launch_time": 1758311639,
+     "price_display": "11.201 ₫  -  100.812 ₫",
+     "product_id": "1732427476506805383",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 100,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732427476506805383?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Dép Kẹp Nữ Đ1 quai mảnh (fom bé tăng 1 size)  nhẹ chân đế xẹp mũi tròn da bóng trẻ trung năng động"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 44169841,
+     "last_28d_units_sold": 3973,
+     "last_7d_gmv": 15811600,
+     "last_7d_units_sold": 1420,
+     "last_90d_gmv": 98014655,
+     "last_90d_units_sold": 7126,
+     "total_gmv": 388624080,
+     "total_units_sold": 12003,
+     "yesterday_gmv": 3326697,
+     "yesterday_units_sold": 297
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/83dfdd6a88214142857d64b68369d0df~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495819555540535431",
+     "shop_name": "Shop Hạnh Hiền",
+     "total_units_sold": 550020
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2421,
+     "linked_video_count": 6151
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 13,
+       "name": "Household Appliances"
+      },
+      "l2": {
+       "id": 844808,
+       "name": "Home Appliances"
+      },
+      "l3": {
+       "id": 601104,
+       "name": "Fans"
+      }
+     },
+     "ceiling_price": 77.25,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/8f21fbdb45ea4383b5f5b5a47769c00d~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732078168830675263",
+     "floor_price": 77.25,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-03-15",
+     "launch_time": 1742014485,
+     "price_display": "77.249 ₫",
+     "product_id": "1732078168830675263",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732078168830675263?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Hàng Loại 1] 5 Tốc Độ Gió-(Size 15cm) Quạt Kẹp Bàn Tích Điện Đa Năng-Có Dây Sạc Đi Kèm Quạt Điện xoay 360"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 298202605,
+     "last_28d_units_sold": 3900,
+     "last_7d_gmv": 42301591,
+     "last_7d_units_sold": 553,
+     "last_90d_gmv": 793396157,
+     "last_90d_units_sold": 10812,
+     "total_gmv": 4513988634,
+     "total_units_sold": 65099,
+     "yesterday_gmv": 3630703,
+     "yesterday_units_sold": 47
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a17082af1223493dae372ac9edfa432a~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7495130606264551743",
+     "shop_name": "Gunt25 Store",
+     "total_units_sold": 183636
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

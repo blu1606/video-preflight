@@ -1,0 +1,63 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 2,
+  "label": "2 Fair",
+  "score": 50.0,
+  "rationale": "Có đường dẫn mua sắm được xác nhận thực tế, nhưng bằng chứng không xác nhận thực tế tình trạng còn hàng, giá hay phí giao hàng; vì vậy mức độ thuận tiện chỉ ở mức còn nhiều thông tin chưa rõ. Giá suy luận và dữ liệu tồn kho/giá dạng MOCK không đủ để nâng điểm.",
+  "key_evidence": [
+    "post.shopping_link: true (REAL)",
+    "listing.price_vnd: 26,000 VND (INFERRED)",
+    "sku.in_stock: true (MOCK)",
+    "sku.price_vnd: 26,000 VND (MOCK)"
+  ],
+  "evidence_sent": {
+    "listing.price_vnd": {
+      "value": "26,000 VND",
+      "status": "INFERRED"
+    },
+    "post.shopping_link": {
+      "value": true,
+      "status": "REAL"
+    },
+    "shop.cancellation_rate": {
+      "value": "1.5%",
+      "status": "MOCK"
+    },
+    "shop.late_shipment_rate": {
+      "value": "1.9%",
+      "status": "MOCK"
+    },
+    "sku.has_product_link": {
+      "value": true,
+      "status": "MOCK"
+    },
+    "sku.in_stock": {
+      "value": true,
+      "status": "MOCK"
+    },
+    "sku.price_vnd": {
+      "value": "26,000 VND",
+      "status": "MOCK"
+    }
+  },
+  "usage": {
+    "completion_tokens": 486,
+    "prompt_tokens": 417,
+    "total_tokens": 903,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 343,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

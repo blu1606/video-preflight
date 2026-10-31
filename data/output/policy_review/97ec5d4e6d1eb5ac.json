@@ -1,0 +1,174 @@
+{
+  "model": "gpt-6-luna",
+  "usage": {
+    "completion_tokens": 2369,
+    "prompt_tokens": 1414,
+    "total_tokens": 3783,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1365,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1411,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "rules": {
+    "TTS-001": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.96,
+      "rationale": "Sản phẩm được mô tả là ốp điện thoại, không có nội dung nào cho thấy đây là sản phẩm bị cấm hoặc không được hỗ trợ."
+    },
+    "TTS-002": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.91,
+      "rationale": "Không có tuyên bố về lợi ích sản phẩm trong transcript hoặc chữ trên màn hình. Thông tin tương thích mẫu iPhone chỉ xuất hiện trong tiêu đề sản phẩm và không có tuyên bố lợi ích cụ thể nào khác."
+    },
+    "TTS-003": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Sản phẩm được cung cấp là phụ kiện điện thoại, không phải sản phẩm làm đẹp hoặc mỹ phẩm."
+    },
+    "TTA-001": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.84,
+      "rationale": "Transcript và chữ trên màn hình không có lời hứa về kết quả, nhưng không có hình ảnh video để đánh giá liệu hình ảnh có thể truyền tải kết quả phóng đại hay tuyệt đối hay không."
+    },
+    "TTA-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.91,
+      "rationale": "Không có hình ảnh video để xác định liệu video có dùng so sánh trước và sau hay tạo ấn tượng gây hiểu lầm về hiệu quả sản phẩm."
+    },
+    "TTA-003": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.91,
+      "rationale": "Không có hình ảnh video để kiểm tra liệu có nút giả hoặc yếu tố tương tác gây hiểu lầm hay không."
+    },
+    "TTC-001": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.91,
+      "rationale": "Chỉ có transcript và chữ trên màn hình; không có hình ảnh để xác định video có người hoặc cảnh được tạo/chỉnh sửa bằng AI theo hướng chân thực hay không, cũng như việc công bố liên quan."
+    },
+    "TTC-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.96,
+      "rationale": "Có thông tin về sản phẩm nhưng phần cài đặt bài đăng không được cung cấp, nên không thể xác định trạng thái công bố nội dung thương mại."
+    },
+    "SHP-001": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.97,
+      "rationale": "Có tiêu đề, giá và thông tin sản phẩm, nhưng thiếu ảnh sản phẩm và mô tả listing để đối chiếu tính nhất quán."
+    },
+    "SHP-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Không có ảnh listing để xác minh có ít nhất một ảnh chụp sản phẩm thực tế đáp ứng tiêu chí hay không."
+    },
+    "SHP-003": {
+      "outcome": "needs_review",
+      "model_outcome": "needs_review",
+      "quotes": [
+        {
+          "text": "hot trend",
+          "t": null,
+          "where": "listing.title"
+        }
+      ],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.89,
+      "rationale": "Tiêu đề listing dùng cụm quảng bá xu hướng “hot trend”, cần được rà soát theo quy định về tuyên bố quảng cáo hoặc cách diễn đạt tiếp thị."
+    },
+    "SHP-004": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Listing là ốp điện thoại, không phải mỹ phẩm nên các chi tiết về nguồn gốc, số tiếp nhận hoặc hạn dùng mỹ phẩm không áp dụng."
+    },
+    "SHP-005": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.98,
+      "rationale": "Không có nội dung mô tả listing để kiểm tra thông tin liên hệ bên ngoài hoặc điều hướng ra khỏi nền tảng."
+    },
+    "META-001": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.82,
+      "rationale": "Nội dung chữ được cung cấp không có tuyên bố thương mại rõ ràng mang tính lừa dối hoặc thiếu căn cứ, nhưng không có hình ảnh video để đánh giá các tuyên bố có thể được truyền tải bằng hình ảnh."
+    },
+    "META-002": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.98,
+      "rationale": "Không có nội dung trực tiếp khẳng định người xem có tình trạng sức khỏe hoặc đặc điểm cá nhân nhạy cảm."
+    },
+    "META-003": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.97,
+      "rationale": "Sản phẩm được nêu là phụ kiện điện thoại; nội dung được cung cấp không cho thấy sản phẩm thuộc nhóm hàng bị hạn chế theo quy định thương mại."
+    }
+  }
+}
