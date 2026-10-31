@@ -39,3 +39,17 @@ Nhật ký và manifest SHA-256 giúp kiểm tra thay đổi nội dung trong ph
 - Lượt chạy lưu local, có trace input/output/thời gian/token null; client ngắt stream không hủy worker. Trùng request cùng input dùng chung run; restart không tự gọi inference.
 - Video trước đăng không nhận outcome; video đã đăng có outcome nhập tay, ghi rõ chưa xác minh. SKU phải thuộc shop chọn. Provider trả phí chưa tích hợp và bị chặn tại API.
 - Kiểm `pnpm test:python`: 15/15 qua, gồm upload thật bằng fixture video 2 giây được sinh trong thư mục tạm, trích frame/cache/tamper/SSE/HTTP Range, ownership, lỗi file và invalidation. Không lưu fixture vào DB demo.
+
+## T0.4 / frontend — Studio đầu tiên
+
+- React/Vite tiếng Việt, ba cột pipeline/video/kết quả; 5 panel đầu vào, shop/SKU tự nhập trong Kho dữ liệu, upload có tiến độ.
+- SSE hiển thị trạng thái và trace JSON, keyframe bấm tua video; điểm/radar trống khi chưa có Decisions. Ba tab Nền tảng/Bằng chứng/Hiệu suất.
+- API chưa có provider; không có kết quả AI, số bán hay chính sách được bịa để lấp màn hình.
+- `pnpm test`: 5/5 Node test qua; `pnpm lint` và `pnpm build` qua. Đã mở browser local và xem ảnh ở 1440px, có một lỗi favicon đã bổ sung file để sửa.
+- Đây là UI mới để vận hành nền local; chưa nhận/chuyển mockup-v2, chưa nghiệm thu thiết kế T2/T3.
+
+## Tích hợp công việc song song trên cùng repo
+
+- Fetch khi chuẩn bị push phát hiện remote có `9289181` (dataset), `2d52e1b` (React TS), `83e4a1e` (Tailwind/shadcn/Recharts), phát triển từ cùng base `40eae06`.
+- Giữ các commit remote và công việc mới ở local, tích hợp bằng merge thật; không force-push, không thay đổi ngày hoặc nhập lịch sử `SEAxshopee`.
+- Dữ liệu/cache trong commit remote là tài sản nhập có sẵn của luồng khác. Không coi chúng là lượt phân tích được thực hiện trong phiên này.

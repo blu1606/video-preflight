@@ -12,3 +12,5 @@ db/backups/
 data/
 !data/.gitkeep
 .DS_Store
+.playwright-cli/
+output/playwright/
