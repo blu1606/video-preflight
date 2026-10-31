@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+node_modules/
+web/dist/
+.runtime/
+.env
+.env.*
+!.env.example
+db/db.json
+db/backups/
+data/
+!data/.gitkeep
+.DS_Store
