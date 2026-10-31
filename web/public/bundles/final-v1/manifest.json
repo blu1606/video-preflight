@@ -1,0 +1,82 @@
+{
+  "schema_version": "sku-bundle/1",
+  "builder_revision": 2,
+  "snapshot_ids": [
+    "2026-10-21T06-53-21-803Z",
+    "2026-10-21T06-55-06-781Z",
+    "2026-10-21T06-58-30-057Z",
+    "2026-10-21T07-02-09-818Z"
+  ],
+  "input_payload_hashes": [
+    {
+      "snapshot_id": "2026-10-21T06-53-21-803Z",
+      "sha256": "4efc70396bcf47a474f3c60625df955e5f6a47ba32b12766dfd564e0f048c269"
+    },
+    {
+      "snapshot_id": "2026-10-21T06-55-06-781Z",
+      "sha256": "60ee9c94e6b8bead527a635591e10dbb97b51daa6c302b99dd3b86d0e2444fa5"
+    },
+    {
+      "snapshot_id": "2026-10-21T06-58-30-057Z",
+      "sha256": "2fc3f301c3963cf19c7ae0d0145567d7aeccd28a64fc867808429b84f51cc246"
+    },
+    {
+      "snapshot_id": "2026-10-21T07-02-09-818Z",
+      "sha256": "92105245be35cce7bfbc0c64ef81faa4163ae67eedf6598d3ec16f9ca4087f73"
+    }
+  ],
+  "input_evidence_hashes": {
+    "2026-10-21T06-53-21-803Z": {
+      "allbirds-robots.json": "94aa1e1a1c1305ad6a23d0362909f99d6e1ed8f5e9355dbdd5b0ecfa1cf31bf4",
+      "cocoon-robots.json": "bd9dd606a1c964936a121f3f1358bb193d290df0980b25da49ad3317f40510ab",
+      "coolmate-robots.json": "34d76e5cd31c7d8cae8589752ed2ecd11224fedd01b2443d0449c418eb34a107",
+      "coverage.json": "753e0553ae7e5cd7a65acc6a206ca04618b67e87d385195f779d68ecf8211746",
+      "juno-robots.json": "015ca07d9d567cf5e3540d6dce2220f1da05290b7ac70be3927f049ad7a89a88",
+      "manifest.json": "2408dd2595c31c39f359186920f409714119448d1331897777f769ed0223e5f3",
+      "openbeautyfacts-robots.json": "4e45d24edfeffe539671665ad68aca38c2ce78ae207c07bc7924babe83a3dfd4",
+      "openfoodfacts-robots.json": "ec81628705bb5ae9342459057fe4ac12c1e501d7e982d176878481d5ca87de75",
+      "payloads.json": "4efc70396bcf47a474f3c60625df955e5f6a47ba32b12766dfd564e0f048c269",
+      "requests.json": "e0c162ff3dc3d8ac0e8c7c09e1c375b1429e70a69b82f9dd44941ba2856236e2",
+      "yody-robots.json": "d76fd3cab7936d15a8f5c1cb2a8dc6e68db657ac9321350f5609b4c04bda9ab7"
+    },
+    "2026-10-21T06-55-06-781Z": {
+      "cocoon-robots.json": "be36ee919f8686f4199900efd154f8e9214a838f670b117b6d41bda397b3a365",
+      "coverage.json": "a9ce2a6ab842ffd7a3ad7946d4d4263b457727ab948fefee8f623a7f139351f7",
+      "juno-robots.json": "69807849e9a9122d8f7c28ab250d5e9505e3804d7952586bd0235102e41a25ca",
+      "manifest.json": "fdfd3b15cd6646c6e2354cb8d3377c7b88cffc271d615a7d182edb6901c1f7b3",
+      "payloads.json": "60ee9c94e6b8bead527a635591e10dbb97b51daa6c302b99dd3b86d0e2444fa5",
+      "requests.json": "d12682d7f901a86dbe0af707ca185d1a0ab3370d4ab06cab328da12344af74cf",
+      "yody-robots.json": "d492b50039a6e3b93b6f9f0a70fcc2363b3e6197492e883045c1c139923e7435"
+    },
+    "2026-10-21T06-58-30-057Z": {
+      "cocoon-robots.json": "980ef80abf827fc4e15f40e44e68c1935155146604dab12b4c20d43f2c980727",
+      "coverage.json": "0d814b19f02571946dde9bc0c5e5617b3dcc225f8ea441b8b1fcefebefb06420",
+      "manifest.json": "d88946078bff2306e876dfeae073eca7e6e733603df8a80b68a6e96d7fff1021",
+      "payloads.json": "2fc3f301c3963cf19c7ae0d0145567d7aeccd28a64fc867808429b84f51cc246",
+      "requests.json": "ea24a8a9fe6e6fc7069442ac4c1569725bba1450a337542c8cb7960c0607c196"
+    },
+    "2026-10-21T07-02-09-818Z": {
+      "cocoon-robots.json": "69dfc681beacd345532c2cf9db4309685a8a3a21f1bd5c3828e56153265df829",
+      "coverage.json": "0d814b19f02571946dde9bc0c5e5617b3dcc225f8ea441b8b1fcefebefb06420",
+      "manifest.json": "f95bb91f9f46c799384e3b81020d8185251435349c25fc85e4b0ee82d31d0cac",
+      "payloads.json": "92105245be35cce7bfbc0c64ef81faa4163ae67eedf6598d3ec16f9ca4087f73",
+      "requests.json": "91ba3b2ea9829fe5b404f722d1f23746e696858afe0485f2915af2ff8e5676d2"
+    }
+  },
+  "files": {
+    "catalog.csv": "2e6bf40d94ea85b353b73b827f332967853682b3efbb72c412380c5efdb11d84",
+    "catalog.json": "476bdfcf62e6d0b475a5e45b5f5efae900437dda884b82f3bdcf9e7a12dc0d86",
+    "charts.json": "0d91d488a70523579a5cd1716f57015e8fbcc2fa20833a15b9c6e880cd50e0b7",
+    "normalization-audit.json": "488f00df1381f0f7ba153b614a110124eab9530476eacf532669b077c971c794",
+    "summary.json": "f1461c3cb0379851337b5b60d0e0a1f3da05b37f141035b154f783e9023aaad4"
+  },
+  "candidate_sha256": "b58eb1719c607e7b48d27f750d0ddbb67952be81f68614e971a8c688c1782a65",
+  "rights": "Local offline research; no redistribution license inferred for merchant catalog.",
+  "limits": [
+    "Not exhaustive or random market sample",
+    "No verified actual orders/conversion/profit",
+    "Source-scoped entities; offer != variant != parent",
+    "No time-series inferred",
+    "Full HTML excluded for data minimization; normalization replay only, not HTML parser replay"
+  ]
+}

@@ -5,9 +5,46 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Design tokens from public/mockup-v2/index.html (:root blocks, final cascaded values). */
 @theme inline {
     --font-heading: var(--font-sans);
-    --font-sans: 'Geist Variable', sans-serif;
+    --font-sans: 'Be Vietnam Pro', 'Geist Variable', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    --color-page: var(--mk-page);
+    --color-surface: var(--mk-surface);
+    --color-subtle: var(--mk-subtle);
+    --color-ink: var(--mk-ink);
+    --color-ink-2: var(--mk-ink-2);
+    --color-faint: var(--mk-faint);
+    --color-line: var(--mk-line);
+    --color-line-2: var(--mk-line-2);
+    --color-brand: var(--mk-accent);
+    --color-brand-ink: var(--mk-accent-ink);
+    --color-brand-tint: var(--mk-accent-tint);
+    --color-brand-tint-2: var(--mk-accent-tint-2);
+    --color-critical: var(--mk-critical);
+    --color-critical-tint: var(--mk-critical-tint);
+    --color-pass: var(--mk-pass);
+    --color-pass-tint: var(--mk-pass-tint);
+    --color-amber-ink: var(--mk-amber);
+    --color-amber-tint: var(--mk-amber-tint);
+    --color-info: var(--mk-blue);
+    --color-stage: var(--mk-stage);
+    --color-stage-2: var(--mk-stage-2);
+    --color-on-stage: var(--mk-on-stage);
+    --color-on-stage-2: var(--mk-on-stage-2);
+    --color-on-stage-line: var(--mk-on-stage-line);
+    --color-sev-high: var(--mk-critical);
+    --color-sev-medium: var(--mk-amber);
+    --color-sev-low: var(--mk-blue);
+    --color-sev-info: var(--mk-faint);
+    --shadow-sheet: var(--mk-sheet-shadow);
+    --shadow-raise: var(--mk-raise-shadow);
+    --shadow-pop: var(--mk-shadow-pop);
+    --text-xs-mk: 12.5px;
+    --text-sm-mk: 14px;
+    --text-md-mk: 15.5px;
+    --text-lg-mk: 20px;
+    --text-xl-mk: 28px;
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -49,30 +86,58 @@
 }
 
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
-    --radius: 0.625rem;
+    --mk-page: #f1f2f5;
+    --mk-surface: #ffffff;
+    --mk-subtle: #f6f7f9;
+    --mk-ink: #0f1115;
+    --mk-ink-2: #30343b;
+    --mk-muted: #545963;
+    --mk-faint: #8a8f98;
+    --mk-line: #e6e8eb;
+    --mk-line-2: #d4d7dc;
+    --mk-accent: #ee4d2d;
+    --mk-accent-ink: #c8381c;
+    --mk-accent-tint: rgba(238, 77, 45, .07);
+    --mk-accent-tint-2: rgba(238, 77, 45, .14);
+    --mk-critical: #d0011b;
+    --mk-critical-tint: rgba(208, 1, 27, .055);
+    --mk-pass: #17803d;
+    --mk-pass-tint: rgba(23, 128, 61, .08);
+    --mk-amber: #b45309;
+    --mk-amber-tint: rgba(180, 83, 9, .09);
+    --mk-blue: #1d4ed8;
+    --mk-stage: #121419;
+    --mk-stage-2: #1b1e25;
+    --mk-on-stage: #eceef2;
+    --mk-on-stage-2: rgba(236, 238, 242, .66);
+    --mk-on-stage-line: rgba(236, 238, 242, .14);
+    --mk-sheet-shadow: 0 1px 2px rgba(15, 17, 21, .05), 0 0 0 1px rgba(15, 17, 21, .045);
+    --mk-raise-shadow: 0 1px 2px rgba(15, 17, 21, .06), 0 18px 40px -22px rgba(15, 17, 21, .28), 0 0 0 1px rgba(15, 17, 21, .04);
+    --mk-shadow-pop: 0 0 0 1px rgba(17, 24, 39, .06), 0 12px 32px -8px rgba(17, 24, 39, .22), 0 4px 10px -4px rgba(17, 24, 39, .10);
+    --background: var(--mk-page);
+    --foreground: var(--mk-ink);
+    --card: var(--mk-surface);
+    --card-foreground: var(--mk-ink);
+    --popover: var(--mk-surface);
+    --popover-foreground: var(--mk-ink);
+    --primary: var(--mk-accent);
+    --primary-foreground: #ffffff;
+    --secondary: var(--mk-subtle);
+    --secondary-foreground: var(--mk-ink);
+    --muted: var(--mk-subtle);
+    --muted-foreground: var(--mk-muted);
+    --accent: var(--mk-subtle);
+    --accent-foreground: var(--mk-ink);
+    --destructive: var(--mk-critical);
+    --border: var(--mk-line);
+    --input: var(--mk-line-2);
+    --ring: var(--mk-ink-2);
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+    --chart-3: oklch(0.398 0.07 227.392);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.645 0.246 16.439);
+    --radius: 0.5rem;
     --sidebar: oklch(0.985 0 0);
     --sidebar-foreground: oklch(0.145 0 0);
     --sidebar-primary: oklch(0.205 0 0);
@@ -102,11 +167,11 @@
     --border: oklch(1 0 0 / 10%);
     --input: oklch(1 0 0 / 15%);
     --ring: oklch(0.556 0 0);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+    --chart-3: oklch(0.398 0.07 227.392);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.645 0.246 16.439);
     --sidebar: oklch(0.205 0 0);
     --sidebar-foreground: oklch(0.985 0 0);
     --sidebar-primary: oklch(0.488 0.243 264.376);
@@ -128,3 +193,20 @@
     @apply font-sans;
     }
 }
+
+body {
+  font-feature-settings: "tnum" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ghost marker: hollow dashed dot ("Gợi ý vị trí"). */
+.marker-ghost {
+  background: transparent;
+  border: 1.5px dashed currentColor;
+}
+
+@keyframes marker-pulse {
+  0% { box-shadow: 0 0 0 0 currentColor; }
+  100% { box-shadow: 0 0 0 6px transparent; }
+}
+.marker-pulse { animation: marker-pulse .8s ease-out 2; }

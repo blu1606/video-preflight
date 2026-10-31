@@ -1,0 +1,2803 @@
+{
+  "analysis": {
+    "checks": [
+      {
+        "evidence_ids": [
+          "frame-013",
+          "frame-014",
+          "frame-015",
+          "frame-018"
+        ],
+        "explanation": "Tên Crest và hình tuýp kem đánh răng xuất hiện rõ ở phần giữa và cuối video, nên người xem có thể nhận ra sản phẩm được nói tới.",
+        "status": "observed",
+        "title": "Nhận diện sản phẩm trong video"
+      },
+      {
+        "evidence_ids": [
+          "frame-000",
+          "frame-001",
+          "frame-002",
+          "frame-003",
+          "frame-004",
+          "frame-005",
+          "frame-006"
+        ],
+        "explanation": "Khoảng đầu video là cảnh quần vợt và nhân vật, chưa thấy tuýp kem hay nhãn Crest trong các khung hình mở đầu mẫu.",
+        "status": "observed",
+        "title": "Mở đầu chưa đưa sản phẩm vào sớm"
+      },
+      {
+        "evidence_ids": [
+          "transcript-004",
+          "transcript-005",
+          "transcript-010",
+          "frame-011",
+          "frame-012"
+        ],
+        "explanation": "ASR và chữ trên hình cùng nhấn mạnh lợi ích giảm sâu răng, trong đó có thông điệp 34% fewer cavities và câu kết nhắc lại Crest reduces cavities.",
+        "status": "observed",
+        "title": "Lợi ích chính được nêu khá rõ từ giữa video"
+      },
+      {
+        "evidence_ids": [
+          "frame-009",
+          "frame-010",
+          "frame-011",
+          "transcript-002",
+          "transcript-003",
+          "transcript-004"
+        ],
+        "explanation": "Video cho thấy hai người cùng chải răng và sau đó hiện kết quả phần trăm, giúp minh họa claim đang nói. Tuy vậy đây là cách trình bày quảng cáo, không tự nó thay thế nguồn kiểm chứng độc lập.",
+        "status": "observed",
+        "title": "Có demo/minh họa hỗ trợ thông điệp, nhưng ở mức trình bày quảng cáo"
+      },
+      {
+        "evidence_ids": [
+          "transcript-007",
+          "transcript-008",
+          "transcript-010"
+        ],
+        "explanation": "Phần cuối nói hãy khám định kỳ, hạn chế đồ ngọt, chải răng với Crest và nhớ rằng Crest giảm sâu răng; không thấy bước tiếp theo như vào shop, bấm link hay xem ưu đãi.",
+        "status": "observed",
+        "title": "CTA thiên về ghi nhớ/cách dùng hơn là hành động mua"
+      },
+      {
+        "evidence_ids": [
+          "transcript-000",
+          "transcript-010",
+          "context-caption"
+        ],
+        "explanation": "Trong ASR mẫu không có giá bán, giảm giá hay điều kiện ưu đãi; video cũng đang mang tính quảng cáo thương hiệu lịch sử hơn là chốt đơn.",
+        "status": "observed",
+        "title": "Không có giá hay ưu đãi được nêu"
+      },
+      {
+        "evidence_ids": [
+          "transcript-004",
+          "transcript-005",
+          "transcript-006",
+          "transcript-008",
+          "frame-013",
+          "frame-016",
+          "frame-017"
+        ],
+        "explanation": "Video nêu số liệu hiệu quả, so sánh với kem khác, khuyến nghị nha sĩ và dấu chấp thuận hiệp hội; đây là các phát ngôn cần hồ sơ chứng minh phù hợp nếu dùng lại cho bối cảnh bán hàng hiện nay.",
+        "status": "observed",
+        "title": "Có nhiều claim mạnh cần thận trọng nếu tái dùng hiện tại"
+      }
+    ],
+    "fixes": [
+      {
+        "after": "Nếu dựng lại cho mục tiêu thương mại hiện tại: mở 1-2 giây đầu bằng cận cảnh tuýp kem và câu trung tính như: \"Crest kem đánh răng — thông điệp chính: hỗ trợ chăm sóc răng miệng hằng ngày\".",
+        "before": "Mở đầu bằng cảnh quần vợt, người xem chưa biết ngay đây là video về Crest.",
+        "evidence_ids": [
+          "frame-001",
+          "frame-002",
+          "frame-003",
+          "frame-013"
+        ],
+        "title": "Đưa sản phẩm và chủ đề vào sớm hơn",
+        "why": "Giúp người xem nhận ra ngay sản phẩm/chủ đề thay vì phải chờ tới phần giữa video mới thấy bao bì."
+      },
+      {
+        "after": "Nếu dùng cho video bán hàng hiện tại và có đúng shop/link hợp lệ: \"Xem thông tin sản phẩm tại shop\" hoặc \"Xem chi tiết công dụng và cách dùng ở trang sản phẩm\".",
+        "before": "\"Remember, Crest reduces cavities.\"",
+        "evidence_ids": [
+          "transcript-010",
+          "context-platform"
+        ],
+        "title": "Đổi CTA từ ghi nhớ chung sang hành động kế tiếp rõ hơn",
+        "why": "CTA hiện tại không chỉ ra bước tiếp theo cho người xem, nên khó phục vụ mục tiêu tìm hiểu hay mua hàng."
+      },
+      {
+        "after": "Phương án an toàn hơn khi chưa có hồ sơ xác minh hiện tại: \"Quảng cáo tư liệu lịch sử về Crest\" hoặc \"Nội dung giới thiệu tập trung vào chăm sóc răng miệng\". Chỉ giữ các số liệu/chứng nhận nếu khớp đúng sản phẩm, biến thể, thị trường và tài liệu chứng minh hiện hành.",
+        "before": "\"34 percent fewer cavities\"; \"More dentists recommend Crest than all other toothpastes combined\"; nhắc tới dấu chấp thuận hiệp hội.",
+        "evidence_ids": [
+          "transcript-004",
+          "transcript-005",
+          "transcript-006",
+          "transcript-008",
+          "frame-011",
+          "frame-013",
+          "frame-016"
+        ],
+        "title": "Giảm rủi ro từ claim mạnh bằng cách chuyển sang câu trung tính hoặc chỉ giữ claim khi có đủ hồ sơ",
+        "why": "Các claim định lượng, so sánh và chứng nhận cần đối chiếu nguồn phù hợp trước khi tái sử dụng trong bối cảnh thương mại hiện tại."
+      }
+    ],
+    "observations": [
+      {
+        "evidence_ids": [
+          "frame-002",
+          "frame-009",
+          "frame-013",
+          "transcript-004",
+          "transcript-010"
+        ],
+        "text": "Video mẫu thể hiện một mẩu quảng cáo Crest lịch sử: mở đầu bằng trận quần vợt, rồi chuyển sang bài test chải răng và cuối cùng tập trung vào tuýp Crest cùng các câu khẳng định về giảm sâu răng."
+      },
+      {
+        "evidence_ids": [
+          "frame-013",
+          "frame-014",
+          "frame-015",
+          "frame-018"
+        ],
+        "text": "Tên thương hiệu và bao bì Crest được hiển thị khá nổi bật ở nửa sau video, nhất là các khung có toàn màn hình tuýp kem."
+      },
+      {
+        "evidence_ids": [
+          "transcript-004",
+          "transcript-005",
+          "transcript-010",
+          "frame-011",
+          "frame-012"
+        ],
+        "text": "Thông điệp bán hàng cốt lõi là lợi ích ngừa hoặc giảm sâu răng, được lặp lại bằng cả lời nói và chữ trên màn hình."
+      },
+      {
+        "evidence_ids": [
+          "transcript-007",
+          "transcript-008",
+          "transcript-010"
+        ],
+        "text": "Lời kêu gọi hiện có không phải CTA mua ngay; nó nghiêng về lời khuyên chăm sóc răng miệng và ghi nhớ thương hiệu Crest."
+      },
+      {
+        "evidence_ids": [
+          "context-caption",
+          "context-title",
+          "context-audience"
+        ],
+        "text": "Caption bối cảnh người dùng cung cấp mô tả đây là tư liệu quảng cáo lịch sử, không phải ưu đãi hay sản phẩm đang được xác minh, nên nên tách mục đích tư liệu khỏi mục đích bán hàng hiện tại."
+      }
+    ],
+    "unknowns": [
+      "Không đủ dữ liệu để xác nhận video này có khớp một SKU/listing cụ thể hiện tại hay không.",
+      "Không đủ dữ liệu để xác nhận các claim số liệu, so sánh nha sĩ khuyên dùng, hoặc chấp thuận hiệp hội còn đúng và được phép dùng cho thị trường/biến thể hiện tại hay không.",
+      "Không đủ dữ liệu để xác nhận CTA nào phù hợp với khả năng shop/link của account đích.",
+      "Không đủ dữ liệu để kết luận về giá hiện tại, ưu đãi, hạn dùng ưu đãi, hay đích mua.",
+      "Không có review cảm nhận âm thanh đầy đủ, nên không kết luận chất lượng lời nói so với nhạc/ồn ngoài phần ASR đã trích.",
+      "Không có dữ liệu xu hướng, doanh số, cohort giá hay lịch sự kiện để đánh giá yếu tố trend/thị trường.",
+      "Chưa có nguồn xác minh SKU/offer, thị trường, policy, account và kết quả bán hàng.",
+      "Ảnh lấy mẫu, ASR và loudness không thay thế xem/nghe liên tục toàn bộ video.",
+      "Giải thích do Responses viết độc lập trước điểm Decisions; chưa có bảo đảm nhất quán giữa hai model."
+    ],
+    "verdict": "Video truyền đạt khá rõ tên sản phẩm và lợi ích cốt lõi trong phần giữa-cuối, nhưng nếu dùng như video thương mại hiện tại thì còn thiếu CTA mua/tìm hiểu rõ ràng, thiếu thông tin offer/điều kiện, và chứa nhiều claim cần đối chiếu nguồn trước khi tái sử dụng.",
+    "video_summary": "Trong các khung hình mẫu và ASR, đây là một quảng cáo Crest dạng tư liệu lịch sử dài khoảng 40,5 giây. Mở đầu là cảnh chơi quần vợt, sau đó chuyển sang hai người đàn ông làm bài test với bàn chải, rồi hiện rõ tuýp kem đánh răng Crest. Thông điệp chính là Crest giúp giảm sâu răng, kèm các con số 34%, 21%, 42%, thêm câu \"nhiều nha sĩ khuyên dùng hơn tất cả kem đánh răng khác cộng lại\" và phần nhắc tới chấp thuận của American Dental Association. Video đang nói/bán kem đánh răng Crest; lời kêu gọi hành động thiên về ghi nhớ và dùng Crest khi chải răng hơn là mua ngay. Theo caption người dùng cung cấp, ngữ cảnh hiện tại là tư liệu quảng cáo lịch sử, không phải ưu đãi bán hàng đang được xác minh."
+  },
+  "duration_s": 40.511995,
+  "evidence": [
+    {
+      "at_s": null,
+      "id": "metadata",
+      "kind": "metadata",
+      "text": "{\"duration_s\": 40.511995, \"source_sha256\": \"3d15ee69cb18b7723c8cac86545c76fafef145e98e328ae2c9d82e9c3014c175\", \"probe\": {\"streams\": [{\"index\": 0, \"codec_name\": \"h264\", \"codec_long_name\": \"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10\", \"profile\": \"Constrained Baseline\", \"codec_type\": \"video\", \"codec_tag_string\": \"avc1\", \"codec_tag\": \"0x31637661\", \"width\": 640, \"height\": 480, \"coded_width\": 640, \"coded_height\": 480, \"closed_captions\": 0, \"film_grain\": 0, \"has_b_frames\": 0, \"sample_aspect_ratio\": \"1:1\", \"display_aspect_ratio\": \"4:3\", \"pix_fmt\": \"yuv420p\", \"level\": 30, \"chroma_location\": \"left\", \"field_order\": \"progressive\", \"refs\": 1, \"is_avc\": \"true\", \"nal_length_size\": \"4\", \"id\": \"0x1\", \"r_frame_rate\": \"30000/1001\", \"avg_frame_rate\": \"30000/1001\", \"time_base\": \"1/30000\", \"start_pts\": 0, \"start_time\": \"0.000000\", \"duration_ts\": 1215214, \"duration\": \"40.507133\", \"bit_rate\": \"681893\", \"bits_per_raw_sample\": \"8\", \"nb_frames\": \"1214\", \"extradata_size\": 38, \"disposition\": {\"default\": 1, \"dub\": 0, \"original\": 0, \"comment\": 0, \"lyrics\": 0, \"karaoke\": 0, \"forced\": 0, \"hearing_impaired\": 0, \"visual_impaired\": 0, \"clean_effects\": 0, \"attached_pic\": 0, \"timed_thumbnails\": 0, \"non_diegetic\": 0, \"captions\": 0, \"descriptions\": 0, \"metadata\": 0, \"dependent\": 0, \"still_image\": 0, \"multilayer\": 0}, \"tags\": {\"language\": \"und\", \"handler_name\": \"VideoHandler\", \"vendor_id\": \"[0][0][0][0]\"}}, {\"index\": 1, \"codec_name\": \"aac\", \"codec_long_name\": \"AAC (Advanced Audio Coding)\", \"profile\": \"LC\", \"codec_type\": \"audio\", \"codec_tag_string\": \"mp4a\", \"codec_tag\": \"0x6134706d\", \"sample_fmt\": \"fltp\", \"sample_rate\": \"44100\", \"channels\": 2, \"channel_layout\": \"stereo\", \"bits_per_sample\": 0, \"initial_padding\": 0, \"id\": \"0x2\", \"r_frame_rate\": \"0/0\", \"avg_frame_rate\": \"0/0\", \"time_base\": \"1/44100\", \"start_pts\": 0, \"start_time\": \"0.000000\", \"duration_ts\": 1786579, \"duration\": \"40.511995\", \"bit_rate\": \"133442\", \"nb_frames\": \"1746\", \"extradata_size\": 5, \"disposition\": {\"default\": 1, \"dub\": 0, \"original\": 0, \"comment\": 0, \"lyrics\": 0, \"karaoke\": 0, \"forced\": 0, \"hearing_impaired\": 0, \"visual_impaired\": 0, \"clean_effects\": 0, \"attached_pic\": 0, \"timed_thumbnails\": 0, \"non_diegetic\": 0, \"captions\": 0, \"descriptions\": 0, \"metadata\": 0, \"dependent\": 0, \"still_image\": 0, \"multilayer\": 0}, \"tags\": {\"language\": \"und\", \"handler_name\": \"SoundHandler\", \"vendor_id\": \"[0][0][0][0]\"}}], \"format\": {\"filename\": \"[local path]\", \"nb_streams\": 2, \"nb_programs\": 0, \"nb_stream_groups\": 0, \"format_name\": \"mov,mp4,m4a,3gp,3g2,mj2\", \"format_long_name\": \"QuickTime / MOV\", \"start_time\": \"0.000000\", \"duration\": \"40.511995\", \"size\": \"4164650\", \"bit_rate\": \"822403\", \"probe_score\": 100, \"tags\": {\"major_brand\": \"isom\", \"minor_version\": \"512\", \"compatible_brands\": \"isomiso2avc1mp41\", \"title\": \"Crest Toothpaste Commercial 2 - https://archive.org/details/CrestToothpa_2\", \"encoder\": \"Lavf57.21.101\", \"comment\": \"license:http://creativecommons.org/licenses/publicdomain/\"}}}, \"tool_availability\": {\"ffprobe\": true, \"ffmpeg\": true}}"
+    },
+    {
+      "at_s": 0,
+      "id": "frame-000",
+      "kind": "frame",
+      "text": "Decoded video frame at 0.000000s; SHA256 9639a626e145d1ab4648db8c195e0b73d69be3beb05b77995a944d12cbbe2836",
+      "url": "/mockup-v2/recorded-crest/frame-000.jpg"
+    },
+    {
+      "at_s": 0.5005,
+      "id": "frame-001",
+      "kind": "frame",
+      "text": "Decoded video frame at 0.500500s; SHA256 f46747c2cf189082307db44674da9b22a2c29d40ccf18ebf07b6a0c1e3b5f3a6",
+      "url": "/mockup-v2/recorded-crest/frame-001.jpg"
+    },
+    {
+      "at_s": 1.001,
+      "id": "frame-002",
+      "kind": "frame",
+      "text": "Decoded video frame at 1.001000s; SHA256 413d0974fce1ea7502126b43f99f25ed53ca401f46bdb9d58c226251ea432a66",
+      "url": "/mockup-v2/recorded-crest/frame-002.jpg"
+    },
+    {
+      "at_s": 1.5015,
+      "id": "frame-003",
+      "kind": "frame",
+      "text": "Decoded video frame at 1.501500s; SHA256 f8ee4a38c95a2c8b087618fec346bb055d552842e634ea9aa3f326637768be85",
+      "url": "/mockup-v2/recorded-crest/frame-003.jpg"
+    },
+    {
+      "at_s": 2.002,
+      "id": "frame-004",
+      "kind": "frame",
+      "text": "Decoded video frame at 2.002000s; SHA256 4204ff57f4e56f4d54e0ca1c77eeded209ad42222db95f169f067d6fc8c9fa9a",
+      "url": "/mockup-v2/recorded-crest/frame-004.jpg"
+    },
+    {
+      "at_s": 2.5025,
+      "id": "frame-005",
+      "kind": "frame",
+      "text": "Decoded video frame at 2.502500s; SHA256 8ef87c98387b518ee87c4d06a532de9984b08c09d1ebd6dd8ccbe8d5f3681af3",
+      "url": "/mockup-v2/recorded-crest/frame-005.jpg"
+    },
+    {
+      "at_s": 3.003,
+      "id": "frame-006",
+      "kind": "frame",
+      "text": "Decoded video frame at 3.003000s; SHA256 42589520956f714457670b9ef150253ba0ea3a5a14d46d9b1f80bd023807664a",
+      "url": "/mockup-v2/recorded-crest/frame-006.jpg"
+    },
+    {
+      "at_s": 6.006,
+      "id": "frame-007",
+      "kind": "frame",
+      "text": "Decoded video frame at 6.006000s; SHA256 9938914957e6f7d7fd43bd83731fae473b56e07f8b643ae482b4e1f5521583d7",
+      "url": "/mockup-v2/recorded-crest/frame-007.jpg"
+    },
+    {
+      "at_s": 9.009,
+      "id": "frame-008",
+      "kind": "frame",
+      "text": "Decoded video frame at 9.009000s; SHA256 70dcee29a12e882c425cbfd1bfddb8046e9673bf29ef970f1bb461674dd9f949",
+      "url": "/mockup-v2/recorded-crest/frame-008.jpg"
+    },
+    {
+      "at_s": 12.012,
+      "id": "frame-009",
+      "kind": "frame",
+      "text": "Decoded video frame at 12.012000s; SHA256 f566007997230a144e2fbcd2c9ebf20d04513e730314be1088d1ce15cc4b0ad8",
+      "url": "/mockup-v2/recorded-crest/frame-009.jpg"
+    },
+    {
+      "at_s": 15.015,
+      "id": "frame-010",
+      "kind": "frame",
+      "text": "Decoded video frame at 15.015000s; SHA256 c6a42a8f79ec52d555235ba23a7b97344d4943c9e31857b7fa250f2b5c1cc86c",
+      "url": "/mockup-v2/recorded-crest/frame-010.jpg"
+    },
+    {
+      "at_s": 18.018,
+      "id": "frame-011",
+      "kind": "frame",
+      "text": "Decoded video frame at 18.018000s; SHA256 efa7d8e963da9cd91a5609ba9cad172d0246f9404fd45fce082bb8b5dcfa521b",
+      "url": "/mockup-v2/recorded-crest/frame-011.jpg"
+    },
+    {
+      "at_s": 21.021,
+      "id": "frame-012",
+      "kind": "frame",
+      "text": "Decoded video frame at 21.021000s; SHA256 40cf441813fcce7452d9f231ad88ed4bddfb778a7f9a86c3fd7f651dfe695abb",
+      "url": "/mockup-v2/recorded-crest/frame-012.jpg"
+    },
+    {
+      "at_s": 24.024,
+      "id": "frame-013",
+      "kind": "frame",
+      "text": "Decoded video frame at 24.024000s; SHA256 3928533010d2b25883dd972a015a8395557bbd7fcee16c1cc7a107cf8fd6d444",
+      "url": "/mockup-v2/recorded-crest/frame-013.jpg"
+    },
+    {
+      "at_s": 27.027,
+      "id": "frame-014",
+      "kind": "frame",
+      "text": "Decoded video frame at 27.027000s; SHA256 0d8120f8174813e0d1447c2adddd73399c5102d02eee6a84d10ee74c08f268eb",
+      "url": "/mockup-v2/recorded-crest/frame-014.jpg"
+    },
+    {
+      "at_s": 30.03,
+      "id": "frame-015",
+      "kind": "frame",
+      "text": "Decoded video frame at 30.030000s; SHA256 210b8c96b31cc6cecf5ff65d085e49d6de8c52734907e9218a82bf475829b9da",
+      "url": "/mockup-v2/recorded-crest/frame-015.jpg"
+    },
+    {
+      "at_s": 33.033,
+      "id": "frame-016",
+      "kind": "frame",
+      "text": "Decoded video frame at 33.033000s; SHA256 647daffaadd4062d27d8838787a93ad210281d529ad1ce4f0dbd459da7ba4346",
+      "url": "/mockup-v2/recorded-crest/frame-016.jpg"
+    },
+    {
+      "at_s": 36.036,
+      "id": "frame-017",
+      "kind": "frame",
+      "text": "Decoded video frame at 36.036000s; SHA256 daf32f1975c648b318f9e13d83c120c0d666efee82259a523c87bd722df20f3f",
+      "url": "/mockup-v2/recorded-crest/frame-017.jpg"
+    },
+    {
+      "at_s": 39.039,
+      "id": "frame-018",
+      "kind": "frame",
+      "text": "Decoded video frame at 39.039000s; SHA256 c6172a9e959615e586db5848f570d5b88424a6c277e1a860fa01d1017ad263be",
+      "url": "/mockup-v2/recorded-crest/frame-018.jpg"
+    },
+    {
+      "at_s": 39.9399,
+      "id": "frame-019",
+      "kind": "frame",
+      "text": "Decoded video frame at 39.939900s; SHA256 1b22f67fc398f6781616935b843c6859c1ba5a0fa266c8d3ed7fb84ffc9c4e61",
+      "url": "/mockup-v2/recorded-crest/frame-019.jpg"
+    },
+    {
+      "at_s": 40.1401,
+      "id": "frame-020",
+      "kind": "frame",
+      "text": "Decoded video frame at 40.140100s; SHA256 6e3ad292656bcb1e137552afa9de2ace50f798cfc9172917508218e7e201e41e",
+      "url": "/mockup-v2/recorded-crest/frame-020.jpg"
+    },
+    {
+      "at_s": 40.3403,
+      "id": "frame-021",
+      "kind": "frame",
+      "text": "Decoded video frame at 40.340300s; SHA256 1fdbe3635f7c4067159cd7cbfef2a69d94849bd89464982d35c6c8ddeb89f445",
+      "url": "/mockup-v2/recorded-crest/frame-021.jpg"
+    },
+    {
+      "at_s": null,
+      "id": "shot-candidates",
+      "kind": "metadata",
+      "text": "{\"available\": true, \"candidate_s\": [3.370033, 4.637967], \"method\": \"ffmpeg scene threshold 0.25, decoded PTS normalized to first video frame\"}"
+    },
+    {
+      "at_s": null,
+      "id": "audio-measurements",
+      "kind": "metadata",
+      "text": "{\"integrated_lufs\": \"-22.3\", \"true_peak_dbfs\": \"-6.4\", \"method\": \"ffmpeg ebur128=peak=true on original MP4 first audio stream\"}"
+    },
+    {
+      "at_s": 0,
+      "end_s": 6.400000095367432,
+      "id": "transcript-000",
+      "kind": "transcript",
+      "text": "ASR 0.00–6.40s: Get them!"
+    },
+    {
+      "at_s": 6.400000095367432,
+      "end_s": 7.519999980926514,
+      "id": "transcript-001",
+      "kind": "transcript",
+      "text": "ASR 6.40–7.52s: He did."
+    },
+    {
+      "at_s": 7.519999980926514,
+      "end_s": 11.319999694824219,
+      "id": "transcript-002",
+      "kind": "transcript",
+      "text": "ASR 7.52–11.32s: I never beat Bill, except once, in a toothpaste test."
+    },
+    {
+      "at_s": 11.319999694824219,
+      "end_s": 14.5600004196167,
+      "id": "transcript-003",
+      "kind": "transcript",
+      "text": "ASR 11.32–14.56s: Bill's side used the same toothpaste as mine, but without Floristan."
+    },
+    {
+      "at_s": 14.5600004196167,
+      "end_s": 18.639999389648438,
+      "id": "transcript-004",
+      "kind": "transcript",
+      "text": "ASR 14.56–18.64s: My side used Crest, and had 34 percent fewer cavities."
+    },
+    {
+      "at_s": 18.639999389648438,
+      "end_s": 23.579999923706055,
+      "id": "transcript-005",
+      "kind": "transcript",
+      "text": "ASR 18.64–23.58s: In similar tests, Crest reduced cavities 21 percent and 42 percent."
+    },
+    {
+      "at_s": 23.579999923706055,
+      "end_s": 27.799999237060547,
+      "id": "transcript-006",
+      "kind": "transcript",
+      "text": "ASR 23.58–27.80s: More dentists recommend Crest than all other toothpastes combined."
+    },
+    {
+      "at_s": 27.799999237060547,
+      "end_s": 32.18000030517578,
+      "id": "transcript-007",
+      "kind": "transcript",
+      "text": "ASR 27.80–32.18s: So have regular checkups, watch treats, and brush after eating with Crest, accepted by"
+    },
+    {
+      "at_s": 32.18000030517578,
+      "end_s": 36.720001220703125,
+      "id": "transcript-008",
+      "kind": "transcript",
+      "text": "ASR 32.18–36.72s: the Therapeutics Council of the American Dental Association, as signified by this statement"
+    },
+    {
+      "at_s": 36.720001220703125,
+      "end_s": 37.720001220703125,
+      "id": "transcript-009",
+      "kind": "transcript",
+      "text": "ASR 36.72–37.72s: and seal."
+    },
+    {
+      "at_s": 37.720001220703125,
+      "end_s": 39.84000015258789,
+      "id": "transcript-010",
+      "kind": "transcript",
+      "text": "ASR 37.72–39.84s: Remember, Crest reduces cavities."
+    },
+    {
+      "at_s": null,
+      "id": "context-platform",
+      "kind": "context",
+      "text": "Unverified user-supplied platform; not an external source: shopee"
+    },
+    {
+      "at_s": null,
+      "id": "context-market",
+      "kind": "context",
+      "text": "Unverified user-supplied market; not an external source: VN"
+    },
+    {
+      "at_s": null,
+      "id": "context-audience",
+      "kind": "context",
+      "text": "Unverified user-supplied audience; not an external source: Người trưởng thành; kiểm thử quảng cáo lịch sử"
+    },
+    {
+      "at_s": null,
+      "id": "context-title",
+      "kind": "context",
+      "text": "Unverified user-supplied title; not an external source: Quảng cáo Crest lịch sử — kiểm thử pipeline"
+    },
+    {
+      "at_s": null,
+      "id": "context-caption",
+      "kind": "context",
+      "text": "Unverified user-supplied caption; not an external source: Tư liệu quảng cáo lịch sử, không phải ưu đãi hoặc sản phẩm đang được xác minh."
+    },
+    {
+      "at_s": null,
+      "facts": {
+        "advisory_only": true,
+        "applicability": {
+          "category": null,
+          "effective_at": null,
+          "market": "VN",
+          "platform": "shopee",
+          "surface": "product-linked-video",
+          "version": "undated-current-page"
+        },
+        "applicability_status": "requires_scope_review",
+        "checked_at": "2026-10-31T05:38:27Z",
+        "effective_at": null,
+        "id": "policy-shopee-quality",
+        "missing_reason": "Source rule only; exact posting scope, effective-version assurance, actual media and account evidence not adjudicated.",
+        "question_mapping": [
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c5",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "listing_identity"
+            ],
+            "required_media": [
+              "frames"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t1",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "listing_attributes"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t6",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_variant",
+              "listing_variant_attributes"
+            ],
+            "required_media": [
+              "frames"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "f2",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "same_source_market_category_grain_currency_cohort",
+              "sample_denominators"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c6",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_variant",
+              "fresh_verified_offer",
+              "offer_conditions"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c7",
+            "rating": null,
+            "required_facts": [
+              "fresh_verified_offer",
+              "expiry",
+              "purchase_destination"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "s4",
+            "rating": null,
+            "required_facts": [
+              "user_caption_hashtags",
+              "current_scoped_trend"
+            ],
+            "required_media": [
+              "frames",
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr1",
+            "rating": null,
+            "required_facts": [
+              "category_time_series",
+              "seasonal_comparison"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr2",
+            "rating": null,
+            "required_facts": [
+              "same_query_geo_scale_time_series"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr3",
+            "rating": null,
+            "required_facts": [
+              "user_caption",
+              "current_scoped_search_interest"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr4",
+            "rating": null,
+            "required_facts": [
+              "user_hashtags",
+              "current_hashtag_time_window"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr5",
+            "rating": null,
+            "required_facts": [
+              "user_planned_post_at_timezone",
+              "verified_event_calendar"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr6",
+            "rating": null,
+            "required_facts": [
+              "windowed_observed_sales",
+              "market",
+              "identity",
+              "counter_definition"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t7",
+            "rating": null,
+            "required_facts": [
+              "applicable_policy_version",
+              "market_platform_surface_category",
+              "account_capabilities"
+            ],
+            "required_media": [
+              "frames",
+              "transcript",
+              "audio"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t3",
+            "rating": null,
+            "required_facts": [
+              "claim_substantiation"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t8",
+            "rating": null,
+            "required_facts": [
+              "claim_substantiation",
+              "verified_variant_market_period"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c8",
+            "rating": null,
+            "required_facts": [
+              "authorized_economics",
+              "attribution_window",
+              "refunds_fees_costs"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "h4",
+            "rating": null,
+            "required_facts": [],
+            "required_media": [
+              "opening_audio"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "r6",
+            "rating": null,
+            "required_facts": [],
+            "required_media": [
+              "audio"
+            ]
+          }
+        ],
+        "rating": null,
+        "read_status": "body_read",
+        "requested_surface": "product-linked-video",
+        "required_media": [
+          "timestamped_frames",
+          "timestamped_transcript",
+          "audio_review_when_relevant"
+        ],
+        "source_id": "shopee-quality",
+        "statement": "Product-linked videos require the actual product as the main subject, Vietnamese or English audio/subtitles, and no third-party watermark.",
+        "surface_match": true,
+        "validity_status": "unverified",
+        "verdict": null
+      },
+      "id": "market-policy-e8aacd764e36b3fe-policy-shopee-quality",
+      "kind": "policy_reference",
+      "provenance": {
+        "bundle_fingerprint": "e8aacd764e36b3fedf1894167e84ae892c4831fefe278b935a352b8e5e142d10",
+        "json_pointer": "/policies/0",
+        "manifest_sha256": "32d9734348f725664c0aa63444cf708f22b6fb312733e2419b95be684a54936c",
+        "question_mapping_pointer": "/question_mapping",
+        "snapshot_sha256": "b2bb51b84d5d5e168dd38e49c41ff5b862aa9d0d40cf5e5b60e43d9a3ac8afd0",
+        "source": {
+          "checked_at": "2026-10-31T05:38:27Z",
+          "effective_at": null,
+          "id": "shopee-quality",
+          "locator": "quality table sections 2.2, 2.3, 3.3",
+          "market": "VN",
+          "platform": "shopee",
+          "published_at": null,
+          "quote": "Video phải có âm thanh hoặc phụ đề bằng tiếng Việt hoặc tiếng Anh.",
+          "quote_kind": "verbatim_excerpt",
+          "read_status": "body_read",
+          "rights": {
+            "commercial_use": null,
+            "missing_reason": "Public documentation read; provider data license not granted by documentation access.",
+            "redistribution": null,
+            "retention": null
+          },
+          "statement": "Product-linked videos require the actual product as the main subject, Vietnamese or English audio/subtitles, and no third-party watermark.",
+          "statement_kind": "paraphrase",
+          "surface": "product-linked-video",
+          "url": "https://help.shopee.vn/portal/10/article/177021"
+        },
+        "source_id": "shopee-quality",
+        "source_pointer": "/sources/0"
+      },
+      "text": "Policy source reference only; body_read; validity unverified. Advisory only. {\"advisory_only\":true,\"applicability\":{\"category\":null,\"effective_at\":null,\"market\":\"VN\",\"platform\":\"shopee\",\"surface\":\"product-linked-video\",\"version\":\"undated-current-page\"},\"applicability_status\":\"requires_scope_review\",\"checked_at\":\"2026-10-31T05:38:27Z\",\"effective_at\":null,\"id\":\"policy-shopee-quality\",\"missing_reason\":\"Source rule only; exact posting scope, effective-version assurance, actual media and account evidence not adjudicated.\",\"question_mapping\":[{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c5\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"listing_identity\"],\"required_media\":[\"frames\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t1\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"listing_attributes\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t6\",\"rating\":null,\"required_facts\":[\"selected_exact_variant\",\"listing_variant_attributes\"],\"required_media\":[\"frames\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"f2\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"same_source_market_category_grain_currency_cohort\",\"sample_denominators\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c6\",\"rating\":null,\"required_facts\":[\"selected_exact_variant\",\"fresh_verified_offer\",\"offer_conditions\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c7\",\"rating\":null,\"required_facts\":[\"fresh_verified_offer\",\"expiry\",\"purchase_destination\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"s4\",\"rating\":null,\"required_facts\":[\"user_caption_hashtags\",\"current_scoped_trend\"],\"required_media\":[\"frames\",\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr1\",\"rating\":null,\"required_facts\":[\"category_time_series\",\"seasonal_comparison\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr2\",\"rating\":null,\"required_facts\":[\"same_query_geo_scale_time_series\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr3\",\"rating\":null,\"required_facts\":[\"user_caption\",\"current_scoped_search_interest\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr4\",\"rating\":null,\"required_facts\":[\"user_hashtags\",\"current_hashtag_time_window\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr5\",\"rating\":null,\"required_facts\":[\"user_planned_post_at_timezone\",\"verified_event_calendar\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr6\",\"rating\":null,\"required_facts\":[\"windowed_observed_sales\",\"market\",\"identity\",\"counter_definition\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t7\",\"rating\":null,\"required_facts\":[\"applicable_policy_version\",\"market_platform_surface_category\",\"account_capabilities\"],\"required_media\":[\"frames\",\"transcript\",\"audio\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t3\",\"rating\":null,\"required_facts\":[\"claim_substantiation\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t8\",\"rating\":null,\"required_facts\":[\"claim_substantiation\",\"verified_variant_market_period\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c8\",\"rating\":null,\"required_facts\":[\"authorized_economics\",\"attribution_window\",\"refunds_fees_costs\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"h4\",\"rating\":null,\"required_facts\":[],\"required_media\":[\"opening_audio\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"r6\",\"rating\":null,\"required_facts\":[],\"required_media\":[\"audio\"]}],\"rating\":null,\"read_status\":\"body_read\",\"requested_surface\":\"product-linked-video\",\"required_media\":[\"timestamped_frames\",\"timestamped_transcript\",\"audio_review_when_relevant\"],\"source_id\":\"shopee-quality\",\"statement\":\"Product-linked videos require the actual product as the main subject, Vietnamese or English audio/subtitles, and no third-party watermark.\",\"surface_match\":true,\"validity_status\":\"unverified\",\"verdict\":null}"
+    },
+    {
+      "at_s": null,
+      "facts": {
+        "advisory_only": true,
+        "applicability": {
+          "category": null,
+          "effective_at": null,
+          "market": "VN",
+          "platform": "shopee",
+          "surface": "video",
+          "version": "undated-current-page"
+        },
+        "applicability_status": "requires_scope_review",
+        "checked_at": "2026-10-31T05:38:27Z",
+        "effective_at": null,
+        "id": "policy-shopee-enforcement",
+        "missing_reason": "Source rule only; exact posting scope, effective-version assurance, actual media and account evidence not adjudicated.",
+        "question_mapping": [
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c5",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "listing_identity"
+            ],
+            "required_media": [
+              "frames"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t1",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "listing_attributes"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t6",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_variant",
+              "listing_variant_attributes"
+            ],
+            "required_media": [
+              "frames"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "f2",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "same_source_market_category_grain_currency_cohort",
+              "sample_denominators"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c6",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_variant",
+              "fresh_verified_offer",
+              "offer_conditions"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c7",
+            "rating": null,
+            "required_facts": [
+              "fresh_verified_offer",
+              "expiry",
+              "purchase_destination"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "s4",
+            "rating": null,
+            "required_facts": [
+              "user_caption_hashtags",
+              "current_scoped_trend"
+            ],
+            "required_media": [
+              "frames",
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr1",
+            "rating": null,
+            "required_facts": [
+              "category_time_series",
+              "seasonal_comparison"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr2",
+            "rating": null,
+            "required_facts": [
+              "same_query_geo_scale_time_series"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr3",
+            "rating": null,
+            "required_facts": [
+              "user_caption",
+              "current_scoped_search_interest"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr4",
+            "rating": null,
+            "required_facts": [
+              "user_hashtags",
+              "current_hashtag_time_window"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr5",
+            "rating": null,
+            "required_facts": [
+              "user_planned_post_at_timezone",
+              "verified_event_calendar"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr6",
+            "rating": null,
+            "required_facts": [
+              "windowed_observed_sales",
+              "market",
+              "identity",
+              "counter_definition"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t7",
+            "rating": null,
+            "required_facts": [
+              "applicable_policy_version",
+              "market_platform_surface_category",
+              "account_capabilities"
+            ],
+            "required_media": [
+              "frames",
+              "transcript",
+              "audio"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t3",
+            "rating": null,
+            "required_facts": [
+              "claim_substantiation"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t8",
+            "rating": null,
+            "required_facts": [
+              "claim_substantiation",
+              "verified_variant_market_period"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c8",
+            "rating": null,
+            "required_facts": [
+              "authorized_economics",
+              "attribution_window",
+              "refunds_fees_costs"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "h4",
+            "rating": null,
+            "required_facts": [],
+            "required_media": [
+              "opening_audio"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "r6",
+            "rating": null,
+            "required_facts": [],
+            "required_media": [
+              "audio"
+            ]
+          }
+        ],
+        "rating": null,
+        "read_status": "body_read",
+        "requested_surface": "product-linked-video",
+        "required_media": [
+          "timestamped_frames",
+          "timestamped_transcript",
+          "audio_review_when_relevant"
+        ],
+        "source_id": "shopee-enforcement",
+        "statement": "Low-quality examples include unintelligible speech under music/noise, static imagery over half the duration, and videos shorter than six seconds. Evaluate actual media before flagging.",
+        "surface_match": false,
+        "validity_status": "unverified",
+        "verdict": null
+      },
+      "id": "market-policy-e8aacd764e36b3fe-policy-shopee-enforcement",
+      "kind": "policy_reference",
+      "provenance": {
+        "bundle_fingerprint": "e8aacd764e36b3fedf1894167e84ae892c4831fefe278b935a352b8e5e142d10",
+        "json_pointer": "/policies/1",
+        "manifest_sha256": "32d9734348f725664c0aa63444cf708f22b6fb312733e2419b95be684a54936c",
+        "question_mapping_pointer": "/question_mapping",
+        "snapshot_sha256": "b2bb51b84d5d5e168dd38e49c41ff5b862aa9d0d40cf5e5b60e43d9a3ac8afd0",
+        "source": {
+          "checked_at": "2026-10-31T05:38:27Z",
+          "effective_at": null,
+          "id": "shopee-enforcement",
+          "locator": "content violations table: low quality",
+          "market": "VN",
+          "platform": "shopee",
+          "published_at": null,
+          "quote": null,
+          "quote_kind": null,
+          "read_status": "body_read",
+          "rights": {
+            "commercial_use": null,
+            "missing_reason": "Public documentation read; provider data license not granted by documentation access.",
+            "redistribution": null,
+            "retention": null
+          },
+          "statement": "Low-quality examples include unintelligible speech under music/noise, static imagery over half the duration, and videos shorter than six seconds. Evaluate actual media before flagging.",
+          "statement_kind": "paraphrase",
+          "surface": "video",
+          "url": "https://help.shopee.vn/portal/10/article/185893"
+        },
+        "source_id": "shopee-enforcement",
+        "source_pointer": "/sources/1"
+      },
+      "text": "Policy source reference only; body_read; validity unverified. Advisory only. {\"advisory_only\":true,\"applicability\":{\"category\":null,\"effective_at\":null,\"market\":\"VN\",\"platform\":\"shopee\",\"surface\":\"video\",\"version\":\"undated-current-page\"},\"applicability_status\":\"requires_scope_review\",\"checked_at\":\"2026-10-31T05:38:27Z\",\"effective_at\":null,\"id\":\"policy-shopee-enforcement\",\"missing_reason\":\"Source rule only; exact posting scope, effective-version assurance, actual media and account evidence not adjudicated.\",\"question_mapping\":[{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c5\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"listing_identity\"],\"required_media\":[\"frames\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t1\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"listing_attributes\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t6\",\"rating\":null,\"required_facts\":[\"selected_exact_variant\",\"listing_variant_attributes\"],\"required_media\":[\"frames\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"f2\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"same_source_market_category_grain_currency_cohort\",\"sample_denominators\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c6\",\"rating\":null,\"required_facts\":[\"selected_exact_variant\",\"fresh_verified_offer\",\"offer_conditions\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c7\",\"rating\":null,\"required_facts\":[\"fresh_verified_offer\",\"expiry\",\"purchase_destination\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"s4\",\"rating\":null,\"required_facts\":[\"user_caption_hashtags\",\"current_scoped_trend\"],\"required_media\":[\"frames\",\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr1\",\"rating\":null,\"required_facts\":[\"category_time_series\",\"seasonal_comparison\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr2\",\"rating\":null,\"required_facts\":[\"same_query_geo_scale_time_series\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr3\",\"rating\":null,\"required_facts\":[\"user_caption\",\"current_scoped_search_interest\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr4\",\"rating\":null,\"required_facts\":[\"user_hashtags\",\"current_hashtag_time_window\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr5\",\"rating\":null,\"required_facts\":[\"user_planned_post_at_timezone\",\"verified_event_calendar\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr6\",\"rating\":null,\"required_facts\":[\"windowed_observed_sales\",\"market\",\"identity\",\"counter_definition\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t7\",\"rating\":null,\"required_facts\":[\"applicable_policy_version\",\"market_platform_surface_category\",\"account_capabilities\"],\"required_media\":[\"frames\",\"transcript\",\"audio\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t3\",\"rating\":null,\"required_facts\":[\"claim_substantiation\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t8\",\"rating\":null,\"required_facts\":[\"claim_substantiation\",\"verified_variant_market_period\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c8\",\"rating\":null,\"required_facts\":[\"authorized_economics\",\"attribution_window\",\"refunds_fees_costs\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"h4\",\"rating\":null,\"required_facts\":[],\"required_media\":[\"opening_audio\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"r6\",\"rating\":null,\"required_facts\":[],\"required_media\":[\"audio\"]}],\"rating\":null,\"read_status\":\"body_read\",\"requested_surface\":\"product-linked-video\",\"required_media\":[\"timestamped_frames\",\"timestamped_transcript\",\"audio_review_when_relevant\"],\"source_id\":\"shopee-enforcement\",\"statement\":\"Low-quality examples include unintelligible speech under music/noise, static imagery over half the duration, and videos shorter than six seconds. Evaluate actual media before flagging.\",\"surface_match\":false,\"validity_status\":\"unverified\",\"verdict\":null}"
+    },
+    {
+      "at_s": null,
+      "facts": {
+        "advisory_only": true,
+        "applicability": {
+          "category": null,
+          "effective_at": "2026-01-01",
+          "market": "VN",
+          "platform": "all",
+          "surface": "advertising",
+          "version": "2025-06-16"
+        },
+        "applicability_status": "requires_scope_review",
+        "checked_at": "2026-10-31T05:38:27Z",
+        "effective_at": "2026-01-01",
+        "id": "policy-vn-ad-law-metadata",
+        "missing_reason": "Source rule only; exact posting scope, effective-version assurance, actual media and account evidence not adjudicated.",
+        "question_mapping": [
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c5",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "listing_identity"
+            ],
+            "required_media": [
+              "frames"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t1",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "listing_attributes"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t6",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_variant",
+              "listing_variant_attributes"
+            ],
+            "required_media": [
+              "frames"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "f2",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "same_source_market_category_grain_currency_cohort",
+              "sample_denominators"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c6",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_variant",
+              "fresh_verified_offer",
+              "offer_conditions"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c7",
+            "rating": null,
+            "required_facts": [
+              "fresh_verified_offer",
+              "expiry",
+              "purchase_destination"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "s4",
+            "rating": null,
+            "required_facts": [
+              "user_caption_hashtags",
+              "current_scoped_trend"
+            ],
+            "required_media": [
+              "frames",
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr1",
+            "rating": null,
+            "required_facts": [
+              "category_time_series",
+              "seasonal_comparison"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr2",
+            "rating": null,
+            "required_facts": [
+              "same_query_geo_scale_time_series"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr3",
+            "rating": null,
+            "required_facts": [
+              "user_caption",
+              "current_scoped_search_interest"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr4",
+            "rating": null,
+            "required_facts": [
+              "user_hashtags",
+              "current_hashtag_time_window"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr5",
+            "rating": null,
+            "required_facts": [
+              "user_planned_post_at_timezone",
+              "verified_event_calendar"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr6",
+            "rating": null,
+            "required_facts": [
+              "windowed_observed_sales",
+              "market",
+              "identity",
+              "counter_definition"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t7",
+            "rating": null,
+            "required_facts": [
+              "applicable_policy_version",
+              "market_platform_surface_category",
+              "account_capabilities"
+            ],
+            "required_media": [
+              "frames",
+              "transcript",
+              "audio"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t3",
+            "rating": null,
+            "required_facts": [
+              "claim_substantiation"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t8",
+            "rating": null,
+            "required_facts": [
+              "claim_substantiation",
+              "verified_variant_market_period"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c8",
+            "rating": null,
+            "required_facts": [
+              "authorized_economics",
+              "attribution_window",
+              "refunds_fees_costs"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "h4",
+            "rating": null,
+            "required_facts": [],
+            "required_media": [
+              "opening_audio"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "r6",
+            "rating": null,
+            "required_facts": [],
+            "required_media": [
+              "audio"
+            ]
+          }
+        ],
+        "rating": null,
+        "read_status": "metadata_only",
+        "requested_surface": "product-linked-video",
+        "required_media": [
+          "timestamped_frames",
+          "timestamped_transcript",
+          "audio_review_when_relevant"
+        ],
+        "source_id": "vn-ad-law-metadata",
+        "statement": "Official gazette metadata identifies amendment 75/2025/QH15 and its effective date. Full consolidated provisions and category-specific rules were not reviewed here.",
+        "surface_match": false,
+        "validity_status": "unverified",
+        "verdict": null
+      },
+      "id": "market-policy-e8aacd764e36b3fe-policy-vn-ad-law-metadata",
+      "kind": "policy_reference",
+      "provenance": {
+        "bundle_fingerprint": "e8aacd764e36b3fedf1894167e84ae892c4831fefe278b935a352b8e5e142d10",
+        "json_pointer": "/policies/5",
+        "manifest_sha256": "32d9734348f725664c0aa63444cf708f22b6fb312733e2419b95be684a54936c",
+        "question_mapping_pointer": "/question_mapping",
+        "snapshot_sha256": "b2bb51b84d5d5e168dd38e49c41ff5b862aa9d0d40cf5e5b60e43d9a3ac8afd0",
+        "source": {
+          "checked_at": "2026-10-31T05:38:27Z",
+          "effective_at": "2026-01-01",
+          "id": "vn-ad-law-metadata",
+          "locator": "official gazette metadata",
+          "market": "VN",
+          "platform": "all",
+          "published_at": "2025-06-16",
+          "quote": null,
+          "quote_kind": null,
+          "read_status": "metadata_only",
+          "rights": {
+            "commercial_use": null,
+            "missing_reason": "Public documentation read; provider data license not granted by documentation access.",
+            "redistribution": null,
+            "retention": null
+          },
+          "statement": "Official gazette metadata identifies amendment 75/2025/QH15 and its effective date. Full consolidated provisions and category-specific rules were not reviewed here.",
+          "statement_kind": "paraphrase",
+          "surface": "advertising",
+          "url": "https://congbao.chinhphu.vn/van-ban/luat-so-75-2025-qh15-45566.htm"
+        },
+        "source_id": "vn-ad-law-metadata",
+        "source_pointer": "/sources/5"
+      },
+      "text": "Policy source reference only; metadata_only; validity unverified. Advisory only. {\"advisory_only\":true,\"applicability\":{\"category\":null,\"effective_at\":\"2026-01-01\",\"market\":\"VN\",\"platform\":\"all\",\"surface\":\"advertising\",\"version\":\"2025-06-16\"},\"applicability_status\":\"requires_scope_review\",\"checked_at\":\"2026-10-31T05:38:27Z\",\"effective_at\":\"2026-01-01\",\"id\":\"policy-vn-ad-law-metadata\",\"missing_reason\":\"Source rule only; exact posting scope, effective-version assurance, actual media and account evidence not adjudicated.\",\"question_mapping\":[{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c5\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"listing_identity\"],\"required_media\":[\"frames\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t1\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"listing_attributes\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t6\",\"rating\":null,\"required_facts\":[\"selected_exact_variant\",\"listing_variant_attributes\"],\"required_media\":[\"frames\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"f2\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"same_source_market_category_grain_currency_cohort\",\"sample_denominators\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c6\",\"rating\":null,\"required_facts\":[\"selected_exact_variant\",\"fresh_verified_offer\",\"offer_conditions\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c7\",\"rating\":null,\"required_facts\":[\"fresh_verified_offer\",\"expiry\",\"purchase_destination\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"s4\",\"rating\":null,\"required_facts\":[\"user_caption_hashtags\",\"current_scoped_trend\"],\"required_media\":[\"frames\",\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr1\",\"rating\":null,\"required_facts\":[\"category_time_series\",\"seasonal_comparison\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr2\",\"rating\":null,\"required_facts\":[\"same_query_geo_scale_time_series\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr3\",\"rating\":null,\"required_facts\":[\"user_caption\",\"current_scoped_search_interest\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr4\",\"rating\":null,\"required_facts\":[\"user_hashtags\",\"current_hashtag_time_window\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr5\",\"rating\":null,\"required_facts\":[\"user_planned_post_at_timezone\",\"verified_event_calendar\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr6\",\"rating\":null,\"required_facts\":[\"windowed_observed_sales\",\"market\",\"identity\",\"counter_definition\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t7\",\"rating\":null,\"required_facts\":[\"applicable_policy_version\",\"market_platform_surface_category\",\"account_capabilities\"],\"required_media\":[\"frames\",\"transcript\",\"audio\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t3\",\"rating\":null,\"required_facts\":[\"claim_substantiation\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t8\",\"rating\":null,\"required_facts\":[\"claim_substantiation\",\"verified_variant_market_period\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c8\",\"rating\":null,\"required_facts\":[\"authorized_economics\",\"attribution_window\",\"refunds_fees_costs\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"h4\",\"rating\":null,\"required_facts\":[],\"required_media\":[\"opening_audio\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"r6\",\"rating\":null,\"required_facts\":[],\"required_media\":[\"audio\"]}],\"rating\":null,\"read_status\":\"metadata_only\",\"requested_surface\":\"product-linked-video\",\"required_media\":[\"timestamped_frames\",\"timestamped_transcript\",\"audio_review_when_relevant\"],\"source_id\":\"vn-ad-law-metadata\",\"statement\":\"Official gazette metadata identifies amendment 75/2025/QH15 and its effective date. Full consolidated provisions and category-specific rules were not reviewed here.\",\"surface_match\":false,\"validity_status\":\"unverified\",\"verdict\":null}"
+    },
+    {
+      "at_s": null,
+      "facts": {
+        "advisory_only": true,
+        "conversion_rate": null,
+        "orders": null,
+        "policy_scope_status": "reference_only",
+        "question_mapping": [
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c5",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "listing_identity"
+            ],
+            "required_media": [
+              "frames"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t1",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "listing_attributes"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t6",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_variant",
+              "listing_variant_attributes"
+            ],
+            "required_media": [
+              "frames"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "f2",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_entity",
+              "same_source_market_category_grain_currency_cohort",
+              "sample_denominators"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c6",
+            "rating": null,
+            "required_facts": [
+              "selected_exact_variant",
+              "fresh_verified_offer",
+              "offer_conditions"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c7",
+            "rating": null,
+            "required_facts": [
+              "fresh_verified_offer",
+              "expiry",
+              "purchase_destination"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "s4",
+            "rating": null,
+            "required_facts": [
+              "user_caption_hashtags",
+              "current_scoped_trend"
+            ],
+            "required_media": [
+              "frames",
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr1",
+            "rating": null,
+            "required_facts": [
+              "category_time_series",
+              "seasonal_comparison"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr2",
+            "rating": null,
+            "required_facts": [
+              "same_query_geo_scale_time_series"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr3",
+            "rating": null,
+            "required_facts": [
+              "user_caption",
+              "current_scoped_search_interest"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr4",
+            "rating": null,
+            "required_facts": [
+              "user_hashtags",
+              "current_hashtag_time_window"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr5",
+            "rating": null,
+            "required_facts": [
+              "user_planned_post_at_timezone",
+              "verified_event_calendar"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "tr6",
+            "rating": null,
+            "required_facts": [
+              "windowed_observed_sales",
+              "market",
+              "identity",
+              "counter_definition"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t7",
+            "rating": null,
+            "required_facts": [
+              "applicable_policy_version",
+              "market_platform_surface_category",
+              "account_capabilities"
+            ],
+            "required_media": [
+              "frames",
+              "transcript",
+              "audio"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t3",
+            "rating": null,
+            "required_facts": [
+              "claim_substantiation"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "t8",
+            "rating": null,
+            "required_facts": [
+              "claim_substantiation",
+              "verified_variant_market_period"
+            ],
+            "required_media": [
+              "transcript"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "c8",
+            "rating": null,
+            "required_facts": [
+              "authorized_economics",
+              "attribution_window",
+              "refunds_fees_costs"
+            ],
+            "required_media": []
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "h4",
+            "rating": null,
+            "required_facts": [],
+            "required_media": [
+              "opening_audio"
+            ]
+          },
+          {
+            "advisory_only": true,
+            "missing_reason": "Consumer must verify all facts and required media; presence of mapping never grants scoreability.",
+            "question_id": "r6",
+            "rating": null,
+            "required_facts": [],
+            "required_media": [
+              "audio"
+            ]
+          }
+        ],
+        "rank": null,
+        "rank_missing_reason": "Entity not in this small reference slice; no fuzzy merge or unrelated listing fallback.",
+        "rating": null,
+        "sales_velocity": null
+      },
+      "id": "market-policy-e8aacd764e36b3fe-unavailable",
+      "kind": "market_unavailable",
+      "provenance": {
+        "bundle_fingerprint": "e8aacd764e36b3fedf1894167e84ae892c4831fefe278b935a352b8e5e142d10",
+        "json_pointer": "/question_mapping",
+        "manifest_sha256": "32d9734348f725664c0aa63444cf708f22b6fb312733e2419b95be684a54936c",
+        "question_mapping_pointer": "/question_mapping",
+        "snapshot_sha256": "b2bb51b84d5d5e168dd38e49c41ff5b862aa9d0d40cf5e5b60e43d9a3ac8afd0"
+      },
+      "text": "Missing market facts are unknown, not zero. No sales, rank, trend or policy approval inferred. {\"advisory_only\":true,\"conversion_rate\":null,\"orders\":null,\"policy_scope_status\":\"reference_only\",\"question_mapping\":[{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c5\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"listing_identity\"],\"required_media\":[\"frames\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t1\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"listing_attributes\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t6\",\"rating\":null,\"required_facts\":[\"selected_exact_variant\",\"listing_variant_attributes\"],\"required_media\":[\"frames\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"f2\",\"rating\":null,\"required_facts\":[\"selected_exact_entity\",\"same_source_market_category_grain_currency_cohort\",\"sample_denominators\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c6\",\"rating\":null,\"required_facts\":[\"selected_exact_variant\",\"fresh_verified_offer\",\"offer_conditions\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c7\",\"rating\":null,\"required_facts\":[\"fresh_verified_offer\",\"expiry\",\"purchase_destination\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"s4\",\"rating\":null,\"required_facts\":[\"user_caption_hashtags\",\"current_scoped_trend\"],\"required_media\":[\"frames\",\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr1\",\"rating\":null,\"required_facts\":[\"category_time_series\",\"seasonal_comparison\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr2\",\"rating\":null,\"required_facts\":[\"same_query_geo_scale_time_series\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr3\",\"rating\":null,\"required_facts\":[\"user_caption\",\"current_scoped_search_interest\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr4\",\"rating\":null,\"required_facts\":[\"user_hashtags\",\"current_hashtag_time_window\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr5\",\"rating\":null,\"required_facts\":[\"user_planned_post_at_timezone\",\"verified_event_calendar\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"tr6\",\"rating\":null,\"required_facts\":[\"windowed_observed_sales\",\"market\",\"identity\",\"counter_definition\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t7\",\"rating\":null,\"required_facts\":[\"applicable_policy_version\",\"market_platform_surface_category\",\"account_capabilities\"],\"required_media\":[\"frames\",\"transcript\",\"audio\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t3\",\"rating\":null,\"required_facts\":[\"claim_substantiation\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"t8\",\"rating\":null,\"required_facts\":[\"claim_substantiation\",\"verified_variant_market_period\"],\"required_media\":[\"transcript\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"c8\",\"rating\":null,\"required_facts\":[\"authorized_economics\",\"attribution_window\",\"refunds_fees_costs\"],\"required_media\":[]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"h4\",\"rating\":null,\"required_facts\":[],\"required_media\":[\"opening_audio\"]},{\"advisory_only\":true,\"missing_reason\":\"Consumer must verify all facts and required media; presence of mapping never grants scoreability.\",\"question_id\":\"r6\",\"rating\":null,\"required_facts\":[],\"required_media\":[\"audio\"]}],\"rank\":null,\"rank_missing_reason\":\"Entity not in this small reference slice; no fuzzy merge or unrelated listing fallback.\",\"rating\":null,\"sales_velocity\":null}"
+    }
+  ],
+  "media_sha256": "3d15ee69cb18b7723c8cac86545c76fafef145e98e328ae2c9d82e9c3014c175",
+  "question_results": [
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.93,
+        "name": "h1",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.96,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.03,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.01,
+            "value": 2
+          }
+        ],
+        "score": 0.05,
+        "type": "score"
+      },
+      "dimension": "hook",
+      "evidence_ids": [
+        "frame-000",
+        "frame-001",
+        "frame-002",
+        "frame-003",
+        "frame-004",
+        "frame-005"
+      ],
+      "explanation_vi": "Trong 3 giây đầu mẫu khung hình chỉ thấy cảnh sân quần vợt và người chơi, chưa nhận ra sản phẩm Crest.",
+      "id": "h1",
+      "missing_inputs": [],
+      "question": "Sản phẩm có được nhận ra trong 3 giây đầu?",
+      "rating_100": 2.5,
+      "status": "rated"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.5,
+        "name": "h2",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.04,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.25,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.71,
+            "value": 2
+          }
+        ],
+        "score": 1.67,
+        "type": "score"
+      },
+      "dimension": "hook",
+      "evidence_ids": [
+        "frame-001",
+        "frame-002",
+        "frame-003",
+        "frame-005",
+        "frame-006"
+      ],
+      "explanation_vi": "Chủ thể chính ở mở đầu là người chơi quần vợt, có vai trò rõ trong việc dẫn vào câu chuyện so sánh/test.",
+      "id": "h2",
+      "missing_inputs": [],
+      "question": "Con người hoặc chủ thể chính ở mở đầu có vai trò rõ với câu chuyện?",
+      "rating_100": 83.5,
+      "status": "rated"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.67,
+        "name": "h3",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.8,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.18,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.02,
+            "value": 2
+          }
+        ],
+        "score": 0.22,
+        "type": "score"
+      },
+      "dimension": "hook",
+      "evidence_ids": [
+        "frame-000",
+        "frame-001",
+        "frame-002",
+        "frame-003",
+        "frame-004",
+        "frame-005"
+      ],
+      "explanation_vi": "Không thấy chữ mở đầu trong các khung hình đầu mẫu, nên chữ mở đầu không giúp hiểu chủ đề ở phần mở đầu này.",
+      "id": "h3",
+      "missing_inputs": [],
+      "question": "Chữ mở đầu có dễ đọc và giúp hiểu chủ đề?",
+      "rating_100": 11,
+      "status": "rated"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "hook",
+      "evidence_ids": [],
+      "explanation_vi": "Có ASR mở đầu nhưng câu hỏi này cần rà soát âm thanh mở đầu thực tế; ở đây không có đánh giá cảm nhận âm thanh.",
+      "id": "h4",
+      "missing_inputs": [
+        "audio",
+        "opening_audio",
+        "perceptual_audio_review"
+      ],
+      "question": "Lời nói hoặc âm thanh mở đầu có giúp hiểu nội dung?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "hook",
+      "evidence_ids": [
+        "transcript-000"
+      ],
+      "explanation_vi": "Câu mở đầu ASR là \"Get them!\", không nêu cụ thể vấn đề hay lợi ích sản phẩm.",
+      "id": "h5",
+      "missing_inputs": [
+        "audio"
+      ],
+      "question": "Câu mở đầu có nêu vấn đề hoặc lợi ích cụ thể?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.69,
+        "name": "r1",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.02,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.17,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.81,
+            "value": 2
+          }
+        ],
+        "score": 1.79,
+        "type": "score"
+      },
+      "dimension": "retention",
+      "evidence_ids": [
+        "metadata",
+        "transcript-002",
+        "transcript-010",
+        "frame-013",
+        "frame-018"
+      ],
+      "explanation_vi": "Video dài khoảng 40,5 giây, đủ để đi từ tình huống mở đầu sang demo, claim và nhắc thương hiệu trong phạm vi mẫu đã có.",
+      "id": "r1",
+      "missing_inputs": [],
+      "question": "Độ dài có hợp lượng thông tin và mục đích video?",
+      "rating_100": 89.5,
+      "status": "rated"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "retention",
+      "evidence_ids": [
+        "shot-candidates",
+        "frame-002",
+        "frame-009",
+        "frame-013"
+      ],
+      "explanation_vi": "Có vài mốc đổi cảnh ứng viên và khung hình mẫu, nhưng chưa đủ phủ liên tục để kết luận nhịp đổi cảnh phục vụ thông điệp ra sao.",
+      "id": "r2",
+      "missing_inputs": [
+        "continuous_semantic_coverage",
+        "continuous_shot_coverage"
+      ],
+      "question": "Nhịp đổi cảnh có phục vụ thông điệp thay vì chỉ cắt nhiều?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "retention",
+      "evidence_ids": [
+        "transcript-002",
+        "transcript-003",
+        "transcript-004"
+      ],
+      "explanation_vi": "Lợi ích chính chưa xuất hiện ngay từ đầu, nhưng đến khoảng giữa sớm của video đã nêu rõ bài test và kết quả ít sâu răng hơn với Crest.",
+      "id": "r3",
+      "missing_inputs": [
+        "opening_frames"
+      ],
+      "question": "Lợi ích chính có xuất hiện sớm để người xem hiểu lý do xem?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "retention",
+      "evidence_ids": [
+        "shot-candidates",
+        "transcript-000",
+        "transcript-010"
+      ],
+      "explanation_vi": "Không có phủ cảnh liên tục đủ để xác định các đoạn chậm có mục đích hay bị kéo dài.",
+      "id": "r4",
+      "missing_inputs": [
+        "continuous_semantic_coverage",
+        "continuous_shot_coverage"
+      ],
+      "question": "Các đoạn chậm có mục đích, không kéo dài thiếu thông tin?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.19,
+        "name": "r5",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.16,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.46,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.38,
+            "value": 2
+          }
+        ],
+        "score": 1.22,
+        "type": "score"
+      },
+      "dimension": "retention",
+      "evidence_ids": [
+        "frame-018",
+        "frame-019",
+        "transcript-010"
+      ],
+      "explanation_vi": "Đoạn kết có payoff ở mức nhắc lại thương hiệu và lợi ích \"Crest reduces cavities\" cùng hình tuýp sản phẩm lớn.",
+      "id": "r5",
+      "missing_inputs": [],
+      "question": "Đoạn kết có payoff hoặc lý do xem lại?",
+      "rating_100": 61,
+      "status": "rated"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.08,
+        "name": "s1",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.19,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.23,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.58,
+            "value": 2
+          }
+        ],
+        "score": 1.39,
+        "type": "score"
+      },
+      "dimension": "sharing",
+      "evidence_ids": [
+        "frame-002",
+        "frame-007",
+        "transcript-002"
+      ],
+      "explanation_vi": "Bối cảnh quần vợt liên quan câu chuyện vì người kể nói về việc chỉ thắng Bill một lần trong bài test kem đánh răng sau phần mở đầu thể thao.",
+      "id": "s1",
+      "missing_inputs": [],
+      "question": "Bối cảnh/sự kiện được nêu có liên quan câu chuyện?",
+      "rating_100": 69.5,
+      "status": "rated"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.41,
+        "name": "s2",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.06,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.61,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.33,
+            "value": 2
+          }
+        ],
+        "score": 1.27,
+        "type": "score"
+      },
+      "dimension": "sharing",
+      "evidence_ids": [
+        "context-audience",
+        "frame-009",
+        "frame-013"
+      ],
+      "explanation_vi": "Với audience khai báo là người trưởng thành đang kiểm thử quảng cáo lịch sử, tình huống quảng cáo cổ điển này nhìn chung dễ hiểu.",
+      "id": "s2",
+      "missing_inputs": [],
+      "question": "Tình huống có dễ hiểu và liên quan người xem đã chọn?",
+      "rating_100": 63.5,
+      "status": "rated"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "sharing",
+      "evidence_ids": [
+        "transcript-007",
+        "transcript-010"
+      ],
+      "explanation_vi": "Video có giá trị lưu/chia sẻ ở mức có lời nhắc chăm sóc răng miệng và thông điệp lợi ích rõ ràng, dù không phải hướng dẫn sâu.",
+      "id": "s3",
+      "missing_inputs": [
+        "frames"
+      ],
+      "question": "Có giá trị cụ thể để lưu hoặc gửi cho người khác?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "sharing",
+      "evidence_ids": [
+        "context-caption"
+      ],
+      "explanation_vi": "Có caption mô tả tư liệu lịch sử nhưng không có dữ liệu xu hướng hiện hành hoặc hashtag để đối chiếu.",
+      "id": "s4",
+      "missing_inputs": [
+        "market_snapshot",
+        "user_caption_hashtags"
+      ],
+      "question": "Caption/hashtag có khớp xu hướng có nguồn hiện hành?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "sharing",
+      "evidence_ids": [
+        "transcript-002",
+        "transcript-006",
+        "transcript-010"
+      ],
+      "explanation_vi": "Trong mẫu ASR không thấy nội dung công kích cá nhân; tuy vậy có các so sánh mạnh về sản phẩm.",
+      "id": "s5",
+      "missing_inputs": [
+        "frames"
+      ],
+      "question": "Nội dung có tránh gây hiểu nhầm hoặc công kích không cần thiết?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.99,
+        "name": "c1",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.01,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.99,
+            "value": 2
+          }
+        ],
+        "score": 1.99,
+        "type": "score"
+      },
+      "dimension": "commerce",
+      "evidence_ids": [
+        "frame-013",
+        "frame-014",
+        "frame-015",
+        "frame-018"
+      ],
+      "explanation_vi": "Sản phẩm được trình bày đủ rõ ở phần giữa-cuối với tên Crest và hình tuýp lớn.",
+      "id": "c1",
+      "missing_inputs": [],
+      "question": "Sản phẩm có được trình bày đủ rõ để nhận biết?",
+      "rating_100": 99.5,
+      "status": "rated"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.36,
+        "name": "c2",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.6,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.37,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.03,
+            "value": 2
+          }
+        ],
+        "score": 0.43,
+        "type": "score"
+      },
+      "dimension": "commerce",
+      "evidence_ids": [
+        "transcript-007",
+        "transcript-008",
+        "transcript-010",
+        "frame-018"
+      ],
+      "explanation_vi": "Có lời kêu gọi ở mức dùng Crest và ghi nhớ lợi ích, nhưng không nêu hành động mua/tìm hiểu cụ thể.",
+      "id": "c2",
+      "missing_inputs": [],
+      "question": "Lời kêu gọi mua/tìm hiểu có rõ hành động tiếp theo?",
+      "rating_100": 21.5,
+      "status": "rated"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "commerce",
+      "evidence_ids": [
+        "transcript-000",
+        "transcript-010",
+        "context-caption"
+      ],
+      "explanation_vi": "Không thấy giá hay ưu đãi nào được trình bày trong ASR mẫu; caption bối cảnh cũng nói đây không phải ưu đãi đang xác minh.",
+      "id": "c3",
+      "missing_inputs": [
+        "frames"
+      ],
+      "question": "Giá hoặc ưu đãi được trình bày có rõ điều kiện?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "commerce",
+      "evidence_ids": [
+        "context-platform"
+      ],
+      "explanation_vi": "Biết platform đích do người dùng khai báo là Shopee, nhưng không có dữ liệu về khả năng link/shop của account đích.",
+      "id": "c4",
+      "missing_inputs": [
+        "account_capabilities"
+      ],
+      "question": "CTA có dùng đúng khả năng link/shop của account đích?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "commerce",
+      "evidence_ids": [
+        "frame-013",
+        "frame-015",
+        "frame-018"
+      ],
+      "explanation_vi": "Quan sát được nhãn Crest và chữ fluoristan trên bao bì, nhưng không có snapshot listing SKU đã chọn để đối chiếu định danh.",
+      "id": "c5",
+      "missing_inputs": [
+        "sku_reference"
+      ],
+      "question": "Sản phẩm nhìn thấy có khớp thông tin định danh trong listing SKU đã chọn?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trust",
+      "evidence_ids": [
+        "transcript-003",
+        "transcript-004",
+        "transcript-006",
+        "frame-013"
+      ],
+      "explanation_vi": "Video nói về Crest, fluoristan và nhiều claim hiệu quả/khuyến nghị, nhưng không có listing nguồn đã chọn với thuộc tính cụ thể để đối chiếu.",
+      "id": "t1",
+      "missing_inputs": [
+        "sku_reference"
+      ],
+      "question": "Thông tin sản phẩm được nói có khớp các thuộc tính ghi trong listing nguồn đã chọn?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.43,
+        "name": "t2",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.22,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.62,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.16,
+            "value": 2
+          }
+        ],
+        "score": 0.94,
+        "type": "score"
+      },
+      "dimension": "trust",
+      "evidence_ids": [
+        "frame-009",
+        "frame-010",
+        "frame-011",
+        "transcript-002",
+        "transcript-004"
+      ],
+      "explanation_vi": "Demo và bố cục kết quả có hỗ trợ cách video đang kể về bài test và kết quả ít sâu răng hơn, dù bản thân demo không thay thế chứng cứ khoa học độc lập.",
+      "id": "t2",
+      "missing_inputs": [],
+      "question": "Demo trong video có thực sự hỗ trợ claim nó đang nói?",
+      "rating_100": 47,
+      "status": "rated"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trust",
+      "evidence_ids": [
+        "transcript-004",
+        "transcript-005",
+        "transcript-006",
+        "transcript-008"
+      ],
+      "explanation_vi": "Có nhiều claim số liệu và chứng nhận, nhưng không có hồ sơ chứng minh claim đi kèm.",
+      "id": "t3",
+      "missing_inputs": [
+        "claim_substantiation"
+      ],
+      "question": "Số liệu/claim hiệu quả có chứng cứ phù hợp sản phẩm và scope?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trust",
+      "evidence_ids": [
+        "transcript-004",
+        "transcript-005",
+        "transcript-006",
+        "transcript-010"
+      ],
+      "explanation_vi": "Cách diễn đạt khá chắc chắn và trực tiếp về hiệu quả, khuyến nghị và ghi nhớ lợi ích; điều này làm tăng nhu cầu phải có chứng cứ hỗ trợ.",
+      "id": "t4",
+      "missing_inputs": [
+        "frames"
+      ],
+      "question": "Cách diễn đạt có tránh khẳng định vượt quá bằng chứng?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trust",
+      "evidence_ids": [
+        "frame-013",
+        "frame-015",
+        "frame-018"
+      ],
+      "explanation_vi": "Có hình sản phẩm trong video nhưng không có bộ ảnh SKU đã xác minh để so khớp.",
+      "id": "t5",
+      "missing_inputs": [
+        "verified_sku_images"
+      ],
+      "question": "Hình sản phẩm có khớp ảnh tham chiếu được xác minh?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "fit",
+      "evidence_ids": [
+        "context-audience"
+      ],
+      "explanation_vi": "Có audience khai báo là người trưởng thành, nhưng không có listing nguồn để xác nhận nhu cầu mục tiêu có khớp mục đích/sản phẩm cụ thể hay không.",
+      "id": "f1",
+      "missing_inputs": [
+        "sku_reference"
+      ],
+      "question": "Nhu cầu audience đã chọn có phù hợp sản phẩm?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "fit",
+      "evidence_ids": [
+        "transcript-004",
+        "transcript-006"
+      ],
+      "explanation_vi": "Video không nêu định vị giá; các phát ngôn hiện có là về hiệu quả và khuyến nghị, nên chưa đủ điều kiện trả lời câu hỏi định vị giá.",
+      "id": "f2",
+      "missing_inputs": [
+        "catalog_price_context",
+        "price_positioning_statement",
+        "sku_reference"
+      ],
+      "question": "Nếu video định vị giá, thông điệp đó có nhất quán với mẫu listing cùng nguồn, thị trường và nhóm hàng?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.34,
+        "name": "f3",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.28,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.56,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.16,
+            "value": 2
+          }
+        ],
+        "score": 0.88,
+        "type": "score"
+      },
+      "dimension": "fit",
+      "evidence_ids": [
+        "context-audience",
+        "frame-009",
+        "frame-010",
+        "frame-018"
+      ],
+      "explanation_vi": "Tình huống sử dụng kem đánh răng và chăm sóc răng miệng nhìn chung phù hợp với audience người trưởng thành được khai báo.",
+      "id": "f3",
+      "missing_inputs": [],
+      "question": "Tình huống sử dụng có phù hợp nhu cầu audience đã chọn?",
+      "rating_100": 44,
+      "status": "rated"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.19,
+        "name": "f4",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.28,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.46,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.26,
+            "value": 2
+          }
+        ],
+        "score": 0.98,
+        "type": "score"
+      },
+      "dimension": "fit",
+      "evidence_ids": [
+        "context-audience",
+        "transcript-002",
+        "transcript-010"
+      ],
+      "explanation_vi": "Ngôn ngữ trong ASR là kiểu quảng cáo trực tiếp, dễ hiểu với người trưởng thành trong ngữ cảnh xem tư liệu lịch sử.",
+      "id": "f4",
+      "missing_inputs": [],
+      "question": "Ngôn ngữ/cách diễn đạt có phù hợp audience đã chọn?",
+      "rating_100": 49,
+      "status": "rated"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.34,
+        "name": "f5",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.31,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.56,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.13,
+            "value": 2
+          }
+        ],
+        "score": 0.82,
+        "type": "score"
+      },
+      "dimension": "fit",
+      "evidence_ids": [
+        "frame-013",
+        "frame-015",
+        "transcript-007"
+      ],
+      "explanation_vi": "Video có nhắc cách dùng ở mức chải răng sau khi ăn với Crest, nhưng không giúp chọn size hay biến thể cụ thể.",
+      "id": "f5",
+      "missing_inputs": [],
+      "question": "Video có giúp chọn đúng size/biến thể/cách dùng phù hợp?",
+      "rating_100": 41,
+      "status": "rated"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "commerce",
+      "evidence_ids": [],
+      "explanation_vi": "Không có offer hiện tại đã xác minh để so giá được nói với giá đang bán.",
+      "id": "c6",
+      "missing_inputs": [
+        "transcript",
+        "verified_offer"
+      ],
+      "question": "Giá được nói có khớp offer hiện tại của SKU?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trust",
+      "evidence_ids": [
+        "frame-013",
+        "frame-015",
+        "frame-018"
+      ],
+      "explanation_vi": "Có thể đọc thấy Crest và fluoristan trên bao bì video, nhưng không có tham chiếu biến thể ở cấp variant_name để đối chiếu.",
+      "id": "t6",
+      "missing_inputs": [
+        "sku_variant_reference"
+      ],
+      "question": "Biến thể nhìn thấy có khớp thuộc tính biến thể được ghi trong listing nguồn?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trend",
+      "evidence_ids": [
+        "market-policy-e8aacd764e36b3fe-unavailable"
+      ],
+      "explanation_vi": "Không có dữ liệu mùa vụ hiện tại phù hợp ngành/SKU.",
+      "id": "tr1",
+      "missing_inputs": [
+        "market_snapshot"
+      ],
+      "question": "Có bằng chứng thời vụ hiện tại phù hợp ngành/SKU?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trend",
+      "evidence_ids": [
+        "market-policy-e8aacd764e36b3fe-unavailable"
+      ],
+      "explanation_vi": "Không có dữ liệu nhu cầu tìm kiếm theo mốc so sánh hợp lệ.",
+      "id": "tr2",
+      "missing_inputs": [
+        "market_snapshot"
+      ],
+      "question": "Nhu cầu tìm kiếm có tăng theo mốc so sánh hợp lệ?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trend",
+      "evidence_ids": [
+        "context-caption",
+        "market-policy-e8aacd764e36b3fe-unavailable"
+      ],
+      "explanation_vi": "Có caption mô tả tư liệu lịch sử nhưng không có dữ liệu nhu cầu tìm kiếm hiện hành để đối chiếu từ khóa.",
+      "id": "tr3",
+      "missing_inputs": [
+        "market_snapshot"
+      ],
+      "question": "Từ khóa trong video/caption có khớp nhu cầu có nguồn?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trend",
+      "evidence_ids": [
+        "market-policy-e8aacd764e36b3fe-unavailable"
+      ],
+      "explanation_vi": "Không có hashtag và không có nguồn trend theo cửa sổ thời gian phù hợp.",
+      "id": "tr4",
+      "missing_inputs": [
+        "caption",
+        "market_snapshot"
+      ],
+      "question": "Hashtag ngành có nguồn trend và cửa sổ thời gian phù hợp?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trend",
+      "evidence_ids": [],
+      "explanation_vi": "Không có thời điểm dự kiến đăng và lịch sự kiện đã xác minh.",
+      "id": "tr5",
+      "missing_inputs": [
+        "event_calendar"
+      ],
+      "question": "Thời điểm dự kiến đăng có phù hợp sự kiện được xác minh?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "retention",
+      "evidence_ids": [],
+      "explanation_vi": "Câu hỏi này cần nghe và so sánh độ rõ lời nói với nhạc/ồn; dữ liệu hiện có không gồm review cảm nhận âm thanh.",
+      "id": "r6",
+      "missing_inputs": [
+        "audio",
+        "perceptual_audio_review"
+      ],
+      "question": "Lời nói có đủ rõ so với nhạc/ồn và có thể theo dõi?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "commerce",
+      "evidence_ids": [],
+      "explanation_vi": "Không có offer hiện tại đã xác minh nên không thể kiểm tra hạn dùng, điều kiện và đích mua.",
+      "id": "c7",
+      "missing_inputs": [
+        "verified_offer"
+      ],
+      "question": "Offer có rõ hạn dùng, điều kiện và đích mua?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "commerce",
+      "evidence_ids": [],
+      "explanation_vi": "Không có đầu vào economics cho vai trò shop/affiliate.",
+      "id": "c8",
+      "missing_inputs": [
+        "economics_inputs"
+      ],
+      "question": "Đã có đầu vào economics phù hợp vai trò shop/affiliate?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trust",
+      "evidence_ids": [
+        "market-policy-e8aacd764e36b3fe-policy-shopee-quality",
+        "market-policy-e8aacd764e36b3fe-policy-shopee-enforcement",
+        "market-policy-e8aacd764e36b3fe-policy-vn-ad-law-metadata"
+      ],
+      "explanation_vi": "Chỉ có tài liệu tham chiếu chính sách dạng advisory và chưa đủ thông tin về scope đăng, phiên bản áp dụng và khả năng account để kết luận đã đối chiếu đúng policy hiện hành.",
+      "id": "t7",
+      "missing_inputs": [
+        "account_capabilities",
+        "market_platform_surface_category",
+        "policy_snapshot"
+      ],
+      "question": "Đã đối chiếu policy hiện hành đúng platform/market/phạm vi đăng?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trust",
+      "evidence_ids": [
+        "transcript-004",
+        "transcript-005",
+        "transcript-006",
+        "frame-013"
+      ],
+      "explanation_vi": "Có claim trong video nhưng chưa có nguồn chứng minh gắn đúng thời kỳ, biến thể và thị trường được xác minh.",
+      "id": "t8",
+      "missing_inputs": [
+        "claim_substantiation",
+        "verified_sku"
+      ],
+      "question": "Nguồn hỗ trợ claim có đúng thời kỳ/variant/thị trường?",
+      "rating_100": null,
+      "status": "unknown"
+    },
+    {
+      "answerable": true,
+      "decision": {
+        "confidence": 0.16,
+        "name": "f6",
+        "probabilities": [
+          {
+            "label": "Không đạt",
+            "probability": 0.39,
+            "value": 0
+          },
+          {
+            "label": "Một phần",
+            "probability": 0.44,
+            "value": 1
+          },
+          {
+            "label": "Rõ ràng",
+            "probability": 0.17,
+            "value": 2
+          }
+        ],
+        "score": 0.78,
+        "type": "score"
+      },
+      "dimension": "fit",
+      "evidence_ids": [
+        "context-audience",
+        "frame-011",
+        "frame-013",
+        "transcript-004"
+      ],
+      "explanation_vi": "Có chữ trên màn hình ở phần giữa-cuối và ASR tiếng Anh, phần nào hỗ trợ audience tiếp cận nội dung; tuy nhiên không thấy phụ đề chuẩn xuyên suốt.",
+      "id": "f6",
+      "missing_inputs": [],
+      "question": "Phụ đề/ngôn ngữ hình ảnh có giúp audience tiếp cận nội dung?",
+      "rating_100": 39,
+      "status": "rated"
+    },
+    {
+      "answerable": false,
+      "decision": null,
+      "dimension": "trend",
+      "evidence_ids": [
+        "market-policy-e8aacd764e36b3fe-unavailable"
+      ],
+      "explanation_vi": "Không có dữ liệu số bán quan sát đúng thời gian/thị trường để hỗ trợ nhận định hot SKU.",
+      "id": "tr6",
+      "missing_inputs": [
+        "observed_sales"
+      ],
+      "question": "Nhận định hot SKU có dựa số bán quan sát đúng thời gian/market?",
+      "rating_100": null,
+      "status": "unknown"
+    }
+  ],
+  "ratings": {
+    "decisions_status": "received",
+    "dimensions": [
+      {
+        "coverage": 0.6,
+        "id": "hook",
+        "rated": 3,
+        "score": 32.3,
+        "title": "Mở đầu",
+        "total": 5,
+        "weight": 0.15
+      },
+      {
+        "coverage": 0.3333333333333333,
+        "id": "retention",
+        "rated": 2,
+        "score": 75.2,
+        "title": "Giữ chân",
+        "total": 6,
+        "weight": 0.15
+      },
+      {
+        "coverage": 0.4,
+        "id": "sharing",
+        "rated": 2,
+        "score": 66.5,
+        "title": "Chia sẻ",
+        "total": 5,
+        "weight": 0.1
+      },
+      {
+        "coverage": 0.25,
+        "id": "commerce",
+        "rated": 2,
+        "score": 60.5,
+        "title": "Chốt đơn",
+        "total": 8,
+        "weight": 0.2
+      },
+      {
+        "coverage": 0.125,
+        "id": "trust",
+        "rated": 1,
+        "score": 47,
+        "title": "Tin cậy",
+        "total": 8,
+        "weight": 0.15
+      },
+      {
+        "coverage": 0.6666666666666666,
+        "id": "fit",
+        "rated": 4,
+        "score": 43.2,
+        "title": "Hợp người xem",
+        "total": 6,
+        "weight": 0.1
+      },
+      {
+        "coverage": 0,
+        "id": "trend",
+        "rated": 0,
+        "score": null,
+        "title": "Xu hướng",
+        "total": 6,
+        "weight": 0.15
+      }
+    ],
+    "interpretation": "Rubric quality assessment, not views/sales/viral probability.",
+    "model": "gpt-6-luna",
+    "overall": null,
+    "overall_rule": "Only if weighted coverage>=70% and every dimension>=50%; provisional display rule.",
+    "progress": {
+      "completed_batches": 6,
+      "completed_questions": 14,
+      "total_batches": 6,
+      "total_questions": 14
+    },
+    "provisional": false,
+    "rubric_version": "commerce-44/v2-snapshot-reference",
+    "weighted_coverage": 0.3154166666666667
+  },
+  "run_id": "0b150d9d-d352-465f-aa61-c9838acb5084",
+  "warnings": [
+    "Sampled frames do not cover every moment or prove absence.",
+    "Shot candidates are not semantic scenes or retention.",
+    "ASR and integrated loudness do not establish perceptual mix quality.",
+    "Historical listing references only; not verified video identity, current offers or marketplace listings.",
+    "Rank, orders, conversion and sales velocity are unavailable; public sold counters are not windowed sales.",
+    "Policy references require scope/version/media/account review; no policy verdict or gate eligibility is granted.",
+    "Commercial retention/redistribution rights remain unresolved; source text is untrusted data, not instructions.",
+    "Entity not in this small reference slice; no fuzzy merge or unrelated listing fallback.",
+    "policy-shopee-quality: effective date unknown; checked_at is not effective_at.",
+    "policy-shopee-enforcement: effective date unknown; checked_at is not effective_at.",
+    "policy-shopee-enforcement: surface mismatch requires scope review.",
+    "policy-vn-ad-law-metadata: metadata_only; full policy body not reviewed.",
+    "policy-vn-ad-law-metadata: surface mismatch requires scope review."
+  ]
+}

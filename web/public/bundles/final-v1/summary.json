@@ -1,0 +1,68 @@
+{
+  "rows": 622,
+  "source_parent_count": 108,
+  "sources": [
+    {
+      "source": "allbirds",
+      "rows": 361,
+      "parents": 30,
+      "grains": [
+        "variant"
+      ],
+      "known_currency": 59
+    },
+    {
+      "source": "cocoon",
+      "rows": 10,
+      "parents": 10,
+      "grains": [
+        "parent"
+      ],
+      "known_currency": 10
+    },
+    {
+      "source": "coolmate",
+      "rows": 81,
+      "parents": 33,
+      "grains": [
+        "offer"
+      ],
+      "known_currency": 81
+    },
+    {
+      "source": "juno",
+      "rows": 15,
+      "parents": 15,
+      "grains": [
+        "offer"
+      ],
+      "known_currency": 15
+    },
+    {
+      "source": "yody",
+      "rows": 155,
+      "parents": 20,
+      "grains": [
+        "parent",
+        "variant"
+      ],
+      "known_currency": 154
+    }
+  ],
+  "available_charts": [
+    "price-distribution",
+    "discount-spread",
+    "listing-availability",
+    "variant-depth",
+    "field-coverage",
+    "category-coverage",
+    "freshness"
+  ],
+  "unavailable_charts": [
+    "rating-review-scatter",
+    "listing-demand-proxy",
+    "trend-time-series",
+    "conversion-funnel",
+    "profit-commission"
+  ]
+}

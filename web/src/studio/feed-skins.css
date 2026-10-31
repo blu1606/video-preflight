@@ -1,0 +1,58 @@
+/* Preview skins beyond the mockup-v2 set: TikTok Shop / TikTok Ads feed, shared feed helpers, the platform picker.
+   Shopee, Facebook and Instagram skins use the mockup-v2 rules in mockup-v2.css. Scoped under .pf-root. */
+
+.pf-root .feed-tap { display: block; margin: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; text-shadow: inherit; }
+.pf-root .fg { display: inline-flex; }
+.pf-root .pf-scrim, .pf-root .pf-sheet { pointer-events: auto; }
+.pf-root .fb-meta.has-shop { bottom: 166px; }
+.pf-root .ps-foot { display: flex; justify-content: center; gap: var(--s4, 16px); padding-top: 4px; }
+.pf-root .pf-sheet .ps-foot .link-btn.tiny { color: #212121; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; text-shadow: none; }
+.pf-root .ps-btn-tt { background: #fe2c55; }
+.pf-root .tt-sheet-price { color: #fe2c55; font-size: 18px; font-weight: 700; }
+
+/* ---- TikTok Shop / TikTok Ads (For You feed) ---- */
+.pf-root .pf-tiktok { font-size: 15px; }
+.pf-root .tt-top { position: absolute; top: 59px; left: 0; right: 0; height: 48px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; }
+.pf-root .tt-live { font-size: 14px; font-weight: 700; color: rgba(255, 255, 255, .85); }
+.pf-root .tt-tabs { display: flex; gap: 16px; font-size: 16px; font-weight: 600; color: rgba(255, 255, 255, .7); }
+.pf-root .tt-tabs .is-on { color: #ffffff; position: relative; }
+.pf-root .tt-tabs .is-on::after { content: ""; position: absolute; left: 50%; bottom: -8px; width: 22px; height: 3px; border-radius: 2px; background: #ffffff; transform: translateX(-50%); }
+.pf-root .tt-top-r svg { width: 24px; height: 24px; }
+.pf-root .tt-rail { bottom: 150px; gap: 16px; right: 8px; }
+.pf-root .pf-tiktok .pf-rail-ic svg { width: 34px; height: 34px; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .35)); }
+.pf-root .pf-tiktok .pf-rail-lab { font-size: 12px; }
+.pf-root .tt-avatar { position: relative; width: 48px; height: 48px; margin-bottom: 10px; border-radius: 50%; border: 2px solid #ffffff; background: #2a2a2a; display: grid; place-items: center; font: 700 18px var(--font-display); }
+.pf-root .tt-avatar i { position: absolute; bottom: -9px; left: 50%; transform: translateX(-50%); width: 18px; height: 18px; border-radius: 50%; background: #fe2c55; display: grid; place-items: center; }
+.pf-root .tt-avatar i svg { width: 12px; height: 12px; stroke-width: 3; }
+.pf-root .tt-disc { width: 44px; height: 44px; margin-top: 4px; border-radius: 50%; border: 10px solid #151515; background: #2a2a2a; display: grid; place-items: center; animation: ttSpin 6s linear infinite; }
+.pf-root .tt-disc svg { width: 14px; height: 14px; }
+.pf-root .tt-anchor { position: absolute; left: 12px; bottom: 192px; max-width: 300px; height: 36px; display: flex; align-items: center; gap: 8px; padding: 0 12px 0 8px; border: 0; border-radius: 18px; background: linear-gradient(90deg, #ffc42e, #ffb300); color: #1f1f1f; font-size: 14px; font-weight: 600; text-shadow: none; box-shadow: 0 2px 8px rgba(0, 0, 0, .3); }
+.pf-root .tt-anchor svg { width: 20px; height: 20px; color: #1f1f1f; }
+.pf-root .tt-anchor .od-truncate { max-width: 220px; }
+.pf-root .tt-cap { position: absolute; left: 12px; right: 80px; bottom: 96px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
+.pf-root .tt-user { font-size: 16px; font-weight: 700; }
+.pf-root .tt-text b { font-weight: 700; }
+.pf-root .tt-sponsor { align-self: flex-start; padding: 2px 8px; border-radius: 4px; background: rgba(255, 255, 255, .2); font-size: 12px; font-weight: 600; }
+.pf-root .tt-sound { display: flex; align-items: center; gap: 6px; font-size: 14px; }
+.pf-root .tt-sound svg { width: 16px; height: 16px; }
+.pf-root .tt-cta { position: absolute; left: 12px; right: 12px; bottom: 96px; display: flex; align-items: center; gap: 10px; padding: 8px 8px 8px 12px; border-radius: 8px; background: rgba(22, 24, 35, .9); }
+.pf-root .tt-cta-txt { flex: 1; min-width: 0; display: flex; flex-direction: column; font-size: 13px; }
+.pf-root .tt-cta-txt b { font-size: 15px; }
+.pf-root .tt-cta-btn { height: 36px; padding: 0 16px; border: 0; border-radius: 6px; background: #fe2c55; color: #ffffff; font-size: 15px; font-weight: 700; text-shadow: none; }
+.pf-root .pf-tiktok-ads .tt-rail { bottom: 170px; }
+.pf-root .pf-tiktok-ads .tt-cap { bottom: 150px; }
+.pf-root .tt-nav { position: absolute; left: 0; right: 0; bottom: 0; height: 84px; background: #000000; display: flex; justify-content: space-around; align-items: flex-start; padding: 8px 0 26px; font-size: 11px; color: rgba(255, 255, 255, .7); text-shadow: none; }
+.pf-root .tt-nav span { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.pf-root .tt-nav em { font-style: normal; }
+.pf-root .tt-nav .is-on { color: #ffffff; font-weight: 600; }
+.pf-root .tt-nav svg { width: 24px; height: 24px; }
+.pf-root .tt-nav .tt-plus-cell { justify-content: center; height: 30px; }
+.pf-root .tt-plus { position: relative; display: block; width: 46px; height: 30px; }
+.pf-root .tt-plus::before, .pf-root .tt-plus::after { content: ""; position: absolute; inset: 0; border-radius: 8px; }
+.pf-root .tt-plus::before { background: #25f4ee; transform: translateX(-3px); }
+.pf-root .tt-plus::after { background: #fe2c55; transform: translateX(3px); }
+.pf-root .tt-plus b { position: absolute; inset: 0; z-index: 1; display: grid; place-items: center; border-radius: 8px; background: #ffffff; color: #000000; font: 500 24px/1 var(--font-body); }
+
+@keyframes ttSpin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .pf-root .tt-disc { animation: none; } }
+
