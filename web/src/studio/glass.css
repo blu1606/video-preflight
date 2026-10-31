@@ -370,3 +370,8 @@
   .pf-root .studio-platforms .heat-wrap { overflow-x: auto; }
   .pf-root .studio-heat th .studio-heat-pf { word-break: keep-all; overflow-wrap: normal; white-space: nowrap; }
 }
+
+/* every segmented switch matches the app bar's: no border or divider, a 3 px inset track, the pill inside it */
+.pf-root .seg-switch { border: 0; gap: 2px; overflow: visible; }
+.pf-root .seg-switch button { height: 30px; padding: 0 12px; border: 0; border-radius: 9px; background: none; color: var(--muted, #6b7079); font-weight: 600; }
+.pf-root .seg-switch button + button { border-left: 0; }

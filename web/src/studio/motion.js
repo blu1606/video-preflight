@@ -12,8 +12,12 @@ function measure(group) {
     delete group.dataset.ind
     return
   }
-  group.style.setProperty('--ind-x', `${on.offsetLeft}px`)
-  group.style.setProperty('--ind-w', `${on.offsetWidth}px`)
+  // from the rendered boxes, not offsetLeft: offsetLeft follows the nearest positioned ancestor, which is not the
+  // group until [data-ind] makes it relative, so the first measure landed far off
+  const g = group.getBoundingClientRect()
+  const r = on.getBoundingClientRect()
+  group.style.setProperty('--ind-x', `${r.left - g.left - group.clientLeft}px`)
+  group.style.setProperty('--ind-w', `${r.width}px`)
   group.dataset.ind = ''
 }
 
