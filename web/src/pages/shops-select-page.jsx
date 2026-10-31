@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, TrendingDown, TrendingUp } from 'lucide-react'
+import { ArrowRight, TrendingDown, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 import { useFetch } from '../hooks/use-fetch'
@@ -6,7 +6,7 @@ import { compactVnd, db, num } from '../lib/api'
 import { categoryLabel, gmvTrend, rowsByShop } from '../lib/shop-trend'
 import { OperatePage, Skeleton, StateBlock } from './operate-shell'
 
-const PREVIEW_SKUS = 3
+const PREVIEW_SKUS = 4
 
 const trendText = (change) => `${change > 0 ? '+' : ''}${(change * 100).toFixed(1).replace('.', ',')}%`
 
@@ -16,16 +16,40 @@ const shopAgeLabel = (days) => {
   return months >= 12 ? `${Math.floor(months / 12)} năm ${months % 12} tháng` : `${months} tháng`
 }
 
+/** Daily GMV of the last 30 days as a sparkline; the last 7 days are drawn solid, the change sits beside it. */
+function Sparkline({ rows, direction }) {
+  const days = [...rows].sort((x, y) => (x.date < y.date ? -1 : 1)).slice(-30)
+  const values = days.map((r) => Number(r.gmv_vnd ?? 0))
+  if (values.length < 2) return null
+  const W = 96
+  const H = 28
+  const min = Math.min(...values)
+  const span = Math.max(...values) - min || 1
+  const pts = values.map((v, i) => [(i / (values.length - 1)) * W, H - 3 - ((v - min) / span) * (H - 6)])
+  const line = (from) => pts.slice(from).map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`).join('')
+  const split = Math.max(0, pts.length - 7)
+  const [lx, ly] = pts[pts.length - 1]
+  return (
+    <svg className={`op-spark op-spark--${direction}`} viewBox={`0 0 ${W} ${H}`} width={W} height={H} aria-hidden="true">
+      <path d={`${line(0)}L${W},${H}L0,${H}Z`} className="op-spark-area" />
+      <path d={line(0)} className="op-spark-past" />
+      <path d={line(split)} className="op-spark-now" />
+      <circle cx={lx} cy={ly} r="2.6" className="op-spark-dot" />
+    </svg>
+  )
+}
+
 function Trend({ rows }) {
   const trend = gmvTrend(rows)
   if (!trend) {
-    return <p className="op-trend op-trend--none">Chưa đủ số liệu so sánh</p>
+    return <p className="op-trend op-trend--none" title="Chưa đủ 14 ngày số liệu">–</p>
   }
   const Icon = trend.direction === 'down' ? TrendingDown : TrendingUp
   return (
-    <p className={`op-trend op-trend--${trend.direction}`} title="So với 7 ngày trước">
-      <Icon size={16} aria-hidden="true" />
-      GMV 7 ngày {trendText(trend.change)}
+    <p className={`op-trend op-trend--${trend.direction}`} title="GMV 7 ngày so với 7 ngày trước">
+      <Sparkline rows={rows} direction={trend.direction} />
+      <Icon size={14} aria-hidden="true" />
+      {trendText(trend.change)}
     </p>
   )
 }
@@ -58,31 +82,22 @@ function ShopCard({ shop, skus, rows }) {
         </div>
       </dl>
 
-      <Trend rows={rows} />
-
-      <div className="op-sku-preview">
-        <p className="op-sku-preview-title">SKU đang bán · {mine.length}</p>
-        {shown.map((sku) => (
-          <div key={sku.sku_id} className="op-mini">
+      <div className="op-card-foot">
+        <div className="op-sku-stack" title={mine.map((sku) => sku.item_name).join('\n')}>
+          {shown.map((sku) => (
             <img
+              key={sku.sku_id}
               className="op-mini-thumb"
               src={`/skus/${sku.sku_id}.jpg`}
               alt=""
               loading="lazy"
               onError={(e) => { e.currentTarget.style.visibility = 'hidden' }}
             />
-            <span className="op-mini-name">{sku.item_name}</span>
-          </div>
-        ))}
-        {mine.length > PREVIEW_SKUS && (
-          <p className="op-sku-preview-title">và {mine.length - PREVIEW_SKUS} SKU khác</p>
-        )}
-      </div>
-
-      <div className="op-card-foot">
-        <span className="op-card-foot-action">
-          Chọn shop <ArrowRight size={16} aria-hidden="true" />
-        </span>
+          ))}
+          <span className="op-sku-count">{mine.length} SKU</span>
+        </div>
+        <Trend rows={rows} />
+        <ArrowRight className="op-card-go" size={18} aria-hidden="true" />
       </div>
     </Link>
   )
@@ -103,11 +118,7 @@ export default function ShopsSelectPage() {
   const dailyByShop = rowsByShop(daily.data)
 
   return (
-    <OperatePage step={1}>
-      <a href="/login" className="op-back">
-        <ArrowLeft size={16} aria-hidden="true" />
-        Đăng nhập lại
-      </a>
+    <OperatePage step={1} back={{ href: '/login', label: 'Đăng nhập lại' }}>
 
       <div className="op-page-head op-page-head--art">
         <h1 className="op-title">Chọn shop</h1>

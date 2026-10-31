@@ -1,4 +1,4 @@
-import { ChevronRight } from 'lucide-react'
+import { ArrowLeft, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 import { GlobalTooltip } from '../studio/tooltip.jsx'
@@ -17,12 +17,34 @@ export function BrandMark() {
   )
 }
 
-/** Header with the flow position. `step` is the index into FLOW_STEPS of the current screen. */
-export function OperateHeader({ step }) {
+const SIM_NOTE = 'Dữ liệu demo: tài khoản, shop, SKU và video đều mô phỏng.'
+
+/** Way back one step: a router link, or a plain href for pages outside the router flow. */
+function BackLink({ back }) {
+  const body = (
+    <>
+      <ArrowLeft size={16} aria-hidden="true" />
+      <span className="op-back-label">{back.label}</span>
+    </>
+  )
+  return back.href ? (
+    <a href={back.href} className="op-back" aria-label={back.label}>{body}</a>
+  ) : (
+    <Link to={back.to} className="op-back" aria-label={back.label}>{body}</Link>
+  )
+}
+
+/**
+ * One header row for every Operate screen: brand, the way back, the flow position and the simulation tag. The tag
+ * carries the full note as its tooltip, so the simulated-data warning stays visible without a band of its own.
+ * `step` is the index into FLOW_STEPS of the current screen.
+ */
+export function OperateHeader({ step, back, sim = SIM_NOTE }) {
   return (
     <header className="op-head">
       <div className="op-head-inner">
         <BrandMark />
+        {back && <BackLink back={back} />}
         <nav aria-label="Các bước" className="op-steps">
           {FLOW_STEPS.map((label, i) => (
             <span
@@ -36,28 +58,19 @@ export function OperateHeader({ step }) {
             </span>
           ))}
         </nav>
+        <span className="op-tag" role="note" tabIndex={0} title={sim}>
+          Mô phỏng
+        </span>
       </div>
     </header>
   )
 }
 
-/** Shown on every Operate screen: the whole flow runs on synthetic data and a simulated login. */
-export function SimulationBar({ children }) {
+/** `fit` pages lay out to the viewport height (no page scroll) instead of growing with their content. */
+export function OperatePage({ step, back, sim, fit = false, children }) {
   return (
-    <div className="op-sim" role="note">
-      <div className="op-sim-inner">
-        <span className="op-tag">Mô phỏng</span>
-        <span>{children ?? 'Dữ liệu demo: tài khoản, shop, SKU và video đều mô phỏng.'}</span>
-      </div>
-    </div>
-  )
-}
-
-export function OperatePage({ step, children }) {
-  return (
-    <div className="op">
-      <OperateHeader step={step} />
-      <SimulationBar />
+    <div className={`op${fit ? ' op--fit' : ''}`}>
+      <OperateHeader step={step} back={back} sim={sim} />
       <main className="op-main">{children}</main>
       <GlobalTooltip />
     </div>

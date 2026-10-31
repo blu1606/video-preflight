@@ -20,6 +20,12 @@ const PROVENANCE = [
   { status: 'MISSING', tone: 'ghost', text: 'Chưa chấm, không phải 0' },
 ]
 
+const STATS = [
+  { value: '36', label: 'câu hỏi chấm' },
+  { value: '3', label: 'nhóm điểm' },
+  { value: '4', label: 'nền tảng đăng' },
+]
+
 const POLICY_STATES = ['Cần xem lại', 'Không phát hiện vi phạm', 'Chưa đủ dữ liệu']
 
 function LoginButton() {
@@ -63,8 +69,9 @@ function useLandingMotion(rootRef) {
       io.observe(el)
     })
 
-    const hero = root.querySelector('.landing-hero')
+    const showcase = root.querySelector('.landing-showcase')
     const stage = root.querySelector('.landing-stage')
+    const top = root.querySelector('.landing-hero')
     const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches
     const move = (e) => {
       const r = stage.getBoundingClientRect()
@@ -79,16 +86,24 @@ function useLandingMotion(rootRef) {
       stage.style.setProperty('--ry', '0deg')
       stage.style.setProperty('--rx', '0deg')
     }
-    if (fine && hero && stage) {
-      hero.addEventListener('pointermove', move)
-      hero.addEventListener('pointerleave', reset)
+    // hero: the phone and its cards drift a few px against each other (depth by pointer)
+    const drift = (e) => {
+      const r = top.getBoundingClientRect()
+      top.style.setProperty('--px', ((e.clientX - r.left) / r.width - 0.5).toFixed(3))
+      top.style.setProperty('--py', ((e.clientY - r.top) / r.height - 0.5).toFixed(3))
     }
+    if (fine && showcase && stage) {
+      showcase.addEventListener('pointermove', move)
+      showcase.addEventListener('pointerleave', reset)
+    }
+    if (fine && top) top.addEventListener('pointermove', drift)
     return () => {
       io.disconnect()
-      if (fine && hero && stage) {
-        hero.removeEventListener('pointermove', move)
-        hero.removeEventListener('pointerleave', reset)
+      if (fine && showcase && stage) {
+        showcase.removeEventListener('pointermove', move)
+        showcase.removeEventListener('pointerleave', reset)
       }
+      if (fine && top) top.removeEventListener('pointermove', drift)
     }
   }, [rootRef])
 }
@@ -98,18 +113,18 @@ export default function LandingPage() {
   useLandingMotion(rootRef)
   return (
     <div className="landing" ref={rootRef}>
-      <header className="landing-head">
-        <a href="/" aria-label="Preflight, trang chủ">
-          <Logo />
-        </a>
-        <nav aria-label="Mục trang" className="landing-nav">
-          <a href="#cach-hoat-dong" className="landing-link landing-link--wide">Cách hoạt động</a>
-          <a href="#khac-biet" className="landing-link landing-link--wide">Dữ liệu</a>
-          <a href={LOGIN_HREF} className="landing-link landing-head-cta">Đăng nhập</a>
-        </nav>
-      </header>
+      <div className="landing-top">
+        <header className="landing-head">
+          <a href="/" aria-label="Preflight, trang chủ">
+            <Logo />
+          </a>
+          <nav aria-label="Mục trang" className="landing-nav">
+            <a href="#cach-hoat-dong" className="landing-link landing-link--wide">Cách hoạt động</a>
+            <a href="#khac-biet" className="landing-link landing-link--wide">Dữ liệu</a>
+            <a href={LOGIN_HREF} className="landing-link landing-head-cta">Đăng nhập</a>
+          </nav>
+        </header>
 
-      <main>
         <section aria-labelledby="hero-title" className="landing-hero">
           <div className="landing-rise">
             <span className="landing-pill">Bản demo · dữ liệu mô phỏng</span>
@@ -119,17 +134,55 @@ export default function LandingPage() {
             <p className="landing-lede">Chấm Hook, CTA, chuyển đổi và policy cho video TikTok Shop, Shopee. Chỉ ra đúng giây cần sửa.</p>
             <div className="landing-cta-row">
               <LoginButton />
+              <a href="#cach-hoat-dong" className="landing-ghost">Xem cách hoạt động</a>
             </div>
+            <dl className="landing-stats">
+              {STATS.map((st) => (
+                <div key={st.label}>
+                  <dt>{st.label}</dt>
+                  <dd>{st.value}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
-          <figure className="landing-stage landing-rise">
-            <img
-              src="/landing/studio-preview.webp"
-              width="2104"
-              height="1200"
-              alt="Studio của Preflight: video mẫu được 43/100, điểm theo Viral, Chuyển đổi, SKU và danh sách việc cần sửa theo mốc thời gian."
-            />
-          </figure>
+          {/* the phone is a real Studio capture; the floating cards repeat that run's own numbers */}
+          <div className="landing-device" aria-hidden="true">
+            <img className="landing-phone" src="/landing/phone-studio.webp" width="584" height="1194" alt="" />
+            <div className="landing-float landing-float--score">
+              <span className="landing-ring" style={{ '--v': 55 }}><b>55</b></span>
+              <span><strong>Sửa rồi đăng</strong><small>Ngưỡng đăng 75</small></span>
+            </div>
+            <div className="landing-float landing-float--hook">
+              <span className="landing-dot is-good" />
+              <span><strong>Hook mở đầu</strong><small>92 / 100</small></span>
+            </div>
+            <div className="landing-float landing-float--fix">
+              <span className="landing-time">00:09</span>
+              <span><strong>Sửa cảnh trước/sau</strong><small>Policy</small></span>
+            </div>
+            <div className="landing-float landing-float--policy">
+              <span className="landing-shield">6</span>
+              <span><strong>Rule cần xem lại</strong><small>trước khi đăng</small></span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <main>
+        <section aria-labelledby="showcase-title" className="landing-section landing-showcase">
+          <div className="landing-wrap">
+            <h2 id="showcase-title" className="landing-h2">Một màn: video, điểm, việc cần sửa.</h2>
+            <figure className="landing-stage">
+              <img
+                src="/landing/studio-preview.webp"
+                width="2104"
+                height="1200"
+                loading="lazy"
+                alt="Studio của Preflight: video mẫu được 43/100, radar câu hỏi, điểm theo nhóm và danh sách việc cần sửa theo mốc thời gian."
+              />
+            </figure>
+          </div>
         </section>
 
         <section id="cach-hoat-dong" aria-labelledby="steps-title" className="landing-section">

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { ArrowLeft, Upload } from 'lucide-react'
+import { Upload } from 'lucide-react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 
 import { useFetch } from '../hooks/use-fetch'
@@ -94,23 +94,23 @@ function UploadButton({ shopId, skuId }) {
   }
 
   return (
-    <div>
+    <div className="op-upload-wrap">
       <div className="op-upload">
         <button
           type="button"
           className="op-btn op-btn--ghost"
           onClick={() => inputRef.current?.click()}
+          title="mp4, mov, webm, mkv"
           disabled={progress !== null}
         >
           <Upload size={16} aria-hidden="true" />
-          {progress === null ? 'Tải video khác lên' : `Đang tải ${progress}%`}
+          {progress === null ? 'Tải video lên' : `Đang tải ${progress}%`}
         </button>
         {progress !== null && (
           <div className="op-progress" role="progressbar" aria-label="Tiến độ tải lên" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress}>
             <span style={{ width: `${progress}%` }} />
           </div>
         )}
-        <p className="op-upload-note">mp4, mov, webm, mkv</p>
       </div>
       <input ref={inputRef} type="file" accept={ACCEPT} hidden onChange={onPick} />
       {error && <p className="op-help op-help--error op-mt-12" role="alert">Tải lên lỗi: {error}</p>}
@@ -140,15 +140,18 @@ export default function AddVideoPage() {
   const others = all.filter((v) => v.sku_id !== skuId)
 
   return (
-    <OperatePage step={3}>
-      <Link to={`/shops/${enc(id)}`} className="op-back">
-        <ArrowLeft size={16} aria-hidden="true" />
-        Sản phẩm của {shop.data?.shop_name ?? id}
-      </Link>
-
-      <div className="op-page-head">
-        <h1 className="op-title">Chọn video</h1>
-        <p className="op-lede">Bấm một video để mở Studio.</p>
+    <OperatePage step={3} back={{ to: `/shops/${enc(id)}`, label: shop.data?.shop_name ?? id }}>
+      <div className="op-page-head op-page-head--row">
+        {sku.data && !wrongShop && <SkuThumb sku={sku.data} className="op-sku-strip-thumb" />}
+        <div className="op-page-head-text">
+          <h1 className="op-title">Chọn video</h1>
+          {sku.data && !wrongShop && (
+            <p className="op-lede" title={sku.data.sku_id}>
+              {sku.data.item_name} · {vnd(sku.data.price_vnd)} · ★ {sku.data.rating ?? '–'} · kho {num(sku.data.stock)}
+            </p>
+          )}
+        </div>
+        {!loading && !failure && !wrongShop && sku.data && <UploadButton shopId={id} skuId={skuId} />}
       </div>
 
       {loading && <Skeleton count={3} />}
@@ -168,33 +171,7 @@ export default function AddVideoPage() {
 
       {!loading && !failure && !wrongShop && sku.data && (
         <>
-          <section className="op-sku-strip" aria-label="Sản phẩm đang chọn">
-            <SkuThumb sku={sku.data} className="op-sku-strip-thumb" />
-            <div>
-              <p className="op-sku-strip-name">{sku.data.item_name}</p>
-              <p className="op-row-sub">{sku.data.sku_id} · dữ liệu mô phỏng</p>
-            </div>
-            <dl className="op-sku-strip-facts">
-              <div>
-                <dt>Giá</dt>
-                <dd>{vnd(sku.data.price_vnd)}</dd>
-              </div>
-              <div>
-                <dt>Đánh giá</dt>
-                <dd>{sku.data.rating ?? '–'}</dd>
-              </div>
-              <div>
-                <dt>Tồn kho</dt>
-                <dd>{num(sku.data.stock)}</dd>
-              </div>
-            </dl>
-          </section>
-
-          <div className="op-mt-20">
-            <UploadButton shopId={id} skuId={skuId} />
-          </div>
-
-          <section aria-labelledby="linked-title" className="op-section-gap">
+          <section aria-labelledby="linked-title">
             <div className="op-group-title">
               <h2 id="linked-title">Video của SKU này</h2>
               <span>{linked.length}</span>

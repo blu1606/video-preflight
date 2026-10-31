@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { ArrowLeft } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
 
 import { useFetch } from '../hooks/use-fetch'
@@ -135,11 +134,7 @@ export default function ShopProductsPage() {
   const videoCount = (skuId) => (videos.data ?? []).filter((v) => v.sku_id === skuId).length
 
   return (
-    <OperatePage step={2}>
-      <Link to="/shops/select" className="op-back">
-        <ArrowLeft size={16} aria-hidden="true" />
-        Chọn shop
-      </Link>
+    <OperatePage step={2} back={{ to: '/shops/select', label: 'Chọn shop' }}>
 
       {shop.data && (
         <div className="op-page-head">

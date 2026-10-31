@@ -6,11 +6,25 @@ import { answerLevels, groupOfQuestion, keyAxes, radarPoint } from './studio-mod
 
 const RINGS = [0.25, 0.5, 0.75, 1]
 // The chart is drawn in its own units; axis labels are HTML placed over it, so their text stays at a fixed px size.
-// The label box (max 100 px) sits beside the chart: the chart radius leaves room for it inside a 400 px column.
-const VIEW = { x: 0, y: 0, w: 440, h: 330 }
-const CENTER = { cx: 220, cy: 165, r: 86 }
-const LABEL_AT = { ...CENTER, r: CENTER.r + 10 }
+// The label box (max 92 px) sits beside the chart: the chart radius leaves room for it inside a 400 px column.
+const VIEW = { x: 0, y: 0, w: 440, h: 356 }
+const CENTER = { cx: 220, cy: 172, r: 110 }
+const LABEL_AT = { ...CENTER, r: CENTER.r + 12 }
 const GROUP_SHORT = { viral_potential: 'Viral', conversion_potential: 'Conversion', sku_market: 'SKU', shop_health: 'Shop' }
+
+/** Score band of one axis: the same three colours as the group bars. */
+const bandOf = (v, ready) => (v == null ? 'none' : v >= ready ? 'good' : v >= 50 ? 'warn' : 'bad')
+
+/** Wedge of the chart that belongs to axis i: half-way to each neighbour, tinted by the axis's group. */
+function sectorPoints(i, n) {
+  const half = 0.5
+  return [
+    [CENTER.cx, CENTER.cy],
+    radarPoint(i - half, n, Math.cos(Math.PI / n), CENTER),
+    radarPoint(i, n, 1, CENTER),
+    radarPoint(i + half, n, Math.cos(Math.PI / n), CENTER),
+  ].map((pt) => pt.join(',')).join(' ')
+}
 
 const pointsOf = (n, ratios) => ratios.map((r, i) => radarPoint(i, n, r, CENTER).join(',')).join(' ')
 
@@ -84,6 +98,9 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
       </div>
       <div className="studio-radar-box">
         <svg className="radar" viewBox={`${VIEW.x} ${VIEW.y} ${VIEW.w} ${VIEW.h}`} role="img" aria-label={`Radar ${shown.length}/${n} trục có trả lời`}>
+          {axes.map((a, i) => (
+            <polygon key={a.id} className={`rd-sector is-${groupOfQuestion(a.id)}`} points={sectorPoints(i, n)} />
+          ))}
           {RINGS.map((r) => <polygon key={r} className="rd-ring" points={pointsOf(n, Array(n).fill(r))} />)}
           {threshold != null && <polygon className="rd-threshold" points={pointsOf(n, Array(n).fill(threshold / 100))} />}
           {axes.map((a, i) => {
@@ -94,7 +111,7 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
           {axes.map((a, i) => {
             if (a.value == null || vals[i] == null) return null
             const [x, y] = radarPoint(i, n, vals[i] / 100, CENTER)
-            return <circle key={a.id} className="rd-dot studio-rd-dot" cx={x} cy={y} r="4" />
+            return <circle key={a.id} className={`rd-dot studio-rd-dot is-${bandOf(a.value, threshold ?? 75)}`} cx={x} cy={y} r="5" />
           })}
         </svg>
         {axes.map((a, i) => {
@@ -105,7 +122,7 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
             <button
               key={a.id}
               type="button"
-              className={`studio-rd-label is-${g}${a.id === selectedId ? ' is-sel' : ''}`}
+              className={`studio-rd-label is-${g} band-${bandOf(a.value, threshold ?? 75)}${a.id === selectedId ? ' is-sel' : ''}`}
               style={labelStyle(i, n, x, y)}
               aria-pressed={a.id === selectedId}
               aria-label={`${a.label} (${GROUP_SHORT[g]}): ${missing ? (a.status === 'pending' ? 'đang chờ' : 'chưa chấm') : Math.round(a.value)}`}
@@ -115,10 +132,7 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
               onFocus={() => setHover(a.id)}
               onBlur={() => setHover(null)}
             >
-              <span className="studio-rd-top">
-                <span className="studio-rd-group">{GROUP_SHORT[g]}</span>
-                <span className={`studio-rd-num${missing ? ' is-miss' : ''}`}>{missing ? (a.status === 'pending' ? '…' : '–') : Math.round(a.value)}</span>
-              </span>
+              <span className={`studio-rd-num${missing ? ' is-miss' : ''}`}>{missing ? (a.status === 'pending' ? '…' : '–') : Math.round(a.value)}</span>
               <span className="studio-rd-name">{a.label}</span>
             </button>
           )
@@ -129,10 +143,13 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
           return <AxisCard key={a.id} axis={a} x={x} y={y} />
         })}
       </div>
+      {/* group colours are read once here instead of naming the group on every label */}
       <p className="legend studio-radar-legend">
-        <span><i className="lg-you" />Video này</span>
-        {threshold != null && <span><i className="lg-thr" />Ngưỡng {threshold}</span>}
-        {shown.length < n && <span><i className="lg-miss" />– chưa chấm, không tính 0</span>}
+        {[...new Set(axes.map((a) => groupOfQuestion(a.id)))].map((g) => (
+          <span key={g} className={`lg-group is-${g}`}><i />{GROUP_SHORT[g]}</span>
+        ))}
+        {threshold != null && <span><i className="lg-thr" />{threshold}</span>}
+        {shown.length < n && <span title="Chưa chấm, không tính 0"><i className="lg-miss" />chưa chấm</span>}
       </p>
     </section>
   )

@@ -90,7 +90,7 @@ function ScoreHero({ overall, provisional, gate, headline, onPolicy }) {
 }
 
 /** How the overall score is made: the three weighted groups, each a bar with the "ready" tick. */
-function ScoreParts({ result, onOpenAll }) {
+function ScoreParts({ result }) {
   const overall = result?.overall
   const ready = overall?.thresholds?.ready ?? 75
   const fix = overall?.thresholds?.fix ?? 50
@@ -98,10 +98,6 @@ function ScoreParts({ result, onOpenAll }) {
   const scores = Object.fromEntries((result?.scores ?? []).map((g) => [g.name, g.score]))
   return (
     <section className="studio-parts" aria-label="Điểm thành phần">
-      <div className="studio-parts-head">
-        <h3 className="studio-sub">Điểm thành phần</h3>
-        <button type="button" className="link-btn tiny" onClick={onOpenAll}>Xem câu hỏi</button>
-      </div>
       <ul>
         {GROUP_PARTS.map((g) => {
           const v = scores[g.id]
@@ -250,7 +246,7 @@ function Evidence({ result, onSeek, onCite, onOpenSku }) {
   )
 }
 
-/** Right column: the score and its policy gate, the Decisions radar, the AI's verdict and top fixes, then three tabs. */
+/** Right column: the score and its policy gate, the Decisions radar (main picture), group bars, top fixes, three tabs. */
 export function RightColumn({
   run, result, questions, revealed, provisional, selectedId, onOpenQuestion, onOpenAll, onSeek, onCite, onAnalyze, canAnalyze, analyzeHint,
   sku, onOpenSku, onOpenFixes, sideTab, onSideTab,
@@ -298,20 +294,13 @@ export function RightColumn({
           {!running && (overall?.warnings ?? []).map((w) => <p key={w} className="tiny studio-warn">{w}</p>)}
         </section>
       )}
-      {/* while a run streams, the radar fills axis by axis; after it, the weighted groups explain the score and the
-          radar stays one click away */}
-      {running && questions.length > 0 && (
+      {/* the radar is the score's main picture: it fills axis by axis while a run streams and stays as the summary
+          after it; the weighted groups below it say how the axes add up to the score */}
+      {questions.length > 0 && (running || result) && (
         <Radar questions={questions} revealed={revealed} selectedId={selectedId} onSelect={onOpenQuestion} onOpenAll={onOpenAll}
           threshold={threshold} answered={answered} total={scoreQs.length} otherCount={otherCount} />
       )}
-      {result && !running && <ScoreParts result={result} onOpenAll={onOpenAll} />}
-      {result && !running && questions.length > 0 && (
-        <details className="studio-radar-more">
-          <summary>Radar câu hỏi chính</summary>
-          <Radar questions={questions} revealed={revealed} selectedId={selectedId} onSelect={onOpenQuestion} onOpenAll={onOpenAll}
-            threshold={threshold} answered={answered} total={scoreQs.length} otherCount={otherCount} />
-        </details>
-      )}
+      {result && !running && <ScoreParts result={result} />}
       {result && !running && scoreQs.every((q) => q.value == null) && (
         <p className="tiny studio-batch-note">
           Chưa có câu trả lời Decisions cho lần chạy này. Bật "Gọi Decisions API" trong tuỳ chọn để chấm (có tính phí).

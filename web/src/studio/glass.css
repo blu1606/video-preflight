@@ -469,12 +469,6 @@
 .pf-root .studio-part-num { text-align: right; font-variant-numeric: tabular-nums; color: var(--c); }
 @keyframes part-grow { from { transform: scaleX(0); } }
 
-.pf-root .studio-radar-more { margin: 4px 16px 0; }
-.pf-root .studio-radar-more > summary { cursor: pointer; list-style: none; font-size: 12.5px; font-weight: 600; color: var(--accent-ink, #c8381c); padding: 6px 0; }
-.pf-root .studio-radar-more > summary::-webkit-details-marker { display: none; }
-.pf-root .studio-radar-more > summary::after { content: "›"; display: inline-block; margin-left: 5px; transition: transform var(--dur-2) var(--ease-out); }
-.pf-root .studio-radar-more[open] > summary::after { transform: rotate(90deg); }
-.pf-root .studio-radar-more[open] > .studio-radar { animation: glass-expand var(--dur-3) var(--ease-out); }
 
 /* fixes first: numbered by the backend's priority, what · where · worth */
 .pf-root .studio-top-fixes { padding: 12px 16px; border-top: 1px solid var(--glass-line); }
@@ -504,7 +498,31 @@
 .pf-root .studio-ring .ring-num small { font-size: 11px; }
 .pf-root .studio-part { grid-template-columns: 158px minmax(0, 1fr) 30px; }
 .pf-root .studio-part-name { white-space: nowrap; }
-.pf-root .studio-right .studio-radar-more { background: transparent; border: 0; box-shadow: none; }
 /* number over its "/100": a narrow stack clears the ready tick at nine o'clock */
 .pf-root .studio-ring .ring-num { display: grid; justify-items: center; line-height: .95; }
 .pf-root .studio-ring .ring-num small { margin: 2px 0 0; }
+
+/* ---------- radar as the score's main picture ---------- */
+.pf-root .studio-right .studio-radar { padding: 6px 16px 4px; }
+.pf-root .radar .rd-sector { stroke: none; }
+.pf-root .radar .rd-sector.is-viral_potential { fill: rgba(238, 77, 45, .10); }
+.pf-root .radar .rd-sector.is-conversion_potential { fill: rgba(124, 58, 237, .09); }
+.pf-root .radar .rd-sector.is-sku_market { fill: rgba(22, 163, 74, .10); }
+.pf-root .radar .rd-sector.is-shop_health { fill: rgba(14, 165, 233, .10); }
+.pf-root .radar .studio-rd-dot { stroke: #fff; stroke-width: 2; }
+.pf-root .radar .studio-rd-dot.is-good { fill: #16a34a; }
+.pf-root .radar .studio-rd-dot.is-warn { fill: #e08a1e; }
+.pf-root .radar .studio-rd-dot.is-bad { fill: #d93a2b; }
+.pf-root .studio-rd-label { max-width: 92px; justify-items: inherit; gap: 0; }
+.pf-root .studio-rd-num { font: 800 20px/1.1 var(--font-body); letter-spacing: -.02em; }
+.pf-root .studio-rd-label.band-good .studio-rd-num { color: #16a34a; }
+.pf-root .studio-rd-label.band-warn .studio-rd-num { color: #c97412; }
+.pf-root .studio-rd-label.band-bad .studio-rd-num { color: #d93a2b; }
+.pf-root .studio-rd-name { font: 500 12px/1.25 var(--font-body); color: var(--muted); }
+.pf-root .studio-radar-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; font-size: 12.5px; color: var(--muted); }
+.pf-root .lg-group { display: inline-flex; align-items: center; gap: 6px; }
+.pf-root .lg-group i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.pf-root .lg-group.is-viral_potential i { background: rgba(238, 77, 45, .35); }
+.pf-root .lg-group.is-conversion_potential i { background: rgba(124, 58, 237, .32); }
+.pf-root .lg-group.is-sku_market i { background: rgba(22, 163, 74, .35); }
+.pf-root .lg-group.is-shop_health i { background: rgba(14, 165, 233, .35); }
