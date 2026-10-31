@@ -1,5 +1,9 @@
 # Runtime contract — bản nền 31/10/2026
 
+## Hai đường dẫn giao diện
+
+`/` mở studio nối FastAPI/json-server local. `/demo` mở seller workspace được bổ sung bởi luồng frontend song song, đọc dữ liệu và kết quả snapshot đã lưu, không chạy inference mới. Đợt kiểm browser này xác minh `/`; chưa có bằng chứng browser nghiệm thu `/demo` trong phiên này.
+
 ## Lưu trữ
 
 `db/db.json` là catalog làm việc, được dựng từ `db/template.json` nếu chưa tồn tại. json-server là writer duy nhất; mỗi POST/PUT/PATCH/DELETE phải sao lưu trạng thái trước thay đổi vào `db/backups/`. Khi backup lỗi, chặn thay đổi.
