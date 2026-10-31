@@ -8,6 +8,7 @@ Usage (from the repo root):
 
 import json
 import random
+import re
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -27,7 +28,10 @@ TEMPLATES = {
     "mother_baby": ((0.08, 0.62, 0.26, 0.04), 0.91, ["mẹ bỉm", "chăm con", "sức khỏe bé"]),
     "health_fitness": ((0.15, 0.36, 0.30, 0.19), 0.58, ["sức khỏe", "dinh dưỡng", "tập luyện"]),
 }
-REGIONS = {"TP.HCM": 0.34, "Hà Nội": 0.27, "tỉnh khác": 0.39}
+REGIONS = {"TP.HCM": 0.34, "Hà Nội": 0.27, "Tỉnh thành khác": 0.39}
+# A product named for men ("Sữa rửa mặt nam") flips its category's gender split. Only the Vietnamese word: "men"
+# is also Vietnamese for yeast ("Men vi sinh").
+FOR_MEN = re.compile(r"\bnam\b(?<!việt nam)", re.IGNORECASE)
 
 
 def normalize(weights: dict[str, float]) -> dict[str, float]:
@@ -39,6 +43,8 @@ def profile(sku: dict) -> dict:
     rng = random.Random(sku["sku_id"])  # same SKU, same profile on every build
     ages, female, interests = TEMPLATES[sku["category"]]
     female = min(0.97, max(0.05, female + rng.uniform(-0.05, 0.05)))
+    if FOR_MEN.search(sku["item_name"]):
+        female = 1 - female
     return {
         "id": sku["sku_id"], "sku_id": sku["sku_id"], "shop_id": sku["shop_id"], "shopId": sku["shop_id"],
         "age_bands": normalize({b: w * rng.uniform(0.85, 1.15) for b, w in zip(AGE_BANDS, ages)}),
