@@ -136,6 +136,20 @@ class LocalFlowTests(unittest.TestCase):
         self.assertNotEqual(changed["run_id"], first["run_id"])
         self.assertEqual(self.wait(changed["run_id"])["result"]["extraction"]["cache"], "hit")
 
+    def test_analysis_cache_is_not_reused_when_frames_are_missing(self):
+        video = self.upload()
+        endpoint = f'/videos/{video["id"]}/runs'
+        first = self.client.post(endpoint, json={}).json()
+        result = self.wait(first["run_id"])["result"]
+        extraction = result["extraction"]
+        directory = self.root / ".runtime" / "artifacts" / f'{extraction["media_sha256"]}-{extraction["version"]}'
+        (directory / extraction["frames"][0]["file"]).unlink()
+        self.assertEqual(self.client.get(f'/videos/{video["id"]}/cache-status').json()["analysis"], "miss")
+        second = self.client.post(endpoint, json={}).json()
+        self.assertNotEqual(first["run_id"], second["run_id"])
+        self.assertFalse(second["cache_hit"])
+        self.wait(second["run_id"])
+
     def test_context_ownership_and_published_constraints(self):
         shop1 = self.client.post("/shops", json={"name": "Unit test shop A"}).json()
         shop2 = self.client.post("/shops", json={"name": "Unit test shop B"}).json()
