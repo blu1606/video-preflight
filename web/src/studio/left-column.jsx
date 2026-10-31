@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import { agentLabel, stepLabel } from '../lib/labels'
 import { fmtTime } from '../lib/timeline'
@@ -112,9 +112,15 @@ export function LeftColumn({ running, steps, result, savedRun = null, duration, 
   const total = segments.reduce((a, s) => a + s.items.length, 0)
   const issues = segments.reduce((a, s) => a + s.issues, 0)
   const showFlow = running || !result || view === 'flow'
+  // switching view, filter or run starts the column at its top (the agent list is long; its scroll must not
+  // carry over into the questions view)
+  const colRef = useRef(null)
+  useEffect(() => {
+    if (colRef.current) colRef.current.scrollTop = 0
+  }, [showFlow, filter, result])
 
   return (
-    <aside className="col col-left studio-left" aria-label="Câu hỏi chấm và agent">
+    <aside ref={colRef} className="col col-left studio-left" aria-label="Câu hỏi chấm và agent">
       <div className="col-head">
         {/* with a result the Câu hỏi | Agent switch names the column; a visible heading would repeat it */}
         {result && !running ? <h2 className="sr-only">Câu hỏi chấm và agent</h2> : <h2>{running ? 'Agent đang chạy' : 'Các bước phân tích'}</h2>}

@@ -7,6 +7,7 @@ import { PHONE_STATUS } from './icons-data'
 import { PANELS } from './edit-panels'
 import { BrandMark, PhoneFeed } from './phone-feeds'
 import { skinById } from './platform-skins'
+import { StageFx } from './stage-fx'
 
 const PHONE_H = 920 // bezel artwork height at zoom 1
 const PHONE_W = 450 // bezel artwork width at zoom 1
@@ -89,11 +90,6 @@ function Timeline({ duration, current, issues, strengths, onSeek }) {
           )
         })}
       </div>
-      <p className="tl-legend tiny">
-        <span><i className="lg-bad">!</i>cần sửa</span>
-        <span><i className="lg-ok" />điểm mạnh</span>
-        <span><i className="lg-ghost" />gợi ý vị trí (video đang thiếu)</span>
-      </p>
     </div>
   )
 }
@@ -110,7 +106,7 @@ function MusicChip({ music }) {
  * view (Shopee Video, TikTok Shop, TikTok Ads, Facebook or Instagram Reels), the play bar and the marker timeline.
  * Clicking the caption on the phone opens the caption panel; tapping the product opens its platform sheet.
  */
-export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoRef, onSeek, issues, strengths, fallbackDuration, music, skin }) {
+export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoRef, onSeek, issues, strengths, fallbackDuration, music, skin, running = false, justDone = false }) {
   const [showRegions, setShowRegions] = useState(true)
   const [openRegion, setOpenRegion] = useState(null)
   const stageRef = useRef(null)
@@ -145,7 +141,8 @@ export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoR
   const handle = `@${shopName.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '.').replace(/^\.|\.$/g, '')}`
 
   return (
-    <section className="col col-mid studio-mid" aria-label="Video và thiết lập bài đăng" style={{ '--pz': zoom }}>
+    <section className={`col col-mid studio-mid${running ? ' is-running' : ''}`} aria-label="Video và thiết lập bài đăng" aria-busy={running} style={{ '--pz': zoom }}>
+      <StageFx active={running} done={justDone} />
       <div className="mid">
         <Rail panel={panel} onPanel={onPanel} video={video} skin={skin} />
         <div className="mid-main">

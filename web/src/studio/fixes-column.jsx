@@ -95,9 +95,8 @@ export function FixesColumn({ result, onSeek, onOpenSku }) {
       </div>
       {blockers.length > 0 && (
         <section className="studio-gate" aria-label="Policy cần xem lại">
-          <p className="studio-gate-title">
+          <p className="studio-gate-title" title="Rule engine bản baseline, không phải duyệt chính thức của sàn">
             <Icon name="danger" /> Cần xem lại trước khi đăng · {blockers.length} rule
-            <span className="tiny muted studio-gate-note">rule engine baseline, không phải duyệt của sàn</span>
           </p>
           <ul>
             {blockers.map((b) => {

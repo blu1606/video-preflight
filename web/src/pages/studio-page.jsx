@@ -23,9 +23,13 @@ import { ShopProfile } from '../studio/shop-profile'
 import { SkuMarketSheet } from '../studio/sku-market'
 import { missingPostInfo, provisionalOverall, questionSegments, revealOrder } from '../studio/studio-model'
 import { UpdateNote } from '../studio/update-note'
+import { useSlidingIndicators } from '../studio/motion'
+import { stepLabel } from '../lib/labels'
+import { useStudioSound } from '../studio/sound'
 import { useRightWidth } from '../studio/use-right-width'
 import '../studio/mockup-v2.css'
 import '../studio/studio.css'
+import '../studio/glass.css'
 
 const REVEAL_MS = 140
 const historyUrl = (id) => `/analyses?targetId=${encodeURIComponent(id)}&kind=video_run&_sort=id&_order=desc`
@@ -127,6 +131,26 @@ export default function StudioPage() {
   const videoRef = useRef(null)
 
   const running = run.status === 'running'
+  const rootRef = useRef(null)
+  useSlidingIndicators(rootRef)
+  const sound = useStudioSound()
+  const { start: soundStart, finish: soundFinish } = sound
+  // run transitions drive sound; a finished run stays "fresh" (score glow, stage pulse) for a moment
+  const lastStatus = useRef(run.status)
+  useEffect(() => {
+    const prev = lastStatus.current
+    lastStatus.current = run.status
+    if (run.status === 'running' && prev !== 'running') soundStart()
+    if (prev === 'running' && run.status !== 'running') soundFinish(run.status === 'done')
+  }, [run.status, soundStart, soundFinish])
+  const [settledId, setSettledId] = useState(null)
+  const finishedRunId = run.status === 'done' ? run.result?.id ?? 'done' : null
+  const justDone = finishedRunId != null && finishedRunId !== settledId
+  useEffect(() => {
+    if (finishedRunId == null) return undefined
+    const t = setTimeout(() => setSettledId(finishedRunId), 2600)
+    return () => clearTimeout(t)
+  }, [finishedRunId])
   const runs = history.data ?? []
   const saved = runs.find((a) => a.id === selectedRunId) ?? runs[0] ?? null
   const analysis = run.status === 'done' ? run.result : running ? null : saved
@@ -253,7 +277,9 @@ export default function StudioPage() {
   )
 
   const lastStep = [...run.steps].reverse().find((s) => s.status === 'running') ?? run.steps.at(-1)
-  const runLabel = lastStep ? `Đang chạy · ${lastStep.name}` : 'Đang khởi động…'
+  // share of steps finished, against the step count of the last saved run of this video (26 when there is none)
+  const runProgress = Math.min(0.97, Math.max(0.04, run.steps.filter((s) => s.status !== 'running').length / (saved?.result?.trace?.length || 26)))
+  const runLabel = lastStep ? stepLabel(lastStep.name) : 'Đang khởi động…'
   const canAnalyze = !!video && !running
   const analyzeHint = !video ? 'Chọn video trước.' : extraction.data?.state === 'missing' ? 'Video chưa trích xuất: lần chạy đầu sẽ trích xuất (có tính phí, hỏi trước).' : null
   const fixTab = tab === 'fix' && result
@@ -261,7 +287,7 @@ export default function StudioPage() {
   const rightCol = useRightWidth(leftWidth)
 
   return (
-    <div className="pf-root studio-root" data-tab="analysis">
+    <div ref={rootRef} className="pf-root studio-root" data-tab="analysis" data-fresh={justDone ? '' : undefined}>
       <AppBar
         shops={shops.data ?? []}
         shop={shop}
@@ -286,6 +312,8 @@ export default function StudioPage() {
         options={options}
         onOptions={setOptions}
         extractionState={extraction.data?.state}
+        progress={running ? runProgress : null}
+        sound={sound}
       />
       <main className="main studio-main">
         <section
@@ -327,6 +355,8 @@ export default function StudioPage() {
             fallbackDuration={duration}
             music={result?.features && 'video.music' in result.features ? result.features['video.music'] : undefined}
             skin={skin}
+            running={running}
+            justDone={justDone}
           />
           {fixTab ? (
             <FixesColumn key={analysis.id} result={result} onSeek={seek} onOpenSku={() => setSkuOpen(true)} />

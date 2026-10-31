@@ -1,0 +1,372 @@
+/*
+ * Liquid-glass layer of the studio, loaded after mockup-v2.css and studio.css.
+ *
+ * Content and task: one seller checks one video — the phone stage is the workspace (dominant, dark, most lifted),
+ * the question list and the score column are supporting glass panels floating over a soft ambient field.
+ * Depth scale: page field < side panels (--lift-2) < app bar (--lift-2, sticky) < stage (--lift-3) < popovers,
+ * dialogs and sheets (--lift-3, stronger glass). Motion uses one token set; nothing loops at rest except the
+ * live analysis.
+ */
+
+.pf-root.studio-root {
+  --glass: rgba(255, 255, 255, .56);
+  --glass-strong: rgba(255, 255, 255, .78);
+  --glass-hover: rgba(255, 255, 255, .72);
+  --glass-edge: rgba(255, 255, 255, .72);
+  --glass-line: rgba(20, 22, 30, .08);
+  --glass-blur: blur(24px) saturate(175%);
+  --sheen: inset 0 1px 0 rgba(255, 255, 255, .95), inset 0 0 0 1px rgba(255, 255, 255, .28);
+  --lift-1: 0 1px 1px rgba(16, 18, 24, .04), 0 3px 8px -3px rgba(16, 18, 24, .10);
+  --lift-2: 0 1px 2px rgba(16, 18, 24, .05), 0 12px 32px -12px rgba(16, 18, 24, .24), 0 3px 8px -4px rgba(16, 18, 24, .10);
+  --lift-3: 0 2px 4px rgba(16, 18, 24, .06), 0 28px 64px -20px rgba(16, 18, 24, .42), 0 8px 18px -10px rgba(16, 18, 24, .20);
+  --dur-1: 110ms;
+  --dur-2: 180ms;
+  --dur-3: 280ms;
+  --dur-4: 460ms;
+  --ease-out: cubic-bezier(.2, .8, .2, 1);
+  --ease-in: cubic-bezier(.4, 0, 1, 1);
+  --ease-spring: cubic-bezier(.34, 1.36, .64, 1);
+  --gap: 12px;
+  --radius-panel: 20px;
+  --focus: 0 0 0 3px rgba(238, 77, 45, .32);
+  background: #eceef3;
+  isolation: isolate;
+}
+
+/* Ambient field: soft coloured light the glass refracts. Fixed, painted once, never animated. */
+.pf-root.studio-root::before {
+  content: "";
+  position: fixed;
+  inset: -12%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(38% 48% at 10% 14%, rgba(255, 153, 83, .42), transparent 70%),
+    radial-gradient(36% 44% at 90% 8%, rgba(167, 139, 250, .32), transparent 70%),
+    radial-gradient(44% 52% at 84% 94%, rgba(56, 189, 248, .24), transparent 70%),
+    radial-gradient(40% 50% at 16% 96%, rgba(238, 77, 45, .22), transparent 70%),
+    linear-gradient(180deg, #f5f6f9, #e7e9ef);
+}
+
+/* ---------- glass surfaces ---------- */
+
+.pf-root .glass,
+.pf-root.studio-root > .hdr,
+.pf-root .analysis > .studio-left,
+.pf-root .analysis > .studio-right,
+.pf-root .analysis > .studio-left-rail {
+  background: var(--glass);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-edge);
+  box-shadow: var(--sheen), var(--lift-2);
+}
+
+/* App bar floats: inset from the edges, rounded, above the panels */
+.pf-root.studio-root > .hdr { margin: var(--gap) var(--gap) 0; border-radius: 18px; position: relative; z-index: 20; }
+.pf-root.studio-root > .hdr .app-bar { background: transparent; }
+
+/* Workspace: panels separated by the gap, each its own lifted object */
+.pf-root .studio-main > .analysis { padding: var(--gap); gap: var(--gap); }
+.pf-root .analysis > .col,
+.pf-root .analysis > .studio-left-rail { border-radius: var(--radius-panel); min-height: 0; }
+/* the stage clips its rounded corners; side panels keep their own scrolling (their sticky heads depend on it) */
+.pf-root .analysis > .studio-mid { overflow: hidden; }
+.pf-root .analysis > .studio-mid {
+  border-radius: var(--radius-panel);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .07), inset 0 1px 0 rgba(255, 255, 255, .12), var(--lift-3);
+}
+/* resizer handles follow the panels' new edges */
+.pf-root .studio-main > .analysis .col-resizer { left: calc(var(--col-left) + var(--gap) * 1.5 - 3px); }
+.pf-root .studio-main > .analysis .col-resizer-r { left: auto; right: calc(var(--col-right) + var(--gap) * 1.5 - 3px); }
+
+/* inner bands sit on the glass instead of painting white over it; the sticky ones (heads, filter, foot) are
+   frosted so the list scrolling under them stays a blur, never text over text */
+.pf-root .studio-right .score-block,
+.pf-root .studio-right section { background: transparent; }
+.pf-root .studio-left .col-head,
+.pf-root .studio-right .col-head,
+.pf-root .studio-left .col-foot,
+.pf-root .studio-left .studio-filter,
+.pf-root .studio-left .grp-head {
+  background: rgba(250, 250, 252, .78);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+}
+.pf-root .studio-left .col-head,
+.pf-root .studio-right .col-head { border-bottom: 1px solid var(--glass-line); }
+.pf-root .studio-left .col-foot { border-top: 1px solid var(--glass-line); color: var(--ink-2, #3d4047); }
+.pf-root .studio-left .grp-head { border-color: var(--glass-line); }
+
+/* Question rows: a light hover lift, the selected row reads as a raised chip */
+.pf-root .studio-left .q { border-radius: 12px; margin: 2px 8px; transition: background-color var(--dur-1) var(--ease-out), box-shadow var(--dur-2) var(--ease-out); }
+@media (hover: hover) { .pf-root .studio-left .q:hover { background: var(--glass-hover); box-shadow: var(--lift-1); } }
+.pf-root .studio-left .q.is-sel, .pf-root .studio-left .q:has([aria-pressed="true"]) { background: rgba(255, 255, 255, .86); box-shadow: var(--sheen), var(--lift-1); }
+
+/* ---------- overlays ---------- */
+
+.pf-root .studio-pop {
+  background: var(--glass-strong);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-edge);
+  border-radius: 16px;
+  box-shadow: var(--sheen), var(--lift-3);
+  transform-origin: top left;
+  animation: glass-pop var(--dur-2) var(--ease-out);
+}
+.pf-root .studio-pop.is-end { transform-origin: top right; }
+.pf-root .studio-menu-list button { border-radius: 10px; transition: background-color var(--dur-1) var(--ease-out); }
+
+.pf-root .deep-scrim, .pf-root .studio-sheet-wrap, .pf-root .pf-scrim {
+  background: rgba(14, 16, 22, .26);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: glass-fade var(--dur-3) var(--ease-out);
+}
+.pf-root .deep-dialog {
+  background: rgba(255, 255, 255, .84);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-edge);
+  border-radius: 22px;
+  box-shadow: var(--sheen), var(--lift-3);
+  animation: glass-dialog var(--dur-3) var(--ease-out);
+}
+.pf-root .studio-sheet {
+  background: rgba(255, 255, 255, .86);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  border-left: 1px solid var(--glass-edge);
+  box-shadow: var(--sheen), var(--lift-3);
+  animation: glass-sheet var(--dur-4) var(--ease-out);
+}
+.pf-root .edit-panel { animation: glass-panel var(--dur-3) var(--ease-out); }
+
+/* ---------- controls ---------- */
+
+.pf-root .btn, .pf-root .bar-btn, .pf-root .more-btn, .pf-root .rail-btn, .pf-root .chip-t, .pf-root .link-btn,
+.pf-root .ctx-sku, .pf-root .studio-q-btn, .pf-root .studio-rd-label, .pf-root .rb-tab, .pf-root .view-tabs button,
+.pf-root .seg-switch button, .pf-root .studio-side-tabs button, .pf-root .mk, .pf-root .studio-fix-how {
+  transition:
+    background-color var(--dur-1) var(--ease-out),
+    color var(--dur-1) var(--ease-out),
+    border-color var(--dur-1) var(--ease-out),
+    box-shadow var(--dur-2) var(--ease-out),
+    transform var(--dur-1) var(--ease-out),
+    opacity var(--dur-2) var(--ease-out);
+}
+.pf-root .btn:active:not(:disabled), .pf-root .bar-btn:active:not(:disabled), .pf-root .more-btn:active,
+.pf-root .rail-btn:active, .pf-root .chip-t:active, .pf-root .studio-q-btn:active, .pf-root .ctx-sku:active { transform: scale(.97); }
+.pf-root :is(button, a, [role="slider"], input, select, textarea):focus-visible { outline: none; box-shadow: var(--focus); }
+
+.pf-root .btn-primary {
+  background: linear-gradient(180deg, #ff6b46, #ee4d2d 62%, #e2401f);
+  border-color: transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .38), 0 8px 18px -8px rgba(238, 77, 45, .65), 0 1px 2px rgba(200, 56, 28, .4);
+}
+@media (hover: hover) {
+  .pf-root .btn-primary:hover:not(:disabled) { transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .42), 0 14px 26px -10px rgba(238, 77, 45, .75), 0 1px 2px rgba(200, 56, 28, .4); }
+  .pf-root .btn-secondary:hover:not(:disabled), .pf-root .bar-btn:hover:not(:disabled), .pf-root .more-btn:hover { background: rgba(255, 255, 255, .9); box-shadow: var(--sheen), var(--lift-1); }
+}
+.pf-root .btn-secondary, .pf-root .studio-upload {
+  background: rgba(255, 255, 255, .7);
+  border: 1px solid rgba(20, 22, 30, .12);
+  box-shadow: var(--sheen), 0 1px 2px rgba(16, 18, 24, .06);
+}
+.pf-root .bar-btn.btn-ghost, .pf-root .more-btn { border-radius: 10px; background: transparent; border-color: transparent; }
+
+/* Sliding indicators: one object travels between options (studio-page measures the selected option into
+   --ind-x / --ind-w); the selected option's own fill steps aside once the indicator is measured. */
+.pf-root :is(.view-tabs, .seg-switch, .studio-side-tabs)[data-ind] { position: relative; isolation: isolate; }
+.pf-root :is(.view-tabs, .seg-switch, .studio-side-tabs)[data-ind]::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+  width: var(--ind-w);
+  transform: translateX(var(--ind-x));
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: var(--sheen), 0 1px 2px rgba(16, 18, 24, .10), 0 4px 10px -4px rgba(16, 18, 24, .18);
+  transition: transform var(--dur-3) var(--ease-spring), width var(--dur-3) var(--ease-out);
+}
+.pf-root .studio-side-tabs[data-ind]::before { background: #17181c; box-shadow: 0 6px 14px -6px rgba(16, 18, 24, .45); }
+.pf-root :is(.view-tabs, .seg-switch)[data-ind] :is([aria-selected="true"], [aria-pressed="true"]) { background: transparent; box-shadow: none; color: var(--ink, #1b1c20); }
+.pf-root .studio-side-tabs[data-ind] [aria-selected="true"] { background: transparent; color: #fff; }
+.pf-root .view-tabs, .pf-root .seg-switch { background: rgba(20, 22, 30, .06); border-radius: 12px; padding: 3px; }
+/* .rb-tabs is sticky already, which positions its indicator; making it relative would drop its sticky offset */
+.pf-root .rb-tabs[data-ind]::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: var(--ind-w);
+  transform: translateX(var(--ind-x));
+  border-radius: 2px;
+  background: var(--ink, #1b1c20);
+  transition: transform var(--dur-3) var(--ease-spring), width var(--dur-3) var(--ease-out);
+}
+.pf-root .rb-tabs[data-ind] .rb-tab[aria-pressed="true"] { box-shadow: none; border-color: transparent; }
+
+/* switches travel, not jump */
+.pf-root .switch span { transition: transform var(--dur-2) var(--ease-spring), background-color var(--dur-2) var(--ease-out); }
+.pf-root .switch { transition: background-color var(--dur-2) var(--ease-out); }
+
+/* accordion carets turn; opened lists slide in */
+.pf-root .grp-toggle .caret, .pf-root .grp-head .caret { transition: transform var(--dur-2) var(--ease-out); }
+.pf-root .grp-list, .pf-root .studio-fix-body, .pf-root .studio-step-io { animation: glass-expand var(--dur-3) var(--ease-out); }
+
+/* tab panels and changed content arrive, they do not blink */
+.pf-root .studio-side-panel, .pf-root .q-list, .pf-root .studio-flow, .pf-root .studio-start { animation: glass-rise var(--dur-3) var(--ease-out); }
+.pf-root .q-list > li:nth-child(-n + 12) { animation: glass-rise var(--dur-3) var(--ease-out) both; }
+.pf-root .q-list > li:nth-child(2) { animation-delay: 20ms; }
+.pf-root .q-list > li:nth-child(3) { animation-delay: 40ms; }
+.pf-root .q-list > li:nth-child(4) { animation-delay: 60ms; }
+.pf-root .q-list > li:nth-child(5) { animation-delay: 80ms; }
+.pf-root .q-list > li:nth-child(6) { animation-delay: 100ms; }
+.pf-root .q-list > li:nth-child(n + 7) { animation-delay: 120ms; }
+
+/* timeline markers pop into place; the playhead glides */
+.pf-root .mk .mk-shape { animation: glass-pop-in var(--dur-3) var(--ease-spring) both; }
+@media (hover: hover) { .pf-root .mk:hover .mk-shape { transform: scale(1.18); } }
+.pf-root .mk .mk-shape { transition: transform var(--dur-2) var(--ease-spring); }
+.pf-root .tl-playhead { transition: left 250ms linear; }
+
+/* radar: the shape and dots move to new values (radar.jsx tweens the numbers) */
+.pf-root .studio-rd-shape { transition: opacity var(--dur-3) var(--ease-out); }
+.pf-root .studio-rd-label { border-radius: 10px; }
+@media (hover: hover) { .pf-root .studio-rd-label:hover { background: rgba(255, 255, 255, .7); box-shadow: var(--lift-1); } }
+
+/* fresh result: the score block glows once */
+.pf-root.studio-root[data-fresh] .studio-right .score-block { animation: glass-settle 900ms var(--ease-out); }
+
+/* ---------- live analysis ---------- */
+
+/* thin progress line under the app bar while a run streams */
+.pf-root .bar-progress {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+  height: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgba(238, 77, 45, .12);
+}
+.pf-root .bar-progress > span {
+  display: block;
+  height: 100%;
+  width: calc(var(--p, .04) * 100%);
+  border-radius: inherit;
+  background: linear-gradient(90deg, #ff9953, #ee4d2d, #ff6b8b);
+  box-shadow: 0 0 12px rgba(238, 77, 45, .6);
+  transition: width var(--dur-4) var(--ease-out);
+}
+.pf-root .bar-progress > span::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .7), transparent);
+  animation: glass-shimmer 1.4s linear infinite;
+}
+
+/* the stage behind the phone hosts the WebGL field (stage-fx.jsx); it fades in with a run */
+.pf-root .studio-mid { position: relative; }
+.pf-root .studio-mid > .mid { position: relative; z-index: 1; }
+.pf-root .stage-fx { position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0; transition: opacity 900ms var(--ease-out); }
+.pf-root .stage-fx.is-on { opacity: 1; }
+
+/* scanning the video: a light beam sweeps the frame and a fine grid reads it */
+.pf-root .studio-mid.is-running .ip-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, transparent 0%, rgba(255, 128, 92, 0) 44%, rgba(255, 150, 110, .55) 50%, rgba(255, 214, 196, .9) 50.4%, transparent 51%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, .05) 0 1px, transparent 1px 14px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, .05) 0 1px, transparent 1px 14px);
+  background-size: 100% 220%, auto, auto;
+  mix-blend-mode: screen;
+  animation: glass-scan 2.2s var(--ease-in-out, ease-in-out) infinite;
+}
+.pf-root .studio-mid.is-running .iphone { animation: glass-breathe 2.2s ease-in-out infinite; }
+
+/* agent steps: the running one shimmers, finished ones check in */
+.pf-root .studio-step { animation: glass-rise var(--dur-3) var(--ease-out) both; }
+.pf-root .studio-step.is-running .studio-step-head { background: linear-gradient(90deg, rgba(238, 77, 45, .06), rgba(238, 77, 45, .14), rgba(238, 77, 45, .06)); background-size: 200% 100%; animation: glass-shimmer-bg 1.6s linear infinite; border-radius: 10px; }
+.pf-root .studio-step.is-ok .stage-ic svg, .pf-root .studio-step.is-done .stage-ic svg { animation: glass-pop-in var(--dur-3) var(--ease-spring) both; }
+
+/* sound toggle in the app bar */
+.pf-root .bar-sound[aria-pressed="false"] { opacity: .55; }
+
+/* ---------- keyframes ---------- */
+
+@keyframes glass-pop { from { opacity: 0; transform: translateY(-4px) scale(.97); } }
+@keyframes glass-fade { from { opacity: 0; } }
+@keyframes glass-dialog { from { opacity: 0; transform: translateY(12px) scale(.98); } }
+@keyframes glass-sheet { from { opacity: 0; transform: translateX(28px); } }
+@keyframes glass-panel { from { opacity: 0; transform: translateX(-10px); } }
+@keyframes glass-expand { from { opacity: 0; transform: translateY(-6px); } }
+@keyframes glass-rise { from { opacity: 0; transform: translateY(6px); } }
+@keyframes glass-pop-in { from { opacity: 0; transform: scale(.4); } }
+@keyframes glass-settle { 0% { box-shadow: 0 0 0 0 rgba(238, 77, 45, .0); } 30% { box-shadow: 0 0 0 6px rgba(238, 77, 45, .18), 0 0 36px rgba(238, 77, 45, .25); } 100% { box-shadow: 0 0 0 0 rgba(238, 77, 45, 0); } }
+@keyframes glass-shimmer { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+@keyframes glass-shimmer-bg { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@keyframes glass-scan { 0% { background-position: 0 -120%, 0 0, 0 0; } 100% { background-position: 0 120%, 0 0, 0 0; } }
+@keyframes glass-breathe { 50% { filter: drop-shadow(0 0 22px rgba(238, 77, 45, .35)); } }
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 1023px) {
+  .pf-root.studio-root > .hdr { margin: 8px 8px 0; border-radius: 16px; }
+  .pf-root .studio-main > .analysis { padding: 8px; gap: 8px; }
+}
+
+/* ---------- reduced motion: changes stay, movement goes ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .pf-root.studio-root *, .pf-root.studio-root *::before, .pf-root.studio-root *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+  .pf-root .studio-mid.is-running .ip-video::after { display: none; }
+}
+
+/* brand: the generated glass mark replaces the old CSS square */
+.pf-root .app-bar .brand::before { display: none; }
+.pf-root .app-bar .brand { gap: 10px; }
+.pf-root .brand-mark { width: 26px; height: 26px; flex: none; filter: drop-shadow(0 4px 10px rgba(238, 77, 45, .35)); }
+
+/* live status in the app bar truncates instead of widening the bar (it pushed the score column off screen) */
+.pf-root .app-bar .bar-status { flex: 0 1 auto; min-width: 0; max-width: 170px; overflow: hidden; }
+.pf-root .app-bar .bar-status > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 1279px) { .pf-root .app-bar .bar-status { max-width: 44px; } }
+@media (max-width: 1599px) { .pf-root .app-bar:has(.bar-status) .bar-lbl.is-wide { display: none; } .pf-root .app-bar:has(.bar-status) .bar-btn.studio-upload { width: 36px; padding: 0; justify-content: center; } }
+
+/* grid items default to their min-content width; the stage must be allowed to shrink with the panel gaps */
+.pf-root .analysis > .col { min-width: 0; }
+/* narrow desktop: the brand keeps its mark, the word gives its room to the bar's actions */
+@media (max-width: 1100px) { .pf-root .app-bar .brand { font-size: 0; gap: 0; } }
+/* the root column never grows to a child's min-content (the app bar would otherwise widen the whole page) */
+.pf-root.studio-root { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 1366px) { .pf-root .app-bar { gap: 8px; } }
+/* the run summary at the column foot reads over the list: denser frost there */
+.pf-root .studio-left .col-foot { background: rgba(250, 250, 252, .92); }
+@media (max-width: 760px) {
+  .pf-root .app-bar .studio-menu:has(.studio-ctx) { flex-basis: 140px; }
+  .pf-root .app-bar .bar-btn, .pf-root .app-bar .more-btn { width: 32px; }
+  .pf-root .app-bar { gap: 6px; }
+}
+@media (max-width: 760px) {
+  /* tab labels stay on one line; the platform table scrolls sideways instead of breaking "Shopee" mid-word */
+  .pf-root .studio-side-tabs button { white-space: nowrap; padding-inline: 10px; }
+  .pf-root .studio-platforms .heat-wrap { overflow-x: auto; }
+  .pf-root .studio-heat th .studio-heat-pf { word-break: keep-all; overflow-wrap: normal; white-space: nowrap; }
+}

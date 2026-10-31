@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 
 import { groupLabel, levelPlain, QUESTION_PLAIN } from '../lib/labels'
+import { useTweenedValues } from './motion'
 import { answerLevels, groupOfQuestion, keyAxes, radarPoint } from './studio-model'
 
 const RINGS = [0.25, 0.5, 0.75, 1]
@@ -71,13 +72,15 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
   const axes = keyAxes(questions, revealed)
   const n = axes.length
   const shown = axes.filter((a) => a.value != null)
+  const vals = useTweenedValues(axes.map((a) => a.value))
   if (n < 3) return null
 
   return (
     <section className="radar-wrap studio-radar" aria-label="Radar câu hỏi Decisions">
       <div className="studio-radar-head">
-        <p className="tiny">{answered}/{total} câu chấm điểm đã trả lời</p>
-        <button type="button" className="link-btn tiny" onClick={onOpenAll}>Xem đủ {total + otherCount} câu</button>
+        {/* the count only matters while answers are missing */}
+        <p className="tiny">{answered < total ? `${answered}/${total} câu chấm điểm đã trả lời` : 'Câu hỏi chấm điểm'}</p>
+        <button type="button" className="link-btn tiny" onClick={onOpenAll}>Xem {total + otherCount} câu</button>
       </div>
       <div className="studio-radar-box">
         <svg className="radar" viewBox={`${VIEW.x} ${VIEW.y} ${VIEW.w} ${VIEW.h}`} role="img" aria-label={`Radar ${shown.length}/${n} trục có trả lời`}>
@@ -87,10 +90,10 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
             const [x, y] = radarPoint(i, n, 1, CENTER)
             return <line key={a.id} className={`rd-axis${a.id === selectedId ? ' is-sel' : ''}`} x1={CENTER.cx} y1={CENTER.cy} x2={x} y2={y} />
           })}
-          {shown.length > 0 && <polygon className="rd-shape studio-rd-shape" points={pointsOf(n, axes.map((a) => (a.value == null ? 0 : a.value / 100)))} />}
+          {shown.length > 0 && <polygon className="rd-shape studio-rd-shape" points={pointsOf(n, axes.map((a, i) => (vals[i] == null ? 0 : vals[i] / 100)))} />}
           {axes.map((a, i) => {
-            if (a.value == null) return null
-            const [x, y] = radarPoint(i, n, a.value / 100, CENTER)
+            if (a.value == null || vals[i] == null) return null
+            const [x, y] = radarPoint(i, n, vals[i] / 100, CENTER)
             return <circle key={a.id} className="rd-dot studio-rd-dot" cx={x} cy={y} r="4" />
           })}
         </svg>
@@ -129,7 +132,7 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
       <p className="legend studio-radar-legend">
         <span><i className="lg-you" />Video này</span>
         {threshold != null && <span><i className="lg-thr" />Ngưỡng {threshold}</span>}
-        <span><i className="lg-miss" />– chưa chấm, không tính 0</span>
+        {shown.length < n && <span><i className="lg-miss" />– chưa chấm, không tính 0</span>}
       </p>
     </section>
   )

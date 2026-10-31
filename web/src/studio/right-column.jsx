@@ -1,6 +1,7 @@
 import { CLAIM_LABEL, FIX_KIND_LABELS, platformLabel, rulePlain } from '../lib/labels'
 import { fmtTime } from '../lib/timeline'
 import { Icon } from './icon'
+import { useCountUp } from './motion'
 import { citeChips } from './insight-cites'
 import { PlatformTable } from './platform-table'
 import { Radar } from './radar'
@@ -22,12 +23,13 @@ const num = (v) => (v == null ? '–' : Number(v).toLocaleString('vi-VN'))
 function ScoreHead({ overall, provisional, gate, onPolicy }) {
   const estimate = overall?.score == null && provisional != null
   const shown = overall?.score ?? provisional
+  const counted = useCountUp(shown)
   const rules = groupPolicyByRule(gate?.blockers).length
   const review = gate?.status === 'review'
   return (
     <div className="studio-score">
       <span className="score-big" aria-label={overall?.score != null ? `Điểm tổng ${Math.round(overall.score)} trên 100` : 'Chưa có điểm tổng'}>
-        <span className={`num${estimate ? ' studio-provisional' : ''}`}>{shown == null ? '—' : Math.round(shown)}</span>
+        <span className={`num${estimate ? ' studio-provisional' : ''}`}>{counted == null ? '—' : Math.round(counted)}</span>
         <span className="den">/100</span>
       </span>
       <span className="studio-score-meta">

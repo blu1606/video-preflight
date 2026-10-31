@@ -37,12 +37,12 @@ function Menu({ label, className, buttonContent, children, align = 'start' }) {
  * mockup-v2's single app bar: brand, shop picker (with its profile), the video and SKU under test, the two
  * views, run status, saved runs and the analysis options.
  */
-export function AppBar({ shops, shop, onShop, onShopProfile, videos, video, sku, skus = [], onSelectVideo, onUpload, uploading, onOpenAtlas, tab, onTab, canFix, running, runLabel, history, selectedRunId, onRun, options, onOptions, extractionState }) {
+export function AppBar({ shops, shop, onShop, onShopProfile, videos, video, sku, skus = [], onSelectVideo, onUpload, uploading, onOpenAtlas, tab, onTab, canFix, running, runLabel, history, selectedRunId, onRun, options, onOptions, extractionState, progress = null, sound = null }) {
   const fileRef = useRef(null)
   return (
     <header className="hdr" aria-label="Thanh điều hướng">
       <div className="nav-row app-bar">
-        <Link className="brand" to="/" aria-label="Preflight">Preflight</Link>
+        <Link className="brand" to="/" aria-label="Preflight"><img className="brand-mark" src="/brand/preflight-mark.svg" alt="" width="26" height="26" />Preflight</Link>
         <span className="bar-sep" aria-hidden="true" />
 
         <Menu
@@ -146,12 +146,22 @@ export function AppBar({ shops, shop, onShop, onShopProfile, videos, video, sku,
             </ul>
           )}
         </Menu>
+        {sound && (
+          <button type="button" className="btn btn-sm btn-ghost bar-btn bar-sound" aria-pressed={sound.on} onClick={sound.toggle} aria-label={sound.on ? 'Tắt âm thanh khi phân tích' : 'Bật âm thanh khi phân tích'} title={sound.on ? 'Âm thanh: bật' : 'Âm thanh: tắt'}>
+            <Icon name={sound.on ? 'volume-high' : 'volume-mute'} />
+          </button>
+        )}
         <Menu label="Tuỳ chọn phân tích" className="more-btn" buttonContent={<Icon name="setting-4" />} align="end">
           <div className="studio-options">
             <AnalysisOptionsPanel options={options} onChange={onOptions} extractionState={extractionState} />
           </div>
         </Menu>
       </div>
+      {progress != null && (
+        <div className="bar-progress" role="progressbar" aria-label="Tiến độ phân tích" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress * 100)}>
+          <span style={{ '--p': progress }} />
+        </div>
+      )}
     </header>
   )
 }
