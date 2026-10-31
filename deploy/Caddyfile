@@ -1,0 +1,28 @@
+{$SITE_ADDRESS} {
+    encode zstd gzip
+
+    # The application's shop login is a demo flow. Protect every route at the edge.
+    basic_auth {
+        {$DEMO_USER} {$DEMO_PASSWORD_HASH}
+    }
+    request_body {
+        max_size 250MB
+    }
+
+    handle_path /api/* {
+        reverse_proxy db:3101
+    }
+    handle /py/* {
+        reverse_proxy api:8100 {
+            flush_interval -1
+        }
+    }
+    handle /media/* {
+        reverse_proxy api:8100
+    }
+    handle {
+        root * /srv
+        try_files {path} /index.html
+        file_server
+    }
+}

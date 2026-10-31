@@ -1,0 +1,9 @@
+region              = "ap-southeast-1"
+instance_type       = "m7i.xlarge"
+root_volume_gib     = 100
+ssh_public_key_path = "~/.ssh/video-preflight-deploy.pub"
+
+# Required choice: your fixed runner/admin IPs, or 0.0.0.0/0 for ordinary
+# GitHub hosted runners with changing IPs. SSH remains public-key-only.
+# With only your home IP here, GitHub hosted CD cannot reach the server.
+ssh_allowed_cidrs = ["REPLACE_WITH_ALLOWED_CIDR"]

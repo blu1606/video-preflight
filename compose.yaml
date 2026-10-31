@@ -1,0 +1,83 @@
+name: video-preflight
+
+x-runtime: &runtime
+  restart: unless-stopped
+  init: true
+  logging:
+    driver: json-file
+    options:
+      max-size: 10m
+      max-file: "3"
+
+services:
+  db:
+    <<: *runtime
+    build:
+      context: .
+      target: database
+    volumes:
+      - database:/var/lib/preflight
+    mem_limit: 1g
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3101/shops?_limit=1').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 15s
+
+  api:
+    <<: *runtime
+    build:
+      context: .
+      target: api
+    env_file:
+      - ${APP_ENV_FILE:-./deploy/.env}
+    environment:
+      LAB_DB_URL: http://db:3101
+    volumes:
+      - media:/app/data
+      - artifacts:/app/output
+    mem_limit: 10g
+    cpus: 3
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8100/py/health', timeout=3); urllib.request.urlopen('http://db:3101/shops?_limit=1', timeout=3)"]
+      interval: 10s
+      timeout: 8s
+      retries: 6
+      start_period: 30s
+
+  web:
+    <<: *runtime
+    build:
+      context: .
+      target: web
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:?Set SITE_ADDRESS to your domain}
+      DEMO_USER: ${DEMO_USER:?Set DEMO_USER}
+      DEMO_PASSWORD_HASH: ${DEMO_PASSWORD_HASH:?Set a Caddy password hash}
+    ports:
+      - "${HTTP_PORT:-80}:80"
+      - "${HTTPS_PORT:-443}:443"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+    mem_limit: 512m
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD-SHELL, "wget -qO- http://127.0.0.1:2019/config/ >/dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 15s
+
+volumes:
+  database:
+  media:
+  artifacts:
+  caddy_data:
+  caddy_config:
