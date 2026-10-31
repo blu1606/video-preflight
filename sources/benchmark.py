@@ -45,7 +45,7 @@ BENCH_CSV = BENCH_DIR / "clipcat_video_benchmark_24.csv"
 CANDIDATES_CSV = BENCH_DIR / "public_product_candidates.csv"
 SYNTHETIC_CSV = BENCH_DIR / "synthetic_product_listings.csv"  # MOCK, from build_synthetic_listings.py
 ALIASES = BENCH_DIR / "video_files.json"
-DATA_DIR = DEMO.parent / "data"
+DATA_DIR = DEMO / "data"
 VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv"}
 NUMERIC = ["views_reported", "sales_reported", "gmv_usd_reported", "likes_reported", "shares_reported",
            "saves_reported"]

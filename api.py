@@ -37,7 +37,7 @@ from core.overall import GROUP_WEIGHTS, THRESHOLDS
 from core.trace import Trace, tokens_for
 from sources import pacing
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DATA_DIR = Path(__file__).resolve().parent / "data"
 VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv"}
 SSE_HEARTBEAT_S = 15
 MAX_CAPTION_CHARS = 2200  # TikTok's caption limit
