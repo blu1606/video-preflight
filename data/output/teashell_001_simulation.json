@@ -1,0 +1,1996 @@
+{
+  "video_id": "teashell_001",
+  "mode": "simulation",
+  "rubric": "v1",
+  "features": {
+    "video.duration_sec": {
+      "value": 38.7,
+      "status": "REAL",
+      "source": "opencv",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.transcript": {
+      "value": "Tao mua về tắm xong trắng, mẹ tao với mấy bà hàng xóm không nhận ra luôn Hehehe Mày ơi, tao xài trắng quá, giờ mẹ tao tưởng tao mới đi tắm trắng Cần đánh giá thiệt à? Trắng thiệt á bà? Mới dùng 3 lần mà trắng cỡ này thì mua quài luôn quá Ê, tao xài rồi, tao thử có 1 lần mà trắng thật nha mấy ní Đó, anh nói mà mấy vợ đâu có tin Tắm nguyên cục xà bông Niacinamide này mà da không nhìn sáng hơn mới là lạ đó Dạo này anh cứ thấy mấy vợ múc 1 lần 3-4 cục mê cỡ đó luôn Trong này có Niacinamide, Alpha Arbutin với Tranexamic Acid Hỗ trợ cải thiện sắc tố, giúp da nhìn sáng và đều màu hơn Tắm xong da sạch, mềm mịn, thích lắm Kết hợp che trắng cẩn thận nữa thì da nhìn sáng mịn như bạch tuyết lúc nào không hay",
+      "status": "REAL",
+      "source": "whisper",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.product_name": {
+      "value": "TeaShell Niacinamide Skin Brightening Soap",
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.product_category": {
+      "value": "Body cleansing soap",
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.hook_type": {
+      "value": "result_first",
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [
+        "00:00-00:03"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.hook_verbal": {
+      "value": "Tao mua về tắm xong trắng, mẹ tao với mấy bà hàng xóm không nhận ra luôn",
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [
+        "00:00-00:03"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.hook_strength": {
+      "value": 8.5,
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [
+        "00:00-00:03"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.demo_present": {
+      "value": true,
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [
+        "00:05-00:36"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.before_after_shown": {
+      "value": true,
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [
+        "00:05-00:36"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.sensory_details": {
+      "value": [
+        "White soap bar shown close-up",
+        "Lathers into visible white foam",
+        "Soap is rubbed over wet hands and an arm",
+        "Rinsed skin is shown afterward"
+      ],
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [
+        "00:05-00:36"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.clarity_score": {
+      "value": 8.0,
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [
+        "00:05-00:36"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.key_claims": {
+      "value": [
+        "“Mới dùng 3 lần mà trắng cỡ này”",
+        "“tao thử có 1 lần mà trắng thật nha mấy ní”",
+        "Product contains Niacinamide, Alpha Arbutin, and Tranexamic Acid",
+        "The ingredients are said to support improvement in pigmentation and help skin look brighter and more even-toned",
+        "Skin is described as clean and soft after bathing"
+      ],
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.authenticity_level": {
+      "value": "medium",
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.has_cta": {
+      "value": false,
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.cta_urgency": {
+      "value": false,
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.policy_absolute_claims": {
+      "value": [
+        {
+          "text": "Tao mua về tắm xong trắng, mẹ tao với mấy bà hàng xóm không nhận ra luôn",
+          "timestamp_sec": 0.0,
+          "channel": "spoken"
+        },
+        {
+          "text": "tao xài trắng quá, giờ mẹ tao tưởng tao mới đi tắm trắng",
+          "timestamp_sec": 3.0,
+          "channel": "spoken"
+        },
+        {
+          "text": "Mới dùng 3 lần mà trắng cỡ này thì mua quài luôn quá",
+          "timestamp_sec": 10.0,
+          "channel": "spoken"
+        },
+        {
+          "text": "Ê, tao xài rồi, tao thử có 1 lần mà trắng thật nha mấy ní",
+          "timestamp_sec": 13.0,
+          "channel": "spoken"
+        },
+        {
+          "text": "Tắm nguyên cục xà bông Niacinamide này mà da không nhìn sáng hơn mới là lạ đó",
+          "timestamp_sec": 16.0,
+          "channel": "spoken"
+        },
+        {
+          "text": "Kết hợp che trắng cẩn thận nữa thì da nhìn sáng mịn như bạch tuyết lúc nào không hay",
+          "timestamp_sec": 36.0,
+          "channel": "spoken"
+        }
+      ],
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.policy_before_after": {
+      "value": {
+        "present": true,
+        "product_effect_comparison": true,
+        "timestamp_sec": 30.0
+      },
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.policy_ui_overlays": {
+      "value": [],
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.policy_realistic_ai_media": {
+      "value": {
+        "present": false,
+        "confidence": "high"
+      },
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.storytelling": {
+      "value": 7.0,
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [
+        "arc_type: testimonial",
+        "reason: The video moves from dramatic testimonials to a soap demonstration, ingredient explanation, and a visual brightness comparison, but ends without a clear purchase CTA (0–38s).",
+        "00:00 hook: A result-first claim is paired with a close-up of a pale-looking hand.",
+        "00:00 problem: The implied concern is wanting skin to look brighter and more even-toned.",
+        "00:05 solution: The soap is used on wet hands and produces visible foam.",
+        "00:10 proof: Comment-style testimonials claim visible brightening after one or three uses.",
+        "00:16 solution: The product packaging and named ingredients are shown.",
+        "00:30 proof: A washed arm is presented as looking brighter and more even-toned."
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.emotion": {
+      "value": 7.0,
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [
+        "dominant_emotion: Surprise and aspiration",
+        "reason: The dramatic claims and visible brightness comparison aim to surprise viewers and appeal to the desire for brighter-looking skin.",
+        "00:00 surprise: The opening claim says family and neighbors did not recognize the creator after bathing.",
+        "00:10 aspiration: Testimonials about brightening after just a few uses suggest a desired skin result.",
+        "00:30 surprise: The creator shows a bright-looking arm after washing and reacts to the appearance."
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.shareability": {
+      "value": 6.0,
+      "status": "REAL",
+      "source": "video_vlm",
+      "evidence": [
+        "reason: The bold one-use and three-use claims could prompt reactions or discussion, while the soap demonstration and ingredient list offer some practical viewing value.",
+        "00:00 surprising: The claim that neighbors did not recognize the creator is an attention-grabbing conversation starter.",
+        "00:10 other: Specific claims about results after one or three uses could invite viewers to debate or share their own experiences.",
+        "00:16 useful_tip: The ingredient names and soap-lather demonstration provide product information viewers may pass along."
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.pacing_avg_shot_sec": {
+      "value": 4.3,
+      "status": "REAL",
+      "source": "opencv",
+      "evidence": [
+        "cuts at 00:04, 00:15, 00:24, 00:26, 00:28, 00:32, 00:36, 00:37",
+        "HSV-histogram cut threshold 0.5"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.pacing_shot_count": {
+      "value": 9,
+      "status": "REAL",
+      "source": "opencv",
+      "evidence": [
+        "cuts at 00:04, 00:15, 00:24, 00:26, 00:28, 00:32, 00:36, 00:37",
+        "HSV-histogram cut threshold 0.5"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.pacing_cuts_per_10s": {
+      "value": 2.07,
+      "status": "REAL",
+      "source": "opencv",
+      "evidence": [
+        "cuts at 00:04, 00:15, 00:24, 00:26, 00:28, 00:32, 00:36, 00:37",
+        "HSV-histogram cut threshold 0.5"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.pacing_cut_timestamps": {
+      "value": [
+        4.42,
+        15.17,
+        24.2,
+        26.11,
+        28.92,
+        32.84,
+        36.16,
+        37.36
+      ],
+      "status": "REAL",
+      "source": "opencv",
+      "evidence": [
+        "cuts at 00:04, 00:15, 00:24, 00:26, 00:28, 00:32, 00:36, 00:37",
+        "HSV-histogram cut threshold 0.5"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.problem": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "problem: not in cached extraction; re-extract with the current prompt"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.value_propositions": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "value_propositions: not in cached extraction; re-extract with the current prompt"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.on_screen_text": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "on_screen_text: not in cached extraction; re-extract with the current prompt"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.offer": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "offer: not in cached extraction; re-extract with the current prompt"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.product_visibility": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "product_visibility: not in cached extraction; re-extract with the current prompt"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.trust_signals": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "trust_signals: not in cached extraction; re-extract with the current prompt"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.product_mentions": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "product_mentions: not in cached extraction; re-extract with the current prompt"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.label": {
+      "value": "TeaShell soap",
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.category": {
+      "value": "beauty",
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.url": {
+      "value": "https://clipcat.ai/en/tools/ai-tiktok-videos-prompt/vn-beauty-467796",
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.views": {
+      "value": 2600000,
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.sales": {
+      "value": 375,
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.gmv_usd": {
+      "value": 1700.0,
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.sales_per_1k_views": {
+      "value": 0.1442,
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.gmv_usd_per_1k_views": {
+      "value": 0.6538,
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.engagement_rate": {
+      "value": 0.0085,
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.video_type": {
+      "value": "Real Review",
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.hook_type": {
+      "value": "result_first",
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.review_flag": {
+      "value": "UNVERIFIED_PLATFORM_METRIC",
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.aov_usd": {
+      "value": 4.53,
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.aov_check": {
+      "value": "IN_BAND",
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "bench.seed_video_id": {
+      "value": "SHOP001-VID01",
+      "status": "REAL",
+      "source": "clipcat (unverified)",
+      "evidence": [
+        "UNVERIFIED_PLATFORM_METRIC"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "listing.price_vnd": {
+      "value": 46550,
+      "status": "REAL",
+      "source": "shopee_search_snippet",
+      "evidence": [
+        "https://shopee.vn/teashell.vn"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "listing.rating": {
+      "value": 4.7,
+      "status": "REAL",
+      "source": "shopee_search_snippet",
+      "evidence": [
+        "https://shopee.vn/teashell.vn"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "listing.sold_displayed": {
+      "value": "7k+",
+      "status": "REAL",
+      "source": "shopee_search_snippet",
+      "evidence": [
+        "https://shopee.vn/teashell.vn"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "listing.attributes": {
+      "value": {
+        "dung_tich": "100g",
+        "xuat_xu": "Việt Nam",
+        "han_su_dung": "36 tháng"
+      },
+      "status": "MOCK",
+      "source": "shopee_search_snippet",
+      "evidence": [
+        "https://shopee.vn/teashell.vn"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "listing.image_count": {
+      "value": 7,
+      "status": "MOCK",
+      "source": "shopee_search_snippet",
+      "evidence": [
+        "https://shopee.vn/teashell.vn"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "listing.review_count": {
+      "value": 279,
+      "status": "MOCK",
+      "source": "shopee_search_snippet",
+      "evidence": [
+        "https://shopee.vn/teashell.vn"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "listing.shop_name": {
+      "value": "Teashell.vn",
+      "status": "REAL",
+      "source": "shopee_search_snippet",
+      "evidence": [
+        "https://shopee.vn/teashell.vn"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "listing.title": {
+      "value": "TeaShell Niacinamide Alpha-Arbutin Soap 100g",
+      "status": "REAL",
+      "source": "shopee_search_snippet",
+      "evidence": [
+        "https://shopee.vn/teashell.vn"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "market.comparable_listings": {
+      "value": [
+        {
+          "sku_title": "TeaShell Niacinamide Soap 100g sensitive skin",
+          "price_vnd": 78320,
+          "rating": 4.9,
+          "match_type": "same_product_candidate",
+          "source_status": "REAL"
+        },
+        {
+          "sku_title": "TeaShell Serum+Soap kit",
+          "price_vnd": 46550,
+          "rating": 4.8,
+          "match_type": "bundle_or_related",
+          "source_status": "REAL"
+        }
+      ],
+      "status": "REAL",
+      "source": "shopee_listings",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.sku_id": {
+      "value": "mock_teashell_sku",
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.title": {
+      "value": "TeaShell Niacinamide Skin Brightening Soap 100g",
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.brand": {
+      "value": "TeaShell",
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.category": {
+      "value": "body_care/soap",
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.price_vnd": {
+      "value": 89000,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.list_price_vnd": {
+      "value": 119000,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.has_voucher": {
+      "value": true,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.key_ingredients": {
+      "value": [
+        "Niacinamide",
+        "Alpha Arbutin",
+        "Tranexamic Acid"
+      ],
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.rating": {
+      "value": 4.6,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.review_count": {
+      "value": 1240,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.in_stock": {
+      "value": true,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.shipping_days": {
+      "value": 3,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.has_product_link": {
+      "value": true,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.shop_rating": {
+      "value": 4.8,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.shop_on_time_rate": {
+      "value": 0.95,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.commission_rate": {
+      "value": 0.12,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/sku.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "sku.unit_margin_vnd": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "null in fixture:teashell_001/sku.json"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "market.competitor_prices_vnd": {
+      "value": [
+        65000,
+        79000,
+        95000,
+        120000,
+        149000
+      ],
+      "status": "MOCK",
+      "source": "fixture:teashell_001/market.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "market.demand_index": {
+      "value": 68,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/market.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "market.trend_score": {
+      "value": 55,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/market.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "market.similar_video_count": {
+      "value": 340,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/market.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "market.review_positive_ratio": {
+      "value": 0.82,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/market.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "market.top_complaints": {
+      "value": [
+        "mùi hơi nồng",
+        "nhanh hết",
+        "giao hàng chậm"
+      ],
+      "status": "MOCK",
+      "source": "fixture:teashell_001/market.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "perf.views": {
+      "value": 120000,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/performance.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "perf.avg_watch_time_sec": {
+      "value": 14.2,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/performance.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "perf.completion_rate": {
+      "value": 0.28,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/performance.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "perf.product_ctr": {
+      "value": 0.018,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/performance.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "perf.click_to_order_cvr": {
+      "value": 0.045,
+      "status": "MOCK",
+      "source": "fixture:teashell_001/performance.json",
+      "evidence": [],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "perf.actual_gmv_vnd": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "null in fixture:teashell_001/performance.json"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "video.claims_sku_match": {
+      "value": 50.0,
+      "status": "INFERRED",
+      "source": "llm_claims:gpt-6-luna",
+      "evidence": [
+        "not_in_listing: “Mới dùng 3 lần mà trắng cỡ này”",
+        "not_in_listing: “tao thử có 1 lần mà trắng thật nha mấy ní”",
+        "not_in_listing: Product contains Niacinamide, Alpha Arbutin, and Tranexamic Acid",
+        "not_in_listing: The ingredients are said to support improvement in pigmentation and help skin look brighter and more even-toned",
+        "not_in_listing: Skin is described as clean and soft after bathing"
+      ],
+      "input_sources": [
+        "video.key_claims",
+        "sku.title"
+      ],
+      "mock_dependency": true
+    },
+    "policy.score": {
+      "value": 40.0,
+      "status": "INFERRED",
+      "source": "policy_baseline_v0.1",
+      "evidence": [],
+      "input_sources": [
+        "bench.category",
+        "video.key_claims",
+        "video.policy_absolute_claims",
+        "video.policy_before_after",
+        "video.policy_realistic_ai_media",
+        "video.policy_ui_overlays"
+      ],
+      "mock_dependency": false
+    },
+    "policy.findings": {
+      "value": {
+        "baseline_version": "0.1",
+        "targets": {
+          "tiktok_shop_video": {
+            "score": 40.0,
+            "verdict": "needs_review",
+            "findings": [
+              {
+                "rule_id": "TTS-001",
+                "target": "tiktok_shop_video",
+                "outcome": "unknown",
+                "severity": "critical",
+                "summary": "video promotes a product that is prohibited or unsupported",
+                "counted": true,
+                "evidence": [
+                  "no detector yet; needs sku.category, video.promoted_product"
+                ],
+                "inputs": [],
+                "mock_dependency": false,
+                "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=6837773789480706&lang=en",
+                "verification_status": "official_source_reviewed"
+              },
+              {
+                "rule_id": "TTS-002",
+                "target": "tiktok_shop_video",
+                "outcome": "needs_review",
+                "severity": "high",
+                "summary": "product benefits or claims not supported by product information or evidence",
+                "counted": true,
+                "evidence": [
+                  "5 product claims, no supporting documents on file: “Mới dùng 3 lần mà trắng cỡ này”"
+                ],
+                "inputs": [
+                  "video.key_claims"
+                ],
+                "mock_dependency": false,
+                "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=6837773789480706&lang=en",
+                "verification_status": "official_source_reviewed"
+              },
+              {
+                "rule_id": "TTS-003",
+                "target": "tiktok_shop_video",
+                "outcome": "needs_review",
+                "severity": "high",
+                "summary": "beauty/cosmetic product lacks documented approval or required labelling",
+                "counted": true,
+                "evidence": [
+                  "category 'beauty' needs a cosmetic notification (phiếu công bố), none on file"
+                ],
+                "inputs": [
+                  "bench.category"
+                ],
+                "mock_dependency": false,
+                "source_url": "https://seller-vn.tiktok.com/university/essay?identity=1&knowledge_id=7179954358388497&lang=vi-VN&role=1",
+                "verification_status": "official_source_reviewed"
+              },
+              {
+                "rule_id": "TTC-002",
+                "target": "tiktok_shop_video",
+                "outcome": "unknown",
+                "severity": "high",
+                "summary": "commercial promotion without platform disclosure setting",
+                "counted": true,
+                "evidence": [
+                  "post.is_commercial missing"
+                ],
+                "inputs": [],
+                "mock_dependency": false,
+                "source_url": "https://ads-useast2a.tiktok.com/resources/help/article/how-to-turn-on-the-commercial-content-disclosure-setting-in-tiktok?lang=en",
+                "verification_status": "official_source_reviewed"
+              }
+            ]
+          },
+          "tiktok_ads": {
+            "score": 40.0,
+            "verdict": "needs_review",
+            "findings": [
+              {
+                "rule_id": "TTA-001",
+                "target": "tiktok_ads",
+                "outcome": "needs_review",
+                "severity": "high",
+                "summary": "ad promises exaggerated or absolute results",
+                "counted": true,
+                "evidence": [
+                  "00:00 spoken: «Tao mua về tắm xong trắng, mẹ tao với mấy bà hàng xóm không nhận ra luôn»",
+                  "00:03 spoken: «tao xài trắng quá, giờ mẹ tao tưởng tao mới đi tắm trắng»",
+                  "00:10 spoken: «Mới dùng 3 lần mà trắng cỡ này thì mua quài luôn quá»",
+                  "00:13 spoken: «Ê, tao xài rồi, tao thử có 1 lần mà trắng thật nha mấy ní»",
+                  "00:16 spoken: «Tắm nguyên cục xà bông Niacinamide này mà da không nhìn sáng hơn mới là lạ đó»",
+                  "00:36 spoken: «Kết hợp che trắng cẩn thận nữa thì da nhìn sáng mịn như bạch tuyết lúc nào không hay»"
+                ],
+                "inputs": [
+                  "video.policy_absolute_claims"
+                ],
+                "mock_dependency": false,
+                "source_url": "https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-misleading-and-false-content?lang=en",
+                "verification_status": "official_source_reviewed"
+              },
+              {
+                "rule_id": "TTA-002",
+                "target": "tiktok_ads",
+                "outcome": "needs_review",
+                "severity": "high",
+                "summary": "before-and-after comparison risks misleading impression of product effect",
+                "counted": true,
+                "evidence": [
+                  "00:30 before/after comparison of the product effect"
+                ],
+                "inputs": [
+                  "video.policy_before_after"
+                ],
+                "mock_dependency": false,
+                "source_url": "https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-misleading-and-false-content?lang=en",
+                "verification_status": "official_source_reviewed"
+              },
+              {
+                "rule_id": "TTA-003",
+                "target": "tiktok_ads",
+                "outcome": "not_triggered",
+                "severity": "high",
+                "summary": "fake non-functional buttons or misleading interaction elements",
+                "counted": true,
+                "evidence": [],
+                "inputs": [
+                  "video.policy_ui_overlays"
+                ],
+                "mock_dependency": false,
+                "source_url": "https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-misleading-and-false-content?lang=en",
+                "verification_status": "official_source_reviewed"
+              },
+              {
+                "rule_id": "TTC-001",
+                "target": "tiktok_ads",
+                "outcome": "not_triggered",
+                "severity": "medium",
+                "summary": "realistic AI-created or edited persons/scenes without applicable disclosure",
+                "counted": true,
+                "evidence": [],
+                "inputs": [
+                  "video.policy_realistic_ai_media"
+                ],
+                "mock_dependency": false,
+                "source_url": "https://www.tiktok.com/community-guidelines",
+                "verification_status": "official_source_reviewed"
+              }
+            ]
+          }
+        }
+      },
+      "status": "INFERRED",
+      "source": "policy_baseline_v0.1",
+      "evidence": [],
+      "input_sources": [
+        "bench.category",
+        "video.key_claims",
+        "video.policy_absolute_claims",
+        "video.policy_before_after",
+        "video.policy_realistic_ai_media",
+        "video.policy_ui_overlays"
+      ],
+      "mock_dependency": false
+    },
+    "decision.V04": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "V04 not eligible: missing video.on_screen_text"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.V06": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "V06 not eligible: missing context.target_audience"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.V07": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "V07 not eligible: missing video.value_propositions"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.V08": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "V08 not eligible: missing video.on_screen_text"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.C01": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "C01 not eligible: missing video.product_visibility"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.C02": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "C02 not eligible: missing video.problem, video.value_propositions"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.C04": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "C04 not eligible: missing video.value_propositions"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.C05": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "C05 not eligible: missing video.value_propositions"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.C06": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "C06 not eligible: missing video.trust_signals"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.C07": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "C07 not eligible: missing video.offer"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.C10": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "C10 not eligible: missing shop.fulfillment"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.S04": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "S04 not eligible: missing sku.stock_history"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.H01": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "H01 not eligible: missing shop.catalog_metrics"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.H02": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "H02 not eligible: missing shop.fulfillment_metrics"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.H03": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "H03 not eligible: missing shop.visits, shop.orders, market.category_benchmark"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.H04": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "H04 not eligible: missing shop.ads_spend, shop.attributed_revenue, shop.margin"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.H05": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "H05 not eligible: missing shop.rating, shop.review_count, shop.service_metrics"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.M03": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "M03 not eligible: missing shop.metrics, shop.catalog_metrics"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.M04": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "M04 not eligible: missing scores.findings, context.business_constraints"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.M05": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "M05 not eligible: missing quality.missing_critical_features, quality.conflicts"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.M06": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "M06 not eligible: missing request.user_query"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.P02": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "P02 not eligible: missing video.trust_signals"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.P04": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "P04 not eligible: missing post.sponsorship, post.disclosure"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.V01": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.V02": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.V03": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.V05": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.C03": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.C08": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.C09": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.S01": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.S02": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.S03": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.S05": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.M01": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.M02": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.P01": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.P03": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    },
+    "decision.P05": {
+      "value": null,
+      "status": "MISSING",
+      "source": null,
+      "evidence": [
+        "Decisions call not allowed (no client, no cache)"
+      ],
+      "input_sources": [],
+      "mock_dependency": false
+    }
+  },
+  "scores": [
+    {
+      "name": "viral_potential",
+      "score": 69.5,
+      "coverage": 1.0,
+      "mock_dependency": true,
+      "criteria": [
+        {
+          "id": "V1",
+          "name": "Hook",
+          "weight": 0.25,
+          "score": 85.0,
+          "mock_dependency": false,
+          "inputs": [
+            "video.hook_strength"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "V2",
+          "name": "Storytelling",
+          "weight": 0.15,
+          "score": 70.0,
+          "mock_dependency": false,
+          "inputs": [
+            "video.storytelling"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "V3",
+          "name": "Pacing",
+          "weight": 0.1,
+          "score": 74.0,
+          "mock_dependency": false,
+          "inputs": [
+            "video.pacing_avg_shot_sec"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "V4",
+          "name": "Emotion",
+          "weight": 0.15,
+          "score": 70.0,
+          "mock_dependency": false,
+          "inputs": [
+            "video.emotion"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "V5",
+          "name": "Trend relevance",
+          "weight": 0.1,
+          "score": 55.0,
+          "mock_dependency": true,
+          "inputs": [
+            "market.trend_score"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "V6",
+          "name": "Shareability",
+          "weight": 0.1,
+          "score": 60.0,
+          "mock_dependency": false,
+          "inputs": [
+            "video.shareability"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "V7",
+          "name": "Retention performance",
+          "weight": 0.15,
+          "score": 56.0,
+          "mock_dependency": true,
+          "inputs": [
+            "perf.completion_rate"
+          ],
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "name": "conversion_potential",
+      "score": 69.3,
+      "coverage": 1.0,
+      "mock_dependency": true,
+      "criteria": [
+        {
+          "id": "C1",
+          "name": "Product clarity",
+          "weight": 0.15,
+          "score": 80.0,
+          "mock_dependency": false,
+          "inputs": [
+            "video.clarity_score"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "C2",
+          "name": "Demo / proof",
+          "weight": 0.15,
+          "score": 95.0,
+          "mock_dependency": false,
+          "inputs": [
+            "video.demo_present",
+            "video.before_after_shown",
+            "video.sensory_details"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "C3",
+          "name": "Value proposition",
+          "weight": 0.15,
+          "score": 50.0,
+          "mock_dependency": true,
+          "inputs": [
+            "video.claims_sku_match"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "C4",
+          "name": "Trust / credibility",
+          "weight": 0.15,
+          "score": 70.0,
+          "mock_dependency": true,
+          "inputs": [
+            "video.authenticity_level",
+            "sku.rating"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "C5",
+          "name": "Offer attractiveness",
+          "weight": 0.1,
+          "score": 70.4,
+          "mock_dependency": true,
+          "inputs": [
+            "sku.price_vnd",
+            "sku.list_price_vnd",
+            "sku.has_voucher"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "C6",
+          "name": "CTA",
+          "weight": 0.1,
+          "score": 0.0,
+          "mock_dependency": false,
+          "inputs": [
+            "video.has_cta"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "C7",
+          "name": "Purchase friction",
+          "weight": 0.1,
+          "score": 90.0,
+          "mock_dependency": true,
+          "inputs": [
+            "sku.has_product_link",
+            "sku.in_stock",
+            "sku.shipping_days"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "C8",
+          "name": "Conversion performance",
+          "weight": 0.1,
+          "score": 90.0,
+          "mock_dependency": true,
+          "inputs": [
+            "perf.product_ctr",
+            "perf.click_to_order_cvr"
+          ],
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "name": "sku_market",
+      "score": 74.2,
+      "coverage": 0.8,
+      "mock_dependency": true,
+      "criteria": [
+        {
+          "id": "S1",
+          "name": "Category fit",
+          "weight": 0.1,
+          "score": null,
+          "mock_dependency": false,
+          "inputs": [],
+          "reason": "sku.category_fit missing"
+        },
+        {
+          "id": "S2",
+          "name": "Price competitiveness",
+          "weight": 0.15,
+          "score": 60.0,
+          "mock_dependency": true,
+          "inputs": [
+            "sku.price_vnd",
+            "market.competitor_prices_vnd"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "S3",
+          "name": "Product rating",
+          "weight": 0.15,
+          "score": 80.0,
+          "mock_dependency": true,
+          "inputs": [
+            "sku.review_count",
+            "sku.rating"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "S4",
+          "name": "Review sentiment",
+          "weight": 0.15,
+          "score": 82.0,
+          "mock_dependency": true,
+          "inputs": [
+            "market.review_positive_ratio"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "S5",
+          "name": "Market demand",
+          "weight": 0.15,
+          "score": 68.0,
+          "mock_dependency": true,
+          "inputs": [
+            "market.demand_index"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "S6",
+          "name": "Competitive saturation",
+          "weight": 0.1,
+          "score": 66.0,
+          "mock_dependency": true,
+          "inputs": [
+            "market.similar_video_count"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "S7",
+          "name": "Seller reliability",
+          "weight": 0.1,
+          "score": 92.5,
+          "mock_dependency": true,
+          "inputs": [
+            "sku.shop_rating",
+            "sku.shop_on_time_rate"
+          ],
+          "reason": ""
+        },
+        {
+          "id": "S8",
+          "name": "Margin / commission",
+          "weight": 0.1,
+          "score": null,
+          "mock_dependency": false,
+          "inputs": [],
+          "reason": "sku.unit_margin_vnd missing: null in fixture:teashell_001/sku.json"
+        }
+      ]
+    },
+    {
+      "name": "policy_compliance",
+      "score": 40.0,
+      "coverage": 1.0,
+      "mock_dependency": false,
+      "criteria": [
+        {
+          "id": "R1",
+          "name": "Policy compliance",
+          "weight": 1.0,
+          "score": 40.0,
+          "mock_dependency": false,
+          "inputs": [
+            "policy.score"
+          ],
+          "reason": ""
+        }
+      ]
+    }
+  ],
+  "policy": {
+    "baseline_version": "0.1",
+    "targets": {
+      "tiktok_shop_video": {
+        "score": 40.0,
+        "verdict": "needs_review",
+        "findings": [
+          {
+            "rule_id": "TTS-001",
+            "target": "tiktok_shop_video",
+            "outcome": "unknown",
+            "severity": "critical",
+            "summary": "video promotes a product that is prohibited or unsupported",
+            "counted": true,
+            "evidence": [
+              "no detector yet; needs sku.category, video.promoted_product"
+            ],
+            "inputs": [],
+            "mock_dependency": false,
+            "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=6837773789480706&lang=en",
+            "verification_status": "official_source_reviewed"
+          },
+          {
+            "rule_id": "TTS-002",
+            "target": "tiktok_shop_video",
+            "outcome": "needs_review",
+            "severity": "high",
+            "summary": "product benefits or claims not supported by product information or evidence",
+            "counted": true,
+            "evidence": [
+              "5 product claims, no supporting documents on file: “Mới dùng 3 lần mà trắng cỡ này”"
+            ],
+            "inputs": [
+              "video.key_claims"
+            ],
+            "mock_dependency": false,
+            "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=6837773789480706&lang=en",
+            "verification_status": "official_source_reviewed"
+          },
+          {
+            "rule_id": "TTS-003",
+            "target": "tiktok_shop_video",
+            "outcome": "needs_review",
+            "severity": "high",
+            "summary": "beauty/cosmetic product lacks documented approval or required labelling",
+            "counted": true,
+            "evidence": [
+              "category 'beauty' needs a cosmetic notification (phiếu công bố), none on file"
+            ],
+            "inputs": [
+              "bench.category"
+            ],
+            "mock_dependency": false,
+            "source_url": "https://seller-vn.tiktok.com/university/essay?identity=1&knowledge_id=7179954358388497&lang=vi-VN&role=1",
+            "verification_status": "official_source_reviewed"
+          },
+          {
+            "rule_id": "TTC-002",
+            "target": "tiktok_shop_video",
+            "outcome": "unknown",
+            "severity": "high",
+            "summary": "commercial promotion without platform disclosure setting",
+            "counted": true,
+            "evidence": [
+              "post.is_commercial missing"
+            ],
+            "inputs": [],
+            "mock_dependency": false,
+            "source_url": "https://ads-useast2a.tiktok.com/resources/help/article/how-to-turn-on-the-commercial-content-disclosure-setting-in-tiktok?lang=en",
+            "verification_status": "official_source_reviewed"
+          }
+        ]
+      },
+      "tiktok_ads": {
+        "score": 40.0,
+        "verdict": "needs_review",
+        "findings": [
+          {
+            "rule_id": "TTA-001",
+            "target": "tiktok_ads",
+            "outcome": "needs_review",
+            "severity": "high",
+            "summary": "ad promises exaggerated or absolute results",
+            "counted": true,
+            "evidence": [
+              "00:00 spoken: «Tao mua về tắm xong trắng, mẹ tao với mấy bà hàng xóm không nhận ra luôn»",
+              "00:03 spoken: «tao xài trắng quá, giờ mẹ tao tưởng tao mới đi tắm trắng»",
+              "00:10 spoken: «Mới dùng 3 lần mà trắng cỡ này thì mua quài luôn quá»",
+              "00:13 spoken: «Ê, tao xài rồi, tao thử có 1 lần mà trắng thật nha mấy ní»",
+              "00:16 spoken: «Tắm nguyên cục xà bông Niacinamide này mà da không nhìn sáng hơn mới là lạ đó»",
+              "00:36 spoken: «Kết hợp che trắng cẩn thận nữa thì da nhìn sáng mịn như bạch tuyết lúc nào không hay»"
+            ],
+            "inputs": [
+              "video.policy_absolute_claims"
+            ],
+            "mock_dependency": false,
+            "source_url": "https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-misleading-and-false-content?lang=en",
+            "verification_status": "official_source_reviewed"
+          },
+          {
+            "rule_id": "TTA-002",
+            "target": "tiktok_ads",
+            "outcome": "needs_review",
+            "severity": "high",
+            "summary": "before-and-after comparison risks misleading impression of product effect",
+            "counted": true,
+            "evidence": [
+              "00:30 before/after comparison of the product effect"
+            ],
+            "inputs": [
+              "video.policy_before_after"
+            ],
+            "mock_dependency": false,
+            "source_url": "https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-misleading-and-false-content?lang=en",
+            "verification_status": "official_source_reviewed"
+          },
+          {
+            "rule_id": "TTA-003",
+            "target": "tiktok_ads",
+            "outcome": "not_triggered",
+            "severity": "high",
+            "summary": "fake non-functional buttons or misleading interaction elements",
+            "counted": true,
+            "evidence": [],
+            "inputs": [
+              "video.policy_ui_overlays"
+            ],
+            "mock_dependency": false,
+            "source_url": "https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-misleading-and-false-content?lang=en",
+            "verification_status": "official_source_reviewed"
+          },
+          {
+            "rule_id": "TTC-001",
+            "target": "tiktok_ads",
+            "outcome": "not_triggered",
+            "severity": "medium",
+            "summary": "realistic AI-created or edited persons/scenes without applicable disclosure",
+            "counted": true,
+            "evidence": [],
+            "inputs": [
+              "video.policy_realistic_ai_media"
+            ],
+            "mock_dependency": false,
+            "source_url": "https://www.tiktok.com/community-guidelines",
+            "verification_status": "official_source_reviewed"
+          }
+        ]
+      }
+    }
+  },
+  "quality_gate": {
+    "status": "needs_attention",
+    "flags": [
+      {
+        "code": "mock_dependency",
+        "detail": "viral_potential uses MOCK data",
+        "next_step": "read as simulation; run evidence mode for REAL-only scores"
+      },
+      {
+        "code": "mock_dependency",
+        "detail": "conversion_potential uses MOCK data",
+        "next_step": "read as simulation; run evidence mode for REAL-only scores"
+      },
+      {
+        "code": "mock_dependency",
+        "detail": "sku_market uses MOCK data",
+        "next_step": "read as simulation; run evidence mode for REAL-only scores"
+      },
+      {
+        "code": "stale_extraction",
+        "detail": "cached extraction predates the current prompt: video.offer, video.on_screen_text, video.problem, video.product_mentions, video.product_visibility, video.trust_signals, video.value_propositions",
+        "next_step": "re-extract the video with the current prompt (paid VLM call)"
+      },
+      {
+        "code": "decisions_not_run",
+        "detail": "16 eligible questions have no cached answer",
+        "next_step": "score with decisions enabled (paid Decisions call)"
+      }
+    ]
+  },
+  "benchmark": {
+    "label": "TeaShell soap",
+    "model_viral_score": 74.2,
+    "viral_coverage": 0.75,
+    "model_conversion_score": 65.6,
+    "conversion_coverage": 0.4,
+    "views": 2600000,
+    "sales": 375,
+    "sales_per_1k_views": 0.1442,
+    "gmv_usd_per_1k_views": 0.6538,
+    "source_quality_flag": "UNVERIFIED_PLATFORM_METRIC",
+    "aov_check": "IN_BAND"
+  },
+  "revenue_funnel": {
+    "status": "simulation",
+    "views": 120000,
+    "product_clicks": 2160,
+    "orders": 97.2,
+    "aov_vnd": 89000,
+    "expected_gmv_vnd": 8650800,
+    "mock_dependency": true,
+    "inputs": [
+      "perf.views",
+      "perf.product_ctr",
+      "perf.click_to_order_cvr",
+      "sku.price_vnd"
+    ]
+  },
+  "shop": null
+}

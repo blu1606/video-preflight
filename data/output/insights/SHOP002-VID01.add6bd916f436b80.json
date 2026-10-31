@@ -1,0 +1,35 @@
+{
+  "model": "gpt-6-luna",
+  "answer": {
+    "headline": "Ưu tiên thêm lời kêu gọi mua rõ ràng, làm nổi bật lợi ích sản phẩm và cho khách thấy cách dùng.",
+    "summary": "Theo số sau khi đăng, video có nhiều lượt xem nhưng ít người bấm vào sản phẩm. Một video mẫu mở đầu bằng kết quả và có cảnh demo, trong khi video này chưa cho thấy sản phẩm hoạt động ra sao.",
+    "insights": [
+      {
+        "candidate": "c1",
+        "text": "Theo số sau khi đăng, video có 116.710 lượt xem nhưng chỉ 0,3% bấm vào sản phẩm, thấp hơn mức tham chiếu 2,0%; tỉ lệ đặt hàng sau khi bấm là 0,85%, so với mức tham chiếu 5,0%. Video chưa có lời kêu gọi mua hay ưu đãi, nên hãy nói rõ khách cần bấm vào đâu và nhận được gì.",
+        "tone": "bad"
+      },
+      {
+        "candidate": "c2",
+        "text": "Người xem video nghiêng về nữ, nhưng khách mua sản phẩm chủ yếu là nam (52%). Hãy thử làm nội dung gần hơn với mối quan tâm về điện thoại, phụ kiện hoặc gaming của nhóm khách mua.",
+        "tone": "info"
+      },
+      {
+        "candidate": "c3",
+        "text": "Ước tính theo điểm, nếu làm ba việc ưu tiên—gắn sản phẩm với vấn đề của khách, thêm lời kêu gọi mua rõ ràng và cải thiện tỉ lệ bấm, đặt hàng—điểm có thể tăng từ 45,6 lên 53,3; đây không phải dự báo doanh số.",
+        "tone": "info"
+      },
+      {
+        "candidate": "c4",
+        "text": "Video mẫu mở đầu bằng kết quả và có cảnh demo, còn video này mở đầu gây tò mò nhưng chưa cho thấy sản phẩm được dùng như thế nào. Hãy thử mở bằng kết quả khách nhận được rồi quay cảnh demo ngắn.",
+        "tone": "info"
+      }
+    ],
+    "policy": "Tiêu đề có nội dung quảng bá hoặc cách diễn đạt bị hạn chế, nên cần xem lại trước khi đăng. Đây là cảnh báo cần kiểm tra, chưa khẳng định chắc chắn có vi phạm.",
+    "shop": null
+  },
+  "token_usage": {
+    "prompt_tokens": 1620,
+    "completion_tokens": 990
+  }
+}

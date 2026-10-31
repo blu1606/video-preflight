@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "giấy Caipiao",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4774,
+     "linked_video_count": 32687
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600839,
+       "name": "Toilet Paper & Wipes"
+      }
+     },
+     "ceiling_price": 100.21,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/66b1eeca39f54b28af80b0459ea4bc98~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735636051366479647",
+     "floor_price": 100.21,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-19",
+     "launch_time": 1779193593,
+     "price_display": "100.206 ₫",
+     "product_id": "1735636051366479647",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735636051366479647?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[10 bịch] Caipiao Giấy treo gấu dễ thương 10 gói mỗi thùng, mềm mại an toàn thoải mái, dùng đa cảnh.(13012-10)-1735636051366479647"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 17437278445,
+     "last_28d_units_sold": 173740,
+     "last_7d_gmv": 4882809782,
+     "last_7d_units_sold": 48403,
+     "last_90d_gmv": 41757206072,
+     "last_90d_units_sold": 533326,
+     "total_gmv": 73888090238,
+     "total_units_sold": 757102,
+     "yesterday_gmv": 334086804,
+     "yesterday_units_sold": 3334
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1cd24d2c0bbf4f219def69f66396d4ee~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "7495770605126585119",
+     "shop_name": "Sipiao Facial Tissue",
+     "total_units_sold": 5094282
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1283,
+     "linked_video_count": 5581
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600839,
+       "name": "Toilet Paper & Wipes"
+      }
+     },
+     "ceiling_price": 100.63,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/52af6f5e1b2f44b18dba2ed65a631f42~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736032294613845570",
+     "floor_price": 100.63,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-13",
+     "launch_time": 1781326597,
+     "price_display": "100.627 ₫",
+     "product_id": "1736032294613845570",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736032294613845570?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[10 bịch]Caipiao đa chức năng treo tường dễ thương động vật khăn giấy treo, mềm mại và tinh tế đệm khí dập nổi quá trình, an toàn và thoải mái giấy vệ sinh(13002-10)-1736032294613845570 Giấy Rút Đa Khăn Treo Bịch bền"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2948570973,
+     "last_28d_units_sold": 30102,
+     "last_7d_gmv": 635726060,
+     "last_7d_units_sold": 6352,
+     "last_90d_gmv": 7703914592,
+     "last_90d_units_sold": 95462,
+     "total_gmv": 8887195927,
+     "total_units_sold": 105438,
+     "yesterday_gmv": 74665234,
+     "yesterday_units_sold": 742
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e01c561e19a44173bcd0953bb3d5b63c~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "8648870640495265346",
+     "shop_name": "Sipiao global",
+     "total_units_sold": 905741
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3456,
+     "linked_video_count": 18490
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600839,
+       "name": "Toilet Paper & Wipes"
+      }
+     },
+     "ceiling_price": 77.15,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/894cde5074f2457dbf9c38a98523c82d~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735704669873407775",
+     "floor_price": 77.15,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-23",
+     "launch_time": 1779500148,
+     "price_display": "77.148 ₫",
+     "product_id": "1735704669873407775",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735704669873407775?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[6 bịch]Caipiao Giấy treo treo tường, bao bì gấu xinh xắn, thùng 6 gói, mềm mại an toàn, dùng đa dạng không gian(13011-6)-1735704669873407775"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1548603686,
+     "last_28d_units_sold": 20104,
+     "last_7d_gmv": 360674531,
+     "last_7d_units_sold": 4667,
+     "last_90d_gmv": 9426253032,
+     "last_90d_units_sold": 128413,
+     "total_gmv": 33907328507,
+     "total_units_sold": 368224,
+     "yesterday_gmv": 22681512,
+     "yesterday_units_sold": 294
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1cd24d2c0bbf4f219def69f66396d4ee~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "7495770605126585119",
+     "shop_name": "Sipiao Facial Tissue",
+     "total_units_sold": 5094282
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2944,
+     "linked_video_count": 10060
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600839,
+       "name": "Toilet Paper & Wipes"
+      }
+     },
+     "ceiling_price": 62.77,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/a2dbb2bf5eba484ba4aebaefa38aaa10~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734789351220020802",
+     "floor_price": 62.77,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-26",
+     "launch_time": 1774473081,
+     "price_display": "62.773 ₫",
+     "product_id": "1734789351220020802",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734789351220020802?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[5 Gói] Caipiao Khăn Giấy, Chất Lượng Cao, 2 Lớp (13002-5),chất lượng mới,Bao bì phim hoạt hình dễ thương chất lượng mới,túi giấy dây rút-1734789351220020802"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 467707083,
+     "last_28d_units_sold": 7014,
+     "last_7d_gmv": 157992024,
+     "last_7d_units_sold": 2330,
+     "last_90d_gmv": 2763294676,
+     "last_90d_units_sold": 44040,
+     "total_gmv": 31287755533,
+     "total_units_sold": 350901,
+     "yesterday_gmv": 3013104,
+     "yesterday_units_sold": 48
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e01c561e19a44173bcd0953bb3d5b63c~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "8648870640495265346",
+     "shop_name": "Sipiao global",
+     "total_units_sold": 905741
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 51,
+     "linked_video_count": 68
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600839,
+       "name": "Toilet Paper & Wipes"
+      }
+     },
+     "ceiling_price": 103.88,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/a56bf2d174ad441cb26426623857a466~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735769798010832671",
+     "floor_price": 103.88,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-28",
+     "launch_time": 1779941126,
+     "price_display": "103.875 ₫",
+     "product_id": "1735769798010832671",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735769798010832671?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Thảo đây 76]Caipiao thùng 10 bịch mới dễ thương gói giấy vẽ,Treo khăn giấy cao cấp,Đa năng treo tường vẽ giấy,Chất lượng cao an toàn treo giấy vẽ(13002-10)-1735769798010832671"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 654437458,
+     "last_28d_units_sold": 6533,
+     "last_7d_gmv": 8759665,
+     "last_7d_units_sold": 89,
+     "last_90d_gmv": 1039026452,
+     "last_90d_units_sold": 10488,
+     "total_gmv": 1107198773,
+     "total_units_sold": 11062,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1cd24d2c0bbf4f219def69f66396d4ee~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "7495770605126585119",
+     "shop_name": "Sipiao Facial Tissue",
+     "total_units_sold": 5094282
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1597,
+     "linked_video_count": 6182
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600839,
+       "name": "Toilet Paper & Wipes"
+      }
+     },
+     "ceiling_price": 70.56,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/b2cd1c35d1154e89bce7c401e00d94fc~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734913024708937503",
+     "floor_price": 70.56,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-04-02",
+     "launch_time": 1775091889,
+     "price_display": "70.558 ₫",
+     "product_id": "1734913024708937503",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734913024708937503?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[5 gói ] Giấy vệ sinh treo tường đa năng Caipiao với hình động vật dễ thương, xử lý ép nổi đệm khí mềm mại và tinh tế, an toàn và thoải mái khi sử dụng.2 lớp(13002-5)-1734913024708937503"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 333697800,
+     "last_28d_units_sold": 4929,
+     "last_7d_gmv": 122673024,
+     "last_7d_units_sold": 1737,
+     "last_90d_gmv": 1603805824,
+     "last_90d_units_sold": 25980,
+     "total_gmv": 26872317167,
+     "total_units_sold": 289670,
+     "yesterday_gmv": 7126358,
+     "yesterday_units_sold": 101
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1cd24d2c0bbf4f219def69f66396d4ee~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "7495770605126585119",
+     "shop_name": "Sipiao Facial Tissue",
+     "total_units_sold": 5094282
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 897,
+     "linked_video_count": 3284
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600839,
+       "name": "Toilet Paper & Wipes"
+      }
+     },
+     "ceiling_price": 106.11,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/22a8c4938b1041efa11bd1d6842df0aa~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734789277229614658",
+     "floor_price": 106.11,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-26",
+     "launch_time": 1774473081,
+     "price_display": "106.114 ₫",
+     "product_id": "1734789277229614658",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734789277229614658?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[8 Gói] Caipiao Túi giấy dây rút dạng treo, 8 Gói,mềm mại và thân thiện với da, chất lượng mới, 2 lớp(13003-8),bao bì hoạt hình dễ thương, túi giấy dây rút-1734789277229614658"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 486237923,
+     "last_28d_units_sold": 4913,
+     "last_7d_gmv": 101772394,
+     "last_7d_units_sold": 1015,
+     "last_90d_gmv": 1344678913,
+     "last_90d_units_sold": 13503,
+     "total_gmv": 8655180292,
+     "total_units_sold": 76714,
+     "yesterday_gmv": 5093472,
+     "yesterday_units_sold": 48
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e01c561e19a44173bcd0953bb3d5b63c~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "8648870640495265346",
+     "shop_name": "Sipiao global",
+     "total_units_sold": 905741
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 248,
+     "linked_video_count": 839
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 993544,
+       "name": "Tissues & Napkins"
+      }
+     },
+     "ceiling_price": 173.52,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/ce50673db2cb4fadb3356a0947cef171~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737061703402096415",
+     "floor_price": 173.52,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-18",
+     "launch_time": 1787033887,
+     "price_display": "173.518 ₫",
+     "product_id": "1737061703402096415",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737061703402096415?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[15 bịch] Caipiao Giấy lau treo tường, thùng 15 bịch, gói lớn gia đình, dùng được nhiều không gian, bộ sản phẩm an tâm, tiện lợi.(1230-15)-1737061703402096415"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 737752325,
+     "last_28d_units_sold": 4360,
+     "last_7d_gmv": 422903421,
+     "last_7d_units_sold": 2407,
+     "last_90d_gmv": 764049025,
+     "last_90d_units_sold": 4503,
+     "total_gmv": 764264976,
+     "total_units_sold": 4504,
+     "yesterday_gmv": 47370414,
+     "yesterday_units_sold": 273
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1cd24d2c0bbf4f219def69f66396d4ee~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "7495770605126585119",
+     "shop_name": "Sipiao Facial Tissue",
+     "total_units_sold": 5094282
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4596,
+     "linked_video_count": 12383
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600839,
+       "name": "Toilet Paper & Wipes"
+      }
+     },
+     "ceiling_price": 98.2,
+     "commission_rate_percent": 3,
+     "cover_url": "https://s.500fd.com/tt_product/779bf0285fee4c15aeb758a2a83fb39c~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730929353761131295",
+     "floor_price": 65.1,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-10-10",
+     "launch_time": 1728550966,
+     "price_display": "65.101 ₫  -  98.204 ₫",
+     "product_id": "1730929353761131295",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730929353761131295?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Caipiao (13002-5-10) mới dễ thương gói giấy vẽ,Treo khăn giấy cao cấp,Đa năng treo tường vẽ giấy,Chất lượng cao an toàn treo giấy vẽ-1730929353761131295"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 194604026,
+     "last_28d_units_sold": 2903,
+     "last_7d_gmv": 43435880,
+     "last_7d_units_sold": 630,
+     "last_90d_gmv": 858487491,
+     "last_90d_units_sold": 13416,
+     "total_gmv": 29432090787,
+     "total_units_sold": 228696,
+     "yesterday_gmv": 4622171,
+     "yesterday_units_sold": 71
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1cd24d2c0bbf4f219def69f66396d4ee~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "7495770605126585119",
+     "shop_name": "Sipiao Facial Tissue",
+     "total_units_sold": 5094282
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 179,
+     "linked_video_count": 248
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 10,
+       "name": "Home Supplies"
+      },
+      "l2": {
+       "id": 852232,
+       "name": "Home Care Supplies"
+      },
+      "l3": {
+       "id": 600839,
+       "name": "Toilet Paper & Wipes"
+      }
+     },
+     "ceiling_price": 105.8,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/66b1eeca39f54b28af80b0459ea4bc98~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735769905080403743",
+     "floor_price": 105.8,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-28",
+     "launch_time": 1779941105,
+     "price_display": "105.797 ₫",
+     "product_id": "1735769905080403743",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735769905080403743?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Thảo đây 76]Caipiao Giấy 10 bịch treo gấu dễ thương mỗi thùng, mềm mại an toàn thoải mái, dùng đa cảnh.(13012-10)-1735769905080403743"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 235586968,
+     "last_28d_units_sold": 2338,
+     "last_7d_gmv": 62642212,
+     "last_7d_units_sold": 637,
+     "last_90d_gmv": 530592921,
+     "last_90d_units_sold": 5963,
+     "total_gmv": 947668744,
+     "total_units_sold": 9112,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/1cd24d2c0bbf4f219def69f66396d4ee~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "7495770605126585119",
+     "shop_name": "Sipiao Facial Tissue",
+     "total_units_sold": 5094282
+    }
+   }
+  ],
+  "total": 63
+ }
+}

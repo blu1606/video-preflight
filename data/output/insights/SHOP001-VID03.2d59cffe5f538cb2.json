@@ -1,0 +1,90 @@
+{
+  "model": "gpt-6-luna",
+  "answer": {
+    "headline": "Ưu tiên làm lại phần mở đầu và bổ sung bằng chứng, lời mời mua rõ ràng để cải thiện Conversion.",
+    "summary": "Video đang mất người xem sớm và ít kéo người xem bấm vào sản phẩm, dù SKU vẫn bán được theo dữ kiện phân tích. Nhiều phần đánh giá trong báo cáo là dữ liệu mô phỏng, nên hãy xem đây là gợi ý cần kiểm tra thêm.",
+    "insights": [
+      {
+        "text": "Điểm nghẽn chính nằm ở video: người xem rời đi sớm và gần như không bấm vào sản phẩm, trong khi SKU vẫn bán được.",
+        "tone": "bad",
+        "refs": [
+          "diagnosis"
+        ]
+      },
+      {
+        "text": "Hook còn chung chung, cảm xúc mở đầu chưa thật phù hợp và nội dung chưa tạo nhiều lý do để người xem lưu hoặc chia sẻ. Điều này có thể làm yếu khả năng Viral.",
+        "tone": "bad",
+        "refs": [
+          "V02",
+          "V06",
+          "V07"
+        ]
+      },
+      {
+        "text": "Video thiếu thông tin ưu đãi và CTA rõ ràng; phần hướng dẫn sử dụng và lợi ích sản phẩm cũng chưa đủ cụ thể, có bằng chứng hỗ trợ.",
+        "tone": "bad",
+        "refs": [
+          "C07",
+          "C08",
+          "C03",
+          "C04",
+          "C06"
+        ]
+      },
+      {
+        "text": "Giá và nhu cầu được đánh giá ở mức gần thị trường nhưng còn chưa rõ lợi thế; thông tin listing còn thiếu, và một số lựa chọn hàng có thể chưa sẵn hoặc chưa chắc về tồn kho.",
+        "tone": "info",
+        "refs": [
+          "S03",
+          "S05",
+          "S01",
+          "S04"
+        ]
+      }
+    ],
+    "fixes": [
+      {
+        "text": "Làm lại phần mở đầu: cho thấy sản phẩm sớm, nêu ngay lợi ích cụ thể cho đúng người mua và rút ngắn video.",
+        "why": "Hook hiện còn chung chung; phân tích cũng chỉ ra người xem rời đi sớm.",
+        "t": 0,
+        "refs": [
+          "V02",
+          "V06",
+          "diagnosis"
+        ]
+      },
+      {
+        "text": "Quay cảnh dùng sản phẩm rõ ràng và chỉ nêu những lợi ích có thể minh họa hoặc chứng minh được.",
+        "why": "Video chưa thể hiện cách dùng đủ rõ, còn thiếu chi tiết và bằng chứng cho các tuyên bố.",
+        "t": 4,
+        "refs": [
+          "C03",
+          "C04",
+          "C06"
+        ]
+      },
+      {
+        "text": "Bổ sung thông tin ưu đãi dễ hiểu và CTA cụ thể, chỉ rõ người xem cần làm gì để mua.",
+        "why": "Video hiện chưa có lời mời mua hoặc hành động mua rõ ràng.",
+        "t": 24.83,
+        "refs": [
+          "C07",
+          "C08"
+        ]
+      }
+    ],
+    "groups": {
+      "viral_potential": "Khả năng Viral còn yếu: mở đầu chưa đủ cụ thể, cảm xúc chưa sát người mua và nội dung chưa có nhiều giá trị để lưu hoặc chia sẻ.",
+      "conversion_potential": "Conversion là điểm cần ưu tiên: thiếu ưu đãi, CTA và phần trình bày sản phẩm có hướng dẫn, bằng chứng thuyết phục.",
+      "sku_market": "SKU có mức giá và tín hiệu nhu cầu gần mặt bằng nhưng lợi thế chưa rõ. Nên rà soát độ đầy đủ của listing và tình trạng hàng.",
+      "shop_health": "Đây là tình hình của shop, không phải điểm video. Dữ liệu mô phỏng cho thấy khả năng chuyển lượt ghé thành đơn còn khoảng trống.",
+      "policy_compliance": "Có một số nội dung và thông tin sản phẩm cần được kiểm tra lại trước khi đăng hoặc chạy quảng cáo."
+    },
+    "policy": "Rule engine bản baseline nêu các tuyên bố về hiệu quả, thông tin hồ sơ mỹ phẩm và nội dung có vẻ được tạo/chỉnh sửa bằng AI cần xem lại. Đây chưa phải kết luận duyệt chính thức; hãy kiểm tra lại nội dung và hồ sơ sản phẩm trước khi sử dụng.",
+    "shop": "Shop health là tình hình của shop, không phải điểm video. Dữ liệu phần này là mô phỏng; khả năng chuyển lượt ghé thành đơn được nhận định gần mức thông thường nhưng vẫn còn khoảng trống."
+  },
+  "token_usage": {
+    "prompt_tokens": 3297,
+    "completion_tokens": 2141
+  }
+}

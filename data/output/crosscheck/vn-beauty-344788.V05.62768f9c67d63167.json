@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Bằng chứng chỉ nêu “video.storytelling” là 5.0, nhưng không giải thích thang đo hay nội dung video. Vì vậy không thể xác định video có tạo và giải quyết khoảng trống tò mò hay không.",
+  "key_evidence": [
+    "video.storytelling: 5.0 (REAL)"
+  ],
+  "evidence_sent": {
+    "video.storytelling": {
+      "value": 5.0,
+      "status": "REAL"
+    }
+  },
+  "usage": {
+    "completion_tokens": 141,
+    "prompt_tokens": 280,
+    "total_tokens": 421,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 55,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "dataset_version": "0.1",
+  "checked_at": "2026-10-29",
+  "matching": "case-insensitive whole-word keyword match (Unicode NFC) on sku.category, sku.title, listing.title, sku.description, video.product_name, video.product_category and bench.category; a keyword preceded by a negation (không chứa, không có, ko, free, no, without, 0%) or followed by -free is ignored",
+  "statuses": {
+    "prohibited": "the source says the product may not be sold or promoted; a match is a detector hit (needs_review)",
+    "restricted_requires_approval": "the source says the category needs platform approval; approval status is not an input yet, so a match is only a candidate that Decisions or the policy reviewer must confirm",
+    "covered_elsewhere": "listed for completeness; another rule already checks it, so it never triggers this rule"
+  },
+  "lists": {
+    "tiktok_shop_vn": {
+      "rule_ids": ["TTS-001"],
+      "sources": [
+        {
+          "source_id": "TTS_CONTENT",
+          "title": "TikTok Shop Content Policy (Prohibited and Unsupported Products, Restricted Products)",
+          "url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=6837773789480706&lang=en",
+          "page_date": "2026-03-17",
+          "access_status": "verified",
+          "fetched_at": "2026-10-29"
+        },
+        {
+          "source_id": "TTS_RESTRICT",
+          "title": "Sản phẩm bị hạn chế tại Việt Nam",
+          "url": "https://seller-vn.tiktok.com/university/essay?identity=1&knowledge_id=7179954358388497&lang=vi-VN&role=1",
+          "page_date": "2026-10-14",
+          "access_status": "verified",
+          "fetched_at": "2026-10-29"
+        }
+      ],
+      "categories": [
+        {
+          "id": "prescription_and_sexual_enhancement",
+          "status": "prohibited",
+          "label_vi": "Thuốc kê đơn và sản phẩm tăng cường sinh lý",
+          "source_id": "TTS_CONTENT",
+          "source_text": "Prescription Medication and Sexual Enhancement Products",
+          "verification": "official_source_reviewed",
+          "keywords": ["thuốc kê đơn", "thuốc theo đơn", "cường dương", "tăng cường sinh lý", "tăng sinh lý", "kích dục",
+                       "prescription", "rx only", "viagra", "sildenafil", "tadalafil", "sexual enhancement", "male enhancement"]
+        },
+        {
+          "id": "weapons_and_dangerous",
+          "status": "prohibited",
+          "label_vi": "Vũ khí và sản phẩm nguy hiểm",
+          "source_id": "TTS_CONTENT",
+          "source_text": "Dangerous and hazardous products, including firearms and weapons",
+          "verification": "official_source_reviewed",
+          "keywords": ["vũ khí", "súng", "đạn", "thuốc nổ", "dao găm", "dùi cui", "bình xịt hơi cay",
+                       "firearm", "gun", "ammunition", "explosive", "weapon", "pepper spray"]
+        },
+        {
+          "id": "tobacco_and_drugs",
+          "status": "prohibited",
+          "label_vi": "Thuốc lá và chất gây nghiện",
+          "source_id": "TTS_CONTENT",
+          "source_text": "Tobacco and drugs",
+          "verification": "official_source_reviewed",
+          "keywords": ["thuốc lá", "thuốc lá điện tử", "vape", "shisha", "xì gà", "nicotine", "ma túy", "ma tuý", "cần sa",
+                       "tobacco", "cigarette", "e-cigarette", "cigar", "marijuana", "cannabis"]
+        },
+        {
+          "id": "infant_formula",
+          "status": "prohibited",
+          "label_vi": "Sữa công thức cho trẻ dưới 24 tháng",
+          "source_id": "TTS_CONTENT",
+          "source_text": "Growth and Infant Formula Milk (Prohibited): infant formula milk (0-12 months), advance formula milk (12 - under 24 months)",
+          "verification": "official_source_reviewed",
+          "keywords": ["sữa công thức", "sữa bột trẻ em", "sữa cho trẻ sơ sinh", "sữa bột cho bé",
+                       "infant formula", "formula milk", "baby formula"]
+        },
+        {
+          "id": "weight_management",
+          "status": "prohibited",
+          "label_vi": "Sản phẩm kiểm soát cân nặng",
+          "source_id": "TTS_CONTENT",
+          "source_text": "We prohibit the sale of weight management products or claims that a product, when used by itself, can solely drive weight loss or gain.",
+          "verification": "official_source_reviewed",
+          "keywords": ["giảm cân", "tăng cân", "đốt mỡ", "weight loss", "weight gain", "slimming", "fat burner", "diet pill"]
+        },
+        {
+          "id": "banned_cosmetic_ingredients",
+          "status": "prohibited",
+          "label_vi": "Mỹ phẩm chứa thành phần bị cấm (thủy ngân, hydroquinone)",
+          "source_id": "TTS_RESTRICT",
+          "source_text": "Sản phẩm bị cơ quan nhà nước cấm hoặc chứa thành phần bị cấm, như thủy ngân và hydroquinone",
+          "verification": "official_source_reviewed",
+          "keywords": ["thủy ngân", "thuỷ ngân", "mercury", "hydroquinone"]
+        },
+        {
+          "id": "used_beauty_products",
+          "status": "prohibited",
+          "label_vi": "Sản phẩm làm đẹp đã qua sử dụng",
+          "source_id": "TTS_RESTRICT",
+          "source_text": "Sản phẩm làm đẹp và chăm sóc cá nhân đã qua sử dụng",
+          "verification": "official_source_reviewed",
+          "keywords": ["mỹ phẩm đã qua sử dụng", "mỹ phẩm đã dùng", "used cosmetics"]
+        },
+        {
+          "id": "supplements",
+          "status": "restricted_requires_approval",
+          "label_vi": "Thực phẩm bổ sung",
+          "source_id": "TTS_RESTRICT",
+          "source_text": "Sản phẩm thực phẩm bổ sung",
+          "verification": "official_source_reviewed",
+          "keywords": ["thực phẩm bổ sung", "thực phẩm chức năng", "viên uống", "supplement"]
+        },
+        {
+          "id": "baby_food",
+          "status": "restricted_requires_approval",
+          "label_vi": "Thực phẩm cho trẻ sơ sinh",
+          "source_id": "TTS_RESTRICT",
+          "source_text": "Thực phẩm cho trẻ sơ sinh và sản phẩm sữa công thức",
+          "verification": "official_source_reviewed",
+          "keywords": ["thực phẩm cho trẻ sơ sinh", "đồ ăn dặm", "ăn dặm", "baby food"]
+        },
+        {
+          "id": "otc_drugs",
+          "status": "restricted_requires_approval",
+          "label_vi": "Thuốc không kê đơn (OTC)",
+          "source_id": "TTS_RESTRICT",
+          "source_text": "Thuốc và phương pháp điều trị không kê đơn (OTC)",
+          "verification": "official_source_reviewed",
+          "keywords": ["thuốc không kê đơn", "otc", "dược phẩm"]
+        },
+        {
+          "id": "food_and_beverage",
+          "status": "restricted_requires_approval",
+          "label_vi": "Thực phẩm và đồ uống",
+          "source_id": "TTS_RESTRICT",
+          "source_text": "Sản phẩm thực phẩm và đồ uống",
+          "verification": "official_source_reviewed",
+          "keywords": ["thực phẩm", "đồ uống", "đồ ăn vặt", "food", "beverage", "snack"]
+        },
+        {
+          "id": "beauty_personal_care",
+          "status": "covered_elsewhere",
+          "label_vi": "Sản phẩm làm đẹp và chăm sóc cá nhân",
+          "source_id": "TTS_RESTRICT",
+          "source_text": "Sản phẩm làm đẹp và chăm sóc cá nhân",
+          "verification": "official_source_reviewed",
+          "covered_by": "TTS-003",
+          "keywords": []
+        }
+      ]
+    },
+    "meta_commerce": {
+      "rule_ids": ["META-003"],
+      "sources": [
+        {
+          "source_id": "META_COMMERCE",
+          "title": "Meta Commerce Policies",
+          "url": "https://www.facebook.com/policies_center/commerce/",
+          "page_date": null,
+          "access_status": "blocked_login",
+          "fetched_at": "2026-10-29"
+        }
+      ],
+      "note": "The official page needs a login and could not be read. Category names follow the section headings of Meta's Commerce Policies as quoted by secondary sources (feed-disapproval references); every entry is unverified and META-003 stays provisional (evaluated, never counted).",
+      "categories": [
+        {"id": "adult_products", "status": "prohibited", "label_vi": "Sản phẩm người lớn", "source_id": "META_COMMERCE",
+         "source_text": "Adult products", "verification": "unverified_secondary",
+         "keywords": ["đồ chơi người lớn", "đồ chơi tình dục", "gel bôi trơn", "cường dương", "sex toy", "lubricant", "sexual enhancement"]},
+        {"id": "alcohol", "status": "prohibited", "label_vi": "Đồ uống có cồn", "source_id": "META_COMMERCE",
+         "source_text": "Alcohol", "verification": "unverified_secondary",
+         "keywords": ["rượu", "bia", "vodka", "whisky", "whiskey", "wine", "beer", "alcohol"]},
+        {"id": "animals", "status": "prohibited", "label_vi": "Động vật sống và bộ phận động vật", "source_id": "META_COMMERCE",
+         "source_text": "Animals", "verification": "unverified_secondary",
+         "keywords": ["chó con", "mèo con", "thú cưng sống", "ngà voi", "live animal", "puppy", "kitten", "ivory"]},
+        {"id": "body_parts_and_fluids", "status": "prohibited", "label_vi": "Bộ phận và dịch cơ thể người", "source_id": "META_COMMERCE",
+         "source_text": "Body parts and fluids", "verification": "unverified_secondary",
+         "keywords": ["sữa mẹ", "breast milk", "body parts"]},
+        {"id": "healthcare", "status": "prohibited", "label_vi": "Sản phẩm y tế và chăm sóc sức khỏe", "source_id": "META_COMMERCE",
+         "source_text": "Medical and healthcare products", "verification": "unverified_secondary",
+         "keywords": ["thiết bị y tế", "máy đo huyết áp", "que thử thai", "kính áp tròng", "dược phẩm", "thuốc không kê đơn",
+                      "medical device", "pregnancy test", "contact lens"]},
+        {"id": "ingestible_supplements", "status": "prohibited", "label_vi": "Thực phẩm bổ sung dạng uống", "source_id": "META_COMMERCE",
+         "source_text": "Ingestible supplements", "verification": "unverified_secondary",
+         "keywords": ["thực phẩm chức năng", "thực phẩm bổ sung", "viên uống", "supplement"]},
+        {"id": "tobacco_and_drugs", "status": "prohibited", "label_vi": "Thuốc lá và chất gây nghiện", "source_id": "META_COMMERCE",
+         "source_text": "Tobacco and related products; Drugs and drug-related products", "verification": "unverified_secondary",
+         "keywords": ["thuốc lá", "thuốc lá điện tử", "vape", "shisha", "xì gà", "nicotine", "ma túy", "ma tuý", "cần sa",
+                      "tobacco", "cigarette", "e-cigarette", "cigar", "marijuana", "cannabis"]},
+        {"id": "weapons", "status": "prohibited", "label_vi": "Vũ khí, đạn dược, chất nổ", "source_id": "META_COMMERCE",
+         "source_text": "Weapons, ammunition or explosives", "verification": "unverified_secondary",
+         "keywords": ["vũ khí", "súng", "đạn", "thuốc nổ", "dao găm", "dùi cui", "bình xịt hơi cay",
+                      "firearm", "gun", "ammunition", "explosive", "weapon", "pepper spray"]}
+      ]
+    }
+  }
+}

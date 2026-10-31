@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "cáp sạc nhanh 4 trong 1",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3301,
+     "linked_video_count": 11294
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 910728,
+       "name": "Power Banks"
+      }
+     },
+     "ceiling_price": 376.36,
+     "commission_rate_percent": 11,
+     "cover_url": "https://s.500fd.com/tt_product/b9c33fd9b064446cb6f4235919d59656~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730837923850586573",
+     "floor_price": 348.05,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-09-07",
+     "launch_time": 1725689366,
+     "price_display": "348.046 ₫  -  376.361 ₫",
+     "product_id": "1730837923850586573",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 10,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730837923850586573?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Tặng sạc 4 trong 1] Pin sạc dự phòng 20000mAh sạc nhanh 22,5W tích hợp dây cáp - Gutek GT229"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 3770800442,
+     "last_28d_units_sold": 11794,
+     "last_7d_gmv": 311737007,
+     "last_7d_units_sold": 965,
+     "last_90d_gmv": 8904023326,
+     "last_90d_units_sold": 31073,
+     "total_gmv": 56551235094,
+     "total_units_sold": 226518,
+     "yesterday_gmv": 24015174,
+     "yesterday_units_sold": 69
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d2a63b4435eb40039adfa36a75bb577f~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494622856037108173",
+     "shop_name": "GUTEK",
+     "total_units_sold": 1609079
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 15,
+     "linked_video_count": 15
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 173.3,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/551891abd48345e0b719d7c27e2c63c6~tplv-aphluv4xwc-crop-webp:1021:1021.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735129282491876659",
+     "floor_price": 78.11,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-04-21",
+     "launch_time": 1776707429,
+     "price_display": "78.106 ₫  -  173.297 ₫",
+     "product_id": "1735129282491876659",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 10,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735129282491876659?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Xin chân thành cảm ơn quý khách đã ủng hộ cửa hàng của chúng tôi，240W Cáp sạc bện màu đen nhanh 4 trong 1 Đa năng 1.8m – Cáp bện siêu bền, tích hợp 4 cổng sạc"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 912817833,
+     "last_28d_units_sold": 11745,
+     "last_7d_gmv": 837173028,
+     "last_7d_units_sold": 10785,
+     "last_90d_gmv": 919761307,
+     "last_90d_units_sold": 11844,
+     "total_gmv": 2216203361,
+     "total_units_sold": 34354,
+     "yesterday_gmv": 141684284,
+     "yesterday_units_sold": 1814
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/6998eddda64942228b5166113c0ffb25~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494089152099288371",
+     "shop_name": "LUOBR.VN",
+     "total_units_sold": 3128022
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 86,
+     "linked_video_count": 290
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 32.1,
+     "commission_rate_percent": 13,
+     "cover_url": "https://s.500fd.com/tt_product/cb34a1e2c6054da090629632f8e59c4b~tplv-o3syd03w52-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733460086789211814",
+     "floor_price": 32.1,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-12-05",
+     "launch_time": 1764872135,
+     "price_display": "32.104 ₫",
+     "product_id": "1733460086789211814",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733460086789211814?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bán chạy 240W 1M Silicone Dual-Braided với sọc nhẹ Hỗ trợ phát hành cáp sạc nhanh hợp kim kẽm RGB 4 trong 1 15W"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 202116595,
+     "last_28d_units_sold": 6214,
+     "last_7d_gmv": 40443078,
+     "last_7d_units_sold": 1231,
+     "last_90d_gmv": 416960578,
+     "last_90d_units_sold": 13200,
+     "total_gmv": 633884435,
+     "total_units_sold": 19886,
+     "yesterday_gmv": 5008224,
+     "yesterday_units_sold": 156
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a6be85caf0604d4482e896929674fc02~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496212070326766246",
+     "shop_name": "KARAME Store",
+     "total_units_sold": 364380
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 304,
+     "linked_video_count": 2157
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 56.85,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/c167283729674e1f9158fd37720494d7~tplv-o3syd03w52-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733671324703491229",
+     "floor_price": 56.85,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-12-22",
+     "launch_time": 1766369685,
+     "price_display": "56.847 ₫",
+     "product_id": "1733671324703491229",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733671324703491229?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Cáp Dữ Liệu 4 Trong 1 Sạc Siêu Nhanh 240W Chiều Dài 1.8m Tương Thích Với Điện Thoại Apple Huawei Xiaomi Và Android Truyền Dữ Liệu"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 226108052,
+     "last_28d_units_sold": 3873,
+     "last_7d_gmv": 36999223,
+     "last_7d_units_sold": 642,
+     "last_90d_gmv": 755671137,
+     "last_90d_units_sold": 12855,
+     "total_gmv": 3608328136,
+     "total_units_sold": 51217,
+     "yesterday_gmv": 3808749,
+     "yesterday_units_sold": 67
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d7b4327365e5483f9b384a829b2f5daa~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "8646926830930330781",
+     "shop_name": "New wisdom zao3c",
+     "total_units_sold": 656051
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 744,
+     "linked_video_count": 3087
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 52.77,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/f480b717efa245188665a75d52b3e85b~tplv-aphluv4xwc-crop-webp:1440:1440.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735506720292176932",
+     "floor_price": 52.77,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-26",
+     "launch_time": 1779798232,
+     "price_display": "52.772 ₫",
+     "product_id": "1735506720292176932",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735506720292176932?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Cáp sạc nhanh 4 trong 1 hình khối xếp chồng, cáp sạc silicone công suất 100W, tương thích iPhone, Huawei, Android, Xiaomi, OPPO và vivo, cáp truyền dữ liệu, cáp sạc thiết kế sáng tạo dễ thương hình khối xếp chồng."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 149549827,
+     "last_28d_units_sold": 2707,
+     "last_7d_gmv": 35599796,
+     "last_7d_units_sold": 640,
+     "last_90d_gmv": 891613517,
+     "last_90d_units_sold": 16144,
+     "total_gmv": 1348050928,
+     "total_units_sold": 24280,
+     "yesterday_gmv": 4116216,
+     "yesterday_units_sold": 78
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/32be5660b7e94b86995a5341083b68d6~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8658302274451440676",
+     "shop_name": "Chaozhiy Shop",
+     "total_units_sold": 303206
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 10,
+     "linked_video_count": 12
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 53.29,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/4389ec6b099d4515bebc4a054ec60cee~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732066328116890175",
+     "floor_price": 53.29,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-03-19",
+     "launch_time": 1742323221,
+     "price_display": "53.290 ₫",
+     "product_id": "1732066328116890175",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732066328116890175?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Cáp sạc nhanh 4 trong 1 65W USB sang Type C PD Sạc nhanh cho iphone Xiaomi Samsung PD 20W"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 109985649,
+     "last_28d_units_sold": 1533,
+     "last_7d_gmv": 6866852,
+     "last_7d_units_sold": 132,
+     "last_90d_gmv": 559020202,
+     "last_90d_units_sold": 6278,
+     "total_gmv": 3981561266,
+     "total_units_sold": 44018,
+     "yesterday_gmv": 1225670,
+     "yesterday_units_sold": 23
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5b37692d55e54dacabc2c31a9e53f3d4~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494934503980239423",
+     "shop_name": "FUKI 4.0 Store",
+     "total_units_sold": 5126375
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 175,
+     "linked_video_count": 444
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 260.72,
+     "commission_rate_percent": 11,
+     "cover_url": "https://s.500fd.com/tt_product/20aea834eb6847f4b06c237fa0d5d38a~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735979113163818445",
+     "floor_price": 251.4,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-09",
+     "launch_time": 1780984440,
+     "price_display": "251.396 ₫  -  260.716 ₫",
+     "product_id": "1735979113163818445",
+     "product_rating": 4.9,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735979113163818445?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Tặng sạc 4 trong 1] Pin Sạc dự phòng 10000mah sạc nhanh 22,5w tích hợp sẵn cáp sạc cho điện thoại - Gutek GT219"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 235730505,
+     "last_28d_units_sold": 1209,
+     "last_7d_gmv": 60533657,
+     "last_7d_units_sold": 240,
+     "last_90d_gmv": 1052790351,
+     "last_90d_units_sold": 9071,
+     "total_gmv": 1831228082,
+     "total_units_sold": 16082,
+     "yesterday_gmv": 7793276,
+     "yesterday_units_sold": 31
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d2a63b4435eb40039adfa36a75bb577f~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494622856037108173",
+     "shop_name": "GUTEK",
+     "total_units_sold": 1609079
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3,
+     "linked_video_count": 83
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 66.84,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/6ea9875c71b649c18ce297de2e8a85d2~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731759473767056821",
+     "floor_price": 66.84,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-25",
+     "launch_time": 1758795826,
+     "price_display": "66.836 ₫",
+     "product_id": "1731759473767056821",
+     "product_rating": 4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731759473767056821?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Cáp dữ liệu, NIUMO, Flagship chính thức, Chức năng 4 trong 1, Sạc siêu nhanh, Công suất 240W, USB Type C, Chất liệu silicon Lỏng hợp kim nhôm, Tương thích với các thiết bị khác"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 52374517,
+     "last_28d_units_sold": 830,
+     "last_7d_gmv": 46676013,
+     "last_7d_units_sold": 744,
+     "last_90d_gmv": 165834465,
+     "last_90d_units_sold": 2876,
+     "total_gmv": 1387439780,
+     "total_units_sold": 23189,
+     "yesterday_gmv": 2138752,
+     "yesterday_units_sold": 32
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/bd668ea63f754d3a9c9432f3cec89bff~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8647452817249043893",
+     "shop_name": "NIUMO Digital-VN",
+     "total_units_sold": 66577
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 93,
+     "linked_video_count": 783
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 26.89,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/ec9341cef008466e89e3c68df638452a~tplv-o3syd03w52-crop-webp:1000:1000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731847374229702310",
+     "floor_price": 26.89,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-08-04",
+     "launch_time": 1754268467,
+     "price_display": "26.886 ₫",
+     "product_id": "1731847374229702310",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731847374229702310?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "4 trong 1 Vỏ hợp kim kẽm lò xo cáp usb kính thiên văn 65W Cáp sạc nhanh loại c đến loại c Cáp sạc xe hơi tương thích rộng rãi cho ios / Type c"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 18975319,
+     "last_28d_units_sold": 675,
+     "last_7d_gmv": 4474336,
+     "last_7d_units_sold": 158,
+     "last_90d_gmv": 61795544,
+     "last_90d_units_sold": 2387,
+     "total_gmv": 298265594,
+     "total_units_sold": 11186,
+     "yesterday_gmv": 268860,
+     "yesterday_units_sold": 10
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a6be85caf0604d4482e896929674fc02~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496212070326766246",
+     "shop_name": "KARAME Store",
+     "total_units_sold": 364380
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 111,
+     "linked_video_count": 297
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601937,
+       "name": " Cables, Chargers & Adapters"
+      }
+     },
+     "ceiling_price": 70.5,
+     "commission_rate_percent": 14,
+     "cover_url": "https://s.500fd.com/tt_product/47d3beacb9084d72afffe387a91836e2~tplv-o3syd03w52-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731992654207617076",
+     "floor_price": 70.5,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-03-05",
+     "launch_time": 1741157146,
+     "price_display": "70.495 ₫",
+     "product_id": "1731992654207617076",
+     "product_rating": 3.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731992654207617076?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Đầu sạc 120W+Cáp sạc 4 trong 1, Cáp sạc nhanh 65W Loại C Đa chức năng, sạc nhanh 4 trong 1"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 43107536,
+     "last_28d_units_sold": 651,
+     "last_7d_gmv": 13399537,
+     "last_7d_units_sold": 200,
+     "last_90d_gmv": 95842058,
+     "last_90d_units_sold": 1490,
+     "total_gmv": 655857197,
+     "total_units_sold": 10788,
+     "yesterday_gmv": 2749305,
+     "yesterday_units_sold": 39
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/485abf84bb01457b8115cb519ab85134~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494977970083956788",
+     "shop_name": "Ngọc Anh Ngọc Ánh Shop",
+     "total_units_sold": 911782
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

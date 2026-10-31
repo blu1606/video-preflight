@@ -1,0 +1,78 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Không thể xác định mức chuyển đổi từ bằng chứng này: số đơn và lượt truy cập của shop đều là dữ liệu MOCK, còn benchmark chỉ cung cấp giá, đánh giá và số sản phẩm đã bán, không có tỷ lệ chuyển đổi tương đương. Vì vậy không có cơ sở đáng tin cậy để so sánh shop với các cửa hàng cùng nhóm.",
+  "key_evidence": [
+    "shop.orders_30d: 3100 (MOCK)",
+    "shop.visits_30d: 56093 (MOCK)",
+    "market.category_benchmark.median_sold_28d: 6190 (INFERRED)"
+  ],
+  "evidence_sent": {
+    "market.category_benchmark": {
+      "value": {
+        "n": 17,
+        "median_price_vnd": 65000,
+        "p25_price_vnd": 56050,
+        "p75_price_vnd": 85000,
+        "avg_rating": 4.45,
+        "median_sold_28d": 6190,
+        "tiktok_category": "Beauty & Personal Care",
+        "tiktok_category_scale": {
+          "active_product_count": 259689,
+          "category_gmv": 6455580765556.6,
+          "category_units_sold": 37500761,
+          "product_count": 112081,
+          "selling_creator_count": 242288,
+          "selling_live_count": 388815,
+          "selling_video_count": 2427458
+        },
+        "tiktok_category_growth": {
+          "active_product_count_change": -1518,
+          "category_gmv_mom_percent": 8.93,
+          "category_gmv_yoy_percent": 40.37,
+          "category_units_sold_mom_percent": -6.17,
+          "category_units_sold_yoy_percent": 28.13,
+          "product_count_change": 112081,
+          "selling_creator_count_change": 5495,
+          "selling_live_count_change": 29126,
+          "selling_video_count_change": -252919
+        },
+        "category_pool_n": 60,
+        "category_median_rating": 4.7,
+        "demand_percentile": 30.8,
+        "saturation_percentile": 29.2
+      },
+      "status": "INFERRED"
+    },
+    "shop.orders_30d": {
+      "value": 3100,
+      "status": "MOCK"
+    },
+    "shop.visits_30d": {
+      "value": 56093,
+      "status": "MOCK"
+    }
+  },
+  "usage": {
+    "completion_tokens": 219,
+    "prompt_tokens": 619,
+    "total_tokens": 838,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 70,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

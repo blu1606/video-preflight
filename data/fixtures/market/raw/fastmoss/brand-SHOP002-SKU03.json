@@ -1,0 +1,82 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "quạt tản nhiệt KY V60",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 231,
+     "linked_video_count": 1048
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909192,
+       "name": "Cameras & Photography"
+      },
+      "l3": {
+       "id": 911240,
+       "name": "Video Camcorders"
+      }
+     },
+     "ceiling_price": 82.32,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/21b8168f4c144631bdc8a01d18e1c19a~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736350560077186845",
+     "floor_price": 82.32,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-05",
+     "launch_time": 1783222379,
+     "price_display": "82.316 ₫",
+     "product_id": "1736350560077186845",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736350560077186845?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "KY V60 Quạt Tản Nhiệt Điện Thoại Thế Hệ Mới 【Hạ Nhiệt Siêu Tốc, Đèn LED Chuyển Màu Rực Rỡ】Tản Nhiệt Nhanh Chóng Khi Chơi Game/Xem Phim, Giảm Giật Lag, Phản Hồi Tức Thì. Phù Hợp Với Mọi Dòng Điện Thoại (iPhone Và Android)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 407406569,
+     "last_28d_units_sold": 5138,
+     "last_7d_gmv": 49008991,
+     "last_7d_units_sold": 632,
+     "last_90d_gmv": 927572834,
+     "last_90d_units_sold": 11776,
+     "total_gmv": 1133489484,
+     "total_units_sold": 14474,
+     "yesterday_gmv": 8478548,
+     "yesterday_units_sold": 103
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/7c462646436f4d17a6cacfe2fb06ea27~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8647404618770515741",
+     "shop_name": "KUYOCO",
+     "total_units_sold": 1265588
+    }
+   }
+  ],
+  "total": 1
+ }
+}

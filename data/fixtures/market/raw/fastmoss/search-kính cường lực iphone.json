@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "kính cường lực iphone",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 541,
+     "linked_video_count": 2350
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 264.98,
+     "commission_rate_percent": 15,
+     "cover_url": "https://s.500fd.com/tt_product/9ceafcc381944735bed85cf837f7b32b~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731758903455484355",
+     "floor_price": 2.17,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-01-26",
+     "launch_time": 1737844326,
+     "price_display": "2.168 ₫  -  264.976 ₫",
+     "product_id": "1731758903455484355",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 270,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731758903455484355?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "(BIMKONG RÚT BỤI VIỆT) Kính cường lực BIMKONG dành cho iphone có khung tự dán dành cho  X Xsmax 11promax 12promax 13promax 14promax 15promax 16promax 17Promax 18promax - BIMCARE."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 73741659,
+     "last_28d_units_sold": 34116,
+     "last_7d_gmv": 17560637,
+     "last_7d_units_sold": 8124,
+     "last_90d_gmv": 332938417,
+     "last_90d_units_sold": 164504,
+     "total_gmv": 10170504417,
+     "total_units_sold": 637708,
+     "yesterday_gmv": 2915960,
+     "yesterday_units_sold": 1345
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4d678526a9ed49fabdc9644e617d53ab~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494610006228961731",
+     "shop_name": "BIMCARE Phụ Kiệnn",
+     "total_units_sold": 4499123
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 402,
+     "linked_video_count": 2468
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 232.12,
+     "commission_rate_percent": 11,
+     "cover_url": "https://s.500fd.com/tt_product/ca14124c6efb4bc796c9a6cf50221473~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731425172676380223",
+     "floor_price": 80.08,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-05-18",
+     "launch_time": 1747573363,
+     "price_display": "80.081 ₫  -  232.120 ₫",
+     "product_id": "1731425172676380223",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 232,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731425172676380223?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kính cường lực cho iphone siêu cong FUKI40 FK02 ip 18 Promax 17 16 15 14 13 12 11 prm pro x xr xs xsm xs max plus air không lẹm viền, full màn hình 98 %"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1599961831,
+     "last_28d_units_sold": 21038,
+     "last_7d_gmv": 776873940,
+     "last_7d_units_sold": 10271,
+     "last_90d_gmv": 3975790481,
+     "last_90d_units_sold": 53640,
+     "total_gmv": 24097848150,
+     "total_units_sold": 248980,
+     "yesterday_gmv": 86006994,
+     "yesterday_units_sold": 1074
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5b37692d55e54dacabc2c31a9e53f3d4~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494934503980239423",
+     "shop_name": "FUKI 4.0 Store",
+     "total_units_sold": 5126375
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 136,
+     "linked_video_count": 491
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 232,
+     "commission_rate_percent": 15,
+     "cover_url": "https://s.500fd.com/tt_product/1956d30b679a48d1bfd8c2169d63a207~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731704963390540227",
+     "floor_price": 1.93,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-01-15",
+     "launch_time": 1736874053,
+     "price_display": "1.933 ₫  -  231.998 ₫",
+     "product_id": "1731704963390540227",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 270,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731704963390540227?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "(BIMKONG RÚT BỤI VIỆT 2) Kính cường lực BIMKONG  dành cho iphone có khung tự dán tại nhà dành cho  X Xsmax 11promax 12promax 13promax 14promax 15promax 16promax 17Promax - BIMCARE"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 38626431,
+     "last_28d_units_sold": 18737,
+     "last_7d_gmv": 9051138,
+     "last_7d_units_sold": 4480,
+     "last_90d_gmv": 148134655,
+     "last_90d_units_sold": 72988,
+     "total_gmv": 3862709632,
+     "total_units_sold": 301613,
+     "yesterday_gmv": 1643050,
+     "yesterday_units_sold": 850
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4d678526a9ed49fabdc9644e617d53ab~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494610006228961731",
+     "shop_name": "BIMCARE Phụ Kiệnn",
+     "total_units_sold": 4499123
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 343,
+     "linked_video_count": 5299
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 44.77,
+     "commission_rate_percent": 18,
+     "cover_url": "https://s.500fd.com/tt_product/3f6977ee2aa944fb8028482c88ef0a1f~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729621409674398358",
+     "floor_price": 40.17,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-06-05",
+     "launch_time": 1685953821,
+     "price_display": "40.168 ₫  -  44.772 ₫",
+     "product_id": "1729621409674398358",
+     "product_rating": 4.3,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 56,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729621409674398358?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kính cường lực chống nhìn trộm KingKong 4D Iphone full màn chính hãng cho ip 16 ProMax 17 ProMax 15 Pro Max 14 ProMax 13 ProMax 12 Pro Max 11 ProMax X Xs Max Xr 7 Plus 8 Plus"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 613280340,
+     "last_28d_units_sold": 15463,
+     "last_7d_gmv": 87996441,
+     "last_7d_units_sold": 2259,
+     "last_90d_gmv": 1461500647,
+     "last_90d_units_sold": 38422,
+     "total_gmv": 8113904618,
+     "total_units_sold": 240483,
+     "yesterday_gmv": 16750056,
+     "yesterday_units_sold": 417
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3e2a21b4c12d4caea8357069b6cc7c21~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494787702458124950",
+     "shop_name": "shop phụ kiện SKY",
+     "total_units_sold": 7913104
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1374,
+     "linked_video_count": 7138
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 50.33,
+     "commission_rate_percent": 18,
+     "cover_url": "https://s.500fd.com/tt_product/1a6e468385094f079fa39f67086f2b09~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729636601098111638",
+     "floor_price": 37.83,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-06-11",
+     "launch_time": 1686456069,
+     "price_display": "37.829 ₫  -  50.333 ₫",
+     "product_id": "1729636601098111638",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 112,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729636601098111638?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kính Cường Lực iPhone 16 ProMax 15Promax 14ProMax 13 ProMax X Xs Max Xr 18 ProMax 17 ProMax 17 Air 16 15 14 13 12 11 Pro Max Magicbox Black Arrow Có Khung Tự Dán Tự Hút Bụi Có Màng Bảo Vệ Loa"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 530013882,
+     "last_28d_units_sold": 14586,
+     "last_7d_gmv": 133761426,
+     "last_7d_units_sold": 3675,
+     "last_90d_gmv": 2186586159,
+     "last_90d_units_sold": 63664,
+     "total_gmv": 22898235986,
+     "total_units_sold": 773283,
+     "yesterday_gmv": 19027987,
+     "yesterday_units_sold": 503
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3e2a21b4c12d4caea8357069b6cc7c21~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494787702458124950",
+     "shop_name": "shop phụ kiện SKY",
+     "total_units_sold": 7913104
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 125,
+     "linked_video_count": 968
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 47.52,
+     "commission_rate_percent": 18,
+     "cover_url": "https://s.500fd.com/tt_product/cd1dba99bb6945a182838efe4fa29733~tplv-aphluv4xwc-crop-webp:2048:2048.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734806412091557526",
+     "floor_price": 36.45,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-25",
+     "launch_time": 1774401016,
+     "price_display": "36.445 ₫  -  47.523 ₫",
+     "product_id": "1734806412091557526",
+     "product_rating": 4.2,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 56,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734806412091557526?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ Kính Cường Lực iPhone GORILA Chính Hãng - Khung Tự Dán Tự Lấy Bụi Thông Minh Cho iPhone 18 ProMax 17 ProMax 16 ProMax 15 ProMax 14 ProMax 13 ProMax 12 ProMax 11 Pro Max 17 Air 16 Plus Xs Max Xr"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 527691026,
+     "last_28d_units_sold": 14284,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 1086826534,
+     "last_90d_units_sold": 30202,
+     "total_gmv": 7222910872,
+     "total_units_sold": 57997,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3e2a21b4c12d4caea8357069b6cc7c21~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494787702458124950",
+     "shop_name": "shop phụ kiện SKY",
+     "total_units_sold": 7913104
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2002,
+     "linked_video_count": 6455
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 389.97,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/6932a6c8d81440ecb6e28c125b5ac1c5~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731588175752824940",
+     "floor_price": 303.07,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-01-17",
+     "launch_time": 1737050974,
+     "price_display": "303.066 ₫  -  389.967 ₫",
+     "product_id": "1731588175752824940",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 41,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731588175752824940?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Dành cho iPhone 18-12] Combo 1 hộp 2 miếng Kính cường lực TORRAS Titan, Không viền đen, Không lẹm màn, Bao Phủ Màn Hình 95% - 97%, Không cấn ốp, Cao cấp, Mượt mà, Hạn chế bám vân tay, Khung tự dán, Kèm dụng cụ lắp đặt, Dễ dàng lắp đặt"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 3330031110,
+     "last_28d_units_sold": 11752,
+     "last_7d_gmv": 741011145,
+     "last_7d_units_sold": 2430,
+     "last_90d_gmv": 8782703669,
+     "last_90d_units_sold": 33971,
+     "total_gmv": 40124601381,
+     "total_units_sold": 151748,
+     "yesterday_gmv": 80312490,
+     "yesterday_units_sold": 265
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/703f2b26a7504241991514455c187576~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8648391971980543084",
+     "shop_name": "Torras Vietnam",
+     "total_units_sold": 350035
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 29,
+     "linked_video_count": 174
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 108.22,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/0452e9d7d6514fca9c641c035a779201~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737262224971761369",
+     "floor_price": 23.53,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-18",
+     "launch_time": 1789682579,
+     "price_display": "23.526 ₫  -  108.222 ₫",
+     "product_id": "1737262224971761369",
+     "product_rating": 4.3,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 128,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737262224971761369?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kính Cường Lực KingKong Trong Suốt Full Màn Hình Cho iPhone X/XS/XR/11/12/13/14/15/16 Pro/Max [NEXIO]"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 257120408,
+     "last_28d_units_sold": 11441,
+     "last_7d_gmv": 97999719,
+     "last_7d_units_sold": 4336,
+     "last_90d_gmv": 319646033,
+     "last_90d_units_sold": 14194,
+     "total_gmv": 329116697,
+     "total_units_sold": 14631,
+     "yesterday_gmv": 17832708,
+     "yesterday_units_sold": 758
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5f2556fde7094b4e9ee3d0ae6ed8a153~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494924887175367385",
+     "shop_name": "NEXIOO",
+     "total_units_sold": 40422
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 341,
+     "linked_video_count": 707
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 77.82,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/c0c97f732b21474eb8be76c2907a51bb~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729797915398081234",
+     "floor_price": 19.13,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-11-17",
+     "launch_time": 1700168482,
+     "price_display": "19.131 ₫  -  77.817 ₫",
+     "product_id": "1729797915398081234",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 58,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729797915398081234?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[CHỐNG NHÌN TRỘM TỰ DÁN ] Kính Cường Lực Tự Dán KINGKONG  Full Màn Iphone x xs xr xsmax 11 12 13 14 15 16 17 pro max plus Phụ Kiện màn  hình[ HỘP VÀNG]"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 205357963,
+     "last_28d_units_sold": 11288,
+     "last_7d_gmv": 62686658,
+     "last_7d_units_sold": 3411,
+     "last_90d_gmv": 447828829,
+     "last_90d_units_sold": 25754,
+     "total_gmv": 2715222430,
+     "total_units_sold": 159075,
+     "yesterday_gmv": 11822958,
+     "yesterday_units_sold": 618
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/5c24cc92f5c24c359adefb17bd4308fd~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494887954678450898",
+     "shop_name": "PEDIA CASE",
+     "total_units_sold": 555855
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 735,
+     "linked_video_count": 3488
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 104.41,
+     "commission_rate_percent": 18,
+     "cover_url": "https://s.500fd.com/tt_product/0e640e47fa254d3e90da69b72abf6d9f~tplv-aphluv4xwc-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729621411926936214",
+     "floor_price": 29.58,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-06-05",
+     "launch_time": 1685953821,
+     "price_display": "29.580 ₫  -  104.411 ₫",
+     "product_id": "1729621411926936214",
+     "product_rating": 4.3,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 132,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729621411926936214?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kính cường lực iPhone KingKong 3D cho 11 pro max 12 pro max 13 promax 14 pro max 15 pro max 7 plus 8 plus 16 Pro Max 17 ProMax 17 Air 18 ProMax Full Màn siêu bền siêu mượt."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 299340745,
+     "last_28d_units_sold": 9728,
+     "last_7d_gmv": 55897674,
+     "last_7d_units_sold": 1808,
+     "last_90d_gmv": 457952806,
+     "last_90d_units_sold": 15237,
+     "total_gmv": 12466976858,
+     "total_units_sold": 428420,
+     "yesterday_gmv": 8311980,
+     "yesterday_units_sold": 281
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3e2a21b4c12d4caea8357069b6cc7c21~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494787702458124950",
+     "shop_name": "shop phụ kiện SKY",
+     "total_units_sold": 7913104
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

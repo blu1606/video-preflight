@@ -1,0 +1,97 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": 0,
+  "label": "0 Absent",
+  "score": 0.0,
+  "rationale": "Listing là ốp lưng sọc hồng dành cho iPhone, trong khi video nói về tạo liên kết hoàn tiền trên ShopeeFood và nêu Hoantien.shop; đây là nội dung về một dịch vụ khác, không khớp sản phẩm/SKU. Không cần xem các tuyên bố quảng bá về hoàn tiền là sự thật để nhận ra mâu thuẫn này.",
+  "key_evidence": [
+    "listing.title (REAL): Ốp lưng họa tiết sọc đứng mảnh hồng nhạt dành cho nhiều mẫu iPhone",
+    "video.key_claims (REAL): tạo liên kết và nhận hoàn tiền từ đơn ShopeeFood",
+    "video.product_name (REAL): Hoantien.shop"
+  ],
+  "evidence_sent": {
+    "listing.attributes": {
+      "value": {
+        "tuong_thich": "iPhone 11-17",
+        "chat_lieu": "silicone",
+        "bao_hanh": "6 tháng"
+      },
+      "status": "MOCK"
+    },
+    "listing.title": {
+      "value": "Ốp lưng họa tiết sọc đứng mảnh hồng nhạt phù hợp iPhone17/15/13 12/11/XR/8p/17pro/17promax tươi mát dễ thương hot trend dành cho 16/16plus/16pro",
+      "status": "REAL"
+    },
+    "sku.title": {
+      "value": "Ốp lưng iPhone sọc hồng",
+      "status": "MOCK"
+    },
+    "video.key_claims": {
+      "value": [
+        "Có thể tạo liên kết hoàn tiền từ liên kết quán hoặc món trên ShopeeFood.",
+        "Đặt đơn như bình thường; đơn đủ điều kiện sẽ được hoàn tiền vào ví.",
+        "Video minh họa thông báo và khoản hoàn tiền trong giao diện ứng dụng."
+      ],
+      "status": "REAL"
+    },
+    "video.policy_absolute_claims": {
+      "value": [
+        {
+          "text": "Thế là có link hoàn tiền ngay.",
+          "timestamp_sec": 13.0,
+          "channel": "spoken"
+        }
+      ],
+      "status": "REAL"
+    },
+    "video.product_mentions": {
+      "value": [
+        {
+          "timestamp_sec": 5.0,
+          "channel": "overlay",
+          "text": "h."
+        },
+        {
+          "timestamp_sec": 15.0,
+          "channel": "packaging",
+          "text": "h."
+        },
+        {
+          "timestamp_sec": 17.0,
+          "channel": "packaging",
+          "text": "oantie...shop"
+        },
+        {
+          "timestamp_sec": 43.0,
+          "channel": "overlay",
+          "text": "hoantien.shop"
+        }
+      ],
+      "status": "REAL"
+    },
+    "video.product_name": {
+      "value": "Hoantien.shop",
+      "status": "REAL"
+    }
+  },
+  "usage": {
+    "completion_tokens": 274,
+    "prompt_tokens": 660,
+    "total_tokens": 934,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 108,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

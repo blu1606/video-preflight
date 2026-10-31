@@ -1,0 +1,9 @@
+{
+  "_note": "MOCK fixture v1. Competitor prices, demand and trend values are invented.",
+  "competitor_prices_vnd": [65000, 79000, 95000, 120000, 149000],
+  "demand_index": 68,
+  "trend_score": 55,
+  "similar_video_count": 340,
+  "review_positive_ratio": 0.82,
+  "top_complaints": ["mùi hơi nồng", "nhanh hết", "giao hàng chậm"]
+}

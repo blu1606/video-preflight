@@ -1,0 +1,20 @@
+{
+  "_note": "MOCK fixture v1. Every number here is invented for pipeline testing, not real TeaShell data.",
+  "sku_id": "mock_teashell_sku",
+  "title": "TeaShell Niacinamide Skin Brightening Soap 100g",
+  "brand": "TeaShell",
+  "category": "body_care/soap",
+  "price_vnd": 89000,
+  "list_price_vnd": 119000,
+  "has_voucher": true,
+  "key_ingredients": ["Niacinamide", "Alpha Arbutin", "Tranexamic Acid"],
+  "rating": 4.6,
+  "review_count": 1240,
+  "in_stock": true,
+  "shipping_days": 3,
+  "has_product_link": true,
+  "shop_rating": 4.8,
+  "shop_on_time_rate": 0.95,
+  "commission_rate": 0.12,
+  "unit_margin_vnd": null
+}

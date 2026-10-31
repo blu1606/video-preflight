@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Các chỉ số về ROAS, tỷ trọng GMV từ quảng cáo và biên đóng góp đều được đánh dấu MOCK, nên không xác nhận hiệu quả quảng cáo thực tế. Không có bằng chứng REAL để chấm mức nào.",
+  "key_evidence": [
+    "ROAS: 8.09x (MOCK)",
+    "Biên đóng góp: 35.7% (MOCK)",
+    "Tỷ trọng GMV quảng cáo: 25.2% (MOCK)"
+  ],
+  "evidence_sent": {
+    "shop.ads_gmv_share": {
+      "value": "25.2%",
+      "status": "MOCK"
+    },
+    "shop.contribution_margin_rate": {
+      "value": "35.7%",
+      "status": "MOCK"
+    },
+    "shop.roas": {
+      "value": "8.09x (revenue per 1 VND of ads)",
+      "status": "MOCK"
+    }
+  }
+}

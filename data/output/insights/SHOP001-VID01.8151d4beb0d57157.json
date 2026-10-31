@@ -1,0 +1,30 @@
+{
+  "model": "gpt-6-luna",
+  "answer": {
+    "headline": "Nên ưu tiên khớp nội dung với khách mua và tăng độ tin cậy trước khi đăng lại.",
+    "summary": "Video có cảnh demo nhưng tệp người xem và tệp khách mua chưa khớp rõ. Hãy rà soát các tuyên bố về sản phẩm, đồng thời thử điều chỉnh cách trình bày để cải thiện hiệu quả.",
+    "insights": [
+      {
+        "candidate": "c1",
+        "text": "Video hướng tới nữ 18-34, còn dữ liệu khách mua ghi nhận nam chiếm 18% và nhóm tuổi nổi bật là 25-34 (43%). Hãy thử làm nội dung sát hơn với khách mua thực tế và mối quan tâm của họ.",
+        "tone": "info"
+      },
+      {
+        "candidate": "c2",
+        "text": "Theo công thức điểm, bổ sung bằng chứng đáng tin và CTA rõ hơn có thể nâng điểm từ 54.5 lên 61.2, vẫn dưới mốc 75. Đây là ước tính điểm, không phải dự báo doanh số.",
+        "tone": "info"
+      },
+      {
+        "candidate": "c3",
+        "text": "Video mẫu cùng sản phẩm cũng mở đầu bằng kết quả nhưng không có cảnh demo, còn video này có. Bạn có thể thử một bản không có cảnh demo để so sánh cách trình bày.",
+        "tone": "info"
+      }
+    ],
+    "policy": "Các cờ Policy cho thấy cần xem lại tuyên bố về hiệu quả và hình ảnh trước–sau. Đồng thời rà soát nhãn, giấy tờ và thông tin nguồn gốc, thông báo, hạn dùng của mỹ phẩm.",
+    "shop": "Cả 2 video được xem đều còn yếu ở phần truyền đạt ưu đãi. Shop nên nói rõ ưu đãi và điều kiện áp dụng trong video."
+  },
+  "token_usage": {
+    "prompt_tokens": 1805,
+    "completion_tokens": 1446
+  }
+}

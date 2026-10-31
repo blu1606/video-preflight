@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "bình nước có ống hút",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 496,
+     "linked_video_count": 1494
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 842896,
+       "name": "Baby Bottle Boxes & Drying Racks"
+      }
+     },
+     "ceiling_price": 211.84,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/b382f13a9067443e9e997b1dd4957d86~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735466463287412411",
+     "floor_price": 65.59,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-12",
+     "launch_time": 1778565975,
+     "price_display": "65.588 ₫  -  211.837 ₫",
+     "product_id": "1735466463287412411",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735466463287412411?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "ZAXION Bình uống nước PPSU cho bé 300ml chống sặc có ống hút trọng lực cho bé từ 1 tuổi | Chống Rò Rỉ | Bình Nước Cho Bé"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 339886249,
+     "last_28d_units_sold": 5151,
+     "last_7d_gmv": 65743069,
+     "last_7d_units_sold": 1005,
+     "last_90d_gmv": 1114184743,
+     "last_90d_units_sold": 17926,
+     "total_gmv": 1467024262,
+     "total_units_sold": 23351,
+     "yesterday_gmv": 11149960,
+     "yesterday_units_sold": 170
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/6a0a9fbf077c4b3d863239e363518f87~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8648709473823524539",
+     "shop_name": "ZAXION SHOP",
+     "total_units_sold": 478196
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 406,
+     "linked_video_count": 1317
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859400,
+       "name": "Drinkware"
+      },
+      "l3": {
+       "id": 600048,
+       "name": "Water Bottles"
+      }
+     },
+     "ceiling_price": 80.15,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/6d211c097bf946d3ae918f46f6bb2a47~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729794259762055632",
+     "floor_price": 44.66,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-11-14",
+     "launch_time": 1699971395,
+     "price_display": "44.656 ₫  -  80.151 ₫",
+     "product_id": "1729794259762055632",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 18,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729794259762055632?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bình nước bằng nhựa PC có ống hút tặng Sticker THE GARDEN IGWT X GREENBAR bình nước cute dung tích 1L hoặc 2L có ống hút"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 161649931,
+     "last_28d_units_sold": 3789,
+     "last_7d_gmv": 43458756,
+     "last_7d_units_sold": 993,
+     "last_90d_gmv": 462117202,
+     "last_90d_units_sold": 12120,
+     "total_gmv": 1758208150,
+     "total_units_sold": 43650,
+     "yesterday_gmv": 6296496,
+     "yesterday_units_sold": 141
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/3249af3ded8f4a8799512c12123ddfc1~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494635550746511824",
+     "shop_name": "Trà Sữa The Garden",
+     "total_units_sold": 2328148
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 72,
+     "linked_video_count": 313
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 9,
+       "name": "Sports & Outdoor"
+      },
+      "l2": {
+       "id": 834824,
+       "name": "Sports & Outdoor Accessories"
+      },
+      "l3": {
+       "id": 940168,
+       "name": "Sports Water Bottles"
+      }
+     },
+     "ceiling_price": 64.18,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/ab8983bc8a2142eebcb45e060a65dd55~tplv-aphluv4xwc-crop-webp:1920:1920.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736181021338535510",
+     "floor_price": 64.18,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-30",
+     "launch_time": 1782779192,
+     "price_display": "64.182 ₫",
+     "product_id": "1736181021338535510",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 6,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736181021338535510?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "BìNh NướC Thể Thao MàU Gradient Mờ 800ML Có ốNg HúT, BìNh NướC Thể DụC Di độNg Có DâY đEo Tay, BìNh NướC đA NăNg XuyêN BiêN GiớI."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 194491542,
+     "last_28d_units_sold": 3190,
+     "last_7d_gmv": 27324471,
+     "last_7d_units_sold": 429,
+     "last_90d_gmv": 438918732,
+     "last_90d_units_sold": 7474,
+     "total_gmv": 444029818,
+     "total_units_sold": 7566,
+     "yesterday_gmv": 1412004,
+     "yesterday_units_sold": 22
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/b8523c59f5594efaabee2c81e9597baa~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494692415271962198",
+     "shop_name": "Mozz Drinkware",
+     "total_units_sold": 11058
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 344,
+     "linked_video_count": 1467
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 9,
+       "name": "Sports & Outdoor"
+      },
+      "l2": {
+       "id": 834824,
+       "name": "Sports & Outdoor Accessories"
+      },
+      "l3": {
+       "id": 940168,
+       "name": "Sports Water Bottles"
+      }
+     },
+     "ceiling_price": 55.82,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/ac8edf45c297458aaaa8042a5e5a3ff6~tplv-o3syd03w52-crop-webp:1024:1024.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733744028983526425",
+     "floor_price": 55.82,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-01-16",
+     "launch_time": 1768575268,
+     "price_display": "55.821 ₫",
+     "product_id": "1733744028983526425",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 9,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733744028983526425?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Hoả Tốc ] Bình nước thể thao Chống Tràn Mang Đi Học Đi Chơi Không Lo Đổ Nước có ống hút chống tràn - In họa tiết hoạt hình dễ thương 800ml"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 134993506,
+     "last_28d_units_sold": 2411,
+     "last_7d_gmv": 22229768,
+     "last_7d_units_sold": 398,
+     "last_90d_gmv": 850473979,
+     "last_90d_units_sold": 16898,
+     "total_gmv": 1324649694,
+     "total_units_sold": 26702,
+     "yesterday_gmv": 3014334,
+     "yesterday_units_sold": 54
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/fd67fe80c1f54e03b550cf20da1df99a~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494298979807364121",
+     "shop_name": "HCM Bình Nước",
+     "total_units_sold": 36049
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 63,
+     "linked_video_count": 252
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859400,
+       "name": "Drinkware"
+      },
+      "l3": {
+       "id": 600048,
+       "name": "Water Bottles"
+      }
+     },
+     "ceiling_price": 48.56,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/5acbf499a3644ba1a9575ae6b5790840~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735833335686530550",
+     "floor_price": 38.16,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-09",
+     "launch_time": 1780972249,
+     "price_display": "38.155 ₫  -  48.561 ₫",
+     "product_id": "1735833335686530550",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735833335686530550?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bình Nước Space Dành Cho Học Sinh Dung Tích 800ml Có Ống Hút Họa Tiết ngẫu nhiên cute Nhựa Pet An Toàn Nắp Chống Tràn Nước Thiết Kế Đáng Yêu Phù Hợp Cho Bé Đi Học Hoặc Đi Chơi"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 95019222,
+     "last_28d_units_sold": 2402,
+     "last_7d_gmv": 8421391,
+     "last_7d_units_sold": 213,
+     "last_90d_gmv": 442261808,
+     "last_90d_units_sold": 11167,
+     "total_gmv": 444995596,
+     "total_units_sold": 11245,
+     "yesterday_gmv": 1144650,
+     "yesterday_units_sold": 30
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/76be5baf63d2447baa5516f0fe3e7aa4~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494679343877884406",
+     "shop_name": "Ngọc Hoà 16",
+     "total_units_sold": 95614
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1,
+     "linked_video_count": 210
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859400,
+       "name": "Drinkware"
+      },
+      "l3": {
+       "id": 600048,
+       "name": "Water Bottles"
+      }
+     },
+     "ceiling_price": 68.35,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/0211aaa5a24348b39d58bbdabc033d36~tplv-aphluv4xwc-crop-webp:703:703.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732938611232834741",
+     "floor_price": 34.18,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-16",
+     "launch_time": 1763279113,
+     "price_display": "34.175 ₫  -  68.350 ₫",
+     "product_id": "1732938611232834741",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 7,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732938611232834741?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bình đựng nước uống cho bé thiết kế hình sừng hươu nhiều màu sắc dể thương, có dây đeo, kèm ống hút, bình nước cho bé xinh"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 67006150,
+     "last_28d_units_sold": 2003,
+     "last_7d_gmv": 6594442,
+     "last_7d_units_sold": 198,
+     "last_90d_gmv": 334366637,
+     "last_90d_units_sold": 10617,
+     "total_gmv": 565831496,
+     "total_units_sold": 18140,
+     "yesterday_gmv": 922725,
+     "yesterday_units_sold": 27
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ca096e92a1c34e4aa3e91b7de9877ad6~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494173848065442997",
+     "shop_name": "Gia Dụng Hồng Hiếu",
+     "total_units_sold": 52252
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 281,
+     "linked_video_count": 961
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859400,
+       "name": "Drinkware"
+      },
+      "l3": {
+       "id": 600048,
+       "name": "Water Bottles"
+      }
+     },
+     "ceiling_price": 29.96,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/03d16874a73a4b5c98bcf235a0edc674~tplv-o3syd03w52-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730225724268710277",
+     "floor_price": 29.96,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-05-13",
+     "launch_time": 1715533250,
+     "price_display": "29.962 ₫",
+     "product_id": "1730225724268710277",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730225724268710277?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Ly thuỷ tinh nắp hình gấu kèm ống hút 400ml bình  nước cốc thủy tinh có nắp"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 50879796,
+     "last_28d_units_sold": 1631,
+     "last_7d_gmv": 13274400,
+     "last_7d_units_sold": 433,
+     "last_90d_gmv": 178717224,
+     "last_90d_units_sold": 5975,
+     "total_gmv": 706813981,
+     "total_units_sold": 24036,
+     "yesterday_gmv": 1827682,
+     "yesterday_units_sold": 61
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cb73ce6bd7c04eccb314cf7c34981dc1~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494712625780132229",
+     "shop_name": "Gia Dụng Decor 147",
+     "total_units_sold": 185908
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 78,
+     "linked_video_count": 631
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 700704,
+       "name": "Baby Bottles & Accessories"
+      }
+     },
+     "ceiling_price": 108.51,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/f5bb1e8d205046228f8ec7ff389e0296~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736005348901160781",
+     "floor_price": 77.99,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-22",
+     "launch_time": 1784672631,
+     "price_display": "77.990 ₫  -  108.508 ₫",
+     "product_id": "1736005348901160781",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 88,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736005348901160781?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bình Nước Học Sinh 750ml Hoạt Hình LABUBU , CAPYBARA Dễ Thương, Bình Đựng Nước Đi Học Có Ống Hút Kèm Dây Đeo Cho Bé"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 74058558,
+     "last_28d_units_sold": 1555,
+     "last_7d_gmv": 24161627,
+     "last_7d_units_sold": 461,
+     "last_90d_gmv": 244210483,
+     "last_90d_units_sold": 5246,
+     "total_gmv": 245074419,
+     "total_units_sold": 5265,
+     "yesterday_gmv": 7175080,
+     "yesterday_units_sold": 92
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/17055a4957774897a41cc446a2e19793~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494691584464488269",
+     "shop_name": "TATM.Shop2",
+     "total_units_sold": 5794
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 121,
+     "linked_video_count": 391
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 877832,
+       "name": "Nursing & Feeding"
+      },
+      "l3": {
+       "id": 700704,
+       "name": "Baby Bottles & Accessories"
+      }
+     },
+     "ceiling_price": 72.12,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/a3020b36a0ff485fa1a45ecd484031a7~tplv-o3syd03w52-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730217328420162013",
+     "floor_price": 60.49,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-05-14",
+     "launch_time": 1715675576,
+     "price_display": "60.487 ₫  -  72.121 ₫",
+     "product_id": "1730217328420162013",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730217328420162013?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bình Tập Uống Nước , Bình Uống Nước Cho Bé, Bình Nước Trẻ Em, Có Van Chống Sặc, Bình Tập Hút Có Tay Cầm, Ống Hút Silicon Voi"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 80649682,
+     "last_28d_units_sold": 1382,
+     "last_7d_gmv": 19457407,
+     "last_7d_units_sold": 332,
+     "last_90d_gmv": 193224154,
+     "last_90d_units_sold": 3449,
+     "total_gmv": 625414047,
+     "total_units_sold": 12073,
+     "yesterday_gmv": 2661428,
+     "yesterday_units_sold": 44
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c9044c48bf3847dd867d58084d12aab8~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494582337237584349",
+     "shop_name": "PHÚ PHÚC NGUYÊN",
+     "total_units_sold": 73446
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 60,
+     "linked_video_count": 154
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 11,
+       "name": "Kitchenware"
+      },
+      "l2": {
+       "id": 859400,
+       "name": "Drinkware"
+      },
+      "l3": {
+       "id": 600042,
+       "name": "Mugs"
+      }
+     },
+     "ceiling_price": 56.08,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/2d0249a8776c4c409cf48391ff2e8fb8~tplv-aphluv4xwc-crop-webp:1000:1000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737241152201590404",
+     "floor_price": 56.08,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-01",
+     "launch_time": 1788232029,
+     "price_display": "56.083 ₫",
+     "product_id": "1737241152201590404",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737241152201590404?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bình Đựng Nước 750ml Có Ống Hút và Lõi Lọc Trà In Hình Hello Kitty Dễ Thương Có Quai Xách Tiện Lợi Cho Học Sinh Sinh Viên Văn Phòng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 71198275,
+     "last_28d_units_sold": 1228,
+     "last_7d_gmv": 13621328,
+     "last_7d_units_sold": 229,
+     "last_90d_gmv": 138245516,
+     "last_90d_units_sold": 2393,
+     "total_gmv": 138713516,
+     "total_units_sold": 2402,
+     "yesterday_gmv": 1626407,
+     "yesterday_units_sold": 29
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/bf21cc7d87f6457cbd746722633c5783~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494985102191725188",
+     "shop_name": "HK71 Home",
+     "total_units_sold": 8208
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

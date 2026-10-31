@@ -1,0 +1,31 @@
+{
+  "mode": "simulation",
+  "video": {
+    "hook": {
+      "type": "result_first"
+    },
+    "opening_evidence": "Result-led opening; customer reactions",
+    "claims": [
+      "Visible skin brightening testimonial"
+    ],
+    "trust_signals": [
+      "comment overlays, unverified testimonial"
+    ],
+    "product_demo": {
+      "present": true,
+      "description": "arm application and lathering"
+    },
+    "before_after": true
+  },
+  "sku": {
+    "title": null
+  },
+  "post": {
+    "shopping_link": null
+  },
+  "provenance": {
+    "video": "extracted_unverified",
+    "sku": "MISSING",
+    "post": "MISSING"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "model": "gpt-6-luna",
+  "level": null,
+  "label": null,
+  "score": null,
+  "rationale": "Chỉ có giá niêm yết 150,450 VND được ghi nhận là REAL. Tình trạng còn hàng và liên kết sản phẩm đều là MOCK, còn không có bằng chứng REAL về đường mua hàng hoặc phí giao hàng, nên chưa thể xếp mức nào một cách đáng tin cậy.",
+  "key_evidence": [
+    "listing.price_vnd: 150,450 VND (REAL)"
+  ],
+  "evidence_sent": {
+    "listing.price_vnd": {
+      "value": "150,450 VND",
+      "status": "REAL"
+    },
+    "shop.cancellation_rate": {
+      "value": "1.3%",
+      "status": "MOCK"
+    },
+    "shop.late_shipment_rate": {
+      "value": "2.0%",
+      "status": "MOCK"
+    },
+    "sku.has_product_link": {
+      "value": true,
+      "status": "MOCK"
+    },
+    "sku.in_stock": {
+      "value": true,
+      "status": "MOCK"
+    },
+    "sku.price_vnd": {
+      "value": "150,450 VND",
+      "status": "MOCK"
+    }
+  },
+  "usage": {
+    "completion_tokens": 201,
+    "prompt_tokens": 399,
+    "total_tokens": 600,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 98,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  }
+}

@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "ốp lưng iphone",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1814,
+     "linked_video_count": 6935
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 46.44,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/6b0b6b8a93574c2eb4a873e2059a8b81~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729676866474248420",
+     "floor_price": 46.44,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-08-08",
+     "launch_time": 1691467770,
+     "price_display": "46.440 ₫",
+     "product_id": "1729676866474248420",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 286,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729676866474248420?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[DEAL TẶNG] Ốp Lưng iPhone Chống Bẩn Lót Nhung Chống Sốc Cao Cấp, Bảo Vệ Camera cho iP7/8/Plus/X/XS/XR/11/12/13/14/15/16/17/18Pro/Max/Mini"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 3934272245,
+     "last_28d_units_sold": 88683,
+     "last_7d_gmv": 963231144,
+     "last_7d_units_sold": 21505,
+     "last_90d_gmv": 7755343186,
+     "last_90d_units_sold": 179203,
+     "total_gmv": 20917593919,
+     "total_units_sold": 364822,
+     "yesterday_gmv": 171688680,
+     "yesterday_units_sold": 3697
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/23ae8bdde1714da7a5f1fea8d5f4c278~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495071498269133028",
+     "shop_name": "Shin Case - Phụ kiện iphone",
+     "total_units_sold": 23909501
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 191,
+     "linked_video_count": 526
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 10.86,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/7962266c5a3d46a4987c892865c854b2~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736540933734958457",
+     "floor_price": 10.86,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-24",
+     "launch_time": 1784890962,
+     "price_display": "10.864 ₫",
+     "product_id": "1736540933734958457",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 33,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736540933734958457?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Ốp lưng điện thoại trong suốt, Chống sốc bảo vệ camera iPhone 17, 14, 12, 16, 15, 13, 11 Pro Max, iPhone 14, 15, 16 Plus, iPhone X, iPhone Xr, iPhone Xs Max, iPhone 7, 8 Plus, iPhone 17 Air, Vỏ silicone TPU"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 352087256,
+     "last_28d_units_sold": 32440,
+     "last_7d_gmv": 77946029,
+     "last_7d_units_sold": 7063,
+     "last_90d_gmv": 458914326,
+     "last_90d_units_sold": 42044,
+     "total_gmv": 465993747,
+     "total_units_sold": 42644,
+     "yesterday_gmv": 12211136,
+     "yesterday_units_sold": 1124
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cddee097eae4478ea879f8663a66dc8c~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494754013832643961",
+     "shop_name": "AStarCase",
+     "total_units_sold": 61909
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 744,
+     "linked_video_count": 3350
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 32.11,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/3772813374b44f83830c7054f8e6fc0c~tplv-o3syd03w52-crop-webp:1000:1000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734390780522563483",
+     "floor_price": 32.11,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-02-27",
+     "launch_time": 1772153779,
+     "price_display": "32.112 ₫",
+     "product_id": "1734390780522563483",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 112,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734390780522563483?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Ốp lưng iPhone siêu mỏng - Bề mặt mờ, không bị ố vàng - Tương thích với iPhone 17, 16, 15, 14 Plus, 13, 12, 11 Pro Max, Xs Max, Xr X, màu sắc có sẵn: Trắng, Đen, Titan tự nhiên"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1014429424,
+     "last_28d_units_sold": 30993,
+     "last_7d_gmv": 314494166,
+     "last_7d_units_sold": 9718,
+     "last_90d_gmv": 2933955618,
+     "last_90d_units_sold": 94783,
+     "total_gmv": 5979356683,
+     "total_units_sold": 192039,
+     "yesterday_gmv": 25946496,
+     "yesterday_units_sold": 808
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/953e36e66dd24b8f8344aaf1686cd27b~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7495911248260205467",
+     "shop_name": "BoonCase",
+     "total_units_sold": 328032
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 953,
+     "linked_video_count": 2431
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 171.75,
+     "commission_rate_percent": 7,
+     "cover_url": "https://s.500fd.com/tt_product/473f9630a2c345a38146b70ef7d33d7d~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732492141002261684",
+     "floor_price": 171.75,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-09-27",
+     "launch_time": 1758926590,
+     "price_display": "171.752 ₫",
+     "product_id": "1732492141002261684",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 17,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732492141002261684?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Thế Hệ 13-18 Mới] Ốp Lưng Chống Sốc, Trong Suốt, Chống Vân Tay, Chống Vàng, Dành Cho iPhone 15, 15 Pro, 15 Pro Max, 15 Plus, iPhone 16, 16 Pro, 16 Pro Max, 16 Plus, iPhone 17, 17 Pro, 15 Pro Max, 17 Air,"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 4544200746,
+     "last_28d_units_sold": 28228,
+     "last_7d_gmv": 1129282586,
+     "last_7d_units_sold": 6363,
+     "last_90d_gmv": 8579981199,
+     "last_90d_units_sold": 56969,
+     "total_gmv": 20731578167,
+     "total_units_sold": 136984,
+     "yesterday_gmv": 139977880,
+     "yesterday_units_sold": 815
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/41cceec1c1d2490fa95353c1938d4f61~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8648983608539514036",
+     "shop_name": "JOYROOM Official VN",
+     "total_units_sold": 417275
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 511,
+     "linked_video_count": 2083
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 71.39,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/f6564704147647e38dc68e1dbe5e3923~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737427243954767394",
+     "floor_price": 71.39,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-11",
+     "launch_time": 1789099811,
+     "price_display": "71.394 ₫",
+     "product_id": "1737427243954767394",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 189,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737427243954767394?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Ốp lưng điện thoại với túi khí bốn góc biến thành iPhone 18 màu đỏ cherry trong tích tắc, Tương thích iPhone 18, 17, 14, 12, 16, 15, 13, 11 Pro Max, iPhone 16, 15, 14 Plus, iPhone 17 Air, Vỏ silicone TPU, Chống rơi và bảo vệ ống kính"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1826775461,
+     "last_28d_units_sold": 26901,
+     "last_7d_gmv": 252038358,
+     "last_7d_units_sold": 3822,
+     "last_90d_gmv": 2606318957,
+     "last_90d_units_sold": 38533,
+     "total_gmv": 2613191891,
+     "total_units_sold": 38639,
+     "yesterday_gmv": 14278800,
+     "yesterday_units_sold": 200
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0bbd9f6f598d43cfaf5b8febdb2688f2~tplv-aphluv4xwc-resize-webp:300:300.webp",
+     "shop_id": "8647387210246161954",
+     "shop_name": "HiCover4-VN",
+     "total_units_sold": 136276
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 207,
+     "linked_video_count": 868
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 31.48,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/189563a96ceb4f5c88935a44c45abe88~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737394512731800949",
+     "floor_price": 31.48,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-10",
+     "launch_time": 1789043274,
+     "price_display": "31.478 ₫",
+     "product_id": "1737394512731800949",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 138,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737394512731800949?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Ốp Lưng Cho IPhone 16 18 13 11 14 12 15 17 Pro Max Air 15 17 14 16 12 Pro 16 15 14 Plus Mềm Chống Sốc Túi Khí Cửa Sổ Lớn Mặt Sau Chuyển Màu Bán Trong Suốt Mờ Phong Cách Ins Nhiều Màu"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 835971914,
+     "last_28d_units_sold": 25581,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 876779058,
+     "last_90d_units_sold": 26871,
+     "total_gmv": 876779058,
+     "total_units_sold": 26871,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0f2bff067c9b4c5bb2dfb502a66b75ad~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494270899690505589",
+     "shop_name": "Qshells",
+     "total_units_sold": 299141
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 940,
+     "linked_video_count": 3309
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 32.33,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/ddc330dce4334e1785f4987e58cb5fcd~tplv-aphluv4xwc-crop-webp:1536:1536.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734629778736186885",
+     "floor_price": 32.33,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-03-23",
+     "launch_time": 1774250346,
+     "price_display": "32.333 ₫",
+     "product_id": "1734629778736186885",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 161,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734629778736186885?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Áp dụng cho IPhone 15 18 11 14 17 12 16 13 Pro Max 14 16 15 Plus XR X XSMax ốp lưng điện thoại chất liệu màu trơn nhẹ nhàng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 775458177,
+     "last_28d_units_sold": 23530,
+     "last_7d_gmv": 362718942,
+     "last_7d_units_sold": 11013,
+     "last_90d_gmv": 1776563517,
+     "last_90d_units_sold": 57174,
+     "total_gmv": 3617549351,
+     "total_units_sold": 135308,
+     "yesterday_gmv": 30360687,
+     "yesterday_units_sold": 939
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/85dccc8331fb41c48ecbc1d35778a958~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496252135008537093",
+     "shop_name": "Casely888",
+     "total_units_sold": 1266202
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 285,
+     "linked_video_count": 636
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 295.93,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/03fe3226a3aa4f65835e0cde608d1458~tplv-aphluv4xwc-crop-webp:1000:1000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736671990512321835",
+     "floor_price": 295.93,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-27",
+     "launch_time": 1785140764,
+     "price_display": "295.934 ₫",
+     "product_id": "1736671990512321835",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 289,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736671990512321835?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Ốp lưng CASETiFY Ripple Case với MagSafe dành cho iPhone 18 Pro Max/17 Pro Max /17 Air /16 Pro Max /16 Plus/15 Pro Max/15 Plus/14 Pro Max /14 Plus, chất liệu silicon lỏng cao cấp, chống sốc và bảo vệ khi sạc không dây."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 6085695049,
+     "last_28d_units_sold": 21355,
+     "last_7d_gmv": 1592517965,
+     "last_7d_units_sold": 5540,
+     "last_90d_gmv": 9179589844,
+     "last_90d_units_sold": 35097,
+     "total_gmv": 9179589844,
+     "total_units_sold": 35097,
+     "yesterday_gmv": 117485798,
+     "yesterday_units_sold": 397
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e8bddfd47c8c403b8d52ef6f69e5a155~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8653833208530371883",
+     "shop_name": "Umi Cases",
+     "total_units_sold": 42266
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 343,
+     "linked_video_count": 1438
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 35.67,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/12d52a80fa1441dfb02ee9c677b978ca~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737395227717371589",
+     "floor_price": 35.67,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-11",
+     "launch_time": 1789132303,
+     "price_display": "35.670 ₫",
+     "product_id": "1737395227717371589",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 144,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737395227717371589?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Ốp Lưng Cho IPhone 18 16 17 14 12 15 Pro 18 15 17 16 12 13 11 14 Pro Max Air 14 16 15 Plus Chống Sốc Túi Khí Cửa Sổ Lớn Màu Đơn Mờ Bán Trong Suốt Phong Cách Ins Đơn Giản"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 657061042,
+     "last_28d_units_sold": 19941,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 1074939067,
+     "last_90d_units_sold": 32715,
+     "total_gmv": 1079186667,
+     "total_units_sold": 32879,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cc4410ffe19d4c3cb2030d2825987e73~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494367287893329605",
+     "shop_name": "Vietcute Case",
+     "total_units_sold": 198644
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1052,
+     "linked_video_count": 3424
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 16,
+       "name": "Phones & Electronics"
+      },
+      "l2": {
+       "id": 909064,
+       "name": "Phone Accessories"
+      },
+      "l3": {
+       "id": 601925,
+       "name": "Cases, Screen Protectors & Stickers"
+      }
+     },
+     "ceiling_price": 41.97,
+     "commission_rate_percent": 11,
+     "cover_url": "https://s.500fd.com/tt_product/6954d1767b874e32b081fc7ac0052dac~tplv-aphluv4xwc-crop-webp:1200:1200.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730231378981784043",
+     "floor_price": 35.56,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-05-14",
+     "launch_time": 1715616677,
+     "price_display": "35.556 ₫  -  41.970 ₫",
+     "product_id": "1730231378981784043",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 116,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730231378981784043?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Ốp Lưng iphone Trong Suốt Chống Sốc - Hỗ trợ sạc từ tính không dây dành cho iphone 18 , 17, 16 ,15 ,14 ,13 ,12, 11 pro max và 16, 15, 14 x xr plus 17air"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 659525943,
+     "last_28d_units_sold": 19423,
+     "last_7d_gmv": 160410785,
+     "last_7d_units_sold": 4661,
+     "last_90d_gmv": 1740830143,
+     "last_90d_units_sold": 53362,
+     "total_gmv": 4352556728,
+     "total_units_sold": 137166,
+     "yesterday_gmv": 23786964,
+     "yesterday_units_sold": 669
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/790fb12bf38d469385061d3982a0c502~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495379559492717035",
+     "shop_name": "Kho Phụ Kiện - Beizun",
+     "total_units_sold": 2485827
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

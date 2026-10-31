@@ -1,0 +1,53 @@
+{
+ "tool": "market_category_analysis",
+ "args": {
+  "analysis_type": "basic_metrics",
+  "filter": {
+   "category_id": 14,
+   "region": "VN",
+   "date_type": "month",
+   "date_value": "2026-09"
+  }
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "analysis_type": "basic_metrics",
+  "category": {
+   "category_id": 14,
+   "category_level": 1,
+   "category_name": "Beauty & Personal Care",
+   "region": "VN",
+   "stat_date": "2026-09"
+  },
+  "concentration_metrics": {
+   "top_products_gmv_share": 0,
+   "top_shops_gmv_share": 0
+  },
+  "growth_metrics": {
+   "active_product_count_change": -1518,
+   "category_gmv_mom_percent": 8.93,
+   "category_gmv_yoy_percent": 40.37,
+   "category_units_sold_mom_percent": -6.17,
+   "category_units_sold_yoy_percent": 28.13,
+   "product_count_change": 112081,
+   "selling_creator_count_change": 5495,
+   "selling_live_count_change": 29126,
+   "selling_video_count_change": -252919
+  },
+  "scale_metrics": {
+   "active_product_count": 259689,
+   "category_gmv": 6455580765556.6,
+   "category_units_sold": 37500761,
+   "product_count": 112081,
+   "selling_creator_count": 242288,
+   "selling_live_count": 388815,
+   "selling_video_count": 2427458
+  },
+  "top_products_summary": {
+   "average_affiliate_count": 6775,
+   "average_live_count": 2558,
+   "average_video_count": 12365
+  }
+ }
+}

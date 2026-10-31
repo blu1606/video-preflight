@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "quần jean ống suông nữ",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2768,
+     "linked_video_count": 9880
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842376,
+       "name": "Women's Bottoms"
+      },
+      "l3": {
+       "id": 601276,
+       "name": "Jeans"
+      }
+     },
+     "ceiling_price": 260.11,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/3c63b54aaf9345aba752db009ed7d728~tplv-aphluv4xwc-crop-webp:900:900.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729687111872383588",
+     "floor_price": 249.27,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-08-17",
+     "launch_time": 1692263423,
+     "price_display": "249.268 ₫  -  260.106 ₫",
+     "product_id": "1729687111872383588",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 30,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729687111872383588?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Calem.Club - Quần kaki jean Ver.1 dài suông ống rộng form unisex nam nữ quần jean ống rộng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 4876210211,
+     "last_28d_units_sold": 22492,
+     "last_7d_gmv": 473258932,
+     "last_7d_units_sold": 1999,
+     "last_90d_gmv": 7839194863,
+     "last_90d_units_sold": 39362,
+     "total_gmv": 61941591797,
+     "total_units_sold": 333868,
+     "yesterday_gmv": 83754048,
+     "yesterday_units_sold": 336
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/967a1ec5e0e341a9a3c34a4f179a4539~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494695114930686564",
+     "shop_name": "Calem.Club",
+     "total_units_sold": 3238835
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 829,
+     "linked_video_count": 2888
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842376,
+       "name": "Women's Bottoms"
+      },
+      "l3": {
+       "id": 601276,
+       "name": "Jeans"
+      }
+     },
+     "ceiling_price": 207.62,
+     "commission_rate_percent": 11,
+     "cover_url": "https://s.500fd.com/tt_product/2cca3e0a16be45ddbeeddb0adbe37155~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736827073519584812",
+     "floor_price": 197.24,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-04",
+     "launch_time": 1785772871,
+     "price_display": "197.239 ₫  -  207.620 ₫",
+     "product_id": "1736827073519584812",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 18,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736827073519584812?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quần Jeans Ống Suông Rộng Wash Màu Hottrend Phối Râu Mèo D&N Ver 2 Form Unisex Nam Nữ Chất Liệu Jean Wash Mềm Mịn Nhiều Màu Tôn Dáng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2667525152,
+     "last_28d_units_sold": 13420,
+     "last_7d_gmv": 605518551,
+     "last_7d_units_sold": 2975,
+     "last_90d_gmv": 4348179027,
+     "last_90d_units_sold": 21971,
+     "total_gmv": 4348179027,
+     "total_units_sold": 21971,
+     "yesterday_gmv": 69822606,
+     "yesterday_units_sold": 354
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/157c806a0e4e4d52b8f0f6447bc443ae~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494704619158013484",
+     "shop_name": "D&N - Xưởng Jean Chuyên Nữ",
+     "total_units_sold": 40581
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 7549,
+     "linked_video_count": 20111
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842376,
+       "name": "Women's Bottoms"
+      },
+      "l3": {
+       "id": 601276,
+       "name": "Jeans"
+      }
+     },
+     "ceiling_price": 240.06,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/ecd68b80877141e6ae6e11859fe70dec~tplv-aphluv4xwc-crop-webp:900:900.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729660980981041764",
+     "floor_price": 230.05,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-07-20",
+     "launch_time": 1689840878,
+     "price_display": "230.053 ₫  -  240.056 ₫",
+     "product_id": "1729660980981041764",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 42,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729660980981041764?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Calem Club - Quần Jeans Ống Suông Ver 1 nhiều màu tôn dáng form unisex nam nữ quần jean ống rộng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2797936989,
+     "last_28d_units_sold": 12838,
+     "last_7d_gmv": 328771858,
+     "last_7d_units_sold": 1328,
+     "last_90d_gmv": 11896860980,
+     "last_90d_units_sold": 67326,
+     "total_gmv": 163304805336,
+     "total_units_sold": 890633,
+     "yesterday_gmv": 35198109,
+     "yesterday_units_sold": 153
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/967a1ec5e0e341a9a3c34a4f179a4539~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494695114930686564",
+     "shop_name": "Calem.Club",
+     "total_units_sold": 3238835
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 591,
+     "linked_video_count": 1568
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842376,
+       "name": "Women's Bottoms"
+      },
+      "l3": {
+       "id": 601276,
+       "name": "Jeans"
+      }
+     },
+     "ceiling_price": 171.55,
+     "commission_rate_percent": 9,
+     "cover_url": "https://s.500fd.com/tt_product/a7e04d5aba0c412a852e0267babb29c0~tplv-aphluv4xwc-crop-webp:1000:1000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736094042238256382",
+     "floor_price": 171.55,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-03",
+     "launch_time": 1783059264,
+     "price_display": "171.548 ₫",
+     "product_id": "1736094042238256382",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 30,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736094042238256382?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "( MỚI - DEAL MỞ BÁN ) Quần jean ống rộng nữ,( BIGSIZE)  quần bò ống suông from rộng nam nữ phong cách RETRO"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2057181728,
+     "last_28d_units_sold": 12609,
+     "last_7d_gmv": 273157850,
+     "last_7d_units_sold": 1658,
+     "last_90d_gmv": 4980846214,
+     "last_90d_units_sold": 33818,
+     "total_gmv": 5017469999,
+     "total_units_sold": 34028,
+     "yesterday_gmv": 47518796,
+     "yesterday_units_sold": 277
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/72c3cfebfd664299b6198bca55657d33~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495983674613991678",
+     "shop_name": "Xưởng May Hoàng Huy",
+     "total_units_sold": 624177
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 6671,
+     "linked_video_count": 17628
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842376,
+       "name": "Women's Bottoms"
+      },
+      "l3": {
+       "id": 601276,
+       "name": "Jeans"
+      }
+     },
+     "ceiling_price": 237.93,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/5bd067efdf0e4f9d933f49dbf70d879b~tplv-aphluv4xwc-crop-webp:2048:2048.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732106854767560082",
+     "floor_price": 237.83,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-08-03",
+     "launch_time": 1754151434,
+     "price_display": "237.834 ₫  -  237.933 ₫",
+     "product_id": "1732106854767560082",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 40,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732106854767560082?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[MIAA] Quần Jean Nữ Ống Suông Rộng 30-34cm Size XS-XL - Màu Retro Xanh Trắng, Xanh Xám, Dirty,... - Chất Vải Jeans Mềm - Quần Ống Rộng Suông - Mã Ver3"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2576275669,
+     "last_28d_units_sold": 12245,
+     "last_7d_gmv": 693102234,
+     "last_7d_units_sold": 3041,
+     "last_90d_gmv": 9393829942,
+     "last_90d_units_sold": 51594,
+     "total_gmv": 56887183420,
+     "total_units_sold": 266697,
+     "yesterday_gmv": 99890280,
+     "yesterday_units_sold": 420
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/4d5bd8b9e294436c9cf1ca3532dd18eb~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494846643153701266",
+     "shop_name": "Miaa Jeans",
+     "total_units_sold": 1047192
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 211,
+     "linked_video_count": 174
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842376,
+       "name": "Women's Bottoms"
+      },
+      "l3": {
+       "id": 601276,
+       "name": "Jeans"
+      }
+     },
+     "ceiling_price": 161.51,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/a4c12f955903456989f10f4c17ce3b97~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737816998425036341",
+     "floor_price": 138.27,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-10-04",
+     "launch_time": 1791108357,
+     "price_display": "138.267 ₫  -  161.505 ₫",
+     "product_id": "1737816998425036341",
+     "product_rating": 4.4,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 80,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737816998425036341?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quần Jeans Ống Suông Ver 1 nhiều màu tôn dáng form unisex nam nữ quần jean ống rộng"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1402346878,
+     "last_28d_units_sold": 10626,
+     "last_7d_gmv": 686594124,
+     "last_7d_units_sold": 5156,
+     "last_90d_gmv": 1402346878,
+     "last_90d_units_sold": 10626,
+     "total_gmv": 1402346878,
+     "total_units_sold": 10626,
+     "yesterday_gmv": 141170607,
+     "yesterday_units_sold": 1021
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/ad76628d837b4d67b257be839e6c3de5~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494620833843611189",
+     "shop_name": "THANH BAO SOOP",
+     "total_units_sold": 19363
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 801,
+     "linked_video_count": 1412
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842376,
+       "name": "Women's Bottoms"
+      },
+      "l3": {
+       "id": 601276,
+       "name": "Jeans"
+      }
+     },
+     "ceiling_price": 210.93,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/b76255ab454243de8996bd05112df5f3~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1731762290460690212",
+     "floor_price": 210.93,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-07-03",
+     "launch_time": 1751491520,
+     "price_display": "210.934 ₫",
+     "product_id": "1731762290460690212",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 94,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1731762290460690212?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "(ND Jean) Quần Jean Kaki Nữ Ống Suông Thêu Thỏ Lưng Cao - Dài 96-103CM -  5 Màu – Form Suông, Vải Không Giãn, Dễ Mặc"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1702566843,
+     "last_28d_units_sold": 8438,
+     "last_7d_gmv": 512636083,
+     "last_7d_units_sold": 2523,
+     "last_90d_gmv": 5132306345,
+     "last_90d_units_sold": 30323,
+     "total_gmv": 12156767990,
+     "total_units_sold": 67503,
+     "yesterday_gmv": 34804110,
+     "yesterday_units_sold": 165
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/d5257176e4334aa398ebf07840767f4c~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496144772443441956",
+     "shop_name": "ND JEAN",
+     "total_units_sold": 170792
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 353,
+     "linked_video_count": 346
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842376,
+       "name": "Women's Bottoms"
+      },
+      "l3": {
+       "id": 601276,
+       "name": "Jeans"
+      }
+     },
+     "ceiling_price": 159.48,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/04f987bfbfdf4c84b7f06cd17aff1fb0~tplv-aphluv4xwc-resize-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737397235190171013",
+     "floor_price": 159.48,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-07",
+     "launch_time": 1788796508,
+     "price_display": "159.476 ₫",
+     "product_id": "1737397235190171013",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 16,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737397235190171013?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[ DEAL MỞ BÁN ] Quần Jean Nữ Ống Rộng Suông Thêu Họa Tiết Túi Sau Lưng Cao Cấp – LLYRA CLOSET"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1367260228,
+     "last_28d_units_sold": 8303,
+     "last_7d_gmv": 0,
+     "last_7d_units_sold": 0,
+     "last_90d_gmv": 2032861180,
+     "last_90d_units_sold": 14592,
+     "total_gmv": 2032861180,
+     "total_units_sold": 14592,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/f446cacf5a454c68b4b3ffbaefc89f26~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495298799452785029",
+     "shop_name": "LLYRA CLOSET",
+     "total_units_sold": 22205
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1339,
+     "linked_video_count": 3548
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842376,
+       "name": "Women's Bottoms"
+      },
+      "l3": {
+       "id": 601276,
+       "name": "Jeans"
+      }
+     },
+     "ceiling_price": 188.08,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/28e5387a12544622b294e954fc5758e6~tplv-aphluv4xwc-crop-webp:2000:2000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735337690866615468",
+     "floor_price": 154.89,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-02",
+     "launch_time": 1777686114,
+     "price_display": "154.886 ₫  -  188.079 ₫",
+     "product_id": "1735337690866615468",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 44,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735337690866615468?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Quần Jean Nữ Ống Suông Rộng 25-28cm Cạp Cao Màu Retro Xanh Nhạt, Xanh Xám, Xanh Rêu...- Size S-XL Chất vải Jean Mềm Quần Ống Rộng Suông Thời Trang MS 1222 Kiểu Dáng Thời Trang"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1247346951,
+     "last_28d_units_sold": 7904,
+     "last_7d_gmv": 353744926,
+     "last_7d_units_sold": 2248,
+     "last_90d_gmv": 3892763435,
+     "last_90d_units_sold": 32343,
+     "total_gmv": 4670187339,
+     "total_units_sold": 37241,
+     "yesterday_gmv": 38256842,
+     "yesterday_units_sold": 247
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/f384c0cf25284f849a95a41b81d8eadd~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495876569314396332",
+     "shop_name": "Min-a Jeans",
+     "total_units_sold": 93817
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1516,
+     "linked_video_count": 4299
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 2,
+       "name": "Womenswear & Underwear"
+      },
+      "l2": {
+       "id": 842376,
+       "name": "Women's Bottoms"
+      },
+      "l3": {
+       "id": 601276,
+       "name": "Jeans"
+      }
+     },
+     "ceiling_price": 269.47,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/88dfaceb1f724530b3e0d75f2e15c0bc~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733347933211296942",
+     "floor_price": 258.64,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-25",
+     "launch_time": 1764074893,
+     "price_display": "258.644 ₫  -  269.466 ₫",
+     "product_id": "1733347933211296942",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 100,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733347933211296942?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "THE QUẠO - Quần Jean Nữ Lưng Cực Thấp Ống Suông Loe R2511_730 B1"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2120429145,
+     "last_28d_units_sold": 7874,
+     "last_7d_gmv": 441605950,
+     "last_7d_units_sold": 1636,
+     "last_90d_gmv": 3230862472,
+     "last_90d_units_sold": 12651,
+     "total_gmv": 17526307199,
+     "total_units_sold": 68655,
+     "yesterday_gmv": 70609812,
+     "yesterday_units_sold": 273
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/f8832bd5fe044f52abbbaface7843914~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494558602559916206",
+     "shop_name": "The Quạo đây",
+     "total_units_sold": 2421322
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

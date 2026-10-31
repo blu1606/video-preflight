@@ -1,0 +1,78 @@
+{
+  "model": "gpt-6-luna",
+  "answer": {
+    "headline": "Hook mở đầu tốt, nhưng cần ưu tiên rà soát các lời hứa về hiệu quả và bổ sung thông tin mua hàng rõ ràng.",
+    "summary": "Video nêu vấn đề người xem dễ hiểu và mở đầu thu hút. Tuy nhiên, lời khẳng định về làm trắng chưa có chứng cứ hỗ trợ, còn ưu đãi mua hàng chưa được nêu rõ. Dữ liệu không báo có nhóm nào dùng số giả lập.",
+    "insights": [
+      {
+        "text": "Mở đầu tạo lý do rõ ràng để người xem tiếp tục xem, nhưng lời hứa chưa khác biệt nhiều và video chưa có nhiều giá trị hữu ích để người xem lưu hoặc chia sẻ.",
+        "tone": "good",
+        "refs": [
+          "V01",
+          "V02",
+          "V07"
+        ]
+      },
+      {
+        "text": "Video gắn sản phẩm với một vấn đề cụ thể khá tốt. Tuy vậy, các khẳng định chính còn thiếu bằng chứng và người xem khó nhận ra ưu đãi mua hàng.",
+        "tone": "bad",
+        "refs": [
+          "C02",
+          "C06",
+          "C07"
+        ]
+      },
+      {
+        "text": "Giá được đánh giá là gần mặt bằng sản phẩm tương tự nhưng chưa có điểm khác biệt rõ; tín hiệu về nhu cầu thị trường cũng chưa thật chắc chắn.",
+        "tone": "info",
+        "refs": [
+          "S03",
+          "S05"
+        ]
+      }
+    ],
+    "fixes": [
+      {
+        "text": "Rà soát và bỏ hoặc sửa các câu hứa làm trắng tuyệt đối; chỉ giữ lại công dụng có thông tin hoặc bằng chứng hỗ trợ. Cân nhắc bỏ cảnh so sánh trước và sau.",
+        "why": "Các lời hứa về hiệu quả và cảnh so sánh có thể gây hiểu nhầm, nên cần xem lại trước khi đăng hoặc chạy quảng cáo.",
+        "t": 0,
+        "refs": [
+          "C06",
+          "TTS-002",
+          "TTA-001",
+          "TTA-002"
+        ]
+      },
+      {
+        "text": "Kiểm tra hồ sơ công bố mỹ phẩm và thông tin cần có trên trang sản phẩm trước khi đăng bán.",
+        "why": "Các cảnh báo hiện có cho thấy hồ sơ và thông tin sản phẩm cần được rà soát; đây chưa phải kết luận duyệt chính thức.",
+        "t": null,
+        "refs": [
+          "TTS-003",
+          "SHP-004"
+        ]
+      },
+      {
+        "text": "Thêm lời nói hoặc chữ trên màn hình để người xem hiểu rõ ưu đãi mua hàng.",
+        "why": "Hiện chưa thấy ưu đãi cụ thể trong video, nên người xem thiếu thông tin để quyết định mua.",
+        "t": 32.7,
+        "refs": [
+          "C07"
+        ]
+      }
+    ],
+    "groups": {
+      "viral_potential": "Đây là nhóm tốt nhất của video: mở đầu cuốn hút và liên quan đến nhu cầu người xem. Phần lời hứa còn chưa đủ khác biệt, và nội dung chưa có nhiều lý do để lưu hoặc chia sẻ.",
+      "conversion_potential": "Video cho thấy sản phẩm gắn với một vấn đề cụ thể, nhưng lời khẳng định thiếu bằng chứng và ưu đãi mua hàng chưa rõ. Đây là nhóm nên ưu tiên cải thiện để hỗ trợ quyết định mua.",
+      "sku_market": "Giá được xem là gần mức thị trường nhưng chưa có khác biệt rõ; dữ liệu về nhu cầu sản phẩm cũng chưa đủ chắc chắn để khẳng định sức mua.",
+      "shop_health": "Không có dữ liệu để đánh giá tình hình của shop.",
+      "policy_compliance": "Có các nội dung được hệ thống rule engine bản baseline gắn cờ cần xem lại. Đây không phải kết luận duyệt chính thức."
+    },
+    "policy": "Các cảnh báo trên TikTok Shop, quảng cáo và trang sản phẩm cần được xem lại; hệ thống rule engine bản baseline phát hiện rủi ro, không đồng nghĩa đã có kết luận vi phạm chính thức. Đặc biệt, cần rà soát lời hứa về làm trắng, cảnh trước và sau, cùng hồ sơ công bố mỹ phẩm.",
+    "shop": null
+  },
+  "token_usage": {
+    "prompt_tokens": 2148,
+    "completion_tokens": 1641
+  }
+}

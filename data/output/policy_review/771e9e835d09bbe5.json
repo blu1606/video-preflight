@@ -1,0 +1,105 @@
+{
+  "model": "gpt-6-luna",
+  "usage": {
+    "completion_tokens": 1319,
+    "prompt_tokens": 1671,
+    "total_tokens": 2990,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 780,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 1668,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+    }
+  },
+  "rules": {
+    "TTS-001": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.91,
+      "rationale": "Nội dung quảng bá ứng dụng tạo liên kết hoàn tiền, nhưng dữ liệu được cung cấp không cho biết dịch vụ này có thuộc nhóm sản phẩm bị cấm hoặc không được hỗ trợ hay không."
+    },
+    "TTS-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.92,
+      "rationale": "Video đưa ra tuyên bố về việc nhận tiền hoàn, nhưng không có thông tin sản phẩm, điều khoản hoặc bằng chứng để xác minh các tuyên bố đó."
+    },
+    "TTS-003": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Sản phẩm được mô tả là ứng dụng tạo liên kết hoàn tiền, không phải sản phẩm làm đẹp hoặc mỹ phẩm."
+    },
+    "TTC-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Thông tin cho biết bài đăng có tính thương mại, nhưng không có dữ liệu về cài đặt công khai nội dung thương mại trên nền tảng."
+    },
+    "SHP-001": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Không có thông tin niêm yết về tiêu đề, hình ảnh, giá hoặc mô tả để đối chiếu tính nhất quán."
+    },
+    "SHP-002": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Không có hình ảnh trong trang niêm yết để xác định có ảnh chụp sản phẩm thực tế đạt tiêu chí hay không."
+    },
+    "SHP-003": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Không có tiêu đề niêm yết để kiểm tra có chứa tuyên bố quảng cáo hoặc cụm từ tiếp thị bị hạn chế hay không."
+    },
+    "SHP-004": {
+      "outcome": "not_triggered",
+      "model_outcome": "not_triggered",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Sản phẩm được cung cấp là ứng dụng tạo liên kết hoàn tiền, không phải mỹ phẩm cần thông tin nguồn gốc, công bố hoặc hạn sử dụng."
+    },
+    "SHP-005": {
+      "outcome": "unknown",
+      "model_outcome": "unknown",
+      "quotes": [],
+      "dropped_quotes": [],
+      "downgraded": false,
+      "confidence": 0.99,
+      "rationale": "Không có mô tả niêm yết để kiểm tra liên hệ bên ngoài hoặc nội dung điều hướng ra khỏi nền tảng."
+    }
+  }
+}

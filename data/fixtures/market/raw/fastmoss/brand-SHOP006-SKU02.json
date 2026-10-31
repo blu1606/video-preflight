@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "ColosBaby",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 77,
+     "linked_video_count": 114
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 602284,
+       "name": ""
+      }
+     },
+     "ceiling_price": 435,
+     "commission_rate_percent": 2,
+     "cover_url": "https://s.500fd.com/tt_product/6ff1e7af46644bb199358be72eb6ba41~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733314780077852040",
+     "floor_price": 1.15,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-12-19",
+     "launch_time": 1766110761,
+     "price_display": "1.154.246 ₫  -  1.726.435 ₫",
+     "product_id": "1733314780077852040",
+     "product_rating": 4.6,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 19,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733314780077852040?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 2 hộp Vitadairy Colosbaby 800gr đủ loại date mới"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 891264999,
+     "last_28d_units_sold": 823,
+     "last_7d_gmv": 240975883,
+     "last_7d_units_sold": 230,
+     "last_90d_gmv": 2279449557,
+     "last_90d_units_sold": 2103,
+     "total_gmv": 3639604213,
+     "total_units_sold": 3251,
+     "yesterday_gmv": 28856150,
+     "yesterday_units_sold": 25
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/83c9c1ab9d924dffb74a8adf92ddeacf~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496258994272307592",
+     "shop_name": "Cửa hàng sữa Nghĩa Thu",
+     "total_units_sold": 41893
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 60,
+     "linked_video_count": 78
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 933768,
+       "name": "Growth Milk Formula"
+      }
+     },
+     "ceiling_price": 78,
+     "commission_rate_percent": 2,
+     "cover_url": "https://s.500fd.com/tt_product/5aa531c8528f43198a84c0f178142488~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733498167376381338",
+     "floor_price": 2.29,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-12-16",
+     "launch_time": 1765850372,
+     "price_display": "2.292.129 ₫  -  2.564.078 ₫",
+     "product_id": "1733498167376381338",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733498167376381338?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Combo 4 hộp Vitadairy Colosbaby Gold Mới Vị Thanh Nhạt 800gr date mới sữa cho"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1516783296,
+     "last_28d_units_sold": 659,
+     "last_7d_gmv": 255616839,
+     "last_7d_units_sold": 116,
+     "last_90d_gmv": 3783061160,
+     "last_90d_units_sold": 1624,
+     "total_gmv": 4655689994,
+     "total_units_sold": 1973,
+     "yesterday_gmv": 11460645,
+     "yesterday_units_sold": 5
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/cfea82b9a73248e8b6995ff86058e6d0~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7494859985589143962",
+     "shop_name": "Shop Sữa Coca",
+     "total_units_sold": 240869
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3,
+     "linked_video_count": 4
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879112,
+       "name": "Baby Care & Health"
+      },
+      "l3": {
+       "id": 947592,
+       "name": "Baby Vitamins & Supplements"
+      }
+     },
+     "ceiling_price": 539,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/12c04f0b178e4993bc6c230ba5c3771c~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730550057439038254",
+     "floor_price": 1.37,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-07-12",
+     "launch_time": 1720739557,
+     "price_display": "1.371.453 ₫  -  1.470.539 ₫",
+     "product_id": "1730550057439038254",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730550057439038254?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Vitadairy-(COMBO2LON COLOSBABY GOLD) MẪU MỚI NHẤT_Sữa bột bổ sung sữa non Colosbaby Gold lon 800g - Vị thanh nhạt cho bé. sữa  colosbaby"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 676332292,
+     "last_28d_units_sold": 497,
+     "last_7d_gmv": 154566827,
+     "last_7d_units_sold": 113,
+     "last_90d_gmv": 1886892288,
+     "last_90d_units_sold": 1415,
+     "total_gmv": 6902201943,
+     "total_units_sold": 5525,
+     "yesterday_gmv": 20571795,
+     "yesterday_units_sold": 15
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c8c9cbf9f39f4836a6a7a5d234463e0a~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495391366673042222",
+     "shop_name": "Ankine Việt Nam",
+     "total_units_sold": 30730
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 22,
+     "linked_video_count": 15
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 602284,
+       "name": ""
+      }
+     },
+     "ceiling_price": 280,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/39de24c7d5ee4a9799b0f54b237aeeb7~tplv-aphluv4xwc-crop-webp:922:1229.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1734912997394253340",
+     "floor_price": 590.99,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-29",
+     "launch_time": 1780059001,
+     "price_display": "590.992 ₫  -  5.455.280 ₫",
+     "product_id": "1734912997394253340",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 33,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1734912997394253340?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[Tặng Quà] ColosBaby LACTOFERRIN Quà Tặng Lon sữa 800g - Tăng Cân & Miễn Dịch Khoẻ - Hỗ Trợ Tiêu Hóa Tốt - Sữa bỉm Sâu Mỡ"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 244815376,
+     "last_28d_units_sold": 388,
+     "last_7d_gmv": 39630466,
+     "last_7d_units_sold": 61,
+     "last_90d_gmv": 889501958,
+     "last_90d_units_sold": 1342,
+     "total_gmv": 1508610494,
+     "total_units_sold": 2192,
+     "yesterday_gmv": 2363968,
+     "yesterday_units_sold": 4
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/a22a92e9e601423a94729d2bc05a324c~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7495964777855683100",
+     "shop_name": "Sữa Bỉm Sâu Mỡ",
+     "total_units_sold": 13021
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 17,
+     "linked_video_count": 4
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879112,
+       "name": "Baby Care & Health"
+      },
+      "l3": {
+       "id": 929672,
+       "name": "Diapers"
+      }
+     },
+     "ceiling_price": 381,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/1794f0daa6bf4309813e12f815994d38~tplv-aphluv4xwc-crop-webp:1080:1080.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735272153263539404",
+     "floor_price": 1.5,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-30",
+     "launch_time": 1780151999,
+     "price_display": "1.499.385 ₫  -  1.622.381 ₫",
+     "product_id": "1735272153263539404",
+     "product_rating": 4.8,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735272153263539404?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[ COMBO 2 LON] Sản phẩm dinh dưỡng COLOSBABY LACTOFERRIN 800gr Tăng Cường Miễn Dịch và Hỗ Trợ Phát Triển Toàn Diện"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 521659247,
+     "last_28d_units_sold": 362,
+     "last_7d_gmv": 67919774,
+     "last_7d_units_sold": 46,
+     "last_90d_gmv": 1539687320,
+     "last_90d_units_sold": 1073,
+     "total_gmv": 2010317904,
+     "total_units_sold": 1405,
+     "yesterday_gmv": 7496925,
+     "yesterday_units_sold": 5
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/48e0d1bdf0ec4ca8b491ac364380c006~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496108891084261580",
+     "shop_name": "KidMomMart Đảng Thảo",
+     "total_units_sold": 2796
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4,
+     "linked_video_count": 2
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 24,
+       "name": "Food & Beverages"
+      },
+      "l2": {
+       "id": 809744,
+       "name": "Milk & Dairy"
+      },
+      "l3": {
+       "id": 820624,
+       "name": "Powdered Milk"
+      }
+     },
+     "ceiling_price": 798,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/4363bb1102624d2e99dd973ebd6205ac~tplv-aphluv4xwc-crop-webp:1320:1322.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736914951178848168",
+     "floor_price": 726.34,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-18",
+     "launch_time": 1787027725,
+     "price_display": "726.338 ₫  -  4.643.798 ₫",
+     "product_id": "1736914951178848168",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 15,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736914951178848168?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[ColosBaby Gold THANH NHẠT 800g] Sữa bột hỗ trợ tăng cân - tăng cường miễn dịch lon 800g"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 220514343,
+     "last_28d_units_sold": 321,
+     "last_7d_gmv": 8727791,
+     "last_7d_units_sold": 12,
+     "last_90d_gmv": 346852167,
+     "last_90d_units_sold": 521,
+     "total_gmv": 350302011,
+     "total_units_sold": 527,
+     "yesterday_gmv": 1452676,
+     "yesterday_units_sold": 2
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/83a782365afc4968b0bcb376ae5b932d~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494819440387524520",
+     "shop_name": "Pulkids Mẹ và Bé",
+     "total_units_sold": 760
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 8,
+     "linked_video_count": 20
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 933768,
+       "name": "Growth Milk Formula"
+      }
+     },
+     "ceiling_price": 803.48,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/0f20f43982d14b47ae36d615ccfd1581~tplv-aphluv4xwc-crop-webp:1290:1266.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736514195198805798",
+     "floor_price": 511.29,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-24",
+     "launch_time": 1784827214,
+     "price_display": "511.286 ₫  -  803.478 ₫",
+     "product_id": "1736514195198805798",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736514195198805798?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[THÙNG 48 HỘP] Sữa uống dinh dưỡng ColosBaby IQ Gold - Thơm ngon dễ uống, hỗ trợ phát triển trí não"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 144858654,
+     "last_28d_units_sold": 287,
+     "last_7d_gmv": 45224825,
+     "last_7d_units_sold": 91,
+     "last_90d_gmv": 321714908,
+     "last_90d_units_sold": 635,
+     "total_gmv": 352469271,
+     "total_units_sold": 696,
+     "yesterday_gmv": 6646718,
+     "yesterday_units_sold": 13
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e7fc81c7c6bf4794bae9b9ce52e31c2a~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494734257002022694",
+     "shop_name": "Mạnh Hiền Kids",
+     "total_units_sold": 14242
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 7,
+     "linked_video_count": 1
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 933768,
+       "name": "Growth Milk Formula"
+      }
+     },
+     "ceiling_price": 868.64,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/fa5fcd1f87f5449d95863214618d4cec~tplv-aphluv4xwc-crop-webp:1320:1283.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736264680614495426",
+     "floor_price": 572.36,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-12",
+     "launch_time": 1783867714,
+     "price_display": "572.364 ₫  -  868.640 ₫",
+     "product_id": "1736264680614495426",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736264680614495426?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "( Gold Cải Tiến ) Thùng 48 Hộp- Sữa Uống Dinh Dưỡng Colosbaby Gold Cải Tiến 110ml/180ml Bổ Sung Năng Lượng Thơm Ngon Dễ Uống"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 149614790,
+     "last_28d_units_sold": 283,
+     "last_7d_gmv": 77269773,
+     "last_7d_units_sold": 151,
+     "last_90d_gmv": 277636504,
+     "last_90d_units_sold": 547,
+     "total_gmv": 367012877,
+     "total_units_sold": 708,
+     "yesterday_gmv": 1144728,
+     "yesterday_units_sold": 2
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/6b1763574fbe402a8b219bfb6c2bf2fc~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494742499781805250",
+     "shop_name": "Dũng Huyền Mẹ & Bé",
+     "total_units_sold": 7243
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 3,
+     "linked_video_count": 3
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 602284,
+       "name": ""
+      }
+     },
+     "ceiling_price": 79,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/3f5e0bedd6d245f4a9eca3890612f60e~tplv-o3syd03w52-resize-jpeg:800:800.jpeg",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1730321022302391086",
+     "floor_price": 355.81,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2024-06-01",
+     "launch_time": 1717175373,
+     "price_display": "355.812 ₫  -  2.941.079 ₫",
+     "product_id": "1730321022302391086",
+     "product_rating": 4.9,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 20,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1730321022302391086?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Vitadairy-(ColosBaby Gold) MẪU MỚI NHẤT_Sữa bột bổ sung sữa non ColosBaby Gold lon 400g/800g cho bé, Vị thanh nhạt, dễ tiêu hóa. Date mới, có quà, tích xu đầy đủ."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 96763142,
+     "last_28d_units_sold": 277,
+     "last_7d_gmv": 36291527,
+     "last_7d_units_sold": 103,
+     "last_90d_gmv": 237397979,
+     "last_90d_units_sold": 677,
+     "total_gmv": 883469156,
+     "total_units_sold": 2519,
+     "yesterday_gmv": 6404616,
+     "yesterday_units_sold": 18
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c8c9cbf9f39f4836a6a7a5d234463e0a~tplv-o3syd03w52-resize-webp:300:300.webp",
+     "shop_id": "7495391366673042222",
+     "shop_name": "Ankine Việt Nam",
+     "total_units_sold": 30730
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4,
+     "linked_video_count": 63
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 18,
+       "name": "Baby & Maternity"
+      },
+      "l2": {
+       "id": 879496,
+       "name": "Formula Milk & Baby Food"
+      },
+      "l3": {
+       "id": 933768,
+       "name": "Growth Milk Formula"
+      }
+     },
+     "ceiling_price": 480.93,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/886b1ff010554f1195cf966863c6cd61~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736876056170366346",
+     "floor_price": 480.93,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-08-25",
+     "launch_time": 1787660601,
+     "price_display": "480.925 ₫",
+     "product_id": "1736876056170366346",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736876056170366346?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[THÙNG 48 HỘP] Sữa Uống Dinh Dưỡng Colosbaby IQ Gold-Thơm Ngon Dễ Uống,Hỗ Trợ Phát Triển Trí Não."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 133096013,
+     "last_28d_units_sold": 267,
+     "last_7d_gmv": 43764546,
+     "last_7d_units_sold": 90,
+     "last_90d_gmv": 204212202,
+     "last_90d_units_sold": 416,
+     "total_gmv": 360742714,
+     "total_units_sold": 720,
+     "yesterday_gmv": 6732950,
+     "yesterday_units_sold": 14
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/tiktok_user_default_avatar~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494797638808012170",
+     "shop_name": "Chang's House Me Va Be",
+     "total_units_sold": 2787
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

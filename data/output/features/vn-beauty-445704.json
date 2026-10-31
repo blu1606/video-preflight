@@ -1,0 +1,324 @@
+{
+  "schema_version": 4,
+  "video_file": "D:\\CODE\\Study\\AIO\\Labs\\Linear_regression\\video_understanding\\data\\vn-beauty-445704.mp4",
+  "video_fingerprint": "24876b5f408626d859f4362e1985857322adfc1c",
+  "frame_files": [
+    "0000.00.jpg",
+    "0001.00.jpg",
+    "0002.00.jpg",
+    "0003.00.jpg",
+    "0004.00.jpg",
+    "0005.00.jpg",
+    "0006.00.jpg",
+    "0007.00.jpg",
+    "0008.00.jpg",
+    "0009.00.jpg",
+    "0010.00.jpg",
+    "0011.00.jpg",
+    "0012.00.jpg",
+    "0013.00.jpg",
+    "0014.00.jpg",
+    "0015.00.jpg",
+    "0016.00.jpg",
+    "0017.00.jpg",
+    "0018.00.jpg",
+    "0019.00.jpg",
+    "0020.00.jpg",
+    "0021.00.jpg",
+    "0022.00.jpg",
+    "0023.00.jpg",
+    "0024.00.jpg",
+    "0025.00.jpg",
+    "0026.00.jpg",
+    "0027.00.jpg"
+  ],
+  "video_duration_sec": 27.83,
+  "vision_model": "gpt-6-luna",
+  "benchmark_latency": {
+    "frame_extraction_sec": 1.56,
+    "audio_transcription_sec": 7.29,
+    "vision_inference_sec": 32.76,
+    "total_pipeline_sec": 41.61
+  },
+  "token_usage": {
+    "prompt_tokens": 6998,
+    "completion_tokens": 3627,
+    "total_tokens": 10625
+  },
+  "transcript": "Ngày nào cũng dùng đồ rẻ tiền như thế này, thì làm sao trang điểm đẹp được? Là người thừa kế của gia tộc, tôi tuyệt đối sẽ không cưới một người phụ nữ như thế này Anh, sao anh lại về rồi? Ngay cả thương hiệu Rock Sweet còn không biết, thì mày cũng xứng đáng làm người thừa kế gia tộc sao? Thằng em ngu ngốc của anh Vì mày không muốn cưới, thì tao lấy cô ấy và cây mascara lông mày này",
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 4.92,
+      "text": "Ngày nào cũng dùng đồ rẻ tiền như thế này, thì làm sao trang điểm đẹp được?"
+    },
+    {
+      "start": 4.92,
+      "end": 8.72,
+      "text": "Là người thừa kế của gia tộc, tôi tuyệt đối sẽ không cưới một người phụ nữ như thế này"
+    },
+    {
+      "start": 12.04,
+      "end": 15.2,
+      "text": "Anh, sao anh lại về rồi?"
+    },
+    {
+      "start": 15.2,
+      "end": 19.72,
+      "text": "Ngay cả thương hiệu Rock Sweet còn không biết, thì mày cũng xứng đáng làm người thừa kế gia tộc sao?"
+    },
+    {
+      "start": 19.72,
+      "end": 22.2,
+      "text": "Thằng em ngu ngốc của anh"
+    },
+    {
+      "start": 22.2,
+      "end": 26.6,
+      "text": "Vì mày không muốn cưới, thì tao lấy cô ấy và cây mascara lông mày này"
+    }
+  ],
+  "features": {
+    "product": {
+      "name": "Mascara lông mày Rock Sweet",
+      "category": "Mỹ phẩm trang điểm lông mày",
+      "brand": "Rock Sweet"
+    },
+    "hook_analysis": {
+      "hook_detected": true,
+      "hook_duration_sec": 3.0,
+      "hook_type": "pain_point",
+      "visual_evidence": "Một người đàn ông mặc vest cau có, giơ sản phẩm màu hồng về phía người phụ nữ trong váy dạ hội; bối cảnh tiệc sang trọng tạo cảm giác đối đầu.",
+      "verbal_hook": "Ngày nào cũng dùng đồ rẻ tiền như thế này, thì làm sao trang điểm đẹp được?",
+      "hook_strength_1_to_10": 8.5
+    },
+    "demo_and_product_experience": {
+      "demo_present": false,
+      "demo_start_sec": 0.0,
+      "demo_end_sec": 0.0,
+      "before_after_shown": false,
+      "sensory_details": [],
+      "clarity_score_1_to_10": 2.0
+    },
+    "social_proof_and_claims": {
+      "key_claims": [
+        "Lời thoại chê dùng đồ rẻ tiền sẽ khiến việc trang điểm không đẹp, nhưng không có minh họa hoặc bằng chứng về hiệu quả của sản phẩm.",
+        "Sản phẩm được gọi là mascara lông mày; video không nêu công dụng cụ thể hoặc kết quả sử dụng."
+      ],
+      "authenticity_level": "low",
+      "format": "brand_ad"
+    },
+    "call_to_action": {
+      "has_cta": false,
+      "cta_type": "",
+      "cta_timestamp_sec": 0.0,
+      "urgency_expressed": false
+    },
+    "scoring": {
+      "viral_potential_score": 78,
+      "conversion_potential_score": 42,
+      "rubric_reasons": {
+        "strengths": [
+          "Mở đầu bằng lời thoại xúc phạm trực diện và hình ảnh đối đầu, dễ khơi gợi tò mò.",
+          "Tình tiết người thừa kế xuất hiện cùng màn tranh giành sản phẩm tạo chất phim ngắn kịch tính.",
+          "Sản phẩm màu hồng nổi bật và được đưa lại vào khung hình ở đoạn cuối."
+        ],
+        "weaknesses": [
+          "Không trình diễn cách dùng, kết cấu, độ bám hoặc kết quả trên lông mày.",
+          "Không có lời kêu gọi mua hàng, thông tin ưu đãi hay chỉ dẫn tới TikTok Shop.",
+          "Câu chuyện kịch tính lấn át thông tin hữu ích để đánh giá sản phẩm."
+        ]
+      }
+    },
+    "key_moments": [
+      {
+        "timestamp_sec": 0.0,
+        "event": "Hook",
+        "description": "Người đàn ông giơ sản phẩm màu hồng và chê đồ trang điểm rẻ tiền trước mặt người phụ nữ."
+      },
+      {
+        "timestamp_sec": 5.0,
+        "event": "Mâu thuẫn",
+        "description": "Sản phẩm nằm trên sàn; người phụ nữ rơi nước mắt sau lời chê bai."
+      },
+      {
+        "timestamp_sec": 10.0,
+        "event": "Tình tiết",
+        "description": "Một người đàn ông khác bước vào qua cánh cửa lớn, tạo màn xuất hiện kiểu phim truyền hình."
+      },
+      {
+        "timestamp_sec": 16.0,
+        "event": "Đối đầu",
+        "description": "Người đàn ông mới tiến vào giữa đám đông và chất vấn người em."
+      },
+      {
+        "timestamp_sec": 22.0,
+        "event": "Sản phẩm",
+        "description": "Người đàn ông đeo găng nhặt sản phẩm khỏi sàn."
+      },
+      {
+        "timestamp_sec": 24.0,
+        "event": "Kết",
+        "description": "Anh ta cầm sản phẩm cạnh người phụ nữ và nói sẽ lấy cô ấy cùng cây mascara lông mày."
+      }
+    ],
+    "policy_signals": {
+      "absolute_claims": [
+        {
+          "text": "tuyệt đối sẽ không cưới một người phụ nữ như thế này",
+          "timestamp_sec": 4.0,
+          "channel": "spoken"
+        }
+      ],
+      "before_after": {
+        "present": false,
+        "product_effect_comparison": false,
+        "timestamp_sec": 0.0
+      },
+      "ui_overlays": [],
+      "realistic_ai_media": {
+        "present": true,
+        "confidence": "medium"
+      }
+    },
+    "narrative_and_emotion": {
+      "storytelling": {
+        "score_1_to_10": 7.0,
+        "arc_type": "problem_solution",
+        "reason": "Có mạch xung đột và người mới xuất hiện để đối đầu, nhưng sản phẩm chỉ làm đạo cụ và không có bước trình diễn hay chứng minh hiệu quả.",
+        "beats": [
+          {
+            "timestamp_sec": 0.0,
+            "beat": "hook",
+            "description": "Người đàn ông cầm sản phẩm và mở đầu bằng lời chê bai đồ trang điểm rẻ tiền."
+          },
+          {
+            "timestamp_sec": 3.0,
+            "beat": "problem",
+            "description": "Anh ta tuyên bố không muốn cưới người phụ nữ, còn cô ấy buồn và khóc."
+          },
+          {
+            "timestamp_sec": 10.0,
+            "beat": "solution",
+            "description": "Một người đàn ông khác xuất hiện và phản bác người em."
+          },
+          {
+            "timestamp_sec": 22.0,
+            "beat": "proof",
+            "description": "Người mới nhặt sản phẩm và cầm cạnh người phụ nữ; không có bằng chứng về hiệu quả sử dụng."
+          },
+          {
+            "timestamp_sec": 25.0,
+            "beat": "cta",
+            "description": "Không có lời kêu gọi mua hàng; kết thúc bằng lời thoại tình cảm gắn với sản phẩm."
+          }
+        ]
+      },
+      "emotion": {
+        "score_1_to_10": 7.0,
+        "dominant_emotion": "Kịch tính và đồng cảm",
+        "reason": "Lời chê bai và cảnh người phụ nữ rơi nước mắt tạo đồng cảm, sau đó màn xuất hiện của người đàn ông mới tạo bất ngờ và đối đầu.",
+        "triggers": [
+          {
+            "timestamp_sec": 0.0,
+            "trigger": "empathy",
+            "description": "Lời chê bai ngoại hình và đồ trang điểm đặt người phụ nữ vào thế bị hạ thấp."
+          },
+          {
+            "timestamp_sec": 6.0,
+            "trigger": "empathy",
+            "description": "Cận cảnh người phụ nữ rơi nước mắt làm rõ cảm xúc tổn thương."
+          },
+          {
+            "timestamp_sec": 10.0,
+            "trigger": "surprise",
+            "description": "Cánh cửa mở ra và một người đàn ông mới bước vào như một màn xuất hiện bất ngờ."
+          },
+          {
+            "timestamp_sec": 24.0,
+            "trigger": "other",
+            "description": "Lời thoại cuối chuyển sang sắc thái lãng mạn, đồng thời nhắc đến việc lấy cô ấy và sản phẩm."
+          }
+        ]
+      },
+      "shareability": {
+        "score_1_to_10": 6.0,
+        "reason": "Tình tiết phim ngắn cường điệu và màn xuất hiện bất ngờ có thể khiến người xem chia sẻ để bàn luận hoặc chế lại, nhưng video thiếu mẹo làm đẹp hay thông tin sản phẩm hữu ích.",
+        "share_drivers": [
+          {
+            "timestamp_sec": 0.0,
+            "driver": "controversial",
+            "description": "Lời chê bai trực diện về đồ trang điểm và việc cưới xin có thể kích thích tranh luận."
+          },
+          {
+            "timestamp_sec": 10.0,
+            "driver": "surprising",
+            "description": "Màn bước vào đầy kịch tính giữa khung cảnh xa hoa tạo khoảnh khắc dễ cắt ghép hoặc diễn lại."
+          },
+          {
+            "timestamp_sec": 24.0,
+            "driver": "other",
+            "description": "Lời thoại kết hợp tình tiết tình cảm với tên loại sản phẩm tạo chất phim quảng cáo hài hước, phi thực tế."
+          }
+        ]
+      }
+    },
+    "decision_evidence": {
+      "problem": "Nội dung đặt ra nỗi lo trang điểm không đẹp khi dùng sản phẩm trang điểm bị gọi là rẻ tiền; người phụ nữ bị chê bai về vẻ ngoài trong một tình huống kịch hóa.",
+      "value_propositions": [
+        "Sản phẩm được nhận diện trong lời thoại là mascara lông mày.",
+        "Không có lợi ích hiệu năng cụ thể nào được trình bày hoặc chứng minh."
+      ],
+      "on_screen_text": [],
+      "offer": {
+        "present": false,
+        "description": "",
+        "timestamp_sec": 0.0
+      },
+      "product_visibility": {
+        "first_clear_sec": 0.0,
+        "share_of_frames": 0.39,
+        "close_ups": true
+      },
+      "trust_signals": [],
+      "product_mentions": [
+        {
+          "timestamp_sec": 0.0,
+          "channel": "spoken",
+          "text": "đồ rẻ tiền như thế này"
+        },
+        {
+          "timestamp_sec": 22.0,
+          "channel": "packaging",
+          "text": "Rock Sweet"
+        },
+        {
+          "timestamp_sec": 14.0,
+          "channel": "spoken",
+          "text": "Rock Sweet"
+        },
+        {
+          "timestamp_sec": 25.0,
+          "channel": "spoken",
+          "text": "cây mascara lông mày này"
+        }
+      ],
+      "inferred_target_audience": {
+        "age_band": "18-34",
+        "gender": "female",
+        "life_stage": "",
+        "interests": [
+          "Trang điểm",
+          "Mỹ phẩm",
+          "Phim ngắn tình cảm kịch tính"
+        ],
+        "cues": [
+          "Sản phẩm được xác định là mascara lông mày.",
+          "Tình huống xoay quanh việc trang điểm và một người phụ nữ dự tiệc.",
+          "Cách kể theo kiểu phim ngắn lãng mạn, có xung đột gia đình và tình cảm."
+        ]
+      },
+      "disclosure_signals": []
+    }
+  }
+}

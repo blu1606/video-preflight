@@ -1,0 +1,613 @@
+{
+ "tool": "product_search",
+ "args": {
+  "keywords": "kem dưỡng ẩm",
+  "filter": {
+   "region": "VN"
+  },
+  "orderby": [
+   {
+    "field": "day28_units_sold",
+    "order": "desc"
+   }
+  ],
+  "pagesize": 10
+ },
+ "captured_at": "2026-10-27",
+ "is_error": false,
+ "data": {
+  "list": [
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2135,
+     "linked_video_count": 6761
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601556,
+       "name": "Makeup Base and Primers\t"
+      }
+     },
+     "ceiling_price": 185.59,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/cf7129c73069483bbac50a54a089fe82~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736108326556894279",
+     "floor_price": 141.92,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-06-21",
+     "launch_time": 1782014729,
+     "price_display": "141.920 ₫  -  185.588 ₫",
+     "product_id": "1736108326556894279",
+     "product_rating": 4.6,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 2,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736108326556894279?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【MỚI RA MẮT】AZTK Kem lót dạng bọt cấp ẩm khóa nền- kem lót kiêm mặt nạ dưỡng ẩm dịu nhẹ, làm nền da mịn sáng, mask sủi bọt trước makeup dưỡng da"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 5838737959,
+     "last_28d_units_sold": 41417,
+     "last_7d_gmv": 1289670347,
+     "last_7d_units_sold": 8959,
+     "last_90d_gmv": 14567451887,
+     "last_90d_units_sold": 105589,
+     "total_gmv": 18652679927,
+     "total_units_sold": 128689,
+     "yesterday_gmv": 159092320,
+     "yesterday_units_sold": 1121
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/7f0e4a4c149144d1b4d061ff9385909b~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8647967201858126919",
+     "shop_name": "AZTK VN",
+     "total_units_sold": 2039068
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1373,
+     "linked_video_count": 4633
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601534,
+       "name": "Lipstick & Lip Gloss\t"
+      }
+     },
+     "ceiling_price": 156.02,
+     "commission_rate_percent": 5,
+     "cover_url": "https://s.500fd.com/tt_product/39c6dbecdbdb4584adb61d000faa90b8~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737251734210184263",
+     "floor_price": 156.02,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-07",
+     "launch_time": 1788762014,
+     "price_display": "156.016 ₫",
+     "product_id": "1737251734210184263",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 64,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737251734210184263?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "【Hot】Combo3 AZTK Son Kem Thỏi Thạch Hồng – son kem mây, Chất son mờ mịn mọng ẩm, dưỡng môi và cấp ẩm, không lộ vân môi, hợp cả mặt mộc, nhẹ môi dễ tán – 1.5g"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 3540753663,
+     "last_28d_units_sold": 23468,
+     "last_7d_gmv": 437873081,
+     "last_7d_units_sold": 2774,
+     "last_90d_gmv": 8896282915,
+     "last_90d_units_sold": 56161,
+     "total_gmv": 9076101583,
+     "total_units_sold": 57493,
+     "yesterday_gmv": 67086880,
+     "yesterday_units_sold": 430
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/7f0e4a4c149144d1b4d061ff9385909b~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8647967201858126919",
+     "shop_name": "AZTK VN",
+     "total_units_sold": 2039068
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 7512,
+     "linked_video_count": 22776
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849160,
+       "name": "Bath & Body Care"
+      },
+      "l3": {
+       "id": 601492,
+       "name": "Body Creams & Lotions\t"
+      }
+     },
+     "ceiling_price": 315.73,
+     "commission_rate_percent": 1,
+     "cover_url": "https://s.500fd.com/tt_product/463979a78a1a45a0a4866c865d4be784~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1729619897862884031",
+     "floor_price": 71.66,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2023-05-20",
+     "launch_time": 1684556999,
+     "price_display": "71.656 ₫  -  315.734 ₫",
+     "product_id": "1729619897862884031",
+     "product_rating": 4.7,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 4,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1729619897862884031?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kem Body Trắng Da Glowcode dưỡng trắng nách giảm thâm nách khuỷu tay Đầu gối dưỡng ẩm với niacinamide Bright & Smooth Axillary Cream"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1547016533,
+     "last_28d_units_sold": 20618,
+     "last_7d_gmv": 323631760,
+     "last_7d_units_sold": 4315,
+     "last_90d_gmv": 4817607714,
+     "last_90d_units_sold": 67681,
+     "total_gmv": 48558531950,
+     "total_units_sold": 640955,
+     "yesterday_gmv": 40485640,
+     "yesterday_units_sold": 565
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e5ba9cde452b4ef29406521676769101~tplv-o3syd03w52-resize-png:300:300.png",
+     "shop_id": "7494971507958975167",
+     "shop_name": "GlowCode Việt Nam",
+     "total_units_sold": 1356632
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 762,
+     "linked_video_count": 3994
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849032,
+       "name": "Hand, Foot & Nail Care"
+      },
+      "l3": {
+       "id": 601480,
+       "name": "Hand Lotions, Creams & Scrubs\t"
+      }
+     },
+     "ceiling_price": 97.68,
+     "commission_rate_percent": 8,
+     "cover_url": "https://s.500fd.com/tt_product/7e1971dca79040f395fba83348b8eb3c~tplv-aphluv4xwc-crop-webp:2048:2048.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1735123740222457441",
+     "floor_price": 97.68,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-05-13",
+     "launch_time": 1778656304,
+     "price_display": "97.682 ₫",
+     "product_id": "1735123740222457441",
+     "product_rating": 4.5,
+     "product_source": "TikTok Shop",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1735123740222457441?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kem dưỡng da tay AIGEYOUPING chiết xuất dầu ngựa giúp bảo vệ và dưỡng ẩm tối đa, phục hồi da khô ráp, giúp da mềm mại và mịn màng với khả năng dưỡng ẩm suốt cả ngày."
+    },
+    "sales_summary": {
+     "last_28d_gmv": 2199885899,
+     "last_28d_units_sold": 20375,
+     "last_7d_gmv": 475830296,
+     "last_7d_units_sold": 4977,
+     "last_90d_gmv": 6161519954,
+     "last_90d_units_sold": 53617,
+     "total_gmv": 6550999801,
+     "total_units_sold": 57075,
+     "yesterday_gmv": 84397248,
+     "yesterday_units_sold": 864
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/f914de33c73b4aaaada074a990ffae5d~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494571306855663201",
+     "shop_name": "ZUNHU-VN-01",
+     "total_units_sold": 215742
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 4,
+     "linked_video_count": 4
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601529,
+       "name": "Makeup Sets\t"
+      }
+     },
+     "ceiling_price": 536.38,
+     "commission_rate_percent": 0,
+     "cover_url": "https://s.500fd.com/tt_product/520d2c50ac494450b3f6d5947ce14fe3~tplv-aphluv4xwc-crop-webp:1400:1400.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1737573014170666376",
+     "floor_price": 536.38,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-09-20",
+     "launch_time": 1789885383,
+     "price_display": "536.384 ₫",
+     "product_id": "1737573014170666376",
+     "product_rating": 5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1737573014170666376?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Bộ chăm sóc VEKO Hoa Sen trắng giúp làm sạch và dưỡng ẩm: cấp cứu cho da mặt + cấp cứu cho tay; xịt nước hyaluronic acid hoa sen trắng để cấp ẩm cho da mặt; kem dưỡng tay hoa sen trắng – hồng giúp cấp ẩm cho tay; xịt một lần lên mặt, bôi một lớp lên tay;"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 10820505918,
+     "last_28d_units_sold": 19929,
+     "last_7d_gmv": 2145536,
+     "last_7d_units_sold": 4,
+     "last_90d_gmv": 26855890640,
+     "last_90d_units_sold": 48021,
+     "total_gmv": 27066790925,
+     "total_units_sold": 48610,
+     "yesterday_gmv": 0,
+     "yesterday_units_sold": 0
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/c9e9d8b16e57473abde7ca31a4003bed~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494286765458752904",
+     "shop_name": "VEKO VIỆT NAM",
+     "total_units_sold": 1310467
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 921,
+     "linked_video_count": 2226
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848776,
+       "name": "Skincare"
+      },
+      "l3": {
+       "id": 601609,
+       "name": "Facial Cleansers\t"
+      }
+     },
+     "ceiling_price": 93.32,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/ea489861f6204b64be5328c7cf53df6c~tplv-aphluv4xwc-crop-webp:1000:1000.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1732201728407669195",
+     "floor_price": 88.63,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-07-15",
+     "launch_time": 1752586183,
+     "price_display": "88.634 ₫  -  93.316 ₫",
+     "product_id": "1732201728407669195",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 5,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1732201728407669195?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kem rửa mặt HADALABO Dưỡng ẩm/Dưỡng trắng/Ngừa mụn/Cải thiện lão hóa da 80g (Tùy chọn)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1627565289,
+     "last_28d_units_sold": 17819,
+     "last_7d_gmv": 233067304,
+     "last_7d_units_sold": 2572,
+     "last_90d_gmv": 5186859908,
+     "last_90d_units_sold": 62607,
+     "total_gmv": 8036957332,
+     "total_units_sold": 95592,
+     "yesterday_gmv": 39885300,
+     "yesterday_units_sold": 450
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/e15c8c1740da4089b63904f8a4dcf052~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7496123992868817355",
+     "shop_name": "Rohto Official by TNT",
+     "total_units_sold": 471719
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2177,
+     "linked_video_count": 15251
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848776,
+       "name": "Skincare"
+      },
+      "l3": {
+       "id": 601610,
+       "name": "Facial Massage Cream"
+      }
+     },
+     "ceiling_price": 129.51,
+     "commission_rate_percent": 15,
+     "cover_url": "https://s.500fd.com/tt_product/eb34b05a61564eedafea93a73211b41a~tplv-aphluv4xwc-crop-webp:1254:1254.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733698077685285954",
+     "floor_price": 69.63,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-12-24",
+     "launch_time": 1766564336,
+     "price_display": "69.626 ₫  -  129.505 ₫",
+     "product_id": "1733698077685285954",
+     "product_rating": 4.5,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 3,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733698077685285954?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Queen Danzern 377 Kem Massage Mặt Dưỡng Sáng Da, Hỗ Trợ Mờ Thâm Sạm, Dưỡng Ẩm Mềm Mịn, Phù Hợp Da Nhạy Cảm"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1172523849,
+     "last_28d_units_sold": 17768,
+     "last_7d_gmv": 232638293,
+     "last_7d_units_sold": 3468,
+     "last_90d_gmv": 4473954836,
+     "last_90d_units_sold": 72760,
+     "total_gmv": 19514683519,
+     "total_units_sold": 311504,
+     "yesterday_gmv": 34882626,
+     "yesterday_units_sold": 501
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/f8942c705b0b47cb90b76f8298bee0e5~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8657312936012383298",
+     "shop_name": "Queen Danzern Office Store",
+     "total_units_sold": 494774
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 538,
+     "linked_video_count": 2315
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848776,
+       "name": "Skincare"
+      },
+      "l3": {
+       "id": 601602,
+       "name": "Facial Sunscreen & Sun Care\t"
+      }
+     },
+     "ceiling_price": 108.25,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/93ffc9f98af04b7282316023a8a645fe~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1736323364485367295",
+     "floor_price": 108.25,
+     "is_cross_border": false,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2026-07-08",
+     "launch_time": 1783458989,
+     "price_display": "108.252 ₫",
+     "product_id": "1736323364485367295",
+     "product_rating": 4.4,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 1,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1736323364485367295?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Kem Chống Nắng Cách Ly Dưỡng Trắng YOQQ ️ - Ống Đôi 100g+100g | SPF50+ PA++++ | Công Thức 3 Thành Phần Vàng: 377+577+877, Hỗ Trợ Chống Nắng 24h, Làm Mờ Nám, Dưỡng Sáng Da & Cấp Ẩm | Có Chứng Nhận Đặc Biệt (200g)"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1818513575,
+     "last_28d_units_sold": 17565,
+     "last_7d_gmv": 523688620,
+     "last_7d_units_sold": 5024,
+     "last_90d_gmv": 4141468632,
+     "last_90d_units_sold": 40416,
+     "total_gmv": 4195044066,
+     "total_units_sold": 40940,
+     "yesterday_gmv": 84328308,
+     "yesterday_units_sold": 779
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/0353816a766a4a92bcc55c94faaef5b7~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "7494582818004567551",
+     "shop_name": "MTN Personal Care",
+     "total_units_sold": 248900
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 1331,
+     "linked_video_count": 3877
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 848648,
+       "name": "Makeup"
+      },
+      "l3": {
+       "id": 601556,
+       "name": "Makeup Base and Primers\t"
+      }
+     },
+     "ceiling_price": 686.28,
+     "commission_rate_percent": 10,
+     "cover_url": "https://s.500fd.com/tt_product/da4f902e4de44297af3dd527edd9f8eb~tplv-aphluv4xwc-crop-webp:800:800.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733181958612288649",
+     "floor_price": 290.8,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-14",
+     "launch_time": 1763062865,
+     "price_display": "290.798 ₫  -  686.284 ₫",
+     "product_id": "1733181958612288649",
+     "product_rating": 4.8,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 12,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733181958612288649?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "[CL] OSITREE Kem lót 25g đổi màu 1.0 2.0 3.0, nâng tông tự nhiên, đều màu da, dưỡng ẩm che khuyết điểm, nhẹ như không khí, giúp da mịn màng và sáng khỏe [COD]"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 4666783819,
+     "last_28d_units_sold": 16824,
+     "last_7d_gmv": 1290131651,
+     "last_7d_units_sold": 4507,
+     "last_90d_gmv": 9371698285,
+     "last_90d_units_sold": 50988,
+     "total_gmv": 22090867869,
+     "total_units_sold": 126494,
+     "yesterday_gmv": 207920570,
+     "yesterday_units_sold": 715
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/67e013ba5e974bb1b59dba87a60511b4~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8647447387030258825",
+     "shop_name": "OSITREE VN",
+     "total_units_sold": 933175
+    }
+   },
+   {
+    "distribution_summary": {
+     "linked_creator_count": 2021,
+     "linked_video_count": 6380
+    },
+    "product": {
+     "category": {
+      "l1": {
+       "id": 14,
+       "name": "Beauty & Personal Care"
+      },
+      "l2": {
+       "id": 849032,
+       "name": "Hand, Foot & Nail Care"
+      },
+      "l3": {
+       "id": 601480,
+       "name": "Hand Lotions, Creams & Scrubs\t"
+      }
+     },
+     "ceiling_price": 230.76,
+     "commission_rate_percent": 6,
+     "cover_url": "https://s.500fd.com/tt_product/b1346ce3ea5e4040a9822717383589e7~tplv-aphluv4xwc-crop-webp:1440:1440.webp",
+     "currency_code": "VND",
+     "fastmoss_detail_url": "https://www.fastmoss.com/e-commerce/detail/1733046590032480226",
+     "floor_price": 110.53,
+     "is_cross_border": true,
+     "is_free_shipping": false,
+     "is_fully_managed": false,
+     "launch_date": "2025-11-07",
+     "launch_time": 1762468072,
+     "price_display": "110.528 ₫  -  230.756 ₫",
+     "product_id": "1733046590032480226",
+     "product_rating": 4.7,
+     "product_source": "",
+     "region": "VN",
+     "sku_count": 15,
+     "tiktok_product_url": "https://shop.tiktok.com/view/product/1733046590032480226?region=VN&locale=en&trackParams=%7B%22isFromSelectionPath%22%3A1%2C%22source_page_type%22%3A%22agency_product_affiliate%22%2C%22enter_from%22%3A%22agency_product_affiliate%22%2C%22channel%22%3A%22agency_shared_product_copy_link%22%2C%22geccTeaParams%22%3A%22%7B%5C%22agency_id%5C%22%3A%5C%227167239558239619801%5C%22%7D%22%7D&source=agency",
+     "title": "Roopy Kem Dưỡng Tay Tinh Chất Thực Vật Hương Gỗ Thảo Mộc  75g Lưu hương Dài Lâu Dưỡng ẩm mềm mượt Giúp da tay căng mịn Cải thiện khô nhăn"
+    },
+    "sales_summary": {
+     "last_28d_gmv": 1824381657,
+     "last_28d_units_sold": 16634,
+     "last_7d_gmv": 437102402,
+     "last_7d_units_sold": 4057,
+     "last_90d_gmv": 4474292672,
+     "last_90d_units_sold": 48077,
+     "total_gmv": 14554547991,
+     "total_units_sold": 118577,
+     "yesterday_gmv": 47748096,
+     "yesterday_units_sold": 432
+    },
+    "shop": {
+     "avatar_url": "https://s.500fd.com/tt_shop/554b384561db42fd94592e0cf4a93498~tplv-aphluv4xwc-resize-png:300:300.png",
+     "shop_id": "8654004287009294306",
+     "shop_name": "Roopy Fragrance Vietnam",
+     "total_units_sold": 773688
+    }
+   }
+  ],
+  "total": 2000
+ }
+}

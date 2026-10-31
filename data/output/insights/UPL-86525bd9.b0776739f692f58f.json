@@ -1,0 +1,25 @@
+{
+  "model": "gpt-6-luna",
+  "answer": {
+    "headline": "Nên làm nội dung sát hơn với khách mua và khớp thông tin sản phẩm.",
+    "summary": "Người xem hiện quan tâm đến đặt đồ ăn, ưu đãi và ứng dụng mua sắm, trong khi nhóm khách mua chính quan tâm đến điện thoại, phụ kiện và gaming. Ưu tiên sửa nội dung cho khớp listing và bổ sung bằng chứng đáng tin.",
+    "insights": [
+      {
+        "candidate": "c1",
+        "text": "Người xem video thuộc nhóm 18-34 tuổi và quan tâm đến đặt đồ ăn, ưu đãi; trong khi nhóm khách mua đông nhất là 18-24 tuổi, chiếm 52.0%, và quan tâm đến điện thoại, phụ kiện, gaming. Hãy điều chỉnh cách mở đầu và nội dung để gần hơn với nhóm khách mua.",
+        "tone": "bad"
+      },
+      {
+        "candidate": "c2",
+        "text": "Theo công thức điểm, sửa video cho khớp listing và tăng bằng chứng đáng tin có thể đưa điểm từ 57.3 lên 62.8. Đây là ước tính điểm, không phải dự báo doanh số.",
+        "tone": "info"
+      }
+    ],
+    "policy": "Các cờ Policy cho thấy một số nội dung cần xem lại, gồm thông tin sản phẩm và lợi ích được nêu trong video, cũng như phần công khai quảng bá. Hãy đối chiếu video với thông tin sản phẩm và cài đặt của nền tảng.",
+    "shop": null
+  },
+  "token_usage": {
+    "prompt_tokens": 1543,
+    "completion_tokens": 777
+  }
+}
