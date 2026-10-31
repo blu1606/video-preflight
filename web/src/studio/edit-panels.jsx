@@ -135,7 +135,7 @@ function CaptionPanel({ video, onSaved, extracted }) {
       </div>
       <div className="pn-field">
         <label className="tiny" htmlFor="tags">Hashtag</label>
-        <input id="tags" className="studio-input" value={tags} onChange={(e) => setTags(e.target.value)} placeholder="#xaphongtrangda #teashell" />
+        <input id="tags" className="studio-input" value={tags} onChange={(e) => setTags(e.target.value)} placeholder="#tensanpham #congdung" />
       </div>
       <button type="button" className="btn btn-secondary" onClick={quickFill} disabled={!extracted || suggest?.loading}>
         <Icon name="magicpen" /> {suggest?.loading ? 'AI đang viết…' : 'AI gợi ý từ video và SKU'}
@@ -259,7 +259,10 @@ function AudiencePanel({ video, audience, onSaved }) {
         <div className="studio-audience">
           <p className="tiny muted">Audience của SKU</p>
           <dl className="studio-kpis">
-            <div><dt>Nữ</dt><dd>{pct(audience.gender_split?.female ?? 0)}</dd></div>
+            {/* the larger share reads at a glance: "Nam 85%" for a men's product, not "Nữ 15%" */}
+            {(audience.gender_split?.male ?? 0) > (audience.gender_split?.female ?? 0)
+              ? <div><dt>Nam</dt><dd>{pct(audience.gender_split.male)}</dd></div>
+              : <div><dt>Nữ</dt><dd>{pct(audience.gender_split?.female ?? 0)}</dd></div>}
             <div><dt>Tuổi chính</dt><dd>{Object.entries(audience.age_bands ?? {}).sort((a, b) => b[1] - a[1])[0]?.[0] ?? '–'}</dd></div>
             <div><dt>Khu vực</dt><dd>{Object.entries(audience.regions ?? {}).sort((a, b) => b[1] - a[1])[0]?.[0] ?? '–'}</dd></div>
           </dl>

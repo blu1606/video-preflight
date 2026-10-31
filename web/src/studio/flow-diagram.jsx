@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 
+import { agentLabel, stepLabel } from '../lib/labels'
 import { groupSteps, summarizeStep } from '../lib/run-stages'
 import { connectorState, progressView, runTotals, stageHandoff, stageSeconds, stepTokens } from './flow-model'
 import { Icon } from './icon'
@@ -69,10 +70,11 @@ const noTokens = (step) => (step.kind === 'reasoning' ? 'token chưa ghi' : 'kh�
 function Node({ step, selected, onSelect, controls }) {
   const running = step.status === 'running'
   const elapsed = useElapsed(running)
-  const name = `${step.agent ?? '–'} · ${step.name}`
+  const raw = `${step.agent ?? '–'} · ${step.name}`
+  const name = `${agentLabel(step.agent) ?? '–'} · ${stepLabel(step.name)}`
   return (
     <div className={`fd-node is-${step.status}${selected ? ' is-sel' : ''}`}>
-      <button type="button" className="fd-node-btn" aria-expanded={controls ? selected : undefined} aria-pressed={controls ? undefined : selected} onClick={onSelect} title={name}>
+      <button type="button" className="fd-node-btn" aria-expanded={controls ? selected : undefined} aria-pressed={controls ? undefined : selected} onClick={onSelect} title={raw}>
         <span className="fd-dot" aria-hidden="true" />
         <span className="od-fill">
           <span className="fd-node-name">{breakable(name)}</span>
@@ -101,7 +103,7 @@ function StepDetail({ step }) {
   return (
     <div className="fd-detail-body">
       <dl className="fd-kv">
-        <div><dt>agent</dt><dd>{step.agent ?? '–'}</dd></div>
+        <div><dt>agent</dt><dd>{agentLabel(step.agent) ?? '–'}{step.agent ? ` (${step.agent} · ${step.name})` : ''}</dd></div>
         <div><dt>tool</dt><dd>{step.tool ?? '–'}</dd></div>
         <div><dt>loại</dt><dd>{KIND[step.kind] ?? step.kind ?? '–'}</dd></div>
         <div><dt>trạng thái</dt><dd>{STATE[step.status] ?? step.status}</dd></div>

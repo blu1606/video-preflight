@@ -139,12 +139,80 @@ export const CLAIM_LABEL = { supported: 'có trong listing', not_in_listing: 'kh
 // Kind of a fix: policy, content criterion or missing data.
 export const FIX_KIND_LABELS = { policy: 'Policy', criterion: 'Nội dung', data: 'Dữ liệu' }
 
+// Shop diagnosis (core/shop_diagnosis.py): the primary issue area and how sure the rule engine is.
+export const DIAGNOSIS_AREA_LABELS = {
+  growth: 'đang tăng trưởng, chưa có nút thắt',
+  low_confidence: 'chưa đủ lịch sử để kết luận',
+  operations: 'vận hành đơn (giao trễ, huỷ)',
+  returns_trust: 'hoàn hàng và độ tin cậy',
+  inventory: 'tồn kho (mất đơn vì hết hàng)',
+  profitability: 'biên lợi nhuận mỏng',
+  ads_efficiency: 'hiệu quả quảng cáo',
+  conversion: 'tỉ lệ chuyển đổi',
+  traffic: 'lượt truy cập thấp',
+}
+export const CONFIDENCE_LABELS = { high: 'cao', medium: 'trung bình', low: 'thấp' }
+
+// Pipeline trace (api.py / main.py): who ran a step and what it did, in words a seller reads. The raw agent and
+// step names stay in the tooltip and the step's detail for anyone tracing the code.
+export const AGENT_LABELS = {
+  orchestrator: 'Điều phối',
+  video_analyst: 'Phân tích video',
+  metrics_analyst: 'Số liệu shop',
+  product_scout: 'Sản phẩm & thị trường',
+  decision_scorer: 'Chấm câu hỏi',
+  policy_guard: 'Kiểm tra policy',
+  auditor: 'Đối chiếu chéo',
+  scorer: 'Tính điểm',
+  insight_writer: 'Viết tóm tắt',
+}
+export const STEP_LABELS = {
+  get_video: 'Lấy thông tin video',
+  get_shop: 'Lấy thông tin shop',
+  extract_video_content: 'Trích xuất nội dung video',
+  get_video_features: 'Đọc kết quả trích xuất',
+  load_video_features: 'Nạp đặc điểm video',
+  load_shop_data: 'Nạp dữ liệu shop',
+  load_real_metrics: 'Nạp số liệu thật của video',
+  load_product_listings: 'Nạp listing sản phẩm',
+  load_shop_and_sku: 'Nạp shop và SKU',
+  load_market_snapshot: 'Nạp dữ liệu thị trường',
+  load_post_copy: 'Nạp caption và hashtag',
+  identify_music: 'Nhận diện nhạc nền',
+  check_claims_vs_listing: 'Đối chiếu claim với listing',
+  ask_decisions_api: 'Hỏi Decisions API',
+  check_policy: 'Kiểm tra policy',
+  check_platform_fit: 'Kiểm tra thông số nền tảng',
+  cross_check_low_answers: 'Đối chiếu câu điểm thấp',
+  score_rubric: 'Tính điểm theo rubric',
+  diagnose_shop: 'Chẩn đoán shop',
+  quality_gate: 'Kiểm tra độ tin cậy kết quả',
+  compare_real_outcome: 'So với kết quả thật',
+  compose_overall: 'Tổng hợp điểm',
+  compose_fixes: 'Lập danh sách việc cần sửa',
+  localize_issues: 'Khoanh vùng lỗi trên khung hình',
+  compose_verdict: 'Kết luận',
+  summarize_insights: 'Viết tóm tắt dễ hiểu',
+}
+export const agentLabel = (name) => AGENT_LABELS[name] ?? name
+export const stepLabel = (name) => STEP_LABELS[name] ?? name
+
 export const groupLabel = (name) => GROUP_LABELS[name] ?? name
 // Provenance chip text: the seed rows are the lab's own shop data, not a stand-in for real numbers.
 export const sourceLabel = (status) => (status === 'MOCK' ? 'nội bộ' : status)
 export const domainLabel = (name) => DOMAIN_LABELS[name] ?? name
 export const platformLabel = (name) => PLATFORM_LABELS[name] ?? name
 export const dimensionLabel = (dimension, fallback) => DIMENSION_LABELS[dimension] ?? fallback ?? dimension
+
+// core/markers.py titles a v2 criterion with its English bank name ("Cần cải thiện: Cta clarity (C08) · 4/100",
+// name = dimension with spaces, capitalized); the screen shows the Vietnamese dimension label instead.
+const CRITERION_TITLE = /^Cần cải thiện: (.+) \(([A-Z]+\d+)\)( · .*)?$/
+export function markerTitle(m) {
+  const hit = typeof m?.title === 'string' ? CRITERION_TITLE.exec(m.title) : null
+  if (!hit) return m?.title ?? null
+  const label = DIMENSION_LABELS[hit[1].toLowerCase().replaceAll(' ', '_')]
+  return label ? `Cần cải thiện: ${label} (${hit[2]})${hit[3] ?? ''}` : m.title
+}
 
 // Plain-language reading of each Decisions score question (display only; the English original sent to the
 // API is shown next to it as the source text).

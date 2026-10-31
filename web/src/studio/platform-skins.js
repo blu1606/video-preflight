@@ -5,8 +5,8 @@ export const PREVIEW_SKINS = [
   { id: 'shopee', name: 'Shopee Video', brand: 'shopee', target: 'shopee_listing', note: 'Giỏ hàng gốc · mua ngay trong video' },
   { id: 'tiktok', name: 'TikTok Shop video', brand: 'tiktok', target: 'tiktok_shop_video', note: 'Giỏ hàng TikTok Shop · mua trong app' },
   { id: 'tiktok-ads', name: 'TikTok Ads', brand: 'tiktok', target: 'tiktok_ads', note: 'Quảng cáo in-feed · nút Mua ngay' },
-  { id: 'fb', name: 'Facebook Reels', brand: 'fb', target: 'meta_ads', note: 'Không có giỏ hàng · link affiliate sang Shopee' },
-  { id: 'ig', name: 'Instagram Reels', brand: 'ig', target: 'meta_ads', note: 'Không có giỏ hàng · thẻ sản phẩm dẫn ra website' },
+  { id: 'fb', name: 'Facebook Reels (Meta Ads)', brand: 'fb', target: 'meta_ads', note: 'Không có giỏ hàng · link affiliate sang Shopee' },
+  { id: 'ig', name: 'Instagram Reels (Meta Ads)', brand: 'ig', target: 'meta_ads', note: 'Không có giỏ hàng · thẻ sản phẩm dẫn ra website' },
 ]
 
 const DEFAULT_SKIN = 'shopee'

@@ -1,7 +1,7 @@
 // Pure helpers for the Decisions dialog and the agent flow diagram. Everything is read from the backend
 // result or trace as-is; nothing here scores, guesses or invents a value.
 
-import { sourceLabel } from '../lib/labels.js'
+import { markerTitle, sourceLabel } from '../lib/labels.js'
 import { parseTimestamp } from '../lib/timeline.js'
 
 /* ---------- Decisions map ---------- */
@@ -186,7 +186,7 @@ export function frameMarks(result, frames) {
   }
   for (const m of result?.markers ?? []) {
     if (m.kind === 'cut' || m.kind === 'beat') continue
-    add(m.t_start, m.title ?? m.id)
+    add(m.t_start, markerTitle(m) ?? m.id)
   }
   for (const k of result?.decisions?.keyframes ?? []) add(k.sec, `Keyframe gửi Decisions${k.segment ? ` (${k.segment})` : ''}`)
   return marks

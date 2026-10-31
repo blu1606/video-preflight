@@ -268,6 +268,7 @@ export default function StudioPage() {
         videos={videos.data ?? []}
         video={video}
         sku={sku}
+        skus={skus.data ?? []}
         onSelectVideo={selectVideo}
         onUpload={upload}
         uploading={uploading}
@@ -300,6 +301,7 @@ export default function StudioPage() {
               running={running}
               steps={running || run.status === 'done' ? run.steps : (result?.trace ?? [])}
               result={result}
+              savedRun={!running && run.status !== 'done' ? saved : null}
               duration={duration}
               onSeek={seek}
               onOpenQuestion={(row) => openQuestion(row.id)}

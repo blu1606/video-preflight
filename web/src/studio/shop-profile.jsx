@@ -4,7 +4,7 @@ import { GmvOrdersChart, TrafficChart } from '../components/shop-context-card'
 import { useFetch } from '../hooks/use-fetch'
 import { useShopDaily } from '../hooks/use-shop-daily'
 import { compactVnd, db, num, runAnalysis } from '../lib/api'
-import { scenarioLabel } from '../lib/labels'
+import { CONFIDENCE_LABELS, DIAGNOSIS_AREA_LABELS, scenarioLabel } from '../lib/labels'
 import { Icon } from './icon'
 
 const SHOP_GROUPS = { shop_health: 'Sức khoẻ shop', sku_quality: 'Chất lượng SKU', sales_efficiency: 'Hiệu quả bán', video_conversion: 'Video ra đơn' }
@@ -83,7 +83,7 @@ export function ShopProfile({ shop, onClose }) {
               </ul>
               {diag && (
                 <div className="pn-note">
-                  <p><strong>Chẩn đoán:</strong> {diag.primary_issue ?? diag.status}{diag.confidence ? ` · độ tin cậy ${diag.confidence}` : ''}</p>
+                  <p><strong>Chẩn đoán:</strong> {DIAGNOSIS_AREA_LABELS[diag.primary_issue] ?? diag.primary_issue ?? diag.status}{diag.confidence ? ` · độ tin cậy ${CONFIDENCE_LABELS[diag.confidence] ?? diag.confidence}` : ''}</p>
                   {(diag.findings ?? []).slice(0, 3).map((f) => (
                     <p key={f.area} className="tiny">• {f.root_cause} → {f.action}</p>
                   ))}

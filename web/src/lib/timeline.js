@@ -1,5 +1,7 @@
 // Pure time and marker helpers for the player, timeline lanes, region overlay, coach mode and transcript.
 
+import { markerTitle } from './labels.js'
+
 export const REGION_WINDOW_S = 0.75
 export const DOT_LANES = ['policy', 'conversion', 'viral']
 const SEVERITY_RANK = { critical: 0, high: 1, medium: 2, low: 3, info: 4 }
@@ -69,7 +71,7 @@ export function isRangeMarker(m) {
 /** Hover text of an issue: its title, the range it covers, and the transcript line it is about. */
 export function issueHint(m) {
   const quote = m.quote?.text ? `“${m.quote.text}” ${fmtTime(m.quote.t)}` : null
-  return [m.title, m.time_label, quote].filter(Boolean).join(' · ')
+  return [markerTitle(m), m.time_label, quote].filter(Boolean).join(' · ')
 }
 
 /** "có thể bị che bởi …" when the box sits under an app overlay (estimate); '' when clear. */

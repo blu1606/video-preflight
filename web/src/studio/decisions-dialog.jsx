@@ -447,6 +447,7 @@ export function DecisionsDialog({ open, onClose, result, frames, initialQuestion
 
   if (!open) return null
   const call = decisionsCall(result)
+  const nQuestions = result?.decisions?.questions?.length ?? 0
   const nFrames = frameList(frames).length
   const seek = (sec) => onSeek?.(sec)
 
@@ -462,7 +463,7 @@ export function DecisionsDialog({ open, onClose, result, frames, initialQuestion
                 <>
                   {call.model ?? 'model không rõ'} · {fmtInt(call.inputTokens)} input token
                   {call.cachedTokens ? ` (${fmtInt(call.cachedTokens)} cached)` : ''} · 1 lần gọi batch cho mọi câu
-                  {call.questionCount ? ` (${call.questionCount} câu)` : ''}. Hiện từng câu chỉ là cách trình bày câu trả lời của lần gọi đó.
+                  {call.questionCount ? ` (gửi ${call.questionCount}/${nQuestions} câu${call.questionCount < nQuestions ? '; câu còn lại không nằm trong lần gọi này' : ''})` : ''}. Hiện từng câu chỉ là cách trình bày câu trả lời của lần gọi đó.
                 </>
               ) : (
                 'Lần chạy này không gọi Decisions API (không có call nào được ghi).'

@@ -71,6 +71,24 @@ test('questions are grouped by where they sit in the video; unanswered ones keep
   assert.equal(segmentOf(null, 38), 'whole')
 })
 
+test('a bare 00:00 places only opening questions; others move to their next moment or the whole video', () => {
+  const at0 = (ref, evidence = ['00:00']) => ({ kind: 'issue', t_start: 0, t_end: null, source: { ref }, evidence })
+  const run0 = {
+    markers: [at0('V01'), at0('C08'), at0('V06', ['00:00', '00:08'])],
+    decisions: {
+      questions: [
+        { id: 'V01', type: 'score', value: 45, dimension: 'hook_immediacy', inputs: ['video.hook_verbal'] },
+        { id: 'C08', type: 'score', value: 4, dimension: 'cta_clarity', inputs: ['video.has_cta'] },
+        { id: 'V06', type: 'score', value: 32, dimension: 'emotional_relevance', inputs: ['video.emotional_triggers'] },
+      ],
+    },
+  }
+  const seg = Object.fromEntries(questionSegments(run0, 14).flatMap((s) => s.items.map((r) => [r.id, [s.id, r.t]])))
+  assert.deepEqual(seg.V01, ['open', 0])
+  assert.deepEqual(seg.C08, ['whole', null])
+  assert.deepEqual(seg.V06, ['body', 8])
+})
+
 test('question drill lists sent and missing schema features with their extraction', () => {
   const q = questions.find((x) => x.id === 'V02')
   const feats = questionFeatures(q, result)
@@ -92,9 +110,10 @@ test('radar geometry starts straight up', () => {
   assert.deepEqual(radarPoint(0, 8, 0.5), [160, 109])
 })
 
-test('shared radar takes the two heaviest questions of every group', () => {
+test('shared radar takes the two heaviest questions of every group the overall score uses', () => {
   const ids = keyQuestionIds(questions)
-  assert.equal(ids.length, 8)
+  assert.equal(ids.length, 6)
+  assert.ok(!ids.some((id) => id.startsWith('H'))) // shop health is shop context, not part of the video score
   assert.ok(ids.includes('V01')) // weight 1.5, the heaviest Viral question
   assert.ok(ids.includes('C06')) // weight 1.3
   assert.deepEqual(keyAxes(questions).map((a) => a.id).sort(), [...ids].sort()) // drawn in bank order
@@ -165,6 +184,11 @@ test('platformView: same content score everywhere, decision follows each platfor
   result.policy.targets.tiktok_shop_video.score = 40
   result.policy.targets.shopee_listing.score = 100
   assert.equal(platformView(result).bestId, 'tiktok_shop_video')
+  // a platform told "Chưa nên chạy ads" never takes the tag, even with the best policy score
+  result.policy.targets.tiktok_ads.score = 70
+  assert.equal(platformView(result).bestId, 'tiktok_shop_video')
+  result.policy.targets.tiktok_shop_video.verdict = 'fail'
+  assert.equal(platformView(result).bestId, null)
 })
 
 test('platformView: ads go green only when policy passes, a CTA exists and both groups clear the bar', () => {
