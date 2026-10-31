@@ -1,238 +1,235 @@
-import { ArrowRight } from 'lucide-react'
-import { useEffect, useRef } from 'react'
+/*
+ * Seller landing (route /).
+ *
+ * Content and task: a seller who posts short sales videos decides whether Preflight is worth a login. The page
+ * answers by showing the product working, not by describing it: one real video from the demo shop plays while
+ * the notes of its real run (run #46, SHOP001-VID01) light up at the second they refer to. Everything else is
+ * short and secondary: three steps, how numbers are labelled, one more call to log in.
+ *
+ * Look: white page, ink type, one dark "edit bay" panel as the only heavy object. Display face Bricolage Grotesque
+ * for headings, Be Vietnam Pro for text, JetBrains Mono for timecodes (the product speaks in seconds).
+ */
+import { useEffect, useRef, useState } from 'react'
 
 import './landing.css'
-import './flow-glass.css'
 
 const LOGIN_HREF = '/login'
-const CTA_LABEL = 'Đăng nhập bằng Shopee'
+const STUDIO_HREF = '/studio?shop=SHOP001&video=SHOP001-VID01'
+
+// The demo run: SHOP001-VID01 "TeaShell soap", run #46 — scores, flagged lines and fixes as the API returned them.
+const DEMO = {
+  duration: 38.7,
+  score: 55,
+  ready: 75,
+  verdict: 'Sửa rồi đăng',
+  groups: [
+    { label: 'Viral', value: 64 },
+    { label: 'Chuyển đổi', value: 43 },
+    { label: 'SKU & thị trường', value: 63 },
+  ],
+  notes: [
+    { t: 0, tone: 'good', title: 'Hook mở đầu giữ người xem', meta: '92 / 100' },
+    { t: 3, tone: 'bad', title: 'Lời hứa tuyệt đối', quote: 'Tao xài trắng quá, giờ mẹ tao tưởng tao mới đi tắm trắng', meta: 'Policy' },
+    { t: 9.4, tone: 'bad', title: 'So sánh trước / sau', quote: 'Mới dùng 3 lần mà trắng cỡ này', meta: 'Policy' },
+    { t: 17, tone: 'bad', title: 'Lời hứa phóng đại', quote: 'Da không nhìn sáng hơn mới là lạ đó', meta: 'Policy' },
+    { t: 35.7, tone: 'warn', title: 'Chưa có lời kêu gọi mua', meta: '+3,2 điểm nếu thêm' },
+  ],
+}
 
 const STEPS = [
-  { art: 'step-upload', title: 'Chọn video và SKU', text: 'Gắn video với sản phẩm sẽ bán.' },
-  { art: 'step-agents', title: 'Agent kiểm tra', text: 'Đọc video, đối chiếu SKU, thị trường, policy.' },
-  { art: 'step-fixes', title: 'Sửa theo từng giây', text: 'Điểm, lý do và việc cần sửa gắn với mốc thời gian.' },
+  { title: 'Chọn video và SKU', text: 'Video gắn với sản phẩm sẽ bán.' },
+  { title: 'Agent xem và đối chiếu', text: 'Lời nói, khung hình, listing, thị trường, policy.' },
+  { title: 'Sửa theo từng giây', text: 'Mỗi việc cần sửa có mốc thời gian.' },
 ]
 
 const PROVENANCE = [
-  { status: 'REAL', tone: 'pass', text: 'Có nguồn, có ngày' },
-  { status: 'MOCK', tone: 'amber', text: 'Mô phỏng, luôn gắn nhãn' },
-  { status: 'INFERRED', tone: 'info', text: 'Suy ra, ghi căn cứ' },
-  { status: 'MISSING', tone: 'ghost', text: 'Chưa chấm, không phải 0' },
+  { tag: 'REAL', tone: 'real', text: 'có nguồn, có ngày' },
+  { tag: 'MOCK', tone: 'mock', text: 'luôn gắn nhãn' },
+  { tag: 'INFERRED', tone: 'inferred', text: 'ghi căn cứ' },
+  { tag: 'MISSING', tone: 'missing', text: 'chưa chấm, không phải 0' },
 ]
 
-const STATS = [
-  { value: '36', label: 'câu hỏi chấm' },
-  { value: '3', label: 'nhóm điểm' },
-  { value: '4', label: 'nền tảng đăng' },
-]
+const timecode = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(Math.floor(s % 60)).padStart(2, '0')}`
+const band = (v, ready) => (v >= ready ? 'good' : v >= 50 ? 'warn' : 'bad')
 
-const POLICY_STATES = ['Cần xem lại', 'Không phát hiện vi phạm', 'Chưa đủ dữ liệu']
-
-function LoginButton() {
-  return (
-    <a href={LOGIN_HREF} className="landing-cta">
-      {CTA_LABEL}
-      <ArrowRight size={20} aria-hidden="true" />
-    </a>
-  )
-}
-
-function Logo() {
-  return (
-    <span className="landing-brand">
-      <img src="/brand/preflight-mark.svg" alt="" width="30" height="30" />
-      Preflight
-    </span>
-  )
-}
+/** The note a playhead at `t` is on: the last one that has started, held until the next begins. */
+const activeAt = (t) => DEMO.notes.reduce((on, n, i) => (t >= n.t ? i : on), 0)
 
 /**
- * The page's two motions: the Studio capture tilts a few degrees toward the pointer (fine pointers only), and each
- * section rises once as it scrolls in. Both are skipped under reduced motion; without JS everything just shows.
+ * The edit bay: the video plays muted on a loop; a playhead runs along the timeline and the note for the current
+ * second takes the stage. Clicking a note or a marker seeks there. The playhead is moved through a CSS variable
+ * each frame; React only re-renders when the active note changes.
  */
-function useLandingMotion(rootRef) {
+function EditBay() {
+  const videoRef = useRef(null)
+  const trackRef = useRef(null)
+  const [active, setActive] = useState(0)
+
   useEffect(() => {
-    const root = rootRef.current
-    if (!root || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
-
-    const sections = root.querySelectorAll('.landing-section, .landing-final-wrap')
-    const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => {
-        if (!e.isIntersecting) return
-        e.target.classList.add('is-in')
-        io.unobserve(e.target)
-      }),
-      { rootMargin: '0px 0px -12% 0px' },
-    )
-    sections.forEach((el) => {
-      el.classList.add('landing-reveal')
-      io.observe(el)
+    const video = videoRef.current
+    if (!video) return undefined
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (!reduced) video.play().catch(() => {})
+    let frame = requestAnimationFrame(function tick() {
+      const t = video.currentTime || 0
+      trackRef.current?.style.setProperty('--at', String(Math.min(1, t / DEMO.duration)))
+      setActive((prev) => {
+        const next = activeAt(t)
+        return next === prev ? prev : next
+      })
+      frame = requestAnimationFrame(tick)
     })
+    return () => cancelAnimationFrame(frame)
+  }, [])
 
-    const showcase = root.querySelector('.landing-showcase')
-    const stage = root.querySelector('.landing-stage')
-    const top = root.querySelector('.landing-hero')
-    const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches
-    const move = (e) => {
-      const r = stage.getBoundingClientRect()
-      const x = (e.clientX - r.left) / r.width - 0.5
-      const y = (e.clientY - r.top) / r.height - 0.5
-      stage.classList.add('is-tilting')
-      stage.style.setProperty('--ry', `${(x * 7).toFixed(2)}deg`)
-      stage.style.setProperty('--rx', `${(-y * 5).toFixed(2)}deg`)
-    }
-    const reset = () => {
-      stage.classList.remove('is-tilting')
-      stage.style.setProperty('--ry', '0deg')
-      stage.style.setProperty('--rx', '0deg')
-    }
-    // hero: the phone and its cards drift a few px against each other (depth by pointer)
-    const drift = (e) => {
-      const r = top.getBoundingClientRect()
-      top.style.setProperty('--px', ((e.clientX - r.left) / r.width - 0.5).toFixed(3))
-      top.style.setProperty('--py', ((e.clientY - r.top) / r.height - 0.5).toFixed(3))
-    }
-    if (fine && showcase && stage) {
-      showcase.addEventListener('pointermove', move)
-      showcase.addEventListener('pointerleave', reset)
-    }
-    if (fine && top) top.addEventListener('pointermove', drift)
-    return () => {
-      io.disconnect()
-      if (fine && showcase && stage) {
-        showcase.removeEventListener('pointermove', move)
-        showcase.removeEventListener('pointerleave', reset)
-      }
-      if (fine && top) top.removeEventListener('pointermove', drift)
-    }
-  }, [rootRef])
+  const seek = (t) => {
+    const video = videoRef.current
+    if (!video) return
+    video.currentTime = t + 0.05
+    video.play().catch(() => {})
+  }
+
+  const note = DEMO.notes[active]
+  return (
+    <div className="lp-bay">
+      <div className="lp-bay-video">
+        <video
+          ref={videoRef}
+          src="/landing/demo.mp4"
+          poster="/landing/demo-poster.jpg"
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-label="Video mẫu TeaShell soap của shop demo"
+        />
+      </div>
+
+      <div className="lp-bay-side">
+        <div className="lp-bay-score">
+          <span className={`lp-bay-num is-${band(DEMO.score, DEMO.ready)}`}>{DEMO.score}</span>
+          <span className="lp-bay-verdict">
+            <strong>{DEMO.verdict}</strong>
+            <small>ngưỡng đăng {DEMO.ready}</small>
+          </span>
+          <ul className="lp-bay-groups" aria-label="Điểm theo nhóm">
+            {DEMO.groups.map((g) => (
+              <li key={g.label} className={`is-${band(g.value, DEMO.ready)}`}>
+                <span>{g.label}</span>
+                <i style={{ '--v': g.value }} />
+                <b>{g.value}</b>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* key on the note so each change replays the entrance */}
+        <div key={active} className={`lp-bay-now is-${note.tone}`} aria-live="polite">
+          <span className="lp-tc">{timecode(note.t)}</span>
+          <strong>{note.title}</strong>
+          {note.quote && <q>{note.quote}</q>}
+          <small>{note.meta}</small>
+        </div>
+
+        <ol className="lp-bay-list">
+          {DEMO.notes.map((n, i) => (
+            <li key={n.t}>
+              <button type="button" className={`is-${n.tone}`} aria-current={i === active ? 'true' : undefined} onClick={() => seek(n.t)}>
+                <span className="lp-tc">{timecode(n.t)}</span>
+                {n.title}
+              </button>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <div className="lp-bay-track" ref={trackRef} style={{ '--at': 0 }}>
+        <span className="lp-bay-rail" aria-hidden="true" />
+        {DEMO.notes.map((n, i) => (
+          <button
+            key={n.t}
+            type="button"
+            className={`lp-bay-mark is-${n.tone}`}
+            style={{ '--x': n.t / DEMO.duration }}
+            aria-current={i === active ? 'true' : undefined}
+            aria-label={`${timecode(n.t)} ${n.title}`}
+            title={`${timecode(n.t)} · ${n.title}`}
+            onClick={() => seek(n.t)}
+          />
+        ))}
+        <span className="lp-bay-head" aria-hidden="true" />
+        <span className="lp-bay-ends" aria-hidden="true">
+          <span>00:00</span>
+          <span>{timecode(DEMO.duration)}</span>
+        </span>
+      </div>
+    </div>
+  )
 }
 
 export default function LandingPage() {
-  const rootRef = useRef(null)
-  useLandingMotion(rootRef)
   return (
-    <div className="landing" ref={rootRef}>
-      <div className="landing-top">
-        <header className="landing-head">
-          <a href="/" aria-label="Preflight, trang chủ">
-            <Logo />
-          </a>
-          <nav aria-label="Mục trang" className="landing-nav">
-            <a href="#cach-hoat-dong" className="landing-link landing-link--wide">Cách hoạt động</a>
-            <a href="#khac-biet" className="landing-link landing-link--wide">Dữ liệu</a>
-            <a href={LOGIN_HREF} className="landing-link landing-head-cta">Đăng nhập</a>
-          </nav>
-        </header>
-
-        <section aria-labelledby="hero-title" className="landing-hero">
-          <div className="landing-rise">
-            <span className="landing-pill">Bản demo · dữ liệu mô phỏng</span>
-            <h1 id="hero-title" className="landing-h1">
-              Biết video yếu <em>trước khi đăng</em>.
-            </h1>
-            <p className="landing-lede">Chấm Hook, CTA, chuyển đổi và policy cho video TikTok Shop, Shopee. Chỉ ra đúng giây cần sửa.</p>
-            <div className="landing-cta-row">
-              <LoginButton />
-              <a href="#cach-hoat-dong" className="landing-ghost">Xem cách hoạt động</a>
-            </div>
-            <dl className="landing-stats">
-              {STATS.map((st) => (
-                <div key={st.label}>
-                  <dt>{st.label}</dt>
-                  <dd>{st.value}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-
-          {/* the phone is a real Studio capture; the floating cards repeat that run's own numbers */}
-          <div className="landing-device" aria-hidden="true">
-            <img className="landing-phone" src="/landing/phone-studio.webp" width="584" height="1194" alt="" />
-            <div className="landing-float landing-float--score">
-              <span className="landing-ring" style={{ '--v': 55 }}><b>55</b></span>
-              <span><strong>Sửa rồi đăng</strong><small>Ngưỡng đăng 75</small></span>
-            </div>
-            <div className="landing-float landing-float--hook">
-              <span className="landing-dot is-good" />
-              <span><strong>Hook mở đầu</strong><small>92 / 100</small></span>
-            </div>
-            <div className="landing-float landing-float--fix">
-              <span className="landing-time">00:09</span>
-              <span><strong>Sửa cảnh trước/sau</strong><small>Policy</small></span>
-            </div>
-            <div className="landing-float landing-float--policy">
-              <span className="landing-shield">6</span>
-              <span><strong>Rule cần xem lại</strong><small>trước khi đăng</small></span>
-            </div>
-          </div>
-        </section>
-      </div>
+    <div className="lp">
+      <header className="lp-head">
+        <a href="/" className="lp-brand" aria-label="Preflight, trang chủ">
+          <img src="/brand/preflight-mark.svg" alt="" width="28" height="28" />
+          Preflight
+        </a>
+        <span className="lp-demo-note">Bản demo · dữ liệu mô phỏng</span>
+        <a href={LOGIN_HREF} className="lp-head-login">Đăng nhập</a>
+      </header>
 
       <main>
-        <section aria-labelledby="showcase-title" className="landing-section landing-showcase">
-          <div className="landing-wrap">
-            <h2 id="showcase-title" className="landing-h2">Một màn: video, điểm, việc cần sửa.</h2>
-            <figure className="landing-stage">
-              <img
-                src="/landing/studio-preview.webp"
-                width="2104"
-                height="1200"
-                loading="lazy"
-                alt="Studio của Preflight: video mẫu được 43/100, radar câu hỏi, điểm theo nhóm và danh sách việc cần sửa theo mốc thời gian."
-              />
-            </figure>
-          </div>
-        </section>
-
-        <section id="cach-hoat-dong" aria-labelledby="steps-title" className="landing-section">
-          <div className="landing-wrap">
-            <h2 id="steps-title" className="landing-h2">Ba bước, một danh sách việc cần sửa.</h2>
-            <ol className="landing-steps">
-              {STEPS.map((step, i) => (
-                <li key={step.title} className="landing-step">
-                  <img className="landing-step-art" src={`/illustrations/${step.art}.webp`} alt="" width="800" height="800" loading="lazy" />
-                  <span className="landing-step-no">{i + 1}</span>
-                  <h3 className="landing-step-title">{step.title}</h3>
-                  <p className="landing-step-text">{step.text}</p>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </section>
-
-        <section id="khac-biet" aria-labelledby="proof-title" className="landing-section">
-          <div className="landing-wrap landing-trust">
-            <h2 id="proof-title" className="landing-h2">Không bịa số.</h2>
-            <ul className="landing-chips" aria-label="Trạng thái của từng số">
-              {PROVENANCE.map((item) => (
-                <li key={item.status} className="landing-chip">
-                  <span className={`landing-status landing-status--${item.tone}`}>{item.status}</span>
-                  {item.text}
-                </li>
-              ))}
-            </ul>
-            <div className="landing-policy">
-              <span className="landing-policy-label">Policy không bao giờ báo “đạt”</span>
-              <ul className="landing-policy-states">
-                {POLICY_STATES.map((label) => <li key={label}>{label}</li>)}
-              </ul>
+        <section className="lp-hero" aria-labelledby="hero-title">
+          <h1 id="hero-title">Biết video yếu trước khi đăng.</h1>
+          <div className="lp-hero-side">
+            <p>Preflight xem video như người mua, rồi chỉ ra đúng giây cần sửa.</p>
+            <div className="lp-actions">
+              <a href={LOGIN_HREF} className="lp-btn">Đăng nhập bằng Shopee</a>
+              <a href={STUDIO_HREF} className="lp-link">Mở Studio mẫu →</a>
             </div>
           </div>
         </section>
 
-        <section aria-labelledby="final-title" className="landing-final-wrap">
-          <div className="landing-final">
-            <h2 id="final-title" className="landing-h2 landing-final-title">Kiểm video trước lần đăng tiếp theo.</h2>
-            <LoginButton />
-          </div>
+        <section className="lp-bay-wrap" aria-label="Một lượt chấm thật">
+          <EditBay />
+          <p className="lp-caption">Lượt chấm thật của video mẫu. Bấm một mốc để tua tới đó.</p>
+        </section>
+
+        <section className="lp-steps" aria-labelledby="steps-title">
+          <h2 id="steps-title">Cách hoạt động</h2>
+          <ol>
+            {STEPS.map((s, i) => (
+              <li key={s.title}>
+                <span className="lp-tc">0{i + 1}</span>
+                <strong>{s.title}</strong>
+                <span>{s.text}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section className="lp-trust" aria-labelledby="trust-title">
+          <h2 id="trust-title">Không bịa số.</h2>
+          <ul>
+            {PROVENANCE.map((p) => (
+              <li key={p.tag}>
+                <span className={`lp-tag is-${p.tone}`}>{p.tag}</span>
+                {p.text}
+              </li>
+            ))}
+          </ul>
+          <p>Policy không bao giờ báo “đạt”: chỉ cần xem lại, không phát hiện vi phạm, hoặc chưa đủ dữ liệu.</p>
+        </section>
+
+        <section className="lp-final" aria-labelledby="final-title">
+          <h2 id="final-title">Kiểm video trước lần đăng tiếp theo.</h2>
+          <a href={LOGIN_HREF} className="lp-btn">Đăng nhập bằng Shopee</a>
         </section>
       </main>
 
-      <footer className="landing-footer">
-        <div className="landing-wrap">
-          Bản demo: shop và SKU mô phỏng, snapshot thị trường từ FastMoss và Google Shopping. Không liên kết với Shopee hay TikTok.
-        </div>
+      <footer className="lp-foot">
+        Bản demo: shop và SKU mô phỏng, snapshot thị trường từ FastMoss và Google Shopping. Không liên kết với Shopee hay TikTok.
       </footer>
     </div>
   )
