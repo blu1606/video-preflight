@@ -50,6 +50,8 @@ const loadBank = () =>
     .catch(() => ({ questions: [], scoring: null }))
 
 const NOTHING = new Set()
+// what the score column sees during the intro scoring pass: a run in progress with no answers yet
+const INTRO_RUN = { status: 'running', steps: [], partial: null }
 
 /**
  * The batched Decisions answer of a live run, revealed one question at a time. The reveal outlives the run
@@ -154,13 +156,39 @@ export default function StudioPage() {
   }, [finishedRunId])
   const runs = history.data ?? []
   const saved = runs.find((a) => a.id === selectedRunId) ?? runs[0] ?? null
+  // Opened from the video list (?intro=1) with a saved result: a short scoring pass (scan, radar sweep, spinning
+  // ring) before that result settles in. Nothing is sent anywhere; the flag leaves the URL when the pass ends.
+  const introAsked = params.get('intro') === '1'
+  const [introEnd, setIntroEnd] = useState(null) // when the pass ended (ms), null while it runs or never ran
+  const [introFreshOver, setIntroFreshOver] = useState(false)
+  const hasSaved = !!saved
+  useEffect(() => {
+    if (!introAsked || !hasSaved) return undefined
+    const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    let fresh = 0
+    const t = setTimeout(() => {
+      setIntroEnd(Date.now())
+      setParams((p) => {
+        const next = new URLSearchParams(p)
+        next.delete('intro')
+        return next
+      }, { replace: true })
+      fresh = setTimeout(() => setIntroFreshOver(true), 2600)
+    }, reduced ? 0 : 1600)
+    return () => {
+      clearTimeout(t)
+      clearTimeout(fresh)
+    }
+  }, [introAsked, hasSaved, setParams])
+  const introScoring = introAsked && hasSaved && introEnd == null && !running
+  const introFresh = introEnd != null && !introFreshOver
   const analysis = run.status === 'done' ? run.result : running ? null : saved
   const result = analysis?.result ?? null
   const liveQuestions = run.partial?.decisions?.questions ?? null
   const questions = (running ? liveQuestions : result?.decisions?.questions) ?? bank.data?.questions ?? []
   const [revealed, lastRevealed] = useReveal(liveQuestions)
   // Before the Decisions step answers, every axis of a running analysis waits ("…").
-  const radarRevealed = running && !liveQuestions ? NOTHING : revealed
+  const radarRevealed = (running && !liveQuestions) || introScoring ? NOTHING : revealed
 
   // While answers are revealed the score climbs with them (an estimate until the backend's final overall).
   const weights = bank.data?.scoring?.group_weights ?? saved?.result?.overall?.weights ?? null
@@ -288,7 +316,7 @@ export default function StudioPage() {
   const rightCol = useRightWidth(leftWidth)
 
   return (
-    <div ref={rootRef} className="pf-root studio-root" data-tab="analysis" data-fresh={justDone ? '' : undefined}>
+    <div ref={rootRef} className="pf-root studio-root" data-tab="analysis" data-fresh={justDone || introFresh ? '' : undefined}>
       <GlobalTooltip rootRef={rootRef} />
       <AppBar
         shops={shops.data ?? []}
@@ -357,18 +385,18 @@ export default function StudioPage() {
             fallbackDuration={duration}
             music={result?.features && 'video.music' in result.features ? result.features['video.music'] : undefined}
             skin={skin}
-            running={running}
-            justDone={justDone}
+            running={running || introScoring}
+            justDone={justDone || introFresh}
           />
           {fixTab ? (
             <FixesColumn key={analysis.id} result={result} onSeek={seek} onOpenSku={() => setSkuOpen(true)} />
           ) : (
             <RightColumn
-              run={run}
+              run={introScoring ? INTRO_RUN : run}
               result={result}
               questions={questions}
               revealed={radarRevealed}
-              provisional={provisional}
+              provisional={introScoring ? null : provisional}
               selectedId={selectedQ}
               onOpenQuestion={openQuestion}
               onOpenAll={() => setDecisionsOpen(true)}

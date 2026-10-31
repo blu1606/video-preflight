@@ -10,7 +10,8 @@ import { SkuThumb } from './shop-products-page'
 const enc = encodeURIComponent
 const ACCEPT = '.mp4,.mov,.webm,.mkv'
 
-const studioUrl = (shopId, videoId) => `/studio?shop=${enc(shopId)}&video=${enc(videoId)}`
+// intro=1: Studio plays a short scoring pass over the saved result when it opens from this list
+const studioUrl = (shopId, videoId) => `/studio?shop=${enc(shopId)}&video=${enc(videoId)}&intro=1`
 
 /** local_file is relative to data/ ("SHOP001/x.mp4"). A bare file name is read from the shop's folder. */
 const mediaPath = (video, shopId) => (video.local_file?.includes('/') ? video.local_file : `${shopId}/${video.local_file}`)

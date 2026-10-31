@@ -322,7 +322,7 @@ export function RightColumn({
             overall={running ? null : overall}
             provisional={provisional}
             gate={running ? null : overall?.policy_gate}
-            headline={verdict}
+            headline={running ? null : verdict}
             onPolicy={() => onSideTab('evidence')}
             running={running}
           />
