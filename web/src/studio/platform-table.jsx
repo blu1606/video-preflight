@@ -1,8 +1,7 @@
-import { platformLabel, policyVerdictLabel, rulePlain } from '../lib/labels'
+import { platformLabel, rulePlain } from '../lib/labels'
 import { FIT_STATUS_LABEL, platformView, scoreBand } from './studio-model'
 
 /** Heat cell coloured by need-to-fix on our thresholds: pass tone when ready, accent to fix, critical to rework. */
-const heatClass = (v, ready, fix) => `studio-heat-cell is-${scoreBand(v, ready, fix)}`
 const CART = { native: 'Giỏ hàng trong app', link: 'Phải bấm link ra shop' }
 const KIND = { organic: 'Đăng tự nhiên', ads: 'Quảng cáo', listing: 'Trang sản phẩm' }
 
@@ -39,6 +38,17 @@ function FitChecks({ fit }) {
   )
 }
 
+/** One score as a labelled mini bar, banded like the rest of the studio; "chưa đủ dữ liệu" when missing. */
+function PfMeter({ label, value, ready, fix }) {
+  return (
+    <span className={`studio-pf-meter is-${scoreBand(value, ready, fix)}`}>
+      <span className="lab">{label}</span>
+      <span className="bar" aria-hidden="true"><span style={{ width: `${value == null ? 0 : Math.max(3, Math.min(100, value))}%` }} /></span>
+      <strong>{value == null ? '–' : Math.round(value)}</strong>
+    </span>
+  )
+}
+
 /**
  * Where to post and whether to run ads: the two scores in one table (content and policy per platform); each
  * platform's decision line opens its reasons, cart, policy issues and spec checklist.
@@ -49,44 +59,6 @@ export function PlatformTable({ result }) {
   const { rows, bestId, ready, fix } = view
   return (
     <section className="studio-platforms" aria-label="So sánh theo nền tảng">
-      <div className="heat-wrap">
-        <table className="heat studio-heat">
-          <thead>
-            <tr>
-              <th scope="col"><span className="sr-only">Tiêu chí</span></th>
-              {rows.map((r) => (
-                <th key={r.id} scope="col" className={r.id === bestId ? 'is-cur' : undefined}>
-                  <span className="studio-heat-pf">{platformLabel(r.id)}</span>
-                  {r.id === bestId && <span className="tag-best">Ưu tiên</span>}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Nội dung</th>
-              {rows.map((r) => (
-                <td key={r.id} className={heatClass(r.content, ready, fix)} title={r.kind === 'listing' ? 'Trang sản phẩm chấm theo nhóm SKU & thị trường' : 'Cùng một video trên mọi nền tảng'}>
-                  {r.content == null ? <span className="tiny">chưa chấm</span> : Math.round(r.content)}
-                </td>
-              ))}
-            </tr>
-            <tr>
-              <th scope="row">Policy</th>
-              {rows.map((r) => (
-                <td key={r.id} className={heatClass(r.policyScore, ready, fix)} title={policyVerdictLabel(r.verdict)}>
-                  {r.policyScore == null ? <span className="tiny">chưa đủ dữ liệu</span> : Math.round(r.policyScore)}
-                </td>
-              ))}
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p className="legend studio-heat-legend">
-        <span><i className="studio-heat-sw is-ready" />≥ {ready}</span>
-        <span><i className="studio-heat-sw is-fix" />{fix}–{ready - 1}</span>
-        <span><i className="studio-heat-sw is-rework" />&lt; {fix}</span>
-      </p>
       <ul className="studio-pf-list">
         {rows.map((r) => (
           <li key={r.id}>
@@ -95,9 +67,15 @@ export function PlatformTable({ result }) {
                 <span className={`al-dot is-${r.decision.tone}`} aria-hidden="true" />
                 <span className="studio-pf-name">
                   <strong>{platformLabel(r.id)}</strong>
-                  <span className="tiny muted"> · {KIND[r.kind]}{r.selected ? ' · đã chọn đăng' : ''}</span>
+                  {r.id === bestId && <span className="tag-best">Ưu tiên</span>}
+                  <span className="tiny muted studio-pf-kind">{KIND[r.kind]}{r.selected ? ' · đã chọn đăng' : ''}</span>
                 </span>
                 <span className={`studio-pf-decision is-${r.decision.tone}`}>{r.decision.text}</span>
+                {/* the two scores that decide it, as small meters: content (listing: SKU & market) and policy */}
+                <span className="studio-pf-metrics">
+                  <PfMeter label={r.kind === 'listing' ? 'Trang SP' : 'Nội dung'} value={r.content} ready={ready} fix={fix} />
+                  <PfMeter label="Policy" value={r.policyScore} ready={ready} fix={fix} />
+                </span>
               </summary>
               <div className="studio-pf-body">
                 {r.decision.why.length > 0 && <p className="tiny">Vì: {r.decision.why.join('; ')}.</p>}

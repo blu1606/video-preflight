@@ -19,61 +19,132 @@ const CHIPS_PER_INSIGHT = 3
 const vnd = (v) => (v == null ? '–' : `${Math.round(v).toLocaleString('vi-VN')}₫`)
 const num = (v) => (v == null ? '–' : Number(v).toLocaleString('vi-VN'))
 
-/** Overall score with its label, provisional while the Decisions answers are still arriving, and the policy gate. */
-function ScoreHead({ overall, provisional, gate, onPolicy }) {
+const GROUP_PARTS = [
+  { id: 'viral_potential', label: 'Viral', hint: 'Giữ chân và lan toả: hook, mạch kể, cảm xúc, đáng chia sẻ' },
+  { id: 'conversion_potential', label: 'Chuyển đổi', hint: 'Khiến người xem mua: nhận ra sản phẩm, bằng chứng, ưu đãi, CTA' },
+  { id: 'sku_market', label: 'SKU & thị trường', hint: 'Listing, đánh giá, giá và nhu cầu của sản phẩm gắn với video' },
+]
+const band = (v, ready, fix) => (v == null ? 'missing' : v >= ready ? 'ready' : v >= fix ? 'fix' : 'rework')
+
+/** Score ring: the arc fills to the score, coloured by band, with a tick where "ready" starts. */
+function ScoreRing({ value, ready, fix, estimate }) {
+  const r = 46
+  const c = 2 * Math.PI * r
+  const shown = value == null ? 0 : Math.max(0, Math.min(100, value))
+  const tick = (ready / 100) * 2 * Math.PI - Math.PI / 2
+  return (
+    <span className={`studio-ring is-${band(value, ready, fix)}${estimate ? ' is-estimate' : ''}`}>
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <circle className="ring-track" cx="60" cy="60" r={r} />
+        <circle className="ring-fill" cx="60" cy="60" r={r} strokeDasharray={`${(shown / 100) * c} ${c}`} transform="rotate(-90 60 60)" />
+        <line className="ring-tick" x1={60 + Math.cos(tick) * (r - 6)} y1={60 + Math.sin(tick) * (r - 6)} x2={60 + Math.cos(tick) * (r + 7)} y2={60 + Math.sin(tick) * (r + 7)} />
+      </svg>
+      <span className="ring-num">{value == null ? '—' : Math.round(value)}<small>/100</small></span>
+    </span>
+  )
+}
+
+/**
+ * The answer first: score ring, the decision in words, the AI's one-line reading, then the policy gate as its own
+ * row (it blocks posting whatever the score says). Provisional while Decisions answers are still arriving.
+ */
+function ScoreHero({ overall, provisional, gate, headline, onPolicy }) {
   const estimate = overall?.score == null && provisional != null
-  const shown = overall?.score ?? provisional
-  const counted = useCountUp(shown)
+  const counted = useCountUp(overall?.score ?? provisional)
+  const ready = overall?.thresholds?.ready ?? 75
+  const fix = overall?.thresholds?.fix ?? 50
   const rules = groupPolicyByRule(gate?.blockers).length
   const review = gate?.status === 'review'
   return (
-    <div className="studio-score">
-      <span className="score-big" aria-label={overall?.score != null ? `Điểm tổng ${Math.round(overall.score)} trên 100` : 'Chưa có điểm tổng'}>
-        <span className={`num${estimate ? ' studio-provisional' : ''}`}>{counted == null ? '—' : Math.round(counted)}</span>
-        <span className="den">/100</span>
-      </span>
-      <span className="studio-score-meta">
-        {estimate && <span className="pill-est">tạm tính</span>}
-        {overall?.label_vi && (
-          <span className={`studio-label is-${overall.label}${overall.coverage < 0.5 ? ' is-weak' : ''}`}>{overall.label_vi}</span>
-        )}
-        {overall && <span className="tiny muted">coverage {Math.round((overall.coverage ?? 0) * 100)}%</span>}
-      </span>
+    <div className="studio-hero">
+      <div className="studio-hero-top" aria-label={overall?.score != null ? `Điểm tổng ${Math.round(overall.score)} trên 100` : 'Chưa có điểm tổng'}>
+        <ScoreRing value={counted} ready={ready} fix={fix} estimate={estimate} />
+        <div className="studio-hero-text">
+          {estimate ? (
+            <p className="studio-hero-verdict is-estimate">Đang chấm…</p>
+          ) : (
+            overall?.label_vi && <p className={`studio-hero-verdict is-${overall.label}`}>{overall.label_vi}</p>
+          )}
+          {estimate && <p className="tiny muted">Tạm tính, điểm chốt khi chạy xong.</p>}
+          {!estimate && headline && <p className="studio-hero-line">{headline}</p>}
+          {overall && (
+            <p className="studio-hero-meta" title="Phần trọng số điểm tổng đã có câu trả lời; phần thiếu không bị tính 0">
+              Dữ liệu đủ {Math.round((overall.coverage ?? 0) * 100)}% · ngưỡng đăng {ready}
+            </p>
+          )}
+        </div>
+      </div>
       {gate && (
-        <button
-          type="button"
-          className={`chip studio-policy-chip ${review ? 'studio-chip-critical' : 'chip-neutral'}`}
-          title="Rule engine bản baseline, không phải duyệt chính thức của sàn"
-          onClick={onPolicy}
-        >
+        <button type="button" className={`studio-gate-row is-${review ? 'review' : gate.status}`} onClick={onPolicy} title="Rule engine bản baseline, không phải duyệt chính thức của sàn">
           <Icon name={review ? 'shield-cross' : 'shield-tick'} />
-          {review ? `Policy: ${rules} cần xem lại` : gate.status === 'clear' ? 'Policy: không phát hiện vi phạm' : 'Policy: chưa đủ dữ liệu'}
+          <span>
+            {review
+              ? <><strong>{rules} rule policy</strong> cần xem lại trước khi đăng</>
+              : gate.status === 'clear' ? 'Policy: không phát hiện vi phạm' : 'Policy: chưa đủ dữ liệu để kiểm tra'}
+          </span>
+          <Icon name="arrow-right-2" />
         </button>
       )}
     </div>
   )
 }
 
-/** The three fixes to make first, in the backend's order; each with its moment in the video and its gain. */
-function TopFixes({ fixes, onSeek, onAll }) {
+/** How the overall score is made: the three weighted groups, each a bar with the "ready" tick. */
+function ScoreParts({ result, onOpenAll }) {
+  const overall = result?.overall
+  const ready = overall?.thresholds?.ready ?? 75
+  const fix = overall?.thresholds?.fix ?? 50
+  const weights = overall?.weights ?? {}
+  const scores = Object.fromEntries((result?.scores ?? []).map((g) => [g.name, g.score]))
+  return (
+    <section className="studio-parts" aria-label="Điểm thành phần">
+      <div className="studio-parts-head">
+        <h3 className="studio-sub">Điểm thành phần</h3>
+        <button type="button" className="link-btn tiny" onClick={onOpenAll}>Xem câu hỏi</button>
+      </div>
+      <ul>
+        {GROUP_PARTS.map((g) => {
+          const v = scores[g.id]
+          return (
+            <li key={g.id} className={`studio-part is-${band(v, ready, fix)}`} title={g.hint}>
+              <span className="studio-part-name">{g.label}{weights[g.id] != null && <em>{Math.round(weights[g.id] * 100)}%</em>}</span>
+              <span className="studio-part-bar" aria-hidden="true">
+                <span className="fill" style={{ width: `${v == null ? 0 : Math.max(2, Math.min(100, v))}%` }} />
+                <span className="tick" style={{ left: `${ready}%` }} />
+              </span>
+              <strong className="studio-part-num">{v == null ? '–' : Math.round(v)}</strong>
+            </li>
+          )
+        })}
+      </ul>
+    </section>
+  )
+}
+
+/** The three fixes to make first, in the backend's order: what, where in the video, and what it is worth. */
+function TopFixes({ fixes, total, onSeek, onAll }) {
   const top = topFixes(fixes)
   if (!top.length) return null
   return (
     <section className="studio-top-fixes" aria-label="Việc nên sửa trước">
       <div className="studio-top-head">
-        <h3 className="studio-sub">3 việc nên sửa trước</h3>
-        <button type="button" className="link-btn tiny" onClick={onAll}>Xem tất cả</button>
+        <h3 className="studio-sub">Sửa trước</h3>
+        <button type="button" className="link-btn tiny" onClick={onAll}>Xem cả {total}</button>
       </div>
       <ol className="studio-top-list">
-        {top.map((f) => {
+        {top.map((f, i) => {
           const t = fixMoment(f)
           return (
             <li key={f.id}>
-              <span className="studio-top-title" title={f.title}>{f.title}</span>
-              {t != null && <button type="button" className="chip-t" onClick={() => onSeek(t)}>{fmtTime(t)}</button>}
-              {f.expected_gain != null
-                ? <span className="studio-gain">+{f.expected_gain} điểm</span>
-                : <span className={`studio-kind is-${f.kind}`}>{FIX_KIND_LABELS[f.kind] ?? f.kind}</span>}
+              <span className="studio-top-n" aria-hidden="true">{i + 1}</span>
+              <span className="studio-top-body">
+                <span className="studio-top-title">{f.title}</span>
+                <span className="studio-top-meta">
+                  <span className={`studio-kind is-${f.kind}`}>{FIX_KIND_LABELS[f.kind] ?? f.kind}</span>
+                  {t != null && <button type="button" className="chip-t" onClick={() => onSeek(t)} aria-label={`Tua đến ${fmtTime(t)}`}>{fmtTime(t)}</button>}
+                  {f.expected_gain != null && <span className="studio-gain">+{f.expected_gain} điểm</span>}
+                </span>
+              </span>
             </li>
           )
         })}
@@ -217,40 +288,36 @@ export function RightColumn({
         </section>
       ) : (
         <section className="score-block">
-          <ScoreHead
+          <ScoreHero
             overall={running ? null : overall}
             provisional={provisional}
             gate={running ? null : overall?.policy_gate}
+            headline={verdict}
             onPolicy={() => onSideTab('evidence')}
           />
-          {running && (
-            <p className="tiny muted">{provisional != null ? 'Tạm tính, điểm chốt khi chạy xong.' : 'Đang chấm…'}</p>
-          )}
           {!running && (overall?.warnings ?? []).map((w) => <p key={w} className="tiny studio-warn">{w}</p>)}
         </section>
       )}
-      {/* before the first run the empty state is the one focus; an all-dash radar would only repeat "chưa chấm" */}
-      {((questions.length > 0 && result) || running) && (
-        <Radar
-          questions={questions}
-          revealed={revealed}
-          selectedId={selectedId}
-          onSelect={onOpenQuestion}
-          onOpenAll={onOpenAll}
-          threshold={threshold}
-          answered={answered}
-          total={scoreQs.length}
-          otherCount={otherCount}
-        />
+      {/* while a run streams, the radar fills axis by axis; after it, the weighted groups explain the score and the
+          radar stays one click away */}
+      {running && questions.length > 0 && (
+        <Radar questions={questions} revealed={revealed} selectedId={selectedId} onSelect={onOpenQuestion} onOpenAll={onOpenAll}
+          threshold={threshold} answered={answered} total={scoreQs.length} otherCount={otherCount} />
       )}
-      {running && revealed && <p className="tiny muted studio-batch-note">Decisions là một lần gọi batch; radar hiện lần lượt.</p>}
+      {result && !running && <ScoreParts result={result} onOpenAll={onOpenAll} />}
+      {result && !running && questions.length > 0 && (
+        <details className="studio-radar-more">
+          <summary>Radar câu hỏi chính</summary>
+          <Radar questions={questions} revealed={revealed} selectedId={selectedId} onSelect={onOpenQuestion} onOpenAll={onOpenAll}
+            threshold={threshold} answered={answered} total={scoreQs.length} otherCount={otherCount} />
+        </details>
+      )}
       {result && !running && scoreQs.every((q) => q.value == null) && (
         <p className="tiny studio-batch-note">
           Chưa có câu trả lời Decisions cho lần chạy này. Bật "Gọi Decisions API" trong tuỳ chọn để chấm (có tính phí).
         </p>
       )}
-      {result && !running && verdict && <p className="studio-headline">{verdict}</p>}
-      {result && !running && <TopFixes fixes={result.fixes} onSeek={onSeek} onAll={onOpenFixes} />}
+      {result && !running && <TopFixes fixes={result.fixes} total={(result.fixes ?? []).length} onSeek={onSeek} onAll={onOpenFixes} />}
       {result && !running && (
         <>
           <div className="tabs studio-side-tabs" role="tablist" aria-label="Chi tiết kết quả">
