@@ -21,7 +21,7 @@ import { RightColumn } from '../studio/right-column'
 import { RunDialog } from '../studio/run-dialog'
 import { ShopProfile } from '../studio/shop-profile'
 import { SkuMarketSheet } from '../studio/sku-market'
-import { missingPostInfo, provisionalOverall, questionSegments, revealOrder } from '../studio/studio-model'
+import { keyAxes, missingPostInfo, provisionalOverall, questionSegments, revealOrder } from '../studio/studio-model'
 import { UpdateNote } from '../studio/update-note'
 import { useSlidingIndicators } from '../studio/motion'
 import { stepLabel } from '../lib/labels'
@@ -189,6 +189,45 @@ export default function StudioPage() {
   const [revealed, lastRevealed] = useReveal(liveQuestions)
   // Before the Decisions step answers, every axis of a running analysis waits ("…").
   const radarRevealed = (running && !liveQuestions) || introScoring ? NOTHING : revealed
+
+  // Sound follows what moves on screen: a tick per finished agent step, a sonar ping per radar answer as it lands,
+  // a whoosh per turn of the radar sweep, and for the intro pass the scan at the start and, when it ends, the
+  // radar's answers pinging in before the score settles.
+  const { tick: soundTick, ping: soundPing, sweep: soundSweep, settle: soundSettle, scan: soundScan } = sound
+  const stepsDone = run.steps.filter((st) => st.status !== 'running').length
+  const lastStepsDone = useRef(0)
+  useEffect(() => {
+    if (running && stepsDone > lastStepsDone.current) soundTick()
+    lastStepsDone.current = stepsDone
+  }, [running, stepsDone, soundTick])
+  const lastAnswer = lastRevealed ? questions.find((x) => x.id === lastRevealed) : null
+  const lastAnswerValue = lastAnswer?.type === 'score' ? lastAnswer.value ?? null : undefined
+  const lastPinged = useRef(null)
+  useEffect(() => {
+    if (!running || !lastRevealed || lastAnswerValue === undefined || lastRevealed === lastPinged.current) return
+    lastPinged.current = lastRevealed
+    soundPing(lastAnswerValue)
+  }, [running, lastRevealed, lastAnswerValue, soundPing])
+  const scanning = running || introScoring
+  useEffect(() => {
+    soundSweep(scanning)
+    return () => soundSweep(false)
+  }, [scanning, soundSweep])
+  useEffect(() => {
+    if (introScoring) soundScan()
+  }, [introScoring, soundScan])
+  // the saved run's radar answers and score, as plain values the landing effect can depend on
+  const introAxes = keyAxes(questions).map((a) => a.value).filter((v) => v != null).join(',')
+  const savedScore = saved?.result?.overall?.score ?? null
+  const landedAt = useRef(null)
+  useEffect(() => {
+    if (introEnd == null || landedAt.current === introEnd) return undefined
+    landedAt.current = introEnd
+    const values = introAxes ? introAxes.split(',').map(Number) : []
+    values.forEach((v) => soundPing(v))
+    const t = setTimeout(() => soundSettle(savedScore), 120 + 70 * values.length)
+    return () => clearTimeout(t)
+  }, [introEnd, introAxes, savedScore, soundPing, soundSettle])
 
   // While answers are revealed the score climbs with them (an estimate until the backend's final overall).
   const weights = bank.data?.scoring?.group_weights ?? saved?.result?.overall?.weights ?? null
