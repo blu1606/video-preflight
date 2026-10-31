@@ -56,8 +56,6 @@ services:
       target: web
     environment:
       SITE_ADDRESS: ${SITE_ADDRESS:?Set SITE_ADDRESS to your domain}
-      DEMO_USER: ${DEMO_USER:?Set DEMO_USER}
-      DEMO_PASSWORD_HASH: ${DEMO_PASSWORD_HASH:?Set a Caddy password hash}
     ports:
       - "${HTTP_PORT:-80}:80"
       - "${HTTPS_PORT:-443}:443"

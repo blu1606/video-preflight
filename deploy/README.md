@@ -3,9 +3,9 @@
 One Ubuntu 24.04 EC2 (`m7i.xlarge`, Singapore), a 100 GiB encrypted gp3 root disk,
 one Elastic IP, and Docker Compose. Caddy serves the built React app and proxies
 `/api/*` (prefix stripped) to JSON Server, `/py/*` and `/media/*` to FastAPI.
-Only ports 80/443 and the selected SSH sources are public. Every web route is
-protected by HTTP Basic authentication over HTTPS because the app's shop login
-is a simulation. No AWS keys are needed in GitHub Actions.
+Only ports 80/443 and the selected SSH sources are public. The hackathon demo
+opens directly over HTTPS without HTTP Basic authentication. The app's shop
+login remains a simulation. No AWS keys are needed in GitHub Actions.
 
 ## 1. Prepare infrastructure
 
@@ -70,9 +70,7 @@ Keep the server checkout on `main` and do not edit tracked files on the server.
 ```bash
 cp /opt/video-preflight/repo/deploy/.env.example /opt/video-preflight/shared/app.env
 chmod 600 /opt/video-preflight/shared/app.env
-docker run --rm -it caddy:2.10.2-alpine caddy hash-password
-# Edit shared/app.env: SITE_ADDRESS=your-domain.example, DEMO_USER and the hash.
-# Keep the hash in SINGLE QUOTES so Compose preserves its dollar signs.
+# Edit shared/app.env: SITE_ADDRESS=your-domain.example.
 ```
 
 Point your domain's DNS A record to the Elastic IP. Caddy obtains/renews TLS
@@ -150,12 +148,12 @@ cd /opt/video-preflight/repo
 export APP_ENV_FILE=/opt/video-preflight/shared/app.env
 docker compose --env-file "$APP_ENV_FILE" ps
 docker compose --env-file "$APP_ENV_FILE" logs --tail 100 api
-curl -u demo https://YOUR_DOMAIN/py/health
-curl -u demo 'https://YOUR_DOMAIN/api/shops?_limit=1'
+curl https://YOUR_DOMAIN/py/health
+curl 'https://YOUR_DOMAIN/api/shops?_limit=1'
 ```
 
 For local HTTP smoke testing only, copy `deploy/.env.example` to `deploy/.env`,
-set `SITE_ADDRESS=:80`, set a real demo password hash, and run
+set `SITE_ADDRESS=:80` and run
 `docker compose --env-file deploy/.env up -d --build --wait`. Production uses
 a real domain and HTTPS. This stack is one demo server, without high availability
 or a persistent job queue; avoid unbounded concurrent analysis runs.

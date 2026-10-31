@@ -44,7 +44,7 @@ jobs:
           terraform fmt -check -recursive infra
           bash -n deploy/deploy.sh infra/cloud-init.sh
           sh -n deploy/start-db.sh
-          SITE_ADDRESS=:80 DEMO_USER=ci DEMO_PASSWORD_HASH=ci APP_ENV_FILE=deploy/.env.example docker compose config --quiet
+          SITE_ADDRESS=:80 APP_ENV_FILE=deploy/.env.example docker compose config --quiet
 
   deploy:
     needs: ci
