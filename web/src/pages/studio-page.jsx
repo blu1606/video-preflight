@@ -26,6 +26,7 @@ import { UpdateNote } from '../studio/update-note'
 import { useSlidingIndicators } from '../studio/motion'
 import { stepLabel } from '../lib/labels'
 import { useStudioSound } from '../studio/sound'
+import { GlobalTooltip } from '../studio/tooltip'
 import { useRightWidth } from '../studio/use-right-width'
 import '../studio/mockup-v2.css'
 import '../studio/studio.css'
@@ -288,6 +289,7 @@ export default function StudioPage() {
 
   return (
     <div ref={rootRef} className="pf-root studio-root" data-tab="analysis" data-fresh={justDone ? '' : undefined}>
+      <GlobalTooltip rootRef={rootRef} />
       <AppBar
         shops={shops.data ?? []}
         shop={shop}

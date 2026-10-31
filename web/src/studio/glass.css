@@ -375,3 +375,40 @@
 .pf-root .seg-switch { border: 0; gap: 2px; overflow: visible; }
 .pf-root .seg-switch button { height: 30px; padding: 0 12px; border: 0; border-radius: 9px; background: none; color: var(--muted, #6b7079); font-weight: 600; }
 .pf-root .seg-switch button + button { border-left: 0; }
+
+/* Readability over glass: a popover inside the (already blurred) app bar cannot blur the page behind it — the
+   parent's backdrop-filter is its backdrop root — so menus, popovers and dialogs carry a near-solid fill. */
+.pf-root .studio-pop { background: rgba(255, 255, 255, .97); }
+.pf-root .deep-dialog, .pf-root .studio-sheet { background: rgba(255, 255, 255, .97); }
+/* schema chips outside the selected question fade, but stay readable */
+.pf-root .dd-chip.is-dim { opacity: .55; }
+
+/* Tooltip (tooltip.jsx), portalled to <body>: dark glass label with a small rise-in */
+.pf-tip {
+  position: fixed;
+  z-index: 1000;
+  transform: translate(-50%, -100%);
+  max-width: 260px;
+  padding: 6px 10px;
+  border-radius: 9px;
+  background: rgba(23, 24, 28, .92);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font: 500 12.5px/1.35 "Be Vietnam Pro", system-ui, sans-serif;
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, .45);
+  pointer-events: none;
+  animation: pf-tip-in 140ms cubic-bezier(.2, .8, .2, 1);
+}
+.pf-tip.is-below { transform: translate(-50%, 0); }
+@keyframes pf-tip-in { from { opacity: 0; margin-top: 4px; } }
+@media (prefers-reduced-motion: reduce) { .pf-tip { animation: none; } }
+/* no backdrop-filter on popovers: inside the app bar's own backdrop-filter, Chrome paints the nested one with the
+   page showing through the fill; the near-solid fill does the job alone */
+.pf-root .studio-pop { -webkit-backdrop-filter: none; backdrop-filter: none; }
+/* The app bar hosts menus that overflow it; Chrome mis-paints overflowing children of a backdrop-filter element
+   (the page showed through the options menu). The bar keeps its glass look with a denser fill and no filter. */
+.pf-root.studio-root > .hdr { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(255, 255, 255, .84); }
+/* menus are opaque: any translucency let the score column show through the options list */
+.pf-root .studio-pop { background: #fff; }
+.pf-tip { width: max-content; }
