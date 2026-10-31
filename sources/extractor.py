@@ -25,7 +25,7 @@ DEMO = Path(__file__).resolve().parents[1]
 CACHE_DIR = DEMO / "output" / "features"
 FRAMES_DIR = DEMO / "output" / "frames"  # JPEGs the VLM saw, served to the lab
 
-load_dotenv(DEMO.parent / ".env")
+load_dotenv(DEMO / ".env")
 VISION_MODEL = os.getenv("OPENAI_VISION_MODEL", "gpt-6-luna")
 AUDIO_MODEL = "whisper-1"
 
