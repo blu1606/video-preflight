@@ -1,0 +1,207 @@
+/* ================= how it works: the run console ================= */
+
+.lp-con {
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  min-width: 0;
+  --con-bg: #0e1012;
+  --con-line: rgba(255, 255, 255, .1);
+  --con-ink: #e7e9ec;
+  --con-dim: #7d838d;
+  --c-video: #fb923c;
+  --c-data: #34d399;
+  --c-decide: #a78bfa;
+  --c-policy: #f87171;
+  --c-write: #7dd3fc;
+  --c-out: #fbbf24;
+  padding: 0 22px 16px;
+  border-radius: 18px;
+  background: var(--con-bg);
+  color: var(--con-ink);
+  font: 500 13px/1.5 var(--mono);
+  box-shadow: 0 40px 80px -40px rgba(17, 18, 20, .6), inset 0 0 0 1px rgba(255, 255, 255, .06);
+}
+.lp-con :where(p, ul, ol, dl, dd) { margin: 0; padding: 0; }
+.lp-con :where(ul, ol) { list-style: none; }
+.lp-con .is-video { --c: var(--c-video); }
+.lp-con .is-data { --c: var(--c-data); }
+.lp-con .is-decide { --c: var(--c-decide); }
+.lp-con .is-policy { --c: var(--c-policy); }
+.lp-con .is-write { --c: var(--c-write); }
+.lp-con .is-out { --c: var(--c-out); }
+
+.lp-con-title { position: relative; display: flex; justify-content: center; padding: 10px 0; margin: 0 -22px; border-bottom: 1px solid var(--con-line); color: var(--con-dim); font-size: 11.5px; }
+.lp-con-dots { position: absolute; left: 16px; top: 50%; display: flex; gap: 7px; transform: translateY(-50%); }
+.lp-con-dots i { width: 11px; height: 11px; border-radius: 50%; background: #ff5f57; }
+.lp-con-dots i:nth-child(2) { background: #febc2e; }
+.lp-con-dots i:nth-child(3) { background: #28c840; }
+.lp-con-banner { padding: 16px 0 12px; border-bottom: 1px solid var(--con-line); text-align: center; letter-spacing: .04em; color: var(--con-dim); }
+.lp-con-banner b { color: var(--con-ink); font-weight: 700; }
+.lp-con-banner span { color: var(--c); font-weight: 700; }
+.lp-con-legend { display: flex; flex-wrap: wrap; gap: 6px 22px; padding: 12px 0 16px; font-size: 12px; color: var(--con-dim); }
+.lp-con-legend span { display: inline-flex; align-items: center; gap: 8px; }
+.lp-con-legend i { width: 9px; height: 9px; background: var(--c); }
+
+.lp-con-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 400px) minmax(0, 1fr);
+  grid-template-areas:
+    "map lanes"
+    "map split"
+    "map decide"
+    "map result";
+  gap: 14px 28px;
+}
+.lp-con-box {
+  padding: 12px 14px;
+  border: 1.5px solid color-mix(in srgb, var(--c) 70%, transparent);
+  background: color-mix(in srgb, var(--c) 5%, transparent);
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 300ms ease, background-color 300ms ease;
+}
+.lp-con-box.is-live { background: color-mix(in srgb, var(--c) 11%, transparent); box-shadow: 0 0 24px -4px color-mix(in srgb, var(--c) 55%, transparent); }
+.lp-con-box-head { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.lp-con-box-head strong { color: var(--c); font-weight: 700; }
+.lp-con-box-head span { color: var(--con-dim); white-space: nowrap; }
+.lp-con-box ul { display: grid; gap: 2px; color: var(--con-dim); font-size: 12px; }
+.lp-con-box li::before { content: "· "; color: var(--c); }
+
+
+.lp-con-decide { grid-area: decide; }
+.lp-con-kv { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-bottom: 8px !important; color: var(--con-dim); }
+.lp-con-kv b { color: var(--con-ink); font-size: 15px; margin-right: 10px; }
+.lp-con-bar { display: flex; align-items: center; gap: 10px; }
+.lp-con-bar i { position: relative; flex: 1; height: 8px; background: rgba(255, 255, 255, .07); }
+.lp-con-bar i::before { content: ""; position: absolute; inset: 0 auto 0 0; width: calc(var(--p, 0) * 100%); background: var(--c); transition: width 500ms cubic-bezier(.2, .8, .2, 1); }
+.lp-con-bar em { min-width: 44px; text-align: right; font-style: normal; color: var(--con-ink); font-variant-numeric: tabular-nums; }
+
+.lp-con-split { grid-area: split; position: relative; text-align: center; color: var(--con-dim); font-size: 12px; }
+.lp-con-split::before { content: ""; position: absolute; left: 50%; top: -14px; height: 12px; border-left: 1.5px dashed var(--con-line); }
+
+.lp-con-lanes { grid-area: lanes; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.lp-con-lanes .lp-con-box { min-width: 0; }
+
+
+.lp-con-log { margin-top: 18px; padding: 10px 14px 6px; border: 1px solid var(--con-line); }
+.lp-con-log-head { margin-bottom: 6px !important; color: var(--con-dim); font-size: 12px; }
+.lp-con-log ol { display: grid; gap: 4px; min-height: calc(5 * 1.5em + 16px); }
+.lp-con-log li { display: grid; grid-template-columns: 74px 136px minmax(0, 1fr); gap: 12px; font-size: 12.5px; color: var(--con-ink); animation: lp-con-line 300ms ease both; }
+.lp-con-log li:last-child::after { content: "▍"; margin-left: 4px; color: var(--c); animation: lp-con-caret 1s steps(1) infinite; }
+.lp-con-t { color: var(--con-dim); font-variant-numeric: tabular-nums; }
+.lp-con-agent { color: var(--c); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@keyframes lp-con-line { from { opacity: 0; transform: translateY(4px); } }
+@keyframes lp-con-caret { 50% { opacity: 0; } }
+
+.lp-con-status { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; padding-top: 14px; font-size: 12px; color: var(--con-dim); }
+.lp-con-status b { color: var(--c-data); font-weight: 700; }
+.lp-con-status span:first-child b { color: var(--c-write); }
+
+@media (max-width: 960px) {
+  .lp-con { padding: 0 14px 14px; }
+  .lp-con-title { margin: 0 -14px; }
+  .lp-con-grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "map"; }
+  .lp-con-title { padding-left: 64px; padding-right: 12px; justify-content: flex-start; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .lp-con-lanes { grid-template-columns: minmax(0, 1fr); }
+  .lp-con-log li { grid-template-columns: 64px minmax(0, 1fr); }
+  .lp-con-agent { display: none; }
+}
+
+/* the section is one screen: heading + console fill the viewport under the floating header, and the console keeps
+   one height while the replay streams (no reflow as lines and states change) */
+.lp-con { box-sizing: border-box; display: flex; flex-direction: column; height: clamp(480px, calc(100svh - 190px), 800px); }
+.lp-con-grid { flex: 1; min-height: 0; grid-template-rows: auto auto auto 1fr; }
+.lp-con-log { flex: none; }
+.lp-con-log ol { height: calc(5 * 1.5em + 16px); min-height: 0; overflow: hidden; }
+
+@media (max-width: 960px) {
+  .lp-con { height: calc(100svh - 150px); min-height: 520px; }
+  .lp-con-title { padding-left: 84px; }
+  .lp-con-banner { padding: 10px 0 8px; font-size: 12px; }
+  .lp-con-legend { padding: 8px 0 10px; font-size: 11px; gap: 4px 14px; }
+  .lp-con-grid { gap: 8px; grid-template-rows: auto auto auto auto; align-content: start; }
+  /* on a phone the map carries the state of every lane; the lane and Decisions boxes give way to it */
+  .lp-con-lanes,
+  .lp-con-split,
+  .lp-con-decide { display: none; }
+  .lp-con-box { padding: 8px 10px; }
+  .lp-con-box-head { margin-bottom: 6px; font-size: 12px; }
+  .lp-con-kv { font-size: 12px; margin-bottom: 4px !important; }
+  .lp-con-split { font-size: 11px; }
+  .lp-con-log { margin-top: auto; }
+  .lp-con-log ol { height: calc(4 * 1.5em + 12px); }
+  .lp-con-log li { font-size: 11.5px; }
+}
+
+/* ---------- run map (left of the console) ---------- */
+.lp-con-mapwrap { grid-area: map; min-height: 0; height: 100%; overflow: hidden; padding-right: 24px; border-right: 1px solid var(--con-line); }
+.lp .lp-map { display: block; width: 100%; height: 100%; }
+.lp-map-col { font: 500 11.5px var(--mono); fill: var(--con-dim); }
+.lp-map-note { font: 500 10.5px var(--mono); fill: var(--c-policy); opacity: .8; }
+.lp-map-edge path { fill: none; stroke: var(--c); stroke-width: 1.5; opacity: .18; transition: opacity 400ms ease; }
+.lp-map-edge.is-bypass path { stroke-dasharray: 4 4; }
+.lp-map-edge.is-live path { opacity: .9; }
+.lp-map-edge.is-done path { opacity: .55; }
+.lp-map-edge circle { fill: var(--c); filter: drop-shadow(0 0 4px var(--c)); }
+.lp-map-node rect { fill: color-mix(in srgb, var(--c) 6%, #0e1012); stroke: var(--c); stroke-width: 1.4; stroke-opacity: .3; transition: stroke-opacity 300ms ease, fill 300ms ease; }
+.lp-map-node.is-live rect { stroke-opacity: 1; fill: color-mix(in srgb, var(--c) 16%, #0e1012); filter: drop-shadow(0 0 10px color-mix(in srgb, var(--c) 60%, transparent)); }
+.lp-map-node.is-done rect { stroke-opacity: .75; }
+.lp-map-node text { font: 600 12px var(--mono); fill: var(--con-ink); opacity: .45; transition: opacity 300ms ease; }
+.lp-map-node.is-live text,
+.lp-map-node.is-done text { opacity: 1; }
+.lp-map-node .t { fill: var(--c); font-weight: 700; }
+.lp-map-node .s { font-size: 10.5px; fill: var(--con-dim); font-weight: 500; }
+.lp-map-node .big { font: 800 26px var(--display); fill: var(--con-ink); }
+.lp-map-node .num { font: 800 17px var(--display); fill: var(--con-ink); }
+.lp-map-node .ring-bg { fill: none; stroke: rgba(255, 255, 255, .1); stroke-width: 5; }
+.lp-map-node .ring { fill: none; stroke: var(--c-out); stroke-width: 5; stroke-linecap: round; }
+.lp-map-radar .ring { fill: none; stroke: rgba(255, 255, 255, .14); }
+.lp-map-radar .shape { fill: rgba(251, 146, 60, .25); stroke: var(--c-video); stroke-width: 1.4; }
+.lp-map-node .tc.is-bad { fill: var(--c-policy); }
+.lp-map-node .tc.is-warn { fill: var(--c-out); }
+.lp-map-node .tct { font: 700 10px var(--mono); fill: #0e1012; opacity: 1; }
+.lp-con .is-out { --c: var(--c-out); }
+@media (max-width: 960px) {
+  .lp-con-mapwrap { padding: 4px 0 0; border-right: 0; min-height: 0; }
+  .lp-con-grid { grid-template-rows: minmax(0, 1fr) auto; flex: 1; }
+}
+.lp-map-node text { font-size: 11px; }
+@media (max-width: 960px) {
+  .lp-con-log li span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .lp-con-status .lp-con-tokens { display: none; }
+}
+
+/* ---------- fixed geometry: nothing in the console changes size while the replay runs ---------- */
+.lp-con-grid { display: grid; flex: 1; min-height: 0; overflow: hidden; grid-template-columns: minmax(260px, 380px) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); grid-template-areas: "map right"; gap: 0 28px; }
+.lp-con-right { grid-area: right; display: flex; flex-direction: column; gap: 12px; min-height: 0; overflow: hidden; }
+.lp-con-lanes,
+.lp-con-split,
+.lp-con-decide { grid-area: auto; flex: none; }
+.lp-con-split { height: 18px; margin: 0; }
+.lp-con-box-head { flex-wrap: nowrap; }
+.lp-con-box-head strong { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lp-con-box-head span { flex: none; min-width: 11ch; text-align: right; }
+@media (max-width: 960px) {
+  .lp-con-grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); grid-template-areas: "map"; gap: 8px; }
+  .lp-con-right { display: none; }
+}
+
+@media (max-width: 960px) {
+  .lp-con-log li:nth-last-child(n + 5) { display: none; }
+}
+
+/* short screens: the console sheds detail in steps instead of squeezing boxes below their content */
+@media (max-height: 880px) and (min-width: 961px) {
+  .lp-con-box ul { display: none; }
+  .lp-con-banner { padding: 10px 0 8px; }
+  .lp-con-legend { padding: 8px 0 10px; }
+}
+@media (max-height: 760px) and (min-width: 961px) {
+  .lp-con-split { display: none; }
+  .lp-con-right { gap: 8px; }
+  .lp-con-box { padding: 9px 12px; }
+  .lp-con-log ol { height: calc(3 * 1.5em + 8px); }
+}
+/* narrow desktops: a lane's state sits under its name (two fixed lines) so the name is never cut */
+@media (max-width: 1200px) and (min-width: 961px) {
+  .lp-con-lanes .lp-con-box-head { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .lp-con-lanes .lp-con-box-head span { min-width: 0; text-align: left; font-size: 11.5px; }
+}
