@@ -18,3 +18,10 @@ output/playwright/
 # Local video assets and large database snapshot stay outside Git.
 /data/videos/
 /data/db/db.json
+# Only curated frontend snapshots may be added under ignored data.
+!data/
+data/*
+!data/fixtures/
+data/fixtures/*
+!data/fixtures/app/
+!data/fixtures/app/**
