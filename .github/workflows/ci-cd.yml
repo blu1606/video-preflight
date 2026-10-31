@@ -1,0 +1,91 @@
+name: CI and deploy
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python syntax and fast scoring tests (no external APIs)
+        run: |
+          python -m compileall -q api.py main.py core sources
+          python -m unittest tests.test_score_engine tests.test_overall tests.test_fixes
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+      - name: Frontend tests and build
+        working-directory: web
+        run: |
+          pnpm install --frozen-lockfile
+          node --test src/lib/*.test.js src/studio/*.test.js
+          pnpm build
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.15.6
+      - name: Deployment syntax
+        run: |
+          terraform fmt -check -recursive infra
+          bash -n deploy/deploy.sh infra/cloud-init.sh
+          sh -n deploy/start-db.sh
+          SITE_ADDRESS=:80 DEMO_USER=ci DEMO_PASSWORD_HASH=ci APP_ENV_FILE=deploy/.env.example docker compose config --quiet
+
+  deploy:
+    needs: ci
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: production-deploy
+      cancel-in-progress: false
+    env:
+      DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+      DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+      DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+      DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+      DEPLOY_SHA: ${{ github.sha }}
+    steps:
+      - name: Check deployment configuration
+        id: configuration
+        shell: bash
+        run: |
+          if [[ -n "$DEPLOY_HOST" && -n "$DEPLOY_USER" && -n "$DEPLOY_SSH_KEY" && -n "$DEPLOY_KNOWN_HOSTS" ]]; then
+            echo 'ready=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo '::notice::CD skipped: configure the four DEPLOY_* secrets, then run this workflow again.'
+          fi
+      - name: Pull main and restart Compose on the server
+        if: steps.configuration.outputs.ready == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          : "${DEPLOY_HOST:?Missing DEPLOY_HOST}"
+          : "${DEPLOY_USER:?Missing DEPLOY_USER}"
+          : "${DEPLOY_SSH_KEY:?Missing DEPLOY_SSH_KEY}"
+          : "${DEPLOY_KNOWN_HOSTS:?Missing DEPLOY_KNOWN_HOSTS}"
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/deploy_key ~/.ssh/known_hosts
+          trap 'rm -f ~/.ssh/deploy_key' EXIT
+          ssh -i ~/.ssh/deploy_key -o BatchMode=yes -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=yes -o ConnectTimeout=15 \
+            "$DEPLOY_USER@$DEPLOY_HOST" \
+            "bash /opt/video-preflight/repo/deploy/deploy.sh '$DEPLOY_SHA'"

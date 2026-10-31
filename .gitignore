@@ -21,3 +21,18 @@ scratch/
 data.zip
 db/db.backup-*.json
 web/.impeccable/
+
+# Deployment secrets, Terraform state and local runtime artifacts
+.env.*
+!.env.example
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+.terraform/
+crash.log
+*.pem
+.runtime/
+.playwright-cli/
+db/backups/
+web/test-results/
