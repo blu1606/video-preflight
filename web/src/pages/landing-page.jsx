@@ -273,24 +273,19 @@ function RunConsole() {
         </div>
 
         <div className="lp-con-right">
-        <div className="lp-con-lanes">
-          <LaneBox lane="video" title="Đọc video" items={['lời nói, cảnh, chữ', 'nhạc nền', 'khoanh vùng lỗi']} done={doneIn('video')} live={live === 'video'} />
-          <LaneBox lane="data" title="Shop & thị trường" items={['shop 30 ngày', 'listing, giá đối thủ', 'claim ↔ listing']} done={doneIn('data')} live={live === 'data'} />
-          <LaneBox lane="policy" title="Policy" items={['4 nền tảng đăng', 'rule + reviewer', 'trích nguyên văn']} done={doneIn('policy')} live={live === 'policy'} />
-        </div>
+          <div className="lp-con-lanes">
+            <LaneBox lane="video" title="Đọc video" items={['lời nói, cảnh, chữ', 'nhạc nền', 'khoanh vùng lỗi']} done={doneIn('video')} live={live === 'video'} />
+            <LaneBox lane="data" title="Shop & thị trường" items={['shop 30 ngày', 'listing, giá đối thủ', 'claim ↔ listing']} done={doneIn('data')} live={live === 'data'} />
+            <LaneBox lane="policy" title="Policy" items={['4 nền tảng đăng', 'rule + reviewer', 'trích nguyên văn']} done={doneIn('policy')} live={live === 'policy'} />
+          </div>
 
-        <p className="lp-con-split" aria-hidden="true">gom về Decisions · chấm một lần</p>
+          <p className="lp-con-split" aria-hidden="true">gom về Decisions · chấm một lần</p>
 
-        <div className={`lp-con-box is-decide lp-con-decide${live === 'decide' ? ' is-live' : ''}`}>
-          <p className="lp-con-box-head"><strong>Decisions · chấm theo rubric</strong><span>[ {doneIn('decide') ? 'xong' : live === 'decide' ? 'đang chấm' : 'chờ'} ]</span></p>
-          <p className="lp-con-kv"><span>câu hỏi</span><b>36</b><span>mức</span><b>5</b><span>lần gọi</span><b>1</b></p>
-          <p className="lp-con-bar"><i style={{ '--p': doneIn('decide') ? 1 : 0 }} /><em>{doneIn('decide') ? '36/36' : '0/36'}</em></p>
-        </div>
-
-        <div className={`lp-con-box is-out lp-con-result${finished ? ' is-live' : ''}`}>
-          <p className="lp-con-box-head"><strong>Kết quả</strong><span>[ {finished ? 'sẵn sàng' : '…'} ]</span></p>
-          <p className="lp-con-kv"><span>điểm</span><b>{finished ? 55 : '—'}</b><span>mốc</span><b>{finished ? 11 : '—'}</b><span>việc cần sửa</span><b>{finished ? 5 : '—'}</b></p>
-        </div>
+          <div className={`lp-con-box is-decide lp-con-decide${live === 'decide' ? ' is-live' : ''}`}>
+            <p className="lp-con-box-head"><strong>Decisions · chấm theo rubric</strong><span>[ {doneIn('decide') ? 'xong' : live === 'decide' ? 'đang chấm' : 'chờ'} ]</span></p>
+            <p className="lp-con-kv"><span>câu hỏi</span><b>36</b><span>mức</span><b>5</b><span>lần gọi</span><b>1</b></p>
+            <p className="lp-con-bar"><i style={{ '--p': doneIn('decide') ? 1 : 0 }} /><em>{doneIn('decide') ? '36/36' : '0/36'}</em></p>
+          </div>
         </div>
       </div>
 
