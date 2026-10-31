@@ -36,10 +36,11 @@ const DEMO = {
   ],
 }
 
+// each step shows the real screen it happens on (captures of the demo shop)
 const STEPS = [
-  { title: 'Chọn video và SKU', text: 'Video gắn với sản phẩm sẽ bán.' },
-  { title: 'Agent xem và đối chiếu', text: 'Lời nói, khung hình, listing, thị trường, policy.' },
-  { title: 'Sửa theo từng giây', text: 'Mỗi việc cần sửa có mốc thời gian.' },
+  { title: 'Chọn shop, SKU, video', text: 'Video gắn với sản phẩm sẽ bán.', shot: '/landing/step-shop.webp', ratio: '4 / 3' },
+  { title: 'Agent xem và đối chiếu', text: 'Lời nói, khung hình, listing, thị trường, policy.', shot: '/landing/step-agents.webp', ratio: '4 / 3' },
+  { title: 'Điểm và việc cần sửa', text: 'Radar từng câu hỏi, mỗi việc có mốc thời gian.', shot: '/landing/step-score.webp', ratio: '4 / 3' },
 ]
 
 const PROVENANCE = [
@@ -63,6 +64,7 @@ const activeAt = (t) => DEMO.notes.reduce((on, n, i) => (t >= n.t ? i : on), 0)
 function EditBay() {
   const videoRef = useRef(null)
   const trackRef = useRef(null)
+  const glowRef = useRef(null)
   const [active, setActive] = useState(0)
 
   useEffect(() => {
@@ -70,8 +72,15 @@ function EditBay() {
     if (!video) return undefined
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (!reduced) video.play().catch(() => {})
-    let frame = requestAnimationFrame(function tick() {
+    // ambient light: the current frame, drawn tiny and blurred behind the bay, a few times a second
+    const glow = glowRef.current?.getContext('2d')
+    let lastGlow = 0
+    let frame = requestAnimationFrame(function tick(now) {
       const t = video.currentTime || 0
+      if (glow && video.readyState >= 2 && now - lastGlow > 250) {
+        glow.drawImage(video, 0, 0, glow.canvas.width, glow.canvas.height)
+        lastGlow = now
+      }
       trackRef.current?.style.setProperty('--at', String(Math.min(1, t / DEMO.duration)))
       setActive((prev) => {
         const next = activeAt(t)
@@ -91,77 +100,82 @@ function EditBay() {
 
   const note = DEMO.notes[active]
   return (
-    <div className="lp-bay">
-      <div className="lp-bay-video">
-        <video
-          ref={videoRef}
-          src="/landing/demo.mp4"
-          poster="/landing/demo-poster.jpg"
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          aria-label="Video mẫu TeaShell soap của shop demo"
-        />
-      </div>
+    <div className="lp-bay-stage">
+      {/* ambient light sits behind the panel, outside it: the video's colours spill onto the page */}
+      <canvas ref={glowRef} className="lp-bay-glow" width="16" height="9" aria-hidden="true" />
+      <div className="lp-bay">
+        <div className="lp-bay-video">
+          <video
+            ref={videoRef}
+            src="/landing/demo.mp4"
+            poster="/landing/demo-poster.jpg"
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label="Video mẫu TeaShell soap của shop demo"
+          />
+        </div>
 
-      <div className="lp-bay-side">
-        <div className="lp-bay-score">
-          <span className={`lp-bay-num is-${band(DEMO.score, DEMO.ready)}`}>{DEMO.score}</span>
-          <span className="lp-bay-verdict">
-            <strong>{DEMO.verdict}</strong>
-            <small>ngưỡng đăng {DEMO.ready}</small>
-          </span>
-          <ul className="lp-bay-groups" aria-label="Điểm theo nhóm">
-            {DEMO.groups.map((g) => (
-              <li key={g.label} className={`is-${band(g.value, DEMO.ready)}`}>
-                <span>{g.label}</span>
-                <i style={{ '--v': g.value }} />
-                <b>{g.value}</b>
+        <div className="lp-bay-side">
+          <div className="lp-bay-score">
+            <span className={`lp-bay-num is-${band(DEMO.score, DEMO.ready)}`}>{DEMO.score}</span>
+            <span className="lp-bay-verdict">
+              <strong>{DEMO.verdict}</strong>
+              <small>ngưỡng đăng {DEMO.ready}</small>
+            </span>
+            <ul className="lp-bay-groups" aria-label="Điểm theo nhóm">
+              {DEMO.groups.map((g) => (
+                <li key={g.label} className={`is-${band(g.value, DEMO.ready)}`}>
+                  <span>{g.label}</span>
+                  <i style={{ '--v': g.value }} />
+                  <b>{g.value}</b>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* key on the note so each change replays the entrance */}
+          <div key={active} className={`lp-bay-now is-${note.tone}`} aria-live="polite">
+            <span className="lp-tc">{timecode(note.t)}</span>
+            <strong>{note.title}</strong>
+            {note.quote && <q>{note.quote}</q>}
+            <small>{note.meta}</small>
+          </div>
+
+          <ol className="lp-bay-list">
+            {DEMO.notes.map((n, i) => (
+              <li key={n.t}>
+                <button type="button" className={`is-${n.tone}`} aria-current={i === active ? 'true' : undefined} onClick={() => seek(n.t)}>
+                  <span className="lp-tc">{timecode(n.t)}</span>
+                  {n.title}
+                </button>
               </li>
             ))}
-          </ul>
+          </ol>
         </div>
 
-        {/* key on the note so each change replays the entrance */}
-        <div key={active} className={`lp-bay-now is-${note.tone}`} aria-live="polite">
-          <span className="lp-tc">{timecode(note.t)}</span>
-          <strong>{note.title}</strong>
-          {note.quote && <q>{note.quote}</q>}
-          <small>{note.meta}</small>
-        </div>
-
-        <ol className="lp-bay-list">
+        <div className="lp-bay-track" ref={trackRef} style={{ '--at': 0 }}>
+          <span className="lp-bay-film" aria-hidden="true" />
+          <span className="lp-bay-rail" aria-hidden="true" />
           {DEMO.notes.map((n, i) => (
-            <li key={n.t}>
-              <button type="button" className={`is-${n.tone}`} aria-current={i === active ? 'true' : undefined} onClick={() => seek(n.t)}>
-                <span className="lp-tc">{timecode(n.t)}</span>
-                {n.title}
-              </button>
-            </li>
+            <button
+              key={n.t}
+              type="button"
+              className={`lp-bay-mark is-${n.tone}`}
+              style={{ '--x': n.t / DEMO.duration }}
+              aria-current={i === active ? 'true' : undefined}
+              aria-label={`${timecode(n.t)} ${n.title}`}
+              title={`${timecode(n.t)} · ${n.title}`}
+              onClick={() => seek(n.t)}
+            />
           ))}
-        </ol>
-      </div>
-
-      <div className="lp-bay-track" ref={trackRef} style={{ '--at': 0 }}>
-        <span className="lp-bay-rail" aria-hidden="true" />
-        {DEMO.notes.map((n, i) => (
-          <button
-            key={n.t}
-            type="button"
-            className={`lp-bay-mark is-${n.tone}`}
-            style={{ '--x': n.t / DEMO.duration }}
-            aria-current={i === active ? 'true' : undefined}
-            aria-label={`${timecode(n.t)} ${n.title}`}
-            title={`${timecode(n.t)} · ${n.title}`}
-            onClick={() => seek(n.t)}
-          />
-        ))}
-        <span className="lp-bay-head" aria-hidden="true" />
-        <span className="lp-bay-ends" aria-hidden="true">
-          <span>00:00</span>
-          <span>{timecode(DEMO.duration)}</span>
-        </span>
+          <span className="lp-bay-head" aria-hidden="true" />
+          <span className="lp-bay-ends" aria-hidden="true">
+            <span>00:00</span>
+            <span>{timecode(DEMO.duration)}</span>
+          </span>
+        </div>
       </div>
     </div>
   )
@@ -201,6 +215,9 @@ export default function LandingPage() {
           <ol>
             {STEPS.map((s, i) => (
               <li key={s.title}>
+                <figure className="lp-shot" style={{ aspectRatio: s.ratio }}>
+                  <img src={s.shot} alt="" loading="lazy" />
+                </figure>
                 <span className="lp-tc">0{i + 1}</span>
                 <strong>{s.title}</strong>
                 <span>{s.text}</span>
@@ -223,8 +240,10 @@ export default function LandingPage() {
         </section>
 
         <section className="lp-final" aria-labelledby="final-title">
+          {/* frames of the demo shops' own videos: what the next check will be run on */}
+          <div className="lp-final-film" aria-hidden="true" />
           <h2 id="final-title">Kiểm video trước lần đăng tiếp theo.</h2>
-          <a href={LOGIN_HREF} className="lp-btn">Đăng nhập bằng Shopee</a>
+          <a href={LOGIN_HREF} className="lp-btn lp-btn--light">Đăng nhập bằng Shopee</a>
         </section>
       </main>
 
