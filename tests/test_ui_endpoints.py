@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest tests.test_ui_endpoints (from video_understanding/demo).
+"""Run: uv run python -m unittest tests.test_ui_endpoints (from the repo root).
 
 Post copy (caption + hashtags) through features, Decisions, policy and fixes; the UI endpoints (PATCH post,
 question bank, AI quick-fill, Shopee link resolve) and the SSE payload the UI reads. json-server is the

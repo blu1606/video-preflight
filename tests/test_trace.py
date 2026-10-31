@@ -1,13 +1,13 @@
-"""Run: uv run python -m unittest discover tests (from video_understanding/demo)."""
+"""Run: uv run python -m unittest discover tests (from the repo root)."""
 
 import unittest
-from pathlib import Path
 
 from core.schema import Mode
 from core.trace import Trace, short
 from main import build_report
+from tests.fixture_cache import cached_features
 
-FEATURES = Path(__file__).resolve().parents[1] / "output" / "features" / "vn-beauty-467796.json"
+FEATURES = cached_features("vn-beauty-467796.features.json")
 
 
 class TraceTest(unittest.TestCase):
@@ -35,7 +35,6 @@ class TraceTest(unittest.TestCase):
         self.assertEqual(short([1, 2]), [1, 2])
         self.assertTrue(short("x" * 500).endswith("..."))
 
-    @unittest.skipUnless(FEATURES.exists(), "needs cached TeaShell features")
     def test_build_report_traces_each_stage_without_changing_scores(self):
         t = Trace()
         traced = build_report(FEATURES, Mode.EVIDENCE, rubric="v2", trace=t)

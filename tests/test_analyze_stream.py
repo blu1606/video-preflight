@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest tests.test_analyze_stream (from video_understanding/demo).
+"""Run: uv run python -m unittest tests.test_analyze_stream (from the repo root).
 
 json-server is replaced by an in-memory copy of db/db.json, so no server and no paid call is needed
 (extract=never, cached Decisions answers, localize off).

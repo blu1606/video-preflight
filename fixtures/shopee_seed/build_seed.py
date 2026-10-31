@@ -1,6 +1,7 @@
 """Synthetic Shopee shop-intelligence seed, v2 (deterministic, random seed 20261027).
 
 Run from this folder:  python build_seed.py
+Refresh video durations from the local files in data/ first:  python build_seed.py --measure
 
 Everything here is fabricated test data for the scoring/diagnosis pipeline: no real
 seller, no real Shopee API payload shape (fields follow an application-normalized
@@ -19,14 +20,16 @@ Definitions
 import csv
 import json
 import random
+import sys
 from datetime import date, timedelta
 from pathlib import Path
-
-import cv2
 
 OUT = Path(__file__).resolve().parent
 BENCHMARK_CSV = OUT.parent / "clipcat_benchmark" / "clipcat_video_benchmark_24.csv"
 VIDEO_DIR = OUT.parent.parent / "data"  # the benchmark's downloaded videos (vn-<category>-<id>.mp4)
+# Whole seconds of each slot video, measured once with --measure: video files are not committed, so the seed
+# must not depend on them being present.
+DURATIONS_PATH = OUT / "video_durations.json"
 
 
 def load_slot_products() -> dict[str, list[tuple[str, int, str]]]:
@@ -123,6 +126,8 @@ SLOT_PRODUCTS = load_slot_products()
 
 def video_duration_sec(path: Path) -> int:
     """Whole seconds of a local video, from frame count / fps as the app's frame extractor computes it."""
+    import cv2  # only needed by --measure
+
     cap = cv2.VideoCapture(str(path))
     if not cap.isOpened():
         raise ValueError(f"Cannot open video: {path}")
@@ -132,6 +137,19 @@ def video_duration_sec(path: Path) -> int:
     return int(frames / fps + 0.5)
 
 
+def load_durations() -> dict[str, int]:
+    return json.loads(DURATIONS_PATH.read_text(encoding="utf-8")) if DURATIONS_PATH.exists() else {}
+
+
+def measure_durations() -> None:
+    files = sorted({f for slots in SLOT_PRODUCTS.values() for _, _, f in slots})
+    missing = [f for f in files if not (VIDEO_DIR / f).exists()]
+    if missing:
+        raise SystemExit(f"missing in {VIDEO_DIR}: {', '.join(missing)}")
+    durations = {f: video_duration_sec(VIDEO_DIR / f) for f in files}
+    DURATIONS_PATH.write_text(json.dumps(durations, indent=1) + "\n", encoding="utf-8")
+
+
 def draw(x: float) -> int:
     """Integer with expectation x (stochastic rounding keeps small counts unbiased)."""
     return int(x) + (random.random() < x - int(x))
@@ -139,6 +157,7 @@ def draw(x: float) -> int:
 
 def build():
     random.seed(RANDOM_SEED)
+    durations = load_durations()
     shops, skus, reviews, shop_days, sku_days, videos, links = [], [], [], [], [], [], []
     truth = {"shops": [], "videos": []}
 
@@ -223,8 +242,8 @@ def build():
             ov = p["video_overrides"].get(j, {})
             days_live = DAYS - post_day
             duration = random.choice([19, 27, 38, 44])  # always drawn, so the random stream is unchanged
-            if j < len(slot) and (VIDEO_DIR / slot[j][2]).exists():
-                duration = video_duration_sec(VIDEO_DIR / slot[j][2])
+            if j < len(slot) and slot[j][2] in durations:
+                duration = durations[slot[j][2]]
             completion = ov.get("completion", random.uniform(*p["video_completion"]))
             ctr = ov.get("ctr", random.uniform(*p["video_ctr"]))
             views = int(p["video_reach"] * ov.get("reach_factor", 1.0) * days_live ** 0.8 * random.uniform(0.75, 1.25))
@@ -301,4 +320,6 @@ def main():
 
 
 if __name__ == "__main__":
+    if "--measure" in sys.argv:
+        measure_durations()
     main()

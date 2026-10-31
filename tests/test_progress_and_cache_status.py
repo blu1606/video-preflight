@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest tests.test_progress_and_cache_status (from video_understanding/demo).
+"""Run: uv run python -m unittest tests.test_progress_and_cache_status (from the repo root).
 
 Streamed step progress, per-step token accounting, the keyframes recorded for Decisions, the cache-status
 endpoint and the scoring block of /py/questions. No paid call: fake clients and cached answers only.
