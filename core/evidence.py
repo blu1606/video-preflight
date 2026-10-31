@@ -44,8 +44,9 @@ REQUIRED_INPUTS = {
     "sku.listing": ("Thông tin SKU", "Chọn SKU trong shop hoặc nhập listing và nguồn."),
     "market.snapshot": ("Thị trường cùng ngành", "Bổ sung snapshot có query, ngày lấy và file raw."),
     "shop.profile": ("Hồ sơ shop", "Tạo shop trong Kho dữ liệu rồi gắn video."),
-    "policy.baseline": ("Baseline Policy", "Bổ sung bộ rule chính thức theo nền tảng và ngày xác minh."),
+    "policy.current_sources": ("Nguồn Policy hiện hành", "Xác minh lại link chính thức theo nền tảng và ngày kiểm tra."),
     "decisions.question_bank": ("Bộ câu hỏi Decisions", "Bổ sung đúng bộ 39 câu, 5 mức và điều kiện đủ dữ liệu."),
+    "decisions.provider": ("Provider chấm nội dung", "Tích hợp provider, lập kế hoạch chi phí và chỉ gửi khi được cho phép."),
 }
 
 
