@@ -104,19 +104,23 @@ export function Radar({ questions, revealed, selectedId, onSelect, threshold, on
           {RINGS.map((r) => <polygon key={r} className="rd-ring" points={pointsOf(n, Array(n).fill(r))} />)}
           {threshold != null && <polygon className="rd-threshold" points={pointsOf(n, Array(n).fill(threshold / 100))} />}
           {/* while a run streams: a sweep turns around the centre, like a radar reading the axes it has not filled */}
+          {/* the sweep is clipped to the outer ring, so it never spills past the hexagon */}
+          <clipPath id="rdClip"><polygon points={pointsOf(n, Array(n).fill(1))} /></clipPath>
           {scanning && (
-            <g className="rd-sweep" style={{ transformOrigin: `${CENTER.cx}px ${CENTER.cy}px` }}>
-              <defs>
-                <linearGradient id="rdSweep" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0" stopColor="#ee4d2d" stopOpacity="0" />
-                  <stop offset="1" stopColor="#ee4d2d" stopOpacity=".28" />
-                </linearGradient>
-              </defs>
-              <path
-                d={`M${CENTER.cx},${CENTER.cy} L${CENTER.cx + CENTER.r * Math.cos(-Math.PI / 2 - 0.7)},${CENTER.cy + CENTER.r * Math.sin(-Math.PI / 2 - 0.7)} A${CENTER.r},${CENTER.r} 0 0 1 ${CENTER.cx},${CENTER.cy - CENTER.r} Z`}
-                fill="url(#rdSweep)"
-              />
-              <line x1={CENTER.cx} y1={CENTER.cy} x2={CENTER.cx} y2={CENTER.cy - CENTER.r} className="rd-sweep-edge" />
+            <g clipPath="url(#rdClip)">
+              <g className="rd-sweep" style={{ transformOrigin: `${CENTER.cx}px ${CENTER.cy}px` }}>
+                <defs>
+                  <linearGradient id="rdSweep" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stopColor="#ee4d2d" stopOpacity="0" />
+                    <stop offset="1" stopColor="#ee4d2d" stopOpacity=".28" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d={`M${CENTER.cx},${CENTER.cy} L${CENTER.cx + CENTER.r * 1.2 * Math.cos(-Math.PI / 2 - 0.7)},${CENTER.cy + CENTER.r * 1.2 * Math.sin(-Math.PI / 2 - 0.7)} A${CENTER.r * 1.2},${CENTER.r * 1.2} 0 0 1 ${CENTER.cx},${CENTER.cy - CENTER.r * 1.2} Z`}
+                  fill="url(#rdSweep)"
+                />
+                <line x1={CENTER.cx} y1={CENTER.cy} x2={CENTER.cx} y2={CENTER.cy - CENTER.r * 1.2} className="rd-sweep-edge" />
+              </g>
             </g>
           )}
           {axes.map((a, i) => {

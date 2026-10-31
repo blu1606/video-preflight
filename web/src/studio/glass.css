@@ -636,3 +636,25 @@
   .pf-root .studio-dots i,
   .pf-root .studio-rd-label.is-pending * { animation: none; }
 }
+
+/* the radar sits on the column's glass like every other band (it painted its own white box, so the glass below it
+   read as a leftover strip); while scoring it takes the column's free height instead of leaving it empty */
+.pf-root .studio-right .radar-wrap.studio-radar { background: transparent; }
+.pf-root .studio-right:has(> .studio-radar.is-scanning) { display: flex; flex-direction: column; }
+.pf-root .studio-right > .studio-radar.is-scanning { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.pf-root .studio-right > .studio-radar.is-scanning .studio-radar-head { margin-bottom: auto; }
+.pf-root .studio-right > .studio-radar.is-scanning .studio-radar-legend { margin-top: auto; padding-bottom: 8px; }
+
+/* ---------- full-bleed video: the frame runs from the top of the screen to the app's bottom bar ---------- */
+.pf-root .ip-video:not(:has(> .studio-novideo)) { position: absolute; inset: 0; container-type: size; }
+.pf-root .ip-content:has(.tt-nav, .sv-nav, .ig-nav) > .ip-video:not(:has(> .studio-novideo)) { bottom: 84px; }
+.pf-root .ip-video .studio-video { width: 100%; height: 100%; object-fit: cover; }
+/* the AI boxes are fractions of the whole frame: their layer is the frame as cover draws it, centred and cropped */
+.pf-root .ip-video .studio-regions {
+  inset: auto;
+  left: 50%;
+  top: 50%;
+  width: max(100cqw, calc(100cqh * var(--ar, .5625)));
+  height: max(100cqh, calc(100cqw / var(--ar, .5625)));
+  transform: translate(-50%, -50%);
+}

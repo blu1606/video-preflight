@@ -113,6 +113,7 @@ export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoR
   const [zoom, setZoom] = useState(0.7)
   const [time, setTime] = useState({ current: 0, duration: 0, playing: false })
   const [fileMissing, setFileMissing] = useState(false) // the record names a file this machine does not have
+  const [frameRatio, setFrameRatio] = useState(9 / 16) // width / height of the video file, read from its metadata
   const duration = time.duration || fallbackDuration || 0
   const boxed = issues.filter((m) => m.region?.box)
   const regions = showRegions ? activeRegions(boxed, time.current) : []
@@ -150,7 +151,9 @@ export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoR
             <div className={`iphone${video?.local_file ? '' : ' is-empty'}`}>
               <section className="ip-screen is-dark">
                 <div className="ip-content">
-                  <div className="ip-video">
+                  {/* the frame fills the screen down to the app's bottom bar (cover); --ar lets the AI boxes follow
+                      the part of the frame that stays visible */}
+                  <div className="ip-video" style={{ '--ar': frameRatio }}>
                     {video?.local_file && !fileMissing ? (
                       <video
                         ref={videoRef}
@@ -159,8 +162,9 @@ export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoR
                         playsInline
                         preload="metadata"
                         onLoadedMetadata={(e) => {
-                          const d = e.currentTarget.duration
+                          const { duration: d, videoWidth: vw, videoHeight: vh } = e.currentTarget
                           setTime((t) => ({ ...t, duration: d || t.duration }))
+                          if (vw && vh) setFrameRatio(vw / vh)
                         }}
                         onTimeUpdate={(e) => {
                           const c = e.currentTarget.currentTime
