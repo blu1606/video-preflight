@@ -102,6 +102,7 @@ export function ShopPanel({
               />
               <Tooltip formatter={(value) => money(Number(value))} />
               <Area
+                isAnimationActive={false}
                 type="monotone"
                 dataKey="gmv_vnd"
                 name="GMV giả lập"
@@ -123,18 +124,21 @@ export function ShopPanel({
                 <YAxis />
                 <Tooltip />
                 <Bar
+                  isAnimationActive={false}
                   dataKey="visits_organic"
                   name="Organic"
                   stackId="traffic"
                   fill="var(--brand)"
                 />
                 <Bar
+                  isAnimationActive={false}
                   dataKey="visits_video"
                   name="Video"
                   stackId="traffic"
                   fill="var(--chart-2)"
                 />
                 <Bar
+                  isAnimationActive={false}
                   dataKey="visits_ads"
                   name="Ads"
                   stackId="traffic"
@@ -220,6 +224,7 @@ export function ShopPanel({
                             formatter={(value) => number(Number(value))}
                           />
                           <Bar
+                  isAnimationActive={false}
                             dataKey="sold_count"
                             name="Số bán 28 ngày (crawled)"
                             fill="var(--brand)"
