@@ -2,7 +2,7 @@
 set -Eeuo pipefail
 export DEBIAN_FRONTEND=noninteractive
 apt-get -o Acquire::Retries=5 update
-apt-get -o Acquire::Retries=5 install -y docker.io docker-compose-v2 git curl ca-certificates
+apt-get -o Acquire::Retries=5 install -y docker.io docker-compose-v2 docker-buildx git curl ca-certificates
 systemctl enable --now docker
 usermod -aG docker ubuntu
 install -d -o ubuntu -g ubuntu -m 750 \
