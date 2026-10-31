@@ -1,0 +1,445 @@
+{
+  "version": "v1",
+  "language": "vi",
+  "notes": "Mẫu hành động cho core/fixes.py. Placeholder: {quote} trích dẫn thật, {at} mốc giờ thật, {target_desc} mô tả mức đích. anchor = chỗ trong video để chỉ vị trí (opening, product_first_seen, demo, offer, cta). variants chọn theo định dạng creative (câu Decisions M02). merge = các rule cùng một việc cần làm được gộp làm một. caption = tiêu đề và hành động thay thế khi trích dẫn nằm trong caption/hashtag của seller (không có mốc giờ); rule không có caption riêng dùng generic.policy_caption.",
+  "generic": {
+    "criterion": {
+      "title": "Cải thiện tiêu chí «{name}»",
+      "action": "Xem lại phần video liên quan tới «{name}» và làm rõ hơn để đạt mức: {target_desc}",
+      "why": "Tiêu chí này đang thấp và kéo điểm nhóm xuống.",
+      "target_desc": "đạt mức khá (khoảng 75/100)"
+    },
+    "policy": {
+      "title": "Xem lại nội dung có rủi ro chính sách ({rule_id})",
+      "action": "Kiểm tra lại đoạn «{quote}» ở {at} và chỉnh cho đúng chính sách nền tảng.",
+      "action_no_quote": "Kiểm tra lại video và thông tin đăng theo rule {rule_id}, chỉnh trước khi đăng.",
+      "why": "Luật kiểm tra chính sách báo cần xem lại; nền tảng có thể từ chối hoặc hạn chế video."
+    },
+    "policy_caption": {
+      "title": "Sửa caption có rủi ro chính sách ({rule_id})",
+      "action": "Sửa cụm «{quote}» trong caption hoặc hashtag cho đúng chính sách nền tảng trước khi đăng.",
+      "action_no_quote": "Rà lại caption và hashtag theo rule {rule_id}, chỉnh trước khi đăng."
+    }
+  },
+  "criteria": {
+    "V01": {
+      "title": "Làm 3 giây đầu cuốn hơn",
+      "action": "Mở đầu bằng kết quả hoặc vấn đề của người xem ngay giây đầu tiên, bỏ phần chào hỏi hay cảnh chờ.",
+      "variants": {
+        "demonstration": "Mở đầu bằng cảnh sản phẩm đang dùng và kết quả nhìn thấy được, rồi mới giải thích.",
+        "deal": "Nói ưu đãi hoặc giá hời ngay câu đầu tiên, kèm hình sản phẩm."
+      },
+      "why": "Người xem quyết định lướt qua hay xem tiếp trong vài giây đầu.",
+      "target_desc": "Vấn đề, kết quả hoặc điều tò mò về sản phẩm rõ ngay từ đầu.",
+      "anchor": "opening"
+    },
+    "V02": {
+      "title": "Làm lời hứa mở đầu cụ thể hơn",
+      "action": "Nói rõ sản phẩm giúp ai, giải quyết chuyện gì, thay vì câu chung chung; chỉ hứa điều video có chứng minh.",
+      "why": "Lời hứa cụ thể giữ đúng người mua tiềm năng ở lại xem.",
+      "target_desc": "Vấn đề hoặc lợi ích cụ thể của đúng nhóm khách, có nội dung video chứng minh.",
+      "anchor": "opening"
+    },
+    "V03": {
+      "title": "Sắp lại mạch video: vấn đề → dùng thử → kết quả",
+      "action": "Sắp xếp các cảnh theo thứ tự nêu vấn đề, cho thấy cách dùng, rồi chốt bằng kết quả.",
+      "variants": {
+        "story": "Giữ câu chuyện nhưng đưa sản phẩm vào sớm hơn và để nó là lý do câu chuyện có kết thúc đẹp."
+      },
+      "why": "Mạch rõ giúp người xem hiểu và nhớ sản phẩm.",
+      "target_desc": "Mạch mở bài, dùng thử, kết quả liền lạc."
+    },
+    "V04": {
+      "title": "Chỉnh nhịp cắt cảnh",
+      "action": "Cắt bớt cảnh dài lê thê, đổi cảnh khi chuyển ý; tránh cắt quá dồn dập làm người xem không kịp hiểu.",
+      "why": "Nhịp hợp lý giữ sự chú ý mà vẫn dễ theo dõi.",
+      "target_desc": "Mỗi lần đổi cảnh đều phục vụ thông điệp chính."
+    },
+    "V05": {
+      "title": "Tạo câu hỏi rồi trả lời trong video",
+      "action": "Đặt một câu hỏi hoặc điều bất ngờ ở đầu (ví dụ «dùng 1 tuần thì sao?») và trả lời rõ ở cuối.",
+      "why": "Người xem ở lại để biết câu trả lời.",
+      "target_desc": "Có câu hỏi rõ và lời giải đáp liên quan tới sản phẩm."
+    },
+    "V06": {
+      "title": "Đưa cảm xúc gần với người mua",
+      "action": "Dùng tình huống đời thường của khách mục tiêu (lo lắng, ngại ngùng, vui khi có kết quả) thay vì cảm xúc chung chung.",
+      "why": "Cảm xúc đúng chỗ làm người xem thấy mình trong video.",
+      "target_desc": "Cảm xúc gần gũi, làm rõ lúc nào cần dùng sản phẩm."
+    },
+    "V07": {
+      "title": "Thêm lý do để lưu hoặc chia sẻ",
+      "action": "Thêm một mẹo dùng, so sánh nhanh hay chi tiết hữu ích mà người xem muốn lưu lại hoặc gửi bạn bè.",
+      "why": "Video được lưu và chia sẻ thì tiếp cận thêm người xem mới.",
+      "target_desc": "Có mẹo, cách dùng, so sánh hoặc chi tiết vui đáng chia sẻ."
+    },
+    "V08": {
+      "title": "Làm khung hình đầu dễ hiểu",
+      "action": "Khung hình đầu cần thấy rõ sản phẩm hoặc chủ đề, thêm 1 dòng chữ ngắn nói video về gì.",
+      "why": "Người xem lướt nhanh cần hiểu ngay video nói về gì.",
+      "target_desc": "Khung hình và chữ mở đầu rõ ràng, nhận ra bối cảnh.",
+      "anchor": "opening"
+    },
+    "V7": {
+      "title": "Giữ người xem tới cuối",
+      "action": "Rút gọn đoạn giữa, để phần kết quả hoặc ưu đãi ở cuối để người xem có lý do xem hết.",
+      "why": "Tỉ lệ xem hết của video đang thấp so với mốc.",
+      "target_desc": "Tỉ lệ xem hết đạt gần mốc tham chiếu."
+    },
+    "V9": {
+      "title": "Cho thấy sản phẩm sớm hơn",
+      "action": "Đưa cảnh thấy rõ sản phẩm lên trong 1–2 giây đầu (đang thấy rõ lần đầu ở {at}).",
+      "action_no_quote": "Đưa cảnh thấy rõ sản phẩm lên trong 1–2 giây đầu.",
+      "why": "Người xem cần biết ngay video bán gì.",
+      "target_desc": "Sản phẩm xuất hiện rõ trong vài giây đầu.",
+      "anchor": "product_first_seen"
+    },
+    "V10": {
+      "title": "Thêm tín hiệu mở đầu",
+      "action": "Trong 2 giây đầu nên có lời nói, chữ trên màn hình hoặc một lần đổi cảnh để kéo sự chú ý.",
+      "why": "Mở đầu im lặng, tĩnh dễ bị lướt qua.",
+      "target_desc": "Có lời nói, chữ hoặc chuyển cảnh ngay đầu video.",
+      "anchor": "opening"
+    },
+    "C01": {
+      "title": "Cho người xem nhận ra đúng sản phẩm",
+      "action": "Quay cận bao bì và tên sản phẩm, nói rõ tên, loại và công dụng chính ít nhất một lần.",
+      "why": "Người mua phải biết chính xác sản phẩm nào mới đặt được hàng.",
+      "target_desc": "Rõ sản phẩm cụ thể và dùng để làm gì.",
+      "anchor": "product_first_seen"
+    },
+    "C02": {
+      "title": "Gắn sản phẩm với vấn đề của khách",
+      "action": "Nêu một vấn đề cụ thể khách đang gặp và cho thấy sản phẩm giúp được ở điểm nào.",
+      "why": "Khách mua khi thấy sản phẩm giải quyết đúng chuyện của mình.",
+      "target_desc": "Vấn đề cụ thể và lợi ích khi dùng được thể hiện rõ."
+    },
+    "C03": {
+      "title": "Quay rõ cách dùng và kết quả",
+      "action": "Quay từng bước dùng sản phẩm thật và kết quả thấy được ngay sau đó, góc quay gần, đủ sáng.",
+      "variants": {
+        "ugc_review": "Tự tay dùng sản phẩm trước camera, nói cảm nhận thật ở từng bước.",
+        "deal": "Chèn ít nhất một cảnh dùng sản phẩm thật trước khi nói giá và ưu đãi."
+      },
+      "why": "Thấy tận mắt cách dùng giúp khách tin và dễ quyết định.",
+      "target_desc": "Các bước dùng và kết quả quan sát được dễ hiểu.",
+      "anchor": "demo"
+    },
+    "C04": {
+      "title": "Nói lợi ích cụ thể, có hình chứng minh",
+      "action": "Thay câu khen chung chung bằng lợi ích cụ thể (mùi, độ bọt, cảm giác sau khi dùng) và cho thấy trên hình.",
+      "why": "Lợi ích cụ thể, nhìn thấy được thuyết phục hơn lời khen.",
+      "target_desc": "Lợi ích cụ thể gắn với cảnh dùng hoặc đặc điểm thấy được."
+    },
+    "C05": {
+      "title": "Nói rõ điểm khác biệt",
+      "action": "Chỉ ra 1 điểm khác so với sản phẩm cùng loại (thành phần, dung tích, cách dùng) và cho thấy điểm đó trong video.",
+      "why": "Khách cần lý do chọn sản phẩm này thay vì sản phẩm khác.",
+      "target_desc": "Có điểm khác biệt liên quan và được chứng minh bằng hình."
+    },
+    "C06": {
+      "title": "Tăng bằng chứng đáng tin",
+      "action": "Dùng cảnh dùng thật, đánh giá thật, giấy tờ của sản phẩm; nói kèm «tuỳ cơ địa» với các câu về hiệu quả.",
+      "variants": {
+        "comparison": "So sánh trước/sau trong cùng ánh sáng, cùng góc quay và ghi rõ thời gian dùng."
+      },
+      "why": "Khách và nền tảng đều không tin lời hứa không có chứng minh.",
+      "target_desc": "Phần lớn là cảnh dùng kiểm chứng được và câu nói có giới hạn hợp lý."
+    },
+    "C07": {
+      "title": "Nói rõ giá và ưu đãi",
+      "action": "Thêm một câu hoặc dòng chữ nêu giá, khuyến mãi và điều kiện (hạn dùng mã, số lượng) ngay trước lời kêu gọi mua.",
+      "variants": {
+        "deal": "Đưa giá cũ, giá mới và hạn ưu đãi lên màn hình to, rõ."
+      },
+      "why": "Khách chần chừ khi không biết giá hay ưu đãi.",
+      "target_desc": "Giá, khuyến mãi và điều kiện cơ bản dễ hiểu.",
+      "anchor": "offer"
+    },
+    "C08": {
+      "title": "Thêm lời kêu gọi mua rõ ràng",
+      "action": "Ở cuối video, nói và hiện chữ hướng dẫn bước mua cụ thể, ví dụ «Bấm giỏ hàng góc trái để đặt ngay».",
+      "variants": {
+        "deal": "Kêu gọi mua kèm hạn ưu đãi, ví dụ «Bấm giỏ hàng, mã giảm chỉ còn hôm nay»."
+      },
+      "why": "Không có lời kêu gọi rõ, người xem thích sản phẩm nhưng không biết bấm vào đâu.",
+      "target_desc": "Hành động mua cụ thể, gắn với giỏ hàng hiện trên video.",
+      "anchor": "cta"
+    },
+    "C09": {
+      "title": "Cho video khớp với listing",
+      "action": "Kiểm tra tên, phân loại, dung tích và công dụng nói trong video có đúng như listing; sửa video hoặc listing cho khớp.",
+      "why": "Video nói khác listing dễ bị khiếu nại và hoàn hàng.",
+      "target_desc": "Video và listing khớp nhau, chỉ lệch chi tiết nhỏ."
+    },
+    "C10": {
+      "title": "Làm việc mua hàng dễ hơn",
+      "action": "Gắn link sản phẩm, đảm bảo còn hàng, ghi rõ giá và thời gian giao.",
+      "why": "Mỗi trở ngại khi mua làm mất đơn.",
+      "target_desc": "Đường mua hoạt động, còn hàng, giá và giao hàng dễ hiểu."
+    },
+    "C8": {
+      "title": "Cải thiện tỉ lệ bấm và đặt hàng",
+      "action": "Xem lại lời kêu gọi mua, giá hiển thị và ảnh bìa sản phẩm trong giỏ để nhiều người bấm và đặt hơn.",
+      "why": "Tỉ lệ bấm vào sản phẩm và đặt hàng của video đang thấp so với mốc.",
+      "target_desc": "Tỉ lệ bấm và đặt hàng gần mốc tham chiếu."
+    },
+    "S01": {
+      "title": "Hoàn thiện listing",
+      "action": "Bổ sung thuộc tính, ảnh rõ cho từng phân loại và mô tả nhất quán với tiêu đề.",
+      "why": "Listing thiếu thông tin làm khách không yên tâm đặt hàng.",
+      "target_desc": "Thuộc tính chính, ảnh và phân loại đầy đủ, khớp nhau."
+    },
+    "S02": {
+      "title": "Cải thiện đánh giá sản phẩm",
+      "action": "Xử lý các phàn nàn lặp lại, nhắc khách đã mua để lại đánh giá có ảnh.",
+      "why": "Khách đọc đánh giá trước khi mua.",
+      "target_desc": "Đánh giá chủ yếu tích cực, đủ nhiều và liên quan."
+    },
+    "S03": {
+      "title": "Xem lại giá so với đối thủ",
+      "action": "So giá với sản phẩm cùng loại, cùng dung tích; cân nhắc combo hoặc mã giảm nếu đang đắt hơn.",
+      "why": "Giá cao hơn sản phẩm tương đương làm khách chuyển sang shop khác.",
+      "target_desc": "Giá cạnh tranh với sản phẩm tương đương."
+    },
+    "S04": {
+      "title": "Đảm bảo đủ hàng",
+      "action": "Nhập thêm các phân loại bán chạy trước khi đẩy video.",
+      "why": "Video kéo đơn mà hết hàng thì mất đơn và bị đánh giá xấu.",
+      "target_desc": "Phân loại chính còn hàng, nhập hàng đều."
+    },
+    "S05": {
+      "title": "Kiểm tra nhu cầu thị trường",
+      "action": "Xem lại nhu cầu thật (lượng bán, tìm kiếm) của sản phẩm; nếu thấp, đổi góc tiếp cận hoặc chọn sản phẩm khác để đẩy.",
+      "why": "Video hay khó bán được sản phẩm ít người cần.",
+      "target_desc": "Nhu cầu đều và rõ trên nhiều nguồn đáng tin."
+    },
+    "S2": {
+      "title": "Xem lại giá so với đối thủ",
+      "action": "Giá đang cao hơn phần lớn sản phẩm cùng loại; cân nhắc giảm giá, combo hoặc mã giảm.",
+      "why": "Giá cao hơn đối thủ làm khách chuyển sang shop khác.",
+      "target_desc": "Giá ngang hoặc thấp hơn phần lớn đối thủ cùng loại."
+    },
+    "S8": {
+      "title": "Xem lại biên lợi nhuận",
+      "action": "Tính lại giá vốn, phí sàn và hoa hồng; cân nhắc tăng giá nhẹ hoặc bán combo để biên tốt hơn.",
+      "why": "Biên lợi nhuận thấp thì càng bán nhiều càng lỗ khi chạy quảng cáo.",
+      "target_desc": "Biên lợi nhuận gần mốc tham chiếu."
+    },
+    "H01": {
+      "title": "Dọn danh mục sản phẩm của shop",
+      "action": "Ẩn sản phẩm hết hàng lâu, bổ sung thông tin còn thiếu cho các sản phẩm đang bán.",
+      "why": "Danh mục lộn xộn làm khách mất tin tưởng vào shop.",
+      "target_desc": "Phần lớn sản phẩm đầy đủ thông tin và còn hàng."
+    },
+    "H02": {
+      "title": "Giảm huỷ đơn và giao trễ",
+      "action": "Kiểm tra tồn kho trước khi nhận đơn, đóng gói sớm và chọn đơn vị vận chuyển đúng hẹn.",
+      "why": "Huỷ đơn và giao trễ làm shop bị sàn hạn chế và khách đánh giá xấu.",
+      "target_desc": "Giao hàng ổn định, chỉ lỗi lẻ tẻ."
+    },
+    "H03": {
+      "title": "Tăng tỉ lệ khách xem mua hàng",
+      "action": "Tối ưu ảnh bìa, giá và đánh giá của các sản phẩm được xem nhiều nhất.",
+      "why": "Shop có lượt xem nhưng ít đơn so với shop tương tự.",
+      "target_desc": "Tỉ lệ mua trên lượt xem cao hơn shop tương tự."
+    },
+    "H04": {
+      "title": "Chạy quảng cáo hiệu quả hơn",
+      "action": "Tạm dừng nhóm quảng cáo lỗ, dồn ngân sách cho sản phẩm và video đang ra đơn có lãi.",
+      "why": "Quảng cáo đang tốn nhiều so với doanh thu và lợi nhuận mang lại.",
+      "target_desc": "Sau khi trừ chi phí quảng cáo vẫn còn lãi tốt."
+    },
+    "H05": {
+      "title": "Cải thiện uy tín và chăm sóc sau bán",
+      "action": "Trả lời đánh giá xấu, xử lý đổi trả nhanh và ghi nhận các lỗi lặp lại.",
+      "why": "Uy tín shop ảnh hưởng trực tiếp tới quyết định mua.",
+      "target_desc": "Phản hồi chủ yếu tích cực, vấn đề được giải quyết."
+    },
+    "V1": {
+      "title": "Làm 3 giây đầu cuốn hơn",
+      "action": "Mở đầu bằng kết quả hoặc vấn đề của người xem ngay giây đầu tiên, bỏ phần chào hỏi hay cảnh chờ.",
+      "why": "Người xem quyết định lướt qua hay xem tiếp trong vài giây đầu.",
+      "target_desc": "Mở đầu rõ lý do để xem tiếp.",
+      "anchor": "opening"
+    },
+    "C2": {
+      "title": "Quay rõ cách dùng và kết quả",
+      "action": "Quay từng bước dùng sản phẩm thật và kết quả thấy được ngay sau đó.",
+      "why": "Thấy tận mắt cách dùng giúp khách tin và dễ quyết định.",
+      "target_desc": "Có cảnh dùng thật và kết quả rõ.",
+      "anchor": "demo"
+    },
+    "C5": {
+      "title": "Nói rõ giá và ưu đãi",
+      "action": "Thêm giảm giá hoặc mã giảm, và nói rõ trong video ngay trước lời kêu gọi mua.",
+      "why": "Ưu đãi rõ giúp khách quyết định nhanh hơn.",
+      "target_desc": "Ưu đãi hấp dẫn và được nói rõ.",
+      "anchor": "offer"
+    },
+    "C6": {
+      "title": "Thêm lời kêu gọi mua rõ ràng",
+      "action": "Ở cuối video, nói và hiện chữ hướng dẫn bước mua cụ thể, kèm lý do mua ngay.",
+      "why": "Không có lời kêu gọi rõ, người xem không biết bấm vào đâu.",
+      "target_desc": "Có lời kêu gọi mua rõ và có tính khẩn trương.",
+      "anchor": "cta"
+    }
+  },
+  "rules": {
+    "TTS-001": {
+      "title": "Kiểm tra sản phẩm có được phép bán không",
+      "action": "Đối chiếu ngành hàng với danh sách hàng cấm/hạn chế của TikTok Shop; nếu bị hạn chế, xin duyệt trước hoặc không đăng video này.",
+      "why": "Sản phẩm cấm hoặc hạn chế có thể làm video bị gỡ và shop bị phạt."
+    },
+    "TTS-002": {
+      "title": "Chỉ nói công dụng có giấy tờ chứng minh",
+      "action": "Bỏ hoặc làm mềm câu «{quote}» ({at}); chỉ giữ công dụng có trong thông tin sản phẩm hoặc có giấy tờ, thêm «tuỳ cơ địa».",
+      "action_no_quote": "Rà lại các câu về công dụng; chỉ giữ điều có trong thông tin sản phẩm hoặc có giấy tờ chứng minh.",
+      "why": "TikTok Shop yêu cầu công dụng trong video phải khớp thông tin sản phẩm và có căn cứ.",
+      "merge": "unsupported_claims",
+      "caption": {
+        "title": "Chỉ ghi công dụng có giấy tờ trong caption",
+        "action": "Sửa caption: bỏ hoặc làm mềm cụm «{quote}»; chỉ giữ công dụng có trong thông tin sản phẩm.",
+        "action_no_quote": "Rà lại công dụng ghi trong caption; chỉ giữ điều có trong thông tin sản phẩm."
+      }
+    },
+    "TTS-003": {
+      "title": "Bổ sung giấy tờ mỹ phẩm",
+      "action": "Tải phiếu công bố mỹ phẩm và ảnh nhãn sản phẩm lên hồ sơ sản phẩm trước khi đăng.",
+      "why": "Mỹ phẩm thiếu giấy công bố hoặc nhãn có thể bị gỡ khỏi sàn.",
+      "merge": "cosmetic_documents"
+    },
+    "TTA-001": {
+      "title": "Bỏ lời hứa tuyệt đối, phóng đại",
+      "action": "Bỏ hoặc làm mềm câu «{quote}» ở {at}, ví dụ đổi thành cảm nhận cá nhân kèm «tuỳ cơ địa».",
+      "action_no_quote": "Bỏ các lời hứa tuyệt đối (100%, ngay lập tức, vĩnh viễn, trắng bật tông…), đổi thành cảm nhận cá nhân.",
+      "why": "Quảng cáo TikTok không cho phép hứa kết quả tuyệt đối hoặc phóng đại.",
+      "merge": "unsupported_claims",
+      "caption": {
+        "title": "Bỏ lời hứa tuyệt đối trong caption",
+        "action": "Sửa caption: bỏ hoặc làm mềm cụm «{quote}», đổi thành cảm nhận cá nhân kèm «tuỳ cơ địa».",
+        "action_no_quote": "Bỏ các lời hứa tuyệt đối (100%, ngay lập tức, vĩnh viễn…) khỏi caption và hashtag."
+      }
+    },
+    "TTA-002": {
+      "title": "Sửa cảnh so sánh trước/sau",
+      "action": "Cảnh trước/sau ở {at}: bỏ đi, hoặc quay cùng ánh sáng, cùng góc và ghi rõ thời gian dùng, kèm «kết quả tuỳ người».",
+      "action_no_quote": "Bỏ cảnh so sánh trước/sau, hoặc quay cùng điều kiện và ghi rõ thời gian dùng.",
+      "why": "Quảng cáo TikTok hạn chế so sánh trước/sau dễ gây hiểu lầm về hiệu quả."
+    },
+    "TTA-003": {
+      "title": "Bỏ nút bấm giả",
+      "action": "Gỡ hình nút bấm hoặc thông báo giả ở {at}; chỉ dùng nút thật của nền tảng.",
+      "action_no_quote": "Gỡ mọi hình nút bấm, thông báo giả trong video.",
+      "why": "Nút bấm giả bị coi là gây hiểu lầm và quảng cáo sẽ bị từ chối."
+    },
+    "TTC-001": {
+      "title": "Gắn nhãn nội dung AI",
+      "action": "Bật nhãn «nội dung do AI tạo» khi đăng, vì video có hình người hoặc cảnh trông như thật được tạo bằng AI.",
+      "why": "TikTok yêu cầu gắn nhãn nội dung AI trông như thật."
+    },
+    "TTC-002": {
+      "title": "Bật nhãn nội dung quảng cáo",
+      "action": "Khi đăng, bật cài đặt «nội dung thương mại / quảng cáo» của TikTok.",
+      "why": "Video bán hàng hoặc được tài trợ phải công khai là nội dung thương mại."
+    },
+    "SHP-001": {
+      "title": "Cho listing nhất quán",
+      "action": "Sửa tiêu đề, ảnh, giá và mô tả trên Shopee cho khớp nhau và khớp với sản phẩm trong video.",
+      "why": "Shopee phạt listing có thông tin mâu thuẫn."
+    },
+    "SHP-002": {
+      "title": "Thêm ảnh thật của sản phẩm",
+      "action": "Thêm ít nhất một ảnh chụp thật của sản phẩm, rõ nét, sản phẩm chiếm phần lớn khung hình.",
+      "why": "Shopee yêu cầu listing có ảnh thật của sản phẩm."
+    },
+    "SHP-003": {
+      "title": "Bỏ từ khoá quảng cáo khỏi tiêu đề",
+      "action": "Bỏ cụm «{quote}» khỏi tiêu đề; tiêu đề chỉ nên có tên, thương hiệu, loại và dung tích.",
+      "action_no_quote": "Bỏ các từ như «hot sale», «rẻ nhất», «giảm giá sốc» khỏi tiêu đề.",
+      "why": "Shopee không cho phép từ ngữ quảng cáo trong tiêu đề sản phẩm.",
+      "caption": {
+        "title": "Bỏ từ khoá quảng cáo khỏi caption",
+        "action": "Bỏ cụm «{quote}» khỏi caption/hashtag; không dùng từ như «rẻ nhất», «xả kho», «giảm giá sốc».",
+        "action_no_quote": "Bỏ các từ như «hot sale», «rẻ nhất», «giảm giá sốc» khỏi caption và hashtag."
+      }
+    },
+    "SHP-004": {
+      "title": "Bổ sung giấy tờ mỹ phẩm",
+      "action": "Bổ sung xuất xứ, hạn dùng và phiếu công bố mỹ phẩm vào listing Shopee.",
+      "why": "Mỹ phẩm thiếu giấy công bố, xuất xứ hoặc hạn dùng có thể bị gỡ khỏi sàn.",
+      "merge": "cosmetic_documents"
+    },
+    "SHP-005": {
+      "title": "Bỏ thông tin liên hệ ngoài sàn",
+      "action": "Xoá số điện thoại, Zalo, link ngoài hoặc lời mời «inbox» khỏi mô tả: «{quote}».",
+      "action_no_quote": "Xoá số điện thoại, Zalo, link ngoài hoặc lời mời nhắn tin ngoài sàn khỏi mô tả.",
+      "why": "Shopee cấm kéo khách giao dịch ngoài sàn.",
+      "caption": {
+        "title": "Bỏ thông tin liên hệ ngoài sàn trong caption",
+        "action": "Xoá số điện thoại, Zalo, link ngoài hoặc lời mời «inbox» khỏi caption/hashtag: «{quote}».",
+        "action_no_quote": "Xoá số điện thoại, Zalo, link ngoài hoặc lời mời nhắn tin ngoài sàn khỏi caption."
+      }
+    },
+    "META-001": {
+      "title": "Chỉ nói công dụng có căn cứ (Facebook/Instagram)",
+      "action": "Bỏ hoặc làm mềm câu «{quote}» ({at}) trong quảng cáo Facebook/Instagram.",
+      "action_no_quote": "Rà lại các câu về công dụng trong quảng cáo Facebook/Instagram; chỉ giữ điều có căn cứ.",
+      "why": "Meta từ chối quảng cáo có lời hứa không có căn cứ.",
+      "merge": "unsupported_claims",
+      "caption": {
+        "title": "Bỏ lời hứa không có căn cứ trong caption (Facebook/Instagram)",
+        "action": "Sửa caption quảng cáo Facebook/Instagram: bỏ hoặc làm mềm cụm «{quote}».",
+        "action_no_quote": "Rà lại caption quảng cáo Facebook/Instagram; chỉ giữ công dụng có căn cứ."
+      }
+    },
+    "META-002": {
+      "title": "Không nói thẳng vào đặc điểm cá nhân người xem",
+      "action": "Đổi câu «{quote}» thành câu chung, ví dụ «nhiều người gặp…» thay vì «bạn đang bị…».",
+      "action_no_quote": "Đổi các câu «bạn đang bị…» thành câu nói chung, không khẳng định tình trạng của người xem.",
+      "why": "Meta không cho quảng cáo khẳng định đặc điểm nhạy cảm của người xem.",
+      "caption": {
+        "title": "Bỏ câu nhắm vào đặc điểm cá nhân trong caption",
+        "action": "Sửa caption: bỏ cụm «{quote}», nói về sản phẩm thay vì hỏi người xem có bị vấn đề gì.",
+        "action_no_quote": "Sửa caption: không hỏi trực tiếp người xem về bệnh, khuyết điểm hay đặc điểm cá nhân."
+      }
+    },
+    "META-003": {
+      "title": "Kiểm tra ngành hàng trên Facebook/Instagram",
+      "action": "Đối chiếu ngành hàng với chính sách thương mại của Meta trước khi chạy quảng cáo hoặc bán trên Facebook/Instagram.",
+      "why": "Một số ngành hàng bị Meta hạn chế bán hoặc quảng cáo."
+    }
+  },
+  "data": {
+    "no_listing": {
+      "title": "Thêm listing sản phẩm",
+      "action": "Nhập tên, tiêu đề, mô tả và giá của sản phẩm (hoặc chọn SKU của shop) để chấm phần sản phẩm và thị trường.",
+      "why": "Chưa có listing nên các câu hỏi về sản phẩm chưa chấm được."
+    },
+    "decisions_not_run": {
+      "title": "Chạy chấm chi tiết (Decisions)",
+      "action": "Chạy lại với tuỳ chọn chấm Decisions (có tính phí) để chấm các tiêu chí phán đoán như mở đầu, cách dùng, lời kêu gọi mua.",
+      "why": "Nhiều tiêu chí chưa có điểm nên điểm tổng còn thiếu."
+    },
+    "decisions_failed": {
+      "title": "Chạy lại bước chấm chi tiết",
+      "action": "Bước Decisions vừa lỗi; thử chạy lại sau ít phút.",
+      "why": "Các tiêu chí phán đoán chưa có điểm do lỗi gọi API."
+    },
+    "stale_extraction": {
+      "title": "Trích xuất lại nội dung video",
+      "action": "Chạy lại bước đọc video (có tính phí) để có đủ dữ liệu theo cách chấm mới.",
+      "why": "Dữ liệu video đọc từ phiên bản cũ, thiếu một số trường."
+    },
+    "listing_mismatch": {
+      "title": "Kiểm tra listing có đúng sản phẩm trong video",
+      "action": "Xác nhận lại listing gắn với video đúng sản phẩm, đúng phân loại; nếu sai, chọn lại SKU.",
+      "why": "Listing có vẻ không khớp sản phẩm trong video nên điểm sản phẩm chưa đáng tin."
+    },
+    "diagnosis_conflict": {
+      "title": "Xem lại chẩn đoán shop",
+      "action": "Hai cách chẩn đoán nút thắt của shop đang khác nhau; xem số liệu shop trước khi chọn việc ưu tiên.",
+      "why": "Chẩn đoán theo luật và đánh giá của Decisions không thống nhất."
+    }
+  }
+}
