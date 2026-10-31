@@ -12,7 +12,7 @@ from core.media import extract, sha256
 from core.scoring import aggregate
 from core.policy import evaluate as evaluate_policy
 
-VERSION = "foundation-pipeline/v3"
+VERSION = "foundation-pipeline/v4"
 AGENTS = [
     {"id": "media_analyst", "name": "Media Analyst"},
     {"id": "commerce_analyst", "name": "Commerce Analyst"},
@@ -115,6 +115,8 @@ def execute(video, context, root, emit, *, force=False):
     decisions = step("ask_decisions", {"question_bank_version": bank["version"] if bank else None, "outcomes_included": False, "external_calls": 0},
                      lambda: decisions_plan(bank, features))
     policy_sources = [{"id": "post.caption", "kind": "caption", "text": video["caption"]}] if video.get("caption") else []
+    if video.get("hashtags"):
+        policy_sources.append({"id": "post.hashtags", "kind": "hashtags", "text": " ".join("#" + tag for tag in video["hashtags"])})
     policy = step("check_policy", {"platforms": video["platforms"], "sources": policy_sources},
                   lambda: evaluate_policy(root, video["platforms"], policy_sources))
     cross_check = step("cross_check", {"questions": 0}, lambda: {"status": "not_available", "items": [], "reason": "Chưa có câu trả lời Decisions để đối chiếu."})

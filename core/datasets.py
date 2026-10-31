@@ -23,9 +23,15 @@ def read_dataset(root, key):
     path = Path(root) / "data" / "fixtures" / relative
     if not path.is_file():
         return {"id": key, "name": title, "file": f"data/fixtures/{relative}", "status": "missing", "total": 0, "items": []}
-    content = path.read_bytes()
-    data = json.loads(content)
-    items = data[section] if section else data
+    try:
+        content = path.read_bytes()
+        data = json.loads(content)
+        items = data[section] if section else data
+        if not isinstance(items, (list, dict)):
+            raise ValueError("Dataset section must be a list or object")
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError, KeyError, TypeError, ValueError):
+        return {"id": key, "name": title, "file": f"data/fixtures/{relative}", "status": "invalid", "total": 0, "items": [],
+                "error": "Không đọc được JSON hoặc thiếu cấu trúc dữ liệu yêu cầu; các dữ liệu khác vẫn dùng được."}
     if isinstance(items, dict):
         items = [{"key": k, "value": v} for k, v in items.items()]
     return {"id": key, "name": title, "file": f"data/fixtures/{relative}", "status": status,
