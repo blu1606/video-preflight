@@ -261,7 +261,7 @@ export default function RunConsole() {
       </div>
 
       <p className="lp-con-status">
-        <span><b>$</b> preflight analyze SHOP001-VID01 --decisions</span>
+        <span><b>$</b> soi analyze SHOP001-VID01 --decisions</span>
         <span>bước <b>{steps}/26</b> · {fmtSec(elapsed)}<span className="lp-con-tokens"> · token mới <b>22.384</b> · cache 22.364</span></span>
       </p>
     </div>
