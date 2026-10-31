@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest tests.test_insight_candidates (from video_understanding/demo). No API call."""
+"""Run: uv run python -m unittest tests.test_insight_candidates (from the repo root). No API call."""
 
 import unittest
 

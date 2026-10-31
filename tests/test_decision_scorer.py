@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest discover tests (from video_understanding/demo). No API calls: the client is a stub."""
+"""Run: uv run python -m unittest discover tests (from the repo root). No API calls: the client is a stub."""
 
 import tempfile
 import unittest

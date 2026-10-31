@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest discover tests (from video_understanding/demo)."""
+"""Run: uv run python -m unittest discover tests (from the repo root)."""
 
 import unittest
 from dataclasses import asdict

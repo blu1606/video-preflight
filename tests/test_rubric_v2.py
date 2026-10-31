@@ -1,13 +1,13 @@
-"""Run: uv run python -m unittest discover tests (from video_understanding/demo)."""
+"""Run: uv run python -m unittest discover tests (from the repo root)."""
 
 import unittest
-from pathlib import Path
 
 from core.quality_gate import quality_gate
 from core.rubric import RUBRICS, RUBRICS_V2
 from core.schema import Feature, Mode, SourceStatus
 from core.score_engine import score_all, score_criterion
 from sources.providers import VideoFeatureProvider
+from tests.fixture_cache import cached_features
 
 
 def inferred(v, mock=False):
@@ -34,7 +34,7 @@ class RubricV2Test(unittest.TestCase):
         self.assertEqual(next(g for g in score_all(features, Mode.SIMULATION, RUBRICS_V2) if g.name == "sku_market").score, 90.0)
 
 
-FEATURES_467796 = Path(__file__).resolve().parents[1] / "output" / "features" / "vn-beauty-467796.json"
+FEATURES_467796 = cached_features("vn-beauty-467796.features.json")
 VLM_SELF_RATINGS = ("video.hook_strength", "video.storytelling", "video.emotion", "video.shareability",
                     "video.clarity_score")
 
@@ -82,7 +82,6 @@ class OpeningCriteriaTest(unittest.TestCase):
                 self.assertFalse(set(c.inputs) & set(VLM_SELF_RATINGS), c.id)
                 self.assertIsNone(c.score, c.id)  # no Decisions answers -> judgement stays not_scored
 
-    @unittest.skipUnless(FEATURES_467796.exists(), "needs cached vn-beauty-467796 features")
     def test_real_cached_video(self):
         f = VideoFeatureProvider(FEATURES_467796).load()
         self.assertEqual(score_criterion(v2("V9"), f, Mode.EVIDENCE).score, 71.4)  # product clear at 00:05

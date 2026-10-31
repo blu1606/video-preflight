@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest discover tests (from video_understanding/demo)."""
+"""Run: uv run python -m unittest discover tests (from the repo root)."""
 
 import json
 import tempfile
@@ -11,9 +11,10 @@ from core.quality_gate import diagnosis_agreement, quality_gate
 from core.schema import Feature, Mode, SourceStatus
 from core.score_engine import score_all
 from sources.providers import VideoFeatureProvider
+from tests.fixture_cache import cached_features
 
 DEMO = Path(__file__).resolve().parents[1]
-TEASHELL = DEMO / "output" / "features" / "vn-beauty-467796.json"
+TEASHELL = cached_features("vn-beauty-467796.features.json")
 
 
 def real(v):

@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest tests.test_insights (from video_understanding/demo). No API call: fake client."""
+"""Run: uv run python -m unittest tests.test_insights (from the repo root). No API call: fake client."""
 
 import json
 import tempfile

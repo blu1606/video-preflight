@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest tests.test_transcribe_filter (from video_understanding/demo). No ffmpeg, no API."""
+"""Run: uv run python -m unittest tests.test_transcribe_filter (from the repo root). No ffmpeg, no API."""
 
 import unittest
 from pathlib import Path

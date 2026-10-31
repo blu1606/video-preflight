@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest tests.test_markers (from video_understanding/demo)."""
+"""Run: uv run python -m unittest tests.test_markers (from the repo root)."""
 
 import json
 import tempfile

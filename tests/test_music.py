@@ -1,4 +1,4 @@
-"""Run: uv run python -m unittest tests.test_music (from video_understanding/demo). No network: a fake Shazam;
+"""Run: uv run python -m unittest tests.test_music (from the repo root). No network: a fake Shazam;
 ffmpeg/ffprobe are replaced by stubs."""
 
 import tempfile
