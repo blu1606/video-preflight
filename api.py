@@ -16,6 +16,7 @@ from core.pipeline import AGENTS, PLATFORMS, TOOLS, gather, now
 from core.runs import Runs
 from core.scoring import CALIBRATION, GROUPS
 from core.store import Store, StoreError
+from core.datasets import inventory, question_bank, read_dataset
 
 ROOT = Path(__file__).resolve().parent
 
@@ -105,6 +106,11 @@ def create_app(root=ROOT, store=None):
     app = FastAPI(title="Video Preflight", version="0.1.0", lifespan=lifespan)
     app.state.runs = runs
 
+    def current_context(video):
+        context = gather(database, video)
+        context["dataset_versions"] = {d["id"]: d.get("sha256") for d in inventory(root)}
+        return context
+
     @app.exception_handler(StoreError)
     async def store_error(_request, exc):
         return JSONResponse(status_code=exc.status, content={"detail": str(exc)})
@@ -126,12 +132,25 @@ def create_app(root=ROOT, store=None):
 
     @app.get("/registry")
     def registry():
-        return {"agents": AGENTS, "tools": TOOLS, "platforms": PLATFORMS, "rubric_status": "not_configured",
+        bank = question_bank(root)
+        return {"agents": AGENTS, "tools": TOOLS, "platforms": PLATFORMS, "rubric_status": "loaded_not_run" if bank else "not_configured",
+                "question_count": len(bank["questions"]) if bank else 0,
                 "score_weights": {key: weight for key, (_, weight) in GROUPS.items()}, "calibration": CALIBRATION}
 
     @app.get("/catalog")
     def catalog():
         return {key: database.list(key) for key in ("shops", "skus", "videos", "marketSnapshots", "sources")}
+
+    @app.get("/datasets")
+    def datasets():
+        return inventory(root)
+
+    @app.get("/datasets/{key}")
+    def dataset(key: str, offset: int = 0, limit: int = 50):
+        if not 0 <= offset or not 1 <= limit <= 100:
+            raise HTTPException(422, "Phân trang không hợp lệ")
+        data = read_dataset(root, key)
+        return {**data, "items": data["items"][offset:offset + limit], "offset": offset, "limit": limit}
 
     @app.post("/shops", status_code=201)
     def add_shop(value: ShopInput):
@@ -199,10 +218,10 @@ def create_app(root=ROOT, store=None):
     @app.get("/videos/{video_id}/cache-status")
     def cache_status(video_id: str):
         video = database.get("videos", video_id)
-        context = gather(database, video)
+        context = current_context(video)
         from core.pipeline import fingerprint
         key = fingerprint(video, context)
-        matches = [r for r in runs.list(video_id) if r["fingerprint"] == key and r["status"] == "complete"]
+        matches = [r for r in runs.list(video_id) if r["fingerprint"] == key and runs.usable(r, video)]
         return {"analysis": "hit" if matches else "miss", "run_id": matches[0]["id"] if matches else None,
                 "paid_calls": 0, "external_calls": 0, "provider": "not_configured"}
 
@@ -216,7 +235,7 @@ def create_app(root=ROOT, store=None):
             raise HTTPException(404, "Không tìm thấy file video")
         if sha256(path) != video["metadata"]["sha256"]:
             raise HTTPException(409, "File video đã thay đổi; hãy upload lại.")
-        run, cache_hit = runs.start(video, gather(database, video), force=value.force_extract)
+        run, cache_hit = runs.start(video, current_context(video), force=value.force_extract)
         return {"run_id": run["id"], "status": run["status"], "cache_hit": cache_hit, "paid_calls": 0}
 
     @app.get("/videos/{video_id}/runs")

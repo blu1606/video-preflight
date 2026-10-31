@@ -32,6 +32,8 @@ function DataLibrary({ catalog, refresh, onInspect }) {
   const [tab, setTab] = useState('shops');
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
+  const [datasets, setDatasets] = useState([]);
+  useEffect(() => { request('/datasets').then(setDatasets).catch((err) => setError(err.message)); }, []);
   async function submit(event, endpoint) {
     event.preventDefault();
     const form = event.currentTarget;
@@ -42,7 +44,7 @@ function DataLibrary({ catalog, refresh, onInspect }) {
     catch (err) { setError(err.message); }
     finally { setBusy(false); }
   }
-  const tabs = [['shops', 'Shop'], ['skus', 'SKU'], ['videos', 'Video'], ['marketSnapshots', 'Thị trường'], ['sources', 'Nguồn']];
+  const tabs = [['shops', 'Shop'], ['skus', 'SKU'], ['videos', 'Video'], ['marketSnapshots', 'Thị trường'], ['datasets', 'Bộ dữ liệu nhập']];
   return <div className="library">
     <div className="tabs">{tabs.map(([key, name]) => <button key={key} className={tab === key ? 'active' : ''} onClick={() => setTab(key)}>{name} <span>{catalog[key]?.length || 0}</span></button>)}</div>
     <p className="muted">Thông tin người dùng nhập chưa được đối chiếu với nền tảng. Bấm bản ghi để xem provenance.</p>
@@ -60,9 +62,13 @@ function DataLibrary({ catalog, refresh, onInspect }) {
       <label>Audience<input name="audience" maxLength={500} placeholder="Ai sẽ mua sản phẩm này?" /></label>
       <Button type="submit" variant="primary" disabled={busy || !catalog.shops.length}><Plus size={16} />Thêm SKU</Button>
     </form>}
-    <div className="data-list">{catalog[tab]?.length ? catalog[tab].map((record) => <button className="data-row" key={record.id} onClick={() => onInspect({ title: record.name || record.id, value: record })}>
+    {tab === 'datasets' && <div className="data-list">{datasets.map((dataset) => <button className="data-row" key={dataset.id} onClick={async () => {
+      try { const data = await request(`/datasets/${dataset.id}?limit=100`); onInspect({ title: dataset.name, value: data }); }
+      catch (err) { setError(err.message); }
+    }}><div><strong>{dataset.name} · {dataset.total} bản ghi</strong><small>{dataset.status} · {dataset.file}</small></div><ChevronRight size={18} /></button>)}</div>}
+    {tab !== 'datasets' && <div className="data-list">{catalog[tab]?.length ? catalog[tab].map((record) => <button className="data-row" key={record.id} onClick={() => onInspect({ title: record.name || record.id, value: record })}>
       <div><strong>{record.name || record.id}</strong><small>{record.provenance?.tool || 'Xem nguồn dữ liệu'} · {record.provenance?.collected_at?.slice(0, 10) || record.uploaded_at?.slice(0, 10) || 'Chưa ghi ngày'}</small></div><ChevronRight size={18} />
-    </button>) : <Empty icon={Database} title="Chưa có dữ liệu">Thêm thông tin của bạn hoặc bổ sung bộ dữ liệu có nguồn ở bước tiếp theo.</Empty>}</div>
+    </button>) : <Empty icon={Database} title="Chưa có dữ liệu">Thêm thông tin của bạn hoặc bổ sung bộ dữ liệu có nguồn ở bước tiếp theo.</Empty>}</div>}
   </div>;
 }
 
@@ -99,6 +105,7 @@ export default function Studio() {
   const selected = catalog.videos.find((video) => video.id === selectedId);
   const sku = catalog.skus.find((item) => item.id === form.sku_id);
   const activePlatform = form.platforms[0];
+  const activePolicy = result?.policy.targets[activePlatform];
   const stageTools = registry?.tools.filter((tool) => tool.stage) || [];
 
   async function refresh() {
@@ -261,13 +268,13 @@ export default function Studio() {
         <div className="resize-handle" role="separator" aria-label="Điều chỉnh độ rộng kết quả" aria-orientation="vertical" aria-valuemin={400} aria-valuemax={600} aria-valuenow={rightWidth} tabIndex={0} onPointerDown={resize} onDoubleClick={() => setRightWidth(420)} onKeyDown={(e) => { if (['ArrowLeft', 'ArrowRight'].includes(e.key)) { e.preventDefault(); setRightWidth((v) => Math.max(400, Math.min(600, v + (e.key === 'ArrowLeft' ? 20 : -20)))); } }} />
         <div className="section-title"><div><span className="eyebrow">03 / KẾT QUẢ</span><h2>Sẵn sàng đăng?</h2></div><button className="icon-button" aria-label="Mở kết quả JSON" disabled={!result} onClick={() => setInspect({ title: 'Kết quả backend', value: result })}><Maximize2 size={18} /></button></div>
         <div className="score-block"><div className="score-number">{metric(result?.scores.overall)}<span>/ 100</span></div><div className="score-caption"><strong>{busy ? 'Đang thu thập bằng chứng' : result ? result.verdict.label : 'Chờ phân tích'}</strong><span>Coverage {result ? metric(result.scores.coverage * 100) + '%' : '—'}</span></div></div>
-        <button className="policy-chip" onClick={() => setInspect({ title: 'Policy theo nền tảng', value: result?.policy || { status: 'unknown', reason: 'Chưa phân tích; chưa có baseline Policy.' } })}><ShieldCheck size={15} />Policy · chưa đủ dữ liệu<ChevronRight size={14} /></button>
+        <button className="policy-chip" onClick={() => setInspect({ title: 'Policy theo nền tảng', value: result?.policy || { status: 'unknown', reason: 'Chưa phân tích; chưa đối chiếu Policy.' } })}><ShieldCheck size={15} />Policy · {activePolicy?.label || 'chưa đủ dữ liệu'}<ChevronRight size={14} /></button>
         <Radar scores={result?.scores.groups} />
         <div className="group-scores">{groupNames.map((name, i) => <div key={name}><span>{name}</span><strong>{metric(result?.scores.groups[i]?.score)}</strong></div>)}</div>
         <p className="result-summary">{result ? result.verdict.summary : 'Mỗi kết luận bắt đầu từ bằng chứng. Chọn video và bấm Phân tích để kiểm tra.'}</p>
         <div className="tabs result-tabs">{[['platform', 'Nền tảng'], ['evidence', 'Bằng chứng'], ['performance', 'Hiệu suất']].map(([key, name]) => <button key={key} className={tab === key ? 'active' : ''} onClick={() => setTab(key)}>{name}</button>)}</div>
         <div className="result-tab-content">
-          {tab === 'platform' && <>{form.platforms.map((platform) => <button className="platform-result" key={platform} onClick={() => setInspect({ title: platformNames[platform], value: result?.policy.targets[platform] || { status: 'unknown', reason: 'Chưa có baseline và thông số chính thức.' } })}><span className="platform-initial">{platformNames[platform][0]}</span><div><strong>{platformNames[platform]}</strong><small>Policy & hợp nền tảng</small></div><span className="status-tag">Chưa xác minh</span><ChevronRight size={15} /></button>)}<p className="muted fine">Checklist nền tảng tách riêng khỏi điểm. Chưa có nguồn thì chưa kết luận.</p></>}
+          {tab === 'platform' && <>{form.platforms.map((platform) => <button className="platform-result" key={platform} onClick={() => setInspect({ title: platformNames[platform], value: result?.policy.targets[platform] || { status: 'unknown', reason: 'Chưa đối chiếu baseline và thông số chính thức.' } })}><span className="platform-initial">{platformNames[platform][0]}</span><div><strong>{platformNames[platform]}</strong><small>Policy & hợp nền tảng</small></div><span className="status-tag">{result?.policy.targets[platform]?.label || 'Chưa xác minh'}</span><ChevronRight size={15} /></button>)}<p className="muted fine">Checklist nền tảng tách riêng khỏi điểm. Chưa có nguồn thì chưa kết luận.</p></>}
           {tab === 'evidence' && (result ? <><div className="evidence-stats"><span><strong>{result.extraction.frames.length}</strong> frame local</span><span><strong>{result.trace.length}</strong> bước trace</span></div><Button className="full" onClick={() => setInspect({ title: 'Feature JSON & bằng chứng', value: result.features })}><FileJson size={17} />Xem feature JSON<ArrowRight size={15} /></Button><p className="muted fine">Lời thoại: chưa cấu hình ASR. Frame chưa được AI đọc nội dung.</p><span className="status-tag">{runInfo?.cache_hit ? 'Kết quả từ cache' : `Frame cache: ${result.extraction.cache}`}</span></> : <Empty icon={FileJson} title="Chưa có bằng chứng">Frame, transcript và feature sẽ hiện tại đây.</Empty>)}
           {tab === 'performance' && <><div className="funnel">{[['Views', form.outcome?.views], ['Click', form.outcome?.clicks], ['Đơn', form.outcome?.orders], ['GMV', form.outcome?.gmv_vnd]].map(([label, value]) => <div key={label}><span>{label}</span><strong>{metric(value)}</strong></div>)}</div><p className="muted fine">{form.published ? 'Số liệu người dùng nhập, chưa xác minh. Không tính vào điểm trước đăng.' : 'Video trước đăng chưa có hiệu suất thực. Chưa có mô hình dự báo đã hiệu chỉnh.'}</p><button className="text-button" disabled={busy} onClick={() => setPanel('video')}>Cập nhật trạng thái đăng<ChevronRight size={15} /></button></>}
         </div>
