@@ -77,7 +77,7 @@ Loading, empty (chưa có lần chạy nào, video chưa được trích xuất)
 
 ### 6.1 Chạy local
 ```bash
-cd video_understanding/demo/web
+cd web
 pnpm install
 pnpm lab            # json-server :3101 + FastAPI :8100 + Vite :5180
 # or split: pnpm db  +  pnpm lab:api-web

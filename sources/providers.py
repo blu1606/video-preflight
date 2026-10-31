@@ -61,7 +61,7 @@ def _narrative_feature(section: dict | None, name: str, source: str) -> Feature:
 
 
 def _video_path(video_file: str | None) -> Path | None:
-    """The cached video file; relative paths are relative to the demo directory. None when it is not there."""
+    """The cached video file; relative paths are relative to the repo root. None when it is not there."""
     video = Path(video_file) if video_file else None
     if video is not None and not video.is_absolute():
         video = DEMO / video

@@ -1,7 +1,7 @@
 """Video feature extractor (ported from sandbox.ipynb): frames (OpenCV) + transcript (Whisper) + VLM.
 
 Output has the same shape as notebooks/features.json, so VideoFeatureProvider reads both.
-Results are cached per video in demo/output/features/<video_stem>.json to avoid paying for the API twice.
+Results are cached per video in output/features/<video_stem>.json to avoid paying for the API twice.
 """
 
 import base64
@@ -25,7 +25,7 @@ DEMO = Path(__file__).resolve().parents[1]
 CACHE_DIR = DEMO / "output" / "features"
 FRAMES_DIR = DEMO / "output" / "frames"  # JPEGs the VLM saw, served to the lab
 
-load_dotenv(DEMO.parent / ".env")
+load_dotenv(DEMO / ".env")
 VISION_MODEL = os.getenv("OPENAI_VISION_MODEL", "gpt-6-luna")
 AUDIO_MODEL = "whisper-1"
 

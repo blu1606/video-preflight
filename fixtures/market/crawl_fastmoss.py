@@ -4,7 +4,7 @@ Per SKU: a category-keyword product search (competitors, 28-day units sold, vide
 named after a real brand, a brand search (that product's own TikTok Shop sales). Per level-1 category: one
 market_category_analysis (basic_metrics). Raw results go to raw/fastmoss/ (private, never re-requested).
 
-Usage (from video_understanding/demo):
+Usage (from the repo root):
     uv run python fixtures/market/crawl_fastmoss.py --env <path/.env> [--skus SHOP001-SKU01,...] [--max-credits 70]
 """
 
