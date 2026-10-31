@@ -36,10 +36,10 @@ Every number is traceable (REAL / MOCK / MISSING / INFERRED with evidence); miss
 - `web/public/mockup-v2/` is the binding visual reference, including its video edit / add-video section.
 
 ## Evidence on Hand
-- Real videos: 24 TikTok Shop videos with reported outcomes (Clipcat, unverified), files in `video_understanding/data/`.
-- Crawled market snapshots (FastMoss, Google Shopping via SerpAPI) with source and crawl date: `demo/fixtures/market/`, provenance in `demo/docs/market-data-provenance.md`.
-- Synthetic Shopee seed: 9 shops with SKUs, videos and performance (`demo/fixtures/shopee_seed/`).
-- Policy baseline with official source URLs: `demo/fixtures/policy_baseline_v01/`.
+- Real videos: 24 TikTok Shop videos with reported outcomes (Clipcat, unverified), files in `data/`.
+- Crawled market snapshots (FastMoss, Google Shopping via SerpAPI) with source and crawl date: `fixtures/market/`, provenance in `docs/market-data-provenance.md`.
+- Synthetic Shopee seed: 9 shops with SKUs, videos and performance (`fixtures/shopee_seed/`).
+- Policy baseline with official source URLs: `fixtures/policy_baseline_v01/`.
 - No real seller accounts, testimonials or verified shop data exist; never fabricate them.
 
 ## Product Principles
