@@ -14,6 +14,8 @@ pnpm lab
 
 Mở **http://127.0.0.1:5180**. API: http://127.0.0.1:8100/docs; json-server: http://127.0.0.1:3101. Backend không auto-reload: Ctrl+C rồi chạy lại `pnpm lab` sau khi sửa Python. Runner kiểm tra cổng trước, không tự tắt dịch vụ khác.
 
+`/` là studio nối backend local để upload và chạy pipeline mới. `/demo` là seller workspace từ luồng frontend song song, đọc catalog và kết quả đã lưu trong snapshot; đây không phải lượt inference mới. Browser verification trong đợt này áp dụng cho studio `/`, chưa nghiệm thu `/demo`.
+
 ## Hiện đã chạy được
 
 - Tạo shop/SKU, upload MP4/MOV/WebM/MKV tối đa 50 MiB / 120 giây; thông tin nhập tay được ghi nguồn, chưa xác minh với nền tảng.
