@@ -61,3 +61,22 @@ Nhật ký và manifest SHA-256 giúp kiểm tra thay đổi nội dung trong ph
 - Bỏ Vite config/entry trùng do hai luồng cùng dựng nền; giữ một config TS có proxy `/py` và `/api`.
 - Dùng font Geist Vietnamese local từ dependency có sẵn; không tải Google Fonts trong runtime.
 - Kiểm lại: 15/15 Python, 5/5 Node, lint qua; TypeScript + Vite build qua sau sửa xung đột tên file `App.jsx` / `App.tsx`.
+
+## T1 / hợp đồng dữ liệu và Policy sơ bộ
+
+- Sau merge, xác nhận dataset có 39 câu (28 score / 7 choice / 4 predicate), 16 rule, 54 constants và 40 thông số đã chuẩn hoá. Không gọi 39 câu là 39 câu chấm điểm 5 mức: schema phân biệt ba loại thực tế.
+- Adapter mới chỉ đọc JSON, không chạy helper Python được nhập trong archive. Kho dữ liệu xem được nguồn, hash và từng bản ghi; nhãn MOCK được giữ ở đây.
+- Batch planner loại câu thiếu bằng chứng/MOCK và tách shop/outcomes khỏi readiness. Preview không phải request đã gửi; provider chưa tích hợp.
+- Triage Policy chỉ dùng vài detector text mới; trích dẫn kiểm khớp chuỗi, timestamp lấy từ nguồn. LLM chưa chạy. Validator có hợp đồng không cho reviewer gỡ rule findings hoặc bịa quote/mốc giờ.
+- Baseline và link nhập chưa được kiểm lại hiện hành; không có match vẫn là `unknown`, không báo policy clear. Các detector keyword là heuristic chưa hiệu chỉnh.
+- Sửa cache analysis để kiểm hash frame, thiếu/hỏng artifact không dùng lại run hoàn tất.
+- Kiểm `pnpm check`: 25/25 Python, 5/5 Node, oxlint và TypeScript/Vite build qua. Các test source/bank/policy không gọi mạng hay provider.
+
+### Review trước merge
+
+- Review độc lập phát hiện 2 lỗi: hashtag chưa vào Policy sources; JSON lỗi ở dataset phụ làm inventory và các request phân tích/cache lỗi chung.
+- Đã thêm source hashtag (không gán mốc giờ) và trả trạng thái invalid riêng cho dataset lỗi, không chặn các nguồn khác.
+- Tăng version pipeline lên `foundation-pipeline/v4` để kết quả cache trước sửa Policy không được dùng lại; frame cache vẫn có thể tái sử dụng.
+- Thêm 4 kiểm thử hồi quy; `pnpm check` qua 29/29 Python, 5/5 Node, lint và build, gồm kiểm tra đổi version làm mất hiệu lực analysis cache.
+- Đã kiểm browser tạo shop/SKU, xem bộ 39 câu, upload fixture tự sinh và nhận trace/SSE cùng điểm null. Fixture QA không phải video bán hàng hay dữ liệu demo.
+- PR đầu mở bằng GitHub connector `blu1606` đã đóng và thay bằng PR #2 dưới đúng tài khoản `gh` của chủ phiên (`minhhai203`). Commit author giữ `haidm203`; không viết lại lịch sử. Các thao tác PR tiếp theo dùng `gh` đã xác minh danh tính.
