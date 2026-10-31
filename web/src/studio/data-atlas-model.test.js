@@ -237,7 +237,7 @@ test('calibration rows and summary keep the three statuses even when absent', ()
 
 test('runRows reads the stored backend overall and orders runs by time', () => {
   const runs = runRows([
-    { id: 2, createdAt: '2026-10-28T00:00:00', targetId: 'V1', result: { scores: [{ name: 'viral_potential', score: 80, coverage: 1 }], overall: { score: 80, coverage: 1, weights: {} }, options: { decisions: true, extract: 'never' } } },
+    { id: 2, createdAt: '2026-10-31T01:00:00', targetId: 'V1', result: { scores: [{ name: 'viral_potential', score: 80, coverage: 1 }], overall: { score: 80, coverage: 1, weights: {} }, options: { decisions: true, extract: 'never' } } },
     { id: 1, createdAt: '2026-10-31T00:00:00', targetId: 'V1', result: { scores: [] } },
   ])
   assert.deepEqual(runs.map((r) => r.id), [1, 2])

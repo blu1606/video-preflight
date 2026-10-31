@@ -71,7 +71,10 @@ Loading, empty (chưa có lần chạy nào, video chưa được trích xuất)
 - `overall = Σ(w × score) / Σ(w)` trên các nhóm **có điểm** trong ba nhóm trước đăng: viral_potential 0.35, conversion_potential 0.45, sku_market 0.20. Tổng bằng 1, nên khi thiếu nhóm thì chia lại trên các nhóm còn lại.
 - Không tính vào điểm tổng: `shop_health` (bối cảnh của shop: 5 câu H01–H05, đối chiếu với tiêu chí shop H/Q/E, dùng để chẩn đoán lỗi nằm ở video hay ở shop); `post_publish_performance` (số đo sau khi đăng: V7 completion, C8 CTR/CVR, hiển thị riêng là "Hiệu suất thực"); `policy_compliance` (là cổng, xem dưới).
 - Điểm từng nhóm hiện dần theo stream. **Điểm tổng chỉ hiện khi run xong.**
-- Nhãn theo điểm: **≥ 75 "Sẵn sàng đăng"**, **50–74 "Sửa rồi đăng"**, **< 50 "Làm lại"**. Policy không che nhãn.
+- Nhãn theo điểm: **≥ 75 "Sẵn sàng đăng"**, **50–74 "Sửa rồi đăng"**, **< 50 "Làm lại"**. Policy không đổi điểm, nhưng chặn nhãn:
+  - Policy gate `review` có rule mức high hoặc critical: nhãn là **"Cần xem lại policy"** (`policy_review`), dù điểm cao.
+  - Chỉ có rule mức thấp hơn: nhãn tối đa là "Sửa rồi đăng".
+  - `score_label` giữ nhãn tính thuần từ điểm.
 - Luôn hiện coverage. Thiếu nhóm nào thì có cảnh báo từ backend (warnings), ví dụ "Thiếu nhóm …: điểm tổng chỉ tính trên …".
 - Nút **"Duyệt đăng"**: có policy `needs_review` thì popup liệt kê rule và mốc giờ, phải tick xác nhận. Xác nhận thì ghi `PATCH /api/videos/{id}` field `publish_review {status: approved, approved_at, analysis_id, overall, label, policy_acknowledged[]}`. App không tự đăng lên sàn.
 

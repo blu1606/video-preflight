@@ -72,7 +72,8 @@
 .pf-root .studio-label.is-ready { background: var(--pass-tint); color: var(--pass); }
 .pf-root .studio-label.is-fix { background: var(--accent-tint); color: #b3361d; } /* accent darkened to 4.5:1 on its tint */
 .pf-root .studio-filter .rb-tab span, .pf-root .studio-radar .rb-tab span { color: var(--muted); }
-.pf-root .studio-label.is-rework { background: var(--critical-tint); color: var(--critical); }
+.pf-root .studio-label.is-rework,
+.pf-root .studio-label.is-policy_review { background: var(--critical-tint); color: var(--critical); }
 .pf-root .studio-label.is-weak { opacity: .55; }
 .pf-root .studio-warn { margin: 4px 0 0; color: var(--ink); background: var(--canvas); padding: 4px var(--s2); border-radius: var(--radius); }
 .pf-root .seg-meter span.is-miss { background: var(--hatch); }

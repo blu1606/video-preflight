@@ -85,10 +85,25 @@ Với khách hàng này, sức khỏe của shop bán hàng không còn là tr�
 
 ## 7. Hệ quả cho sản phẩm
 
-Xếp theo thứ tự ưu tiên. Phần "đã có" là module trong repo.
+**Phạm vi đã chốt (31/10/2026):**
+- **Giữ nguyên các pillar chấm điểm:** Viral, Conversion, SKU & market. Policy vẫn là cổng riêng.
+- **Làm trong đợt này:**
+  - **(a) Luật quảng cáo Việt Nam vào bộ kiểm:**
+    - nội dung bắt buộc của quảng cáo thực phẩm bảo vệ sức khỏe;
+    - danh mục sản phẩm mẹ & bé bị cấm quảng cáo, chặn ngay ở cấp SKU;
+    - từ khóa claim y tế của mỹ phẩm;
+    - công khai quảng cáo theo Luật 75/2025.
+
+    Mỗi luật cần URL văn bản gốc.
+  - **(b) Phiếu trả về gộp một lần,** sao chép được để dán vào Zalo, gồm lỗi, mốc thời gian và cách sửa (issue #7).
+- **Ngoài phạm vi:** so sánh bản 1 với bản 2 (mục 2 bên dưới).
+
+Nguồn insight: `plans/reports/codex-report-research-target-customer.md`. Trích dẫn trong báo cáo đó chưa có URL gốc, cần lấy lại link trước khi dẫn.
+
+Danh sách đầy đủ, xếp theo thứ tự ưu tiên. Phần "đã có" là module trong repo.
 
 1. **Phiếu trả về cho creator:** lỗi cần sửa kèm mốc thời gian, gửi thẳng cho KOC. Đã có `core/fixes.py`, `core/markers.py`.
-2. **So bản 1 với bản 2 sau khi KOC sửa:** lỗi nào đã hết, điểm từng tiêu chí thay đổi ra sao. Đã có lịch sử `analyses`.
+2. *(Ngoài phạm vi đợt này)* **So bản 1 với bản 2 sau khi KOC sửa:** lỗi nào đã hết, điểm từng tiêu chí thay đổi ra sao. Đã có lịch sử `analyses`.
 3. **Danh mục claim được phép cho từng SKU,** gắn với giấy tờ: phiếu công bố, nội dung quảng cáo đã được xác nhận [14]. Video nói claim nằm ngoài danh mục thì gắn cờ. Đã có `sources/claims.py`, `P02`, `C09`.
 4. **Brief chiến dịch:** ý bắt buộc phải nói, câu cấm nói, thứ phải xuất hiện trên hình; đối chiếu video với brief.
 5. **Khai báo quan hệ hợp tác** (booking, barter, affiliate) để chấm được `P04` (công khai quảng cáo) [5].

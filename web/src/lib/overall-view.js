@@ -8,6 +8,7 @@ export const STATUS = {
   ready: { label: 'Sẵn sàng đăng', tone: 'pass' },
   fix: { label: 'Sửa rồi đăng', tone: 'amber' },
   rework: { label: 'Làm lại', tone: 'critical' },
+  policy_review: { label: 'Cần xem lại policy', tone: 'critical' },
   none: { label: 'Chưa chấm được', tone: 'muted' },
 }
 

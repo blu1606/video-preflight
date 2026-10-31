@@ -86,7 +86,7 @@ class OverallScoreTest(unittest.TestCase):
 
 
 class PolicyGateTest(unittest.TestCase):
-    def test_blockers_sorted_by_severity_and_label_unchanged(self):
+    def test_blockers_sorted_by_severity(self):
         p = policy(tiktok_ads=("needs_review", [finding("TTA-001", severity="high", quotes=[{"text": "x", "t": 3}]),
                                                 finding("TTC-001", outcome="not_triggered")]),
                    tiktok_shop_video=("needs_review", [finding("TTS-001", severity="critical")]))
@@ -97,7 +97,36 @@ class PolicyGateTest(unittest.TestCase):
                          [("TTS-001", "tiktok_shop_video"), ("TTA-001", "tiktok_ads")])
         self.assertEqual(gate["blockers"][1]["quotes"], [{"text": "x", "t": 3}])
         self.assertEqual(set(gate["blockers"][0]), {"rule_id", "target", "severity", "summary", "evidence", "quotes"})
-        self.assertEqual(out["label"], overall(FULL, None)["label"])
+        self.assertEqual(out["score"], overall(FULL, None)["score"])  # the gate never moves the score
+
+    def test_high_blocker_sends_a_high_score_back(self):
+        strong = [group("viral_potential", 90), group("conversion_potential", 90), group("sku_market", 90)]
+        p = policy(tiktok_shop_video=("needs_review", [finding("TTS-002", severity="high")]))
+        out = overall(strong, p)
+        self.assertEqual(out["score_label"], "ready")
+        self.assertEqual((out["label"], out["label_vi"]), ("policy_review", "Cần xem lại policy"))
+        self.assertEqual(out["score"], overall(strong, None)["score"])
+        self.assertTrue(any("Policy cần xem lại" in w for w in out["warnings"]))
+
+    def test_medium_blocker_keeps_the_label_below_ready(self):
+        strong = [group("viral_potential", 90), group("conversion_potential", 90), group("sku_market", 90)]
+        p = policy(shopee_listing=("needs_review", [finding("SHP-003", severity="medium")]))
+        self.assertEqual(overall(strong, p)["label"], "fix")
+        weak = [group(n, 30) for n in GROUP_WEIGHTS]
+        self.assertEqual(overall(weak, p)["label"], "rework")  # already below ready: unchanged
+
+    def test_clear_or_unknown_gate_keeps_the_score_label(self):
+        strong = [group("viral_potential", 90), group("conversion_potential", 90), group("sku_market", 90)]
+        clear = policy(tiktok_ads=("no_issue_detected", [finding("TTA-001", outcome="not_triggered")]))
+        for p in (None, clear):
+            out = overall(strong, p)
+            self.assertEqual((out["label"], out["score_label"]), ("ready", "ready"))
+
+    def test_no_score_keeps_no_label_even_with_blockers(self):
+        p = policy(tiktok_shop_video=("needs_review", [finding("TTS-001", severity="critical")]))
+        out = overall([group(n, None) for n in GROUP_WEIGHTS], p)
+        self.assertIsNone(out["label"])
+        self.assertEqual(out["policy_gate"]["status"], "review")
 
     def test_uncounted_findings_are_not_blockers(self):
         p = policy(meta_ads=("no_issue_detected", [finding("META-001", counted=False),

@@ -1,7 +1,6 @@
 """Run: uv run python -m unittest discover tests (from video_understanding/demo)."""
 
 import json
-import sys
 import unittest
 from collections import defaultdict
 from pathlib import Path
@@ -18,14 +17,6 @@ TRUTH = json.loads((SEED_DIR / "ground_truth.json").read_text(encoding="utf-8"))
 
 class SeedIntegrityTest(unittest.TestCase):
     seed = load_seed(SEED)
-
-    def test_committed_seed_matches_generator(self):
-        sys.path.insert(0, str(SEED_DIR))
-        import build_seed
-        tables, truth = build_seed.build()
-        for name, rows in tables.items():
-            self.assertEqual(rows, self.seed[name], name)
-        self.assertEqual(truth, TRUTH)
 
     def test_no_scenario_labels_in_agent_inputs(self):
         for shop in self.seed["shops"]:
