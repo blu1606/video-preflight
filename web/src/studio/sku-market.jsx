@@ -12,37 +12,90 @@ const pct = (x) => (x == null ? '–' : `${Math.round(x * 100)}%`)
 const CHANNEL_COLOR = { tiktok: '#1f2329', shopee: '#ee4d2d', web: '#1f5fbf' }
 const SKU_CRITERIA = /^S\d/
 
-/** Price strip: every crawled listing as a dot on one price axis per channel, the SKU's own price as a line. */
+const shortVnd = (v) => (v >= 1e6 ? `${(v / 1e6).toLocaleString('vi-VN', { maximumFractionDigits: 1 })}Tr` : v >= 1e3 ? `${Math.round(v / 1e3)}K` : `${Math.round(v)}`)
+
+/**
+ * Beeswarm on one row: dots keep their price x and step up/down out of each other's way instead of piling up.
+ * Returns the y offset of each dot, in input order.
+ */
+function swarm(xs, r) {
+  const placed = []
+  return xs.map((x) => {
+    for (let k = 0; ; k += 1) {
+      const dy = k === 0 ? 0 : Math.ceil(k / 2) * (2 * r + 1) * (k % 2 ? -1 : 1)
+      if (placed.every((p) => Math.hypot(p.x - x, p.dy - dy) >= 2 * r + 0.5) || k > 8) {
+        placed.push({ x, dy })
+        return dy
+      }
+    }
+  })
+}
+
+/**
+ * Price strip: every crawled listing as a dot on one price axis per channel (log scale, so a cluster of cheap
+ * listings stays readable next to a far outlier), the median as a tick and the SKU's own price as a pinned label.
+ */
 function PriceStrip({ view, ownPrice, compact = false }) {
   if (!view?.priceRange) return null
   const [lo, hi] = view.priceRange
-  const W = compact ? 360 : 640
-  const pad = 12
-  const x = (p) => pad + ((p - lo) / Math.max(1, hi - lo)) * (W - 2 * pad)
+  const W = compact ? 360 : 1180
+  const left = compact ? 10 : 150 // channel names get their own column instead of sitting on the dots
+  const right = 10
+  const top = 26 // room for the SKU's price pill
+  const r = compact ? 4.5 : 5
+  const L = (p) => Math.log(Math.max(1, p))
+  const x = (p) => left + ((L(p) - L(lo)) / Math.max(1e-6, L(hi) - L(lo))) * (W - left - right)
   const channels = compact ? [{ id: 'all', label: '' }] : MARKET_CHANNELS
-  const rowH = compact ? 30 : 34
-  const H = channels.length * rowH + 18
+  const rowH = compact ? 34 : 44
+  const H = top + channels.length * rowH + 16
+  const ownX = ownPrice == null ? null : x(ownPrice)
+  const pill = ownPrice == null ? null : `SKU ${vnd(ownPrice)}`
+  const pillW = pill ? pill.length * 6.6 + 16 : 0
+  const pillX = ownX == null ? 0 : Math.min(Math.max(ownX - pillW / 2, 0), W - pillW)
   return (
     <svg className="studio-strip" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Giá SKU ${vnd(ownPrice)} so với ${view.rows.length} listing đã cào`}>
       {channels.map((c, i) => {
-        const y = i * rowH + rowH / 2
-        const dots = view.rows.filter((r) => r.price != null && (c.id === 'all' || r.channel === c.id))
+        const y = top + i * rowH + rowH / 2
+        const dots = view.rows
+          .filter((r0) => r0.price != null && (c.id === 'all' || r0.channel === c.id))
+          .sort((a0, b0) => Number(b0.likeForLike) - Number(a0.likeForLike) || a0.price - b0.price)
+        const dys = swarm(dots.map((d) => x(d.price)), r)
         return (
           <g key={c.id}>
-            <line x1={pad} x2={W - pad} y1={y} y2={y} className="studio-strip-axis" />
-            {!compact && <text x={pad} y={y - 9} className="studio-strip-lab">{c.label}</text>}
-            {dots.map((r, k) => (
-              <circle key={k} cx={x(r.price)} cy={y} r={r.likeForLike ? 5 : 4} fill={r.likeForLike ? CHANNEL_COLOR[r.channel] : 'none'} stroke={CHANNEL_COLOR[r.channel]} strokeWidth="1.5" opacity={r.likeForLike ? 0.85 : 0.6}>
-                <title>{`${r.title} · ${vnd(r.price)}${r.likeForLike ? '' : ' · không cùng loại'}`}</title>
+            {!compact && (
+              <text x="0" y={y + 4} className="studio-strip-lab">
+                <tspan className={`studio-strip-key is-${c.id}`}>●</tspan> {c.label}
+              </text>
+            )}
+            <line x1={left} x2={W - right} y1={y} y2={y} className="studio-strip-axis" />
+            {dots.map((d, k) => (
+              <circle
+                key={k}
+                cx={x(d.price)}
+                cy={y + dys[k]}
+                r={r}
+                className={`studio-strip-dot${d.likeForLike ? ' is-same' : ''}`}
+                style={{ '--c': CHANNEL_COLOR[d.channel] }}
+              >
+                <title>{`${d.title} · ${vnd(d.price)}${d.likeForLike ? '' : ' · không cùng loại'}`}</title>
               </circle>
             ))}
           </g>
         )
       })}
-      {ownPrice != null && (
-        <g>
-          <line x1={x(ownPrice)} x2={x(ownPrice)} y1="2" y2={H - 14} className="studio-strip-own" />
-          <text x={x(ownPrice)} y={H - 2} textAnchor="middle" className="studio-strip-own-lab">SKU {vnd(ownPrice)}</text>
+      {view.median != null && (
+        <g className="studio-strip-median">
+          <line x1={x(view.median)} x2={x(view.median)} y1={top + 2} y2={H - 16} />
+          <text x={x(view.median)} y={H - 3} textAnchor="middle">trung vị {shortVnd(view.median)}</text>
+        </g>
+      )}
+      <text x={left} y={H - 3} className="studio-strip-end">{shortVnd(lo)}</text>
+      <text x={W - right} y={H - 3} textAnchor="end" className="studio-strip-end">{shortVnd(hi)}</text>
+      {ownX != null && (
+        <g className="studio-strip-own-g">
+          <line x1={ownX} x2={ownX} y1={top - 4} y2={H - 16} className="studio-strip-own" />
+          <rect x={pillX} y="2" width={pillW} height="20" rx="10" className="studio-strip-pill" />
+          <text x={pillX + pillW / 2} y="16" textAnchor="middle" className="studio-strip-own-lab">{pill}</text>
         </g>
       )}
     </svg>
@@ -63,13 +116,19 @@ export function SkuTeaser({ sku, onOpen }) {
             <strong className="od-truncate">SKU trên thị trường</strong>
             <span className="tiny muted od-truncate">{sku.item_name}</span>
           </span>
-          <span className="link-btn tiny">Xem phân tích <Icon name="arrow-right" /></span>
+          <Icon name="arrow-right" className="ic studio-sku-go" label="Xem phân tích" />
         </span>
         {view ? (
           <>
             <PriceStrip view={view} ownPrice={sku.price_vnd} compact />
-            <span className="tiny">
-              Rẻ hơn <b>{pct(view.pricierShare)}</b> listing cùng loại ({view.comparable}) · <Icon name="star" className="ic studio-star" label="rating" /> {sku.rating} · {num(sku.rating_count)} đánh giá
+            <span className="studio-sku-facts">
+              <span className="studio-sku-fact is-good" title={`Rẻ hơn ${pct(view.pricierShare)} trong ${view.comparable} listing cùng loại`}>
+                <b>{pct(view.pricierShare)}</b> rẻ hơn
+              </span>
+              <span className="studio-sku-fact" title={`${num(sku.rating_count)} đánh giá`}>
+                <Icon name="star" className="ic studio-star" label="rating" /> <b>{sku.rating}</b> · {num(sku.rating_count)}
+              </span>
+              <span className="studio-sku-fact" title="Listing cùng loại đã cào"><b>{view.comparable}</b> đối thủ</span>
             </span>
           </>
         ) : (
@@ -130,12 +189,17 @@ export function SkuMarketSheet({ sku, result, onClose, onOpenQuestion }) {
             <h3 className="studio-sub">Vị trí giá trên thị trường</h3>
             {view ? (
               <>
-                <p>
-                  SKU giá <b>{vnd(sku.price_vnd)}</b>, rẻ hơn <b>{pct(view.pricierShare)}</b> trong {view.comparable} listing cùng loại · trung vị {vnd(view.median)}.
-                </p>
+                <span className="studio-sku-facts">
+                  <span className="studio-sku-fact is-good"><b>{pct(view.pricierShare)}</b> listing cùng loại đắt hơn</span>
+                  <span className="studio-sku-fact"><b>{view.comparable}</b> listing cùng loại</span>
+                  <span className="studio-sku-fact">trung vị <b>{vnd(view.median)}</b></span>
+                </span>
                 <PriceStrip view={view} ownPrice={sku.price_vnd} />
-                <p className="tiny muted">
-                  Chấm đặc = cùng loại (like-for-like), chấm rỗng = khác loại. Từ khoá «{view.keyword}» · cào {view.crawledAt} · {typeof view.source === 'string' ? view.source : 'nhiều nguồn'}. Dữ liệu cào thật.
+                <p className="studio-strip-legend" title={`Từ khoá «${view.keyword}» · ${typeof view.source === 'string' ? view.source : 'nhiều nguồn'} · dữ liệu cào thật`}>
+                  <span><i className="is-same" />cùng loại</span>
+                  <span><i />khác loại</span>
+                  <span><i className="is-median" />trung vị</span>
+                  <span className="muted">cào {view.crawledAt}</span>
                 </p>
               </>
             ) : (
@@ -164,7 +228,7 @@ export function SkuMarketSheet({ sku, result, onClose, onOpenQuestion }) {
                   <ScatterChart margin={{ top: 8, right: 12, bottom: 4, left: 4 }}>
                     <CartesianGrid stroke="#eceef1" />
                     <XAxis type="number" dataKey="price" name="Giá" tickFormatter={compactVnd} tick={{ fontSize: 12 }} />
-                    <YAxis type="number" dataKey="sold" name="Đã bán" tick={{ fontSize: 12 }} width={56} />
+                    <YAxis type="number" dataKey="sold" name="Đã bán" tickFormatter={(v) => (v >= 1000 ? `${Math.round(v / 1000)}K` : v)} tick={{ fontSize: 12 }} width={44} />
                     <ZAxis range={[60, 60]} />
                     <Tooltip formatter={(v, n) => (n === 'Giá' ? vnd(v) : num(v))} labelFormatter={() => ''} />
                     <Scatter data={scatter} fill="#ee4d2d" />

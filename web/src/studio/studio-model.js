@@ -195,7 +195,7 @@ const parseMaybe = (v) => {
 export const MARKET_CHANNELS = [
   { id: 'tiktok', label: 'TikTok Shop', test: (p) => /tiktok/i.test(p) },
   { id: 'shopee', label: 'Shopee', test: (p) => /shopee/i.test(p) },
-  { id: 'web', label: 'Cửa hàng khác (Google Shopping)', test: () => true },
+  { id: 'web', label: 'Web (Google)', test: () => true },
 ]
 const channelOf = (platform) => MARKET_CHANNELS.find((c) => c.test(String(platform ?? ''))).id
 

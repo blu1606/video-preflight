@@ -149,26 +149,58 @@ function TopFixes({ fixes, total, onSeek, onAll }) {
   )
 }
 
-/** Estimated performance: views → clicks → orders → GMV, then the real video it is read against. */
+/**
+ * Estimated performance as a funnel: each stage's bar is its share of views on a log scale (orders are a fraction of
+ * a percent, a linear bar would vanish), with the step rate between stages. The sample video of the same product
+ * sits underneath on the one rate that compares fairly: orders per 1K views.
+ */
 function Forecast({ result }) {
   const { funnel, funnelReason, benchmark } = metricsView(result)
   const rate = (a, b) => (a != null && b ? `${((a / b) * 100).toFixed(a / b < 0.01 ? 2 : 1)}%` : null)
+  const share = (v) => (funnel?.views > 1 && v > 0 ? Math.max(4, (Math.log10(v) / Math.log10(funnel.views)) * 100) : 0)
+  const per1k = funnel?.views ? (funnel.orders / funnel.views) * 1000 : null
+  const benchPer1k = benchmark?.sales_per_1k_views != null ? Number(benchmark.sales_per_1k_views) : null
+  const top = Math.max(per1k ?? 0, benchPer1k ?? 0) || 1
+  const stages = funnel
+    ? [
+        { id: 'views', label: 'Views', value: funnel.views },
+        { id: 'clicks', label: 'Click SP', value: funnel.clicks, rate: rate(funnel.clicks, funnel.views) },
+        { id: 'orders', label: 'Đơn', value: funnel.orders, rate: rate(funnel.orders, funnel.clicks) },
+      ]
+    : []
   return (
     <section className="studio-forecast" aria-label="Hiệu suất video">
-      <h3 className="studio-forecast-title">Hiệu suất video</h3>
-      {!funnel && <p className="studio-forecast-missing" title={funnelReason ?? undefined}>Chưa đủ dữ liệu để ước tính views → đơn → GMV cho video này.</p>}
+      <div className="studio-forecast-head">
+        <h3 className="studio-forecast-title">Hiệu suất ước tính</h3>
+        {funnel && <span className="studio-forecast-gmv" title="GMV ước tính"><small>GMV</small>{vnd(funnel.gmv)}</span>}
+      </div>
+      {!funnel && <p className="studio-forecast-missing" title={funnelReason ?? undefined}>Chưa đủ dữ liệu để ước tính views → đơn → GMV.</p>}
       {funnel && (
-        <ol className="studio-forecast-row">
-          <li><span>Views</span><strong>{num(funnel.views)}</strong></li>
-          <li><span>Click SP</span><strong>{num(funnel.clicks)}</strong><em>{rate(funnel.clicks, funnel.views)}</em></li>
-          <li><span>Đơn</span><strong>{num(funnel.orders)}</strong><em>{rate(funnel.orders, funnel.clicks)}</em></li>
-          <li className="is-gmv"><span>GMV</span><strong>{vnd(funnel.gmv)}</strong></li>
+        <ol className="studio-funnel">
+          {stages.map((st) => (
+            <li key={st.id} className={`is-${st.id}`}>
+              <span className="studio-funnel-label">{st.label}</span>
+              <span className="studio-funnel-bar"><span style={{ width: `${share(st.value)}%` }} /></span>
+              <strong>{num(st.value)}</strong>
+              {st.rate && <em title="So với bước trước">{st.rate}</em>}
+            </li>
+          ))}
         </ol>
       )}
-      {benchmark && (
-        <p className="tiny muted studio-bench">
-          Video mẫu cùng sản phẩm: {num(benchmark.views)} views · {num(benchmark.sales)} đơn · {benchmark.sales_per_1k_views} đơn/1K views
-        </p>
+      {funnel && benchPer1k != null && (
+        <div className="studio-bench-compare" title={`Video mẫu: ${num(benchmark.views)} views · ${num(benchmark.sales)} đơn`}>
+          <span className="studio-bench-title">Đơn / 1K views</span>
+          <div className="studio-bench-row is-you">
+            <span>Video này</span>
+            <span className="studio-funnel-bar"><span style={{ width: `${((per1k ?? 0) / top) * 100}%` }} /></span>
+            <strong>{per1k == null ? '–' : per1k.toFixed(per1k < 1 ? 3 : 2)}</strong>
+          </div>
+          <div className="studio-bench-row is-bench">
+            <span>Video mẫu</span>
+            <span className="studio-funnel-bar"><span style={{ width: `${(benchPer1k / top) * 100}%` }} /></span>
+            <strong>{benchPer1k.toFixed(benchPer1k < 1 ? 3 : 2)}</strong>
+          </div>
+        </div>
       )}
     </section>
   )
