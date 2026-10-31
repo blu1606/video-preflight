@@ -1,0 +1,4392 @@
+{
+  "schema_version": "sku-charts/1",
+  "snapshot_ids": [
+    "2026-10-21T06-53-21-803Z",
+    "2026-10-21T06-55-06-781Z",
+    "2026-10-21T06-58-30-057Z",
+    "2026-10-21T07-02-09-818Z"
+  ],
+  "charts": [
+    {
+      "id": "price-distribution",
+      "status": "available",
+      "definition": "Row-level listed prices split by source, market, grain and currency. Quantiles use linear interpolation. Variant-heavy parents contribute more observations.",
+      "unit": "native currency",
+      "denominator": "eligible rows n and distinct parent_n per partition",
+      "window": "snapshot capture window, not time-series",
+      "minimum_sample": 1,
+      "interpretation": "descriptive convenience sample only; no market population inference",
+      "missingness": "exclude unknown measure; report coverage separately",
+      "data": [
+        {
+          "source": "allbirds",
+          "market": "international-unverified",
+          "grain": "variant",
+          "currency": "USD",
+          "n": 59,
+          "parent_n": 5,
+          "min": 25,
+          "q25": 100,
+          "median": 100,
+          "q75": 100,
+          "max": 115,
+          "points": [
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280205904",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280238672",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280271440",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280304208",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280336976",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280369744",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280402512",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280435280",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280468048",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280500816",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280533584",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280566352",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7205211570256|41271280599120",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397085732944",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397085765712",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397085798480",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397085831248",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397085864016",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397085896784",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397085929552",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397085962320",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397085995088",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397086027856",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397086060624",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397086093392",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7235869147216|41397086126160",
+              "price": 115
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884542894160",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884542926928",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884542959696",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884542992464",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884543025232",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884543058000",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884543090768",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884543123536",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884543156304",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884543189072",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884543221840",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884543254608",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258384564304|41884543287376",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884546990160",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547022928",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547055696",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547088464",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547121232",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547154000",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547186768",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547219536",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547252304",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547285072",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547317840",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547350608",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7258385809488|41884547383376",
+              "price": 100
+            },
+            {
+              "entity_id": "allbirds|variant|7340901859408|42146889039952",
+              "price": 25
+            },
+            {
+              "entity_id": "allbirds|variant|7340901859408|42146889072720",
+              "price": 25
+            },
+            {
+              "entity_id": "allbirds|variant|7340901859408|42146889105488",
+              "price": 25
+            },
+            {
+              "entity_id": "allbirds|variant|7340901859408|42146889138256",
+              "price": 25
+            },
+            {
+              "entity_id": "allbirds|variant|7340901859408|42146889171024",
+              "price": 25
+            },
+            {
+              "entity_id": "allbirds|variant|7340901859408|42146889203792",
+              "price": 25
+            },
+            {
+              "entity_id": "allbirds|variant|7340901859408|42146889236560",
+              "price": 25
+            }
+          ]
+        },
+        {
+          "source": "cocoon",
+          "market": "VN-storefront",
+          "grain": "parent",
+          "currency": "VND",
+          "n": 10,
+          "parent_n": 10,
+          "min": 162000,
+          "q25": 281000,
+          "median": 378000,
+          "q75": 447000,
+          "max": 495000,
+          "points": [
+            {
+              "entity_id": "cocoon|parent|https://cocoonvietnam.com/san-pham/dau-goi-bo-ket-500ml|",
+              "price": 417000
+            },
+            {
+              "entity_id": "cocoon|parent|https://cocoonvietnam.com/san-pham/gel-bi-dao-rua-mat-500ml|",
+              "price": 441000
+            },
+            {
+              "entity_id": "cocoon|parent|https://cocoonvietnam.com/san-pham/gel-tam-bi-dao-500ml|",
+              "price": 275000
+            },
+            {
+              "entity_id": "cocoon|parent|https://cocoonvietnam.com/san-pham/gel-tam-nghe-hung-yen-500ml|",
+              "price": 275000
+            },
+            {
+              "entity_id": "cocoon|parent|https://cocoonvietnam.com/san-pham/mat-na-nghe-hung-yen-100ml|",
+              "price": 339000
+            },
+            {
+              "entity_id": "cocoon|parent|https://cocoonvietnam.com/san-pham/nuoc-duong-toc-tinh-dau-buoi-140ml-1|",
+              "price": 162000
+            },
+            {
+              "entity_id": "cocoon|parent|https://cocoonvietnam.com/san-pham/nuoc-tay-trang-bi-dao-500ml|",
+              "price": 299000
+            },
+            {
+              "entity_id": "cocoon|parent|https://cocoonvietnam.com/san-pham/sua-chong-nang-vo-co-sen-hau-giang-50ml-tone-up-beige|",
+              "price": 449000
+            },
+            {
+              "entity_id": "cocoon|parent|https://cocoonvietnam.com/san-pham/sua-rua-mat-sen-hau-giang-500ml|",
+              "price": 495000
+            },
+            {
+              "entity_id": "cocoon|parent|https://cocoonvietnam.com/san-pham/tui-refill-sua-rua-mat-sen-hau-giang-500ml|",
+              "price": 465000
+            }
+          ]
+        },
+        {
+          "source": "coolmate",
+          "market": "VN-storefront",
+          "grain": "offer",
+          "currency": "VND",
+          "n": 81,
+          "parent_n": 33,
+          "min": 79000,
+          "q25": 169000,
+          "median": 219000,
+          "q75": 299000,
+          "max": 539000,
+          "points": [
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/2-doi-tat-co-trung-ribbed-coolmate|6732c13192e04611856bf3a2den",
+              "price": 118000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/2-doi-tat-co-trung-ribbed-coolmate|6732c13192e04611856bf3a2xam-melange",
+              "price": 118000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/2-doi-tat-co-trung-ribbed-coolmate|6732c13192e04611856bf3a2xanh-navy",
+              "price": 118000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-cotton-care-share-tram-phong-tuong-lai-s1|6a6c027de853aa1c1766dae6den",
+              "price": 219000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-cotton-care-share-tram-phong-tuong-lai-s1|6a6c027de853aa1c1766dae6trang",
+              "price": 219000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-croptop-nu-cotton-poly|6a0ac9c26c323a611e79710abe",
+              "price": 169000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-croptop-nu-cotton-poly|6a0ac9c26c323a611e79710aden",
+              "price": 169000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-croptop-nu-cotton-poly|6a0ac9c26c323a611e79710atrang",
+              "price": 169000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-giu-nhiet-ex-warm-lenzing-modal-co-cao|66ffc52b00e4276e751fa9datrang",
+              "price": 149000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-giu-nhiet-ex-warm-lenzing-modal-co-cao|66ffc52b00e4276e751fa9daxam",
+              "price": 149000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-in-cotton-care-share-nu-cuoi|67cbd02b37f16b626a7336c1den",
+              "price": 199000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-in-cotton-care-share-nu-cuoi|67cbd02b37f16b626a7336c1trang",
+              "price": 199000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-in-cotton-care-share-nu-cuoi|67cbd02b37f16b626a7336c1xanh-coban",
+              "price": 199000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-khoac-the-thao-windbreaker-nylon-ribstop|6732b77099064b41ec09a84dcam",
+              "price": 539000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-khoac-the-thao-windbreaker-nylon-ribstop|6732b77099064b41ec09a84dxam",
+              "price": 539000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-khoac-the-thao-windbreaker-nylon-ribstop|6732b77099064b41ec09a84dxanh-blue",
+              "price": 539000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-polo-dai-tay-the-thao-promax-flexline-active|68da3d95ef04586ab3228a11do-dahlia",
+              "price": 244000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-polo-dai-tay-the-thao-promax-flexline-active|68da3d95ef04586ab3228a11trang",
+              "price": 244000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-polo-dai-tay-the-thao-promax-flexline-active|68da3d95ef04586ab3228a11xanh-twilight-blue",
+              "price": 244000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-polo-world-cup-doi-tuyen-phap|6a17e45d7f984155585b7e2cnavy",
+              "price": 349000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-polo-world-cup-doi-tuyen-phap|6a17e45d7f984155585b7e2ctrang",
+              "price": 349000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-spider-man-the-mask|6a6806fba81a2910087e9fdaden",
+              "price": 207000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-spider-man-the-mask|6a6806fba81a2910087e9fdatrang",
+              "price": 207000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-spider-man-the-mask|6a6806fba81a2910087e9fdaxanh-navy",
+              "price": 207000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-the-thao-nu-lightweight-cropped-tee|67bc1c4aecc61332842a8b94cam-hong",
+              "price": 149000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-the-thao-nu-lightweight-cropped-tee|67bc1c4aecc61332842a8b94den",
+              "price": 149000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-the-thao-nu-lightweight-cropped-tee|67bc1c4aecc61332842a8b94trang",
+              "price": 149000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-chay-bo-nam-airflow-exdry-gradient|695e5f08c47d991cf42f0f93cam",
+              "price": 299000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-cotton-care-share-in-fire-signs-cung-hoang-dao-collection|6641dedd56770d169c016c06be",
+              "price": 199000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-cotton-care-share-in-fire-signs-cung-hoang-dao-collection|6641dedd56770d169c016c06den",
+              "price": 199000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-cotton-care-share-in-fire-signs-cung-hoang-dao-collection|6641dedd56770d169c016c06trang",
+              "price": 199000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-cotton-slim-fit-phoi-bo-vien-kitty-is-winking|6abc6d6d3bd4b60afc0a9d53do-phoi-rib-trang",
+              "price": 279000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-cotton-slim-fit-phoi-bo-vien-kitty-is-winking|6abc6d6d3bd4b60afc0a9d53navy-phoi-rib-trang",
+              "price": 279000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-cotton-slim-fit-phoi-bo-vien-kitty-is-winking|6abc6d6d3bd4b60afc0a9d53trang-phoi-rib-do",
+              "price": 279000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-nam-gym-essentials-vai-mesh-peach-co-gian-exdry-thoang-khi|664afb70bca74869e3611705den",
+              "price": 189000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-nam-gym-essentials-vai-mesh-peach-co-gian-exdry-thoang-khi|664afb70bca74869e3611705xam-pinstripe-melange",
+              "price": 189000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-nam-gym-essentials-vai-mesh-peach-co-gian-exdry-thoang-khi|664afb70bca74869e3611705xanh-bistro-melange",
+              "price": 189000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-nam-gym-essentials-vai-mesh-peach-co-gian-exdry-thoang-khi|664afb70bca74869e3611705xanh-titan-melange",
+              "price": 189000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-nu-baby-tee-100-cotton-meo-luoi|68cba706be1e860ffa42c2c2tim",
+              "price": 199000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-nu-baby-tee-100-cotton-meo-luoi|68cba706be1e860ffa42c2c2trang",
+              "price": 199000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-oversize-basic-84rising-lets-dance|671b43e67db06934f7383a2aden",
+              "price": 399000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-oversize-basic-84rising-lets-dance|671b43e67db06934f7383a2atrang",
+              "price": 399000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-relaxed-fit-84rising-donald-duck-iconic|667a0b9f86205771657b0dd2be",
+              "price": 200000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-relaxed-fit-84rising-donald-duck-iconic|667a0b9f86205771657b0dd2trang",
+              "price": 200000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-toy-story-5-cow-girl|6a2cc306681f1c412b466d90den",
+              "price": 229000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-toy-story-5-cow-girl|6a2cc306681f1c412b466d90trang",
+              "price": 229000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-thun-toy-story-5-cow-girl|6a2cc306681f1c412b466d90xam-castlerock",
+              "price": 229000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-tshirt-cotton-compact-world-cup-doi-tuyen-argentina|69ca1ea414cf043a94192a41trang",
+              "price": 359000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-tshirt-cotton-compact-world-cup-doi-tuyen-argentina|69ca1ea414cf043a94192a41xanh-nhat",
+              "price": 359000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-tshirt-relax-chay-bo-nam-360reflect|6a9f900d6d6e1e125e48a965den",
+              "price": 279000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/ao-tshirt-relax-chay-bo-nam-360reflect|6a9f900d6d6e1e125e48a965tim",
+              "price": 279000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/bra-the-thao-crossback-vital-seamless|68b7b450d9cda01edf7f8168den",
+              "price": 231000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/bra-the-thao-crossback-vital-seamless|68b7b450d9cda01edf7f8168hong",
+              "price": 231000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/combo-3-ao-thun-nam-mac-trong-thoang-khi-nhanh-kho-excool|6a9241c44fc6a11f0b1feab6combo-mix",
+              "price": 367000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/combo-3-ao-thun-nam-mac-trong-thoang-khi-nhanh-kho-excool|6a9241c44fc6a11f0b1feab6den",
+              "price": 367000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/combo-3-ao-thun-nam-mac-trong-thoang-khi-nhanh-kho-excool|6a9241c44fc6a11f0b1feab6trang",
+              "price": 367000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/coolmate-headband-breeze|690c6f74246d3e3f855f23c8den",
+              "price": 99000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/coolmate-headband-breeze|690c6f74246d3e3f855f23c8trang",
+              "price": 99000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/coolmate-headband-breeze|690c6f74246d3e3f855f23c8xanh-navy",
+              "price": 99000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/legging-78-coolflex-light-suppport|67c6f90b06f42a680e3b326bden",
+              "price": 367000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/legging-78-coolflex-light-suppport|67c6f90b06f42a680e3b326bnau-mocha",
+              "price": 367000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/pack-2-tat-yoga-pilates-chong-truot-ruffles-socks-amazon|68daafc2aaa6f21acc35ffabden",
+              "price": 119000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/pack-2-tat-yoga-pilates-chong-truot-ruffles-socks-amazon|68daafc2aaa6f21acc35ffabtrang",
+              "price": 119000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/polo-nam-phoi-mesh-coolback|6a4b14d4fa69fb3c646ad4a1trang",
+              "price": 279000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/quan-dai-nam-kaki-excool-dang-regular-straight|65792be0fbe98b5c146c6393den",
+              "price": 449000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/quan-dai-nam-kaki-excool-dang-regular-straight|65792be0fbe98b5c146c6393xam",
+              "price": 449000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/quan-dai-nam-kaki-excool-dang-regular-straight|65792be0fbe98b5c146c6393xam-sang",
+              "price": 449000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/quan-long-tights-mac-trong|651c57106e69ad38a12b3dfdden",
+              "price": 299000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/quan-long-tights-mac-trong|651c57106e69ad38a12b3dfdden-phoi-xam",
+              "price": 299000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/quan-long-tights-mac-trong|651c57106e69ad38a12b3dfdxam-dam",
+              "price": 299000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/quan-shorts-nam-exdry-proactive-world-cup|69b907ccca7a450b221aacfbden",
+              "price": 379000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/quan-shorts-nam-exdry-proactive-world-cup|69b907ccca7a450b221aacfbnavy",
+              "price": 379000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/quan-tights-lunaflex-exdry|69843f3c959b205802384da9den",
+              "price": 199000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/quan-tights-lunaflex-exdry|69843f3c959b205802384da9trang",
+              "price": 199000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/set-do-tap-the-thao-nu-3-xanh-neon-den|6a3906696b50310a32316d76xanh-neon---den",
+              "price": 468000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/t-shirt-chay-bo-nam-graphic-sky|6884408b908aa63d1a04a6e0cam-dao",
+              "price": 239000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/tat-co-ngan-chay-bo-nu|67c70106e76f5d7ff47e76f1cam",
+              "price": 79000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/tat-co-ngan-chay-bo-nu|67c70106e76f5d7ff47e76f1den",
+              "price": 79000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/tat-co-ngan-chay-bo-nu|67c70106e76f5d7ff47e76f1hong",
+              "price": 79000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/tat-co-ngan-chay-bo-nu|67c70106e76f5d7ff47e76f1tim",
+              "price": 79000
+            },
+            {
+              "entity_id": "coolmate|offer|https://www.coolmate.me/product/tat-co-ngan-chay-bo-nu|67c70106e76f5d7ff47e76f1trang",
+              "price": 79000
+            }
+          ]
+        },
+        {
+          "source": "juno",
+          "market": "VN-storefront",
+          "grain": "offer",
+          "currency": "VND",
+          "n": 15,
+          "parent_n": 15,
+          "min": 20000,
+          "q25": 149000,
+          "median": 199000,
+          "q75": 249000,
+          "max": 559000,
+          "points": [
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/dep-mui-vuong-khoa-trang-tri-388841|301554287954100999",
+              "price": 395000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-bup-be-mui-nhon-cut-out-cach-dieu-388822|301553991685243655",
+              "price": 99000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-kitten-heels-pump-388881|301555092354499335",
+              "price": 199000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+              "price": 299000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-slingback-got-thanh-388869|301554809910067975",
+              "price": 149000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-slingback-got-vuong-388846|301554272418398983",
+              "price": 199000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-slingback-ho-388838|301554258845631239",
+              "price": 199000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-suc-got-tru-thap-phoi-quai-ngang-388865|301554652355235845",
+              "price": 199000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+              "price": 199000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-vuong-quai-ngang-ban-lon-quai-co-chan-388850|301554255607628551",
+              "price": 149000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-vuong-quai-ngang-phoi-khoa-trang-tri-388836|301554242001306375",
+              "price": 499000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-xuong-quai-cheo-388820|301553956402758407",
+              "price": 149000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/tui-giay-tg001-388845|301554368249860101",
+              "price": 20000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/tui-giay-tg003-388834|301554246615040775",
+              "price": 25000
+            },
+            {
+              "entity_id": "juno|offer|https://juno.vn/products/tui-xach-nho-baguette-deo-vai-khoa-xoay-388848|301554326524920583",
+              "price": 559000
+            }
+          ]
+        },
+        {
+          "source": "yody",
+          "market": "VN-storefront",
+          "grain": "variant",
+          "currency": "VND",
+          "n": 154,
+          "parent_n": 19,
+          "min": 29000,
+          "q25": 49000,
+          "median": 229000,
+          "q75": 324500,
+          "max": 799000,
+          "points": [
+            {
+              "entity_id": "yody|variant|14215|91296",
+              "price": 99000
+            },
+            {
+              "entity_id": "yody|variant|35725|87167",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|35725|87168",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|35725|87175",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|35725|87176",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|35725|87177",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|35725|87178",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|35842|89429",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36356|96223",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36356|96224",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36356|96235",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36356|96236",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36356|96237",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36389|103367",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99254",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99255",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99256",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99257",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99258",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99259",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99260",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99261",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99262",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99263",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99264",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99265",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99268",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99269",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99271",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99272",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99273",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99274",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99275",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36637|99276",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36979|103861",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36979|103862",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36979|103863",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36979|103864",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36979|103865",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|36979|103866",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105971",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105973",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105974",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105975",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105976",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105979",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105980",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105981",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105982",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105983",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105984",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105985",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37147|105986",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37688|116634",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119531",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119532",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119533",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119534",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119535",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119536",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119537",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119538",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119539",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119540",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119541",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|37845|119542",
+              "price": 49000
+            },
+            {
+              "entity_id": "yody|variant|38090|123363",
+              "price": 29000
+            },
+            {
+              "entity_id": "yody|variant|38265|125865",
+              "price": 349000
+            },
+            {
+              "entity_id": "yody|variant|38265|125866",
+              "price": 349000
+            },
+            {
+              "entity_id": "yody|variant|38265|125869",
+              "price": 349000
+            },
+            {
+              "entity_id": "yody|variant|38265|125870",
+              "price": 349000
+            },
+            {
+              "entity_id": "yody|variant|38265|125873",
+              "price": 349000
+            },
+            {
+              "entity_id": "yody|variant|38265|125874",
+              "price": 349000
+            },
+            {
+              "entity_id": "yody|variant|38343|126902",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126903",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126904",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126905",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126908",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126909",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126910",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126911",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126914",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126915",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126916",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38343|126917",
+              "price": 799000
+            },
+            {
+              "entity_id": "yody|variant|38703|166100",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166101",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166102",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166103",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166104",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166105",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166106",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166107",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166108",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166109",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166110",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166111",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166112",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166113",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38703|166114",
+              "price": 299000
+            },
+            {
+              "entity_id": "yody|variant|38710|166253",
+              "price": 324500
+            },
+            {
+              "entity_id": "yody|variant|38710|166254",
+              "price": 324500
+            },
+            {
+              "entity_id": "yody|variant|38710|166256",
+              "price": 324500
+            },
+            {
+              "entity_id": "yody|variant|38710|166257",
+              "price": 324500
+            },
+            {
+              "entity_id": "yody|variant|38710|166259",
+              "price": 324500
+            },
+            {
+              "entity_id": "yody|variant|38710|166260",
+              "price": 324500
+            },
+            {
+              "entity_id": "yody|variant|38710|166263",
+              "price": 324500
+            },
+            {
+              "entity_id": "yody|variant|38710|166264",
+              "price": 324500
+            },
+            {
+              "entity_id": "yody|variant|38710|166265",
+              "price": 324500
+            },
+            {
+              "entity_id": "yody|variant|38874|180328",
+              "price": 399000
+            },
+            {
+              "entity_id": "yody|variant|38874|180329",
+              "price": 399000
+            },
+            {
+              "entity_id": "yody|variant|39002|187266",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187267",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187269",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187270",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187271",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187273",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187274",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187275",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187276",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187278",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187279",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39002|187280",
+              "price": 479200
+            },
+            {
+              "entity_id": "yody|variant|39376|395276",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395277",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395278",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395280",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395281",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395282",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395283",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395285",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395286",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395287",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395288",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395290",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395291",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395292",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395293",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395295",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395296",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395297",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395298",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395300",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395301",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395302",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395303",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395305",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395307",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395308",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395309",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395310",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395311",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|39376|395312",
+              "price": 229000
+            },
+            {
+              "entity_id": "yody|variant|6228|22821",
+              "price": 399000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "discount-spread",
+      "status": "available",
+      "definition": "100*(reference-price)/reference; reference is merchant compare-at/original price, not verified prior selling price.",
+      "unit": "percent",
+      "denominator": "rows with explicit currency, reference > 0 and 0 <= price <= reference",
+      "window": "snapshot capture window, not time-series",
+      "minimum_sample": 1,
+      "interpretation": "descriptive convenience sample only; no market population inference",
+      "missingness": "exclude unknown measure; report coverage separately",
+      "data": [
+        {
+          "entity_id": "allbirds|variant|7340901859408|42146889039952",
+          "source": "allbirds",
+          "grain": "variant",
+          "currency": "USD",
+          "price": 25,
+          "reference_price": 50,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "allbirds|variant|7340901859408|42146889072720",
+          "source": "allbirds",
+          "grain": "variant",
+          "currency": "USD",
+          "price": 25,
+          "reference_price": 50,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "allbirds|variant|7340901859408|42146889105488",
+          "source": "allbirds",
+          "grain": "variant",
+          "currency": "USD",
+          "price": 25,
+          "reference_price": 50,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "allbirds|variant|7340901859408|42146889138256",
+          "source": "allbirds",
+          "grain": "variant",
+          "currency": "USD",
+          "price": 25,
+          "reference_price": 50,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "allbirds|variant|7340901859408|42146889171024",
+          "source": "allbirds",
+          "grain": "variant",
+          "currency": "USD",
+          "price": 25,
+          "reference_price": 50,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "allbirds|variant|7340901859408|42146889203792",
+          "source": "allbirds",
+          "grain": "variant",
+          "currency": "USD",
+          "price": 25,
+          "reference_price": 50,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "allbirds|variant|7340901859408|42146889236560",
+          "source": "allbirds",
+          "grain": "variant",
+          "currency": "USD",
+          "price": 25,
+          "reference_price": 50,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "yody|variant|14215|91296",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 99000,
+          "reference_price": 99000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|35725|87167",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|35725|87168",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|35725|87175",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|35725|87176",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|35725|87177",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|35725|87178",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|35842|89429",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36356|96223",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36356|96224",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36356|96235",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36356|96236",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36356|96237",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36389|103367",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99254",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99255",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99256",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99257",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99258",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99259",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99260",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99261",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99262",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99263",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99264",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99265",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99268",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99269",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99271",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99272",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99273",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99274",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99275",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36637|99276",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36979|103861",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36979|103862",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36979|103863",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36979|103864",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36979|103865",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|36979|103866",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105971",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105973",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105974",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105975",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105976",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105979",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105980",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105981",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105982",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105983",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105984",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105985",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37147|105986",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37688|116634",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119531",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119532",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119533",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119534",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119535",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119536",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119537",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119538",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119539",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119540",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119541",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|37845|119542",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 49000,
+          "reference_price": 49000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38090|123363",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 29000,
+          "reference_price": 29000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38265|125865",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 349000,
+          "reference_price": 349000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38265|125866",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 349000,
+          "reference_price": 349000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38265|125869",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 349000,
+          "reference_price": 349000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38265|125870",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 349000,
+          "reference_price": 349000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38265|125873",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 349000,
+          "reference_price": 349000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38265|125874",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 349000,
+          "reference_price": 349000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126902",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126903",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126904",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126905",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126908",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126909",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126910",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126911",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126914",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126915",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126916",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38343|126917",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 799000,
+          "reference_price": 799000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166100",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166101",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166102",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166103",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166104",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166105",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166106",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166107",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166108",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166109",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166110",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166111",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166112",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166113",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38703|166114",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 299000,
+          "reference_price": 299000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38710|166253",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 324500,
+          "reference_price": 649000,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "yody|variant|38710|166254",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 324500,
+          "reference_price": 649000,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "yody|variant|38710|166256",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 324500,
+          "reference_price": 649000,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "yody|variant|38710|166257",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 324500,
+          "reference_price": 649000,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "yody|variant|38710|166259",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 324500,
+          "reference_price": 649000,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "yody|variant|38710|166260",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 324500,
+          "reference_price": 649000,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "yody|variant|38710|166263",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 324500,
+          "reference_price": 649000,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "yody|variant|38710|166264",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 324500,
+          "reference_price": 649000,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "yody|variant|38710|166265",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 324500,
+          "reference_price": 649000,
+          "discount_pct": 50
+        },
+        {
+          "entity_id": "yody|variant|38874|180328",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 399000,
+          "reference_price": 399000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|38874|180329",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 399000,
+          "reference_price": 399000,
+          "discount_pct": 0
+        },
+        {
+          "entity_id": "yody|variant|39002|187266",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187267",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187269",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187270",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187271",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187273",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187274",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187275",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187276",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187278",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187279",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39002|187280",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 479200,
+          "reference_price": 599000,
+          "discount_pct": 20
+        },
+        {
+          "entity_id": "yody|variant|39376|395276",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395277",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395278",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395280",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395281",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395282",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395283",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395285",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395286",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395287",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395288",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395290",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395291",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395292",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395293",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395295",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395296",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395297",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395298",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395300",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395301",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395302",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395303",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395305",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395307",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395308",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395309",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395310",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395311",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|39376|395312",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 229000,
+          "reference_price": 349000,
+          "discount_pct": 34.383954154727796
+        },
+        {
+          "entity_id": "yody|variant|6228|22821",
+          "source": "yody",
+          "grain": "variant",
+          "currency": "VND",
+          "price": 399000,
+          "reference_price": 399000,
+          "discount_pct": 0
+        }
+      ]
+    },
+    {
+      "id": "listing-availability",
+      "status": "available",
+      "definition": "in_stock/(in_stock+out_of_stock), unknown or other status excluded.",
+      "unit": "share 0..1",
+      "denominator": "known rows within source/grain",
+      "window": "snapshot capture window, not time-series",
+      "minimum_sample": 1,
+      "interpretation": "descriptive convenience sample only; no market population inference",
+      "missingness": "exclude unknown measure; report coverage separately",
+      "data": [
+        {
+          "source": "allbirds",
+          "grain": "variant",
+          "total": 361,
+          "known": 361,
+          "missing_or_other": 0,
+          "in_stock": 51,
+          "in_stock_share": 0.14127423822714683
+        },
+        {
+          "source": "cocoon",
+          "grain": "parent",
+          "total": 10,
+          "known": 0,
+          "missing_or_other": 10,
+          "in_stock": 0,
+          "in_stock_share": null
+        },
+        {
+          "source": "coolmate",
+          "grain": "offer",
+          "total": 81,
+          "known": 81,
+          "missing_or_other": 0,
+          "in_stock": 75,
+          "in_stock_share": 0.9259259259259259
+        },
+        {
+          "source": "juno",
+          "grain": "offer",
+          "total": 15,
+          "known": 15,
+          "missing_or_other": 0,
+          "in_stock": 4,
+          "in_stock_share": 0.26666666666666666
+        },
+        {
+          "source": "yody",
+          "grain": "parent",
+          "total": 1,
+          "known": 0,
+          "missing_or_other": 1,
+          "in_stock": 0,
+          "in_stock_share": null
+        },
+        {
+          "source": "yody",
+          "grain": "variant",
+          "total": 154,
+          "known": 154,
+          "missing_or_other": 0,
+          "in_stock": 80,
+          "in_stock_share": 0.5194805194805194
+        }
+      ]
+    },
+    {
+      "id": "variant-depth",
+      "status": "available",
+      "definition": "Count observed rows per source parent and grain. Only variant grain establishes variant count.",
+      "unit": "count",
+      "denominator": "one source parent per grain",
+      "window": "snapshot capture window, not time-series",
+      "minimum_sample": 1,
+      "interpretation": "descriptive convenience sample only; no market population inference",
+      "missingness": "exclude unknown measure; report coverage separately",
+      "data": [
+        {
+          "source": "allbirds",
+          "parent_id": "4870548979792",
+          "grain": "variant",
+          "row_count": 7,
+          "verified_variant_count": 7
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7082686611536",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7082971496528",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7091632472144",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7091689848912",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7113533128784",
+          "grain": "variant",
+          "row_count": 7,
+          "verified_variant_count": 7
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7128005214288",
+          "grain": "variant",
+          "row_count": 7,
+          "verified_variant_count": 7
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7131000766544",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7131040579664",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7132577169488",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7162418888784",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7188363673680",
+          "grain": "variant",
+          "row_count": 14,
+          "verified_variant_count": 14
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7193243811920",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7193756172368",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7193756205136",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7199663816784",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7205190795344",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7205192695888",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7205193515088",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7205195907152",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7205198102608",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7205198299216",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7205202165840",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7205211570256",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7234399830096",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7235869147216",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7258384564304",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7258385809488",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7340901859408",
+          "grain": "variant",
+          "row_count": 7,
+          "verified_variant_count": 7
+        },
+        {
+          "source": "allbirds",
+          "parent_id": "7351247667280",
+          "grain": "variant",
+          "row_count": 7,
+          "verified_variant_count": 7
+        },
+        {
+          "source": "cocoon",
+          "parent_id": "https://cocoonvietnam.com/san-pham/dau-goi-bo-ket-500ml",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "cocoon",
+          "parent_id": "https://cocoonvietnam.com/san-pham/gel-bi-dao-rua-mat-500ml",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "cocoon",
+          "parent_id": "https://cocoonvietnam.com/san-pham/gel-tam-bi-dao-500ml",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "cocoon",
+          "parent_id": "https://cocoonvietnam.com/san-pham/gel-tam-nghe-hung-yen-500ml",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "cocoon",
+          "parent_id": "https://cocoonvietnam.com/san-pham/mat-na-nghe-hung-yen-100ml",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "cocoon",
+          "parent_id": "https://cocoonvietnam.com/san-pham/nuoc-duong-toc-tinh-dau-buoi-140ml-1",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "cocoon",
+          "parent_id": "https://cocoonvietnam.com/san-pham/nuoc-tay-trang-bi-dao-500ml",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "cocoon",
+          "parent_id": "https://cocoonvietnam.com/san-pham/sua-chong-nang-vo-co-sen-hau-giang-50ml-tone-up-beige",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "cocoon",
+          "parent_id": "https://cocoonvietnam.com/san-pham/sua-rua-mat-sen-hau-giang-500ml",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "cocoon",
+          "parent_id": "https://cocoonvietnam.com/san-pham/tui-refill-sua-rua-mat-sen-hau-giang-500ml",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/2-doi-tat-co-trung-ribbed-coolmate",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-cotton-care-share-tram-phong-tuong-lai-s1",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-croptop-nu-cotton-poly",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-giu-nhiet-ex-warm-lenzing-modal-co-cao",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-in-cotton-care-share-nu-cuoi",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-khoac-the-thao-windbreaker-nylon-ribstop",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-polo-dai-tay-the-thao-promax-flexline-active",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-polo-world-cup-doi-tuyen-phap",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-spider-man-the-mask",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-the-thao-nu-lightweight-cropped-tee",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-thun-chay-bo-nam-airflow-exdry-gradient",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-thun-cotton-care-share-in-fire-signs-cung-hoang-dao-collection",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-thun-cotton-slim-fit-phoi-bo-vien-kitty-is-winking",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-thun-nam-gym-essentials-vai-mesh-peach-co-gian-exdry-thoang-khi",
+          "grain": "offer",
+          "row_count": 4,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-thun-nu-baby-tee-100-cotton-meo-luoi",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-thun-oversize-basic-84rising-lets-dance",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-thun-relaxed-fit-84rising-donald-duck-iconic",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-thun-toy-story-5-cow-girl",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-tshirt-cotton-compact-world-cup-doi-tuyen-argentina",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/ao-tshirt-relax-chay-bo-nam-360reflect",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/bra-the-thao-crossback-vital-seamless",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/combo-3-ao-thun-nam-mac-trong-thoang-khi-nhanh-kho-excool",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/coolmate-headband-breeze",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/legging-78-coolflex-light-suppport",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/pack-2-tat-yoga-pilates-chong-truot-ruffles-socks-amazon",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/polo-nam-phoi-mesh-coolback",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/quan-dai-nam-kaki-excool-dang-regular-straight",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/quan-long-tights-mac-trong",
+          "grain": "offer",
+          "row_count": 3,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/quan-shorts-nam-exdry-proactive-world-cup",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/quan-tights-lunaflex-exdry",
+          "grain": "offer",
+          "row_count": 2,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/set-do-tap-the-thao-nu-3-xanh-neon-den",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/t-shirt-chay-bo-nam-graphic-sky",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "coolmate",
+          "parent_id": "https://www.coolmate.me/product/tat-co-ngan-chay-bo-nu",
+          "grain": "offer",
+          "row_count": 5,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/dep-mui-vuong-khoa-trang-tri-388841",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-bup-be-mui-nhon-cut-out-cach-dieu-388822",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-cao-got-kitten-heels-pump-388881",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-cao-got-slingback-got-thanh-388869",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-cao-got-slingback-got-vuong-388846",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-cao-got-slingback-ho-388838",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-cao-got-suc-got-tru-thap-phoi-quai-ngang-388865",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-sandal-got-vuong-quai-ngang-ban-lon-quai-co-chan-388850",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-sandal-got-vuong-quai-ngang-phoi-khoa-trang-tri-388836",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/giay-sandal-xuong-quai-cheo-388820",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/tui-giay-tg001-388845",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/tui-giay-tg003-388834",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "juno",
+          "parent_id": "https://juno.vn/products/tui-xach-nho-baguette-deo-vai-khoa-xoay-388848",
+          "grain": "offer",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "yody",
+          "parent_id": "4678",
+          "grain": "parent",
+          "row_count": 1,
+          "verified_variant_count": null
+        },
+        {
+          "source": "yody",
+          "parent_id": "14215",
+          "grain": "variant",
+          "row_count": 1,
+          "verified_variant_count": 1
+        },
+        {
+          "source": "yody",
+          "parent_id": "35725",
+          "grain": "variant",
+          "row_count": 6,
+          "verified_variant_count": 6
+        },
+        {
+          "source": "yody",
+          "parent_id": "35842",
+          "grain": "variant",
+          "row_count": 1,
+          "verified_variant_count": 1
+        },
+        {
+          "source": "yody",
+          "parent_id": "36356",
+          "grain": "variant",
+          "row_count": 5,
+          "verified_variant_count": 5
+        },
+        {
+          "source": "yody",
+          "parent_id": "36389",
+          "grain": "variant",
+          "row_count": 1,
+          "verified_variant_count": 1
+        },
+        {
+          "source": "yody",
+          "parent_id": "36637",
+          "grain": "variant",
+          "row_count": 20,
+          "verified_variant_count": 20
+        },
+        {
+          "source": "yody",
+          "parent_id": "36979",
+          "grain": "variant",
+          "row_count": 6,
+          "verified_variant_count": 6
+        },
+        {
+          "source": "yody",
+          "parent_id": "37147",
+          "grain": "variant",
+          "row_count": 13,
+          "verified_variant_count": 13
+        },
+        {
+          "source": "yody",
+          "parent_id": "37688",
+          "grain": "variant",
+          "row_count": 1,
+          "verified_variant_count": 1
+        },
+        {
+          "source": "yody",
+          "parent_id": "37845",
+          "grain": "variant",
+          "row_count": 12,
+          "verified_variant_count": 12
+        },
+        {
+          "source": "yody",
+          "parent_id": "38090",
+          "grain": "variant",
+          "row_count": 1,
+          "verified_variant_count": 1
+        },
+        {
+          "source": "yody",
+          "parent_id": "38265",
+          "grain": "variant",
+          "row_count": 6,
+          "verified_variant_count": 6
+        },
+        {
+          "source": "yody",
+          "parent_id": "38343",
+          "grain": "variant",
+          "row_count": 12,
+          "verified_variant_count": 12
+        },
+        {
+          "source": "yody",
+          "parent_id": "38703",
+          "grain": "variant",
+          "row_count": 15,
+          "verified_variant_count": 15
+        },
+        {
+          "source": "yody",
+          "parent_id": "38710",
+          "grain": "variant",
+          "row_count": 9,
+          "verified_variant_count": 9
+        },
+        {
+          "source": "yody",
+          "parent_id": "38874",
+          "grain": "variant",
+          "row_count": 2,
+          "verified_variant_count": 2
+        },
+        {
+          "source": "yody",
+          "parent_id": "39002",
+          "grain": "variant",
+          "row_count": 12,
+          "verified_variant_count": 12
+        },
+        {
+          "source": "yody",
+          "parent_id": "39376",
+          "grain": "variant",
+          "row_count": 30,
+          "verified_variant_count": 30
+        },
+        {
+          "source": "yody",
+          "parent_id": "6228",
+          "grain": "variant",
+          "row_count": 1,
+          "verified_variant_count": 1
+        }
+      ]
+    },
+    {
+      "id": "field-coverage",
+      "status": "available",
+      "definition": "Observed and missing field counts per source; null excluded from observed.",
+      "unit": "count",
+      "denominator": "all rows per source",
+      "window": "snapshot capture window, not time-series",
+      "minimum_sample": 1,
+      "interpretation": "descriptive convenience sample only; no market population inference",
+      "missingness": "exclude unknown measure; report coverage separately",
+      "data": [
+        {
+          "source": "allbirds",
+          "field": "name",
+          "n": 361,
+          "missing": 0,
+          "observed": 361
+        },
+        {
+          "source": "allbirds",
+          "field": "brand",
+          "n": 361,
+          "missing": 0,
+          "observed": 361
+        },
+        {
+          "source": "allbirds",
+          "field": "category",
+          "n": 361,
+          "missing": 0,
+          "observed": 361
+        },
+        {
+          "source": "allbirds",
+          "field": "price",
+          "n": 361,
+          "missing": 0,
+          "observed": 361
+        },
+        {
+          "source": "allbirds",
+          "field": "currency",
+          "n": 361,
+          "missing": 302,
+          "observed": 59
+        },
+        {
+          "source": "allbirds",
+          "field": "availability",
+          "n": 361,
+          "missing": 0,
+          "observed": 361
+        },
+        {
+          "source": "allbirds",
+          "field": "barcode",
+          "n": 361,
+          "missing": 361,
+          "observed": 0
+        },
+        {
+          "source": "allbirds",
+          "field": "rating",
+          "n": 361,
+          "missing": 361,
+          "observed": 0
+        },
+        {
+          "source": "allbirds",
+          "field": "rating_count",
+          "n": 361,
+          "missing": 361,
+          "observed": 0
+        },
+        {
+          "source": "allbirds",
+          "field": "public_sold_counter",
+          "n": 361,
+          "missing": 361,
+          "observed": 0
+        },
+        {
+          "source": "allbirds",
+          "field": "sold_counter_window",
+          "n": 361,
+          "missing": 361,
+          "observed": 0
+        },
+        {
+          "source": "allbirds",
+          "field": "units_sold",
+          "n": 361,
+          "missing": 361,
+          "observed": 0
+        },
+        {
+          "source": "allbirds",
+          "field": "orders",
+          "n": 361,
+          "missing": 361,
+          "observed": 0
+        },
+        {
+          "source": "allbirds",
+          "field": "conversion_rate",
+          "n": 361,
+          "missing": 361,
+          "observed": 0
+        },
+        {
+          "source": "allbirds",
+          "field": "commission_rate",
+          "n": 361,
+          "missing": 361,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "name",
+          "n": 10,
+          "missing": 0,
+          "observed": 10
+        },
+        {
+          "source": "cocoon",
+          "field": "brand",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "category",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "price",
+          "n": 10,
+          "missing": 0,
+          "observed": 10
+        },
+        {
+          "source": "cocoon",
+          "field": "currency",
+          "n": 10,
+          "missing": 0,
+          "observed": 10
+        },
+        {
+          "source": "cocoon",
+          "field": "availability",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "barcode",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "rating",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "rating_count",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "public_sold_counter",
+          "n": 10,
+          "missing": 0,
+          "observed": 10
+        },
+        {
+          "source": "cocoon",
+          "field": "sold_counter_window",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "units_sold",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "orders",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "conversion_rate",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "cocoon",
+          "field": "commission_rate",
+          "n": 10,
+          "missing": 10,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "name",
+          "n": 81,
+          "missing": 0,
+          "observed": 81
+        },
+        {
+          "source": "coolmate",
+          "field": "brand",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "category",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "price",
+          "n": 81,
+          "missing": 0,
+          "observed": 81
+        },
+        {
+          "source": "coolmate",
+          "field": "currency",
+          "n": 81,
+          "missing": 0,
+          "observed": 81
+        },
+        {
+          "source": "coolmate",
+          "field": "availability",
+          "n": 81,
+          "missing": 0,
+          "observed": 81
+        },
+        {
+          "source": "coolmate",
+          "field": "barcode",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "rating",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "rating_count",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "public_sold_counter",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "sold_counter_window",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "units_sold",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "orders",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "conversion_rate",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "coolmate",
+          "field": "commission_rate",
+          "n": 81,
+          "missing": 81,
+          "observed": 0
+        },
+        {
+          "source": "juno",
+          "field": "name",
+          "n": 15,
+          "missing": 0,
+          "observed": 15
+        },
+        {
+          "source": "juno",
+          "field": "brand",
+          "n": 15,
+          "missing": 15,
+          "observed": 0
+        },
+        {
+          "source": "juno",
+          "field": "category",
+          "n": 15,
+          "missing": 0,
+          "observed": 15
+        },
+        {
+          "source": "juno",
+          "field": "price",
+          "n": 15,
+          "missing": 0,
+          "observed": 15
+        },
+        {
+          "source": "juno",
+          "field": "currency",
+          "n": 15,
+          "missing": 0,
+          "observed": 15
+        },
+        {
+          "source": "juno",
+          "field": "availability",
+          "n": 15,
+          "missing": 0,
+          "observed": 15
+        },
+        {
+          "source": "juno",
+          "field": "barcode",
+          "n": 15,
+          "missing": 15,
+          "observed": 0
+        },
+        {
+          "source": "juno",
+          "field": "rating",
+          "n": 15,
+          "missing": 15,
+          "observed": 0
+        },
+        {
+          "source": "juno",
+          "field": "rating_count",
+          "n": 15,
+          "missing": 15,
+          "observed": 0
+        },
+        {
+          "source": "juno",
+          "field": "public_sold_counter",
+          "n": 15,
+          "missing": 15,
+          "observed": 0
+        },
+        {
+          "source": "juno",
+          "field": "sold_counter_window",
+          "n": 15,
+          "missing": 15,
+          "observed": 0
+        },
+        {
+          "source": "juno",
+          "field": "units_sold",
+          "n": 15,
+          "missing": 15,
+          "observed": 0
+        },
+        {
+          "source": "juno",
+          "field": "orders",
+          "n": 15,
+          "missing": 15,
+          "observed": 0
+        },
+        {
+          "source": "juno",
+          "field": "conversion_rate",
+          "n": 15,
+          "missing": 15,
+          "observed": 0
+        },
+        {
+          "source": "juno",
+          "field": "commission_rate",
+          "n": 15,
+          "missing": 15,
+          "observed": 0
+        },
+        {
+          "source": "yody",
+          "field": "name",
+          "n": 155,
+          "missing": 0,
+          "observed": 155
+        },
+        {
+          "source": "yody",
+          "field": "brand",
+          "n": 155,
+          "missing": 155,
+          "observed": 0
+        },
+        {
+          "source": "yody",
+          "field": "category",
+          "n": 155,
+          "missing": 0,
+          "observed": 155
+        },
+        {
+          "source": "yody",
+          "field": "price",
+          "n": 155,
+          "missing": 1,
+          "observed": 154
+        },
+        {
+          "source": "yody",
+          "field": "currency",
+          "n": 155,
+          "missing": 1,
+          "observed": 154
+        },
+        {
+          "source": "yody",
+          "field": "availability",
+          "n": 155,
+          "missing": 1,
+          "observed": 154
+        },
+        {
+          "source": "yody",
+          "field": "barcode",
+          "n": 155,
+          "missing": 155,
+          "observed": 0
+        },
+        {
+          "source": "yody",
+          "field": "rating",
+          "n": 155,
+          "missing": 155,
+          "observed": 0
+        },
+        {
+          "source": "yody",
+          "field": "rating_count",
+          "n": 155,
+          "missing": 155,
+          "observed": 0
+        },
+        {
+          "source": "yody",
+          "field": "public_sold_counter",
+          "n": 155,
+          "missing": 155,
+          "observed": 0
+        },
+        {
+          "source": "yody",
+          "field": "sold_counter_window",
+          "n": 155,
+          "missing": 155,
+          "observed": 0
+        },
+        {
+          "source": "yody",
+          "field": "units_sold",
+          "n": 155,
+          "missing": 155,
+          "observed": 0
+        },
+        {
+          "source": "yody",
+          "field": "orders",
+          "n": 155,
+          "missing": 155,
+          "observed": 0
+        },
+        {
+          "source": "yody",
+          "field": "conversion_rate",
+          "n": 155,
+          "missing": 155,
+          "observed": 0
+        },
+        {
+          "source": "yody",
+          "field": "commission_rate",
+          "n": 155,
+          "missing": 155,
+          "observed": 0
+        }
+      ]
+    },
+    {
+      "id": "category-coverage",
+      "status": "available",
+      "definition": "Distinct source parent count by explicit source category; null category retained.",
+      "unit": "parent count",
+      "denominator": "one row per source parent; no standardized taxonomy",
+      "window": "snapshot capture window, not time-series",
+      "minimum_sample": 1,
+      "interpretation": "descriptive convenience sample only; no market population inference",
+      "missingness": "exclude unknown measure; report coverage separately",
+      "data": [
+        {
+          "source": "allbirds",
+          "category": "Shoes",
+          "parent_n": 30
+        },
+        {
+          "source": "cocoon",
+          "category": null,
+          "parent_n": 10
+        },
+        {
+          "source": "coolmate",
+          "category": null,
+          "parent_n": 33
+        },
+        {
+          "source": "juno",
+          "category": "Giày",
+          "parent_n": 12
+        },
+        {
+          "source": "juno",
+          "category": "Phụ Kiện",
+          "parent_n": 2
+        },
+        {
+          "source": "juno",
+          "category": "Túi",
+          "parent_n": 1
+        },
+        {
+          "source": "yody",
+          "category": "Quần jeans nữ",
+          "parent_n": 2
+        },
+        {
+          "source": "yody",
+          "category": "Áo polo nữ",
+          "parent_n": 2
+        },
+        {
+          "source": "yody",
+          "category": "Sản phẩm khác",
+          "parent_n": 1
+        },
+        {
+          "source": "yody",
+          "category": "Quần nỉ trẻ em",
+          "parent_n": 2
+        },
+        {
+          "source": "yody",
+          "category": "Áo polo thể thao",
+          "parent_n": 1
+        },
+        {
+          "source": "yody",
+          "category": "Áo polo nam",
+          "parent_n": 5
+        },
+        {
+          "source": "yody",
+          "category": "Đầm và chân váy nữ",
+          "parent_n": 1
+        },
+        {
+          "source": "yody",
+          "category": "Áo giữ nhiệt trẻ em",
+          "parent_n": 1
+        },
+        {
+          "source": "yody",
+          "category": "Áo len trẻ em",
+          "parent_n": 2
+        },
+        {
+          "source": "yody",
+          "category": "Đồ bộ nam",
+          "parent_n": 2
+        },
+        {
+          "source": "yody",
+          "category": "Áo phao nữ",
+          "parent_n": 1
+        }
+      ]
+    },
+    {
+      "id": "freshness",
+      "status": "available",
+      "definition": "Capture range and known source-update coverage; age can be computed relative to UI clock.",
+      "unit": "ISO8601 UTC",
+      "denominator": "all source rows",
+      "window": "snapshot capture window, not time-series",
+      "minimum_sample": 1,
+      "interpretation": "descriptive convenience sample only; no market population inference",
+      "missingness": "exclude unknown measure; report coverage separately",
+      "data": [
+        {
+          "source": "allbirds",
+          "n": 361,
+          "captured_from": "2026-10-21T06:53:24.432Z",
+          "captured_to": "2026-10-21T06:53:24.432Z",
+          "source_updated_known": 361
+        },
+        {
+          "source": "cocoon",
+          "n": 10,
+          "captured_from": "2026-10-21T07:02:16.410Z",
+          "captured_to": "2026-10-21T07:02:39.509Z",
+          "source_updated_known": 0
+        },
+        {
+          "source": "coolmate",
+          "n": 81,
+          "captured_from": "2026-10-21T06:53:25.897Z",
+          "captured_to": "2026-10-21T06:54:24.747Z",
+          "source_updated_known": 0
+        },
+        {
+          "source": "juno",
+          "n": 15,
+          "captured_from": "2026-10-21T06:55:13.126Z",
+          "captured_to": "2026-10-21T06:55:33.653Z",
+          "source_updated_known": 0
+        },
+        {
+          "source": "yody",
+          "n": 155,
+          "captured_from": "2026-10-21T06:55:10.917Z",
+          "captured_to": "2026-10-21T06:55:33.577Z",
+          "source_updated_known": 0
+        }
+      ]
+    },
+    {
+      "id": "rating-review-scatter",
+      "status": "unavailable",
+      "data": [],
+      "reason": "Need aggregate rating, count, scale and exact rating grain.",
+      "minimum_sample": null
+    },
+    {
+      "id": "listing-demand-proxy",
+      "status": "unavailable",
+      "data": [],
+      "reason": "Visible public counters may exist but window is unknown; cannot compare sales velocity. Need documented counter window and grain; counters are not verified orders.",
+      "minimum_sample": null
+    },
+    {
+      "id": "trend-time-series",
+      "status": "unavailable",
+      "data": [],
+      "reason": "Need authentic dated keyword/platform series with market, sampling, scaling and provenance; repeated captures minutes apart are not trends.",
+      "minimum_sample": null
+    },
+    {
+      "id": "conversion-funnel",
+      "status": "unavailable",
+      "data": [],
+      "reason": "Need seller/affiliate export with video/SKU keys, impressions, clicks, attributed orders, attribution window.",
+      "minimum_sample": null
+    },
+    {
+      "id": "profit-commission",
+      "status": "unavailable",
+      "data": [],
+      "reason": "Need authorized realized commission, net paid orders/refunds, costs, fees and tax; public headline commission is not realized earnings.",
+      "minimum_sample": null
+    }
+  ]
+}

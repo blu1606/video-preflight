@@ -1,0 +1,249 @@
+/* Decisions dialog and agent flow / Agent map. Mockup-v2 tokens only, scoped under .pf-root.
+   Text is 12px or larger and holds 4.5:1 on its ground (accent text uses --accent-ink). */
+
+.pf-root .dd-chip.is-inferred, .pf-root .dd-status.is-inferred { --tone: var(--blue); --tone-bg: rgba(29, 78, 216, .08); }
+.pf-root .dd-chip.is-real, .pf-root .dd-status.is-real { --tone: var(--pass); --tone-bg: var(--pass-tint); }
+.pf-root .dd-chip.is-mock, .pf-root .dd-status.is-mock { --tone: var(--amber); --tone-bg: var(--amber-tint); }
+.pf-root .dd-chip.is-missing, .pf-root .dd-status.is-missing { --tone: var(--critical); --tone-bg: var(--critical-tint); }
+
+/* ---------- Decisions dialog shell ---------- */
+.pf-root .dd-modal { z-index: 70; padding: var(--s5); }
+.pf-root .dd-dialog { width: min(1720px, 100%); height: calc(100vh - 48px); max-height: none; overflow: hidden; display: grid; grid-template-rows: auto auto minmax(0, 1fr); background: var(--surface); }
+.pf-root .dd-head { position: static; align-items: flex-start; gap: var(--s4); }
+.pf-root .dd-head h2 { font-size: var(--fs-lg); letter-spacing: -.02em; }
+.pf-root .dd-sub { margin-top: 4px; color: var(--muted); font-size: var(--fs-sm); max-width: 110ch; }
+.pf-root .dd-legend { display: flex; gap: 6px; align-items: center; padding-top: 4px; }
+.pf-root .dd-tabs { position: static; padding: 0 20px; }
+.pf-root .dd-body { min-height: 0; overflow: hidden; }
+.pf-root .dd-split { height: 100%; display: grid; grid-template-columns: minmax(0, 1fr) minmax(420px, 34%); }
+.pf-root .dd-map, .pf-root .dd-video, .pf-root .dd-side { min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; }
+.pf-root .dd-map, .pf-root .dd-video { padding: var(--s4) 20px var(--s5); }
+.pf-root .dd-side { padding: var(--s4) 20px var(--s5); border-left: 1px solid var(--line); background: var(--subtle); }
+.pf-root .dd-empty { padding: var(--s5); color: var(--muted); }
+.pf-root .dd-note { margin: 0; color: var(--muted); font-size: var(--fs-xs); line-height: 1.5; }
+.pf-root .dd-note + .dd-note, .pf-root .dd-hint p + p { margin-top: 6px; }
+
+.pf-root .dd-status { display: inline-block; padding: 0 7px; border-radius: 2px; font: 600 12px/20px var(--font-mono); background: var(--tone-bg); color: var(--tone); white-space: nowrap; }
+
+/* map: evidence -> questions -> group score */
+.pf-root .dd-map-legend, .pf-root .dd-row { display: grid; grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1.35fr) 28px 120px; gap: var(--s3); }
+.pf-root .dd-map-legend { padding-bottom: var(--s2); border-bottom: 1px solid var(--line); color: var(--muted); font-size: var(--fs-xs); font-weight: 600; }
+.pf-root .dd-map-legend span:nth-child(2) { grid-column: 3; }
+.pf-root .dd-map-legend span:nth-child(3) { grid-column: 5; text-align: center; }
+.pf-root .dd-row { align-items: center; padding: var(--s3) 0; border-bottom: 1px solid var(--line); transition: background-color var(--t-fast); }
+.pf-root .dd-row.is-active { background: linear-gradient(90deg, transparent, var(--accent-tint) 30%, var(--accent-tint) 70%, transparent); }
+.pf-root .dd-chips { display: flex; flex-wrap: wrap; gap: 4px; align-content: center; }
+.pf-root .dd-chip { padding: 2px 7px; border-radius: 6px; font: 500 12px/18px var(--font-mono); background: var(--tone-bg); color: var(--tone); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tone) 22%, transparent); transition: opacity var(--t-fast), box-shadow var(--t-fast); word-break: break-all; }
+.pf-root .dd-chip.is-dim { opacity: .28; }
+.pf-root .dd-chip.is-lit { box-shadow: inset 0 0 0 2px var(--tone), 0 2px 6px -2px color-mix(in srgb, var(--tone) 50%, transparent); }
+.pf-root .dd-arrow { color: var(--muted); display: grid; place-items: center; }
+.pf-root .dd-arrow .ic svg { width: 20px; height: 20px; }
+.pf-root .dd-row-title { margin: 0 0 6px; font-size: var(--fs-sm); font-weight: 700; }
+.pf-root .dd-tiles { display: flex; flex-wrap: wrap; gap: 6px; }
+.pf-root .dd-tile { width: 136px; display: grid; gap: 2px; padding: 6px 8px; border: 1px solid var(--line-2); border-radius: var(--radius); background: var(--surface); text-align: left; color: var(--ink); transition: border-color var(--t-fast), box-shadow var(--t-fast); }
+.pf-root .dd-tile-top { display: flex; align-items: center; gap: 4px; }
+.pf-root .dd-qid { font: 700 12.5px/1.3 var(--font-mono); color: var(--ink-2); }
+.pf-root .dd-tile-val { margin-left: auto; font: 700 var(--fs-md)/1.2 var(--font-mono); font-variant-numeric: tabular-nums; max-width: 72px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pf-root .dd-tile-name { font-size: var(--fs-xs); line-height: 1.35; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pf-root .dd-tile.is-ok .dd-tile-val { color: var(--pass); }
+.pf-root .dd-tile.is-bad { background: var(--critical-tint); border-color: color-mix(in srgb, var(--critical) 30%, transparent); }
+.pf-root .dd-tile.is-bad .dd-tile-val { color: var(--critical); }
+.pf-root .dd-tile.is-neutral .dd-tile-val { font-size: var(--fs-xs); }
+.pf-root .dd-tile.is-missing { border-style: dashed; background: var(--subtle); }
+.pf-root .dd-tile.is-missing .dd-tile-val, .pf-root .dd-tile.is-missing .dd-tile-name { color: var(--muted); }
+.pf-root .dd-tile.is-sel { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+@media (hover: hover) {.pf-root .dd-tile:not(.is-sel):hover { border-color: var(--ink); } }
+.pf-root .dd-check { display: inline-grid; }
+.pf-root .dd-check .ic svg { width: 14px; height: 14px; }
+.pf-root .dd-check.is-conflict { color: var(--critical); }
+.pf-root .dd-check.is-agree { color: var(--pass); }
+.pf-root .dd-score { display: grid; justify-items: center; gap: 2px; padding: var(--s2); border-radius: var(--radius); background: var(--subtle); color: var(--muted); font-size: var(--fs-xs); text-align: center; }
+.pf-root .dd-score strong { font: 700 28px/1 var(--font-mono); font-variant-numeric: tabular-nums; letter-spacing: -.03em; color: var(--ink); }
+.pf-root .dd-score.is-ok strong { color: var(--pass); }
+.pf-root .dd-score.is-bad strong { color: var(--critical); }
+
+/* question detail */
+.pf-root .dd-hint h3 { margin-bottom: var(--s2); font-size: var(--fs-md); }
+.pf-root .dd-hint p { color: var(--ink-2); font-size: var(--fs-sm); max-width: 60ch; }
+.pf-root .dd-detail { display: grid; gap: var(--s3); animation: ddIn 220ms var(--ease-out); }
+@keyframes ddIn { from { opacity: 0; transform: translateY(6px); } }
+.pf-root .dd-detail-head { display: flex; gap: var(--s3); align-items: flex-start; }
+.pf-root .dd-detail-id { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+.pf-root .dd-detail-head h3 { font-size: var(--fs-lg); letter-spacing: -.01em; }
+.pf-root .dd-detail-val { font: 700 36px/1 var(--font-mono); font-variant-numeric: tabular-nums; letter-spacing: -.03em; white-space: nowrap; }
+.pf-root .dd-detail-val span { font-size: var(--fs-sm); font-weight: 500; color: var(--muted); letter-spacing: 0; }
+.pf-root .dd-detail-val.is-ok { color: var(--pass); }
+.pf-root .dd-detail-val.is-bad { color: var(--critical); }
+.pf-root .dd-detail-val.is-missing { color: var(--muted); }
+.pf-root .dd-detail-val.is-neutral { font-size: var(--fs-lg); }
+.pf-root .dd-plain { font-size: var(--fs-md); line-height: 1.45; color: var(--ink); }
+.pf-root .dd-source { padding: var(--s2) var(--s3); border-radius: var(--radius); background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); }
+.pf-root .dd-source-lab { display: block; color: var(--muted); font-size: var(--fs-xs); font-weight: 600; margin-bottom: 2px; }
+.pf-root .dd-source p { font-size: var(--fs-sm); color: var(--ink-2); }
+.pf-root .dd-facts { display: flex; gap: var(--s4); font-size: var(--fs-sm); color: var(--muted); }
+.pf-root .dd-facts b { color: var(--ink); font-family: var(--font-mono); }
+.pf-root .dd-missing { padding: var(--s2) var(--s3); border-radius: var(--radius); background: var(--hatch), var(--surface); font-size: var(--fs-sm); }
+.pf-root .dd-levels { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.pf-root .dd-levels li { display: grid; grid-template-columns: 112px minmax(0, 1fr) 44px; gap: 4px var(--s2); align-items: center; font-size: var(--fs-sm); }
+.pf-root .dd-levels li.is-best { font-weight: 700; }
+.pf-root .dd-level-bar { height: 10px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.pf-root .dd-level-bar span { display: block; height: 100%; border-radius: inherit; background: var(--ink-2); transition: width var(--t-med) var(--ease-out); }
+.pf-root .dd-levels li.is-best .dd-level-bar span { background: var(--accent); }
+.pf-root .dd-level-p { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.pf-root .dd-level-desc { grid-column: 2 / -1; font-size: var(--fs-xs); font-weight: 400; color: var(--muted); }
+.pf-root .dd-cross { padding: var(--s2) var(--s3); border-radius: var(--radius); background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); font-size: var(--fs-sm); }
+.pf-root .dd-cross.is-conflict { background: var(--critical-tint); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--critical) 25%, transparent); }
+.pf-root .dd-cross h4, .pf-root .dd-sec h4 { margin: 0 0 6px; font-size: var(--fs-sm); text-transform: none; letter-spacing: 0; font-weight: 700; }
+.pf-root .dd-cross.is-conflict h4 { color: var(--critical); }
+.pf-root .dd-cross-why { margin-top: 4px; color: var(--ink-2); }
+.pf-root .dd-sec { display: grid; gap: var(--s2); }
+.pf-root .dd-inputs { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.pf-root .dd-inputs > li { padding: var(--s2) var(--s3); border-radius: var(--radius); background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); display: grid; gap: 2px; }
+.pf-root .dd-inputs > li.is-unsent { background: transparent; box-shadow: inset 0 0 0 1px var(--line-2); }
+.pf-root .dd-input-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.pf-root .dd-fname { font: 600 12.5px/1.4 var(--font-mono); word-break: break-all; }
+.pf-root .dd-unsent { font-size: var(--fs-xs); color: var(--muted); }
+.pf-root .dd-input-val { font-size: var(--fs-sm); color: var(--ink); word-break: break-word; }
+.pf-root .dd-input-src { font-size: var(--fs-xs); color: var(--muted); word-break: break-word; }
+.pf-root .dd-evidence { list-style: none; margin: 2px 0 0; padding: 0; display: grid; gap: 2px; font-size: var(--fs-xs); color: var(--ink-2); }
+.pf-root .dd-evidence li { display: flex; gap: 6px; align-items: baseline; }
+.pf-root .dd-evidence .chip-t, .pf-root .dd-transcript .chip-t { margin-left: 0; flex: none; }
+
+/* keyframes */
+.pf-root .dd-kf-groups { display: grid; gap: var(--s2); }
+.pf-root .dd-kf-lab { font-size: var(--fs-xs); font-weight: 700; color: var(--ink-2); margin-bottom: 4px; }
+.pf-root .dd-kf-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.pf-root .dd-thumb { width: 92px; padding: 0; border: 0; border-radius: var(--radius); overflow: hidden; background: #111316; display: grid; text-align: left; box-shadow: 0 0 0 1px var(--line-2); }
+.pf-root .dd-thumb img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; display: block; }
+.pf-root .dd-thumb span { padding: 2px 6px; background: var(--surface); font: 600 12px/18px var(--font-mono); color: var(--ink); }
+@media (hover: hover) {.pf-root .dd-thumb:hover, .pf-root .dd-frame:hover { box-shadow: 0 0 0 2px var(--ink); } }
+
+/* AI xem video */
+.pf-root .dd-video .dd-note { margin-bottom: var(--s3); max-width: 100ch; }
+.pf-root .dd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: var(--s2); }
+.pf-root .dd-frame { position: relative; padding: 0; border: 0; border-radius: var(--radius); overflow: hidden; background: #111316; display: grid; box-shadow: 0 0 0 1px var(--line-2); }
+.pf-root .dd-frame img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; display: block; }
+.pf-root .dd-frame-t { padding: 2px 6px; background: var(--surface); font: 600 12px/18px var(--font-mono); color: var(--ink); text-align: left; }
+.pf-root .dd-frame.is-marked { box-shadow: 0 0 0 3px var(--accent); }
+.pf-root .dd-frame.is-marked .dd-frame-t { background: var(--accent-tint-2); color: var(--accent-ink); }
+.pf-root .dd-frame.is-sel { box-shadow: 0 0 0 3px var(--ink); }
+.pf-root .dd-frame-tag { position: absolute; top: 4px; left: 4px; padding: 0 6px; border-radius: 6px; background: var(--ink); color: #ffffff; font: 600 12px/20px var(--font-body); }
+.pf-root .dd-marks { margin: 0; padding-left: 18px; display: grid; gap: 2px; font-size: var(--fs-sm); }
+.pf-root .dd-transcript { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: var(--fs-sm); }
+.pf-root .dd-transcript li { display: flex; gap: var(--s2); align-items: baseline; }
+.pf-root .dd-side > .dd-sec + .dd-sec { margin-top: var(--s4); }
+
+@media (max-width: 1279px) {
+  .pf-root .dd-split { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); }
+  .pf-root .dd-side { border-left: 0; border-top: 1px solid var(--line); }
+}
+
+/* ---------- Agent flow, shared node ---------- */
+.pf-root .fd-root { min-width: 0; }
+.pf-root .fd-note { margin: 0; color: var(--muted); font-size: var(--fs-xs); }
+.pf-root .fd-note p + p { margin-top: 6px; }
+.pf-root .fd-node { border-radius: var(--radius); background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); transition: box-shadow var(--t-fast); min-width: 0; }
+.pf-root .fd-node-btn { width: 100%; display: flex; align-items: flex-start; gap: var(--s2); padding: 7px 10px; border: 0; background: none; border-radius: inherit; text-align: left; color: var(--ink); }
+@media (hover: hover) {.pf-root .fd-node:not(.is-sel):hover { box-shadow: inset 0 0 0 1px var(--ink-2); } }
+.pf-root .fd-node.is-sel { box-shadow: inset 0 0 0 2px var(--accent); }
+.pf-root .fd-node.is-running { box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-tint); }
+.pf-root .fd-node.is-skipped, .pf-root .fd-node.is-pending { background: var(--subtle); }
+.pf-root .fd-node.is-error { box-shadow: inset 0 0 0 1px var(--critical); background: var(--critical-tint); }
+.pf-root .fd-dot { flex: none; width: 10px; height: 10px; margin-top: 5px; border-radius: 50%; background: var(--pass); }
+.pf-root .is-skipped > .fd-node-btn .fd-dot, .pf-root .is-pending > .fd-node-btn .fd-dot { background: var(--faint); }
+.pf-root .is-error > .fd-node-btn .fd-dot { background: var(--critical); }
+.pf-root .is-running > .fd-node-btn .fd-dot, .pf-root .fm-root.is-running .fd-dot { background: var(--accent); animation: fdPulse 1.2s var(--ease-out) infinite; }
+@keyframes fdPulse { 0% { box-shadow: 0 0 0 0 var(--accent-tint-2); } 70% { box-shadow: 0 0 0 7px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+/* long "agent · tool_name" wraps onto a second line (at the <wbr> after "·" and "_") instead of an ellipsis */
+.pf-root .fd-node-name { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; font-weight: 700; font-size: var(--fs-sm); line-height: 1.35; overflow: hidden; overflow-wrap: anywhere; }
+.pf-root .fd-node-meta { display: block; font-size: var(--fs-xs); color: var(--muted); font-variant-numeric: tabular-nums; }
+.pf-root .fd-node.is-running .fd-node-meta { color: var(--accent-ink); }
+
+/* progress */
+.pf-root .fd-progress { padding: 0 10px 8px 28px; display: grid; gap: 4px; }
+.pf-root .fd-detail-body .fd-progress { padding: 0; }
+.pf-root .fd-progress-line { display: flex; gap: var(--s2); font-size: var(--fs-xs); color: var(--ink); }
+.pf-root .fd-num { font-family: var(--font-mono); font-weight: 600; font-variant-numeric: tabular-nums; }
+.pf-root .fd-detail { font-size: var(--fs-xs); color: var(--muted); word-break: break-word; }
+.pf-root .fd-bar { position: relative; display: block; height: 6px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.pf-root .fd-bar > span { display: block; height: 100%; width: 0; border-radius: inherit; background: var(--accent); transition: width var(--t-med) var(--ease-out); }
+.pf-root .fd-bar.is-indet > span { position: absolute; width: 36%; animation: fdIndet 1.4s cubic-bezier(.4, 0, .2, 1) infinite; }
+@keyframes fdIndet { from { left: -36%; } to { left: 100%; } }
+
+/* step detail */
+.pf-root .fd-detail-body { display: grid; gap: var(--s2); padding: var(--s2) 0 var(--s3); }
+.pf-root .fd-kv { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px var(--s3); font-size: var(--fs-xs); }
+.pf-root .fd-kv div { display: flex; gap: 6px; min-width: 0; }
+.pf-root .fd-kv dt { color: var(--muted); flex: none; }
+.pf-root .fd-kv dd { margin: 0; color: var(--ink); font-weight: 600; overflow-wrap: anywhere; }
+.pf-root .fd-tokens { padding: 6px var(--s2); border-radius: var(--radius); background: var(--subtle); grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
+.pf-root .fd-tokens dd { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.pf-root .fd-sum { font-size: var(--fs-xs); color: var(--ink-2); }
+.pf-root .fd-io-lab { margin: 4px 0 0; font-size: var(--fs-xs); color: var(--muted); font-weight: 600; }
+.pf-root .fd-root .studio-json { font-size: 12px; max-height: 260px; }
+
+/* ---------- compact: stage blocks + data lines ---------- */
+.pf-root .fd-compact { list-style: none; margin: 0; padding: var(--s3) var(--s3) var(--s4); }
+.pf-root .fd-block { padding: var(--s2); border-radius: var(--radius-lg); background: var(--subtle); box-shadow: inset 0 0 0 1px var(--line); }
+.pf-root .fd-stage.is-running .fd-block { background: var(--surface); box-shadow: inset 0 0 0 1px var(--accent), 0 6px 18px -10px rgba(238, 77, 45, .45); }
+.pf-root .fd-stage.is-pending .fd-block, .pf-root .fd-stage.is-skipped .fd-block { background: transparent; box-shadow: inset 0 0 0 1px var(--line-2); }
+.pf-root .fd-stage.is-error .fd-block { box-shadow: inset 0 0 0 1px var(--critical); }
+.pf-root .fd-block-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s2); padding: 2px 4px; }
+.pf-root .fd-block-head h3, .pf-root .fm-branch-head h3 { font-size: var(--fs-sm); font-weight: 700; }
+.pf-root .fd-stage.is-pending h3, .pf-root .fd-stage.is-skipped h3, .pf-root .fm-branch.is-pending h3, .pf-root .fm-branch.is-skipped h3 { color: var(--muted); font-weight: 600; }
+.pf-root .fd-stage.is-running h3, .pf-root .fm-branch.is-running h3 { color: var(--accent-ink); }
+.pf-root .fd-stage-state { font-size: var(--fs-xs); color: var(--muted); font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pf-root .fd-steps { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 4px; }
+.pf-root .fd-steps > li, .pf-root .fm-nodes > li, .pf-root .fd-stage { min-width: 0; }
+.pf-root .fd-compact .fd-detail-body { padding: var(--s2) 4px var(--s2); }
+
+/* data line between stages: solid when handed over, moving dashes while the next stage runs */
+.pf-root .fd-link { display: grid; grid-template-columns: 22px minmax(0, 1fr); align-items: center; min-height: 34px; padding-left: var(--s4); }
+.pf-root .fd-line { justify-self: center; width: 2px; height: 100%; min-height: 34px; background: var(--line-2); }
+.pf-root .fd-link.is-done .fd-line { background: var(--ink-2); }
+.pf-root .fd-link.is-flowing .fd-line { background: repeating-linear-gradient(180deg, var(--accent) 0 6px, transparent 6px 11px); background-size: 2px 22px; animation: fdFlowY .6s linear infinite; }
+@keyframes fdFlowY { to { background-position: 0 22px; } }
+.pf-root .fd-payload { justify-self: start; margin: 4px 0; padding: 2px 8px; border-radius: 6px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line-2); font-size: var(--fs-xs); font-weight: 600; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.pf-root .fd-link.is-flowing .fd-payload { color: var(--accent-ink); box-shadow: inset 0 0 0 1px var(--accent); }
+
+/* ---------- map: root -> elbow branches per stage -> step cards | detail ---------- */
+.pf-root .fm { display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(360px, 30%); gap: 0 28px; align-items: start; padding: var(--s4) 20px; }
+.pf-root .fm-root { position: sticky; top: var(--s4); display: flex; gap: var(--s2); padding: 10px 12px; border-radius: var(--radius-lg); background: var(--ink); color: #ffffff; box-shadow: 0 8px 24px -12px rgba(17, 24, 39, .5); }
+.pf-root .fm-root::after { content: ""; position: absolute; top: 20px; right: -28px; width: 28px; height: 2px; background: var(--ink-2); }
+.pf-root .fm-root .fd-node-meta { color: #d4d7dc; }
+.pf-root .fm-root-title { font-weight: 700; font-size: var(--fs-md); line-height: 1.3; overflow-wrap: anywhere; }
+.pf-root .fm-tree { list-style: none; margin: 0; padding: 0 0 0 28px; position: relative; display: grid; gap: var(--s3); min-width: 0; }
+.pf-root .fm-branch { position: relative; min-width: 0; }
+/* elbow: the spine runs down the tree's left edge, each branch takes a rounded turn into its stage */
+.pf-root .fm-branch::before { content: ""; position: absolute; left: -28px; top: -12px; width: 20px; height: 33px; border-left: 2px solid var(--line-2); border-bottom: 2px solid var(--line-2); border-bottom-left-radius: 10px; }
+.pf-root .fm-branch:first-child::before { top: -1px; height: 22px; }
+.pf-root .fm-branch:not(:last-child)::after { content: ""; position: absolute; left: -28px; top: 18px; bottom: -13px; border-left: 2px solid var(--line-2); }
+.pf-root .fm-branch.is-done::before, .pf-root .fm-branch.is-done::after, .pf-root .fm-branch.is-error::before { border-color: var(--ink-2); }
+.pf-root .fm-branch.is-running::before { border-color: var(--accent); }
+.pf-root .fm-branch-head { display: flex; flex-wrap: wrap; align-items: center; gap: 4px var(--s2); min-height: 40px; }
+.pf-root .fm-handoff { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 6px; background: var(--subtle); box-shadow: inset 0 0 0 1px var(--line); font-size: var(--fs-xs); font-weight: 600; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.pf-root .fm-handoff .ic svg { width: 14px; height: 14px; }
+.pf-root .fm-handoff.is-flowing { color: var(--accent-ink); background: var(--accent-tint); box-shadow: inset 0 0 0 1px var(--accent); }
+.pf-root .fm-handoff.is-flowing .ic { animation: fdNudge .9s var(--ease-out) infinite; }
+@keyframes fdNudge { 50% { transform: translateX(3px); } }
+.pf-root .fm-nodes { list-style: none; margin: 4px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(232px, 1fr)); gap: 6px; }
+.pf-root .fm-branch > .fd-note { padding: 2px 0 4px; }
+.pf-root .fm-side { position: sticky; top: var(--s4); max-height: calc(100vh - 160px); overflow-y: auto; padding: var(--s3) var(--s4); border-radius: var(--radius-lg); background: var(--subtle); box-shadow: inset 0 0 0 1px var(--line); scrollbar-width: thin; }
+.pf-root .fm-side-title { font-size: var(--fs-md); overflow-wrap: anywhere; }
+
+@media (max-width: 1100px) {
+  .pf-root .fm { grid-template-columns: minmax(0, 1fr); gap: var(--s3); }
+  .pf-root .fm-root { position: static; }
+  .pf-root .fm-root::after { display: none; }
+  .pf-root .fm-side { position: static; max-height: none; }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .pf-root .dd-detail, .pf-root .dd-chip, .pf-root .dd-level-bar span, .pf-root .fd-bar > span { animation: none; transition: none; }
+  .pf-root .is-running > .fd-node-btn .fd-dot, .pf-root .fm-root.is-running .fd-dot,
+  .pf-root .fd-link.is-flowing .fd-line, .pf-root .fm-handoff.is-flowing .ic { animation: none; }
+  /* indeterminate work reads as a static hatch instead of a moving bar */
+  .pf-root .fd-bar.is-indet { background: var(--hatch), var(--line); }
+  .pf-root .fd-bar.is-indet > span { animation: none; display: none; }
+}

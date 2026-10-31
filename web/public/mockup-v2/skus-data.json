@@ -1,0 +1,857 @@
+[
+  {
+    "id": "SHOP001-SKU01",
+    "term": "xà phòng trắng da teashell",
+    "group": "Beauty",
+    "name": "Xà phòng trắng da TeaShell",
+    "full": "Xà phòng trắng da TeaShell",
+    "price": 46550,
+    "link": "https://shopee.vn/product/shop001/shop001-sku01",
+    "sold": "253",
+    "rating": 4.6,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP001-SKU01.jpg",
+    "audience": [
+      "Nữ 18–35",
+      "Toàn quốc",
+      "Chăm sóc da"
+    ],
+    "shop": "Lá Mộc Beauty"
+  },
+  {
+    "id": "SHOP001-SKU02",
+    "term": "sữa rửa mặt nam men stay",
+    "group": "Beauty",
+    "name": "Sữa rửa mặt nam Men Stay",
+    "full": "Sữa rửa mặt nam Men Stay",
+    "price": 150450,
+    "link": "https://shopee.vn/product/shop001/shop001-sku02",
+    "sold": "353",
+    "rating": 4.1,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP001-SKU02.jpg",
+    "audience": [
+      "Nữ 18–35",
+      "Toàn quốc",
+      "Chăm sóc da"
+    ],
+    "shop": "Lá Mộc Beauty"
+  },
+  {
+    "id": "SHOP001-SKU03",
+    "term": "mascara lông mày rocksweet 2.0",
+    "group": "Beauty",
+    "name": "Mascara lông mày ROCKSWEET 2.0",
+    "full": "Mascara lông mày ROCKSWEET 2.0",
+    "price": 149000,
+    "link": "https://shopee.vn/product/shop001/shop001-sku03",
+    "sold": "492",
+    "rating": 4.9,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP001-SKU03.jpg",
+    "audience": [
+      "Nữ 18–35",
+      "Toàn quốc",
+      "Chăm sóc da"
+    ],
+    "shop": "Lá Mộc Beauty"
+  },
+  {
+    "id": "SHOP001-SKU04",
+    "term": "tẩy trang",
+    "group": "Beauty",
+    "name": "Tẩy trang",
+    "full": "Tẩy trang",
+    "price": 151000,
+    "link": "https://shopee.vn/product/shop001/shop001-sku04",
+    "sold": "312",
+    "rating": 4.9,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP001-SKU04.jpg",
+    "audience": [
+      "Nữ 18–35",
+      "Toàn quốc",
+      "Chăm sóc da"
+    ],
+    "shop": "Lá Mộc Beauty"
+  },
+  {
+    "id": "SHOP001-SKU05",
+    "term": "kem dưỡng ẩm",
+    "group": "Beauty",
+    "name": "Kem dưỡng ẩm",
+    "full": "Kem dưỡng ẩm",
+    "price": 173000,
+    "link": "https://shopee.vn/product/shop001/shop001-sku05",
+    "sold": "532",
+    "rating": 4.9,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP001-SKU05.jpg",
+    "audience": [
+      "Nữ 18–35",
+      "Toàn quốc",
+      "Chăm sóc da"
+    ],
+    "shop": "Lá Mộc Beauty"
+  },
+  {
+    "id": "SHOP002-SKU01",
+    "term": "ốp lưng iphone sọc hồng",
+    "group": "Điện tử",
+    "name": "Ốp lưng iPhone sọc hồng",
+    "full": "Ốp lưng iPhone sọc hồng",
+    "price": 26000,
+    "link": "https://shopee.vn/product/shop002/shop002-sku01",
+    "sold": "604",
+    "rating": 4.0,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP002-SKU01.jpg",
+    "audience": [
+      "Nam & Nữ 18–35",
+      "Toàn quốc",
+      "Công nghệ"
+    ],
+    "shop": "Trendie Case"
+  },
+  {
+    "id": "SHOP002-SKU02",
+    "term": "ốp lưng iphone hình mèo",
+    "group": "Điện tử",
+    "name": "Ốp lưng iPhone hình mèo",
+    "full": "Ốp lưng iPhone hình mèo",
+    "price": 104000,
+    "link": "https://shopee.vn/product/shop002/shop002-sku02",
+    "sold": "487",
+    "rating": 4.6,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP002-SKU02.jpg",
+    "audience": [
+      "Nam & Nữ 18–35",
+      "Toàn quốc",
+      "Công nghệ"
+    ],
+    "shop": "Trendie Case"
+  },
+  {
+    "id": "SHOP002-SKU03",
+    "term": "quạt tản nhiệt điện thoại ky v60",
+    "group": "Điện tử",
+    "name": "Quạt tản nhiệt điện thoại KY V60",
+    "full": "Quạt tản nhiệt điện thoại KY V60",
+    "price": 104000,
+    "link": "https://shopee.vn/product/shop002/shop002-sku03",
+    "sold": "458",
+    "rating": 3.9,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP002-SKU03.jpg",
+    "audience": [
+      "Nam & Nữ 18–35",
+      "Toàn quốc",
+      "Công nghệ"
+    ],
+    "shop": "Trendie Case"
+  },
+  {
+    "id": "SHOP002-SKU04",
+    "term": "kính cường lực",
+    "group": "Điện tử",
+    "name": "Kính cường lực",
+    "full": "Kính cường lực",
+    "price": 100000,
+    "link": "https://shopee.vn/product/shop002/shop002-sku04",
+    "sold": "392",
+    "rating": 4.5,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP002-SKU04.jpg",
+    "audience": [
+      "Nam & Nữ 18–35",
+      "Toàn quốc",
+      "Công nghệ"
+    ],
+    "shop": "Trendie Case"
+  },
+  {
+    "id": "SHOP002-SKU05",
+    "term": "quạt mini",
+    "group": "Điện tử",
+    "name": "Quạt mini",
+    "full": "Quạt mini",
+    "price": 115000,
+    "link": "https://shopee.vn/product/shop002/shop002-sku05",
+    "sold": "221",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP002-SKU05.jpg",
+    "audience": [
+      "Nam & Nữ 18–35",
+      "Toàn quốc",
+      "Công nghệ"
+    ],
+    "shop": "Trendie Case"
+  },
+  {
+    "id": "SHOP003-SKU01",
+    "term": "đĩa đựng trái cây phong cách bắc âu",
+    "group": "Gia dụng",
+    "name": "Đĩa đựng trái cây phong cách Bắc Âu",
+    "full": "Đĩa đựng trái cây phong cách Bắc Âu",
+    "price": 208000,
+    "link": "https://shopee.vn/product/shop003/shop003-sku01",
+    "sold": "466",
+    "rating": 4.8,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP003-SKU01.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Nhà Xinh Home"
+  },
+  {
+    "id": "SHOP003-SKU02",
+    "term": "giấy treo caipiao 10 bịch",
+    "group": "Gia dụng",
+    "name": "Giấy treo Caipiao 10 bịch",
+    "full": "Giấy treo Caipiao 10 bịch",
+    "price": 78000,
+    "link": "https://shopee.vn/product/shop003/shop003-sku02",
+    "sold": "746",
+    "rating": 4.5,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP003-SKU02.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Nhà Xinh Home"
+  },
+  {
+    "id": "SHOP003-SKU03",
+    "term": "combo 2 nước xả vải downy 3.2l",
+    "group": "Gia dụng",
+    "name": "Combo 2 nước xả vải Downy 3.2L",
+    "full": "Combo 2 nước xả vải Downy 3.2L",
+    "price": 830000,
+    "link": "https://shopee.vn/product/shop003/shop003-sku03",
+    "sold": "513",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP003-SKU03.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Nhà Xinh Home"
+  },
+  {
+    "id": "SHOP003-SKU04",
+    "term": "khăn lau đa năng",
+    "group": "Gia dụng",
+    "name": "Khăn lau đa năng",
+    "full": "Khăn lau đa năng",
+    "price": 240000,
+    "link": "https://shopee.vn/product/shop003/shop003-sku04",
+    "sold": "502",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP003-SKU04.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Nhà Xinh Home"
+  },
+  {
+    "id": "SHOP003-SKU05",
+    "term": "giỏ sắp xếp",
+    "group": "Gia dụng",
+    "name": "Giỏ sắp xếp",
+    "full": "Giỏ sắp xếp",
+    "price": 275000,
+    "link": "https://shopee.vn/product/shop003/shop003-sku05",
+    "sold": "317",
+    "rating": 4.6,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP003-SKU05.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Nhà Xinh Home"
+  },
+  {
+    "id": "SHOP004-SKU01",
+    "term": "bình nước chống tràn có ống hút",
+    "group": "Bách hóa",
+    "name": "Bình nước chống tràn có ống hút",
+    "full": "Bình nước chống tràn có ống hút",
+    "price": 59000,
+    "link": "https://shopee.vn/product/shop004/shop004-sku01",
+    "sold": "1,1k",
+    "rating": 4.2,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP004-SKU01.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Deal Rẻ Mỗi Ngày"
+  },
+  {
+    "id": "SHOP004-SKU02",
+    "term": "bột ngũ cốc nghệ gạo lứt 420g",
+    "group": "Bách hóa",
+    "name": "Bột ngũ cốc nghệ gạo lứt 420g",
+    "full": "Bột ngũ cốc nghệ gạo lứt 420g",
+    "price": 89000,
+    "link": "https://shopee.vn/product/shop004/shop004-sku02",
+    "sold": "1,0k",
+    "rating": 4.5,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP004-SKU02.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Deal Rẻ Mỗi Ngày"
+  },
+  {
+    "id": "SHOP004-SKU03",
+    "term": "mắm sả ớt chay thiện duyên",
+    "group": "Bách hóa",
+    "name": "Mắm sả ớt chay Thiện Duyên",
+    "full": "Mắm sả ớt chay Thiện Duyên",
+    "price": 44000,
+    "link": "https://shopee.vn/product/shop004/shop004-sku03",
+    "sold": "1,2k",
+    "rating": 4.5,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP004-SKU03.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Deal Rẻ Mỗi Ngày"
+  },
+  {
+    "id": "SHOP004-SKU04",
+    "term": "kẹp đa năng",
+    "group": "Bách hóa",
+    "name": "Kẹp đa năng",
+    "full": "Kẹp đa năng",
+    "price": 125000,
+    "link": "https://shopee.vn/product/shop004/shop004-sku04",
+    "sold": "1,2k",
+    "rating": 4.4,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP004-SKU04.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Deal Rẻ Mỗi Ngày"
+  },
+  {
+    "id": "SHOP004-SKU05",
+    "term": "hộp nhựa",
+    "group": "Bách hóa",
+    "name": "Hộp nhựa",
+    "full": "Hộp nhựa",
+    "price": 144000,
+    "link": "https://shopee.vn/product/shop004/shop004-sku05",
+    "sold": "603",
+    "rating": 4.5,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP004-SKU05.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Deal Rẻ Mỗi Ngày"
+  },
+  {
+    "id": "SHOP005-SKU01",
+    "term": "bộ đùi vải đũi nữ",
+    "group": "Thời trang",
+    "name": "Bộ đùi vải đũi nữ",
+    "full": "Bộ đùi vải đũi nữ",
+    "price": 155000,
+    "link": "https://shopee.vn/product/shop005/shop005-sku01",
+    "sold": "783",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP005-SKU01.jpg",
+    "audience": [
+      "Nữ 18–30",
+      "Miền Bắc",
+      "Đi làm"
+    ],
+    "shop": "Vệt Nắng Fashion"
+  },
+  {
+    "id": "SHOP005-SKU02",
+    "term": "bộ dài ôm hi thun tăm",
+    "group": "Thời trang",
+    "name": "Bộ dài ôm HI thun tăm",
+    "full": "Bộ dài ôm HI thun tăm",
+    "price": 149000,
+    "link": "https://shopee.vn/product/shop005/shop005-sku02",
+    "sold": "1,1k",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP005-SKU02.jpg",
+    "audience": [
+      "Nữ 18–30",
+      "Miền Bắc",
+      "Đi làm"
+    ],
+    "shop": "Vệt Nắng Fashion"
+  },
+  {
+    "id": "SHOP005-SKU03",
+    "term": "quần jean suông thêu vương miện",
+    "group": "Thời trang",
+    "name": "Quần jean suông thêu vương miện",
+    "full": "Quần jean suông thêu vương miện",
+    "price": 165000,
+    "link": "https://shopee.vn/product/shop005/shop005-sku03",
+    "sold": "903",
+    "rating": 4.6,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP005-SKU03.jpg",
+    "audience": [
+      "Nữ 18–30",
+      "Miền Bắc",
+      "Đi làm"
+    ],
+    "shop": "Vệt Nắng Fashion"
+  },
+  {
+    "id": "SHOP005-SKU04",
+    "term": "áo khoác mỏng",
+    "group": "Thời trang",
+    "name": "Áo khoác mỏng",
+    "full": "Áo khoác mỏng",
+    "price": 201000,
+    "link": "https://shopee.vn/product/shop005/shop005-sku04",
+    "sold": "1,1k",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP005-SKU04.jpg",
+    "audience": [
+      "Nữ 18–30",
+      "Miền Bắc",
+      "Đi làm"
+    ],
+    "shop": "Vệt Nắng Fashion"
+  },
+  {
+    "id": "SHOP005-SKU05",
+    "term": "mũ lưỡi trai",
+    "group": "Thời trang",
+    "name": "Mũ lưỡi trai",
+    "full": "Mũ lưỡi trai",
+    "price": 232000,
+    "link": "https://shopee.vn/product/shop005/shop005-sku05",
+    "sold": "458",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP005-SKU05.jpg",
+    "audience": [
+      "Nữ 18–30",
+      "Miền Bắc",
+      "Đi làm"
+    ],
+    "shop": "Vệt Nắng Fashion"
+  },
+  {
+    "id": "SHOP006-SKU01",
+    "term": "băng vệ sinh tutubaby",
+    "group": "Mẹ & Bé",
+    "name": "Băng vệ sinh Tutubaby",
+    "full": "Băng vệ sinh Tutubaby",
+    "price": 100999,
+    "link": "https://shopee.vn/product/shop006/shop006-sku01",
+    "sold": "4",
+    "rating": 4.9,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP006-SKU01.jpg",
+    "audience": [
+      "Mẹ bỉm 22–35",
+      "Toàn quốc",
+      "Chăm con"
+    ],
+    "shop": "Bé Khỏe Mom"
+  },
+  {
+    "id": "SHOP006-SKU02",
+    "term": "sữa uống colosbaby pedia 110ml",
+    "group": "Mẹ & Bé",
+    "name": "Sữa uống ColosBaby Pedia 110ml",
+    "full": "Sữa uống ColosBaby Pedia 110ml",
+    "price": 678000,
+    "link": "https://shopee.vn/product/shop006/shop006-sku02",
+    "sold": "7",
+    "rating": 4.6,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP006-SKU02.jpg",
+    "audience": [
+      "Mẹ bỉm 22–35",
+      "Toàn quốc",
+      "Chăm con"
+    ],
+    "shop": "Bé Khỏe Mom"
+  },
+  {
+    "id": "SHOP006-SKU03",
+    "term": "gạc răng miệng sachi cho bé",
+    "group": "Mẹ & Bé",
+    "name": "Gạc răng miệng Sachi cho bé",
+    "full": "Gạc răng miệng Sachi cho bé",
+    "price": 133000,
+    "link": "https://shopee.vn/product/shop006/shop006-sku03",
+    "sold": "4",
+    "rating": 4.6,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP006-SKU03.jpg",
+    "audience": [
+      "Mẹ bỉm 22–35",
+      "Toàn quốc",
+      "Chăm con"
+    ],
+    "shop": "Bé Khỏe Mom"
+  },
+  {
+    "id": "SHOP006-SKU04",
+    "term": "bộ đồ em bé",
+    "group": "Mẹ & Bé",
+    "name": "Bộ đồ em bé",
+    "full": "Bộ đồ em bé",
+    "price": 176000,
+    "link": "https://shopee.vn/product/shop006/shop006-sku04",
+    "sold": "5",
+    "rating": 4.6,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP006-SKU04.jpg",
+    "audience": [
+      "Mẹ bỉm 22–35",
+      "Toàn quốc",
+      "Chăm con"
+    ],
+    "shop": "Bé Khỏe Mom"
+  },
+  {
+    "id": "SHOP006-SKU05",
+    "term": "hộp chia sữa",
+    "group": "Mẹ & Bé",
+    "name": "Hộp chia sữa",
+    "full": "Hộp chia sữa",
+    "price": 202000,
+    "link": "https://shopee.vn/product/shop006/shop006-sku05",
+    "sold": "8",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP006-SKU05.jpg",
+    "audience": [
+      "Mẹ bỉm 22–35",
+      "Toàn quốc",
+      "Chăm con"
+    ],
+    "shop": "Bé Khỏe Mom"
+  },
+  {
+    "id": "SHOP007-SKU01",
+    "term": "tai nghe bluetooth coudash w895",
+    "group": "Điện tử",
+    "name": "Tai nghe bluetooth COUDASH W895",
+    "full": "Tai nghe bluetooth COUDASH W895",
+    "price": 77000,
+    "link": "https://shopee.vn/product/shop007/shop007-sku01",
+    "sold": "393",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP007-SKU01.jpg",
+    "audience": [
+      "Nam & Nữ 18–35",
+      "Toàn quốc",
+      "Công nghệ"
+    ],
+    "shop": "Tech Zone Mini"
+  },
+  {
+    "id": "SHOP007-SKU02",
+    "term": "sạc dự phòng kèm 4 cáp",
+    "group": "Điện tử",
+    "name": "Sạc dự phòng kèm 4 cáp",
+    "full": "Sạc dự phòng kèm 4 cáp",
+    "price": 108000,
+    "link": "https://shopee.vn/product/shop007/shop007-sku02",
+    "sold": "525",
+    "rating": 4.8,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP007-SKU02.jpg",
+    "audience": [
+      "Nam & Nữ 18–35",
+      "Toàn quốc",
+      "Công nghệ"
+    ],
+    "shop": "Tech Zone Mini"
+  },
+  {
+    "id": "SHOP007-SKU03",
+    "term": "cáp sạc nhanh 240w 4 trong 1",
+    "group": "Điện tử",
+    "name": "Cáp sạc nhanh 240W 4 trong 1",
+    "full": "Cáp sạc nhanh 240W 4 trong 1",
+    "price": 45000,
+    "link": "https://shopee.vn/product/shop007/shop007-sku03",
+    "sold": "974",
+    "rating": 4.6,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP007-SKU03.jpg",
+    "audience": [
+      "Nam & Nữ 18–35",
+      "Toàn quốc",
+      "Công nghệ"
+    ],
+    "shop": "Tech Zone Mini"
+  },
+  {
+    "id": "SHOP007-SKU04",
+    "term": "bàn phím mini",
+    "group": "Điện tử",
+    "name": "Bàn phím mini",
+    "full": "Bàn phím mini",
+    "price": 379000,
+    "link": "https://shopee.vn/product/shop007/shop007-sku04",
+    "sold": "662",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP007-SKU04.jpg",
+    "audience": [
+      "Nam & Nữ 18–35",
+      "Toàn quốc",
+      "Công nghệ"
+    ],
+    "shop": "Tech Zone Mini"
+  },
+  {
+    "id": "SHOP007-SKU05",
+    "term": "hub usb-c",
+    "group": "Điện tử",
+    "name": "Hub USB-C",
+    "full": "Hub USB-C",
+    "price": 436000,
+    "link": "https://shopee.vn/product/shop007/shop007-sku05",
+    "sold": "731",
+    "rating": 4.6,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP007-SKU05.jpg",
+    "audience": [
+      "Nam & Nữ 18–35",
+      "Toàn quốc",
+      "Công nghệ"
+    ],
+    "shop": "Tech Zone Mini"
+  },
+  {
+    "id": "SHOP008-SKU01",
+    "term": "men vi sinh progermila hộp 10 ống",
+    "group": "Sức khỏe",
+    "name": "Men vi sinh Progermila hộp 10 ống",
+    "full": "Men vi sinh Progermila hộp 10 ống",
+    "price": 298000,
+    "link": "https://shopee.vn/product/shop008/shop008-sku01",
+    "sold": "242",
+    "rating": 3.8,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP008-SKU01.jpg",
+    "audience": [
+      "25–45 tuổi",
+      "Toàn quốc",
+      "Chăm sóc sức khỏe"
+    ],
+    "shop": "Fit Daily VN"
+  },
+  {
+    "id": "SHOP008-SKU02",
+    "term": "tinh nghệ nano 365 curcumin 32 tép",
+    "group": "Sức khỏe",
+    "name": "Tinh nghệ Nano 365 Curcumin 32 tép",
+    "full": "Tinh nghệ Nano 365 Curcumin 32 tép",
+    "price": 260000,
+    "link": "https://shopee.vn/product/shop008/shop008-sku02",
+    "sold": "262",
+    "rating": 4.4,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP008-SKU02.jpg",
+    "audience": [
+      "25–45 tuổi",
+      "Toàn quốc",
+      "Chăm sóc sức khỏe"
+    ],
+    "shop": "Fit Daily VN"
+  },
+  {
+    "id": "SHOP008-SKU03",
+    "term": "vitamin b complex pentavite",
+    "group": "Sức khỏe",
+    "name": "Vitamin B Complex Pentavite",
+    "full": "Vitamin B Complex Pentavite",
+    "price": 195000,
+    "link": "https://shopee.vn/product/shop008/shop008-sku03",
+    "sold": "114",
+    "rating": 3.8,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP008-SKU03.jpg",
+    "audience": [
+      "25–45 tuổi",
+      "Toàn quốc",
+      "Chăm sóc sức khỏe"
+    ],
+    "shop": "Fit Daily VN"
+  },
+  {
+    "id": "SHOP008-SKU04",
+    "term": "viên uống omega-3",
+    "group": "Sức khỏe",
+    "name": "Viên uống Omega-3",
+    "full": "Viên uống Omega-3",
+    "price": 214000,
+    "link": "https://shopee.vn/product/shop008/shop008-sku04",
+    "sold": "206",
+    "rating": 4.4,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP008-SKU04.jpg",
+    "audience": [
+      "25–45 tuổi",
+      "Toàn quốc",
+      "Chăm sóc sức khỏe"
+    ],
+    "shop": "Fit Daily VN"
+  },
+  {
+    "id": "SHOP008-SKU05",
+    "term": "collagen dạng nước",
+    "group": "Sức khỏe",
+    "name": "Collagen dạng nước",
+    "full": "Collagen dạng nước",
+    "price": 246000,
+    "link": "https://shopee.vn/product/shop008/shop008-sku05",
+    "sold": "114",
+    "rating": 4.5,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP008-SKU05.jpg",
+    "audience": [
+      "25–45 tuổi",
+      "Toàn quốc",
+      "Chăm sóc sức khỏe"
+    ],
+    "shop": "Fit Daily VN"
+  },
+  {
+    "id": "SHOP009-SKU01",
+    "term": "nồi điện đa năng dkhouse 1.8l - phân loại a",
+    "group": "Gia dụng",
+    "name": "Nồi điện đa năng DKHOUSE 1.8L - phân loại A",
+    "full": "Nồi điện đa năng DKHOUSE 1.8L - phân loại A",
+    "price": 166000,
+    "link": "https://shopee.vn/product/shop009/shop009-sku01",
+    "sold": "414",
+    "rating": 4.6,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP009-SKU01.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Sỉ Rẻ Gia Dụng"
+  },
+  {
+    "id": "SHOP009-SKU02",
+    "term": "nồi điện đa năng dkhouse 1.8l - phân loại b",
+    "group": "Gia dụng",
+    "name": "Nồi điện đa năng DKHOUSE 1.8L - phân loại B",
+    "full": "Nồi điện đa năng DKHOUSE 1.8L - phân loại B",
+    "price": 166000,
+    "link": "https://shopee.vn/product/shop009/shop009-sku02",
+    "sold": "372",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP009-SKU02.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Sỉ Rẻ Gia Dụng"
+  },
+  {
+    "id": "SHOP009-SKU03",
+    "term": "nồi điện đa năng dkhouse 1.8l - phân loại c",
+    "group": "Gia dụng",
+    "name": "Nồi điện đa năng DKHOUSE 1.8L - phân loại C",
+    "full": "Nồi điện đa năng DKHOUSE 1.8L - phân loại C",
+    "price": 166000,
+    "link": "https://shopee.vn/product/shop009/shop009-sku03",
+    "sold": "293",
+    "rating": 4.8,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP009-SKU03.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Sỉ Rẻ Gia Dụng"
+  },
+  {
+    "id": "SHOP009-SKU04",
+    "term": "móc dán tường",
+    "group": "Gia dụng",
+    "name": "Móc dán tường",
+    "full": "Móc dán tường",
+    "price": 163000,
+    "link": "https://shopee.vn/product/shop009/shop009-sku04",
+    "sold": "157",
+    "rating": 4.8,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP009-SKU04.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Sỉ Rẻ Gia Dụng"
+  },
+  {
+    "id": "SHOP009-SKU05",
+    "term": "cây lau nhà",
+    "group": "Gia dụng",
+    "name": "Cây lau nhà",
+    "full": "Cây lau nhà",
+    "price": 188000,
+    "link": "https://shopee.vn/product/shop009/shop009-sku05",
+    "sold": "316",
+    "rating": 4.7,
+    "scraped": "2026-10-27",
+    "img": "/mockup-v2/skus/SHOP009-SKU05.jpg",
+    "audience": [
+      "Gia đình",
+      "Toàn quốc",
+      "Tiện ích"
+    ],
+    "shop": "Sỉ Rẻ Gia Dụng"
+  }
+]

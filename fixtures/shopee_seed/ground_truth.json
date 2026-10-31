@@ -1,0 +1,159 @@
+{
+  "shops": [
+    {
+      "shop_id": "SHOP001",
+      "scenario": "high_performer",
+      "expected_primary_issue": "growth"
+    },
+    {
+      "shop_id": "SHOP002",
+      "scenario": "viral_low_conversion",
+      "expected_primary_issue": "conversion"
+    },
+    {
+      "shop_id": "SHOP003",
+      "scenario": "high_conversion_low_traffic",
+      "expected_primary_issue": "traffic"
+    },
+    {
+      "shop_id": "SHOP004",
+      "scenario": "operations_risk",
+      "expected_primary_issue": "operations"
+    },
+    {
+      "shop_id": "SHOP005",
+      "scenario": "ads_dependent",
+      "expected_primary_issue": "ads_efficiency"
+    },
+    {
+      "shop_id": "SHOP006",
+      "scenario": "new_shop_sparse",
+      "expected_primary_issue": "low_confidence"
+    },
+    {
+      "shop_id": "SHOP007",
+      "scenario": "stockout_risk",
+      "expected_primary_issue": "inventory"
+    },
+    {
+      "shop_id": "SHOP008",
+      "scenario": "returns_and_trust",
+      "expected_primary_issue": "returns_trust"
+    },
+    {
+      "shop_id": "SHOP009",
+      "scenario": "high_volume_low_margin",
+      "expected_primary_issue": "profitability"
+    }
+  ],
+  "videos": [
+    {
+      "video_id": "SHOP001-VID01",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP001-VID02",
+      "expected_verdict": "weak_sku"
+    },
+    {
+      "video_id": "SHOP001-VID03",
+      "expected_verdict": "weak_video"
+    },
+    {
+      "video_id": "SHOP002-VID01",
+      "expected_verdict": "views_without_clicks"
+    },
+    {
+      "video_id": "SHOP002-VID02",
+      "expected_verdict": "views_without_clicks"
+    },
+    {
+      "video_id": "SHOP002-VID03",
+      "expected_verdict": "views_without_clicks"
+    },
+    {
+      "video_id": "SHOP003-VID01",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP003-VID02",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP003-VID03",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP004-VID01",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP004-VID02",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP004-VID03",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP005-VID01",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP005-VID02",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP005-VID03",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP006-VID01",
+      "expected_verdict": "insufficient_data"
+    },
+    {
+      "video_id": "SHOP006-VID02",
+      "expected_verdict": "insufficient_data"
+    },
+    {
+      "video_id": "SHOP006-VID03",
+      "expected_verdict": "insufficient_data"
+    },
+    {
+      "video_id": "SHOP007-VID01",
+      "expected_verdict": "stockout_sku"
+    },
+    {
+      "video_id": "SHOP007-VID02",
+      "expected_verdict": "stockout_sku"
+    },
+    {
+      "video_id": "SHOP007-VID03",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP008-VID01",
+      "expected_verdict": "weak_sku"
+    },
+    {
+      "video_id": "SHOP008-VID02",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP008-VID03",
+      "expected_verdict": "weak_sku"
+    },
+    {
+      "video_id": "SHOP009-VID01",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP009-VID02",
+      "expected_verdict": "healthy"
+    },
+    {
+      "video_id": "SHOP009-VID03",
+      "expected_verdict": "healthy"
+    }
+  ]
+}

@@ -1,0 +1,705 @@
+{
+ "_note": "Clipcat /api/viral-prompt/detail, fetched 2026-10-27. productTitle/productIds = the TikTok Shop product attached to the video. metrics: gmvAmount in USD (Clipcat-reported, unverified).",
+ "videos": [
+  {
+   "slug": "vn-beauty-467796",
+   "videoId": "7680875573551467796",
+   "categoryCode": "beauty-personal-care",
+   "videoTypeCode": "real-review",
+   "authorName": "𝙋𝙝𝙖𝙣𝙝",
+   "publishedAt": "2026-09-02",
+   "durationSec": 38,
+   "productTitle": "【HÀNG MỚI】Teashell Xà Phòng Trắng Da (Kèm Túi Tạo Bọt)｜Da Mịn Sáng｜Làm Sáng Da｜Dịu Nhẹ Không Kích Ứng",
+   "productIds": [
+    "1735502560219661421"
+   ],
+   "metrics": {
+    "gmvAmount": 1658,
+    "salesVolume": 375,
+    "viewCount": 2569411,
+    "diggCount": 15942,
+    "shareCount": 1932,
+    "favoriteCount": 4145,
+    "commentCount": 382
+   },
+   "descText": "Tắm em này 1 hồi trắng lúc nào không hay lun ý😆✨🌸 #xaphongtamtrang #xabongtamtrang #trangda #teashell #xaphongtrangda ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7680875573551467796.mp4",
+   "hookPrimary": "result-first"
+  },
+  {
+   "slug": "vn-beauty-344788",
+   "videoId": "7686083743777344788",
+   "categoryCode": "beauty-personal-care",
+   "videoTypeCode": "real-review",
+   "authorName": "ꜱʜᴏᴘ ꜱɪᴇ̂ᴜ ꜱᴀʟᴇ",
+   "publishedAt": "2026-09-16",
+   "durationSec": 14,
+   "productTitle": "Sữa rửa mặt nam Men Stay Simplicity Facial Cleanser 3 tác động giúp làm sạch sâu bụi bẩn và dầu nhờn, hạn chế các tác nhân gây mụn, giảm bã nhờn hiệu quả 100g",
+   "productIds": [
+    "1729438480898231207"
+   ],
+   "metrics": {
+    "gmvAmount": 5492,
+    "salesVolume": 423,
+    "viewCount": 117928,
+    "diggCount": 521,
+    "shareCount": 12,
+    "favoriteCount": 35,
+    "commentCount": 2
+   },
+   "descText": "#suaruamat #reviewsanpham #xuhuongtiktok ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7686083743777344788.mp4",
+   "hookPrimary": "pov-scenario"
+  },
+  {
+   "slug": "vn-beauty-445704",
+   "videoId": "7677533144320445704",
+   "categoryCode": "beauty-personal-care",
+   "videoTypeCode": "story-skit",
+   "authorName": "ROCKSWEET-VN",
+   "publishedAt": "2026-08-24",
+   "durationSec": 27,
+   "productTitle": "ROCKSWEET Mascara lông mày 2.0 Chất nhung lì tạo chân mày tự nhiên, không trôi không lem, chống nước mồ hôi. Một lần chải là lên màu, dễ dùng cho newbie, 6 tông màu Hàn Quốc trendy.",
+   "productIds": [
+    "1734144596033177201"
+   ],
+   "metrics": {
+    "gmvAmount": 1601,
+    "salesVolume": 258,
+    "viewCount": 121669,
+    "diggCount": 512,
+    "shareCount": 606,
+    "favoriteCount": 52,
+    "commentCount": 34
+   },
+   "descText": "Cho hàng chân mày vào nếp tự nhiên với Rocksweet – mang lại vẻ đẹp trong trẻo và tự nhiên suốt cả ngày. #rocksweet #makeup #beauty #rocksweetmascarachânmày #fyp ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7677533144320445704.mp4",
+   "hookPrimary": "skit-conflict"
+  },
+  {
+   "slug": "vn-phones-436820",
+   "videoId": "7673450761971436820",
+   "categoryCode": "phones-electronics",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "𝓶𝓸𝓻𝓲 𝓬𝓪𝓼𝓮 ⋆౨ৎ˚",
+   "publishedAt": "2026-08-13",
+   "durationSec": 10,
+   "productTitle": "Ốp lưng họa tiết sọc đứng mảnh hồng nhạt phù hợp iPhone17/15/13 12/11/XR/8p/17pro/17promax tươi mát dễ thương hot trend dành cho 16/16plus/16pro",
+   "productIds": [
+    "1736776454394709929"
+   ],
+   "metrics": {
+    "gmvAmount": 130,
+    "salesVolume": 128,
+    "viewCount": 1785418,
+    "diggCount": 10496,
+    "shareCount": 2072,
+    "favoriteCount": 2612,
+    "commentCount": 24
+   },
+   "descText": "cute ✨ #iphonecase #oplungiphone #oplungdienthoai #xhhhhhh #fypシ ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7673450761971436820.mp4",
+   "hookPrimary": "result-first"
+  },
+  {
+   "slug": "vn-phones-166037",
+   "videoId": "7684517021442166037",
+   "categoryCode": "phones-electronics",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "Thuỳ Nhiên Shop 1990",
+   "publishedAt": "2026-09-12",
+   "durationSec": 23,
+   "productTitle": "Ốp lưng iPhone, tương thích với iPhone 16, 15, 14, PLUS, 13, 12, 11, PRO MAX, XS, MAX, XR, X, 7,8PLUS,Hình họa Hello Kitty kiểu hoạt hình",
+   "productIds": [
+    "1736907321467372546"
+   ],
+   "metrics": {
+    "gmvAmount": 2293,
+    "salesVolume": 75,
+    "viewCount": 5082,
+    "diggCount": 97,
+    "shareCount": 42,
+    "favoriteCount": 49,
+    "commentCount": 47
+   },
+   "descText": "#oplungdienthoai #oplungxinh #thuynhienshop1990 ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7684517021442166037.mp4",
+   "hookPrimary": "sensory-asmr"
+  },
+  {
+   "slug": "vn-phones-706453",
+   "videoId": "7664968444902706453",
+   "categoryCode": "phones-electronics",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "Trang Linh🎃",
+   "publishedAt": "2026-07-22",
+   "durationSec": 23,
+   "productTitle": "KY V60 Quạt Tản Nhiệt Điện Thoại Thế Hệ Mới 【Hạ Nhiệt Siêu Tốc, Đèn LED Chuyển Màu Rực Rỡ】Tản Nhiệt Nhanh Chóng Khi Chơi Game/Xem Phim, Giảm Giật Lag, Phản Hồi Tức Thì. Phù Hợp Với Mọi Dòng Điện Thoại (iPhone Và Android)",
+   "productIds": [
+    "1736350560077186845"
+   ],
+   "metrics": {
+    "gmvAmount": 4783,
+    "salesVolume": 104,
+    "viewCount": 372057,
+    "diggCount": 925,
+    "shareCount": 64,
+    "favoriteCount": 130,
+    "commentCount": 16
+   },
+   "descText": null,
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7664968444902706453.mp4",
+   "hookPrimary": "pain-point"
+  },
+  {
+   "slug": "vn-kitchenware-157332",
+   "videoId": "7676075626826157332",
+   "categoryCode": "kitchenware",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "Tú Linh",
+   "publishedAt": "2026-08-20",
+   "durationSec": 24,
+   "productTitle": "Đĩa Đựng Trái Cây Phong Cách Bắc Âu Cao Cấp, Khay Đựng Bánh Kẹo Hoa Quả Kim Cương Trang Trí Phòng Khách Sang Trọn",
+   "productIds": [
+    "1733693538471413320"
+   ],
+   "metrics": {
+    "gmvAmount": 13812,
+    "salesVolume": 92,
+    "viewCount": 190005,
+    "diggCount": 995,
+    "shareCount": 37,
+    "favoriteCount": 108,
+    "commentCount": 32
+   },
+   "descText": "đĩa đựng trái cây #lovestory  #thinhhanh #viralvideo #mebimsua #diadungtraicay ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7676075626826157332.mp4",
+   "hookPrimary": "result-first"
+  },
+  {
+   "slug": "vn-home-519316",
+   "videoId": "7690483431410519316",
+   "categoryCode": "home-supplies",
+   "videoTypeCode": "promo-pitch",
+   "authorName": "TẠP HÓA XINH ĐẸP 🌺",
+   "publishedAt": "2026-09-28",
+   "durationSec": 108,
+   "productTitle": "[10 bịch] Caipiao Giấy treo gấu dễ thương 10 gói mỗi thùng, mềm mại an toàn thoải mái, dùng đa cảnh.(13012-10)-1735636051366479647",
+   "productIds": [
+    "1735636051366479647"
+   ],
+   "metrics": {
+    "gmvAmount": 108104,
+    "salesVolume": 1097,
+    "viewCount": 216879,
+    "diggCount": 179,
+    "shareCount": 7,
+    "favoriteCount": 26,
+    "commentCount": 14
+   },
+   "descText": "#giadung #tienich #giadinh #hangngay #giayan ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7690483431410519316.mp4",
+   "hookPrimary": "result-first"
+  },
+  {
+   "slug": "vn-home-801672",
+   "videoId": "7696742577302801672",
+   "categoryCode": "home-supplies",
+   "videoTypeCode": "brand-tvc",
+   "authorName": "Downy Việt Nam",
+   "publishedAt": "2026-10-15",
+   "durationSec": 109,
+   "productTitle": "[KOL] Combo 2 Nước xả vải Downy 3.2-3.5L Các Loại Hương",
+   "productIds": [
+    "1729688545763035687"
+   ],
+   "metrics": {
+    "gmvAmount": 5746,
+    "salesVolume": 180,
+    "viewCount": 374866,
+    "diggCount": 105,
+    "shareCount": 29,
+    "favoriteCount": 11,
+    "commentCount": 3
+   },
+   "descText": "Hoàng tử thời hiện đại chẳng cần nhờ giày thủy tinh mới tìm được Lọ Lem, bởi hương thơm Downy đã dẫn lối chàng ✨ 💖Săn ngay DOWNY với ưu đãi hấp dẫn lên đến 30% tại Tiktokshop X P&G Super Brand Day, duy nhất 21–23/10! #PGVuTruDieuKy Đơn vị công bố sản phẩm: Công Ty TNHH Procter & Gamble Vietnam KCN Đồng An, Phường Bình Hòa, TP Hồ Chí Minh",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7696742577302801672.mp4",
+   "hookPrimary": "skit-conflict"
+  },
+  {
+   "slug": "vn-sports-071111",
+   "videoId": "7682481348661071111",
+   "categoryCode": "sports-outdoor",
+   "videoTypeCode": "promo-pitch",
+   "authorName": "Super Bayoo",
+   "publishedAt": "2026-09-06",
+   "durationSec": 23,
+   "productTitle": "[Hoả Tốc ] Bình nước thể thao Chống Tràn Mang Đi Học Đi Chơi Không Lo Đổ Nước có ống hút chống tràn - In họa tiết hoạt hình dễ thương 800ml",
+   "productIds": [
+    "1733744028983526425"
+   ],
+   "metrics": {
+    "gmvAmount": 401,
+    "salesVolume": 176,
+    "viewCount": 17568,
+    "diggCount": 46,
+    "shareCount": 3,
+    "favoriteCount": 11,
+    "commentCount": null
+   },
+   "descText": "bình nước #binhnuoc #binhuongnuoc #TikTokShop \n#chiendichnhasangtao\n#tiktokshop99\n#ThấyLàThíchPickLàTrend\n#sieuhoithuonghieu",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7682481348661071111.mp4",
+   "hookPrimary": "benefit-first"
+  },
+  {
+   "slug": "vn-food-203335",
+   "videoId": "7628793932851203335",
+   "categoryCode": "food-beverages",
+   "videoTypeCode": "real-review",
+   "authorName": "Bếp Nhà Mỹ",
+   "publishedAt": "2026-04-15",
+   "durationSec": 77,
+   "productTitle": "NGHỆ GẠO LỨT - Bột Ngũ Cốc Thuần Chay 420g",
+   "productIds": [
+    "1730349548059200287"
+   ],
+   "metrics": {
+    "gmvAmount": 1195,
+    "salesVolume": 174,
+    "viewCount": 17029394,
+    "diggCount": 57366,
+    "shareCount": 5511,
+    "favoriteCount": 7272,
+    "commentCount": 1000
+   },
+   "descText": "#nghegaolut . Bột nghệ gạo lứt thuần chay.#nghefaleGiuaThang #1315GiuaThang #SaleVuiFreeShip #ThuanChay @Bếp Nhà Mỹ  @Bếp Nhà Mỹ  @Bếp Nhà Mỹ ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7628793932851203335.mp4",
+   "hookPrimary": "result-first"
+  },
+  {
+   "slug": "vn-food-070930",
+   "videoId": "7615559832032070930",
+   "categoryCode": "food-beverages",
+   "videoTypeCode": "talking-head",
+   "authorName": "Chiều Mộc Mạc ☘️",
+   "publishedAt": "2026-03-10",
+   "durationSec": 57,
+   "productTitle": "[Thiện Duyên] Mắm sả ớt chay ăn liền - Hương vị miền quên làm từ đậu nành nguyên chất thơm ngon - Quy cách đóng hủ 300g- Chay mặn đều dùng được. Food Cay Nước Sốt",
+   "productIds": [
+    "1731745416190724964"
+   ],
+   "metrics": {
+    "gmvAmount": 2653,
+    "salesVolume": 778,
+    "viewCount": 1317524,
+    "diggCount": 8033,
+    "shareCount": 412,
+    "favoriteCount": 863,
+    "commentCount": 282
+   },
+   "descText": "“Nếu biết Ăn Chay mà ngon như vầy Cho Cô ăn quanh năm suốt tháng luôn cũng được.Mà phải đúng hủ mắm sả ớt chay này mới được nha.” #anchay #mamsaotchay #reviewdoanchay #chieumocmac #foryou  @Chiều Mộc Mạc ☘️  @Chiều Mộc Mạc ☘️  @Chiều Mộc Mạc ☘️ ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7615559832032070930.mp4",
+   "hookPrimary": "pov-scenario"
+  },
+  {
+   "slug": "vn-womenswear-809684",
+   "videoId": "7654150219201809684",
+   "categoryCode": "womenswear-underwear",
+   "videoTypeCode": "ootd",
+   "authorName": "Phạm Hiền Shop",
+   "publishedAt": "2026-06-22",
+   "durationSec": 16,
+   "productTitle": "bộ đùi 2 chất vải đũi thun xốp chất liệu mềm mịn co giãn nhẹ măc thoả mái thoáng mát size 40_75kg",
+   "productIds": [
+    "1735100374795781655"
+   ],
+   "metrics": {
+    "gmvAmount": 1799,
+    "salesVolume": 252,
+    "viewCount": 1300207,
+    "diggCount": 3397,
+    "shareCount": 1055,
+    "favoriteCount": 333,
+    "commentCount": 85
+   },
+   "descText": "Bộ đùi đũi mặc nhà #dobo #dobomacnha #thoitrangnu #thoitrangtrungnien #xuhuong ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7654150219201809684.mp4",
+   "hookPrimary": "pov-scenario"
+  },
+  {
+   "slug": "vn-womenswear-305352",
+   "videoId": "7674630217289305352",
+   "categoryCode": "womenswear-underwear",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "Tuyết Gia Dụng",
+   "publishedAt": "2026-08-16",
+   "durationSec": 21,
+   "productTitle": "BỘ DÀI ÔM HI - THUN TĂM THOÁNG MÁT - MỀM MỊN",
+   "productIds": [
+    "1736334080721585333"
+   ],
+   "metrics": {
+    "gmvAmount": 3417,
+    "salesVolume": 498,
+    "viewCount": 218731,
+    "diggCount": 855,
+    "shareCount": 43,
+    "favoriteCount": 113,
+    "commentCount": 40
+   },
+   "descText": null,
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7674630217289305352.mp4",
+   "hookPrimary": "pov-scenario"
+  },
+  {
+   "slug": "vn-womenswear-509704",
+   "videoId": "7673703774040509704",
+   "categoryCode": "womenswear-underwear",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "KIM STYLE",
+   "publishedAt": "2026-08-14",
+   "durationSec": 25,
+   "productTitle": "Size đến 80kg Quần jean suông cạp cúc co giãn thêu vương miện mặc thoải mái trẻ trung cho nữ QJF021",
+   "productIds": [
+    "1732421793579435677"
+   ],
+   "metrics": {
+    "gmvAmount": 2151,
+    "salesVolume": 283,
+    "viewCount": 358687,
+    "diggCount": 1761,
+    "shareCount": 174,
+    "favoriteCount": 140,
+    "commentCount": 99
+   },
+   "descText": null,
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7673703774040509704.mp4",
+   "hookPrimary": "pain-point"
+  },
+  {
+   "slug": "vn-beauty-073684",
+   "videoId": "7673818248781073684",
+   "categoryCode": "beauty-personal-care",
+   "videoTypeCode": "promo-pitch",
+   "authorName": "Tutubaby VN",
+   "publishedAt": "2026-08-14",
+   "durationSec": 22,
+   "productTitle": "【Thêm lợi khuẩn probiotic】Băng vệ sinh Tutubaby có khả năng chống rò rỉ 360°, phù hợp cho cả ngày lẫn đêm【nâng cấp】Băng vệ sinh dạng quần Tutubaby (18 miếng), thoáng khí, phù hợp sử dụng ngày và đêm dành cho phụ nữ mang thai và sau sinh",
+   "productIds": [
+    "1734467682069677060"
+   ],
+   "metrics": {
+    "gmvAmount": 1184,
+    "salesVolume": 389,
+    "viewCount": 277991,
+    "diggCount": 744,
+    "shareCount": 76,
+    "favoriteCount": 139,
+    "commentCount": 7
+   },
+   "descText": "回复 @Thiên Thiên 86  Những nỗ lực của Tutubaby trở nên có ý nghĩa vào thời điểm này. Tôi hy vọng mọi phụ nữ có thể có một kỳ kinh nguyệt thoải mái và đẹp đẽ.☺️☺️ #Tutubaby #quankinhnguyet #bimkinhnguyet #chamsocphunu #phunuvietnam ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7673818248781073684.mp4",
+   "hookPrimary": "benefit-first"
+  },
+  {
+   "slug": "vn-phones-050881",
+   "videoId": "7689454503313050881",
+   "categoryCode": "phones-electronics",
+   "videoTypeCode": "promo-pitch",
+   "authorName": "Quyết độc lạ",
+   "publishedAt": "2026-09-25",
+   "durationSec": 41,
+   "productTitle": "COUDASH W895 Tai nghe Bluetooth không dây, âm thanh vòm chất lượng phim, âm thanh HiFi, giảm tiếng ồn thông minh ENC, thời lượng pin dài, đeo trong tai thoải mái, tương thích hoàn toàn với android và apple",
+   "productIds": [
+    "1736572281253496323"
+   ],
+   "metrics": {
+    "gmvAmount": 3929,
+    "salesVolume": 1325,
+    "viewCount": 2957083,
+    "diggCount": 4076,
+    "shareCount": 189,
+    "favoriteCount": 546,
+    "commentCount": 227
+   },
+   "descText": null,
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7689454503313050881.mp4",
+   "hookPrimary": "benefit-first"
+  },
+  {
+   "slug": "vn-health-236690",
+   "videoId": "7638441707570236690",
+   "categoryCode": "health",
+   "videoTypeCode": "product-closeup",
+   "authorName": "Khỏe Đẹp 247",
+   "publishedAt": "2026-05-11",
+   "durationSec": 54,
+   "productTitle": "Men dùng cho tiêu chảy, đầy hơi, chướng bụng Progermila - 2 tỷ bào tử lợi khuẩn (Hộp 10 ống)",
+   "productIds": [
+    "1734141572298409128"
+   ],
+   "metrics": {
+    "gmvAmount": 1015,
+    "salesVolume": 59,
+    "viewCount": 1170226,
+    "diggCount": 3056,
+    "shareCount": 192,
+    "favoriteCount": 371,
+    "commentCount": 25
+   },
+   "descText": "🌿Chăm sóc hệ tiêu hóa khỏe mạnh cùng #menvisinhprogermila #hotrotieuhoa ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7638441707570236690.mp4",
+   "hookPrimary": "pain-point"
+  },
+  {
+   "slug": "vn-health-468168",
+   "videoId": "7672358838745468168",
+   "categoryCode": "health",
+   "videoTypeCode": "product-closeup",
+   "authorName": "Cây Rơm",
+   "publishedAt": "2026-08-11",
+   "durationSec": 10,
+   "productTitle": "[Công ty] [32 tép] Tinh Nghệ Nano 365 Curcumin Premium Hàn Quốc 32g x 3g",
+   "productIds": [
+    "1731195965908092086"
+   ],
+   "metrics": {
+    "gmvAmount": 1215,
+    "salesVolume": 22,
+    "viewCount": 31776,
+    "diggCount": 33,
+    "shareCount": 2,
+    "favoriteCount": 4,
+    "commentCount": 1
+   },
+   "descText": "Nghệ Nano thực phẩm bổ trợ sức khoẻ huyền thoại, hỗ trợ chống oxy hoá, sáng da, bảo vệ dạ dày,.... và bao nhiêu công dụng khác không thể kể tên.  Giỏ hàng đang được trợ giá cực kì sâu các chị săn nha  #MadeWithDola #nghệnano #thucphamchucnang #chongoxyhoa",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7672358838745468168.mp4",
+   "hookPrimary": "pov-scenario"
+  },
+  {
+   "slug": "vn-health-648852",
+   "videoId": "7673731366986648852",
+   "categoryCode": "health",
+   "videoTypeCode": "talking-head",
+   "authorName": "CẨM NANG SỨC KHOẺ",
+   "publishedAt": "2026-08-14",
+   "durationSec": 42,
+   "productTitle": "[LIVE PENTAVITE] Vitamin B Complex Viên Nhai | 9 dưỡng chất trong mỗi viên: 8 loại Vitamin B + Taurine | Hỗ trợ chuyển hóa năng lượng | Hỗ trợ hạn chế rụng tóc | Giảm mệt mỏi| Chứng nhận VFA, NIFC| Hộp 30 viên",
+   "productIds": [
+    "1731653018375916233"
+   ],
+   "metrics": {
+    "gmvAmount": 2656,
+    "salesVolume": 236,
+    "viewCount": 146388,
+    "diggCount": 520,
+    "shareCount": 19,
+    "favoriteCount": 50,
+    "commentCount": 6
+   },
+   "descText": "Muốn biết sức khoẻ của bạn có tốt hay không chỉ cần nhìn vào vài điểm sau  #LearnOnTikTok #xuhuong #pentavite #vitaminb #tangcuongdekhang ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7673731366986648852.mp4",
+   "hookPrimary": "pain-point"
+  },
+  {
+   "slug": "vn-household-060295",
+   "videoId": "7673127356374060295",
+   "categoryCode": "household-appliances",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "Thế Giới Đồ Xịn",
+   "publishedAt": "2026-08-12",
+   "durationSec": 38,
+   "productTitle": "DKHOUSE Nồi Điện 1.8L Đa Năng, Nồi Cơm, Nồi Áp Suất Nấu Các Món, Tặng Vỉ Hấp",
+   "productIds": [
+    "1736405360362751176"
+   ],
+   "metrics": {
+    "gmvAmount": 3926,
+    "salesVolume": 616,
+    "viewCount": 262677,
+    "diggCount": 779,
+    "shareCount": 62,
+    "favoriteCount": 104,
+    "commentCount": 72
+   },
+   "descText": "#xuhuong #thegioidosin #dogiadung #noilaudienmini ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7673127356374060295.mp4",
+   "hookPrimary": "benefit-first"
+  },
+  {
+   "slug": "vn-household-624071",
+   "videoId": "7673723930229624071",
+   "categoryCode": "household-appliances",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "Thế Giới Đồ Xịn",
+   "publishedAt": "2026-08-14",
+   "durationSec": 38,
+   "productTitle": "DKHOUSE Nồi Điện 1.8L Đa Năng, Nồi Cơm, Nồi Áp Suất Nấu Các Món, Tặng Vỉ Hấp",
+   "productIds": [
+    "1736405360362751176"
+   ],
+   "metrics": {
+    "gmvAmount": 1266,
+    "salesVolume": 198,
+    "viewCount": 86249,
+    "diggCount": 238,
+    "shareCount": 22,
+    "favoriteCount": 28,
+    "commentCount": 40
+   },
+   "descText": "#xuhuong #thegioidosin #dogiadung #noilaudienmini ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7673723930229624071.mp4",
+   "hookPrimary": "benefit-first"
+  },
+  {
+   "slug": "vn-household-570632",
+   "videoId": "7673454905184570632",
+   "categoryCode": "household-appliances",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "Thế Giới Đồ Xịn",
+   "publishedAt": "2026-08-13",
+   "durationSec": 38,
+   "productTitle": "DKHOUSE Nồi Điện 1.8L Đa Năng, Nồi Cơm, Nồi Áp Suất Nấu Các Món, Tặng Vỉ Hấp",
+   "productIds": [
+    "1736405360362751176"
+   ],
+   "metrics": {
+    "gmvAmount": 1405,
+    "salesVolume": 219,
+    "viewCount": 153719,
+    "diggCount": 311,
+    "shareCount": 33,
+    "favoriteCount": 46,
+    "commentCount": 37
+   },
+   "descText": "#xuhuong #thegioidosin #dogiadung #noilaudienmini ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7673454905184570632.mp4",
+   "hookPrimary": "benefit-first"
+  },
+  {
+   "slug": "vn-womenswear-048084",
+   "videoId": "7685406085469048084",
+   "categoryCode": "womenswear-underwear",
+   "videoTypeCode": "ootd",
+   "authorName": "Phối Đồ Cùng Em",
+   "publishedAt": "2026-09-14",
+   "durationSec": 15,
+   "productTitle": "quần CHUN THỤNG chất gió lụa mềm phù hợp mọi lứa tuổi",
+   "productIds": [
+    "1736967485876634731"
+   ],
+   "metrics": {
+    "gmvAmount": 27087,
+    "salesVolume": 304,
+    "viewCount": 31753,
+    "diggCount": 246,
+    "shareCount": 3,
+    "favoriteCount": 14,
+    "commentCount": 5
+   },
+   "descText": "Quần đẹp mê quá các vợ ơi #quanxinh #quanaonu #xuhuong ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7685406085469048084.mp4",
+   "hookPrimary": "pov-scenario"
+  },
+  {
+   "slug": "vn-baby-161044",
+   "videoId": "7681181709408161044",
+   "categoryCode": "baby-maternity",
+   "videoTypeCode": "talking-head",
+   "authorName": "Mẹ và Bé Marso",
+   "publishedAt": "2026-09-03",
+   "durationSec": 85,
+   "productTitle": "[THÙNG 24/48 HỘP] Sữa uống dinh dưỡng ColosBaby Pedia 110ml",
+   "productIds": [
+    "1735533691300579242"
+   ],
+   "metrics": {
+    "gmvAmount": 1800,
+    "salesVolume": 69,
+    "viewCount": 37126,
+    "diggCount": 43,
+    "shareCount": 8,
+    "favoriteCount": 8,
+    "commentCount": 4
+   },
+   "descText": "Đừng thấy con ăn được nhiều mà vội mừng #mevabemarso #colosbabygoldpedia #colosbabypedia ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7681181709408161044.mp4",
+   "hookPrimary": "pain-point"
+  },
+  {
+   "slug": "vn-baby-072597",
+   "videoId": "7681881209110072597",
+   "categoryCode": "baby-maternity",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "Sachibaby.vn",
+   "publishedAt": "2026-09-05",
+   "durationSec": 9,
+   "productTitle": "Gạc răng miệng cho bé Sachi 0+ hộp 20 gói/30 gói vệ sinh hàng ngày làm sạch nướu, lưỡi, răng miệng cho trẻ từ sơ sinh trở lên",
+   "productIds": [
+    "1730100238998145887"
+   ],
+   "metrics": {
+    "gmvAmount": 680,
+    "salesVolume": 133,
+    "viewCount": 116377,
+    "diggCount": 172,
+    "shareCount": 19,
+    "favoriteCount": 51,
+    "commentCount": 4
+   },
+   "descText": "Jerry chọn gạc vì chăm miệng con không cần cầu kỳ, chỉ cần mẹ lau nhẹ mỗi ngày là con sạch thơm hơn rồi 🍼  #sachi #gacrangmiengsachi #gacrangmieng",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7681881209110072597.mp4",
+   "hookPrimary": "pain-point"
+  },
+  {
+   "slug": "vn-phones-779410",
+   "videoId": "7695573287186779410",
+   "categoryCode": "phones-electronics",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "Đồ Gia Dụng",
+   "publishedAt": "2026-10-12",
+   "durationSec": 52,
+   "productTitle": "COD  sạc nhanh pin dự phòng di động, sạc 5 điện thoại di động cùng một lúc với 4 cáp sạc có thể tháo rời, Android/Type-C/iPhone  20000mAh",
+   "productIds": [
+    "1733107272617526844"
+   ],
+   "metrics": {
+    "gmvAmount": 889,
+    "salesVolume": 214,
+    "viewCount": 22693,
+    "diggCount": 46,
+    "shareCount": 10,
+    "favoriteCount": 11,
+    "commentCount": 1
+   },
+   "descText": "sạc dự phòng đa năng  #dogiadung #dogiadungtienich #sacduphong #sacduphong20000mah #sacduphong30000mah sacdu",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7695573287186779410.mp4",
+   "hookPrimary": "benefit-first"
+  },
+  {
+   "slug": "vn-phones-948309",
+   "videoId": "7678255420539948309",
+   "categoryCode": "phones-electronics",
+   "videoTypeCode": "handheld-demo",
+   "authorName": "An Thiên Ngọc",
+   "publishedAt": "2026-08-27",
+   "durationSec": 36,
+   "productTitle": "Dây cáp dữ liệu 240W bốn trong một đầu đạn silicon lỏng phù hợp cho Apple và Huawei, sạc nhanh siêu tốc, dây cáp dữ liệu điện thoại type-C kép, hai kéo hai sạc",
+   "productIds": [
+    "1734281875824215076"
+   ],
+   "metrics": {
+    "gmvAmount": 855,
+    "salesVolume": 491,
+    "viewCount": 155611,
+    "diggCount": 254,
+    "shareCount": 20,
+    "favoriteCount": 31,
+    "commentCount": 6
+   },
+   "descText": "Dây cáp sạc dữ liệu 240W 4 in 1 - Sạc tất cả thiết bị ",
+   "videoUrl": "https://static.clipcat.ai/viral-prompt/video/7678255420539948309.mp4",
+   "hookPrimary": "benefit-first"
+  }
+ ]
+}

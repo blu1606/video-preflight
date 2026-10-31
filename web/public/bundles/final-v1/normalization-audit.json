@@ -1,0 +1,767 @@
+{
+  "raw_normalized_rows": 691,
+  "unique_rows": 622,
+  "duplicates": [
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-xuong-quai-cheo-388820|301553956402758407",
+      "prior_observation_id": "415cf1bdc51101712a78251e",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-bup-be-mui-nhon-cut-out-cach-dieu-388822|301553991685243655",
+      "prior_observation_id": "777de9549e997df2500155bf",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-vuong-quai-ngang-phoi-khoa-trang-tri-388836|301554242001306375",
+      "prior_observation_id": "45054752350046be6e5c263c",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-thap-quai-ngang-388835|301554293289259013",
+      "prior_observation_id": "30a8cc5de97fd756ea2a91c3",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/tui-giay-tg003-388834|301554246615040775",
+      "prior_observation_id": "e702605ebcc00000909eb19a",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-slingback-ho-388838|301554258845631239",
+      "prior_observation_id": "845c6de0563bc09068435701",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-slingback-got-vuong-388846|301554272418398983",
+      "prior_observation_id": "71a1573c0422079f484db8e6",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/tui-giay-tg001-388845|301554368249860101",
+      "prior_observation_id": "e8283cc472023e37506dcd64",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/dep-mui-vuong-khoa-trang-tri-388841|301554287954100999",
+      "prior_observation_id": "1823b77af358496e9c5ca05c",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/tui-xach-nho-baguette-deo-vai-khoa-xoay-388848|301554326524920583",
+      "prior_observation_id": "e45458464268e9090f6077d2",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/tui-xach-nho-baguette-deo-vai-khoa-xoay-388848|301554326524920583",
+      "prior_observation_id": "e45458464268e9090f6077d2",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/tui-xach-nho-baguette-deo-vai-khoa-xoay-388848|301554326524920583",
+      "prior_observation_id": "e45458464268e9090f6077d2",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-sandal-got-vuong-quai-ngang-ban-lon-quai-co-chan-388850|301554255607628551",
+      "prior_observation_id": "cb4cb752dbd2ed8d1cce476f",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-mui-nhon-got-thanh-388853|301555581527789573",
+      "prior_observation_id": "616a2bc912a4cd1109307645",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-suc-got-tru-thap-phoi-quai-ngang-388865|301554652355235845",
+      "prior_observation_id": "85d0f88fbf1e72118e1a8d37",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-slingback-got-thanh-388869|301554809910067975",
+      "prior_observation_id": "43aa9d88555bec82ccd4f5e9",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    },
+    {
+      "entity_id": "juno|offer|https://juno.vn/products/giay-cao-got-kitten-heels-pump-388881|301555092354499335",
+      "prior_observation_id": "5bba57f147e8201f72e5516b",
+      "kept": "latest capture; same-time duplicate representation collapsed"
+    }
+  ],
+  "joinAudit": [
+    {
+      "source": "allbirds",
+      "parent_id": "7340901859408",
+      "variant_id": "42146889039952",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7340901859408",
+      "variant_id": "42146889072720",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7340901859408",
+      "variant_id": "42146889105488",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7340901859408",
+      "variant_id": "42146889138256",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7340901859408",
+      "variant_id": "42146889171024",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7340901859408",
+      "variant_id": "42146889203792",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7340901859408",
+      "variant_id": "42146889236560",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884546990160",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547022928",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547055696",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547088464",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547121232",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547154000",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547186768",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547219536",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547252304",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547285072",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547317840",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547350608",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258385809488",
+      "variant_id": "41884547383376",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884542894160",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884542926928",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884542959696",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884542992464",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884543025232",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884543058000",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884543090768",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884543123536",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884543156304",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884543189072",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884543221840",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884543254608",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7258384564304",
+      "variant_id": "41884543287376",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397085732944",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397085765712",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397085798480",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397085831248",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397085864016",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397085896784",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397085929552",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397085962320",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397085995088",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397086027856",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397086060624",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397086093392",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7235869147216",
+      "variant_id": "41397086126160",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280205904",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280238672",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280271440",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280304208",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280336976",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280369744",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280402512",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280435280",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280468048",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280500816",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280533584",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280566352",
+      "candidate_count": 1,
+      "accepted": true
+    },
+    {
+      "source": "allbirds",
+      "parent_id": "7205211570256",
+      "variant_id": "41271280599120",
+      "candidate_count": 1,
+      "accepted": true
+    }
+  ],
+  "cross_source_merges": 0
+}
