@@ -90,7 +90,7 @@ export default function OverviewPage() {
 
           <div className="flex shrink-0 items-center gap-3">
             <Button asChild size="lg" className="bg-white text-orange-600 font-bold hover:bg-orange-50 shadow-md">
-              <Link to="/">
+              <Link to="/studio">
                 <Upload className="mr-2 size-4" /> Upload video mới
               </Link>
             </Button>
@@ -138,7 +138,7 @@ export default function OverviewPage() {
                 </CardDescription>
               </div>
               <Button asChild size="xs" variant="outline">
-                <Link to="/">
+                <Link to="/studio">
                   <Plus className="mr-1 size-3" /> Thêm video
                 </Link>
               </Button>
@@ -254,7 +254,7 @@ export default function OverviewPage() {
 
                   <div className="flex items-center gap-2 pt-1">
                     <Button asChild size="xs" variant="outline" className="flex-1 text-xs">
-                      <Link to={`/shops/${s.id}`}>Xem chi tiết</Link>
+                      <Link to={`/shops/${s.id}/profile`}>Xem chi tiết</Link>
                     </Button>
                     {shopVideos.length > 0 && (
                       <Button asChild size="xs" className="bg-orange-600 hover:bg-orange-700 text-white text-xs">

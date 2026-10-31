@@ -13,7 +13,8 @@ Status: confirmed 2026-10-31 (shape). No code yet.
 | 1 | `/` Landing | Persuade | Trang sản phẩm cho seller: vấn đề ("đăng rồi mới biết video dở"), sản phẩm làm gì, cách hoạt động 3 bước, điểm khác biệt (mỗi con số truy được nguồn; policy không bao giờ báo "đạt"). CTA chính duy nhất: "Đăng nhập bằng Shopee". |
 | 2 | `/login` | Operate | Mô phỏng màn cấp quyền Shopee Open Platform (seller đăng nhập, bấm "Cho phép"). Nhãn "mô phỏng" luôn hiện. Không dùng logo/giao diện Shopee y hệt, không thu thập mật khẩu thật. |
 | 3 | `/shops/select` | Operate | 9 shop đã cấp quyền dạng thẻ: tên, ngành hàng, mô tả ngắn, tình trạng shop (lấy từ shop diagnosis / daily metrics, ví dụ "shop mới, ít đánh giá", "GMV đang giảm"), các SKU đang bán. Ghi rõ dữ liệu là mô phỏng, chỉ để thử. |
-| 4 | `/shops/:id/add-video` | Operate | Thư viện video của shop đang chọn từ `data/<SHOP_ID>/`, dạng thẻ có ảnh xem trước; bấm là chọn rồi sang Studio. Có nút tải file khác lên (lưu vào thư mục shop đó). |
+| 3b | `/shops/:id` | Operate | Chọn sản phẩm (SKU) của shop vừa chọn: ảnh, tên, giá, rating, tồn kho, SKU nào đã có video. Có ô dán link sản phẩm Shopee (`sources/shopee_listing.py`). (Bổ sung 31/10 12:51: user chốt "chọn shop rồi chọn product".) |
+| 4 | `/shops/:id/products/:skuId/add-video` | Operate | Thư viện video của shop từ `data/<SHOP_ID>/`, video gắn với SKU đang chọn xếp trước, dạng thẻ có ảnh xem trước; bấm là chọn rồi sang Studio với shop + SKU + video đã chọn sẵn. Có nút tải file khác lên (lưu vào thư mục shop đó). |
 | 5 | `/studio` | Operate | Studio hiện tại, giữ nguyên (chuyển từ `/`). Nhận shop + video đã chọn từ bước trước. |
 
 Login thật (tham chiếu, không triển khai): app chuyển sang trang `shop/auth_partner` của Shopee, seller đăng nhập và cấp quyền, app đổi mã lấy token; tài khoản chính (main/merchant) có thể cấp quyền nhiều shop trong một lần. Nguồn: hướng dẫn của bên tích hợp (Rutter, Celigo, BigSeller), chưa có tài liệu chính thức của Shopee.

@@ -86,7 +86,7 @@ export default function VideoPage() {
             </Link>{' '}
             /{' '}
             {video.shop_id ? (
-              <Link to={`/shops/${video.shop_id}`} className="hover:underline">
+              <Link to={`/shops/${video.shop_id}/profile`} className="hover:underline">
                 {video.shop_id}
               </Link>
             ) : (

@@ -4,7 +4,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom'
 import { cn } from '@/lib/utils'
 
 const NAV = [
-  { to: '/', label: 'Kiểm tra video', icon: Upload, end: true },
+  { to: '/studio', label: 'Kiểm tra video', icon: Upload, end: true },
   { to: '/analyze', label: 'Lịch sử', icon: History },
   { to: '/shops', label: 'Shops', icon: Store },
   { to: '/data', label: 'Data', icon: Database },

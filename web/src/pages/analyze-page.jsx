@@ -320,7 +320,7 @@ function AnalyzeVideo({ videoId, params, setParams }) {
           </ErrorBoundary>
 
           <p className="text-[11px] text-muted-foreground">
-            Mọi số trên trang đọc từ kết quả backend (run #{selected?.id ?? '–'}). <Link to="/" className="underline">Kiểm tra video khác</Link>
+            Mọi số trên trang đọc từ kết quả backend (run #{selected?.id ?? '–'}). <Link to="/studio" className="underline">Kiểm tra video khác</Link>
           </p>
         </div>
       </div>
