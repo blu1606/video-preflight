@@ -42,7 +42,7 @@ export function AppBar({ shops, shop, onShop, onShopProfile, videos, video, sku,
   return (
     <header className="hdr" aria-label="Thanh điều hướng">
       <div className="nav-row app-bar">
-        <Link className="brand" to="/" aria-label="Preflight"><img className="brand-mark" src="/brand/preflight-mark.svg" alt="" width="26" height="26" />Preflight</Link>
+        <Link className="brand" to="/" aria-label="SOI"><img className="brand-mark" src="/brand/preflight-mark.svg" alt="" width="26" height="26" />SOI</Link>
         <span className="bar-sep" aria-hidden="true" />
 
         <Menu

@@ -658,3 +658,5 @@
   height: max(100cqh, calc(100cqw / var(--ar, .5625)));
   transform: translate(-50%, -50%);
 }
+/* the score carries one decimal (54,7): a touch smaller so it clears the ring */
+.pf-root .studio-ring .ring-num { font-size: 30px; letter-spacing: -.035em; }

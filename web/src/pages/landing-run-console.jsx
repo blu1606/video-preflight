@@ -22,7 +22,7 @@ const RUN_LOG = [
   { t: 8.07, lane: 'decide', agent: 'decision_scorer', text: '36 câu, một lần gọi · 12.844 token' },
   { t: 8.08, lane: 'policy', agent: 'policy_guard', text: 'rule + reviewer, trích nguyên văn' },
   { t: 8.09, lane: 'decide', agent: 'auditor', text: 'kiểm chéo các câu điểm thấp' },
-  { t: 8.09, lane: 'write', agent: 'orchestrator', text: 'ghép điểm 55 và 5 việc cần sửa' },
+  { t: 8.09, lane: 'write', agent: 'orchestrator', text: 'ghép điểm 54,7 và 5 việc cần sửa' },
   { t: 30.14, lane: 'video', agent: 'video_analyst', text: 'khoanh vùng lỗi trên khung hình · 22,0s' },
   { t: 44.52, lane: 'write', agent: 'insight_writer', text: 'viết tóm tắt dễ hiểu · xong' },
 ]
@@ -213,13 +213,13 @@ export default function RunConsole() {
     Object.keys(LANES).map((id) => [id, live === id ? 'live' : doneIn(id) >= LANE_TOTAL[id] ? 'done' : doneIn(id) ? 'live' : 'idle']),
   )
   return (
-    <div className="lp-con" ref={ref} role="img" aria-label="Lượt chấm #46 của video mẫu: 26 bước trong 44,5 giây, ba nhóm agent chạy song song, Decisions chấm 36 câu trong một lần gọi, policy đi riêng, kết quả là điểm 55 và 5 việc cần sửa.">
+    <div className="lp-con" ref={ref} role="img" aria-label="Lượt chấm #46 của video mẫu: 26 bước trong 44,5 giây, ba nhóm agent chạy song song, Decisions chấm 36 câu trong một lần gọi, policy đi riêng, kết quả là điểm 54,7 và 5 việc cần sửa.">
       <div className="lp-con-title">
         <span className="lp-con-dots" aria-hidden="true"><i /><i /><i /></span>
-        <span>preflight — SHOP001-VID01 — lượt #46</span>
+        <span>soi — SHOP001-VID01 — lượt #46</span>
       </div>
       <p className="lp-con-banner">
-        <b>Preflight run</b> · <span className="is-decide">Decisions 36 câu</span> · <span className="is-video">3 nhóm agent song song</span>
+        <b>SOI run</b> · <span className="is-decide">Decisions 36 câu</span> · <span className="is-video">3 nhóm agent song song</span>
       </p>
       <p className="lp-con-legend">
         {Object.entries(LANES).map(([id, l]) => <span key={id} className={`is-${id}`}><i />{l.label}</span>)}

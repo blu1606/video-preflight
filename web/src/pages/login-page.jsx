@@ -30,7 +30,7 @@ export default function LoginPage() {
       <section className="op-auth" aria-labelledby="auth-title">
         <div className="op-auth-head">
           <img className="op-auth-art" src="/illustrations/login-shield.webp" alt="" width="1200" height="1200" />
-          <h1 id="auth-title" className="op-auth-title">Cho phép Preflight truy cập shop của bạn</h1>
+          <h1 id="auth-title" className="op-auth-title">Cho phép SOI truy cập shop của bạn</h1>
         </div>
 
         <div className="op-auth-body">
@@ -47,7 +47,7 @@ export default function LoginPage() {
           </div>
 
           <div>
-            <p className="op-auth-section-title">Preflight sẽ được phép</p>
+            <p className="op-auth-section-title">SOI sẽ được phép</p>
             <ul className="op-scope-list">
               {SCOPES.map((scope) => (
                 <li key={scope}>

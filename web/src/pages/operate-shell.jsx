@@ -10,9 +10,9 @@ const FLOW_STEPS = ['Đăng nhập', 'Chọn shop', 'Chọn sản phẩm', 'Ch�
 
 export function BrandMark() {
   return (
-    <Link to="/" className="op-brand" aria-label="Preflight, trang chủ">
+    <Link to="/" className="op-brand" aria-label="SOI, trang chủ">
       <img src="/brand/preflight-mark.svg" alt="" width="30" height="30" />
-      Preflight
+      SOI
     </Link>
   )
 }

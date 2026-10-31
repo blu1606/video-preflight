@@ -66,12 +66,12 @@ export default function OverviewPage() {
           <div className="space-y-2 max-w-2xl">
             <div className="flex items-center gap-2">
               <Badge className="bg-white/20 text-white backdrop-blur-xs font-semibold">
-                Commerce Preflight v2
+                SOI v2
               </Badge>
               <span className="text-xs text-orange-100">Cơ chế thẩm định video trước khi xuất bản</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-              Video Intelligence Lab · Shopee Preflight
+              SOI · Sales-video Oversight Intelligence
             </h1>
             <p className="text-sm text-orange-100 leading-relaxed">
               Kiểm tra tỷ lệ chuyển đổi, lực hút 3 giây đầu (Hook), và đối chiếu chéo chính sách các sàn thương mại điện tử bằng AI đa phương thức.
@@ -113,7 +113,7 @@ export default function OverviewPage() {
         </div>
       </div>
 
-      {/* 2. Uploaded / Preflight Videos Section */}
+      {/* 2. Uploaded / SOI Videos Section */}
       {uploadedVideos.length > 0 && (
         <Card className="border-orange-200 shadow-sm">
           <CardHeader className="bg-orange-50/30 px-5 py-4">

@@ -26,6 +26,9 @@ const GROUP_PARTS = [
 ]
 const band = (v, ready, fix) => (v == null ? 'missing' : v >= ready ? 'ready' : v >= fix ? 'fix' : 'rework')
 
+// one decimal, as the backend reports it (54,7 — not a rounded 55 that claims more precision than it hides)
+const scoreText = (v) => (Math.round(v * 10) / 10).toFixed(1).replace('.', ',')
+
 /** Score ring: the arc fills to the score, coloured by band, with a tick where "ready" starts. */
 function ScoreRing({ value, ready, fix, estimate, scanning = false }) {
   const r = 46
@@ -41,7 +44,7 @@ function ScoreRing({ value, ready, fix, estimate, scanning = false }) {
         {scanning && <circle className="ring-spin" cx="60" cy="60" r={r} strokeDasharray={`${c * 0.18} ${c}`} />}
         <line className="ring-tick" x1={60 + Math.cos(tick) * (r - 6)} y1={60 + Math.sin(tick) * (r - 6)} x2={60 + Math.cos(tick) * (r + 7)} y2={60 + Math.sin(tick) * (r + 7)} />
       </svg>
-      <span className="ring-num">{value == null ? '—' : Math.round(value)}<small>/100</small></span>
+      <span className="ring-num">{value == null ? '—' : scoreText(value)}<small>/100</small></span>
     </span>
   )
 }
@@ -59,7 +62,7 @@ function ScoreHero({ overall, provisional, gate, headline, onPolicy, running = f
   const review = gate?.status === 'review'
   return (
     <div className="studio-hero">
-      <div className="studio-hero-top" aria-label={overall?.score != null ? `Điểm tổng ${Math.round(overall.score)} trên 100` : 'Chưa có điểm tổng'}>
+      <div className="studio-hero-top" aria-label={overall?.score != null ? `Điểm tổng ${scoreText(overall.score)} trên 100` : 'Chưa có điểm tổng'}>
         <ScoreRing value={counted} ready={ready} fix={fix} estimate={estimate} scanning={running && counted == null} />
         <div className="studio-hero-text">
           {estimate || (running && overall?.score == null) ? (

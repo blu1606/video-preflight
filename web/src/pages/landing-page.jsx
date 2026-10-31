@@ -11,7 +11,7 @@ const STUDIO_HREF = '/studio?shop=SHOP001&video=SHOP001-VID01'
 // The demo run: SHOP001-VID01 "TeaShell soap", run #46 — scores, flagged lines and fixes as the API returned them.
 const DEMO = {
   duration: 38.7,
-  score: 55,
+  score: 54.7,
   ready: 75,
   verdict: 'Sửa rồi đăng',
   groups: [
@@ -122,7 +122,7 @@ function EditBay() {
         </div>
         <div className="lp-bay-side">
           <div className="lp-bay-score">
-            <div className="lp-score-number"><span className={`lp-bay-num is-${band(DEMO.score, DEMO.ready)}`}>{DEMO.score}</span><span>/100</span></div>
+            <div className="lp-score-number"><span className={`lp-bay-num is-${band(DEMO.score, DEMO.ready)}`}>{String(DEMO.score).replace('.', ',')}</span><span>/100</span></div>
             <div className="lp-bay-verdict"><span className="lp-kicker">KẾT LUẬN MẪU</span><strong>{DEMO.verdict}</strong><small>Ngưỡng điểm tham khảo: {DEMO.ready}</small></div>
             <ul className="lp-bay-groups" aria-label="Điểm theo nhóm">
               {DEMO.groups.map((g) => <li key={g.label} className={`is-${band(g.value, DEMO.ready)}`}><span>{g.label}</span><i style={{ '--v': `${g.value}%` }} aria-hidden="true" /><b>{g.value}</b></li>)}
@@ -160,7 +160,7 @@ const STEPS = [
   { title: 'Biết cần sửa ở đâu', text: 'Xem điểm, lý do và danh sách việc cần sửa theo giây. Bạn quyết định bước tiếp theo với creator.', label: 'Điểm + bằng chứng + gợi ý' },
 ]
 const FAQS = [
-  { q: 'Preflight dành cho ai?', a: 'Dành cho brand/shop làm việc với KOC, KOL và creator affiliate, đặc biệt ở ngành mỹ phẩm, sức khỏe, mẹ & bé. Người duyệt nội dung kiểm tra video trước khi đăng; creator cũng có thể tự kiểm trước khi gửi brand.' },
+  { q: 'SOI dành cho ai?', a: 'Dành cho brand/shop làm việc với KOC, KOL và creator affiliate, đặc biệt ở ngành mỹ phẩm, sức khỏe, mẹ & bé. Người duyệt nội dung kiểm tra video trước khi đăng; creator cũng có thể tự kiểm trước khi gửi brand.' },
   { q: 'Điểm cao có nghĩa là video chắc chắn bán tốt?', a: 'Không. Điểm giúp xác định phần mạnh, yếu theo tiêu chí và dữ liệu hiện có; không cam kết lượt xem hay doanh số. Policy được xem riêng, không dùng điểm cao để bỏ qua một cảnh báo.' },
   { q: '“Không phát hiện vi phạm” có phải được sàn duyệt?', a: 'Không. Đây là kết quả đối chiếu trong phạm vi dữ liệu hiện có, không phải xác nhận từ Shopee hay TikTok Shop. Người duyệt vẫn cần xem bằng chứng và tự quyết định trước khi đăng.' },
   { q: 'Bản demo có kết nối tài khoản Shopee thật không?', a: 'Chưa. Đăng nhập, shop và SKU được mô phỏng để trải nghiệm luồng sản phẩm. Không cần nhập mật khẩu Shopee. Video mẫu và snapshot thị trường có nguồn được ghi rõ; dữ liệu thiếu hoặc suy luận có nhãn riêng.' },
@@ -171,7 +171,7 @@ export default function LandingPage() {
     <div className="lp">
       <a className="lp-skip" href="#main-content">Đến nội dung chính</a>
       <header className="lp-head">
-        <a href="/" className="lp-brand" aria-label="Preflight, trang chủ"><img src="/brand/preflight-mark.svg" alt="" width="30" height="30" />Preflight<span className="lp-brand-dot">.</span></a>
+        <a href="/" className="lp-brand" aria-label="SOI, trang chủ"><img src="/brand/preflight-mark.svg" alt="" width="30" height="30" />SOI<span className="lp-brand-dot">.</span></a>
         <nav aria-label="Điều hướng trang giới thiệu"><a href="#demo">Xem demo</a><a href="#how-it-works">Cách hoạt động</a><a href="#faq">Hỏi đáp</a></nav>
         <a href={LOGIN_HREF} className="lp-head-login">Đăng nhập <ArrowRight aria-hidden="true" /></a>
       </header>
@@ -188,7 +188,7 @@ export default function LandingPage() {
             </div>
             <h1 id="hero-title">Video sắp đăng.<br />Đã <span>đáng duyệt?</span></h1>
           </div>
-          <div className="lp-hero-side"><p>Đừng chỉ xem. Hãy biết <strong>đúng giây cần sửa.</strong></p><p className="lp-hero-description">Preflight đối chiếu video KOC với sản phẩm và Policy, giúp bạn phản hồi có căn cứ trước khi bấm duyệt.</p><div className="lp-actions"><a href={LOGIN_HREF} className="lp-btn">Đăng nhập bằng Shopee <ArrowRight aria-hidden="true" /></a><a href="#demo" className="lp-link">Xem video mẫu <ArrowDown aria-hidden="true" /></a></div><small className="lp-disclosure">Bản demo · Đăng nhập mô phỏng, không cần mật khẩu.</small></div>
+          <div className="lp-hero-side"><p>Đừng chỉ xem. Hãy biết <strong>đúng giây cần sửa.</strong></p><p className="lp-hero-description">SOI đối chiếu video KOC với sản phẩm và Policy, giúp bạn phản hồi có căn cứ trước khi bấm duyệt.</p><div className="lp-actions"><a href={LOGIN_HREF} className="lp-btn">Đăng nhập bằng Shopee <ArrowRight aria-hidden="true" /></a><a href="#demo" className="lp-link">Xem video mẫu <ArrowDown aria-hidden="true" /></a></div><small className="lp-disclosure">Bản demo · Đăng nhập mô phỏng, không cần mật khẩu.</small></div>
         </section>
         <section id="demo" className="lp-bay-wrap" aria-labelledby="demo-title">
           <div className="lp-section-meta"><h2 id="demo-title">Một video. Những điểm cần nhìn kỹ.</h2><span>NHẤN PHÁT ĐỂ KHÁM PHÁ <ArrowDown aria-hidden="true" /></span></div>
@@ -213,9 +213,9 @@ export default function LandingPage() {
           <div className="lp-ledger"><div className="lp-ledger-heading"><span>Nguồn dữ liệu</span><span>VÍ DỤ TRONG BẢN DEMO</span></div><ul>{LEDGER.map((r) => <li key={r.tag}><div className="lp-ledger-source"><span className={`lp-tag is-${r.tone}`}>{r.tag}</span><strong>{r.what}</strong><small>{r.source}</small></div><span className={`lp-ledger-value${r.value == null ? ' is-empty' : ''}`}>{r.value ?? '—'}</span></li>)}</ul><div className="lp-policy"><p>Cách đọc kết quả Policy</p>{POLICY_STATES.map((st) => <span key={st.label} className={`lp-state is-${st.tone}`}>{st.label}</span>)}</div></div>
         </section>
         <section id="faq" className="lp-faq" aria-labelledby="faq-title"><div className="lp-section-heading"><p className="lp-eyebrow">TRƯỚC KHI BẮT ĐẦU</p><h2 id="faq-title">Bạn có thể<br />đang thắc mắc.</h2></div><div className="lp-faq-list">{FAQS.map((faq) => <details key={faq.q}><summary>{faq.q}<ChevronDown aria-hidden="true" /></summary><p>{faq.a}</p></details>)}</div></section>
-        <section className="lp-final" aria-labelledby="final-title"><div className="lp-final-film" aria-hidden="true" /><div className="lp-final-copy"><p className="lp-eyebrow">ĐỂ LẦN PHẢN HỒI TIẾP THEO RÕ RÀNG HƠN</p><h2 id="final-title">Xem kỹ hôm nay.<br />Tự tin hơn khi duyệt.</h2><p>Bắt đầu với một video mẫu trong Preflight.</p></div><div className="lp-final-action"><a href={LOGIN_HREF} className="lp-btn lp-btn--light">Đăng nhập bằng Shopee <ArrowRight aria-hidden="true" /></a><span>Trải nghiệm demo · Không cần mật khẩu</span></div></section>
+        <section className="lp-final" aria-labelledby="final-title"><div className="lp-final-film" aria-hidden="true" /><div className="lp-final-copy"><p className="lp-eyebrow">ĐỂ LẦN PHẢN HỒI TIẾP THEO RÕ RÀNG HƠN</p><h2 id="final-title">Xem kỹ hôm nay.<br />Tự tin hơn khi duyệt.</h2><p>Bắt đầu với một video mẫu trong SOI.</p></div><div className="lp-final-action"><a href={LOGIN_HREF} className="lp-btn lp-btn--light">Đăng nhập bằng Shopee <ArrowRight aria-hidden="true" /></a><span>Trải nghiệm demo · Không cần mật khẩu</span></div></section>
       </main>
-      <footer className="lp-foot"><div><a href="/" className="lp-brand"><img src="/brand/preflight-mark.svg" alt="" width="24" height="24" />Preflight.</a><span>Trước khi đăng, có căn cứ.</span></div><p>Bản demo: shop và SKU mô phỏng; snapshot thị trường từ FastMoss và Google Shopping. Preflight không liên kết với Shopee, TikTok hay Meta.</p><a href="#main-content" className="lp-back-top">Về đầu trang ↑</a></footer>
+      <footer className="lp-foot"><div><a href="/" className="lp-brand"><img src="/brand/preflight-mark.svg" alt="" width="24" height="24" />SOI.</a><span>Trước khi đăng, có căn cứ.</span></div><p>Bản demo: shop và SKU mô phỏng; snapshot thị trường từ FastMoss và Google Shopping. SOI không liên kết với Shopee, TikTok hay Meta.</p><a href="#main-content" className="lp-back-top">Về đầu trang ↑</a></footer>
     </div>
   )
 }
