@@ -66,7 +66,7 @@ function DataLibrary({ catalog, refresh, onInspect }) {
   </div>;
 }
 
-export default function App() {
+export default function Studio() {
   const [catalog, setCatalog] = useState({ shops: [], skus: [], videos: [], marketSnapshots: [], sources: [] });
   const [registry, setRegistry] = useState(null);
   const [health, setHealth] = useState(null);

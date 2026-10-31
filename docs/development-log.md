@@ -53,3 +53,11 @@ Nhật ký và manifest SHA-256 giúp kiểm tra thay đổi nội dung trong ph
 - Fetch khi chuẩn bị push phát hiện remote có `9289181` (dataset), `2d52e1b` (React TS), `83e4a1e` (Tailwind/shadcn/Recharts), phát triển từ cùng base `40eae06`.
 - Giữ các commit remote và công việc mới ở local, tích hợp bằng merge thật; không force-push, không thay đổi ngày hoặc nhập lịch sử `SEAxshopee`.
 - Dữ liệu/cache trong commit remote là tài sản nhập có sẵn của luồng khác. Không coi chúng là lượt phân tích được thực hiện trong phiên này.
+
+### Nối scaffold TypeScript/Tailwind/shadcn
+
+- Một pnpm workspace và root lockfile là nơi cài/chạy cả repo; `web` vẫn build qua TypeScript và Vite.
+- Giữ cấu hình Tailwind, Recharts và component shadcn đã có trên remote. Nối Button thực tế vào Studio; chuyển entry sang `main.tsx`, component ứng dụng mới ở `Studio.jsx` qua `App.tsx`.
+- Bỏ Vite config/entry trùng do hai luồng cùng dựng nền; giữ một config TS có proxy `/py` và `/api`.
+- Dùng font Geist Vietnamese local từ dependency có sẵn; không tải Google Fonts trong runtime.
+- Kiểm lại: 15/15 Python, 5/5 Node, lint qua; TypeScript + Vite build qua sau sửa xung đột tên file `App.jsx` / `App.tsx`.

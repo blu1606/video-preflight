@@ -1,2 +1,4 @@
+packages:
+  - web
 minimumReleaseAgeExclude:
   - lucide-react@1.65.0

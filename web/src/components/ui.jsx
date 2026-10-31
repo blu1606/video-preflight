@@ -1,8 +1,9 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import { X } from 'lucide-react';
+import { Button as ShadcnButton } from './ui/button';
 
 export function Button({ children, className = '', variant = 'secondary', ...props }) {
-  return <button className={`button ${variant} ${className}`} {...props}>{children}</button>;
+  return <ShadcnButton variant="outline" className={`button ${variant} ${className}`} {...props}>{children}</ShadcnButton>;
 }
 
 export function Modal({ open, onOpenChange, title, description, children, wide = false }) {
