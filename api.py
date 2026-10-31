@@ -23,7 +23,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from sources import caption_writer, claims, db_client as db, decision_scorer, insight_candidates
 from sources import insights as insight_writer, localizer
-from sources import shopee_listing
+from sources import media, shopee_listing
 from sources.extractor import (FRAMES_DIR, SCHEMA_VERSION, VISION_MODEL, ensure_frames, find_cached, run_extraction,
                                video_fingerprint)
 from main import build_report, build_shop_report, to_json
@@ -37,8 +37,8 @@ from core.overall import GROUP_WEIGHTS, THRESHOLDS
 from core.trace import Trace, tokens_for
 from sources import pacing
 
-DATA_DIR = Path(__file__).resolve().parent / "data"
-VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv"}
+DATA_DIR = media.DATA_DIR  # videos at data/<shop_id>/<file>; db rows keep `local_file` relative to it
+VIDEO_EXT = media.VIDEO_EXT
 SSE_HEARTBEAT_S = 15
 MAX_CAPTION_CHARS = 2200  # TikTok's caption limit
 MAX_HASHTAGS = 30
@@ -393,14 +393,19 @@ def upload_video(
             "caption": _clean(caption), "hashtags": _hashtags(hashtags)}
 
     video_id = f"UPL-{uuid.uuid4().hex[:8]}"
-    path = DATA_DIR / f"{video_id.lower()}{ext}"
+    try:
+        folder = media.shop_dir(shop_id, DATA_DIR)
+    except ValueError as e:
+        raise HTTPException(400, str(e)) from e
+    folder.mkdir(parents=True, exist_ok=True)
+    path = folder / f"{video_id.lower()}{ext}"
     try:
         with path.open("wb") as out:
             shutil.copyfileobj(file.file, out)
         return db.post("/videos", {
             "id": video_id, "shopId": shop_id, "video_id": video_id, "shop_id": shop_id, "sku_id": sku_id,
             "uploaded_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "stage": "prepublish",
-            "local_file": path.name, "product_label": name or (sku and sku["item_name"]) or _clean(label),
+            "local_file": media.relative(path, DATA_DIR), "product_label": name or (sku and sku["item_name"]) or _clean(label),
             "listing": listing, "post": post, "benchmark_id": None, "source_status": "REAL",
         })
     except Exception:

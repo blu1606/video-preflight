@@ -18,7 +18,7 @@ DEMO = DB_DIR.parent
 sys.path.insert(0, str(DEMO))
 
 from core.policy_check import load_baseline  # noqa: E402
-from sources import benchmark  # noqa: E402
+from sources import benchmark, media  # noqa: E402
 from sources.providers import load_seed  # noqa: E402
 
 SEED_DIR = DEMO / "fixtures" / "shopee_seed"
@@ -37,13 +37,13 @@ def build() -> dict:
     shop_truth = {r["shop_id"]: r for r in truth["shops"]}
     video_truth = {r["video_id"]: r["expected_verdict"] for r in truth["videos"]}
 
-    local = benchmark.local_videos()  # clipcat_id -> local file in ../data
+    local = benchmark.local_videos()  # clipcat_id -> local file in data/<shop_id>/ (or data/)
     bench_rows = []
     by_seed_video = {}
     for r in benchmark.load_benchmark():
         file = local.get(r["clipcat_id"])
         row = {"id": r["clipcat_id"], "shopId": r["synthetic_shop_id_analogy"],
-               **{k: v for k, v in r.items()}, "local_file": file.name if file else None,
+               **{k: v for k, v in r.items()}, "local_file": media.relative(file) if file else None,
                "source_status": "REAL"}
         bench_rows.append(row)
         by_seed_video[r["seed_video_id"]] = row

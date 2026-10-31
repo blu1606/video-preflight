@@ -12,7 +12,7 @@ __pycache__/
 .venv/
 
 # Media and large caches
-data/*.mp4
+data/**/*.mp4
 output/
 .cache/
 scratch/

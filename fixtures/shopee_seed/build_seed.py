@@ -26,7 +26,7 @@ import cv2
 
 OUT = Path(__file__).resolve().parent
 BENCHMARK_CSV = OUT.parent / "clipcat_benchmark" / "clipcat_video_benchmark_24.csv"
-VIDEO_DIR = OUT.parent.parent / "data"  # the benchmark's downloaded videos (vn-<category>-<id>.mp4)
+VIDEO_DIR = OUT.parent.parent / "data"  # the benchmark's downloaded videos (<shop_id>/vn-<category>-<id>.mp4)
 
 
 def load_slot_products() -> dict[str, list[tuple[str, int, str]]]:
@@ -223,8 +223,10 @@ def build():
             ov = p["video_overrides"].get(j, {})
             days_live = DAYS - post_day
             duration = random.choice([19, 27, 38, 44])  # always drawn, so the random stream is unchanged
-            if j < len(slot) and (VIDEO_DIR / slot[j][2]).exists():
-                duration = video_duration_sec(VIDEO_DIR / slot[j][2])
+            video_file = next((f for f in (VIDEO_DIR / sid / slot[j][2], VIDEO_DIR / slot[j][2]) if f.exists()),
+                              None) if j < len(slot) else None
+            if video_file:
+                duration = video_duration_sec(video_file)
             completion = ov.get("completion", random.uniform(*p["video_completion"]))
             ctr = ov.get("ctr", random.uniform(*p["video_ctr"]))
             views = int(p["video_reach"] * ov.get("reach_factor", 1.0) * days_live ** 0.8 * random.uniform(0.75, 1.25))

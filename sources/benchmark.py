@@ -19,7 +19,7 @@ that shop, and Shopee units are never added to Clipcat's.
 
 Usage (from video_understanding/demo):
     uv run python -m sources.benchmark               # model scores vs reported outcomes for videos already extracted
-    uv run python -m sources.benchmark --download    # fetch missing benchmark videos into ../data/<clipcat_id>.mp4
+    uv run python -m sources.benchmark --download    # fetch missing benchmark videos into data/<shop_id>/<clipcat_id>.mp4
     uv run python -m sources.benchmark --labels      # write fixtures/clipcat_benchmark/video_labels.json
 """
 
@@ -38,6 +38,7 @@ import pandas as pd
 from tabulate import tabulate
 
 from core.schema import Feature, FeatureMap, GroupScore, SourceStatus
+from sources import media
 
 DEMO = Path(__file__).resolve().parents[1]
 BENCH_DIR = DEMO / "fixtures" / "clipcat_benchmark"
@@ -45,8 +46,7 @@ BENCH_CSV = BENCH_DIR / "clipcat_video_benchmark_24.csv"
 CANDIDATES_CSV = BENCH_DIR / "public_product_candidates.csv"
 SYNTHETIC_CSV = BENCH_DIR / "synthetic_product_listings.csv"  # MOCK, from build_synthetic_listings.py
 ALIASES = BENCH_DIR / "video_files.json"
-DATA_DIR = DEMO / "data"
-VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv"}
+DATA_DIR = media.DATA_DIR
 NUMERIC = ["views_reported", "sales_reported", "gmv_usd_reported", "likes_reported", "shares_reported",
            "saves_reported"]
 MIN_ROWS_FOR_CORRELATION = 5
@@ -236,8 +236,8 @@ def compare(scores: list[GroupScore], features: FeatureMap) -> dict:
 
 def local_videos() -> dict[str, Path]:
     found = {}
-    for p in DATA_DIR.glob("*"):
-        row = find_row(p) if p.suffix.lower() in VIDEO_EXT else None
+    for p in media.iter_videos(DATA_DIR):  # data/<shop_id>/ folders and data/ itself
+        row = find_row(p)
         if row:
             found[row["clipcat_id"]] = p
     return found
@@ -297,7 +297,7 @@ def _get(url: str) -> bytes:
 
 
 def download_videos() -> None:
-    """Download every benchmark video not yet available locally to data/<clipcat_id>.mp4."""
+    """Download every benchmark video not yet available locally to data/<shop_id>/<clipcat_id>.mp4."""
     DATA_DIR.mkdir(exist_ok=True)
     have = local_videos()
     for r in load_benchmark():
@@ -309,7 +309,9 @@ def download_videos() -> None:
         except (OSError, ValueError) as e:
             print(f"FAIL  {r['clipcat_id']:24} {e}")
             continue
-        (DATA_DIR / f"{r['clipcat_id']}.mp4").write_bytes(data)
+        folder = media.shop_dir(r["synthetic_shop_id_analogy"] or None, DATA_DIR)
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / f"{r['clipcat_id']}.mp4").write_bytes(data)
         print(f"ok    {r['clipcat_id']:24} {len(data) / 1e6:.1f} MB  {r['video_label']}")
         time.sleep(1)  # be polite to the host
 
@@ -403,7 +405,7 @@ def main() -> None:
     print(f"Saved: {out}")
     missing = df[df.status == "no_video_file"]
     if len(missing):
-        print(f"\n{len(missing)} video chưa có file: tải về {DATA_DIR} và đặt tên <clipcat_id>.mp4 "
+        print(f"\n{len(missing)} video chưa có file: tải về {DATA_DIR}/<shop_id>/ và đặt tên <clipcat_id>.mp4 "
               f"(ví dụ {missing.clipcat_id.iloc[0]}.mp4), hoặc khai báo tên file trong {ALIASES.name}.")
 
 
