@@ -1,76 +1,26 @@
 import { ArrowRight } from 'lucide-react'
+import { useEffect, useRef } from 'react'
 
 import './landing.css'
+import './flow-glass.css'
 
 const LOGIN_HREF = '/login'
 const CTA_LABEL = 'Đăng nhập bằng Shopee'
 
-const PROBLEM_ROWS = [
-  {
-    label: 'Hook',
-    text: 'Đoạn mở đầu không giữ được người xem. Bạn chỉ biết khi lượt xem đã thấp.',
-  },
-  {
-    label: 'CTA',
-    text: 'Video hay nhưng không nói người xem nên bấm mua ở đâu, hoặc lời kêu gọi đến quá muộn.',
-  },
-  {
-    label: 'Policy',
-    text: 'Một câu trong video hoặc caption có thể cần xem lại theo chính sách nền tảng, và bạn chỉ biết sau khi đăng.',
-  },
-]
-
 const STEPS = [
-  {
-    title: 'Chọn shop, video và SKU',
-    text: 'Chọn shop đã cấp quyền, chọn video và gắn với SKU sẽ bán. Mô tả và hashtag có thể được AI gợi ý, bạn vẫn sửa được.',
-  },
-  {
-    title: 'Các agent chạy từng bước',
-    text: 'Agent đọc video, đối chiếu listing SKU, dữ liệu shop và snapshot thị trường, rồi kiểm tra chính sách. Decisions API chấm theo rubric 5 mức trong một lần gọi. Mỗi bước hiện đầu vào, đầu ra, trạng thái và thời gian.',
-  },
-  {
-    title: 'Nhận điểm, lý do và việc cần sửa',
-    text: 'Điểm đi kèm coverage. Tiêu chí thiếu dữ liệu ghi "chưa chấm" thay vì 0. Mỗi việc cần sửa gắn với mốc thời gian trong video.',
-  },
+  { art: 'step-upload', title: 'Chọn video và SKU', text: 'Gắn video với sản phẩm sẽ bán.' },
+  { art: 'step-agents', title: 'Agent kiểm tra', text: 'Đọc video, đối chiếu SKU, thị trường, policy.' },
+  { art: 'step-fixes', title: 'Sửa theo từng giây', text: 'Điểm, lý do và việc cần sửa gắn với mốc thời gian.' },
 ]
 
 const PROVENANCE = [
-  {
-    status: 'REAL',
-    tone: 'pass',
-    text: 'Lấy từ dữ liệu thật: video, transcript, snapshot thị trường có ngày crawl và nguồn.',
-  },
-  {
-    status: 'MOCK',
-    tone: 'amber',
-    text: 'Dữ liệu mô phỏng hoặc nội bộ của bản thử nghiệm. Luôn có nhãn, không trình bày như số thật.',
-  },
-  {
-    status: 'INFERRED',
-    tone: 'info',
-    text: 'Suy ra từ dữ liệu khác. Ghi rõ suy từ đâu và dựa trên bằng chứng nào.',
-  },
-  {
-    status: 'MISSING',
-    tone: 'ghost',
-    text: 'Thiếu dữ liệu. Hiển thị "chưa chấm", không bao giờ là 0.',
-  },
+  { status: 'REAL', tone: 'pass', text: 'Có nguồn, có ngày' },
+  { status: 'MOCK', tone: 'amber', text: 'Mô phỏng, luôn gắn nhãn' },
+  { status: 'INFERRED', tone: 'info', text: 'Suy ra, ghi căn cứ' },
+  { status: 'MISSING', tone: 'ghost', text: 'Chưa chấm, không phải 0' },
 ]
 
-const POLICY_STATES = [
-  { label: 'Cần xem lại', text: 'Có câu chạm quy định. Kèm trích dẫn nguyên văn để bạn tự đối chiếu.' },
-  { label: 'Không phát hiện vi phạm', text: 'Rule engine không thấy vi phạm trong bộ quy tắc hiện có. Đây không phải duyệt của sàn.' },
-  { label: 'Chưa đủ dữ liệu', text: 'Thiếu thông tin để kết luận. Chưa có căn cứ để nói có hay không.' },
-]
-
-const DATA_SOURCES = [
-  'Shop và SKU Shopee: 9 shop mô phỏng, chỉ để thử. Không phải dữ liệu shop thật.',
-  'Snapshot thị trường: FastMoss và Google Shopping (qua SerpAPI), có ngày crawl và nguồn đi kèm.',
-  'Video mẫu: 24 video TikTok Shop có kết quả do Clipcat báo cáo, chưa được xác minh.',
-  'Chính sách: bản diễn giải từ trang quy định chính thức của sàn, kèm URL nguồn.',
-  'Đăng nhập Shopee trong bản này là mô phỏng. Không thu thập mật khẩu, không kết nối tài khoản thật.',
-]
+const POLICY_STATES = ['Cần xem lại', 'Không phát hiện vi phạm', 'Chưa đủ dữ liệu']
 
 function LoginButton() {
   return (
@@ -84,89 +34,112 @@ function LoginButton() {
 function Logo() {
   return (
     <span className="landing-brand">
-      <svg viewBox="0 0 32 32" aria-hidden="true">
-        <rect width="32" height="32" rx="8" fill="#ee4d2d" />
-        <path d="M12 9.5v13l10.5-6.5z" fill="#ffffff" />
-      </svg>
+      <img src="/brand/preflight-mark.svg" alt="" width="30" height="30" />
       Preflight
     </span>
   )
 }
 
+/**
+ * The page's two motions: the Studio capture tilts a few degrees toward the pointer (fine pointers only), and each
+ * section rises once as it scrolls in. Both are skipped under reduced motion; without JS everything just shows.
+ */
+function useLandingMotion(rootRef) {
+  useEffect(() => {
+    const root = rootRef.current
+    if (!root || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
+
+    const sections = root.querySelectorAll('.landing-section, .landing-final-wrap')
+    const io = new IntersectionObserver(
+      (entries) => entries.forEach((e) => {
+        if (!e.isIntersecting) return
+        e.target.classList.add('is-in')
+        io.unobserve(e.target)
+      }),
+      { rootMargin: '0px 0px -12% 0px' },
+    )
+    sections.forEach((el) => {
+      el.classList.add('landing-reveal')
+      io.observe(el)
+    })
+
+    const hero = root.querySelector('.landing-hero')
+    const stage = root.querySelector('.landing-stage')
+    const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches
+    const move = (e) => {
+      const r = stage.getBoundingClientRect()
+      const x = (e.clientX - r.left) / r.width - 0.5
+      const y = (e.clientY - r.top) / r.height - 0.5
+      stage.classList.add('is-tilting')
+      stage.style.setProperty('--ry', `${(x * 7).toFixed(2)}deg`)
+      stage.style.setProperty('--rx', `${(-y * 5).toFixed(2)}deg`)
+    }
+    const reset = () => {
+      stage.classList.remove('is-tilting')
+      stage.style.setProperty('--ry', '0deg')
+      stage.style.setProperty('--rx', '0deg')
+    }
+    if (fine && hero && stage) {
+      hero.addEventListener('pointermove', move)
+      hero.addEventListener('pointerleave', reset)
+    }
+    return () => {
+      io.disconnect()
+      if (fine && hero && stage) {
+        hero.removeEventListener('pointermove', move)
+        hero.removeEventListener('pointerleave', reset)
+      }
+    }
+  }, [rootRef])
+}
+
 export default function LandingPage() {
+  const rootRef = useRef(null)
+  useLandingMotion(rootRef)
   return (
-    <div className="landing">
+    <div className="landing" ref={rootRef}>
       <header className="landing-head">
         <a href="/" aria-label="Preflight, trang chủ">
           <Logo />
         </a>
         <nav aria-label="Mục trang" className="landing-nav">
           <a href="#cach-hoat-dong" className="landing-link landing-link--wide">Cách hoạt động</a>
-          <a href="#khac-biet" className="landing-link landing-link--wide">Điểm khác biệt</a>
-          <a href="#nguon-du-lieu" className="landing-link">Nguồn dữ liệu</a>
+          <a href="#khac-biet" className="landing-link landing-link--wide">Dữ liệu</a>
+          <a href={LOGIN_HREF} className="landing-link landing-head-cta">Đăng nhập</a>
         </nav>
       </header>
 
       <main>
         <section aria-labelledby="hero-title" className="landing-hero">
           <div className="landing-rise">
+            <span className="landing-pill">Bản demo · dữ liệu mô phỏng</span>
             <h1 id="hero-title" className="landing-h1">
-              Biết video yếu trước khi đăng, không phải sau khi đăng.
+              Biết video yếu <em>trước khi đăng</em>.
             </h1>
-            <p className="landing-lede">
-              Preflight chấm video bán hàng cho TikTok Shop và Shopee theo Hook, CTA, Conversion và Viral, đối chiếu với SKU, dữ liệu shop và thị trường. Mỗi việc cần sửa chỉ ra đúng mốc thời gian trong video.
-            </p>
+            <p className="landing-lede">Chấm Hook, CTA, chuyển đổi và policy cho video TikTok Shop, Shopee. Chỉ ra đúng giây cần sửa.</p>
             <div className="landing-cta-row">
               <LoginButton />
-              <p className="landing-note">Bản thử nghiệm: đăng nhập là mô phỏng, shop và SKU là dữ liệu test.</p>
             </div>
           </div>
 
           <figure className="landing-stage landing-rise">
             <img
               src="/landing/studio-preview.webp"
-              width="1578"
-              height="900"
-              alt="Màn hình Studio của Preflight: video mẫu có điểm 55/100, radar các tiêu chí Viral, Conversion, Shop và SKU, và danh sách việc cần sửa theo mốc thời gian."
+              width="2104"
+              height="1200"
+              alt="Studio của Preflight: video mẫu được 43/100, điểm theo Viral, Chuyển đổi, SKU và danh sách việc cần sửa theo mốc thời gian."
             />
-            <figcaption>
-              Ảnh chụp Studio thật. Shop Lá Mộc Beauty là dữ liệu mô phỏng để thử, video SHOP001-VID01.
-            </figcaption>
           </figure>
-        </section>
-
-        <section aria-labelledby="problem-title" className="landing-section landing-section--surface">
-          <div className="landing-wrap">
-            <div className="landing-split">
-              <div>
-                <h2 id="problem-title" className="landing-h2">
-                  Đăng xong mới biết video yếu thì đã muộn.
-                </h2>
-                <p className="landing-prose">
-                  Video bán hàng thường được kiểm bằng cảm giác rồi đăng. Đến khi có số liệu, video đã lên và bạn chỉ còn đoán nguyên nhân.
-                </p>
-              </div>
-              <ul className="landing-rows">
-                {PROBLEM_ROWS.map((row) => (
-                  <li key={row.label} className="landing-row">
-                    <span className="landing-row-label">{row.label}</span>
-                    <span className="landing-row-text">{row.text}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
         </section>
 
         <section id="cach-hoat-dong" aria-labelledby="steps-title" className="landing-section">
           <div className="landing-wrap">
-            <h2 id="steps-title" className="landing-h2 landing-h2--narrow">
-              Ba bước từ video chưa đăng đến danh sách việc cần sửa.
-            </h2>
+            <h2 id="steps-title" className="landing-h2">Ba bước, một danh sách việc cần sửa.</h2>
             <ol className="landing-steps">
               {STEPS.map((step, i) => (
                 <li key={step.title} className="landing-step">
-                  <span className="landing-step-no">Bước {i + 1}</span>
+                  <img className="landing-step-art" src={`/illustrations/${step.art}.webp`} alt="" width="800" height="800" loading="lazy" />
+                  <span className="landing-step-no">{i + 1}</span>
                   <h3 className="landing-step-title">{step.title}</h3>
                   <p className="landing-step-text">{step.text}</p>
                 </li>
@@ -175,70 +148,37 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section id="khac-biet" aria-labelledby="proof-title" className="landing-section landing-section--surface">
-          <div className="landing-wrap">
-            <h2 id="proof-title" className="landing-h2 landing-h2--wide">
-              Mỗi con số truy được nguồn. Policy không bao giờ được báo là đạt.
-            </h2>
-            <div className="landing-proof">
-              <div>
-                <h3 className="landing-h3">Trạng thái của từng số</h3>
-                <ul className="landing-list">
-                  {PROVENANCE.map((item) => (
-                    <li key={item.status} className="landing-list-item">
-                      <span className={`landing-status landing-status--${item.tone}`}>{item.status}</span>
-                      <span className="landing-list-text">{item.text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="landing-h3">Policy chỉ có ba trạng thái</h3>
-                <ul className="landing-list">
-                  {POLICY_STATES.map((item) => (
-                    <li key={item.label} className="landing-list-item landing-list-item--stack">
-                      <span className="landing-policy-label">{item.label}</span>
-                      <span className="landing-list-text">{item.text}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="landing-note-line">
-                  Bản này không có trạng thái "đạt". Rule engine hiện là bản baseline, sẽ được cải tiến, và không thay thế duyệt chính thức của sàn.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="nguon-du-lieu" aria-labelledby="sources-title" className="landing-section">
-          <div className="landing-wrap landing-sources">
-            <h2 id="sources-title" className="landing-h2">
-              Bản thử nghiệm đang dùng dữ liệu gì.
-            </h2>
-            <ul className="landing-rows">
-              {DATA_SOURCES.map((line) => (
-                <li key={line} className="landing-source-item">{line}</li>
+        <section id="khac-biet" aria-labelledby="proof-title" className="landing-section">
+          <div className="landing-wrap landing-trust">
+            <h2 id="proof-title" className="landing-h2">Không bịa số.</h2>
+            <ul className="landing-chips" aria-label="Trạng thái của từng số">
+              {PROVENANCE.map((item) => (
+                <li key={item.status} className="landing-chip">
+                  <span className={`landing-status landing-status--${item.tone}`}>{item.status}</span>
+                  {item.text}
+                </li>
               ))}
             </ul>
+            <div className="landing-policy">
+              <span className="landing-policy-label">Policy không bao giờ báo “đạt”</span>
+              <ul className="landing-policy-states">
+                {POLICY_STATES.map((label) => <li key={label}>{label}</li>)}
+              </ul>
+            </div>
           </div>
         </section>
 
         <section aria-labelledby="final-title" className="landing-final-wrap">
           <div className="landing-final">
-            <h2 id="final-title" className="landing-h2 landing-final-title">
-              Kiểm video trước lần đăng tiếp theo.
-            </h2>
-            <div className="landing-cta-row">
-              <LoginButton />
-              <p className="landing-note landing-note--on-stage">Bản thử nghiệm: đăng nhập là mô phỏng.</p>
-            </div>
+            <h2 id="final-title" className="landing-h2 landing-final-title">Kiểm video trước lần đăng tiếp theo.</h2>
+            <LoginButton />
           </div>
         </section>
       </main>
 
       <footer className="landing-footer">
         <div className="landing-wrap">
-          Preflight là bản thử nghiệm. Shopee và TikTok Shop chỉ được nhắc đến theo tên nền tảng. Preflight không thuộc, và không được Shopee hay TikTok xác nhận.
+          Bản demo: shop và SKU mô phỏng, snapshot thị trường từ FastMoss và Google Shopping. Không liên kết với Shopee hay TikTok.
         </div>
       </footer>
     </div>

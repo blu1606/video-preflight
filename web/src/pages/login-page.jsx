@@ -26,9 +26,7 @@ export default function LoginPage() {
           <BrandMark />
         </div>
       </header>
-      <SimulationBar>
-        Màn hình cấp quyền mô phỏng, không phải trang đăng nhập của Shopee. Không có mật khẩu thật nào được nhập hay gửi đi.
-      </SimulationBar>
+      <SimulationBar>Cấp quyền mô phỏng, không phải trang của Shopee. Không nhập mật khẩu.</SimulationBar>
 
       <main className="op-main">
         <a href="/" className="op-back">
@@ -38,7 +36,7 @@ export default function LoginPage() {
 
         <section className="op-auth" aria-labelledby="auth-title">
           <div className="op-auth-head">
-            <span className="op-tag">Mô phỏng</span>
+            <img className="op-auth-art" src="/illustrations/login-shield.webp" alt="" width="1200" height="1200" />
             <h1 id="auth-title" className="op-auth-title">Cho phép Preflight truy cập shop của bạn</h1>
           </div>
 
@@ -49,7 +47,7 @@ export default function LoginPage() {
                 <span className="op-avatar" aria-hidden="true">D</span>
                 <div>
                   <p className="op-account-name">{DEMO_ACCOUNT}</p>
-                  <p className="op-account-sub">Tài khoản demo, đã điền sẵn. Bản này không yêu cầu mật khẩu.</p>
+                  <p className="op-account-sub">Tài khoản demo</p>
                 </div>
               </div>
             </div>
@@ -70,14 +68,10 @@ export default function LoginPage() {
               <p className="op-auth-section-title">Shop được cấp quyền cùng lúc</p>
               {shops.loading && <p className="op-auth-shops">Đang tải danh sách shop…</p>}
               {shops.error && (
-                <p className="op-auth-shops">
-                  Chưa tải được danh sách shop. Bạn vẫn có thể cho phép, và trang chọn shop sẽ báo lỗi cụ thể.
-                </p>
+                <p className="op-auth-shops">Chưa tải được danh sách shop.</p>
               )}
               {names && (
-                <p className="op-auth-shops">
-                  {shops.data.length} shop mô phỏng: {names}
-                </p>
+                <p className="op-auth-shops" title={names}>{shops.data.length} shop mô phỏng</p>
               )}
             </div>
 
@@ -87,7 +81,6 @@ export default function LoginPage() {
                 Cho phép
               </button>
             </div>
-            <p className="op-auth-foot">Bước tiếp theo: chọn shop đã được cấp quyền.</p>
           </div>
         </section>
       </main>

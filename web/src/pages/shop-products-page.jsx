@@ -71,9 +71,7 @@ function ListingLinkPanel() {
           {busy ? 'Đang lấy…' : 'Lấy thông tin'}
         </button>
       </form>
-      <p className="op-help op-mt-8">
-        Đọc listing trực tiếp từ Shopee, hoặc từ listing đã thu thập. Kết quả chỉ để xem: không tạo SKU mới và không gắn vào SKU nào của shop.
-      </p>
+      <p className="op-help op-mt-8">Chỉ để xem, không tạo SKU mới.</p>
       {error && <p className="op-help op-help--error op-mt-12" role="alert">Không lấy được listing: {error}</p>}
       {result && (
         <div className="op-result" role="status">
@@ -147,7 +145,7 @@ export default function ShopProductsPage() {
         <div className="op-page-head">
           <h1 className="op-title">{shop.data.shop_name}</h1>
           <p className="op-lede">
-            {categoryLabel(shop.data.main_category)} · {shop.data.id} · Shop mô phỏng, dữ liệu chỉ để thử.
+            {categoryLabel(shop.data.main_category)} · {shop.data.id}
           </p>
         </div>
       )}
@@ -174,7 +172,7 @@ export default function ShopProductsPage() {
             </div>
 
             {skus.data.length === 0 ? (
-              <StateBlock title="Shop này chưa có SKU" text="Dữ liệu mô phỏng của shop không có sản phẩm nào." />
+              <StateBlock title="Shop này chưa có SKU" />
             ) : (
               <div className="op-table">
                 <div className="op-row op-row--head" aria-hidden="true">
@@ -189,7 +187,6 @@ export default function ShopProductsPage() {
                 ))}
               </div>
             )}
-            <p className="op-help op-mt-12">Bấm một sản phẩm để chọn video cho sản phẩm đó.</p>
           </section>
         </div>
       )}

@@ -1,17 +1,17 @@
 import { ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-import './operate.css'
+import { GlobalTooltip } from '../studio/tooltip.jsx'
 
-const FLOW_STEPS =['Đăng nhập', 'Chọn shop', 'Chọn sản phẩm', 'Chọn video', 'Studio']
+import './operate.css'
+import './flow-glass.css'
+
+const FLOW_STEPS = ['Đăng nhập', 'Chọn shop', 'Chọn sản phẩm', 'Chọn video', 'Studio']
 
 export function BrandMark() {
   return (
     <Link to="/" className="op-brand" aria-label="Preflight, trang chủ">
-      <svg viewBox="0 0 32 32" aria-hidden="true">
-        <rect width="32" height="32" rx="8" fill="#ee4d2d" />
-        <path d="M12 9.5v13l10.5-6.5z" fill="#ffffff" />
-      </svg>
+      <img src="/brand/preflight-mark.svg" alt="" width="30" height="30" />
       Preflight
     </Link>
   )
@@ -47,7 +47,7 @@ export function SimulationBar({ children }) {
     <div className="op-sim" role="note">
       <div className="op-sim-inner">
         <span className="op-tag">Mô phỏng</span>
-        <span>{children ?? 'Đăng nhập, shop, SKU và video trong bản này là dữ liệu test, không phải tài khoản hay số liệu thật.'}</span>
+        <span>{children ?? 'Dữ liệu demo: tài khoản, shop, SKU và video đều mô phỏng.'}</span>
       </div>
     </div>
   )
@@ -59,6 +59,7 @@ export function OperatePage({ step, children }) {
       <OperateHeader step={step} />
       <SimulationBar />
       <main className="op-main">{children}</main>
+      <GlobalTooltip />
     </div>
   )
 }
@@ -67,6 +68,7 @@ export function OperatePage({ step, children }) {
 export function StateBlock({ tone = 'neutral', title, text, action }) {
   return (
     <div className={`op-state op-state--${tone}`} role={tone === 'error' ? 'alert' : 'status'}>
+      {tone === 'neutral' && <img className="op-state-art" src="/illustrations/empty-shop.webp" alt="" width="1000" height="800" />}
       <p className="op-state-title">{title}</p>
       {text && <p className="op-state-text">{text}</p>}
       {action}

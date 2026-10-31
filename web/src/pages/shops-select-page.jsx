@@ -19,13 +19,13 @@ const shopAgeLabel = (days) => {
 function Trend({ rows }) {
   const trend = gmvTrend(rows)
   if (!trend) {
-    return <p className="op-trend op-trend--none">Chưa đủ 14 ngày số liệu để so sánh GMV</p>
+    return <p className="op-trend op-trend--none">Chưa đủ số liệu so sánh</p>
   }
   const Icon = trend.direction === 'down' ? TrendingDown : TrendingUp
   return (
-    <p className={`op-trend op-trend--${trend.direction}`}>
+    <p className={`op-trend op-trend--${trend.direction}`} title="So với 7 ngày trước">
       <Icon size={16} aria-hidden="true" />
-      GMV 7 ngày {trendText(trend.change)} <small>so với 7 ngày trước</small>
+      GMV 7 ngày {trendText(trend.change)}
     </p>
   )
 }
@@ -80,7 +80,6 @@ function ShopCard({ shop, skus, rows }) {
       </div>
 
       <div className="op-card-foot">
-        <span className="op-card-foot-note">Dữ liệu mô phỏng</span>
         <span className="op-card-foot-action">
           Chọn shop <ArrowRight size={16} aria-hidden="true" />
         </span>
@@ -110,14 +109,10 @@ export default function ShopsSelectPage() {
         Đăng nhập lại
       </a>
 
-      <div className="op-page-head">
+      <div className="op-page-head op-page-head--art">
         <h1 className="op-title">Chọn shop</h1>
-        <p className="op-lede">
-          Tài khoản demo đã cấp quyền cho {shops.data ? shops.data.length : 'các'} shop. Chọn một shop để chọn sản phẩm và video.
-        </p>
-        <p className="op-source">
-          Nguồn: dữ liệu mô phỏng synthetic_shopee_intelligence (fixtures/shopee_seed). Chỉ để thử, không phải số liệu thật của shop nào.
-        </p>
+        <p className="op-lede">{shops.data ? `${shops.data.length} shop đã cấp quyền` : 'Shop đã cấp quyền'}</p>
+        <img className="op-head-art" src="/illustrations/shop-select.webp" alt="" width="1200" height="900" />
       </div>
 
       {loading && <Skeleton count={3} />}

@@ -53,8 +53,7 @@ function VideoCard({ shopId, video, skuName, linked }) {
           {video.id}
           {formatDuration(duration) ? ` · ${formatDuration(duration)}` : ''} · {posted}
         </p>
-        {!linked && <p className="op-video-sku">Gắn với SKU khác: {skuName ?? video.sku_id}. Studio dùng SKU của video này.</p>}
-        {linked && <p className="op-video-sku">Gắn với SKU đang chọn</p>}
+        {!linked && <p className="op-video-sku" title="Studio dùng SKU của video này">SKU khác: {skuName ?? video.sku_id}</p>}
       </div>
     </>
   )
@@ -111,9 +110,7 @@ function UploadButton({ shopId, skuId }) {
             <span style={{ width: `${progress}%` }} />
           </div>
         )}
-        <p className="op-upload-note">
-          Lưu vào data/{shopId}/ và gắn với SKU này. Định dạng: mp4, mov, webm, mkv.
-        </p>
+        <p className="op-upload-note">mp4, mov, webm, mkv</p>
       </div>
       <input ref={inputRef} type="file" accept={ACCEPT} hidden onChange={onPick} />
       {error && <p className="op-help op-help--error op-mt-12" role="alert">Tải lên lỗi: {error}</p>}
@@ -150,10 +147,8 @@ export default function AddVideoPage() {
       </Link>
 
       <div className="op-page-head">
-        <h1 className="op-title">Chọn video cho sản phẩm này</h1>
-        <p className="op-lede">
-          Video đã gắn với SKU này xếp trước. Bấm một video để mở Studio với shop, SKU và video đã chọn.
-        </p>
+        <h1 className="op-title">Chọn video</h1>
+        <p className="op-lede">Bấm một video để mở Studio.</p>
       </div>
 
       {loading && <Skeleton count={3} />}
@@ -205,7 +200,7 @@ export default function AddVideoPage() {
               <span>{linked.length}</span>
             </div>
             {linked.length === 0 ? (
-              <StateBlock title="SKU này chưa có video" text="Tải video lên ở trên, hoặc chọn một video khác của shop bên dưới." />
+              <StateBlock title="SKU này chưa có video" text="Tải lên, hoặc chọn video khác bên dưới." />
             ) : (
               <div className="op-video-grid">
                 {linked.map((v) => (
@@ -230,7 +225,7 @@ export default function AddVideoPage() {
           )}
 
           {all.length === 0 && (
-            <StateBlock title="Shop này chưa có video" text="Tải video lên để bắt đầu. Video sẽ được lưu vào thư mục của shop." />
+            <StateBlock title="Shop này chưa có video" text="Tải video lên để bắt đầu." />
           )}
         </>
       )}

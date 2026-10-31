@@ -472,7 +472,7 @@
 .pf-root .studio-radar-more { margin: 4px 16px 0; }
 .pf-root .studio-radar-more > summary { cursor: pointer; list-style: none; font-size: 12.5px; font-weight: 600; color: var(--accent-ink, #c8381c); padding: 6px 0; }
 .pf-root .studio-radar-more > summary::-webkit-details-marker { display: none; }
-.pf-root .studio-radar-more > summary::after { content: " ›"; display: inline-block; transition: transform var(--dur-2) var(--ease-out); }
+.pf-root .studio-radar-more > summary::after { content: "›"; display: inline-block; margin-left: 5px; transition: transform var(--dur-2) var(--ease-out); }
 .pf-root .studio-radar-more[open] > summary::after { transform: rotate(90deg); }
 .pf-root .studio-radar-more[open] > .studio-radar { animation: glass-expand var(--dur-3) var(--ease-out); }
 
