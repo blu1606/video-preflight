@@ -13,6 +13,7 @@ PasswordAuthentication no
 KbdInteractiveAuthentication no
 PermitRootLogin no
 EOF
+install -d -m 755 /run/sshd
 sshd -t
 systemctl reload ssh
 echo 'Bootstrap ready. Clone main into /opt/video-preflight/repo and configure shared/app.env.'
