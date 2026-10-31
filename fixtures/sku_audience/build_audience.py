@@ -2,7 +2,7 @@
 
 Category templates + a small deterministic jitter per SKU; replace with the seller API when connected.
 
-Usage (from video_understanding/demo):
+Usage (from the repo root):
     uv run python fixtures/sku_audience/build_audience.py
 """
 

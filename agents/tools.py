@@ -4,7 +4,7 @@ Tools never import scoring code; they call json-server (data, LAB_DB_URL) and Fa
 (analysis, LAB_API_URL), so any agent framework or an MCP server can reuse them.
 Errors are returned as {"error": ...} so the calling LLM can recover instead of crashing.
 
-Usage (from video_understanding/demo, with `pnpm lab` running):
+Usage (from the repo root, with `pnpm lab` running):
     uv run python -m agents.tools                                  # list tools
     uv run python -m agents.tools get_real_video_metrics '{"video_id": "SHOP001-VID01"}'
 """

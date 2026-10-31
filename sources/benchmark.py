@@ -17,7 +17,7 @@ from search snippets (fetched_at unknown; shopee.vn blocks direct HTTP checks). 
 listings but candidates, never attribution: the TikTok creator is not verified to sell through
 that shop, and Shopee units are never added to Clipcat's.
 
-Usage (from video_understanding/demo):
+Usage (from the repo root):
     uv run python -m sources.benchmark               # model scores vs reported outcomes for videos already extracted
     uv run python -m sources.benchmark --download    # fetch missing benchmark videos into data/<shop_id>/<clipcat_id>.mp4
     uv run python -m sources.benchmark --labels      # write fixtures/clipcat_benchmark/video_labels.json

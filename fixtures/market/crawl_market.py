@@ -7,7 +7,7 @@ Only observed values are written: price, store, rating, review count, link. Goog
 "sold" count, so sold_count stays null. like_for_like is a heuristic (keyword tokens in the title and a
 price within PRICE_BAND of ours) and is labelled as such.
 
-Usage (from video_understanding/demo):
+Usage (from the repo root):
     uv run python fixtures/market/crawl_market.py --env <path/.env> --skus SHOP001-SKU01,SHOP002-SKU03
     uv run python fixtures/market/crawl_market.py --env <path/.env> --all
 """

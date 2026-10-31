@@ -1,7 +1,7 @@
 """Video feature extractor (ported from sandbox.ipynb): frames (OpenCV) + transcript (Whisper) + VLM.
 
 Output has the same shape as notebooks/features.json, so VideoFeatureProvider reads both.
-Results are cached per video in demo/output/features/<video_stem>.json to avoid paying for the API twice.
+Results are cached per video in output/features/<video_stem>.json to avoid paying for the API twice.
 """
 
 import base64

@@ -4,7 +4,7 @@
 Every row gets an `id` and a `shopId` (json-server needs them for /shops/:id/videos etc.)
 and keeps its `source_status`. Existing `analyses` are preserved unless --reset is passed.
 
-Usage (from video_understanding/demo):
+Usage (from the repo root):
     uv run python db/build_db.py [--reset]
 """
 
@@ -95,7 +95,7 @@ def main() -> None:
     if DB_PATH.exists() and not args.reset:
         old = json.loads(DB_PATH.read_text(encoding="utf-8"))
         db["analyses"] = old.get("analyses", [])
-        # Uploaded videos live only in the db (their files are in ../data): keep them across rebuilds.
+        # Uploaded videos live only in the db (their files are in data/): keep them across rebuilds.
         db["videos"] += [v for v in old.get("videos", []) if str(v.get("id", "")).startswith("UPL-")]
     DB_PATH.write_text(json.dumps(db, ensure_ascii=False, indent=1), encoding="utf-8")
     counts = {k: len(v) for k, v in db.items() if isinstance(v, list)}

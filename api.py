@@ -1,6 +1,6 @@
 """Analysis API for the React lab. Data comes from json-server (db_client); results are saved to /analyses.
 
-Run (from video_understanding/demo):
+Run (from the repo root):
     uv run uvicorn api:app --port 8100 --reload
 """
 
@@ -24,8 +24,8 @@ from pydantic import BaseModel, ConfigDict, Field
 from sources import caption_writer, claims, db_client as db, decision_scorer, insight_candidates
 from sources import insights as insight_writer, localizer
 from sources import media, shopee_listing
-from sources.extractor import (FRAMES_DIR, SCHEMA_VERSION, VISION_MODEL, ensure_frames, find_cached, run_extraction,
-                               video_fingerprint)
+from sources.extractor import (FRAMES_DIR, SCHEMA_VERSION, VISION_MODEL, ensure_frames, find_cached, frames_dir,
+                               run_extraction, video_fingerprint)
 from main import build_report, build_shop_report, to_json
 from sources.providers import NOT_EXTRACTED, ShopSeedProvider, VideoFeatureProvider, clean_hashtags
 from core import shop_rubric
@@ -48,6 +48,7 @@ RUN_MODE = Mode.SIMULATION
 Sponsorship = Literal["own_shop", "affiliate", "sponsored"]
 
 app = FastAPI(title="Video Intelligence Lab API")
+DATA_DIR.mkdir(exist_ok=True)  # video files are local-only; a fresh clone has no data/ yet
 app.mount("/media", StaticFiles(directory=DATA_DIR), name="media")
 FRAMES_DIR.mkdir(parents=True, exist_ok=True)
 decision_scorer.KEYFRAMES_DIR.mkdir(parents=True, exist_ok=True)
@@ -425,18 +426,28 @@ def video_features(video_id: str) -> dict:
 
 def _extraction_status(video: dict) -> dict:
     """missing (never extracted), changed (file bytes differ from the cached run), stale (cache predates the
-    current prompt) or current. Older caches without a fingerprint count as unchanged."""
+    current prompt) or current. Older caches without a fingerprint, and caches whose video file is not on disk
+    (data/*.mp4 is not committed), count as unchanged."""
     cached = find_cached(DATA_DIR / video["local_file"]) if video["local_file"] else None
     if not cached:
         return {"state": "missing", "current_schema_version": SCHEMA_VERSION}
     raw = json.loads(cached.read_text(encoding="utf-8"))
     stale = [k for k, f in VideoFeatureProvider(cached).load().items() if f.evidence and NOT_EXTRACTED in f.evidence[0]]
     stored = raw.get("video_fingerprint")
-    changed = stored is not None and stored != video_fingerprint(DATA_DIR / video["local_file"])
+    file = DATA_DIR / video["local_file"]
+    changed = stored is not None and file.exists() and stored != video_fingerprint(file)
     return {"state": "changed" if changed else ("stale" if stale else "current"), "file": cached.name,
             "schema_version": raw.get("schema_version"), "current_schema_version": SCHEMA_VERSION,
             "stale_fields": stale, "fingerprint": stored, "vision_model": raw.get("vision_model"),
             "token_usage": raw.get("token_usage"), "latency": raw.get("benchmark_latency")}
+
+
+def _local_video(video: dict) -> Path:
+    """The video's file in data/; 404 when it is not on this machine (video files are not committed)."""
+    path = DATA_DIR / video["local_file"]
+    if not path.is_file():
+        raise HTTPException(404, f"Video file {path.name} is not in data/; copy it there to extract or view frames.")
+    return path
 
 
 @app.get("/py/videos/{video_id}/frames")
@@ -446,6 +457,8 @@ def video_frames(video_id: str) -> dict:
     if not video["local_file"]:
         raise HTTPException(400, "This video has no local file.")
     path = DATA_DIR / video["local_file"]
+    if not any(frames_dir(path).glob("*.jpg")):
+        path = _local_video(video)
     names = ensure_frames(path)
     return {"frames": [{"sec": float(n.removesuffix(".jpg")), "url": f"/py/frames/{path.stem}/{n}"} for n in names]}
 
@@ -673,8 +686,10 @@ def _run_analysis(video_id: str, trace: Trace, mode: Mode, rubric: str, decision
             if run:
                 progress = trace.reporter("extract_video_content")
                 try:
-                    path = run_extraction(DATA_DIR / video["local_file"], model, on_step=lambda _: None,
+                    path = run_extraction(_local_video(video), model, on_step=lambda _: None,
                                           on_progress=progress)
+                except HTTPException:
+                    raise
                 except Exception as e:
                     raise HTTPException(502, f"Extraction failed: {e}")
                 raw = json.loads(path.read_text(encoding="utf-8"))
@@ -708,8 +723,9 @@ def extract_video(video_id: str, model: str = VISION_MODEL) -> dict:
     video = fetch(f"/videos/{video_id}")
     if not video["local_file"]:
         raise HTTPException(400, "This video has no local file to extract.")
+    path = _local_video(video)
     try:
-        run_extraction(DATA_DIR / video["local_file"], model, on_step=lambda _: None)
+        run_extraction(path, model, on_step=lambda _: None)
     except Exception as e:
         raise HTTPException(502, f"Extraction failed: {e}")
     return _score_video(video, RUN_MODE)

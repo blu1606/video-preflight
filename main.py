@@ -1,6 +1,6 @@
 """E-commerce video scorecard demo: video content x SKU/market x shop performance.
 
-Usage (from video_understanding/demo):
+Usage (from the repo root):
     uv run python main.py                              # fixture teashell_001
     uv run python main.py --shop SHOP002               # pair the video with a shop from the Shopee seed
     uv run python main.py --shop SHOP001 --seed-video SHOP001-VID03
