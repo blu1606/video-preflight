@@ -21,3 +21,11 @@ Nhật ký và manifest SHA-256 giúp kiểm tra thay đổi nội dung trong ph
 - Ngưỡng coverage 70% / tối thiểu mỗi nhóm 50% là **mốc tạm tự đặt** cho việc hiển thị, chưa hiệu chỉnh; khai báo nguồn trong code.
 - Kiểm: `uv run python -m unittest discover -s tests -v` — 9/9 qua; không gọi provider.
 - Theo chỉ đạo mới của chủ repo: commit theo từng prompt/feature kể từ mốc này. Không sửa ngày commit.
+
+## T0.2 / lưu trữ — Khung DB, chưa nhập dataset
+
+- `db/template.json` và `db/build_seed.py` tạo DB trống có thể dựng lại, không tự ghi đè DB đã tồn tại.
+- json-server là bên duy nhất ghi DB; middleware sao lưu trước POST/PUT/PATCH/DELETE. Nếu backup lỗi, chặn thay đổi.
+- Không có bản ghi MOCK trong DB khởi tạo. Bộ 9 shop/24 video và crawler được để sau theo chỉ đạo người dùng.
+- Kiểm `node --test tests/db.test.mjs`: chạy json-server thật ở cổng ngẫu nhiên trong thư mục tạm; kiểm snapshot trước POST và PATCH, nội dung trước thay đổi được giữ nguyên.
+- Đã pin dependency và tạo lockfile cho lab; chưa có provider SDK, không đọc khóa từ repo tham chiếu.

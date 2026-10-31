@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "schema_version": "preflight-db/v1",
+    "data_status": "empty",
+    "description": "Kho dữ liệu mới. Thông tin nhập bởi người dùng chưa được đối chiếu với nền tảng."
+  },
+  "shops": [],
+  "skus": [],
+  "videos": [],
+  "marketSnapshots": [],
+  "sources": []
+}

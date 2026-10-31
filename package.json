@@ -1,0 +1,31 @@
+{
+  "name": "video-preflight",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "lab": "node scripts/lab.mjs",
+    "db:init": "uv run python db/build_seed.py",
+    "dev": "vite --config web/vite.config.js",
+    "build": "vite build --config web/vite.config.js",
+    "test": "node --test tests/*.test.mjs",
+    "test:python": "uv run python -m unittest discover -s tests -v",
+    "lint": "oxlint web/src scripts tests/*.mjs",
+    "check": "pnpm test:python && pnpm test && pnpm lint && pnpm build",
+    "audit:source": "uv run python scripts/source_manifest.py"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "1.3.1",
+    "lucide-react": "1.65.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.2",
+    "json-server": "0.17.4",
+    "oxlint": "1.90.0",
+    "vite": "8.3.5"
+  }
+}
