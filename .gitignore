@@ -1,27 +1,23 @@
-.venv/
-__pycache__/
-*.py[cod]
-node_modules/
-web/dist/
-.runtime/
+# Secrets
 .env
-.env.*
-!.env.example
-db/db.json
-db/backups/
-data/
-!data/.gitkeep
-.DS_Store
-.playwright-cli/
-output/playwright/
+*.env
+*.env.local
 
-# Local video assets and large database snapshot stay outside Git.
-/data/videos/
-/data/db/db.json
-# Only curated frontend snapshots may be added under ignored data.
-!data/
-data/*
-!data/fixtures/
-data/fixtures/*
-!data/fixtures/app/
-!data/fixtures/app/**
+# Dependencies & Build outputs
+node_modules/
+dist/
+.next/
+__pycache__/
+*.py[oc]
+.venv/
+
+# Media and large caches
+data/*.mp4
+output/
+.cache/
+scratch/
+
+# Local exports, db backups and UI review captures
+data.zip
+demo/db/db.backup-*.json
+demo/web/.impeccable/review/
