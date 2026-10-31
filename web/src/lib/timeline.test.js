@@ -5,6 +5,7 @@ import { test } from 'node:test'
 import {
   activeRegions,
   activeSegmentIndex,
+  clusterPointIssues,
   crossedMarkers,
   fmtTime,
   highlightClaims,
@@ -93,4 +94,10 @@ test('criterion marker titles show the Vietnamese dimension label', () => {
   const hint = issueHint({ title: 'Cần cải thiện: Cta clarity (C08) · 4/100', time_label: null })
   assert.equal(hint, 'Cần cải thiện: CTA rõ ràng (C08) · 4/100')
   assert.equal(issueHint({ title: 'Policy TTA-001 · cần xem lại' }), 'Policy TTA-001 · cần xem lại')
+})
+
+test('point issues at the same moment become one marker; distinct moments stay apart', () => {
+  const at = (id, t) => ({ id, kind: 'issue', t_start: t })
+  const groups = clusterPointIssues([at('b', 8), at('a', 0), at('c', 8.2), at('d', 12)])
+  assert.deepEqual(groups.map((g) => [g.t, g.items.map((m) => m.id)]), [[0, ['a']], [8, ['b', 'c']], [12, ['d']]])
 })

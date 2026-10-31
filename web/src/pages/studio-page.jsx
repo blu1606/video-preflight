@@ -106,7 +106,9 @@ export default function StudioPage() {
   const [resizing, setResizing] = useState(false)
   const [panel, setPanel] = useState(null)
   const [profileOpen, setProfileOpen] = useState(false)
-  const [leftCollapsed, setLeftCollapsed] = useState(false)
+  // Three columns from 1024 to 1279 px leave the phone stage too narrow: the question list opens folded to its rail
+  // there (one click opens it). Wider screens show it; narrower ones stack the columns instead.
+  const [leftCollapsed, setLeftCollapsed] = useState(() => window.innerWidth >= 1024 && window.innerWidth < 1280)
   const [options, setOptions] = useState(DEFAULT_OPTIONS)
   // what a run would reuse; computed server-side in a few seconds, so fetched ahead of the run dialog
   const cacheStatus = useFetch(

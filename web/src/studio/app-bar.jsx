@@ -72,8 +72,8 @@ export function AppBar({ shops, shop, onShop, onShopProfile, videos, video, sku,
             </ul>
           )}
         </Menu>
-        <button type="button" className="btn btn-sm btn-ghost" onClick={onShopProfile} disabled={!shop}>
-          Hồ sơ shop
+        <button type="button" className="btn btn-sm btn-ghost bar-btn" onClick={onShopProfile} disabled={!shop} aria-label="Hồ sơ shop" title="Hồ sơ shop">
+          <Icon name="shop" /><span className="bar-lbl">Hồ sơ shop</span>
         </button>
 
         <span className="bar-sep" aria-hidden="true" />
@@ -110,11 +110,12 @@ export function AppBar({ shops, shop, onShop, onShopProfile, videos, video, sku,
           )}
         </Menu>
         <input ref={fileRef} type="file" accept="video/mp4,video/quicktime,video/webm,video/x-matroska" hidden onChange={(e) => { onUpload(e.target.files?.[0]); e.target.value = '' }} />
-        <button type="button" className="btn btn-sm btn-secondary studio-upload" onClick={() => fileRef.current?.click()} disabled={!shop || uploading != null}>
-          <Icon name="document-upload" /> {uploading != null ? `Đang tải ${uploading}%` : 'Tải video lên'}
+        <button type="button" className="btn btn-sm btn-secondary studio-upload bar-btn" onClick={() => fileRef.current?.click()} disabled={!shop || uploading != null} aria-label={uploading != null ? `Đang tải ${uploading}%` : 'Tải video lên'} title="Tải video lên">
+          <Icon name="document-upload" />
+          {uploading != null ? `Đang tải ${uploading}%` : <span className="bar-lbl is-wide">Tải video lên</span>}
         </button>
-        <button type="button" className="btn btn-sm btn-secondary studio-upload" onClick={onOpenAtlas}>
-          <Icon name="chart-2" /> Kho dữ liệu
+        <button type="button" className="btn btn-sm btn-ghost bar-btn" onClick={onOpenAtlas} aria-label="Kho dữ liệu" title="Kho dữ liệu">
+          <Icon name="chart-2" /><span className="bar-lbl">Kho dữ liệu</span>
         </button>
 
         <div className="view-tabs" role="tablist" aria-label="Chế độ xem">
@@ -130,7 +131,7 @@ export function AppBar({ shops, shop, onShop, onShopProfile, videos, video, sku,
             <span>{runLabel}</span>
           </span>
         )}
-        <Menu label="Lượt chạy đã lưu" className="btn btn-sm btn-ghost od-fixed" buttonContent="Lượt chạy" align="end">
+        <Menu label="Lượt chạy đã lưu" className="btn btn-sm btn-ghost od-fixed bar-btn" buttonContent={<><Icon name="timer-1" /><span className="bar-lbl">Lượt chạy</span></>} align="end">
           {(close) => (
             <ul className="studio-menu-list">
               {history.length === 0 && <li className="tiny muted studio-menu-note">Video này chưa có lượt chạy nào.</li>}

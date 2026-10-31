@@ -116,7 +116,8 @@ export function LeftColumn({ running, steps, result, savedRun = null, duration, 
   return (
     <aside className="col col-left studio-left" aria-label="Câu hỏi chấm và agent">
       <div className="col-head">
-        <h2>{showFlow && !result ? 'Agent đang chạy' : 'Câu hỏi'}</h2>
+        {/* with a result the Câu hỏi | Agent switch names the column; a visible heading would repeat it */}
+        {result && !running ? <h2 className="sr-only">Câu hỏi chấm và agent</h2> : <h2>{running ? 'Agent đang chạy' : 'Các bước phân tích'}</h2>}
         {result && !running && (
           <div className="seg-switch" role="group" aria-label="Xem">
             <button type="button" aria-pressed={view === 'questions'} onClick={() => setView('questions')}>Câu hỏi</button>

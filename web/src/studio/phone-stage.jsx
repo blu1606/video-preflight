@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 
 import { markerTitle } from '../lib/labels'
-import { activeRegions, fmtTime, isRangeMarker, issueHint, safeZoneWarning } from '../lib/timeline'
+import { activeRegions, clusterPointIssues, fmtTime, isRangeMarker, issueHint, safeZoneWarning } from '../lib/timeline'
 import { Icon } from './icon'
 import { PHONE_STATUS } from './icons-data'
 import { PANELS } from './edit-panels'
@@ -9,6 +9,7 @@ import { BrandMark, PhoneFeed } from './phone-feeds'
 import { skinById } from './platform-skins'
 
 const PHONE_H = 920 // bezel artwork height at zoom 1
+const PHONE_W = 450 // bezel artwork width at zoom 1
 
 /** The edit rail; like mockup-v2, the platform button wears the brand mark of the platform in view. */
 function Rail({ panel, onPanel, video, skin }) {
@@ -67,14 +68,23 @@ function Timeline({ duration, current, issues, strengths, onSeek }) {
             <span className="mk-shape" aria-hidden="true" />
           </button>
         ))}
-        {issues.map((m, i) => {
+        {issues.filter((m) => m.kind === 'ghost' || isRangeMarker(m)).map((m, i) => {
           const hint = issueHint(m)
           const range = isRangeMarker(m)
           const width = range ? `${Math.max(1, ((m.t_end - m.t_start) / (duration || 1)) * 100)}%` : undefined
           const ghostHint = m.kind === 'ghost' ? ' (gợi ý vị trí)' : ''
           return (
             <button key={`${m.id}-${i}`} type="button" className={`mk ${m.kind === 'ghost' ? 'is-ghost' : 'is-bad'}${range ? ' is-range' : ''}`} style={{ left: pos(m.t_start), width }} aria-label={`${hint} ở ${fmtTime(m.t_start)}`} title={`${hint}${ghostHint}`} onClick={(e) => { e.stopPropagation(); onSeek(m.t_start) }}>
-              <span className="mk-shape" aria-hidden="true">{m.kind === 'ghost' || range ? '' : '!'}</span>
+              <span className="mk-shape" aria-hidden="true" />
+            </button>
+          )
+        })}
+        {clusterPointIssues(issues.filter((m) => m.kind !== 'ghost' && !isRangeMarker(m))).map((g) => {
+          const hints = g.items.map(issueHint)
+          const many = g.items.length > 1
+          return (
+            <button key={`at-${g.t}`} type="button" className={`mk is-bad${many ? ' is-many' : ''}`} style={{ left: pos(g.t) }} aria-label={`${many ? `${g.items.length} việc cần sửa` : hints[0]} ở ${fmtTime(g.t)}`} title={hints.join('\n')} onClick={(e) => { e.stopPropagation(); onSeek(g.t) }}>
+              <span className="mk-shape" aria-hidden="true">{many ? g.items.length : '!'}</span>
             </button>
           )
         })}
@@ -106,6 +116,7 @@ export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoR
   const stageRef = useRef(null)
   const [zoom, setZoom] = useState(0.7)
   const [time, setTime] = useState({ current: 0, duration: 0, playing: false })
+  const [fileMissing, setFileMissing] = useState(false) // the record names a file this machine does not have
   const duration = time.duration || fallbackDuration || 0
   const boxed = issues.filter((m) => m.region?.box)
   const regions = showRegions ? activeRegions(boxed, time.current) : []
@@ -113,7 +124,8 @@ export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoR
   useLayoutEffect(() => {
     const el = stageRef.current
     if (!el) return undefined
-    const fit = () => setZoom(Math.max(0.42, Math.min(0.9, (el.clientHeight - 8) / PHONE_H)))
+    // the phone fits the stage both ways: a narrow middle column (1024 px, three columns) must not let it spill
+    const fit = () => setZoom(Math.max(0.3, Math.min(0.9, (el.clientHeight - 8) / PHONE_H, (el.clientWidth - 8) / PHONE_W)))
     fit()
     const ro = new ResizeObserver(fit)
     ro.observe(el)
@@ -142,7 +154,7 @@ export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoR
               <section className="ip-screen is-dark">
                 <div className="ip-content">
                   <div className="ip-video">
-                    {video?.local_file ? (
+                    {video?.local_file && !fileMissing ? (
                       <video
                         ref={videoRef}
                         className="studio-video"
@@ -159,11 +171,16 @@ export function PhoneStage({ video, shop, sku, onOpenSku, panel, onPanel, videoR
                         }}
                         onPlay={() => setTime((t) => ({ ...t, playing: true }))}
                         onPause={() => setTime((t) => ({ ...t, playing: false }))}
+                        onError={() => setFileMissing(true)}
                       />
                     ) : (
                       <div className="studio-novideo">
-                        <Icon name="video-slash" />
-                        <p>{video ? 'Video này chưa có file để phát. Chọn video khác hoặc tải video mới.' : 'Chọn video ở nút Video bên trái.'}</p>
+                        <img className="studio-novideo-art" src="/illustrations/empty-video.webp" alt="" width="800" height="800" />
+                        <p>
+                          {fileMissing
+                            ? 'Không tìm thấy file của video này trên máy. Tải video lên lại hoặc chọn video khác.'
+                            : video ? 'Video này chưa có file để phát. Chọn video khác hoặc tải video mới.' : 'Chọn video ở nút Video bên trái.'}
+                        </p>
                       </div>
                     )}
                     {/* boxes are fractions of the video frame, so they sit in the video's own box, not the whole screen */}
